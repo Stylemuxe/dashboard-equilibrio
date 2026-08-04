@@ -1,0 +1,2777 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Dashboard Meta Ads | Equilibrio Total</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<!-- DATA_BUNDLE_START -->
+<script src="data_meta_2026-05.js?v=1785853744"></script>
+<script src="data_meta_2026-06.js?v=1785853744"></script>
+<script src="data_meta_2026-07.js?v=1785853744"></script>
+<script src="data_meta_2026-08.js?v=1785853744"></script>
+<script src="data_months.js?v=1785853744"></script>
+<script>
+(function(){
+  var d=window.MESES_DISPONIBLES||[];
+  window.META_DATA=(window.MESES_DATA||{})[d[d.length-1]]||{};
+})();
+</script>
+<!-- DATA_BUNDLE_END -->
+<!-- Fatiga de anuncios/públicos: lo genera generar_fatiga.py (vía ACTUALIZAR TODO); cache-buster porque va fuera del bundle versionado -->
+<script>document.write('<script src="data_fatiga.js?v=' + Date.now() + '"><\/script>');</script>
+<style>
+/* ═══════════════════════════════════════════════════════════════════════════
+   DASH FABIAN — Dark purple-navy style (NUEVO ESTILO reference)
+   Palette: #14132A bg · #1E1D3F card · #FF6040 coral · #9B5DE5 violet
+   Font: Open Sans
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root{
+  /* ── Light theme (estilo mockup) ── */
+  --bg:    #F3F4FA;
+  --bg2:   #FFFFFF;
+  --bg3:   #EDEFF7;
+  --card:  #FFFFFF;
+  --card2: #F7F8FC;
+  --border:  rgba(28,27,58,0.09);
+  --border2: rgba(28,27,58,0.15);
+  --coral:   #FF6040;
+  --violet:  #9B5DE5;
+  --gold:    #F4A93C;
+  --teal:    #16C2A3;
+  --pink:    #FF4D8D;
+  --text:    #1B1B33;
+  --text2:   #6A6F8E;
+  --text3:   #A6AAC2;
+  /* ── Sidebar oscuro ── */
+  --side-bg:    #1E1D3F;
+  --side-bg2:   #14132A;
+  --side-text:  #B9BCE0;
+  --side-text2: #6E7199;
+  /* ── Aliases usados en el JS existente ── */
+  --cyan:    #6C5CE7;   /* acento principal (violeta-azul) */
+  --green:   #16C2A3;
+  --yellow:  #F4A93C;
+  --purple:  #9B5DE5;
+  --orange:  #FF6040;
+  /* ── Transitions ── */
+  --ease: cubic-bezier(0.4,0,0.2,1);
+  --bounce: cubic-bezier(0.34,1.56,0.64,1);
+}
+
+/* ── Reset ───────────────────────────────────────────────────────────────── */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Open Sans',system-ui,sans-serif}
+body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+
+/* ── App layout (sidebar + main) ─────────────────────────────────────────── */
+.app{display:flex;min-height:100vh;position:relative;z-index:1}
+.main{flex:1;min-width:0;display:flex;flex-direction:column}
+
+/* ── Sidebar ── */
+.sidebar{
+  width:232px;flex-shrink:0;background:var(--side-bg);
+  display:flex;flex-direction:column;position:sticky;top:0;height:100vh;
+  overflow-y:auto;border-right:1px solid rgba(255,255,255,.05);padding-bottom:20px
+}
+.sidebar::-webkit-scrollbar{width:6px}
+.sidebar::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1);border-radius:3px}
+.sidebar-brand{display:flex;align-items:center;gap:11px;padding:22px 20px 16px}
+.sidebar-brand .logo-circle{width:40px;height:40px;display:flex;align-items:center;
+  justify-content:center;filter:drop-shadow(0 0 9px rgba(255,96,64,.45));flex-shrink:0}
+.sidebar-brand h1{font-size:15px;font-weight:700;color:#fff;letter-spacing:-.2px;line-height:1.15}
+.sidebar-brand p{font-size:10px;color:var(--side-text2);margin-top:3px}
+.nav-group-label{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--side-text2);padding:18px 22px 8px}
+.nav-list{display:flex;flex-direction:column;gap:2px;padding:0 13px}
+.nav-item{
+  display:flex;align-items:center;gap:11px;width:100%;text-align:left;
+  padding:10px 13px;font-size:13px;font-weight:600;color:var(--side-text);
+  background:none;border:none;border-radius:9px;cursor:pointer;
+  font-family:inherit;transition:background .18s var(--ease),color .18s
+}
+.nav-item .nav-ico{font-size:15px;width:20px;text-align:center;flex-shrink:0}
+.nav-item:hover{background:rgba(255,255,255,.06);color:#fff}
+.nav-item.active{background:linear-gradient(135deg,var(--violet),var(--coral));color:#fff;
+  box-shadow:0 7px 20px rgba(155,93,229,.4)}
+
+/* ── Topbar ── */
+.topbar{
+  position:sticky;top:0;z-index:20;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);padding:13px 28px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap
+}
+.topbar-title h2{font-size:16px;font-weight:700;color:var(--text);letter-spacing:-.2px}
+.topbar-title p{font-size:11px;color:var(--text2);margin-top:1px}
+
+/* ── Keyframes ───────────────────────────────────────────────────────────── */
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+@media(prefers-reduced-motion:no-preference){
+  @keyframes cardIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes rowIn{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:translateX(0)}}
+  @keyframes glowPulse{0%,100%{box-shadow:0 0 0 0 currentColor}50%{box-shadow:0 0 0 4px transparent}}
+}
+
+/* ── Header ──────────────────────────────────────────────────────────────── */
+.header{
+  position:relative;z-index:10;padding:16px 36px;
+  background:var(--bg2);
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px
+}
+.header-left{display:flex;align-items:center;gap:14px}
+.logo-circle{width:44px;height:44px;display:flex;align-items:center;justify-content:center;
+  filter:drop-shadow(0 0 8px rgba(255,96,64,0.4))}
+.header-title h1{font-size:18px;font-weight:700;color:var(--coral);letter-spacing:-.2px}
+.header-title p{font-size:11px;color:var(--text2);margin-top:2px}
+.header-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.header-date{
+  font-size:11px;color:var(--text2);
+  background:var(--bg3);border:1px solid var(--border);
+  padding:5px 12px;border-radius:20px
+}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--teal);
+  box-shadow:0 0 8px var(--teal);animation:pulse 2s infinite}
+
+/* ── Tabs ─────────────────────────────────────────────────────────────────── */
+.tabs-wrap{
+  position:relative;z-index:9;padding:0 36px;
+  border-bottom:1px solid var(--border);
+  background:var(--bg2);
+  display:flex;gap:0;overflow-x:auto
+}
+.tab-btn{
+  padding:14px 16px;font-size:12px;font-weight:600;
+  color:var(--text3);background:none;border:none;
+  border-bottom:2px solid transparent;cursor:pointer;
+  white-space:nowrap;transition:color .2s var(--ease),border-color .2s;
+  display:flex;align-items:center;gap:6px;text-transform:uppercase;letter-spacing:.04em
+}
+.tab-btn:hover{color:var(--text2)}
+.tab-btn.active{color:var(--coral);border-bottom-color:var(--coral)}
+
+/* ── Layout ──────────────────────────────────────────────────────────────── */
+.content{position:relative;z-index:1;padding:26px 36px;max-width:1600px;margin:0 auto}
+.tab-panel{display:none}.tab-panel.active{display:block}
+
+/* ── KPI cards ───────────────────────────────────────────────────────────── */
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin-bottom:26px}
+.kpi-card{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:20px 20px 18px;position:relative;overflow:hidden;
+  box-shadow:0 1px 3px rgba(28,27,58,.05),0 10px 26px rgba(28,27,58,.04);
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease)
+}
+.kpi-card::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:var(--kpi-grad,linear-gradient(90deg,var(--coral),var(--violet)))
+}
+@media(prefers-reduced-motion:no-preference){
+  .kpi-card{animation:cardIn .5s var(--ease) both}
+  .kpi-card:nth-child(1){animation-delay:0ms}   .kpi-card:nth-child(2){animation-delay:70ms}
+  .kpi-card:nth-child(3){animation-delay:140ms}  .kpi-card:nth-child(4){animation-delay:210ms}
+  .kpi-card:nth-child(5){animation-delay:280ms}  .kpi-card:nth-child(6){animation-delay:350ms}
+  .kpi-card:nth-child(7){animation-delay:420ms}  .kpi-card:nth-child(8){animation-delay:490ms}
+}
+.kpi-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(28,27,58,.14)}
+.kpi-card.c1{--kpi-grad:linear-gradient(90deg,var(--coral),var(--violet))}
+.kpi-card.c2{--kpi-grad:linear-gradient(90deg,var(--violet),var(--pink))}
+.kpi-card.c3{--kpi-grad:linear-gradient(90deg,var(--teal),var(--violet))}
+.kpi-card.c4{--kpi-grad:linear-gradient(90deg,var(--gold),var(--coral))}
+.kpi-card.c5{--kpi-grad:linear-gradient(90deg,var(--violet),var(--teal))}
+.kpi-icon{font-size:22px;margin-bottom:10px;display:block;opacity:.8}
+.kpi-val{font-size:30px;font-weight:700;line-height:1;color:var(--text)}
+.kpi-label{font-size:10px;font-weight:600;color:var(--text2);
+  margin-top:7px;text-transform:uppercase;letter-spacing:.06em}
+.kpi-sub{font-size:11px;margin-top:4px;color:var(--text3)}
+
+/* ── Section titles ───────────────────────────────────────────────────────── */
+.sec-title{
+  font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  display:flex;align-items:center;gap:10px;margin-bottom:16px;color:var(--text)
+}
+.sec-title::before{content:'';width:3px;height:16px;border-radius:2px;
+  background:linear-gradient(180deg,var(--coral),var(--violet))}
+.section-title{font-size:11px;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--text2)}
+
+/* ── Toggle buttons ──────────────────────────────────────────────────────── */
+.toggle-group{
+  display:flex;background:var(--bg3);border:1px solid var(--border);
+  border-radius:10px;padding:3px;gap:3px
+}
+.toggle-btn{
+  padding:6px 14px;border-radius:7px;border:none;background:none;
+  color:var(--text2);font-size:12px;font-weight:600;cursor:pointer;
+  transition:all .2s var(--ease)
+}
+.toggle-btn.active{
+  background:linear-gradient(135deg,var(--violet),var(--coral));
+  color:#fff;box-shadow:0 2px 12px rgba(155,93,229,.35)
+}
+
+/* ── Tables ──────────────────────────────────────────────────────────────── */
+.table-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--border);
+  margin-bottom:22px;background:var(--card);
+  box-shadow:0 1px 3px rgba(28,27,58,.05),0 10px 26px rgba(28,27,58,.04)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead{background:var(--card2)}
+th{padding:10px 8px;text-align:left;font-size:10px;font-weight:700;
+  color:var(--text2);text-transform:uppercase;letter-spacing:.04em;
+  white-space:nowrap;border-bottom:1px solid var(--border)}
+td{padding:10px 8px;border-top:1px solid var(--border);
+  vertical-align:middle;color:var(--text);font-size:12.5px;white-space:nowrap}
+@media(prefers-reduced-motion:no-preference){
+  tbody tr{animation:rowIn .35s var(--ease) both}
+  tbody tr:nth-child(1){animation-delay:0ms}   tbody tr:nth-child(2){animation-delay:35ms}
+  tbody tr:nth-child(3){animation-delay:70ms}   tbody tr:nth-child(4){animation-delay:105ms}
+  tbody tr:nth-child(5){animation-delay:140ms}  tbody tr:nth-child(6){animation-delay:175ms}
+  tbody tr:nth-child(7){animation-delay:210ms}  tbody tr:nth-child(8){animation-delay:245ms}
+  tbody tr:nth-child(9){animation-delay:280ms}
+}
+tr:hover td{background:rgba(155,93,229,.05)}
+.sum-row td{font-weight:700;background:rgba(255,96,64,.08);color:var(--coral)}
+
+/* ── Badges ──────────────────────────────────────────────────────────────── */
+.badge{display:inline-flex;align-items:center;padding:3px 9px;border-radius:20px;
+  font-size:10px;font-weight:700;letter-spacing:.04em}
+.badge-green {background:rgba(78,205,196,.15);color:var(--teal)}
+.badge-yellow{background:rgba(248,200,64,.15);color:var(--gold)}
+.badge-red   {background:rgba(255,96,64,.15);color:var(--coral)}
+.badge-blue  {background:rgba(155,93,229,.15);color:var(--violet)}
+@media(prefers-reduced-motion:no-preference){
+  .badge-green,.badge-yellow,.badge-red{animation:glowPulse 3s ease-in-out infinite}
+}
+.badge-video   {background:rgba(155,93,229,.15);color:var(--violet)}
+.badge-imagen  {background:rgba(78,205,196,.15);color:var(--teal)}
+.badge-carrusel{background:rgba(248,200,64,.15);color:var(--gold)}
+.badge-otro    {background:rgba(255,255,255,.06);color:var(--text2)}
+.badge-activo  {background:rgba(78,205,196,.15);color:var(--teal)}
+.badge-pausado {background:rgba(255,96,64,.15);color:var(--coral)}
+.badge-nuevo   {background:linear-gradient(90deg,var(--violet),var(--coral));color:#fff}
+
+/* ── Progress bars ───────────────────────────────────────────────────────── */
+.prog-wrap{display:flex;align-items:center;gap:8px;min-width:84px}
+.prog-bar{flex:1;min-width:36px;height:5px;background:rgba(255,255,255,.07);
+  border-radius:3px;overflow:hidden;min-width:60px}
+.prog-fill{height:100%;border-radius:3px;transition:width .8s ease;
+  background:linear-gradient(90deg,var(--coral),var(--violet))}
+.prog-val{font-size:12px;font-weight:700;min-width:38px;text-align:right}
+
+/* ── Charts ──────────────────────────────────────────────────────────────── */
+.charts-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:22px}
+.chart-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;
+  box-shadow:0 1px 3px rgba(28,27,58,.05),0 10px 26px rgba(28,27,58,.04)}
+.chart-title{font-size:11px;font-weight:700;color:var(--text2);
+  margin-bottom:14px;text-transform:uppercase;letter-spacing:.06em}
+.chart-canvas-wrap{position:relative;height:260px}
+
+/* ── Alerts ──────────────────────────────────────────────────────────────── */
+.sec-header{display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:16px;flex-wrap:wrap;gap:10px}
+.alert-feed{display:flex;flex-direction:column;gap:8px;margin-bottom:22px}
+.alert-item{
+  display:flex;align-items:flex-start;gap:14px;padding:13px 16px;
+  border-radius:10px;border-left:3px solid;
+  transition:transform .2s var(--ease)
+}
+.alert-item:hover{transform:translateX(4px)}
+.alert-crit{background:rgba(255,96,64,.08);border-color:var(--coral)}
+.alert-warn{background:rgba(248,200,64,.07);border-color:var(--gold)}
+.alert-ok  {background:rgba(78,205,196,.07);border-color:var(--teal)}
+.alert-info{background:rgba(155,93,229,.07);border-color:var(--violet)}
+.alert-icon{font-size:20px;flex-shrink:0;margin-top:1px}
+.alert-title{font-size:13px;font-weight:700;margin-bottom:3px;color:var(--text)}
+.alert-desc{font-size:12px;color:var(--text2);line-height:1.5}
+
+/* ── Top ads ─────────────────────────────────────────────────────────────── */
+.top-ad-item{
+  display:flex;align-items:center;gap:12px;padding:10px 14px;
+  background:var(--card);border:1px solid var(--border);border-radius:10px;
+  margin-bottom:8px;transition:transform .2s var(--ease),border-color .2s
+}
+.top-ad-item:hover{transform:translateX(4px);border-color:rgba(255,96,64,.3)}
+.top-ad-num{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:11px;font-weight:700;flex-shrink:0}
+.num-1{background:linear-gradient(135deg,var(--gold),var(--coral));color:#fff}
+.num-2{background:linear-gradient(135deg,#5A5A8A,#3A3A6A);color:#fff}
+.num-3{background:linear-gradient(135deg,var(--coral),var(--pink));color:#fff}
+.num-other{background:rgba(255,255,255,.07);color:var(--text2)}
+.top-ad-info{flex:1;min-width:0}
+.top-ad-name{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis;color:var(--text)}
+.top-ad-sub{font-size:11px;color:var(--text3);margin-top:2px;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
+.top-ad-leads{font-size:20px;font-weight:700;color:var(--coral);white-space:nowrap}
+.top-ad-cpl{font-size:11px;color:var(--text3);text-align:right}
+
+/* ── Filters ─────────────────────────────────────────────────────────────── */
+.filter-select{
+  background:var(--bg3);border:1px solid var(--border);border-radius:9px;
+  color:var(--text);padding:8px 12px;font-size:13px;cursor:pointer;outline:none;
+  transition:border-color .2s
+}
+.filter-select:focus{border-color:var(--coral)}
+
+/* ── Ad name cells ───────────────────────────────────────────────────────── */
+.ad-table-row td{vertical-align:top;padding:10px 14px}
+.ad-name-cell{max-width:260px}
+.ad-name-main{font-size:13px;font-weight:600;line-height:1.3;margin-bottom:4px;color:var(--text)}
+.ad-name-camp{font-size:11px;color:var(--text3);white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis;max-width:240px}
+.ad-name-adset{font-size:11px;color:var(--text2);white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis;max-width:240px}
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media(max-width:900px){
+  .content{padding:16px}.topbar{padding:12px 16px}
+  .sidebar{width:62px}
+  .sidebar-brand h1,.sidebar-brand p,.nav-item span:not(.nav-ico),.nav-group-label{display:none}
+  .sidebar-brand{justify-content:center;padding:18px 0 12px}
+  .nav-item{justify-content:center;padding:11px 0}
+  .nav-list{padding:0 8px}
+}
+</style>
+</head>
+<body>
+
+<style>
+body:not(.unlocked) .app{display:none}
+#login{display:none;position:fixed;inset:0;z-index:999;align-items:center;justify-content:center;padding:20px;background:#0b0d14}
+body:not(.unlocked) #login{display:flex}
+#login-card{width:100%;max-width:340px;background:#161925;border:1px solid #262b3d;
+  border-radius:20px;padding:32px 28px;text-align:center;
+  box-shadow:0 1px 0 rgba(255,255,255,.08) inset,0 20px 50px rgba(0,0,0,.55)}
+#login-card .ico{font-size:30px;margin-bottom:6px}
+#login-card h2{font-size:16px;font-weight:700;margin-bottom:4px;color:#fff}
+#login-card p{font-size:11.5px;color:#8a90a6;margin-bottom:20px}
+#login-card input{width:100%;background:#0f121c;border:1px solid #262b3d;border-radius:12px;
+  color:#fff;padding:11px 14px;font-size:14px;text-align:center;outline:none;
+  font-family:inherit;letter-spacing:2px;margin-bottom:12px}
+#login-card input:focus{border-color:#FF6040}
+#login-card button{width:100%;border:none;border-radius:12px;padding:11px 14px;font-size:13px;
+  font-weight:700;color:#fff;cursor:pointer;font-family:inherit;
+  background:#FF6040;box-shadow:0 6px 18px rgba(255,96,64,.35)}
+#login-err{font-size:11.5px;color:#ff4d6d;margin-top:12px;min-height:14px}
+</style>
+
+<div id="login">
+  <div id="login-card">
+    <div class="ico">🔒</div>
+    <h2>Dashboard Equilibrio Total</h2>
+    <p>Acceso restringido — Meta Ads</p>
+    <input type="password" id="loginClave" placeholder="••••••••" autocomplete="off">
+    <button onclick="intentarLogin()">Entrar</button>
+    <div id="login-err"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var CLAVE = "dimelopapi";
+  if(localStorage.getItem('eqdash_unlocked') === '1'){
+    document.body.classList.add('unlocked');
+  }
+  window.intentarLogin = function(){
+    var val = document.getElementById('loginClave').value;
+    if(val === CLAVE){
+      localStorage.setItem('eqdash_unlocked', '1');
+      document.body.classList.add('unlocked');
+    } else {
+      document.getElementById('login-err').textContent = 'Clave incorrecta';
+    }
+  };
+  document.addEventListener('DOMContentLoaded', function(){
+    var input = document.getElementById('loginClave');
+    if(input) input.addEventListener('keydown', function(e){
+      if(e.key === 'Enter') intentarLogin();
+    });
+  });
+})();
+</script>
+
+<style>
+@keyframes shake {
+  0%,100%{transform:translateX(0)} 20%{transform:translateX(-10px)} 60%{transform:translateX(10px)}
+}
+@keyframes pulse2 {
+  0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.15);opacity:.7}
+}
+</style>
+
+<div class="app">
+
+<aside class="sidebar">
+  <div class="sidebar-brand">
+    <div class="logo-circle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 115" width="40" height="46" fill="#FF6040">
+        <circle cx="42" cy="16" r="14"/>
+        <circle cx="76" cy="38" r="10"/>
+        <path d="M56 28 C70 32 80 44 76 58 C72 70 60 74 52 68 C46 63 47 53 54 50 C60 47 65 52 62 58 C59 64 52 64 48 60 C38 52 40 38 50 30 C38 26 22 34 18 50 C14 66 24 86 42 92 C60 98 78 88 82 72 C86 56 76 40 62 32" stroke="#FF6040" stroke-width="7" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Equilibrio Total</h1>
+      <p>Meta Ads · Dashboard</p>
+    </div>
+  </div>
+
+  <div class="nav-group-label">Principal</div>
+  <nav class="nav-list">
+    <button class="nav-item active" data-title="Resumen" onclick="switchTab('resumen',this)"><span class="nav-ico">📊</span><span>Resumen</span></button>
+    <button class="nav-item" data-title="Sedes" onclick="switchTab('sedes',this)"><span class="nav-ico">🏥</span><span>Sedes</span></button>
+    <button class="nav-item" data-title="Franquicias" onclick="switchTab('franquicias',this)"><span class="nav-ico">🏢</span><span>Franquicias</span></button>
+    <button class="nav-item" data-title="Ad Sets" onclick="switchTab('adsets',this)"><span class="nav-ico">🎯</span><span>Ad Sets</span></button>
+    <button class="nav-item" data-title="Top Anuncios" onclick="switchTab('anuncios',this)"><span class="nav-ico">📢</span><span>Top Anuncios</span></button>
+    <button class="nav-item" data-title="Fatiga de Anuncios y Públicos" onclick="switchTab('fatiga',this)"><span class="nav-ico">🚦</span><span>Fatiga</span></button>
+    <button class="nav-item" data-title="Leads &amp; Gasto Diario" onclick="switchTab('diario',this)"><span class="nav-ico">📅</span><span>Leads &amp; Gasto</span></button>
+    <button class="nav-item" data-title="Optimizar" onclick="switchTab('optimizar',this)"><span class="nav-ico">📈</span><span>Optimizar</span></button>
+    <button class="nav-item" data-title="Recomendaciones" onclick="switchTab('recomendaciones',this)"><span class="nav-ico">💡</span><span>Recomendaciones</span></button>
+    <button class="nav-item" data-title="Proyector de Metas" onclick="switchTab('metajunio',this)"><span class="nav-ico">🎯</span><span>Proyector</span></button>
+  </nav>
+
+  <div class="nav-group-label">Otras cuentas</div>
+  <nav class="nav-list">
+    <button class="nav-item" data-title="Gerontología" onclick="switchTab('gero',this)"><span class="nav-ico">🧓</span><span>Gerontología</span></button>
+    <button class="nav-item" data-title="Complementos" onclick="switchTab('complementos',this)"><span class="nav-ico">📣</span><span>Complementos</span></button>
+  </nav>
+</aside>
+
+<main class="main">
+
+<div class="topbar">
+  <div class="topbar-title">
+    <h2 id="topbarTitle">Resumen</h2>
+    <p>Equilibrio Total &nbsp;·&nbsp; Sedes &amp; Franquicias</p>
+  </div>
+  <div class="header-right">
+    <div id="mes-selector" style="display:flex;align-items:center;gap:6px;flex-wrap:wrap"></div>
+    <div class="live-dot" id="liveDot"></div>
+    <div class="header-date" id="headerDate"></div>
+  </div>
+</div>
+
+<div class="content">
+
+<!-- RESUMEN -->
+<div id="tab-resumen" class="tab-panel active">
+  <div class="kpi-row" id="kpiRow"></div>
+  <div id="proyRow"></div>
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-title" id="tituloLeadsSedes">Leads por Sede</div>
+      <div class="chart-canvas-wrap"><canvas id="chartLeadsSedes"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title" id="tituloLeadsFranq">Leads por Franquicia</div>
+      <div class="chart-canvas-wrap"><canvas id="chartLeadsFranq"></canvas></div>
+    </div>
+  </div>
+  <div class="charts-row">
+    <div class="chart-card" style="grid-column:span 2">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+        <div class="chart-title">Gasto diario — Sedes vs Franquicias</div>
+        <div id="gastoDiarioFiltros" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+      </div>
+      <div class="chart-canvas-wrap" style="height:200px"><canvas id="chartGastoDiario"></canvas></div>
+    </div>
+  </div>
+
+  <!-- Desglose gasto por franquicia -->
+  <div class="charts-row" style="grid-template-columns:1fr 1fr;margin-bottom:24px">
+    <div class="chart-card">
+      <div class="chart-title" id="tituloGastoSedes" style="margin-bottom:14px">💸 Gasto Memo+Laura por Sede (sin Promo)</div>
+      <div id="gastoSedesDetalle"></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title" id="tituloGastoFranq" style="margin-bottom:14px">🏢 Gasto por Franquicia</div>
+      <div id="gastoFranqDetalle"></div>
+    </div>
+  </div>
+
+  <!-- Leads de ayer -->
+  <div style="margin-bottom:24px">
+    <div class="sec-title" style="margin-bottom:12px" id="ayerTitulo">⚡ Leads de Ayer</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="chart-card" style="padding:16px">
+        <div style="font-size:12px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px">🏥 Sedes</div>
+        <div id="ayerSedes"></div>
+      </div>
+      <div class="chart-card" style="padding:16px">
+        <div style="font-size:12px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px">🏢 Franquicias</div>
+        <div id="ayerFranq"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── GASTO POR CUENTA (ADMIN) — dinámico por mes ──────────────────── -->
+  <div id="gastoCuentasSec" style="display:none">
+    <div class="sec-title" style="margin-bottom:12px" id="gastoCuentasTitulo">💳 Gasto por Cuenta</div>
+    <div id="gastoCuentasChips" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px"></div>
+    <div class="charts-row" style="grid-template-columns:1fr 1fr;margin-bottom:24px">
+      <div class="chart-card" style="padding:20px">
+        <div class="chart-title" style="margin-bottom:16px;font-size:11px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em">
+          Inversión por administrador de cuenta
+        </div>
+        <table style="width:100%;border-collapse:collapse;font-size:13px">
+          <thead>
+            <tr>
+              <th style="padding:9px 12px;text-align:left;font-size:10px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;border-bottom:2px solid var(--border)">Cuenta</th>
+              <th style="padding:9px 12px;text-align:right;font-size:10px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;border-bottom:2px solid var(--border)">Gasto</th>
+              <th style="padding:9px 12px;text-align:right;font-size:10px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;border-bottom:2px solid var(--border)">% del total</th>
+            </tr>
+          </thead>
+          <tbody id="gastoCuentasTabla"></tbody>
+        </table>
+        <div style="margin-top:10px;font-size:10px;color:var(--text3)">* Gasto a nivel cuenta completa: incluye sedes, boosts de franquicias y pauta orgánica que corren en cada cuenta.</div>
+      </div>
+      <div class="chart-card" style="padding:20px;display:flex;flex-direction:column;justify-content:center">
+        <div class="chart-title" style="margin-bottom:20px;font-size:11px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em">
+          Distribución visual
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px" id="gastoCuentasBarras"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-title" style="margin-bottom:12px">💡 Alertas Inteligentes</div>
+  <div class="alert-feed" id="alertFeed"></div>
+</div>
+
+<!-- SEDES -->
+<div id="tab-sedes" class="tab-panel">
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th>Clínica</th><th>Leads</th><th>Meta Leads</th><th>Proy. Leads</th><th>% Leads</th><th class="col-gasto-mes">Gasto</th><th>CPL</th>
+        <th>Leads CC</th><th>Reales</th><th>Agendadas CC</th><th>Proy. Agend</th><th>Asistidas</th><th>Proy. Asist</th>
+        <th>Meta CC</th><th>% Avance CC</th><th>Conv. A→Asist</th><th>Conv. L→A</th><th>Restan</th><th>CPA</th>
+      </tr></thead>
+      <tbody id="tablaSedes"></tbody>
+    </table>
+  </div>
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-title">CPL por Sede</div>
+      <div class="chart-canvas-wrap"><canvas id="chartCplSedes"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">CPA por Sede (Gasto ÷ Asistidas)</div>
+      <div class="chart-canvas-wrap"><canvas id="chartCpaSedes"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Asistidas vs Meta CC — Avance del mes</div>
+      <div class="chart-canvas-wrap"><canvas id="chartAvanceSedes"></canvas></div>
+    </div>
+  </div>
+</div>
+
+<!-- FRANQUICIAS -->
+<div id="tab-franquicias" class="tab-panel">
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th>Franquicia</th><th>Leads</th><th>Meta Leads</th><th>Proy. Leads</th><th>% Leads</th><th class="col-gasto-mes">Gasto</th><th>CPL</th>
+        <th>Leads CC</th><th>Reales</th><th>Reserv.</th><th>Proy. Reserv</th><th>Asistidas</th><th>Proy. Asist</th>
+        <th>Meta CC</th><th>% Avance CC</th><th>Conv. L→A</th><th>Restan</th><th>CPA</th>
+      </tr></thead>
+      <tbody id="tablaFranq"></tbody>
+    </table>
+  </div>
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-title">CPL por Franquicia</div>
+      <div class="chart-canvas-wrap"><canvas id="chartCplFranq"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">CPA por Franquicia</div>
+      <div class="chart-canvas-wrap"><canvas id="chartCpaFranq"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Asistidas vs Meta CC — Avance del mes</div>
+      <div class="chart-canvas-wrap"><canvas id="chartAvanceFranq"></canvas></div>
+    </div>
+  </div>
+</div>
+
+<!-- AD SETS -->
+<div id="tab-adsets" class="tab-panel">
+  <div class="sec-header">
+    <div class="sec-title">Rendimiento por Conjunto de Anuncios</div>
+    <select class="filter-select" id="filtroAdsetClinica" onchange="renderAdsets()">
+      <option value="">— Todas las clínicas —</option>
+    </select>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th>#</th><th>Clínica</th><th>Campaña</th><th>Conjunto de Anuncios</th>
+        <th>Leads</th><th>Gasto</th><th>CPL</th>
+      </tr></thead>
+      <tbody id="tablaAdsets"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- TOP ANUNCIOS -->
+<div id="tab-anuncios" class="tab-panel">
+  <div class="sec-header" style="margin-bottom:12px">
+    <div class="sec-title">Anuncios</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+      <select class="filter-select" id="filtroAdClinica" onchange="renderTopAds()">
+        <option value="">— Todas las clínicas —</option>
+      </select>
+      <select class="filter-select" id="filtroAdTipo" onchange="renderTopAds()">
+        <option value="">Todos los tipos</option>
+        <option value="VIDEO">📹 Video</option>
+        <option value="IMAGEN">🖼️ Imagen</option>
+        <option value="CARRUSEL">🎠 Carrusel</option>
+        <option value="OTRO">Otro</option>
+      </select>
+    </div>
+  </div>
+  <div class="toggle-group" style="margin-bottom:16px">
+    <button class="toggle-btn active" onclick="switchAdFiltro('top',this)">🏆 Top Leads</button>
+    <button class="toggle-btn" onclick="switchAdFiltro('sin_leads',this)">⛔ Sin Leads</button>
+    <button class="toggle-btn" onclick="switchAdFiltro('nuevos',this)">🆕 Nuevos</button>
+    <button class="toggle-btn" onclick="switchAdFiltro('todos',this)">📋 Todos</button>
+  </div>
+  <div id="topAdsList"></div>
+</div>
+
+<!-- FATIGA DE ANUNCIOS Y PÚBLICOS (mes en curso, lo genera generar_fatiga.py) -->
+<div id="tab-fatiga" class="tab-panel">
+  <div class="sec-header">
+    <div class="sec-title">🚦 Diagnóstico por Ad Set <span id="fatigaMeta" style="font-weight:400;font-size:12px;color:var(--text2)"></span></div>
+  </div>
+  <div class="table-wrap" style="margin-bottom:28px">
+    <table>
+      <thead><tr>
+        <th>Diagnóstico</th><th>Cuenta</th><th>Ad Set</th><th>Frec.</th>
+        <th>Gasto</th><th>Leads</th><th>CPL</th><th>% Gente nueva</th><th>CPM 1ª→2ª mitad</th>
+      </tr></thead>
+      <tbody id="tablaFatigaDiag"></tbody>
+    </table>
+  </div>
+  <div class="sec-header"><div class="sec-title">🟢 Creativos exitosos — replicar en públicos fatigados</div></div>
+  <div class="table-wrap" style="margin-bottom:28px">
+    <table>
+      <thead><tr><th>#</th><th>Cuenta</th><th>Anuncio</th><th>Ad Set</th><th>Frec.</th><th>Gasto</th><th>Leads</th><th>CPL</th></tr></thead>
+      <tbody id="tablaFatigaExitosos"></tbody>
+    </table>
+  </div>
+  <div class="sec-header"><div class="sec-title">⚠️ Gastando sin leads ($1,000+ en el mes y cero leads)</div></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cuenta</th><th>Ad Set</th><th>Frec.</th><th>Gasto</th></tr></thead>
+      <tbody id="tablaFatigaSinLeads"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- LEADS & GASTO DIARIO -->
+<div id="tab-diario" class="tab-panel">
+
+  <!-- Leads diarios -->
+  <div class="chart-card" style="margin-bottom:24px;border:2px solid var(--border2)">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px">
+      <div class="sec-title" style="margin-bottom:0">Leads Diarios</div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <div class="toggle-group" id="leadsToggleGroup">
+          <button class="toggle-btn active" onclick="switchLeadsModo('todas_sedes',this)">Todas las Sedes</button>
+          <button class="toggle-btn" onclick="switchLeadsModo('todas_franq',this)">Todas las Franquicias</button>
+          <button class="toggle-btn" onclick="switchLeadsModo('clinica',this)">Por Clínica</button>
+        </div>
+        <select class="filter-select" id="filtroLeadsClinica" onchange="renderLeadsDiarios()" style="font-size:13px;min-width:190px;display:none">
+          <option value="">— Selecciona —</option>
+        </select>
+      </div>
+    </div>
+    <div class="chart-canvas-wrap" style="height:280px"><canvas id="chartLeadsDiarios"></canvas></div>
+    <div class="table-wrap" style="margin-top:16px;margin-bottom:0">
+      <table>
+        <thead><tr id="leadsTablaHead"></tr></thead>
+        <tbody id="leadsTablaBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Detalle clínica individual (CPL) -->
+  <div class="chart-card" style="margin-bottom:24px;border:2px solid var(--border2)">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px">
+      <div class="sec-title" style="margin-bottom:0">CPL Diario por Clínica</div>
+      <select class="filter-select" id="filtroCplClinica" onchange="renderCplClinica()" style="font-size:14px;font-weight:600;min-width:200px">
+        <option value="">— Selecciona una clínica —</option>
+      </select>
+    </div>
+    <div id="cplClinicaEmpty" style="text-align:center;padding:40px;color:var(--text3);font-size:13px">
+      Selecciona una clínica del menú para ver su CPL día a día
+    </div>
+    <div id="cplClinicaContent" style="display:none">
+      <div class="chart-canvas-wrap" style="height:280px"><canvas id="chartCplClinica"></canvas></div>
+      <div class="table-wrap" style="margin-top:16px;margin-bottom:0">
+        <table>
+          <thead><tr>
+            <th>Fecha</th><th>Leads</th><th>Gasto</th><th>CPL del día</th>
+          </tr></thead>
+          <tbody id="tablaCplClinica"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vista general stacked -->
+  <div class="sec-header">
+    <div class="sec-title">Gasto Diario — Vista General</div>
+    <div class="toggle-group">
+      <button class="toggle-btn active" onclick="switchDiario('sedes',this)">Sedes</button>
+      <button class="toggle-btn" onclick="switchDiario('franquicias',this)">Franquicias</button>
+    </div>
+  </div>
+  <div class="chart-card" style="margin-bottom:24px">
+    <div class="chart-canvas-wrap" style="height:320px"><canvas id="chartDiarioDetalle"></canvas></div>
+  </div>
+  <div class="table-wrap" style="margin-bottom:32px">
+    <table id="tablaDiaria">
+      <thead id="tablaDiariaHead"></thead>
+      <tbody id="tablaDiariaBody"></tbody>
+    </table>
+  </div>
+
+  <!-- GERONTOLOGÍA APARTE -->
+  <div style="border-top:2px solid var(--border);padding-top:24px;margin-top:8px">
+    <div class="sec-title" style="margin-bottom:16px">Gerontología — Gasto Diario (cuenta independiente)</div>
+    <div id="kpiGeroDiario" class="kpi-row" style="margin-bottom:20px"></div>
+    <div class="chart-card" style="margin-bottom:20px">
+      <div class="chart-canvas-wrap" style="height:240px"><canvas id="chartGeroDiario"></canvas></div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Día</th><th>Gasto</th><th>Leads</th><th style="min-width:140px">Distribución</th></tr></thead>
+        <tbody id="tablaGeroDiario"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- OPTIMIZAR -->
+<div id="tab-optimizar" class="tab-panel">
+  <div class="sec-header" style="margin-bottom:16px">
+    <div class="sec-title">Análisis por Padecimiento — ¿Dónde escalar presupuesto?</div>
+    <select class="filter-select" id="filtroOptClinica" onchange="renderOptimizar()">
+      <option value="">— Todas las clínicas —</option>
+    </select>
+  </div>
+  <div style="background:rgba(63,122,137,0.07);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin-bottom:20px;font-size:12px;color:var(--text2);line-height:1.7">
+    <b style="color:var(--cyan)">¿Cómo funciona?</b> — Se cruzan los leads de Meta por padecimiento (del nombre del conjunto de anuncios)
+    con los pacientes que <b>realmente asistieron</b> al CC clasificados por condición.
+    El <b>Score de Prioridad</b> combina CPL bajo + alta tasa de asistencia = 🟢 ESCALAR.
+  </div>
+  <div id="optContent"></div>
+</div>
+
+<!-- RECOMENDACIONES -->
+<div id="tab-recomendaciones" class="tab-panel">
+  <div class="sec-title" style="margin-bottom:16px">💡 Recomendaciones Automáticas basadas en datos</div>
+  <div class="alert-feed" id="recoFeed"></div>
+</div>
+
+<!-- GERONTOLOGÍA -->
+<div id="tab-gero" class="tab-panel">
+  <div class="kpi-row" id="kpiGero"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:24px">
+    <!-- Consulta Gerontologia -->
+    <div class="chart-card" style="border-top:3px solid var(--cyan)">
+      <div class="chart-title" style="font-size:14px;font-weight:700;color:var(--cyan);margin-bottom:16px">🩺 Consulta Gerontología</div>
+      <div id="geroConsultaCard"></div>
+    </div>
+    <!-- Taller Baile -->
+    <div class="chart-card" style="border-top:3px solid var(--purple)">
+      <div class="chart-title" style="font-size:14px;font-weight:700;color:var(--purple);margin-bottom:16px">💃 Taller Baile</div>
+      <div id="geroTallerCard"></div>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th>Campaña</th><th>Leads Meta</th><th>Gasto del mes</th><th>CPL</th>
+        <th>Agendadas</th><th>Asistidas</th><th>Conv. L→A</th><th>CPA</th>
+      </tr></thead>
+      <tbody id="tablaGero"></tbody>
+    </table>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-title">Leads por Campaña — del mes</div>
+      <div class="chart-canvas-wrap"><canvas id="chartLeadsGero"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">CPL por Campaña</div>
+      <div class="chart-canvas-wrap"><canvas id="chartCplGero"></canvas></div>
+    </div>
+  </div>
+</div>
+
+<!-- COMPLEMENTOS -->
+<div id="tab-complementos" class="tab-panel">
+  <div class="kpi-row" id="kpiComplementos"></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th>Sede</th><th>Leads WhatsApp</th><th>Gasto del mes</th><th>CPL</th>
+      </tr></thead>
+      <tbody id="tablaComplementos"></tbody>
+    </table>
+  </div>
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-title">Gasto por Sede — Complementos</div>
+      <div class="chart-canvas-wrap"><canvas id="chartGastoCompl"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">CPL por Sede — Complementos</div>
+      <div class="chart-canvas-wrap"><canvas id="chartCplCompl"></canvas></div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /content -->
+
+<script>
+var DATA = null;
+let chartInst = {};
+let adModo = 'top';
+let leadsModo = 'todas_sedes';
+let diarioMode = 'sedes';
+let gastoDiarioModo = 'todos';
+
+// ── Cargar datos ── (DATA es var global → la comparte cargarMes al cambiar de mes)
+function tryInit() {
+  if (typeof META_DATA !== 'undefined' && META_DATA && META_DATA.fecha_ayer) {
+    DATA = META_DATA;
+    init();
+  } else {
+    setTimeout(tryInit, 80);
+  }
+}
+tryInit();
+
+function init() {
+  var ml = getMesLabel();
+  document.getElementById('headerDate').textContent =
+    'Actualizado: ' + DATA.actualizado + '  |  ' + DATA.fecha_ayer;
+  // Títulos dinámicos por mes
+  if (document.getElementById('tituloLeadsSedes'))  document.getElementById('tituloLeadsSedes').textContent  = 'Leads por Sede — ' + ml;
+  if (document.getElementById('tituloLeadsFranq'))  document.getElementById('tituloLeadsFranq').textContent  = 'Leads por Franquicia — ' + ml;
+  if (document.getElementById('tituloGastoSedes'))  document.getElementById('tituloGastoSedes').innerHTML    = '💸 Gasto Memo+Laura (sin Promo) — ' + ml;
+  if (document.getElementById('tituloGastoFranq'))  document.getElementById('tituloGastoFranq').innerHTML    = '🏢 Gasto por Franquicia — ' + ml;
+  // Encabezados de tablas
+  document.querySelectorAll('.col-gasto-mes').forEach(function(el){ el.textContent = 'Gasto ' + ml; });
+  // Chart.js defaults — flat design palette
+  if (window.Chart) {
+    Chart.defaults.font.family = "'Open Sans', system-ui";
+    Chart.defaults.font.weight = "400";
+    Chart.defaults.color = "#6A6F8E";
+    Chart.defaults.animation = { duration: 1200, easing: 'easeOutQuart' };
+  }
+  renderKPIs();
+  renderAyer();
+  renderGastoCuentas();
+  renderChartLeads();
+  renderGastoDiario();
+  renderAlertas();
+  renderSedes();
+  renderFranquicias();
+  renderAdsetFiltros();
+  renderAdsets();
+  renderAdFiltros();
+  renderTopAds();
+  renderLeadsFiltros();
+  renderLeadsDiarios();
+  renderCplFiltros();
+  renderOptFiltros();
+  renderOptimizar();
+  renderDiario('sedes');
+  renderGeroDiario();
+  renderRecomendaciones();
+  renderGero();
+  renderComplementos();
+  if (typeof renderProyector === 'function') renderProyector();
+  setTimeout(animateKPIs, 150);
+}
+
+// ── Count-up para KPI numbers ─────────────────────────────────────────────
+function countUp(el, target, duration) {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    el.textContent = el.textContent; return;
+  }
+  var start = 0, startTime = null;
+  var isCurrency = el.textContent.includes('$');
+  var isPercent  = el.textContent.includes('%');
+  function step(ts) {
+    if (!startTime) startTime = ts;
+    var progress = Math.min((ts - startTime) / duration, 1);
+    var ease = 1 - Math.pow(1 - progress, 3);
+    var val = Math.round(ease * target);
+    if (isCurrency) el.textContent = '$' + val.toLocaleString('es-MX');
+    else if (isPercent) el.textContent = val + '%';
+    else el.textContent = val.toLocaleString('es-MX');
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+function animateKPIs() {
+  // Deshabilitado — el strip de decimales corrompía valores como 24,118 → 1,941
+}
+
+// Exponer renderAll para el selector de mes
+function renderAll() {
+  init();
+  setTimeout(animateKPIs, 100);
+}
+
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  var elTitle = document.getElementById('topbarTitle');
+  if (elTitle) elTitle.textContent = btn.dataset.title || btn.textContent.trim();
+  // setTimeout garantiza que el navegador ya hizo el reflow del tab recién visible
+  // (el canvas tiene tamaño real) antes de crear/redibujar las gráficas. Sin esto,
+  // las gráficas de tabs ocultos se crean con canvas 0×0 y las barras quedan en altura 0.
+  setTimeout(function() {
+    if (id === 'resumen')      { renderChartLeads(); renderGastoDiario(); }
+    if (id === 'sedes')        renderSedes();
+    if (id === 'franquicias')  renderFranquicias();
+    if (id === 'diario')       { renderLeadsFiltros(); renderLeadsDiarios(); renderCplFiltros(); renderDiario(diarioMode); renderGeroDiario(); }
+    if (id === 'anuncios')     renderTopAds();
+    if (id === 'fatiga')       renderFatiga();
+    if (id === 'optimizar')    renderOptimizar();
+    if (id === 'gero')         { renderGero(); renderGeroDiario(); }
+    if (id === 'complementos') renderComplementos();
+    // Redibujar SOLO las gráficas visibles. Hacer resize() a un canvas de un tab
+    // oculto (display:none) lo colapsa a 0×0 y la gráfica queda en blanco al volver.
+    Object.values(chartInst).forEach(function(c) {
+      if (c && c.canvas && c.canvas.offsetParent !== null) c.resize();
+    });
+  }, 50);
+}
+
+function fmt(n) { return '$' + Number(n).toLocaleString('es-MX', {minimumFractionDigits:2, maximumFractionDigits:2}); }
+function fmtN(n) { return Number(n).toLocaleString('es-MX'); }
+
+// Etiqueta del mes actualmente visible en el dash
+function getMesLabel() {
+  var d = DATA.fecha_ayer || '';
+  if (!d) return '';
+  var MESES = ['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+  return MESES[parseInt(d.slice(5,7))] + ' ' + d.slice(0,4);
+}
+function getMesCorto() {
+  var d = DATA.fecha_ayer || '';
+  if (!d) return '';
+  var MESES = ['','Ene','Feb','Mar','Abr','Mayo','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+  return MESES[parseInt(d.slice(5,7))];
+}
+
+// ── KPIs ──
+function renderKPIs() {
+  const s = DATA.sedes, f = DATA.franquicias;
+  // KPIs de sedes = SOLO las 9 sedes reales (mismas de la tabla) — excluye
+  // "Promociones" y cualquier pauta mapeada a otra clínica dentro del bucket.
+  const SEDES_KPI = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco',
+                     'Balbuena','Tlahuac','Mixquiahuala','Milpa Alta',
+                     'Chalco / Milpa Alta / Tlahuac'];
+  let leadsS=0, gastoS=0, asistS=0;
+  let leadsF=0, gastoF=0, asistF=0;
+  SEDES_KPI.forEach(k => { const v = s[k]||{}; leadsS+=v.leads_mes||0; gastoS+=v.gasto_mes||0; asistS+=v.asistidas||0; });
+  Object.values(f).forEach(v => { leadsF+=v.leads_mes; gastoF+=v.gasto_mes; asistF+=v.asistidas||0; });
+  const tLeads = leadsS+leadsF, tGasto = gastoS+gastoF, tAsist = asistS+asistF;
+  const cpl = tLeads > 0 ? tGasto/tLeads : 0;
+  const cpa = tAsist > 0 ? tGasto/tAsist : 0;
+
+  const tAgendSedes = SEDES_KPI.reduce((a,k)=>a+((s[k]||{}).agendadas||0),0);
+  const tAsistSedes = SEDES_KPI.reduce((a,k)=>a+((s[k]||{}).asistidas||0),0);
+  const convCC = tAgendSedes > 0 ? Math.round(tAsistSedes/tAgendSedes*100)+'%' : '—';
+  const dia = DATA.fecha_ayer ? DATA.fecha_ayer.slice(8,10)+'/'+DATA.fecha_ayer.slice(5,7) : '';
+  const cplS = leadsS > 0 ? gastoS/leadsS : 0;
+  const cplF = leadsF > 0 ? gastoF/leadsF : 0;
+  const cpaS = asistS > 0 ? gastoS/asistS : 0;
+  const cpaF = asistF > 0 ? gastoF/asistF : 0;
+  const kpis = [
+    {icon:'🏥', val: fmtN(leadsS),  label:'Leads Sedes',        sub:'9 sedes — Laura + Memo',          cls:'c1'},
+    {icon:'🏢', val: fmtN(leadsF),  label:'Leads Franquicias',  sub:'13 franquicias al '+dia,           cls:'c5'},
+    {icon:'💰', val: fmt(gastoS),   label:'Gasto Memo+Laura',   sub:'Sin Promo · 9 sedes al '+dia,      cls:'c2'},
+    {icon:'💳', val: fmt(gastoF),   label:'Gasto Franquicias',  sub:'13 cuentas al '+dia,               cls:'c3'},
+    {icon:'📊', val: fmt(cplS),     label:'CPL Sedes',          sub:'Gasto sedes ÷ Leads sedes',        cls:'c2'},
+    {icon:'📊', val: fmt(cplF),     label:'CPL Franquicias',    sub:'Gasto franq ÷ Leads franq',        cls:'c5'},
+    {icon:'🎯', val: fmt(cpaS),     label:'CPA Sedes',          sub:'Gasto sedes ÷ Asistidas sedes',    cls:'c4'},
+    {icon:'🎯', val: fmt(cpaF),     label:'CPA Franquicias',    sub:'Gasto franq ÷ Asistidas franq',    cls:'c3'},
+    {icon:'📋', val: convCC,        label:'Conv. Agend→Asist',  sub:fmtN(tAgendSedes)+' agend → '+fmtN(tAsistSedes)+' asist (sedes)', cls:'c5'},
+  ];
+  document.getElementById('kpiRow').innerHTML = kpis.map(k =>
+    `<div class="kpi-card ${k.cls}"><span class="kpi-icon">${k.icon}</span>
+     <div class="kpi-val">${k.val}</div>
+     <div class="kpi-label">${k.label}</div>
+     <div class="kpi-sub">${k.sub}</div></div>`
+  ).join('');
+
+  // ── PROYECCIÓN DE CIERRE — solo en el mes en curso ──
+  (function(){
+    var el = document.getElementById('proyRow');
+    if (!el) return;
+    var hoy = new Date();
+    var mesVista = DATA.fecha_ayer ? DATA.fecha_ayer.slice(0,7) : '';
+    var mesReal  = hoy.getFullYear() + '-' + ('0'+(hoy.getMonth()+1)).slice(-2);
+    if (mesVista !== mesReal) { el.innerHTML = ''; return; }
+    var dia = parseInt(DATA.fecha_ayer.slice(8));
+    var diasMes = new Date(parseInt(DATA.fecha_ayer.slice(0,4)), parseInt(DATA.fecha_ayer.slice(5,7)), 0).getDate();
+    if (!(dia > 0)) { el.innerHTML = ''; return; }
+    function proy(v){ return v / dia * diasMes; }
+    // Sumar SOLO las sedes reales (las mismas de la tabla) — excluye boosts
+    // mapeados a otras clinicas (ej. Ajusco) y "Promociones" que viven en el
+    // bucket de sedes pero no son sedes.
+    var SEDES_REALES = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco',
+                        'Balbuena','Tlahuac','Mixquiahuala','Milpa Alta',
+                        'Chalco / Milpa Alta / Tlahuac'];
+    var pLeadsS=0, pGastoS=0, pAsistS=0, pAgendS=0, mlS=0, mccS=0, mlF=0, mccF=0, resF=0;
+    SEDES_REALES.forEach(function(k){
+      var v = s[k] || {};
+      pLeadsS += v.leads_mes||0; pGastoS += v.gasto_mes||0; pAsistS += v.asistidas||0;
+      pAgendS += v.agendadas||0;
+      mlS += v.meta_leads||0; mccS += v.meta_cc||0;
+    });
+    Object.values(f).forEach(function(v){ mlF += v.meta_leads||0; mccF += v.meta_cc||0; resF += (v.cc||{}).res||0; });
+    function celda(tit, val, meta, esDinero, sub){
+      var extra = '';
+      if (meta > 0){
+        var pct = Math.round(val / meta * 100);
+        var color = pct >= 100 ? 'var(--green)' : pct >= 70 ? 'var(--yellow)' : 'var(--pink)';
+        extra = '<div style="font-size:11px;font-weight:700;color:'+color+'">'+pct+'% de meta ('+fmtN(meta)+')</div>';
+      } else if (sub) {
+        extra = '<div style="font-size:11px;color:var(--text3)">'+sub+'</div>';
+      }
+      return '<div style="flex:1 1 105px;min-width:105px;text-align:center;padding:8px 6px;white-space:nowrap">'
+        + '<div style="font-size:10.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px">'+tit+'</div>'
+        + '<div style="font-size:19px;font-weight:800">'+(esDinero ? fmt(Math.round(val)) : fmtN(Math.round(val)))+'</div>'
+        + extra + '</div>';
+    }
+    function grupo(nombre, color, pLeads, ml, pAgend, lblAgend, pAsist, mcc, pGasto){
+      return '<div style="flex:1 1 500px;display:flex;align-items:center;flex-wrap:wrap;'
+        + 'border:1px solid '+color+'40;border-left:4px solid '+color+';border-radius:12px;padding:4px 8px">'
+        + '<div style="min-width:90px;padding:4px 6px;font-size:11.5px;font-weight:800;color:'+color+'">'+nombre+'</div>'
+        + celda('Leads', pLeads, ml, false)
+        + celda(lblAgend, pAgend, 0, false)
+        + celda('Asistidas', pAsist, mcc, false)
+        + celda('Gasto', pGasto, 0, true)
+        + '</div>';
+    }
+    el.innerHTML = '<div style="'
+      + 'background:rgba(255,255,255,.03);border:1px solid rgba(255,214,80,.25);border-radius:14px;'
+      + 'padding:8px 14px;margin:0 0 16px">'
+      + '<div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px">'
+      +   '<span style="font-size:13px;font-weight:800;color:var(--yellow)">🔮 PROYECCIÓN CIERRE</span>'
+      +   '<span style="font-size:10.5px;color:var(--text3)">al ritmo del día '+dia+' de '+diasMes+'</span>'
+      + '</div>'
+      + '<div style="display:flex;flex-wrap:wrap;gap:8px">'
+      + grupo('SEDES', '#16C2A3', proy(pLeadsS), mlS, proy(pAgendS), 'Agendadas', proy(pAsistS), mccS, proy(pGastoS))
+      + grupo('FRANQUICIAS', '#9B5DE5', proy(leadsF), mlF, proy(resF), 'Reservadas', proy(asistF), mccF, proy(gastoF))
+      + '</div></div>';
+  })();
+
+  // Desglose gasto por sede y por franquicia
+  renderGastoDesglose('gastoSedesDetalle', s, 'cyan');
+  renderGastoDesglose('gastoFranqDetalle', f, 'purple');
+}
+
+function renderGastoDesglose(elId, data, color) {
+  const orden = Object.keys(data).sort((a,b) => data[b].gasto_mes - data[a].gasto_mes);
+  const max   = data[orden[0]] ? data[orden[0]].gasto_mes : 1;
+  const grad  = color === 'cyan'
+    ? 'linear-gradient(90deg,#9B5DE5,#6C5CE7)'
+    : 'linear-gradient(90deg,#FF6040,#F4A93C)';
+
+  const filas = orden.map(c => {
+    const v   = data[c];
+    const pct = max > 0 ? Math.round(v.gasto_mes / max * 100) : 0;
+    const cpl = v.leads_mes > 0 ? v.gasto_mes / v.leads_mes : 0;
+    const cplColor = cpl === 0 ? 'var(--text3)' : cpl < 50 ? 'var(--green)' : cpl < 100 ? 'var(--yellow)' : 'var(--pink)';
+    return `<div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--border)">
+      <div style="min-width:120px;font-size:12px;font-weight:600">${c}</div>
+      <div style="flex:1"><div class="prog-bar" style="height:7px"><div class="prog-fill" style="width:${pct}%;background:${grad}"></div></div></div>
+      <div style="min-width:90px;text-align:right;font-size:12px;font-weight:700">${fmt(v.gasto_mes)}</div>
+      <div style="min-width:55px;text-align:right;font-size:11px;color:${cplColor};font-weight:600">${cpl>0?fmt(cpl):'—'}</div>
+    </div>`;
+  }).join('');
+
+  const el = document.getElementById(elId);
+  if (el) el.innerHTML = filas
+    + `<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:12px;font-weight:700;color:var(--cyan)">
+         <span>TOTAL</span>
+         <span>${fmt(orden.reduce((s,c)=>s+data[c].gasto_mes,0))}</span>
+       </div>`;
+}
+
+// ── Charts leads ──
+// ── Gasto por Cuenta — dinámico por mes, con selector de cuentas a sumar ──
+// El total, los % y las barras solo consideran las cuentas palomeadas.
+// La selección se guarda en localStorage (persiste entre visitas y meses).
+var GC_SEL_KEY = 'gcSeleccion_v1';
+function gcGetSel(nombres) {
+  var guardado = {};
+  try { guardado = JSON.parse(localStorage.getItem(GC_SEL_KEY)) || {}; } catch (e) {}
+  var sel = {};
+  nombres.forEach(function(n){ sel[n] = (n in guardado) ? !!guardado[n] : true; });
+  return sel;
+}
+// Re-render al cargar: en file:// el localStorage puede no estar listo cuando
+// corre el primer render y la selección guardada se ignoraría.
+window.addEventListener('load', function(){ try { renderGastoCuentas(); } catch (e) {} });
+function gcToggle(nombre) {
+  var gc = DATA.gasto_cuentas;
+  if (!gc) return;
+  var sel = gcGetSel(Object.keys(gc));
+  sel[nombre] = !sel[nombre];
+  try { localStorage.setItem(GC_SEL_KEY, JSON.stringify(sel)); } catch (e) {}
+  renderGastoCuentas();
+}
+function renderGastoCuentas() {
+  var sec = document.getElementById('gastoCuentasSec');
+  if (!sec) return;
+  var gc = DATA.gasto_cuentas;
+  if (!gc || !Object.keys(gc).length) { sec.style.display = 'none'; return; }
+  sec.style.display = '';
+
+  var titulo = document.getElementById('gastoCuentasTitulo');
+  if (titulo) titulo.textContent = '💳 Gasto por Cuenta — ' + getMesLabel();
+
+  var CFG = {
+    'Laura':        { dot:'var(--coral)',  grad:'linear-gradient(90deg,var(--coral),var(--violet))' },
+    'Memo':         { dot:'var(--violet)', grad:'linear-gradient(90deg,var(--violet),var(--pink))' },
+    'Promociones':  { dot:'var(--teal)',   grad:'linear-gradient(90deg,var(--teal),var(--violet))' },
+    'Gerontología': { dot:'var(--pink)',   grad:'linear-gradient(90deg,var(--pink),var(--violet))' },
+    'Google Ads':   { dot:'var(--yellow)', grad:'linear-gradient(90deg,var(--yellow),var(--coral))' }
+  };
+  var nombres = Object.keys(gc);
+  var sel = gcGetSel(nombres);
+  var activos = nombres.filter(function(n){ return sel[n]; });
+  var total = activos.reduce(function(a,n){ return a + (gc[n]||0); }, 0);
+  var haySeleccion = activos.length < nombres.length;
+
+  // Chips de selección
+  var chips = '';
+  nombres.forEach(function(n){
+    var cfg = CFG[n] || { dot:'var(--cyan)', grad:'var(--cyan)' };
+    var on  = sel[n];
+    chips += '<span onclick="gcToggle(\''+n+'\')" style="cursor:pointer;user-select:none;'
+      + 'display:inline-flex;align-items:center;gap:7px;padding:6px 13px;border-radius:16px;'
+      + 'font-size:12px;font-weight:600;transition:opacity .15s;'
+      + 'border:1.5px solid '+(on ? cfg.dot : 'var(--border)')+';'
+      + 'color:'+(on ? 'var(--text)' : 'var(--text3)')+';'
+      + (on ? '' : 'opacity:.55;')
+      + 'background:'+(on ? 'var(--bg3)' : 'transparent')+'">'
+      + '<span style="width:9px;height:9px;border-radius:50%;background:'+(on ? cfg.dot : 'var(--text3)')+'"></span>'
+      + (on ? '✓ ' : '') + n + '</span>';
+  });
+  var elChips = document.getElementById('gastoCuentasChips');
+  if (elChips) elChips.innerHTML = chips;
+
+  var filas = '';
+  var barras = '';
+  nombres.forEach(function(n){
+    var v   = gc[n] || 0;
+    var on  = sel[n];
+    var pct = (on && total > 0) ? (v/total*100) : 0;
+    var cfg = CFG[n] || { dot:'var(--cyan)', grad:'var(--cyan)' };
+    filas += '<tr style="'+(on ? '' : 'opacity:.4')+'">'
+      + '<td style="padding:10px 12px;border-top:1px solid var(--border)">'
+      +   '<span style="width:9px;height:9px;border-radius:50%;background:'+cfg.dot+';display:inline-block;margin-right:8px"></span>'+n
+      +   (on ? '' : ' <span style="font-size:10px;color:var(--text3)">(fuera de la suma)</span>')+'</td>'
+      + '<td style="padding:10px 12px;border-top:1px solid var(--border);text-align:right;font-weight:700;color:var(--text);'+(on ? '' : 'text-decoration:line-through')+'">'+fmt(v)+'</td>'
+      + '<td style="padding:10px 12px;border-top:1px solid var(--border);text-align:right;color:var(--text2)">'+(on ? pct.toFixed(1)+'%' : '—')+'</td>'
+      + '</tr>';
+    if (on) {
+      barras += '<div>'
+        + '<div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px">'
+        +   '<span style="font-weight:600;color:var(--text)">'+n+'</span>'
+        +   '<span style="color:var(--text2)">'+pct.toFixed(1)+'% · $'+Math.round(v).toLocaleString('es-MX')+'</span>'
+        + '</div>'
+        + '<div style="height:10px;background:var(--bg3);border-radius:5px;overflow:hidden">'
+        +   '<div style="height:100%;width:'+pct.toFixed(1)+'%;background:'+cfg.grad+';border-radius:5px"></div>'
+        + '</div>'
+        + '</div>';
+    }
+  });
+  var lblTotal = haySeleccion ? 'TOTAL (selección)' : 'TOTAL';
+  filas += '<tr style="background:var(--bg3)">'
+    + '<td style="padding:10px 12px;border-top:2px solid var(--border2);font-weight:700;color:var(--text)">'+lblTotal+'</td>'
+    + '<td style="padding:10px 12px;border-top:2px solid var(--border2);text-align:right;font-weight:700;font-size:15px;color:var(--coral)">'+fmt(total)+'</td>'
+    + '<td style="padding:10px 12px;border-top:2px solid var(--border2);text-align:right;font-weight:700;color:var(--text2)">100%</td>'
+    + '</tr>';
+  barras += '<div style="margin-top:8px;padding-top:12px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center">'
+    + '<span style="font-size:12px;font-weight:700;color:var(--text)">'+(haySeleccion ? 'Total selección '+getMesCorto() : 'Total '+getMesCorto())+'</span>'
+    + '<span style="font-size:18px;font-weight:700;color:var(--coral)">'+fmt(total)+'</span>'
+    + '</div>';
+
+  document.getElementById('gastoCuentasTabla').innerHTML = filas;
+  document.getElementById('gastoCuentasBarras').innerHTML = barras;
+}
+
+function renderChartLeads() {
+  const colores = ['#9B5DE5','#FF6040','#16C2A3','#F4A93C','#FF4D8D','#6C5CE7','#00BCD4','#5A8DEE','#26DE81'];
+
+  const sNombres = Object.keys(DATA.sedes).sort();
+  const sLeads   = sNombres.map(k => DATA.sedes[k].leads_mes);
+  mkChart('chartLeadsSedes','bar',sNombres,sLeads,colores,'Leads');
+
+  const fNombres = Object.keys(DATA.franquicias).sort();
+  const fLeads   = fNombres.map(k => DATA.franquicias[k].leads_mes);
+  mkChart('chartLeadsFranq','bar',fNombres,fLeads,colores,'Leads');
+}
+
+// ── Filtro de la gráfica de gasto diario ──
+function setGastoDiario(modo){
+  gastoDiarioModo = modo;
+  renderGastoDiarioFiltros();
+  const g = chartInst['chartGastoDiario'];
+  if (g) {
+    // Chart.js NO respeta dataset.hidden en update() — hay que usar setDatasetVisibility()
+    g.data.datasets.forEach(function(d, i){
+      g.setDatasetVisibility(i, modo === 'todos' || d.key === modo);
+    });
+    g.update();
+  } else {
+    renderGastoDiario();
+  }
+}
+function renderGastoDiarioFiltros(){
+  const wrap = document.getElementById('gastoDiarioFiltros');
+  if(!wrap) return;
+  const opts = [['todos','Todos'],['sedes','Sedes'],['franquicias','Franquicias'],['complementos','Complementos']];
+  wrap.innerHTML = opts.map(([k,lbl])=>{
+    const sel = (gastoDiarioModo === k);
+    return '<button onclick="setGastoDiario(\''+k+'\')" style="'
+      + 'padding:4px 11px;font-size:11px;font-weight:600;border-radius:20px;cursor:pointer;border:1.5px solid;'
+      + (sel ? 'background:var(--cyan);color:#fff;border-color:var(--cyan)' : 'background:none;color:var(--text2);border-color:var(--border)')
+      + '">'+lbl+'</button>';
+  }).join('');
+}
+
+// ── Gasto diario total ──
+function renderGastoDiario() {
+  renderGastoDiarioFiltros();
+  const diarioS = DATA.diario_sedes        || {};
+  const diarioF = DATA.diario_franquicias  || {};
+  const diarioC = DATA.diario_complementos || {};
+  const fechas  = [...new Set([...Object.keys(diarioS), ...Object.keys(diarioF), ...Object.keys(diarioC)])].sort();
+
+  const gastoS = fechas.map(f => (diarioS[f]||{}).gasto||0);
+  const gastoF = fechas.map(f => {
+    const dia = diarioF[f] || {};
+    return Object.values(dia).reduce((a,c) => a + (c.gasto||0), 0);
+  });
+  const gastoC = fechas.map(f => (diarioC[f]||{}).gasto||0);
+
+  // Degradado vertical para el relleno del área (estilo mockup)
+  function areaGrad(rgb){
+    return function(context){
+      const chart = context.chart;
+      const {ctx, chartArea} = chart;
+      if (!chartArea) return 'rgba('+rgb+',0.18)';
+      const g = ctx.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+      g.addColorStop(0, 'rgba('+rgb+',0.38)');
+      g.addColorStop(1, 'rgba('+rgb+',0.02)');
+      return g;
+    };
+  }
+  // Siempre los 3 datasets; se ocultan con hidden según el filtro (más estable que filtrar el array)
+  const base = {fill:true, tension:0.4, borderWidth:2.5, pointRadius:0, pointHoverRadius:5};
+  const datasets = [
+    Object.assign({key:'sedes',        label:'Sedes',        data:gastoS, borderColor:'#9B5DE5', backgroundColor:areaGrad('155,93,229'),  pointBackgroundColor:'#9B5DE5'}, base),
+    Object.assign({key:'franquicias',  label:'Franquicias',  data:gastoF, borderColor:'#FF6040', backgroundColor:areaGrad('255,96,64'),   pointBackgroundColor:'#FF6040'}, base),
+    Object.assign({key:'complementos', label:'Complementos', data:gastoC, borderColor:'#F4A93C', backgroundColor:areaGrad('244,169,60'),  pointBackgroundColor:'#F4A93C'}, base),
+  ].map(d => Object.assign(d, {hidden: (gastoDiarioModo !== 'todos' && d.key !== gastoDiarioModo)}));
+
+  const ctx = document.getElementById('chartGastoDiario').getContext('2d');
+  if (chartInst['chartGastoDiario']) chartInst['chartGastoDiario'].destroy();
+  chartInst['chartGastoDiario'] = new Chart(ctx, {
+    type:'line',
+    data:{
+      labels: fechas.map(f => f.slice(5)),
+      datasets: datasets
+    },
+    options:{responsive:true,maintainAspectRatio:false,
+      animation:false,                 /* evita interpolar el degradado (bug "this._fn is not a function") */
+      interaction:{mode:'index', intersect:false},
+      plugins:{
+        legend:{display:true, labels:{color:'#6A6F8E',font:{size:11},boxWidth:12,padding:12,usePointStyle:true}},
+        tooltip:{
+          backgroundColor:'rgba(20,19,42,0.94)',titleColor:'#B9BCE0',bodyColor:'#FFFFFF',padding:11,cornerRadius:10,
+          callbacks:{label:c=>'  '+c.dataset.label+': $'+Number(c.parsed.y).toLocaleString('es-MX',{minimumFractionDigits:2})}
+        }
+      },
+      scales:{
+        x:{ticks:{color:'#9095AE',font:{size:10}},grid:{display:false}},
+        y:{ticks:{color:'#9095AE',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')},grid:{color:'rgba(28,27,58,0.06)'},border:{display:false}}
+      }
+    }
+  });
+}
+
+// ── Gasto diario Gerontología (separado) ──
+function renderGeroDiario() {
+  const dg = DATA.diario_gerontologia || {};
+  const fechas = Object.keys(dg).sort();
+  if (fechas.length === 0) return;
+
+  const gastos = fechas.map(f => (dg[f]||{}).gasto||0);
+  const leads  = fechas.map(f => (dg[f]||{}).leads||0);
+  const total  = gastos.reduce((a,v)=>a+v, 0);
+  const tLeads = leads.reduce((a,v)=>a+v, 0);
+  const dias   = gastos.filter(v=>v>0).length;
+
+  document.getElementById('kpiGeroDiario').innerHTML =
+    '<div class="kpi-card c1"><div class="kpi-label">Gasto del mes</div><div class="kpi-val">' + fmt(total) + '</div></div>'
+    + '<div class="kpi-card c2"><div class="kpi-label">Promedio diario</div><div class="kpi-val">' + fmt(dias>0?total/dias:0) + '</div></div>'
+    + '<div class="kpi-card c3"><div class="kpi-label">Leads del mes</div><div class="kpi-val">' + fmtN(tLeads) + '</div></div>'
+    + '<div class="kpi-card c4"><div class="kpi-label">CPL Gero</div><div class="kpi-val">' + fmt(tLeads>0?total/tLeads:0) + '</div></div>';
+
+  const ctx = document.getElementById('chartGeroDiario').getContext('2d');
+  if (chartInst['chartGeroDiario']) chartInst['chartGeroDiario'].destroy();
+  chartInst['chartGeroDiario'] = new Chart(ctx, {
+    type:'bar',
+    data:{
+      labels: fechas.map(f=>f.slice(5)),
+      datasets:[{
+        label:'Gasto Gerontología',
+        data: gastos,
+        backgroundColor:'rgba(124,143,212,0.75)',
+        borderRadius:4
+      }]
+    },
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{
+        x:{ticks:{color:'#8AACB5',font:{size:10}},grid:{display:false}},
+        y:{ticks:{color:'#8AACB5',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')},grid:{color:'rgba(63,122,137,0.08)'}}
+      }
+    }
+  });
+
+  const maxG = Math.max(...gastos, 1);
+  document.getElementById('tablaGeroDiario').innerHTML =
+    fechas.map((f,i) => {
+      const g = gastos[i], l = leads[i];
+      const bar = Math.round(g/maxG*100);
+      return '<tr>'
+        + '<td>' + f.slice(5) + '</td>'
+        + '<td style="font-weight:700">' + fmt(g) + '</td>'
+        + '<td>' + fmtN(l) + '</td>'
+        + '<td><div style="background:rgba(124,143,212,0.15);border-radius:4px;height:8px;width:100%">'
+          + '<div style="background:rgba(124,143,212,0.8);border-radius:4px;height:8px;width:'+bar+'%"></div>'
+          + '</div></td>'
+        + '</tr>';
+    }).join('')
+    + '<tr class="sum-row"><td>TOTAL</td><td>' + fmt(total) + '</td><td>' + fmtN(tLeads) + '</td><td></td></tr>';
+}
+
+// ── Alertas ──
+function renderAlertas() {
+  const alertas = generarAlertas();
+  document.getElementById('alertFeed').innerHTML = alertas.map(a =>
+    `<div class="alert-item alert-${a.tipo}">
+      <span class="alert-icon">${a.icon}</span>
+      <div><div class="alert-title">${a.titulo}</div><div class="alert-desc">${a.desc}</div></div>
+    </div>`
+  ).join('');
+}
+
+function generarAlertas() {
+  const alertas = [];
+  // CPL alto en sedes
+  Object.entries(DATA.sedes).forEach(([c,v]) => {
+    if (v.cpl > 80) alertas.push({tipo:'crit',icon:'🔴',titulo:`CPL alto — ${c}`,desc:`CPL de ${fmt(v.cpl)} con ${fmtN(v.leads_mes)} leads. Revisar segmentación o creativos.`});
+    else if (v.cpl > 55) alertas.push({tipo:'warn',icon:'🟡',titulo:`CPL elevado — ${c}`,desc:`CPL de ${fmt(v.cpl)}. Monitorear y comparar con semanas anteriores.`});
+  });
+  // % avance meta
+  Object.entries(DATA.sedes).forEach(([c,v]) => {
+    if (v.meta_cc > 0 && v.pct_meta < 30) alertas.push({tipo:'crit',icon:'📉',titulo:`Avance bajo en CC — ${c}`,desc:`Solo ${v.pct_meta}% de la meta mensual (${v.asistidas}/${v.meta_cc} asistidas). Considerar aumentar presupuesto.`});
+  });
+  // CPA muy alto
+  Object.entries(DATA.sedes).forEach(([c,v]) => {
+    if (v.cpa > 850) alertas.push({tipo:'warn',icon:'⚠️',titulo:`CPA elevado — ${c}`,desc:`CPA de ${fmt(v.cpa)}. El gasto en Meta no está convirtiendo en citas efectivas eficientemente.`});
+  });
+  // franquicias eficientes
+  const mejorFranq = Object.entries(DATA.franquicias).sort((a,b)=>a[1].cpl-b[1].cpl)[0];
+  if (mejorFranq) alertas.push({tipo:'ok',icon:'✅',titulo:`Mejor CPL franquicia — ${mejorFranq[0]}`,desc:`CPL de ${fmt(mejorFranq[1].cpl)} con ${fmtN(mejorFranq[1].leads_mes)} leads. Escalar presupuesto.`});
+  // ecatepec destacado
+  if (DATA.sedes['Ecatepec']) {
+    const e = DATA.sedes['Ecatepec'];
+    alertas.push({tipo:'ok',icon:'⭐',titulo:'Ecatepec — Mayor volumen de leads en Sedes',desc:`${fmtN(e.leads_mes)} leads con CPL de ${fmt(e.cpl)}. Mayor volumen del mes.`});
+  }
+  return alertas.slice(0,8);
+}
+
+// ── Leads de Ayer ──
+function renderAyer() {
+  try {
+  // "Ayer" = último día COMPLETO. El último día con datos suele ser HOY (aún parcial),
+  // así que tomamos la última fecha estrictamente anterior al día de actualización.
+  var fSet = {};
+  Object.keys(DATA.diario_sedes || {}).forEach(function(f){ fSet[f] = 1; });
+  Object.keys(DATA.diario_franquicias || {}).forEach(function(f){ fSet[f] = 1; });
+  var fechas = Object.keys(fSet).sort();
+  if (!fechas.length) return;
+  var hoyISO = '';
+  if (DATA.actualizado) { var p = DATA.actualizado.split(' ')[0].split('/'); if (p.length === 3) hoyISO = p[2] + '-' + p[1] + '-' + p[0]; }
+  var completos = hoyISO ? fechas.filter(function(f){ return f < hoyISO; }) : fechas;
+  var ayer = completos.length ? completos[completos.length - 1] : fechas[fechas.length - 1];
+  var esAyerReal = hoyISO && fechas.indexOf(hoyISO) !== -1 && ayer < hoyISO;
+
+  var diaSedes = (DATA.diario_por_clinica || {})[ayer] || {};
+  var diaFranq = (DATA.diario_franquicias || {})[ayer] || {};
+  var sedes = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta'];
+  var piloto = ['Chalco / Milpa Alta / Tlahuac'];
+  var franqs = Object.keys(DATA.franquicias).sort();
+
+  var MESES_AYER = ['','enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  var mesAyer = MESES_AYER[parseInt(ayer.slice(5,7))] || '';
+  var etiqueta = esAyerReal ? 'Leads de ayer' : 'Leads del último día del mes';
+  document.getElementById('ayerTitulo').textContent = '⚡ ' + etiqueta + ' — ' + ayer.slice(8) + ' de ' + mesAyer;
+
+  function filaAyer(nombre, leads, gasto) {
+    var color = leads >= 60 ? 'var(--green)' : leads >= 30 ? 'var(--yellow)' : leads > 0 ? 'var(--text)' : 'var(--text3)';
+    return '<div style="display:flex;align-items:center;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--border)">'
+      + '<span style="font-size:12px;font-weight:600;min-width:120px">' + nombre + '</span>'
+      + '<span style="font-size:18px;font-weight:800;color:' + color + ';min-width:40px;text-align:right">' + (leads || '0') + '</span>'
+      + '<span style="font-size:11px;color:var(--text3);min-width:70px;text-align:right">' + (gasto > 0 ? fmt(gasto) : '—') + '</span>'
+      + '</div>';
+  }
+
+  var totalS = 0, totalF = 0;
+  var htmlS = sedes.map(function(c) {
+    var d = diaSedes[c] || {}; totalS += d.leads||0;
+    return filaAyer(c, d.leads||0, d.gasto||0);
+  }).join('');
+  htmlS += '<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:12px;font-weight:700;color:var(--cyan)">'
+    + '<span>TOTAL SEDES</span><span>' + totalS + ' leads</span></div>';
+  htmlS += '<div style="margin-top:8px;padding:4px 0;font-size:10px;font-weight:700;color:var(--yellow);letter-spacing:1px;border-top:1px dashed var(--border)">🧪 PILOTO MULTI-SEDE</div>';
+  var htmlPiloto = piloto.map(function(c) {
+    var d = diaSedes[c] || {}; return filaAyer(c, d.leads||0, d.gasto||0);
+  }).join('');
+  htmlS += htmlPiloto;
+
+  var htmlF = franqs.map(function(c) {
+    var d = diaFranq[c] || {}; totalF += d.leads||0;
+    return filaAyer(c, d.leads||0, d.gasto||0);
+  }).join('');
+  htmlF += '<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:12px;font-weight:700;color:var(--purple)">'
+    + '<span>TOTAL FRANQUICIAS</span><span>' + totalF + ' leads</span></div>';
+
+  document.getElementById('ayerSedes').innerHTML = htmlS;
+  document.getElementById('ayerFranq').innerHTML = htmlF;
+  } catch(e) {
+    var el = document.getElementById('ayerSedes');
+    if (el) el.innerHTML = '<span style="color:red;font-size:11px">Error: '+e.message+'</span>';
+  }
+}
+
+// ── Helpers proyección y conversión ──
+function calcProy(asistidas) {
+  var d = DATA.fecha_ayer;
+  var diaActual = parseInt(d.slice(8));
+  var diasMes = new Date(parseInt(d.slice(0,4)), parseInt(d.slice(5,7)), 0).getDate();
+  return diaActual > 0 ? Math.round(asistidas / diaActual * diasMes) : 0;
+}
+function convRate(leads, asistidas) {
+  return leads > 0 ? (asistidas / leads * 100).toFixed(1) + '%' : '—';
+}
+function proyColor(proy, meta) {
+  if (!meta || meta === 0) return 'var(--text2)';
+  var r = proy / meta;
+  return r >= 1 ? 'var(--green)' : r >= 0.7 ? 'var(--yellow)' : 'var(--pink)';
+}
+
+// ── Barra progreso leads ──
+function pctLeadsBar(leads, meta) {
+  if (!meta || meta === 0) return '—';
+  const pct = Math.round(leads / meta * 100);
+  const col = pct >= 70 ? 'var(--green)' : pct >= 40 ? 'var(--yellow)' : 'var(--pink)';
+  const cls = pct >= 70 ? 'green' : pct >= 40 ? 'yellow' : 'red';
+  return `<div class="prog-wrap">
+    <div class="prog-bar"><div class="prog-fill" style="width:${Math.min(pct,100)}%;background:${col}"></div></div>
+    <span class="prog-val"><span class="badge badge-${cls}">${pct}%</span></span>
+  </div>`;
+}
+
+// ── Tabla Sedes ──
+function renderSedes() {
+  const orden = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta','Chalco / Milpa Alta / Tlahuac'];
+  let html = '', tLeads=0, tGasto=0, tAsist=0, tAgend=0, tLeadsCC=0, tReales=0;
+  orden.forEach(c => {
+    const v = DATA.sedes[c] || {};
+    const cc = v.cc || {};
+    tLeads+=v.leads_mes||0; tGasto+=v.gasto_mes||0; tAsist+=v.asistidas||0; tAgend+=v.agendadas||0;
+    tLeadsCC+=cc.leads_cc||0; tReales+=cc.reales||0;
+    const pct   = v.pct_meta||0;
+    const color = pct>=70?'green':pct>=40?'yellow':'red';
+    const proy  = calcProy(v.asistidas||0);
+    const convLA = convRate(v.leads_mes||0, v.asistidas||0);
+    const convAA = convRate(v.agendadas||0, v.asistidas||0);
+    const convLAc = (v.leads_mes||0)>0 ? ((v.asistidas||0)/(v.leads_mes||1)*100 >= 10 ? 'var(--green)' : (v.asistidas||0)/(v.leads_mes||1)*100 >= 5 ? 'var(--yellow)' : 'var(--pink)') : 'var(--text3)';
+    const convAAc = (v.agendadas||0)>0 ? ((v.asistidas||0)/(v.agendadas||1)*100 >= 65 ? 'var(--green)' : (v.asistidas||0)/(v.agendadas||1)*100 >= 50 ? 'var(--yellow)' : 'var(--pink)') : 'var(--text3)';
+    const ml = v.meta_leads||0;
+    const proyL = calcProy(v.leads_mes||0);
+    html += `<tr>
+      <td><b>${c}</b></td>
+      <td>${fmtN(v.leads_mes||0)}</td>
+      <td>${ml>0?fmtN(ml):'—'}</td>
+      <td style="font-weight:700;color:${proyColor(proyL, ml)}">${proyL>0?fmtN(proyL):'—'}</td>
+      <td>${pctLeadsBar(v.leads_mes||0, ml)}</td>
+      <td>${fmt(v.gasto_mes||0)}</td>
+      <td>${fmt(v.cpl||0)}</td>
+      <td>${fmtN(cc.leads_cc||0)}</td>
+      <td>${fmtN(cc.reales||0)}</td>
+      <td style="font-weight:700">${fmtN(v.agendadas||0)}</td>
+      <td style="font-weight:700;color:var(--cyan)">${(v.agendadas||0)>0?fmtN(calcProy(v.agendadas||0)):'—'}</td>
+      <td style="font-weight:700">${fmtN(v.asistidas||0)}</td>
+      <td style="font-weight:700;color:${proyColor(proy,v.meta_cc||0)}">${proy>0?fmtN(proy):'—'}</td>
+      <td>${fmtN(v.meta_cc||0)}</td>
+      <td><div class="prog-wrap">
+        <div class="prog-bar"><div class="prog-fill" style="width:${Math.min(pct,100)}%;background:${pct>=70?'var(--green)':pct>=40?'var(--yellow)':'var(--pink)'}"></div></div>
+        <span class="prog-val"><span class="badge badge-${color}">${pct}%</span></span>
+      </div></td>
+      <td style="font-weight:700;color:${convAAc}">${convAA}</td>
+      <td style="color:${convLAc}">${convLA}</td>
+      <td>${fmtN(v.restan||0)}</td>
+      <td>${fmt(v.cpa||0)}</td>
+    </tr>`;
+  });
+  const cpaTotal = tAsist > 0 ? tGasto/tAsist : 0;
+  const tMl = orden.reduce((a,c)=>(DATA.sedes[c]?(DATA.sedes[c].meta_leads||0):0)+a, 0);
+  html += `<tr class="sum-row"><td>TOTAL</td><td>${fmtN(tLeads)}</td><td>${fmtN(tMl)}</td><td style="font-weight:700;color:${proyColor(calcProy(tLeads),tMl)}">${fmtN(calcProy(tLeads))}</td><td>${pctLeadsBar(tLeads,tMl)}</td><td>${fmt(tGasto)}</td><td>—</td><td>${fmtN(tLeadsCC)}</td><td>${fmtN(tReales)}</td><td>${fmtN(tAgend)}</td><td style="font-weight:700;color:var(--cyan)">${fmtN(calcProy(tAgend))}</td><td>${fmtN(tAsist)}</td><td style="font-weight:700;color:var(--cyan)">${fmtN(calcProy(tAsist))}</td><td>—</td><td>—</td><td style="font-weight:700;color:var(--green)">${convRate(tAgend,tAsist)}</td><td>${convRate(tLeads,tAsist)}</td><td>—</td><td>${fmt(cpaTotal)}</td></tr>`;
+  document.getElementById('tablaSedes').innerHTML = html;
+
+  const nombres = orden.filter(c=>DATA.sedes[c]);
+  const cpls = nombres.map(c=>DATA.sedes[c].cpl||0);
+  const cpas = nombres.map(c=>DATA.sedes[c].cpa||0);
+  mkChart('chartCplSedes','bar',nombres,cpls,['rgba(155,93,229,0.85)'],'CPL $');
+  mkChart('chartCpaSedes','bar',nombres,cpas,['rgba(255,77,141,0.80)'],'CPA $');
+  const asisS  = nombres.map(c=>DATA.sedes[c].asistidas||0);
+  const metasS = nombres.map(c=>DATA.sedes[c].meta_cc||0);
+  mkChart2('chartAvanceSedes', nombres, 'Asistidas', asisS, 'Meta CC', metasS);
+}
+
+// ── Tabla Franquicias ──
+function renderFranquicias() {
+  const orden = Object.keys(DATA.franquicias).sort();
+  let html = '', tLeads=0, tGasto=0, tAsist=0, tLeadsCC=0, tReales=0, tRes=0;
+  orden.forEach(c => {
+    const v = DATA.franquicias[c];
+    const cc = v.cc || {};
+    tLeads+=v.leads_mes; tGasto+=v.gasto_mes; tAsist+=v.asistidas||0;
+    tLeadsCC+=cc.leads_cc||0; tReales+=cc.reales||0; tRes+=cc.res||0;
+    const pct  = v.pct_meta||0;
+    const color = pct>=70?'green':pct>=40?'yellow':'red';
+    const proy  = calcProy(v.asistidas||0);
+    const conv  = convRate(v.leads_mes||0, v.asistidas||0);
+    const convC = v.leads_mes>0 ? (v.asistidas/v.leads_mes*100>=10?'var(--green)':v.asistidas/v.leads_mes*100>=5?'var(--yellow)':'var(--pink)') : 'var(--text3)';
+    const mlf = v.meta_leads||0;
+    const proyLf = calcProy(v.leads_mes||0);
+    html += `<tr>
+      <td><b>${c}</b></td>
+      <td>${fmtN(v.leads_mes)}</td>
+      <td>${mlf>0?fmtN(mlf):'—'}</td>
+      <td style="font-weight:700;color:${proyColor(proyLf, mlf)}">${proyLf>0?fmtN(proyLf):'—'}</td>
+      <td>${pctLeadsBar(v.leads_mes||0, mlf)}</td>
+      <td>${fmt(v.gasto_mes)}</td>
+      <td>${fmt(v.cpl)}</td>
+      <td>${fmtN(cc.leads_cc||0)}</td>
+      <td>${fmtN(cc.reales||0)}</td>
+      <td>${fmtN(cc.res||0)}</td>
+      <td style="font-weight:700;color:var(--cyan)">${(cc.res||0)>0?fmtN(calcProy(cc.res||0)):'—'}</td>
+      <td>${fmtN(v.asistidas||0)}</td>
+      <td style="font-weight:700;color:${proyColor(proy,v.meta_cc||0)}">${proy>0?fmtN(proy):'—'}</td>
+      <td>${v.meta_cc>0?fmtN(v.meta_cc):'—'}</td>
+      <td>${v.meta_cc>0?`<div class="prog-wrap"><div class="prog-bar"><div class="prog-fill" style="width:${Math.min(pct,100)}%;background:${pct>=70?'var(--green)':pct>=40?'var(--yellow)':'var(--pink)'}"></div></div><span class="prog-val"><span class="badge badge-${color}">${pct}%</span></span></div>`:'—'}</td>
+      <td style="font-weight:700;color:${convC}">${conv}</td>
+      <td>${v.meta_cc>0?fmtN(v.restan||0):'—'}</td>
+      <td>${fmt(v.cpa||0)}</td>
+    </tr>`;
+  });
+  const cpaTotal = tAsist > 0 ? tGasto/tAsist : 0;
+  const tMlf = orden.reduce((a,c)=>((DATA.franquicias[c]||{}).meta_leads||0)+a, 0);
+  html += `<tr class="sum-row"><td>TOTAL</td><td>${fmtN(tLeads)}</td><td>${fmtN(tMlf)}</td><td style="font-weight:700;color:${proyColor(calcProy(tLeads),tMlf)}">${fmtN(calcProy(tLeads))}</td><td>${pctLeadsBar(tLeads,tMlf)}</td><td>${fmt(tGasto)}</td><td>—</td><td>${fmtN(tLeadsCC)}</td><td>${fmtN(tReales)}</td><td>${fmtN(tRes)}</td><td style="font-weight:700;color:var(--cyan)">${fmtN(calcProy(tRes))}</td><td>${fmtN(tAsist)}</td><td style="font-weight:700;color:var(--cyan)">${fmtN(calcProy(tAsist))}</td><td>—</td><td>—</td><td>${convRate(tLeads,tAsist)}</td><td>—</td><td>${fmt(cpaTotal)}</td></tr>`;
+  document.getElementById('tablaFranq').innerHTML = html;
+
+  const nombres = orden;
+  const cpls = nombres.map(c=>DATA.franquicias[c].cpl||0);
+  const cpas = nombres.map(c=>DATA.franquicias[c].cpa||0);
+  mkChart('chartCplFranq','bar',nombres,cpls,['rgba(155,93,229,0.85)'],'CPL $');
+  mkChart('chartCpaFranq','bar',nombres,cpas,['rgba(22,194,163,0.80)'],'CPA $');
+  const asisF  = nombres.map(c=>DATA.franquicias[c].asistidas||0);
+  const metasF = nombres.map(c=>DATA.franquicias[c].meta_cc||0);
+  mkChart2('chartAvanceFranq', nombres, 'Asistidas', asisF, 'Meta CC', metasF);
+}
+
+// ── Ad Sets ──
+function renderAdsetFiltros() {
+  const clinicas = [...new Set([
+    ...DATA.adsets_sedes.map(a=>a.clinica),
+    ...DATA.adsets_franquicias.map(a=>a.clinica)
+  ])].filter(Boolean).sort();
+  const sel = document.getElementById('filtroAdsetClinica');
+  sel.innerHTML = '<option value="">— Todas las clínicas —</option>';  // reset: evita opciones duplicadas al cambiar de mes
+  clinicas.forEach(c => { const o=document.createElement('option'); o.value=c; o.textContent=c; sel.appendChild(o); });
+}
+
+function renderAdsets() {
+  const filtro = document.getElementById('filtroAdsetClinica').value;
+  let adsets = [...DATA.adsets_sedes, ...DATA.adsets_franquicias]
+    .filter(a => a.leads > 0 || a.gasto > 0)
+    .filter(a => !filtro || a.clinica === filtro)
+    .sort((a,b) => b.leads - a.leads)
+    .slice(0,50);
+  document.getElementById('tablaAdsets').innerHTML = adsets.map((a,i) =>
+    `<tr><td>${i+1}</td><td>${a.clinica}</td><td style="max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${a.campana}</td>
+     <td style="max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><b>${a.adset}</b></td>
+     <td><b>${fmtN(a.leads)}</b></td><td>${fmt(a.gasto)}</td><td>${fmt(a.cpl)}</td></tr>`
+  ).join('');
+}
+
+// ── Fatiga de anuncios y públicos (window.FATIGA_DATA de data_fatiga.js) ──
+function renderFatiga() {
+  var D = window.FATIGA_DATA;
+  var meta = document.getElementById('fatigaMeta');
+  if (!D) {
+    meta.textContent = '— sin datos: corre ACTUALIZAR TODO.py (o python generar_fatiga.py)';
+    return;
+  }
+  meta.textContent = '· ' + D.periodo + ' · actualizado ' + D.actualizado + ' · siempre muestra el mes en curso';
+
+  var BADGES = {
+    'RENOVAR PUBLICO':    ['badge-red',    '🔄 RENOVAR PÚBLICO'],
+    'PUBLICO CANSANDOSE': ['badge-yellow', '⏳ PÚBLICO CANSÁNDOSE'],
+    'CAMBIAR CREATIVO':   ['badge-red',    '🎨 CAMBIAR CREATIVO'],
+    'VIGILAR':            ['badge-yellow', '👀 VIGILAR']
+  };
+  document.getElementById('tablaFatigaDiag').innerHTML = (D.diagnostico || []).map(function(f) {
+    var b = BADGES[f.veredicto] || ['badge-blue', f.veredicto];
+    return '<tr><td><span class="badge ' + b[0] + '">' + b[1] + '</span></td><td>' + f.cuenta + '</td>' +
+      '<td style="max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><b>' + f.adset + '</b></td>' +
+      '<td><b>' + f.freq.toFixed(2) + 'x</b></td><td>' + fmt(f.gasto) + '</td><td>' + fmtN(f.leads) + '</td>' +
+      '<td>' + (f.cpl ? fmt(f.cpl) : '—') + '</td>' +
+      '<td>' + (f.pct_nuevos != null ? f.pct_nuevos + '%' : '—') + '</td>' +
+      '<td>' + (f.cpm1 && f.cpm2 ? '$' + f.cpm1 + ' → $' + f.cpm2 : '—') + '</td></tr>';
+  }).join('') || '<tr><td colspan="9">Sin fatiga detectada 🎉</td></tr>';
+
+  document.getElementById('tablaFatigaExitosos').innerHTML = (D.exitosos || []).map(function(f, i) {
+    return '<tr><td>' + (i + 1) + '</td><td>' + f.cuenta + '</td>' +
+      '<td style="max-width:240px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><b>' + f.ad + '</b></td>' +
+      '<td style="max-width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + f.adset + '</td>' +
+      '<td>' + f.freq.toFixed(2) + 'x</td><td>' + fmt(f.gasto) + '</td><td><b>' + fmtN(f.leads) + '</b></td>' +
+      '<td><span class="badge badge-green">' + fmt(f.cpl) + '</span></td></tr>';
+  }).join('') || '<tr><td colspan="8">Ninguno con volumen suficiente todavía</td></tr>';
+
+  document.getElementById('tablaFatigaSinLeads').innerHTML = (D.sin_leads || []).map(function(f) {
+    return '<tr><td>' + f.cuenta + '</td><td><b>' + f.adset + '</b></td><td>' + f.freq.toFixed(2) + 'x</td>' +
+      '<td><span class="badge badge-red">' + fmt(f.gasto) + '</span></td></tr>';
+  }).join('') || '<tr><td colspan="4">Ninguno — todo el gasto está dando leads 🎉</td></tr>';
+}
+
+// ── Top Anuncios ──
+function frecBadge(f) {
+  if (!f || f === 0) return '—';
+  var color = f < 2 ? 'var(--green)' : f < 3.5 ? 'var(--yellow)' : 'var(--pink)';
+  var label = f < 2 ? '🟢' : f < 3.5 ? '🟡' : '🔴';
+  return '<span style="font-weight:700;color:' + color + '">' + label + ' ' + f.toFixed(1) + 'x</span>';
+}
+function switchAdFiltro(modo, btn) {
+  adModo = modo;
+  document.querySelectorAll('#tab-anuncios .toggle-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderTopAds();
+}
+
+function renderAdFiltros() {
+  const clinicas = [...new Set([
+    ...DATA.top_ads_sedes.map(a=>a.clinica),
+    ...DATA.top_ads_franquicias.map(a=>a.clinica)
+  ])].filter(Boolean).sort();
+  const sel = document.getElementById('filtroAdClinica');
+  sel.innerHTML = '<option value="">— Todas las clínicas —</option>';  // reset: evita opciones duplicadas al cambiar de mes
+  clinicas.forEach(c => { const o=document.createElement('option'); o.value=c; o.textContent=c; sel.appendChild(o); });
+}
+
+function tipoBadge(tipo) {
+  if (!tipo) return '';
+  const map = {VIDEO:'📹 Video',IMAGEN:'🖼️ Imagen',CARRUSEL:'🎠 Carrusel',OTRO:'Otro'};
+  const cls = {VIDEO:'video',IMAGEN:'imagen',CARRUSEL:'carrusel',OTRO:'otro'};
+  return `<span class="badge badge-${cls[tipo]||'otro'}" style="margin-right:4px">${map[tipo]||tipo}</span>`;
+}
+function statusBadge(s) {
+  if (!s) return '';
+  const activos = ['ACTIVE'];
+  const cls = activos.includes(s) ? 'activo' : 'pausado';
+  const txt = activos.includes(s) ? '● Activo' : '⏸ Pausado';
+  return `<span class="badge badge-${cls}">${txt}</span>`;
+}
+function nuevoBadge(es) { return es ? `<span class="badge badge-nuevo" style="margin-left:4px">✨ Nuevo</span>` : ''; }
+
+function renderTopAds() {
+  try {
+    var selC = document.getElementById('filtroAdClinica');
+    var selT = document.getElementById('filtroAdTipo');
+    var filtroC = selC ? selC.value : '';
+    var filtroT = selT ? selT.value : '';
+    var todos = (DATA.top_ads_sedes || []).concat(DATA.top_ads_franquicias || []);
+
+    if (filtroC) todos = todos.filter(function(a){ return a.clinica === filtroC; });
+    if (filtroT) todos = todos.filter(function(a){ return (a.tipo||'OTRO') === filtroT; });
+
+    var ads;
+    if (adModo === 'sin_leads') {
+      ads = todos.filter(function(a){ return a.leads===0 && a.gasto>0; }).sort(function(a,b){ return b.gasto-a.gasto; });
+    } else if (adModo === 'nuevos') {
+      ads = todos.filter(function(a){ return a.es_nuevo; }).sort(function(a,b){ return b.leads-a.leads; });
+    } else if (adModo === 'todos') {
+      ads = todos.slice().sort(function(a,b){ return b.leads-a.leads; });
+    } else {
+      ads = todos.filter(function(a){ return a.leads>0; }).sort(function(a,b){ return b.leads-a.leads; }).slice(0,50);
+    }
+
+    var contador = '<div style="font-size:12px;color:var(--text2);margin-bottom:10px;padding:4px 8px;background:var(--bg2);border-radius:8px;display:inline-block">'
+      + ads.length + ' anuncios</div>';
+
+    if (ads.length === 0) {
+      document.getElementById('topAdsList').innerHTML = contador +
+        '<div style="text-align:center;padding:40px;color:var(--text3);font-size:13px">Sin anuncios para los filtros seleccionados</div>';
+      return;
+    }
+
+    var filas = ads.map(function(a, i) {
+      var cplColor = a.cpl===0 ? 'var(--text3)' : a.cpl<50 ? 'var(--green)' : a.cpl<100 ? 'var(--yellow)' : 'var(--pink)';
+      return '<tr class="ad-table-row">'
+        + '<td style="text-align:center;font-size:13px;font-weight:700;color:var(--text3)">'+(i+1)+'</td>'
+        + '<td>'+tipoBadge(a.tipo||'OTRO')+' '+statusBadge(a.status)+nuevoBadge(a.es_nuevo)+'</td>'
+        + '<td class="ad-name-cell">'
+          + '<div class="ad-name-main">'+(a.anuncio||'—')+'</div>'
+          + '<div class="ad-name-adset">🎯 '+(a.adset||'—')+'</div>'
+          + '<div class="ad-name-camp">📣 '+(a.campana||'—')+'</div>'
+        + '</td>'
+        + '<td><b style="color:var(--cyan)">'+(a.clinica||'—')+'</b></td>'
+        + '<td style="text-align:right"><b style="font-size:16px">'+fmtN(a.leads)+'</b></td>'
+        + '<td style="text-align:right">'+fmt(a.gasto)+'</td>'
+        + '<td style="text-align:right;font-weight:700;color:'+cplColor+'">'+(a.cpl>0?fmt(a.cpl):'—')+'</td>'
+        + '<td>'+frecBadge(a.frecuencia||0)+'</td>'
+        + '<td style="font-size:11px;color:var(--text3)">'+(a.created||'—')+'</td>'
+        + '</tr>';
+    }).join('');
+
+    document.getElementById('topAdsList').innerHTML = contador
+      + '<div class="table-wrap"><table>'
+      + '<thead><tr>'
+      + '<th>#</th><th>Tipo / Status</th><th>Anuncio · Conjunto · Campaña</th>'
+      + '<th>Clínica</th><th style="text-align:right">Leads</th>'
+      + '<th style="text-align:right">Gasto</th><th style="text-align:right">CPL</th>'
+      + '<th>Frecuencia</th><th>Creado</th>'
+      + '</tr></thead>'
+      + '<tbody>'+filas+'</tbody>'
+      + '</table></div>';
+
+  } catch(e) {
+    document.getElementById('topAdsList').innerHTML =
+      '<div style="color:red;padding:20px">Error: '+e.message+'</div>';
+  }
+}
+
+// ── Gasto Diario detalle ──
+function switchDiario(modo, btn) {
+  diarioMode = modo;
+  document.querySelectorAll('#tab-diario .toggle-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderDiario(modo);
+}
+
+// ── Leads Diarios ──
+function switchLeadsModo(modo, btn) {
+  leadsModo = modo;
+  document.querySelectorAll('#leadsToggleGroup .toggle-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  var sel = document.getElementById('filtroLeadsClinica');
+  sel.style.display = modo === 'clinica' ? 'block' : 'none';
+  renderLeadsDiarios();
+}
+
+function renderLeadsFiltros() {
+  var sedes = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta'];
+  var franq  = Object.keys(DATA.franquicias).sort();
+  var sel = document.getElementById('filtroLeadsClinica');
+  sel.innerHTML = '<option value="">— Selecciona —</option>';  // reset: evita optgroups duplicados al cambiar de mes
+  var grpS = document.createElement('optgroup'); grpS.label = '── Sedes ──';
+  sedes.forEach(function(c){ var o=document.createElement('option'); o.value='s|'+c; o.textContent=c; grpS.appendChild(o); });
+  sel.appendChild(grpS);
+  var grpP = document.createElement('optgroup'); grpP.label = '── Pilotos ──';
+  var oP = document.createElement('option'); oP.value='s|Chalco / Milpa Alta / Tlahuac'; oP.textContent='Chalco / Milpa Alta / Tlahuac'; grpP.appendChild(oP);
+  sel.appendChild(grpP);
+  var grpF = document.createElement('optgroup'); grpF.label = '── Franquicias ──';
+  franq.forEach(function(c){ var o=document.createElement('option'); o.value='f|'+c; o.textContent=c; grpF.appendChild(o); });
+  sel.appendChild(grpF);
+}
+
+function renderLeadsDiarios() {
+  var diarioS  = DATA.diario_sedes        || {};
+  var diarioPc = DATA.diario_por_clinica  || {};
+  var diarioF  = DATA.diario_franquicias  || {};
+
+  var fechas, labels, valores, titulo, colorBar;
+
+  if (leadsModo === 'todas_sedes') {
+    fechas  = Object.keys(diarioS).sort();
+    labels  = fechas.map(function(f){ return f.slice(5); });
+    valores = fechas.map(function(f){ return (diarioS[f]||{}).leads||0; });
+    titulo  = 'Leads Diarios — Todas las Sedes';
+    colorBar= 'rgba(63,122,137,0.7)';
+
+  } else if (leadsModo === 'todas_franq') {
+    var todasFechas = new Set();
+    Object.keys(diarioF).forEach(function(f){ todasFechas.add(f); });
+    fechas  = Array.from(todasFechas).sort();
+    labels  = fechas.map(function(f){ return f.slice(5); });
+    valores = fechas.map(function(f){
+      var dia = diarioF[f]||{};
+      return Object.values(dia).reduce(function(s,v){ return s+(v.leads||0); }, 0);
+    });
+    titulo  = 'Leads Diarios — Todas las Franquicias';
+    colorBar= 'rgba(46,98,115,0.7)';
+
+  } else {
+    var val = document.getElementById('filtroLeadsClinica').value;
+    if (!val) {
+      if (chartInst['chartLeads']) { chartInst['chartLeads'].destroy(); chartInst['chartLeads']=null; }
+      document.getElementById('leadsTablaHead').innerHTML = '';
+      document.getElementById('leadsTablaBody').innerHTML = '<tr><td colspan="2" style="text-align:center;color:var(--text3);padding:30px">Selecciona una clínica del menú</td></tr>';
+      return;
+    }
+    var parts = val.split('|'), tipo = parts[0], clinica = parts[1];
+    var fuente = tipo === 's' ? diarioPc : diarioF;
+    fechas  = Object.keys(fuente).sort();
+    labels  = fechas.map(function(f){ return f.slice(5); });
+    valores = fechas.map(function(f){ return ((fuente[f]||{})[clinica]||{}).leads||0; });
+    titulo  = 'Leads Diarios — ' + clinica;
+    colorBar= tipo === 's' ? 'rgba(63,122,137,0.7)' : 'rgba(167,186,141,0.75)';
+  }
+
+  // Grafica
+  var ctx = document.getElementById('chartLeadsDiarios').getContext('2d');
+  if (chartInst['chartLeads']) chartInst['chartLeads'].destroy();
+  chartInst['chartLeads'] = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Leads',
+        data: valores,
+        backgroundColor: colorBar,
+        borderRadius: 5,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        title: { display: true, text: titulo, color: '#8AACB5', font: {size:13, weight:'700'}, padding:{bottom:10} },
+        tooltip: {
+          backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#8AACB5', bodyColor:'#E8F4F8', padding:10, cornerRadius:8,
+          callbacks: { label: function(c) { return '  ' + Number(c.parsed.y).toLocaleString('es-MX') + ' leads'; } }
+        }
+      },
+      scales: {
+        x: { ticks:{color:'#8AACB5',font:{size:11}}, grid:{display:false} },
+        y: { ticks:{color:'#8AACB5',font:{size:11},stepSize:1}, grid:{color:'rgba(63,122,137,0.08)'},
+             title:{display:true,text:'Leads',color:'#3F7A89',font:{size:10}} }
+      }
+    }
+  });
+
+  // Tabla
+  var total = valores.reduce(function(s,v){return s+v;},0);
+  var maxVal = Math.max.apply(null, valores);
+  document.getElementById('leadsTablaHead').innerHTML =
+    '<th>Día</th><th>Leads</th><th style="min-width:160px">Distribución</th>';
+  document.getElementById('leadsTablaBody').innerHTML =
+    fechas.map(function(f, i) {
+      var v = valores[i];
+      var bar = maxVal > 0 ? Math.round(v/maxVal*100) : 0;
+      var color = v===0?'#ccc':v===maxVal?'var(--cyan)':'var(--text2)';
+      return '<tr>' +
+        '<td>' + f.slice(5) + '</td>' +
+        '<td style="font-weight:700;color:'+color+'">' + (v||'—') + '</td>' +
+        '<td><div style="background:rgba(63,122,137,0.12);border-radius:4px;height:10px;width:100%">' +
+          '<div style="background:var(--cyan);border-radius:4px;height:10px;width:'+bar+'%"></div>' +
+        '</div></td>' +
+      '</tr>';
+    }).join('') +
+    '<tr class="sum-row"><td>TOTAL</td><td>' + total + '</td><td></td></tr>';
+}
+
+// ── CPL Diario por Clínica individual ──
+function renderCplFiltros() {
+  const sedes = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta'];
+  const franq  = Object.keys(DATA.franquicias).sort();
+  const sel = document.getElementById('filtroCplClinica');
+  sel.innerHTML = '<option value="">— Selecciona una clínica —</option>';  // reset: evita optgroups duplicados al cambiar de mes
+
+  const grpS = document.createElement('optgroup'); grpS.label = '── Sedes ──';
+  sedes.forEach(c => { const o=document.createElement('option'); o.value='s|'+c; o.textContent=c; grpS.appendChild(o); });
+  sel.appendChild(grpS);
+
+  const grpP = document.createElement('optgroup'); grpP.label = '── Pilotos ──';
+  const oP = document.createElement('option'); oP.value='s|Chalco / Milpa Alta / Tlahuac'; oP.textContent='Chalco / Milpa Alta / Tlahuac'; grpP.appendChild(oP);
+  sel.appendChild(grpP);
+
+  const grpF = document.createElement('optgroup'); grpF.label = '── Franquicias ──';
+  franq.forEach(c => { const o=document.createElement('option'); o.value='f|'+c; o.textContent=c; grpF.appendChild(o); });
+  sel.appendChild(grpF);
+}
+
+function renderCplClinica() {
+  const val = document.getElementById('filtroCplClinica').value;
+  const empty   = document.getElementById('cplClinicaEmpty');
+  const content = document.getElementById('cplClinicaContent');
+
+  if (!val) { empty.style.display='block'; content.style.display='none'; return; }
+  empty.style.display='none'; content.style.display='block';
+
+  const [tipo, clinica] = val.split('|');
+  const fuente = tipo === 's' ? DATA.diario_por_clinica : DATA.diario_franquicias;
+  const fechas = Object.keys(fuente).sort();
+
+  const dias = fechas.map(f => {
+    const d = (fuente[f] || {})[clinica] || {};
+    const leads = d.leads || 0;
+    const gasto = d.gasto || 0;
+    const cpl   = leads > 0 ? gasto / leads : 0;
+    return { fecha: f.slice(5), leads, gasto, cpl };
+  }).filter(d => d.leads > 0 || d.gasto > 0);
+
+  // Chart combinado: barras leads + línea CPL
+  const ctx = document.getElementById('chartCplClinica').getContext('2d');
+  if (chartInst['chartCplCli']) chartInst['chartCplCli'].destroy();
+  chartInst['chartCplCli'] = new Chart(ctx, {
+    data: {
+      labels: dias.map(d => d.fecha),
+      datasets: [
+        { type:'bar',  label:'Leads',    data: dias.map(d=>d.leads),
+          backgroundColor:'rgba(63,122,137,0.55)', borderRadius:4, yAxisID:'yLeads' },
+        { type:'bar',  label:'Gasto $',  data: dias.map(d=>d.gasto),
+          backgroundColor:'rgba(167,186,141,0.55)', borderRadius:4, yAxisID:'yGasto' },
+        { type:'line', label:'CPL $',    data: dias.map(d=>d.cpl),
+          borderColor:'#f72f7b', backgroundColor:'rgba(247,47,123,0.12)',
+          borderWidth:2.5, pointRadius:4, pointBackgroundColor:'#f72f7b',
+          tension:0.3, fill:false, yAxisID:'yCpl' },
+      ]
+    },
+    options: {
+      responsive:true, maintainAspectRatio:false, interaction:{mode:'index',intersect:false},
+      plugins:{ legend:{labels:{color:'#4A7885',font:{size:11},boxWidth:12}},
+        title:{ display:true, text:`${clinica} — Leads, Gasto y CPL diario`, color:'#1E3A45', font:{size:13,weight:'700'}, padding:{bottom:12} }
+      },
+      scales:{
+        yLeads:{ type:'linear', position:'left',  title:{display:true,text:'Leads',color:'#3F7A89',font:{size:10}},
+          ticks:{color:'#3F7A89',font:{size:10}}, grid:{color:'rgba(63,122,137,0.08)'} },
+        yGasto:{ type:'linear', position:'right', title:{display:true,text:'Gasto $',color:'#A7BA8D',font:{size:10}},
+          ticks:{color:'#A7BA8D',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')}, grid:{display:false} },
+        yCpl:  { type:'linear', position:'right', title:{display:true,text:'CPL $',color:'#f72f7b',font:{size:10}},
+          ticks:{color:'#f72f7b',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')}, grid:{display:false} },
+        x:{ ticks:{color:'#8AACB5',font:{size:10}}, grid:{display:false} }
+      }
+    }
+  });
+
+  // Tabla diaria
+  const cplColor = cpl => cpl===0?'':cpl<50?'color:var(--green);font-weight:700':cpl<100?'color:var(--yellow);font-weight:700':'color:var(--pink);font-weight:700';
+  document.getElementById('tablaCplClinica').innerHTML = dias.map(d =>
+    `<tr>
+      <td>${d.fecha}</td>
+      <td><b>${fmtN(d.leads)}</b></td>
+      <td>${fmt(d.gasto)}</td>
+      <td style="${cplColor(d.cpl)}">${d.cpl>0?fmt(d.cpl):'—'}</td>
+    </tr>`
+  ).join('') + `<tr class="sum-row">
+    <td>TOTAL</td>
+    <td>${fmtN(dias.reduce((a,d)=>a+d.leads,0))}</td>
+    <td>${fmt(dias.reduce((a,d)=>a+d.gasto,0))}</td>
+    <td>${fmt(dias.reduce((a,d)=>a+d.gasto,0)/Math.max(dias.reduce((a,d)=>a+d.leads,0),1))}</td>
+  </tr>`;
+}
+
+function renderDiario(modo) {
+  const fuente = modo === 'sedes' ? DATA.diario_por_clinica : DATA.diario_franquicias;
+  const clinicas = modo === 'sedes'
+    ? ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta']
+    : Object.keys(DATA.franquicias).sort();
+
+  const fechas = Object.keys(fuente || {}).sort();
+
+  // Chart
+  const colores = ['#9B5DE5','#FF6040','#16C2A3','#F4A93C','#FF4D8D','#6C5CE7','#00BCD4','#5A8DEE','#26DE81','#FD9644','#E84393','#4ECDC4','#FFB84D'];
+  const ctx = document.getElementById('chartDiarioDetalle').getContext('2d');
+  if (chartInst['chartDiario']) chartInst['chartDiario'].destroy();
+
+  const datasets = clinicas.map((c,i) => ({
+    label:c, data: fechas.map(f => ((fuente[f]||{})[c]||{}).gasto||0),
+    backgroundColor: colores[i%colores.length]+'99', borderRadius:3
+  }));
+
+  chartInst['chartDiario'] = new Chart(ctx, {
+    type:'bar',
+    data:{ labels: fechas.map(f=>f.slice(5)), datasets },
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{
+        legend:{
+          display:true,
+          labels:{color:'#8AACB5',font:{size:10},boxWidth:12,padding:10},
+        },
+        tooltip:{
+          backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#8AACB5', bodyColor:'#E8F4F8', padding:10, cornerRadius:8,
+          callbacks:{ label: c => '  ' + c.dataset.label + ': $' + Number(c.parsed.y).toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2}) }
+        }
+      },
+      scales:{
+        x:{stacked:true,ticks:{color:'#8A9AB5',font:{size:10}},grid:{display:false}},
+        y:{stacked:true,ticks:{color:'#8A9AB5',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')},grid:{color:'rgba(46,63,92,0.06)'}}
+      }
+    }
+  });
+
+  // Botones Seleccionar todo / Ninguno
+  var btnWrap = document.getElementById('diarioBtns');
+  if (!btnWrap) {
+    btnWrap = document.createElement('div');
+    btnWrap.id = 'diarioBtns';
+    btnWrap.style = 'display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;';
+    document.getElementById('chartDiarioDetalle').parentElement.insertAdjacentElement('beforebegin', btnWrap);
+  }
+  var chart = chartInst['chartDiario'];
+  btnWrap.innerHTML =
+    '<button onclick="diarioToggleAll(true)"  style="background:var(--cyan);color:#fff;border:none;border-radius:6px;padding:4px 12px;font-size:11px;cursor:pointer;font-weight:600">✓ Todas</button>' +
+    '<button onclick="diarioToggleAll(false)" style="background:var(--bg2);color:var(--text2);border:1px solid var(--border);border-radius:6px;padding:4px 12px;font-size:11px;cursor:pointer;font-weight:600">✕ Ninguna</button>' +
+    clinicas.map((c,i)=>`<button onclick="diarioToggleOne(${i})" style="background:${colores[i%colores.length]}33;color:var(--text);border:1px solid ${colores[i%colores.length]};border-radius:6px;padding:3px 10px;font-size:10px;cursor:pointer">${c}</button>`).join('');
+
+  // Tabla
+  const head = `<tr><th>Fecha</th>${clinicas.map(c=>`<th>${c}</th>`).join('')}<th>Total</th></tr>`;
+  document.getElementById('tablaDiariaHead').innerHTML = head;
+
+  const rows = fechas.map(f => {
+    let total = 0;
+    const celdas = clinicas.map(c => {
+      const v = ((fuente[f]||{})[c]||{}).gasto||0;
+      total += v;
+      return `<td>${v>0?fmt(v):'—'}</td>`;
+    });
+    return `<tr><td>${f.slice(5)}</td>${celdas.join('')}<td><b>${fmt(total)}</b></td></tr>`;
+  });
+  document.getElementById('tablaDiariaBody').innerHTML = rows.join('');
+}
+
+// ── Toggle datasets en gráfica diario ──
+function diarioToggleAll(visible) {
+  var chart = chartInst['chartDiario'];
+  if (!chart) return;
+  chart.data.datasets.forEach(function(ds, i) {
+    chart.setDatasetVisibility(i, visible);
+  });
+  chart.update();
+}
+function diarioToggleOne(idx) {
+  var chart = chartInst['chartDiario'];
+  if (!chart) return;
+  var vis = chart.isDatasetVisible(idx);
+  chart.setDatasetVisibility(idx, !vis);
+  chart.update();
+}
+
+// ── Recomendaciones ──
+function renderRecomendaciones() {
+  const recos = [];
+  const todosSedes = Object.entries(DATA.sedes);
+  const todasFranq = Object.entries(DATA.franquicias);
+
+  // Ordenar por CPL
+  const sedesCPL = [...todosSedes].sort((a,b)=>b[1].cpl-a[1].cpl);
+  const franqCPL  = [...todasFranq].sort((a,b)=>b[1].cpl-a[1].cpl);
+
+  sedesCPL.slice(0,2).forEach(([c,v]) => {
+    if (v.cpl > 70) recos.push({tipo:'crit',icon:'🔴',titulo:`Revisar creativos — ${c}`,
+      desc:`CPL de ${fmt(v.cpl)} es de los más altos en Sedes. Rotar anuncios, probar nuevos formatos o pausar conjuntos con peor desempeño.`});
+  });
+
+  const [mejorSede] = [...todosSedes].sort((a,b)=>a[1].cpl-b[1].cpl);
+  if (mejorSede) recos.push({tipo:'ok',icon:'📈',titulo:`Escalar presupuesto — ${mejorSede[0]}`,
+    desc:`Mejor CPL en Sedes: ${fmt(mejorSede[1].cpl)} con ${fmtN(mejorSede[1].leads_mes)} leads. Incrementar presupuesto puede bajar el CPL promedio general.`});
+
+  franqCPL.slice(0,2).forEach(([c,v]) => {
+    if (v.cpl > 55) recos.push({tipo:'warn',icon:'🟡',titulo:`Optimizar conjuntos — ${c}`,
+      desc:`CPL de ${fmt(v.cpl)} en franquicias. Revisar ad sets por padecimiento y pausar los de mayor costo.`});
+  });
+
+  const [mejorFranq] = [...todasFranq].sort((a,b)=>a[1].cpl-b[1].cpl);
+  if (mejorFranq) recos.push({tipo:'ok',icon:'⭐',titulo:`Duplicar estructura — ${mejorFranq[0]}`,
+    desc:`Mejor CPL en Franquicias: ${fmt(mejorFranq[1].cpl)}. Aplicar misma estrategia de segmentación a otras franquicias con CPL alto.`});
+
+  // Metas CC
+  todosSedes.filter(([c,v])=>v.meta_cc>0&&v.pct_meta<35).forEach(([c,v]) => {
+    recos.push({tipo:'crit',icon:'🎯',titulo:`Aumentar inversión — ${c}`,
+      desc:`Solo ${v.pct_meta}% de meta CC (${v.asistidas}/${v.meta_cc} asistidas). Con presupuesto actual el mes cierra muy por debajo de meta.`});
+  });
+
+  // Ad sets con 0 leads
+  const adsetsMalos = [...DATA.adsets_sedes, ...DATA.adsets_franquicias]
+    .filter(a=>a.gasto>500&&a.leads===0);
+  if (adsetsMalos.length > 0) {
+    recos.push({tipo:'crit',icon:'⛔',titulo:`${adsetsMalos.length} conjuntos con gasto sin leads`,
+      desc:`Pausar: ${adsetsMalos.slice(0,3).map(a=>a.adset).join(', ')}${adsetsMalos.length>3?' y más...':''}`});
+  }
+
+  document.getElementById('recoFeed').innerHTML = recos.map(a =>
+    `<div class="alert-item alert-${a.tipo}">
+      <span class="alert-icon">${a.icon}</span>
+      <div><div class="alert-title">${a.titulo}</div><div class="alert-desc">${a.desc}</div></div>
+    </div>`
+  ).join('');
+}
+
+// ── Optimizar — Análisis por Padecimiento ──
+function dxAdset(nombre) {
+  var n = (nombre||'').toUpperCase();
+  if (n.indexOf('HOMBRO')>=0 || n.indexOf('MANGUITO')>=0) return 'Hombro';
+  if (n.indexOf('NEUROPATIA')>=0 || n.indexOf('NEURO')>=0) return 'Neuropatia';
+  if (n.indexOf('RODILLA')>=0 || n.indexOf('MENISCO')>=0) return 'Rodilla';
+  if (n.indexOf('ESPALDA')>=0 || n.indexOf('HERNIA')>=0 || n.indexOf('CIATICA')>=0 || n.indexOf('LUMBAR')>=0) return 'Espalda';
+  if (n.indexOf('VARICES')>=0 || n.indexOf('CIRCULACION')>=0 || n.indexOf('VENAS')>=0) return 'Varices';
+  if (n.indexOf('CERVICAL')>=0 || n.indexOf('CUELLO')>=0) return 'Cervical';
+  if (n.indexOf('PIE')>=0 || n.indexOf('TALON')>=0 || n.indexOf('FASCITIS')>=0 || n.indexOf('TOBILLO')>=0) return 'Pie/Tobillo';
+  if (n.indexOf('QUIRO')>=0) return 'Quiropractica';
+  return 'General';
+}
+
+function renderOptFiltros() {
+  var clinicas = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta'];
+  var sel = document.getElementById('filtroOptClinica');
+  sel.innerHTML = '<option value="">— Todas las clínicas —</option>';  // reset: evita opciones duplicadas al cambiar de mes
+  clinicas.forEach(function(c){ var o=document.createElement('option'); o.value=c; o.textContent=c; sel.appendChild(o); });
+}
+
+function renderOptimizar() {
+  var filtroC = document.getElementById('filtroOptClinica').value;
+  var ccDx = DATA.cc_dx || {};
+  var dx = {};
+  var diasTranscurridos = DATA.fecha_ayer ? parseInt(DATA.fecha_ayer.split('-')[2]) : 21;
+
+  // Acumular leads y gasto por clínica+padecimiento desde adsets
+  var adsets = (DATA.adsets_sedes||[]).concat(DATA.adsets_franquicias||[]);
+  adsets.forEach(function(a) {
+    var clinica = a.clinica || '';
+    if (filtroC && clinica !== filtroC) return;
+    var pad = dxAdset(a.adset);
+    var key = clinica + '|' + pad;
+    if (!dx[key]) dx[key] = {clinica:clinica, pad:pad, leads:0, gasto:0, adsets:0};
+    dx[key].leads  += a.leads  || 0;
+    dx[key].gasto  += a.gasto  || 0;
+    dx[key].adsets += 1;
+  });
+
+  // Calcular CPL y cruzar con CC asistidas por padecimiento
+  var rows = Object.values(dx).map(function(r) {
+    var cpl = r.leads > 0 ? r.gasto / r.leads : 999;
+    var ccClina = ccDx[r.clinica] || {};
+    var asistidas = ccClina[r.pad] || 0;
+    var totalAsist = Object.values(ccClina).reduce(function(s,v){return s+v;},0);
+    var pctAsist = totalAsist > 0 ? Math.round(asistidas / totalAsist * 100) : 0;
+    // Score: inversamente proporcional al CPL, directamente proporcional a asistidas
+    var score = r.leads > 0 ? (pctAsist + 1) / (cpl / 50 + 1) : 0;
+    var accion, aColor;
+    if (score >= 3 && cpl < 80)        { accion='🟢 ESCALAR';  aColor='var(--green)'; }
+    else if (r.leads===0 && r.gasto>300){ accion='🔴 PAUSAR';   aColor='var(--pink)'; }
+    else if (cpl > 120)                 { accion='🟡 OPTIMIZAR'; aColor='var(--yellow)';}
+    else                                { accion='⚪ MANTENER';  aColor='var(--text3)'; }
+    return {clinica:r.clinica, pad:r.pad, adsets:r.adsets, leads:r.leads,
+            gasto:r.gasto, cpl:cpl, asistidas:asistidas, pctAsist:pctAsist,
+            score:score, accion:accion, aColor:aColor};
+  });
+
+  rows.sort(function(a,b){ return b.score - a.score; });
+
+  if (rows.length === 0) {
+    document.getElementById('optContent').innerHTML =
+      '<div style="text-align:center;padding:40px;color:var(--text3)">Sin datos para los filtros seleccionados</div>';
+    return;
+  }
+
+  var filas = rows.map(function(r) {
+    var cplColor = r.cpl===999 ? 'var(--text3)' : r.cpl<50 ? 'var(--green)' : r.cpl<100 ? 'var(--yellow)' : 'var(--pink)';
+    var accionCell;
+    if (r.accion === '🟢 ESCALAR' && r.gasto > 0) {
+      var diaAct = r.gasto / diasTranscurridos;
+      var d20 = diaAct * 1.20;
+      var d40 = diaAct * 1.40;
+      var fmtD = function(v){ return '$' + Math.round(v).toLocaleString('es-MX') + '/día'; };
+      accionCell = '<div style="font-weight:700;color:var(--green)">🟢 ESCALAR</div>'
+        + '<div style="font-size:10px;color:var(--text2);margin-top:4px">Actual: ' + fmtD(diaAct) + '</div>'
+        + '<div style="font-size:10px;color:var(--yellow);font-weight:600">+20% → ' + fmtD(d20) + '</div>'
+        + '<div style="font-size:10px;color:var(--green);font-weight:600">+40% → ' + fmtD(d40) + '</div>';
+    } else {
+      accionCell = '<span style="font-weight:700;color:'+r.aColor+'">' + r.accion + '</span>';
+    }
+    return '<tr>'
+      + '<td><b>' + r.clinica + '</b></td>'
+      + '<td><b>' + r.pad + '</b></td>'
+      + '<td style="text-align:center">' + r.adsets + '</td>'
+      + '<td style="text-align:right"><b>' + fmtN(r.leads) + '</b></td>'
+      + '<td style="text-align:right">' + fmt(r.gasto) + '</td>'
+      + '<td style="text-align:right;font-weight:700;color:'+cplColor+'">' + (r.leads>0?fmt(r.cpl):'—') + '</td>'
+      + '<td style="text-align:center"><b style="font-size:15px">' + r.asistidas + '</b></td>'
+      + '<td style="text-align:center">'
+        + '<div class="prog-wrap"><div class="prog-bar"><div class="prog-fill" style="width:'+Math.min(r.pctAsist*2,100)+'%;background:var(--cyan)"></div></div>'
+        + '<span class="prog-val" style="font-size:11px">' + r.pctAsist + '%</span></div>'
+      + '</td>'
+      + '<td>' + accionCell + '</td>'
+      + '</tr>';
+  }).join('');
+
+  document.getElementById('optContent').innerHTML =
+    '<div class="table-wrap"><table>'
+    + '<thead><tr>'
+    + '<th>Clínica</th><th>Padecimiento</th><th style="text-align:center">Ad Sets</th>'
+    + '<th style="text-align:right">Leads Meta</th><th style="text-align:right">Gasto</th>'
+    + '<th style="text-align:right">CPL</th>'
+    + '<th style="text-align:center">Asistidas CC</th><th style="text-align:center">% del total CC</th>'
+    + '<th>Acción</th>'
+    + '</tr></thead>'
+    + '<tbody>' + filas + '</tbody>'
+    + '</table></div>'
+    + '<div style="margin-top:16px;padding:12px 16px;background:var(--bg2);border-radius:10px;font-size:11px;color:var(--text2);line-height:1.8">'
+    + '<b>Lógica del Score:</b> 🟢 ESCALAR = CPL bajo + padecimiento con alta asistencia en CC &nbsp;|&nbsp; '
+    + '🔴 PAUSAR = gasto sin leads &nbsp;|&nbsp; 🟡 OPTIMIZAR = CPL alto, revisar creativos y segmentación &nbsp;|&nbsp; ⚪ MANTENER = rendimiento normal'
+    + '</div>';
+}
+
+// ── Gerontología ──
+function renderGero() {
+  var g = DATA.gerontologia || {};
+  var orden = ['Consulta Gerontologia', 'Taller Baile'];
+
+  // KPIs globales
+  var tLeads=0, tGasto=0, tAsist=0, tAgend=0;
+  orden.forEach(function(c) {
+    var v = g[c] || {};
+    tLeads += v.leads_mes||0; tGasto += v.gasto_mes||0;
+    tAsist += v.asistidas||0; tAgend += v.agendadas||0;
+  });
+  var cplT = tLeads > 0 ? tGasto/tLeads : 0;
+  var cpaT = tAsist > 0 ? tGasto/tAsist : 0;
+
+  document.getElementById('kpiGero').innerHTML = [
+    {icon:'📥', val:fmtN(tLeads),          label:'Total Leads Gero',   sub:'Consulta + Taller Baile', cls:'c1'},
+    {icon:'📅', val:fmtN(tAgend),           label:'Agendadas CC',       sub:'Citas agendadas',          cls:'c3'},
+    {icon:'✅', val:fmtN(tAsist),           label:'Asistidas',          sub:'Pacientes que asistieron', cls:'c5'},
+    {icon:'📊', val:fmt(cplT),              label:'CPL Promedio',        sub:'Costo por lead',           cls:'c2'},
+    {icon:'🎯', val:cpaT>0?fmt(cpaT):'—',  label:'CPA',                sub:'Gasto ÷ Asistidas',        cls:'c4'},
+  ].map(function(k) {
+    return '<div class="kpi-card '+k.cls+'"><span class="kpi-icon">'+k.icon+'</span>'
+      +'<div class="kpi-val">'+k.val+'</div>'
+      +'<div class="kpi-label">'+k.label+'</div>'
+      +'<div class="kpi-sub">'+k.sub+'</div></div>';
+  }).join('');
+
+  // Mini tarjetas por campaña
+  function miniCard(clave, elId, color) {
+    var v = g[clave] || {};
+    var conv = (v.leads_mes||0) > 0 ? ((v.asistidas||0)/(v.leads_mes||1)*100).toFixed(1)+'%' : '—';
+    var convColor = (v.leads_mes||0) > 0 ? ((v.asistidas||0)/(v.leads_mes||1)*100 >= 5 ? 'var(--green)' : 'var(--yellow)') : 'var(--text3)';
+    function fila(label, val, bold) {
+      return '<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">'
+        +'<span style="font-size:12px;color:var(--text2)">'+label+'</span>'
+        +'<span style="font-size:13px;font-weight:'+(bold?'800':'600')+';color:var(--text)">'+val+'</span></div>';
+    }
+    var el = document.getElementById(elId);
+    if (el) el.innerHTML = fila('Leads Meta', fmtN(v.leads_mes||0), true)
+      + fila('Gasto del mes', fmt(v.gasto_mes||0), false)
+      + fila('CPL', fmt(v.cpl||0), false)
+      + fila('Agendadas CC', fmtN(v.agendadas||0), false)
+      + fila('Asistidas', fmtN(v.asistidas||0), true)
+      + '<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">'
+        +'<span style="font-size:12px;color:var(--text2)">Conv. L→A</span>'
+        +'<span style="font-size:13px;font-weight:800;color:'+convColor+'">'+conv+'</span></div>'
+      + fila('CPA', v.asistidas>0?fmt(v.cpa||0):'—', false);
+  }
+  miniCard('Consulta Gerontologia', 'geroConsultaCard', 'cyan');
+  miniCard('Taller Baile',          'geroTallerCard',   'purple');
+
+  // Tabla resumen
+  var html = '';
+  var tL2=0, tG2=0, tA2=0, tAg2=0;
+  orden.forEach(function(c) {
+    var v = g[c] || {};
+    tL2+=v.leads_mes||0; tG2+=v.gasto_mes||0; tA2+=v.asistidas||0; tAg2+=v.agendadas||0;
+    var conv = (v.leads_mes||0)>0 ? ((v.asistidas||0)/(v.leads_mes||1)*100).toFixed(1)+'%' : '—';
+    var convC = (v.leads_mes||0)>0 ? ((v.asistidas||0)/(v.leads_mes||1)*100>=5?'var(--green)':'var(--yellow)') : 'var(--text3)';
+    html += '<tr><td><b>'+c+'</b></td>'
+      +'<td>'+fmtN(v.leads_mes||0)+'</td>'
+      +'<td>'+fmt(v.gasto_mes||0)+'</td>'
+      +'<td>'+fmt(v.cpl||0)+'</td>'
+      +'<td>'+fmtN(v.agendadas||0)+'</td>'
+      +'<td>'+fmtN(v.asistidas||0)+'</td>'
+      +'<td style="font-weight:700;color:'+convC+'">'+conv+'</td>'
+      +'<td>'+((v.asistidas||0)>0?fmt(v.cpa||0):'—')+'</td></tr>';
+  });
+  var cpaTotal2 = tA2>0 ? tG2/tA2 : 0;
+  var convTotal = tL2>0 ? (tA2/tL2*100).toFixed(1)+'%' : '—';
+  html += '<tr class="sum-row"><td>TOTAL</td><td>'+fmtN(tL2)+'</td><td>'+fmt(tG2)+'</td><td>—</td>'
+    +'<td>'+fmtN(tAg2)+'</td><td>'+fmtN(tA2)+'</td><td>'+convTotal+'</td>'
+    +'<td>'+(cpaTotal2>0?fmt(cpaTotal2):'—')+'</td></tr>';
+  document.getElementById('tablaGero').innerHTML = html;
+
+  // Charts
+  var nombresG = orden.filter(function(c){ return g[c]; });
+  var coloresG = ['rgba(77,191,214,0.75)','rgba(124,143,212,0.75)'];
+  mkChart('chartLeadsGero','bar', nombresG, nombresG.map(function(c){return (g[c]||{}).leads_mes||0;}), coloresG, 'Leads');
+  mkChart('chartCplGero',  'bar', nombresG, nombresG.map(function(c){return (g[c]||{}).cpl||0;}),      coloresG, 'CPL $');
+}
+
+// ── Complementos ──
+function renderComplementos() {
+  var c = DATA.complementos || {};
+  var orden = Object.keys(c).filter(function(k){ return k !== 'Otros' && ((c[k].leads_mes||0) > 0 || (c[k].gasto_mes||0) > 0); }).sort();
+  if (c['Otros'] && ((c['Otros'].leads_mes||0) > 0 || (c['Otros'].gasto_mes||0) > 0)) orden.push('Otros');
+
+  var tLeads = 0, tGasto = 0;
+  orden.forEach(function(k){ tLeads += (c[k]||{}).leads_mes||0; tGasto += (c[k]||{}).gasto_mes||0; });
+  var cplGlobal = tLeads > 0 ? (tGasto / tLeads).toFixed(2) : '0.00';
+
+  // KPIs
+  document.getElementById('kpiComplementos').innerHTML =
+    '<div class="kpi-card"><div class="kpi-label">Sedes activas</div><div class="kpi-val">' + orden.length + '</div></div>'
+    + '<div class="kpi-card"><div class="kpi-label">Leads WhatsApp</div><div class="kpi-val">' + fmtN(tLeads) + '</div></div>'
+    + '<div class="kpi-card"><div class="kpi-label">Gasto del mes</div><div class="kpi-val">' + fmt(tGasto) + '</div></div>'
+    + '<div class="kpi-card"><div class="kpi-label">CPL Global</div><div class="kpi-val">$' + cplGlobal + '</div></div>';
+
+  // Tabla
+  var html = '';
+  orden.forEach(function(k) {
+    var v = c[k] || {};
+    var cplColor = (v.cpl||0) === 0 ? 'var(--text3)' : (v.cpl||0) < 50 ? 'var(--green)' : (v.cpl||0) < 100 ? 'var(--yellow)' : 'var(--pink)';
+    html += '<tr>'
+      + '<td><b>' + k + '</b></td>'
+      + '<td>' + fmtN(v.leads_mes||0) + '</td>'
+      + '<td>' + fmt(v.gasto_mes||0) + '</td>'
+      + '<td style="font-weight:700;color:' + cplColor + '">' + ((v.leads_mes||0) > 0 ? fmt(v.cpl||0) : '—') + '</td>'
+      + '</tr>';
+  });
+  html += '<tr class="sum-row"><td>TOTAL</td><td>' + fmtN(tLeads) + '</td><td>' + fmt(tGasto) + '</td><td>$' + cplGlobal + '</td></tr>';
+  document.getElementById('tablaComplementos').innerHTML = html;
+
+  // Charts
+  var colores = ['rgba(63,122,137,0.75)','rgba(167,186,141,0.75)','rgba(247,47,123,0.65)',
+                 'rgba(124,143,212,0.75)','rgba(247,174,52,0.75)','rgba(77,191,214,0.75)',
+                 'rgba(200,80,80,0.75)','rgba(100,180,100,0.75)','rgba(180,100,200,0.75)'];
+  mkChart('chartGastoCompl', 'bar', orden, orden.map(function(k){ return (c[k]||{}).gasto_mes||0; }), colores, 'Gasto $');
+  mkChart('chartCplCompl',   'bar', orden, orden.map(function(k){ return (c[k]||{}).cpl||0; }),       colores, 'CPL $');
+}
+
+// ── Helper chart ──
+function mkChart(id, type, labels, data, colors, label) {
+  const ctx = document.getElementById(id).getContext('2d');
+  if (chartInst[id]) chartInst[id].destroy();
+  const isCurrency = label && label.indexOf('$') !== -1;
+  const fmtVal = v => isCurrency
+    ? '$' + Number(v).toLocaleString('es-MX', {minimumFractionDigits:2, maximumFractionDigits:2})
+    : Number(v).toLocaleString('es-MX');
+  chartInst[id] = new Chart(ctx, {
+    type,
+    data:{labels, datasets:[{label, data,
+      backgroundColor: Array.isArray(colors)&&colors.length>1 ? colors : data.map((_,i)=>colors[0]||'rgba(108,92,231,0.8)'),
+      borderRadius:5
+    }]},
+    options:{responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index', intersect:false},
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          backgroundColor:'rgba(5,13,20,0.92)',
+          titleColor:'#8AACB5',
+          bodyColor:'#E8F4F8',
+          padding:10,
+          cornerRadius:8,
+          callbacks:{
+            label: ctx => '  ' + (label||'') + ': ' + fmtVal(ctx.raw)
+          }
+        }
+      },
+      scales:{
+        x:{ticks:{color:'#8AACB5',font:{size:10}},grid:{display:false}},
+        y:{ticks:{color:'#8AACB5',font:{size:10},callback:v=>fmtVal(v)},grid:{color:'rgba(63,122,137,0.08)'}}
+      }
+    }
+  });
+}
+
+// Gráfica de barras con 2 datasets (ej. Asistidas vs Meta CC)
+function mkChart2(id, labels, l1, d1, l2, d2, c1, c2) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const ctx = el.getContext('2d');
+  if (chartInst[id]) chartInst[id].destroy();
+  chartInst[id] = new Chart(ctx, {
+    type: 'bar',
+    data: { labels, datasets: [
+      { label: l1, data: d1, backgroundColor: c1 || 'rgba(22,194,163,0.85)', borderRadius: 5 },
+      { label: l2, data: d2, backgroundColor: c2 || 'rgba(138,172,181,0.35)', borderRadius: 5 }
+    ]},
+    options: { responsive:true, maintainAspectRatio:false,
+      interaction:{mode:'index', intersect:false},
+      plugins:{
+        legend:{display:true, labels:{color:'#8AACB5', font:{size:11}, boxWidth:12}},
+        tooltip:{
+          backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#8AACB5', bodyColor:'#E8F4F8',
+          padding:10, cornerRadius:8
+        }
+      },
+      scales:{
+        x:{ticks:{color:'#8AACB5',font:{size:10}},grid:{display:false}},
+        y:{ticks:{color:'#8AACB5',font:{size:10}},grid:{color:'rgba(63,122,137,0.08)'}}
+      }
+    }
+  });
+}
+
+// Fecha header
+document.getElementById('headerDate');
+
+// ── SELECTOR DE MES ──────────────────────────────────────────────────────────
+(function(){
+  var MESES_ES = {
+    "01":"Enero","02":"Febrero","03":"Marzo","04":"Abril","05":"Mayo","06":"Junio",
+    "07":"Julio","08":"Agosto","09":"Septiembre","10":"Octubre","11":"Noviembre","12":"Diciembre"
+  };
+  function labelMes(key){ // "2026-05" → "Mayo 2026"
+    var p = key.split("-"); return (MESES_ES[p[1]] || p[1]) + " " + p[0];
+  }
+
+  var mesActual = null; // la clave del mes cargado actualmente
+  window.getMesActual = function() { return mesActual; };
+
+  function renderSelector(meses, mesSeleccionado){
+    var wrap = document.getElementById("mes-selector");
+    if(!wrap) return;
+    var html = '<span style="font-size:11px;color:var(--text3);margin-right:2px">Mes:</span>';
+    // Un botón por mes disponible (más reciente primero). Sin "Mes actual" — cada mes es su propio botón.
+    meses.slice().reverse().forEach(function(k){
+      var sel = (mesSeleccionado === k);
+      html += '<button onclick="cargarMes(\''+k+'\')" style="'
+        + 'padding:4px 11px;font-size:11px;font-weight:600;border-radius:20px;cursor:pointer;border:1.5px solid;'
+        + (sel ? 'background:var(--yellow);color:#14132A;border-color:var(--yellow)' : 'background:none;color:var(--text2);border-color:var(--border)')
+        + '">'+labelMes(k)+'</button>';
+    });
+    wrap.innerHTML = html;
+  }
+
+  window.cargarMes = function(key){
+    mesActual = key;
+    // Cada mes vive en su propio archivo data_meta_YYYY-MM.js → MESES_DATA[key]. Nunca se mezclan.
+    var datos = (window.MESES_DATA || {})[key];
+    if(!datos){
+      alert("Datos de " + labelMes(key) + " no disponibles.");
+      return;
+    }
+    DATA = datos;          // var global compartida → todas las funciones de render leen este mes
+    window.DATA = datos;
+    if(typeof renderAll === "function") renderAll();
+    var elDate = document.getElementById("headerDate");
+    if(elDate) elDate.textContent = "Actualizado: " + (datos.actualizado || "") + "  —  " + labelMes(key);
+    var elDot = document.getElementById("liveDot");
+    if(elDot) elDot.style.background = "var(--yellow)";
+    renderSelector(window.MESES_DISPONIBLES || [], key);
+  };
+
+  // Init: construir selector con meses disponibles y resaltar el más reciente (ya pintado por tryInit)
+  var meses = window.MESES_DISPONIBLES || [];
+  var latest = meses.length ? meses[meses.length - 1] : null;
+  mesActual = latest;
+  renderSelector(meses, latest);
+})();
+</script>
+
+<!-- PROYECTOR DE METAS -->
+<div id="tab-metajunio" class="tab-panel">
+<div class="content" style="max-width:1400px">
+
+<h2 style="font-size:20px;font-weight:800;margin-bottom:4px;color:var(--cyan)">Proyector de Metas — Sedes</h2>
+<p style="color:var(--text2);font-size:13px;margin-bottom:28px">
+  Escribe tu meta de asistidas por sede y el proyector calcula automáticamente cuántas citas tienes que agendar en CC, cuántos leads necesita Meta y cuánto presupuesto pedir.<br>
+  <span style="color:var(--text3)">Los porcentajes de eficiencia arrancan con los datos reales del <b id="mjMesRef">mes seleccionado</b> (cámbialo con el selector de mes de arriba).</span>
+</p>
+
+<!-- KPIs resumen mayo -->
+<div class="kpi-row" style="margin-bottom:28px" id="mjKpis"></div>
+
+<!-- TABLA REFERENCIA MAYO -->
+<div style="margin-bottom:32px">
+  <div class="section-title" style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text2);text-transform:uppercase;letter-spacing:.06em">
+    Referencia — <span id="mjRefTitulo">mes seleccionado</span>
+  </div>
+  <div class="table-wrap">
+    <table id="tablaMayo">
+      <thead><tr>
+        <th>Sede</th>
+        <th>Leads Meta</th><th>Gasto</th><th>CPL</th>
+        <th>Agendadas CC</th><th>% Lead→Agend</th>
+        <th>Asistidas</th><th>% Agend→Asist</th>
+        <th>CPA</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- PROYECTOR INTERACTIVO -->
+<div>
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+    <div class="section-title" style="font-size:14px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em">
+      Proyector — Escribe tu meta de asistidas por sede
+    </div>
+    <button onclick="mjReset()" style="background:var(--bg2);border:1px solid var(--border);color:var(--text2);border-radius:6px;padding:6px 14px;font-size:12px;cursor:pointer;font-weight:600">
+      ↺ Restaurar % reales
+    </button>
+  </div>
+  <p style="font-size:12px;color:var(--text3);margin-bottom:12px">
+    Puedes editar los <b style="color:var(--yellow)">% de efectividad</b> para simular mejoras del CC. Los valores arrancan con los porcentajes reales del mes seleccionado.
+  </p>
+  <div class="table-wrap">
+    <table id="tablaProyector">
+      <thead><tr>
+        <th>Sede</th>
+        <th style="color:var(--yellow);font-size:11px">% Lead→Agend<br><span style="font-weight:400;color:var(--text3)">editable</span></th>
+        <th style="color:var(--yellow);font-size:11px">% Agend→Asist<br><span style="font-weight:400;color:var(--text3)">editable</span></th>
+        <th style="color:var(--yellow);font-size:11px">CPL<br><span style="font-weight:400;color:var(--text3)">editable</span></th>
+        <th style="background:var(--cyan);color:#000;border-radius:6px 6px 0 0">Meta Asistidas<br><span style="font-size:10px;font-weight:400">(escribe aquí)</span></th>
+        <th>Agendadas CC<br><span style="font-size:10px;font-weight:400">necesarias</span></th>
+        <th>Leads Meta<br><span style="font-size:10px;font-weight:400">necesarios</span></th>
+        <th>Presupuesto<br><span style="font-size:10px;font-weight:400">estimado</span></th>
+      </tr></thead>
+      <tbody id="tbodyProyector"></tbody>
+      <tfoot id="tfootProyector"></tfoot>
+    </table>
+  </div>
+</div>
+
+</div>
+</div>
+
+<script>
+(function(){
+  // ── Proyector dinámico: usa los datos reales del mes seleccionado (DATA) ──
+  var ORDEN = ["Balbuena","Chalco","Coacalco","Ecatepec","Milpa Alta","Mixquiahuala","Neza","Plaza Neza","Tlahuac"];
+
+  var fmt  = function(n){ return '$' + n.toLocaleString('es-MX', {minimumFractionDigits:0, maximumFractionDigits:0}); };
+  var fmtN = function(n){ return n.toLocaleString('es-MX'); };
+  var pct  = function(a,b){ return b>0 ? (a/b*100).toFixed(1)+'%' : '—'; };
+  var pctN = function(a,b){ return b>0 ? (a/b*100) : 0; };
+
+  var REF = {};   // datos del mes seleccionado, por sede
+
+  function datosMes(){
+    var out = {};
+    if (!window.DATA || !DATA.sedes) return out;
+    ORDEN.forEach(function(c){
+      var v = DATA.sedes[c];
+      if (!v) return;
+      out[c] = {
+        leads: v.leads_mes || 0,
+        gasto: v.gasto_mes || 0,
+        agend: v.agendadas || 0,
+        asist: v.asistidas || 0
+      };
+    });
+    return out;
+  }
+
+  // ── Proyector interactivo ─────────────────────────────────────────────────
+  function calcProyector(){
+    var rows = document.querySelectorAll('#tbodyProyector tr');
+    var totMeta=0, totAgendNec=0, totLeadsNec=0, totPres=0;
+    rows.forEach(function(row){
+      var inp  = row.querySelector('.inp-meta');
+      var meta = parseInt(inp.value) || 0;
+      var pLag = (parseFloat(row.querySelector('.inp-lag').value) || 0) / 100;
+      var pAga = (parseFloat(row.querySelector('.inp-aga').value) || 0) / 100;
+      var cpl  = parseFloat(row.querySelector('.inp-cpl').value) || 0;
+
+      var agendNec = (meta > 0 && pAga > 0) ? Math.ceil(meta / pAga) : 0;
+      var leadsNec = (agendNec > 0 && pLag > 0) ? Math.ceil(agendNec / pLag) : 0;
+      var presupuesto = leadsNec * cpl;
+
+      totMeta    += meta;
+      totAgendNec+= agendNec;
+      totLeadsNec+= leadsNec;
+      totPres    += presupuesto;
+
+      var tdAgend = row.querySelector('.td-agend');
+      var tdLeads = row.querySelector('.td-leads');
+      var tdPres  = row.querySelector('.td-pres');
+
+      tdAgend.textContent = agendNec > 0 ? fmtN(agendNec) : '—';
+      tdLeads.textContent = leadsNec > 0 ? fmtN(leadsNec) : '—';
+      tdPres.textContent  = presupuesto > 0 ? fmt(Math.round(presupuesto)) : '—';
+
+      tdAgend.style.color = agendNec > 0 ? 'var(--text)' : 'var(--text3)';
+      tdLeads.style.color = leadsNec > 0 ? 'var(--text)' : 'var(--text3)';
+      tdPres.style.color  = presupuesto > 0 ? 'var(--cyan)' : 'var(--text3)';
+    });
+    var tf = document.getElementById('tfootProyector');
+    tf.innerHTML = '<tr class="sum-row">'
+      + '<td colspan="3">TOTAL</td>'
+      + '<td style="color:var(--cyan);font-size:16px;font-weight:800">'+(totMeta>0?fmtN(totMeta):'—')+'</td>'
+      + '<td style="font-weight:700">'+(totAgendNec>0?fmtN(totAgendNec):'—')+'</td>'
+      + '<td style="font-weight:700">'+(totLeadsNec>0?fmtN(totLeadsNec):'—')+'</td>'
+      + '<td style="color:var(--cyan);font-weight:800;font-size:15px">'+(totPres>0?fmt(Math.round(totPres)):'—')+'</td>'
+      + '</tr>';
+  }
+
+  window.mjCalc = calcProyector;
+
+  window.mjReset = function(){
+    document.querySelectorAll('#tbodyProyector tr').forEach(function(row){
+      row.querySelector('.inp-lag').value = row.dataset.lag;
+      row.querySelector('.inp-aga').value = row.dataset.aga;
+      row.querySelector('.inp-cpl').value = row.dataset.cpl;
+    });
+    calcProyector();
+  };
+
+  // ── Render completo del tab (se llama en init/renderAll, con el mes activo) ──
+  window.renderProyector = function(){
+    REF = datosMes();
+    var sedes = ORDEN.filter(function(c){ return REF[c]; });
+    if (!sedes.length) return;
+
+    var mesLbl = (typeof getMesLabel === 'function') ? getMesLabel() : '';
+    var el = document.getElementById('mjMesRef');   if (el) el.textContent = mesLbl || 'mes seleccionado';
+    el = document.getElementById('mjRefTitulo');    if (el) el.textContent = mesLbl || 'mes seleccionado';
+
+    // KPIs resumen
+    var totLeads=0, totGasto=0, totAgend=0, totAsist=0;
+    sedes.forEach(function(c){ var v=REF[c]; totLeads+=v.leads; totGasto+=v.gasto; totAgend+=v.agend; totAsist+=v.asist; });
+    var kpis = [
+      {label:'Leads Meta '+mesLbl,  val: fmtN(totLeads)},
+      {label:'Gasto Total', val: fmt(totGasto)},
+      {label:'Agendadas CC',     val: fmtN(totAgend)},
+      {label:'Asistidas',        val: fmtN(totAsist)},
+      {label:'CPL Promedio',     val: totLeads>0 ? fmt(Math.round(totGasto/totLeads)) : '—'},
+      {label:'CPA Promedio',     val: totAsist>0 ? fmt(Math.round(totGasto/totAsist)) : '—'},
+      {label:'% Lead→Agend',     val: pct(totAgend, totLeads)},
+      {label:'% Agend→Asist',    val: pct(totAsist, totAgend)},
+    ];
+    var kHtml = '';
+    kpis.forEach(function(k){
+      kHtml += '<div class="kpi-card"><div class="kpi-label">'+k.label+'</div><div class="kpi-val">'+k.val+'</div></div>';
+    });
+    document.getElementById('mjKpis').innerHTML = kHtml;
+
+    // Tabla de referencia del mes
+    var mHtml = '';
+    sedes.forEach(function(c){
+      var v = REF[c];
+      var cpl  = v.leads>0 ? v.gasto / v.leads : 0;
+      var cpa  = v.asist>0 ? v.gasto / v.asist : 0;
+      var pLag = pctN(v.agend, v.leads);
+      var pAga = pctN(v.asist, v.agend);
+      var cLag = pLag >= 12 ? 'var(--green)' : pLag >= 8 ? 'var(--yellow)' : 'var(--pink)';
+      var cAga = pAga >= 70 ? 'var(--green)' : pAga >= 55 ? 'var(--yellow)' : 'var(--pink)';
+      mHtml += '<tr>'
+        + '<td><b>'+c+'</b></td>'
+        + '<td>'+fmtN(v.leads)+'</td>'
+        + '<td>'+fmt(v.gasto)+'</td>'
+        + '<td>'+fmt(Math.round(cpl))+'</td>'
+        + '<td>'+fmtN(v.agend)+'</td>'
+        + '<td style="font-weight:700;color:'+cLag+'">'+(v.leads>0?pLag.toFixed(1)+'%':'—')+'</td>'
+        + '<td>'+fmtN(v.asist)+'</td>'
+        + '<td style="font-weight:700;color:'+cAga+'">'+(v.agend>0?pAga.toFixed(1)+'%':'—')+'</td>'
+        + '<td>'+fmt(Math.round(cpa))+'</td>'
+        + '</tr>';
+    });
+    var cplT = totLeads>0 ? totGasto/totLeads : 0, cpaT = totAsist>0 ? totGasto/totAsist : 0;
+    mHtml += '<tr class="sum-row">'
+      + '<td>TOTAL</td>'
+      + '<td>'+fmtN(totLeads)+'</td>'
+      + '<td>'+fmt(totGasto)+'</td>'
+      + '<td>'+fmt(Math.round(cplT))+'</td>'
+      + '<td>'+fmtN(totAgend)+'</td>'
+      + '<td style="font-weight:700">'+pct(totAgend,totLeads)+'</td>'
+      + '<td>'+fmtN(totAsist)+'</td>'
+      + '<td style="font-weight:700">'+pct(totAsist,totAgend)+'</td>'
+      + '<td>'+fmt(Math.round(cpaT))+'</td>'
+      + '</tr>';
+    document.querySelector('#tablaMayo tbody').innerHTML = mHtml;
+
+    // Filas del proyector (inputs arrancan con los % reales del mes)
+    var inputStyle = 'width:72px;background:var(--bg3,var(--bg2));border:1.5px solid var(--yellow);border-radius:6px;'
+      + 'color:var(--yellow);font-size:13px;font-weight:700;padding:5px 8px;text-align:center;outline:none';
+    var metaStyle  = 'width:90px;background:var(--bg3,var(--bg2));border:1.5px solid var(--cyan);border-radius:6px;'
+      + 'color:var(--cyan);font-size:15px;font-weight:700;padding:6px 10px;text-align:center;outline:none';
+
+    var pHtml = '';
+    sedes.forEach(function(c){
+      var v    = REF[c];
+      var pLag = v.leads>0 ? (v.agend/v.leads*100).toFixed(1) : '0';
+      var pAga = v.agend>0 ? (v.asist/v.agend*100).toFixed(1) : '0';
+      var cplV = v.leads>0 ? (v.gasto/v.leads).toFixed(2) : '0';
+      pHtml += '<tr data-clinica="'+c+'" data-lag="'+pLag+'" data-aga="'+pAga+'" data-cpl="'+cplV+'">'
+        + '<td><b>'+c+'</b></td>'
+        + '<td style="background:rgba(255,220,0,.05);padding:5px 8px">'
+        +   '<input type="number" class="inp-lag" min="0" max="100" step="0.1" value="'+pLag+'" oninput="mjCalc()" style="'+inputStyle+'">'
+        +   '<span style="font-size:11px;color:var(--text3);margin-left:3px">%</span>'
+        + '</td>'
+        + '<td style="background:rgba(255,220,0,.05);padding:5px 8px">'
+        +   '<input type="number" class="inp-aga" min="0" max="100" step="0.1" value="'+pAga+'" oninput="mjCalc()" style="'+inputStyle+'">'
+        +   '<span style="font-size:11px;color:var(--text3);margin-left:3px">%</span>'
+        + '</td>'
+        + '<td style="background:rgba(255,220,0,.05);padding:5px 8px">'
+        +   '<input type="number" class="inp-cpl" min="0" step="0.01" value="'+cplV+'" oninput="mjCalc()" style="'+inputStyle+'">'
+        +   '<span style="font-size:11px;color:var(--text3);margin-left:3px">$</span>'
+        + '</td>'
+        + '<td style="background:rgba(0,240,255,.07);padding:6px 8px">'
+        +   '<input type="number" class="inp-meta" min="0" max="9999" placeholder="0" oninput="mjCalc()" style="'+metaStyle+'">'
+        + '</td>'
+        + '<td class="td-agend" style="color:var(--text3)">—</td>'
+        + '<td class="td-leads" style="color:var(--text3)">—</td>'
+        + '<td class="td-pres"  style="color:var(--text3)">—</td>'
+        + '</tr>';
+    });
+    document.getElementById('tbodyProyector').innerHTML = pHtml;
+    calcProyector();
+  };
+
+  // Auto-render: si init() ya corrio durante el parseo (DATA lista antes de que
+  // existiera esta funcion), renderizamos aqui mismo; si no, init() nos llamara.
+  if (window.DATA && DATA.sedes) window.renderProyector();
+})();
+</script>
+
+</main>
+</div><!-- /app -->
+
+</body>
+</html>
