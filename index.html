@@ -485,7 +485,7 @@ body:not(.unlocked) #login{display:flex}
   <!-- Desglose gasto por franquicia -->
   <div class="charts-row" style="grid-template-columns:1fr 1fr;margin-bottom:24px">
     <div class="chart-card">
-      <div class="chart-title" id="tituloGastoSedes" style="margin-bottom:14px">💸 Gasto Memo+Laura por Sede (sin Promo)</div>
+      <div class="chart-title" id="tituloGastoSedes" style="margin-bottom:14px">💸 Gasto Laura por Sede (sin Promo)</div>
       <div id="gastoSedesDetalle"></div>
     </div>
     <div class="chart-card">
@@ -871,7 +871,7 @@ function init() {
   // Títulos dinámicos por mes
   if (document.getElementById('tituloLeadsSedes'))  document.getElementById('tituloLeadsSedes').textContent  = 'Leads por Sede — ' + ml;
   if (document.getElementById('tituloLeadsFranq'))  document.getElementById('tituloLeadsFranq').textContent  = 'Leads por Franquicia — ' + ml;
-  if (document.getElementById('tituloGastoSedes'))  document.getElementById('tituloGastoSedes').innerHTML    = '💸 Gasto Memo+Laura (sin Promo) — ' + ml;
+  if (document.getElementById('tituloGastoSedes'))  document.getElementById('tituloGastoSedes').innerHTML    = '💸 Gasto Laura (sin Promo) — ' + ml;
   if (document.getElementById('tituloGastoFranq'))  document.getElementById('tituloGastoFranq').innerHTML    = '🏢 Gasto por Franquicia — ' + ml;
   // Encabezados de tablas
   document.querySelectorAll('.col-gasto-mes').forEach(function(el){ el.textContent = 'Gasto ' + ml; });
@@ -1009,9 +1009,9 @@ function renderKPIs() {
   const cpaS = asistS > 0 ? gastoS/asistS : 0;
   const cpaF = asistF > 0 ? gastoF/asistF : 0;
   const kpis = [
-    {icon:'🏥', val: fmtN(leadsS),  label:'Leads Sedes',        sub:'9 sedes — Laura + Memo',          cls:'c1'},
+    {icon:'🏥', val: fmtN(leadsS),  label:'Leads Sedes',        sub:'9 sedes — Laura',                 cls:'c1'},
     {icon:'🏢', val: fmtN(leadsF),  label:'Leads Franquicias',  sub:'13 franquicias al '+dia,           cls:'c5'},
-    {icon:'💰', val: fmt(gastoS),   label:'Gasto Memo+Laura',   sub:'Sin Promo · 9 sedes al '+dia,      cls:'c2'},
+    {icon:'💰', val: fmt(gastoS),   label:'Gasto Laura',        sub:'Sin Promo · 9 sedes al '+dia,      cls:'c2'},
     {icon:'💳', val: fmt(gastoF),   label:'Gasto Franquicias',  sub:'13 cuentas al '+dia,               cls:'c3'},
     {icon:'📊', val: fmt(cplS),     label:'CPL Sedes',          sub:'Gasto sedes ÷ Leads sedes',        cls:'c2'},
     {icon:'📊', val: fmt(cplF),     label:'CPL Franquicias',    sub:'Gasto franq ÷ Leads franq',        cls:'c5'},
@@ -1157,7 +1157,6 @@ function renderGastoCuentas() {
 
   var CFG = {
     'Laura':        { dot:'var(--coral)',  grad:'linear-gradient(90deg,var(--coral),var(--violet))' },
-    'Memo':         { dot:'var(--violet)', grad:'linear-gradient(90deg,var(--violet),var(--pink))' },
     'Promociones':  { dot:'var(--teal)',   grad:'linear-gradient(90deg,var(--teal),var(--violet))' },
     'Gerontología': { dot:'var(--pink)',   grad:'linear-gradient(90deg,var(--pink),var(--violet))' },
     'Google Ads':   { dot:'var(--yellow)', grad:'linear-gradient(90deg,var(--yellow),var(--coral))' }
