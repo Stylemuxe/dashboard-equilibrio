@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "04/08/2026 11:26",
+ "actualizado": "04/08/2026 12:02",
  "periodo": "2026-08-01 a 2026-08-04",
  "diagnostico": [],
  "exitosos": [
@@ -8,17 +8,17 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.33,
-   "gasto": 630,
-   "leads": 166,
+   "gasto": 634,
+   "leads": 169,
    "cpl": 4
   },
   {
    "cuenta": "Nicolas Romero",
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
-   "freq": 1.24,
-   "gasto": 680,
-   "leads": 76,
+   "freq": 1.25,
+   "gasto": 692,
+   "leads": 78,
    "cpl": 9
   },
   {
@@ -26,7 +26,7 @@ window.FATIGA_DATA = {
    "ad": "VID_TARD2",
    "adset": "Publicación: \"Más movimiento, más independencia y más momentos...\"",
    "freq": 1.23,
-   "gasto": 646,
+   "gasto": 647,
    "leads": 67,
    "cpl": 10
   },
@@ -34,8 +34,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "Neuropatia",
    "adset": "ORGANICO PAUTA",
-   "freq": 1.41,
-   "gasto": 2341,
+   "freq": 1.42,
+   "gasto": 2368,
    "leads": 193,
    "cpl": 12
   },
@@ -44,8 +44,8 @@ window.FATIGA_DATA = {
    "ad": "PROMO",
    "adset": "ORGANICO PAUTA",
    "freq": 1.25,
-   "gasto": 583,
-   "leads": 50,
+   "gasto": 593,
+   "leads": 51,
    "cpl": 12
   },
   {
@@ -62,7 +62,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.17,
-   "gasto": 628,
+   "gasto": 644,
    "leads": 52,
    "cpl": 12
   },
@@ -70,8 +70,8 @@ window.FATIGA_DATA = {
    "cuenta": "Nicolas Romero",
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
-   "freq": 1.35,
-   "gasto": 601,
+   "freq": 1.36,
+   "gasto": 611,
    "leads": 52,
    "cpl": 12
   },
@@ -80,7 +80,7 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO CHECK",
    "freq": 1.16,
-   "gasto": 551,
+   "gasto": 552,
    "leads": 36,
    "cpl": 15
   },
@@ -88,9 +88,9 @@ window.FATIGA_DATA = {
    "cuenta": "Xochimilco",
    "ad": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
    "adset": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
-   "freq": 1.34,
-   "gasto": 3620,
-   "leads": 171,
+   "freq": 1.35,
+   "gasto": 3681,
+   "leads": 176,
    "cpl": 21
   },
   {
@@ -98,7 +98,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿Vives en la zona del Ajusco y sufres de dolor? 🌱\"",
    "adset": "VIDEO AJUSCO",
    "freq": 1.22,
-   "gasto": 1964,
+   "gasto": 1988,
    "leads": 91,
    "cpl": 22
   },
@@ -112,12 +112,12 @@ window.FATIGA_DATA = {
    "cpl": 22
   },
   {
-   "cuenta": "Claveria",
-   "ad": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
-   "adset": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
-   "freq": 1.17,
-   "gasto": 724,
-   "leads": 32,
+   "cuenta": "Pachuca",
+   "ad": "VID - NEUROPATIA JUN",
+   "adset": "NEUROPATÍA",
+   "freq": 1.66,
+   "gasto": 584,
+   "leads": 25,
    "cpl": 23
   },
   {
@@ -139,12 +139,12 @@ window.FATIGA_DATA = {
    "cpl": 23
   },
   {
-   "cuenta": "Pachuca",
-   "ad": "VID - NEUROPATIA JUN",
-   "adset": "NEUROPATÍA",
-   "freq": 1.65,
-   "gasto": 570,
-   "leads": 24,
+   "cuenta": "Claveria",
+   "ad": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
+   "adset": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
+   "freq": 1.17,
+   "gasto": 765,
+   "leads": 32,
    "cpl": 24
   },
   {
@@ -152,8 +152,8 @@ window.FATIGA_DATA = {
    "ad": "VID - ESPALDA GABO V1 JUN",
    "adset": "ESPALDA",
    "freq": 1.2,
-   "gasto": 669,
-   "leads": 28,
+   "gasto": 686,
+   "leads": 29,
    "cpl": 24
   },
   {
@@ -161,15 +161,15 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿Vives en la zona de Balbuena y el dolor ya forma...\"",
    "adset": "VIDEO BALBUENA",
    "freq": 1.26,
-   "gasto": 5629,
-   "leads": 223,
+   "gasto": 5716,
+   "leads": 226,
    "cpl": 25
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID - ESTUDIO COLUMNA",
    "adset": "ESPALDA",
-   "freq": 1.23,
+   "freq": 1.24,
    "gasto": 522,
    "leads": 20,
    "cpl": 26
@@ -179,53 +179,53 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿Eres de Milpa Alta? y ese dolor todavía no...\"",
    "adset": "Publicación: \"¿Eres de Milpa Alta? y ese dolor todavía no...\"",
    "freq": 1.4,
-   "gasto": 3679,
-   "leads": 133,
-   "cpl": 28
+   "gasto": 3743,
+   "leads": 137,
+   "cpl": 27
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"¿Vives con dolor en Ecatepec? 📍\"",
    "adset": "Publicación: \"¿Vives con dolor en Ecatepec? 📍\"",
    "freq": 1.4,
-   "gasto": 5124,
-   "leads": 176,
+   "gasto": 5204,
+   "leads": 178,
    "cpl": 29
   },
   {
-   "cuenta": "Claveria",
-   "ad": "VID _ CIATICA _ JUN",
-   "adset": "ESPALDA - CHECK",
-   "freq": 1.34,
-   "gasto": 755,
-   "leads": 25,
+   "cuenta": "Promo/Compl.",
+   "ad": "Publicación: \"Recupera tu bienestar sin salir de Neza. 🏃‍♂️✨\"",
+   "adset": "Publicación: \"Recupera tu bienestar sin salir de Neza. 🏃‍♂️✨\"",
+   "freq": 1.25,
+   "gasto": 7288,
+   "leads": 240,
    "cpl": 30
   },
   {
    "cuenta": "Tepeyac",
    "ad": "VID - MARY",
    "adset": "Neuropatia",
-   "freq": 1.27,
-   "gasto": 2322,
+   "freq": 1.28,
+   "gasto": 2361,
    "leads": 78,
    "cpl": 30
   },
   {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"Recupera tu bienestar sin salir de Neza. 🏃‍♂️✨\"",
-   "adset": "Publicación: \"Recupera tu bienestar sin salir de Neza. 🏃‍♂️✨\"",
-   "freq": 1.26,
-   "gasto": 7172,
-   "leads": 235,
+   "cuenta": "Claveria",
+   "ad": "VID _ CIATICA _ JUN",
+   "adset": "ESPALDA - CHECK",
+   "freq": 1.34,
+   "gasto": 767,
+   "leads": 25,
    "cpl": 31
   },
   {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"¿Dolor de espalda, hombro o rodilla? ⚠️ Ponle un...\"",
-   "adset": "Publicación: \"¿Dolor de espalda, hombro o rodilla? ⚠️ Ponle un...\"",
-   "freq": 1.28,
-   "gasto": 6557,
-   "leads": 202,
+   "cuenta": "Claveria",
+   "ad": "VID - RODILLA",
+   "adset": "RODILLA - CHECK",
+   "freq": 1.2,
+   "gasto": 681,
+   "leads": 21,
    "cpl": 32
   }
  ],
