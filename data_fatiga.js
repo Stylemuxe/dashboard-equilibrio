@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "04/08/2026 08:29",
+ "actualizado": "04/08/2026 11:26",
  "periodo": "2026-08-01 a 2026-08-04",
  "diagnostico": [],
  "exitosos": [
@@ -7,9 +7,9 @@ window.FATIGA_DATA = {
    "cuenta": "Gerontologia",
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
-   "freq": 1.32,
-   "gasto": 608,
-   "leads": 160,
+   "freq": 1.33,
+   "gasto": 630,
+   "leads": 166,
    "cpl": 4
   },
   {
@@ -17,8 +17,8 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.24,
-   "gasto": 623,
-   "leads": 72,
+   "gasto": 680,
+   "leads": 76,
    "cpl": 9
   },
   {
@@ -31,30 +31,21 @@ window.FATIGA_DATA = {
    "cpl": 10
   },
   {
-   "cuenta": "Nicolas Romero",
-   "ad": "VID_RODNICO_JUL",
-   "adset": "RODILLA",
-   "freq": 1.32,
-   "gasto": 562,
-   "leads": 50,
-   "cpl": 11
-  },
-  {
    "cuenta": "Promo/Compl.",
    "ad": "Neuropatia",
    "adset": "ORGANICO PAUTA",
-   "freq": 1.4,
-   "gasto": 2210,
-   "leads": 184,
+   "freq": 1.41,
+   "gasto": 2341,
+   "leads": 193,
    "cpl": 12
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "PROMO",
    "adset": "ORGANICO PAUTA",
-   "freq": 1.24,
-   "gasto": 545,
-   "leads": 47,
+   "freq": 1.25,
+   "gasto": 583,
+   "leads": 50,
    "cpl": 12
   },
   {
@@ -70,9 +61,18 @@ window.FATIGA_DATA = {
    "cuenta": "Queretaro",
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
-   "freq": 1.14,
-   "gasto": 573,
-   "leads": 46,
+   "freq": 1.17,
+   "gasto": 628,
+   "leads": 52,
+   "cpl": 12
+  },
+  {
+   "cuenta": "Nicolas Romero",
+   "ad": "VID_RODNICO_JUL",
+   "adset": "RODILLA",
+   "freq": 1.35,
+   "gasto": 601,
+   "leads": 52,
    "cpl": 12
   },
   {
@@ -80,44 +80,26 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO CHECK",
    "freq": 1.16,
-   "gasto": 529,
-   "leads": 34,
-   "cpl": 16
+   "gasto": 551,
+   "leads": 36,
+   "cpl": 15
   },
   {
    "cuenta": "Xochimilco",
    "ad": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
    "adset": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
-   "freq": 1.33,
-   "gasto": 3436,
-   "leads": 162,
+   "freq": 1.34,
+   "gasto": 3620,
+   "leads": 171,
    "cpl": 21
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "Publicación: \"¿Vives en la zona del Ajusco y sufres de dolor? 🌱\"",
    "adset": "VIDEO AJUSCO",
-   "freq": 1.21,
-   "gasto": 1824,
-   "leads": 84,
-   "cpl": 22
-  },
-  {
-   "cuenta": "Claveria",
-   "ad": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
-   "adset": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
-   "freq": 1.15,
-   "gasto": 570,
-   "leads": 26,
-   "cpl": 22
-  },
-  {
-   "cuenta": "Pachuca",
-   "ad": "VID - ESPALDA GABO V1 JUN",
-   "adset": "ESPALDA",
-   "freq": 1.17,
-   "gasto": 605,
-   "leads": 28,
+   "freq": 1.22,
+   "gasto": 1964,
+   "leads": 91,
    "cpl": 22
   },
   {
@@ -130,12 +112,12 @@ window.FATIGA_DATA = {
    "cpl": 22
   },
   {
-   "cuenta": "Pachuca",
-   "ad": "VID - NEUROPATIA JUN",
-   "adset": "NEUROPATÍA",
-   "freq": 1.62,
-   "gasto": 532,
-   "leads": 23,
+   "cuenta": "Claveria",
+   "ad": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
+   "adset": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
+   "freq": 1.17,
+   "gasto": 724,
+   "leads": 32,
    "cpl": 23
   },
   {
@@ -144,7 +126,7 @@ window.FATIGA_DATA = {
    "adset": "Directo",
    "freq": 1.23,
    "gasto": 1226,
-   "leads": 53,
+   "leads": 54,
    "cpl": 23
   },
   {
@@ -157,75 +139,93 @@ window.FATIGA_DATA = {
    "cpl": 23
   },
   {
+   "cuenta": "Pachuca",
+   "ad": "VID - NEUROPATIA JUN",
+   "adset": "NEUROPATÍA",
+   "freq": 1.65,
+   "gasto": 570,
+   "leads": 24,
+   "cpl": 24
+  },
+  {
+   "cuenta": "Pachuca",
+   "ad": "VID - ESPALDA GABO V1 JUN",
+   "adset": "ESPALDA",
+   "freq": 1.2,
+   "gasto": 669,
+   "leads": 28,
+   "cpl": 24
+  },
+  {
    "cuenta": "Laura (sedes)",
    "ad": "Publicación: \"¿Vives en la zona de Balbuena y el dolor ya forma...\"",
    "adset": "VIDEO BALBUENA",
    "freq": 1.26,
-   "gasto": 5092,
-   "leads": 201,
+   "gasto": 5629,
+   "leads": 223,
    "cpl": 25
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID - ESTUDIO COLUMNA",
+   "adset": "ESPALDA",
+   "freq": 1.23,
+   "gasto": 522,
+   "leads": 20,
+   "cpl": 26
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"¿Eres de Milpa Alta? y ese dolor todavía no...\"",
    "adset": "Publicación: \"¿Eres de Milpa Alta? y ese dolor todavía no...\"",
-   "freq": 1.39,
-   "gasto": 3378,
-   "leads": 123,
-   "cpl": 27
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"Recupera tu bienestar sin salir de Neza. 🏃‍♂️✨\"",
-   "adset": "Publicación: \"Recupera tu bienestar sin salir de Neza. 🏃‍♂️✨\"",
-   "freq": 1.26,
-   "gasto": 6560,
-   "leads": 220,
-   "cpl": 30
-  },
-  {
-   "cuenta": "Tepeyac",
-   "ad": "VID - MARY",
-   "adset": "Neuropatia",
-   "freq": 1.25,
-   "gasto": 2202,
-   "leads": 74,
-   "cpl": 30
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"¿Dolor de espalda, hombro o rodilla? ⚠️ Ponle un...\"",
-   "adset": "Publicación: \"¿Dolor de espalda, hombro o rodilla? ⚠️ Ponle un...\"",
-   "freq": 1.27,
-   "gasto": 5853,
-   "leads": 191,
-   "cpl": 31
+   "freq": 1.4,
+   "gasto": 3679,
+   "leads": 133,
+   "cpl": 28
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"¿Vives con dolor en Ecatepec? 📍\"",
    "adset": "Publicación: \"¿Vives con dolor en Ecatepec? 📍\"",
-   "freq": 1.38,
-   "gasto": 4673,
-   "leads": 153,
-   "cpl": 31
+   "freq": 1.4,
+   "gasto": 5124,
+   "leads": 176,
+   "cpl": 29
   },
   {
    "cuenta": "Claveria",
    "ad": "VID _ CIATICA _ JUN",
    "adset": "ESPALDA - CHECK",
    "freq": 1.34,
-   "gasto": 713,
-   "leads": 22,
-   "cpl": 32
+   "gasto": 755,
+   "leads": 25,
+   "cpl": 30
   },
   {
-   "cuenta": "Claveria",
-   "ad": "VID - RODILLA",
-   "adset": "RODILLA - CHECK",
-   "freq": 1.2,
-   "gasto": 644,
-   "leads": 20,
+   "cuenta": "Tepeyac",
+   "ad": "VID - MARY",
+   "adset": "Neuropatia",
+   "freq": 1.27,
+   "gasto": 2322,
+   "leads": 78,
+   "cpl": 30
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "Publicación: \"Recupera tu bienestar sin salir de Neza. 🏃‍♂️✨\"",
+   "adset": "Publicación: \"Recupera tu bienestar sin salir de Neza. 🏃‍♂️✨\"",
+   "freq": 1.26,
+   "gasto": 7172,
+   "leads": 235,
+   "cpl": 31
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "Publicación: \"¿Dolor de espalda, hombro o rodilla? ⚠️ Ponle un...\"",
+   "adset": "Publicación: \"¿Dolor de espalda, hombro o rodilla? ⚠️ Ponle un...\"",
+   "freq": 1.28,
+   "gasto": 6557,
+   "leads": 202,
    "cpl": 32
   }
  ],
