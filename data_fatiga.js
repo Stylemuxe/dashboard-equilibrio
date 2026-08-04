@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "04/08/2026 16:03",
+ "actualizado": "04/08/2026 16:57",
  "periodo": "2026-08-01 a 2026-08-04",
  "diagnostico": [],
  "exitosos": [
@@ -7,9 +7,9 @@ window.FATIGA_DATA = {
    "cuenta": "Gerontologia",
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
-   "freq": 1.36,
-   "gasto": 678,
-   "leads": 176,
+   "freq": 1.37,
+   "gasto": 690,
+   "leads": 178,
    "cpl": 4
   },
   {
@@ -17,7 +17,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.26,
-   "gasto": 763,
+   "gasto": 775,
    "leads": 83,
    "cpl": 9
   },
@@ -35,8 +35,8 @@ window.FATIGA_DATA = {
    "ad": "Neuropatia",
    "adset": "ORGANICO PAUTA",
    "freq": 1.43,
-   "gasto": 2507,
-   "leads": 201,
+   "gasto": 2527,
+   "leads": 203,
    "cpl": 12
   },
   {
@@ -44,8 +44,8 @@ window.FATIGA_DATA = {
    "ad": "PROMO",
    "adset": "ORGANICO PAUTA",
    "freq": 1.26,
-   "gasto": 653,
-   "leads": 55,
+   "gasto": 662,
+   "leads": 56,
    "cpl": 12
   },
   {
@@ -62,7 +62,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.14,
-   "gasto": 734,
+   "gasto": 746,
    "leads": 61,
    "cpl": 12
   },
@@ -70,27 +70,27 @@ window.FATIGA_DATA = {
    "cuenta": "Nicolas Romero",
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
-   "freq": 1.37,
-   "gasto": 644,
+   "freq": 1.38,
+   "gasto": 651,
    "leads": 52,
-   "cpl": 12
+   "cpl": 13
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO CHECK",
    "freq": 1.15,
-   "gasto": 620,
+   "gasto": 627,
    "leads": 38,
-   "cpl": 16
+   "cpl": 17
   },
   {
    "cuenta": "Xochimilco",
    "ad": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
    "adset": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
-   "freq": 1.37,
-   "gasto": 4047,
-   "leads": 193,
+   "freq": 1.38,
+   "gasto": 4127,
+   "leads": 197,
    "cpl": 21
   },
   {
@@ -98,8 +98,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿Vives en la zona del Ajusco y sufres de dolor? 🌱\"",
    "adset": "VIDEO AJUSCO",
    "freq": 1.25,
-   "gasto": 2091,
-   "leads": 97,
+   "gasto": 2109,
+   "leads": 98,
    "cpl": 22
   },
   {
@@ -107,17 +107,17 @@ window.FATIGA_DATA = {
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
    "freq": 1.36,
-   "gasto": 505,
-   "leads": 22,
-   "cpl": 23
+   "gasto": 514,
+   "leads": 23,
+   "cpl": 22
   },
   {
    "cuenta": "Cuautitlan",
    "ad": "VID_QUIRO _ 1 ABRIL - Copia 2",
    "adset": "Directo",
-   "freq": 1.23,
-   "gasto": 1232,
-   "leads": 54,
+   "freq": 1.25,
+   "gasto": 1251,
+   "leads": 55,
    "cpl": 23
   },
   {
@@ -125,43 +125,43 @@ window.FATIGA_DATA = {
    "ad": "vid_ESPALDA PAUTA MARZO",
    "adset": "Espalda",
    "freq": 1.7,
-   "gasto": 592,
+   "gasto": 607,
    "leads": 26,
    "cpl": 23
-  },
-  {
-   "cuenta": "Cuautla",
-   "ad": "NEUROPATIA MARY",
-   "adset": "Neuropatia",
-   "freq": 1.91,
-   "gasto": 670,
-   "leads": 29,
-   "cpl": 23
-  },
-  {
-   "cuenta": "Claveria",
-   "ad": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
-   "adset": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
-   "freq": 1.17,
-   "gasto": 940,
-   "leads": 39,
-   "cpl": 24
   },
   {
    "cuenta": "Pachuca",
    "ad": "VID - NEUROPATIA JUN",
    "adset": "NEUROPATÍA",
    "freq": 1.69,
-   "gasto": 654,
+   "gasto": 659,
    "leads": 27,
    "cpl": 24
+  },
+  {
+   "cuenta": "Cuautla",
+   "ad": "NEUROPATIA MARY",
+   "adset": "Neuropatia",
+   "freq": 1.93,
+   "gasto": 682,
+   "leads": 29,
+   "cpl": 24
+  },
+  {
+   "cuenta": "Claveria",
+   "ad": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
+   "adset": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
+   "freq": 1.17,
+   "gasto": 970,
+   "leads": 39,
+   "cpl": 25
   },
   {
    "cuenta": "Pachuca",
    "ad": "VID - ESPALDA GABO V1 JUN",
    "adset": "ESPALDA",
    "freq": 1.19,
-   "gasto": 801,
+   "gasto": 809,
    "leads": 32,
    "cpl": 25
   },
@@ -170,8 +170,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿Vives en la zona de Balbuena y el dolor ya forma...\"",
    "adset": "VIDEO BALBUENA",
    "freq": 1.29,
-   "gasto": 6128,
-   "leads": 237,
+   "gasto": 6202,
+   "leads": 239,
    "cpl": 26
   },
   {
@@ -179,7 +179,7 @@ window.FATIGA_DATA = {
    "ad": "VID - ESTUDIO COLUMNA",
    "adset": "ESPALDA",
    "freq": 1.23,
-   "gasto": 569,
+   "gasto": 572,
    "leads": 21,
    "cpl": 27
   },
@@ -187,8 +187,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"¿Eres de Milpa Alta? y ese dolor todavía no...\"",
    "adset": "Publicación: \"¿Eres de Milpa Alta? y ese dolor todavía no...\"",
-   "freq": 1.43,
-   "gasto": 3997,
+   "freq": 1.44,
+   "gasto": 4031,
    "leads": 147,
    "cpl": 27
   },
@@ -196,37 +196,37 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"¿Vives con dolor en Ecatepec? 📍\"",
    "adset": "Publicación: \"¿Vives con dolor en Ecatepec? 📍\"",
-   "freq": 1.42,
-   "gasto": 5548,
-   "leads": 187,
+   "freq": 1.43,
+   "gasto": 5586,
+   "leads": 189,
+   "cpl": 30
+  },
+  {
+   "cuenta": "Claveria",
+   "ad": "VID _ CIATICA _ JUN",
+   "adset": "ESPALDA - CHECK",
+   "freq": 1.35,
+   "gasto": 820,
+   "leads": 27,
+   "cpl": 30
+  },
+  {
+   "cuenta": "Claveria",
+   "ad": "EST - NEUROPATIA MANO",
+   "adset": "NEUROPATIA - CHECK",
+   "freq": 1.32,
+   "gasto": 1162,
+   "leads": 39,
    "cpl": 30
   },
   {
    "cuenta": "Tepeyac",
    "ad": "VID - MARY",
    "adset": "Neuropatia",
-   "freq": 1.29,
-   "gasto": 2558,
-   "leads": 84,
+   "freq": 1.28,
+   "gasto": 2594,
+   "leads": 86,
    "cpl": 30
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"Recupera tu bienestar sin salir de Neza. 🏃‍♂️✨\"",
-   "adset": "Publicación: \"Recupera tu bienestar sin salir de Neza. 🏃‍♂️✨\"",
-   "freq": 1.27,
-   "gasto": 7719,
-   "leads": 249,
-   "cpl": 31
-  },
-  {
-   "cuenta": "Claveria",
-   "ad": "VID _ CIATICA _ JUN",
-   "adset": "ESPALDA - CHECK",
-   "freq": 1.34,
-   "gasto": 812,
-   "leads": 26,
-   "cpl": 31
   }
  ],
  "sin_leads": []
