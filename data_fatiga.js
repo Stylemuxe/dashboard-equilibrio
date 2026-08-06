@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "06/08/2026 08:35",
+ "actualizado": "06/08/2026 08:36",
  "periodo": "2026-08-01 a 2026-08-06",
  "diagnostico": [],
  "exitosos": [],
