@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "09/08/2026 08:07",
+ "actualizado": "09/08/2026 08:20",
  "periodo": "2026-08-01 a 2026-08-09",
  "diagnostico": [],
  "exitosos": [
@@ -8,8 +8,8 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.52,
-   "gasto": 1690,
-   "leads": 414,
+   "gasto": 1694,
+   "leads": 416,
    "cpl": 4
   },
   {
@@ -17,8 +17,8 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.56,
-   "gasto": 623,
-   "leads": 151,
+   "gasto": 625,
+   "leads": 153,
    "cpl": 4
   },
   {
@@ -26,7 +26,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.5,
-   "gasto": 1741,
+   "gasto": 1742,
    "leads": 192,
    "cpl": 9
   },
@@ -43,8 +43,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA",
-   "freq": 1.43,
-   "gasto": 924,
+   "freq": 1.44,
+   "gasto": 925,
    "leads": 87,
    "cpl": 11
   },
@@ -61,17 +61,17 @@ window.FATIGA_DATA = {
    "cuenta": "Queretaro",
    "ad": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
    "adset": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
-   "freq": 1.66,
-   "gasto": 2895,
-   "leads": 249,
+   "freq": 1.67,
+   "gasto": 2902,
+   "leads": 251,
    "cpl": 12
   },
   {
    "cuenta": "Nicolas Romero",
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
-   "freq": 1.58,
-   "gasto": 1449,
+   "freq": 1.59,
+   "gasto": 1454,
    "leads": 124,
    "cpl": 12
   },
@@ -80,7 +80,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.25,
-   "gasto": 1879,
+   "gasto": 1880,
    "leads": 148,
    "cpl": 13
   },
@@ -89,26 +89,26 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBRO PAUTA ENERO",
    "adset": "HOMBRO",
    "freq": 1.53,
-   "gasto": 832,
-   "leads": 59,
+   "gasto": 833,
+   "leads": 60,
    "cpl": 14
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "TLAHUAC 1",
-   "adset": "PROMOCIONES CDMX",
-   "freq": 1.25,
-   "gasto": 935,
-   "leads": 58,
-   "cpl": 16
   },
   {
    "cuenta": "San Juan del Rio",
    "ad": "Publicación: \"Atención zona San Juan del Río. 📍\"",
    "adset": "Publicación: \"Atención zona San Juan del Río. 📍\"",
    "freq": 1.49,
-   "gasto": 731,
-   "leads": 47,
+   "gasto": 738,
+   "leads": 48,
+   "cpl": 15
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "TLAHUAC 1",
+   "adset": "PROMOCIONES CDMX",
+   "freq": 1.25,
+   "gasto": 942,
+   "leads": 58,
    "cpl": 16
   },
   {
@@ -116,7 +116,7 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO CHECK",
    "freq": 1.34,
-   "gasto": 1322,
+   "gasto": 1325,
    "leads": 79,
    "cpl": 17
   },
@@ -130,29 +130,29 @@ window.FATIGA_DATA = {
    "cpl": 17
   },
   {
-   "cuenta": "Xochimilco",
-   "ad": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
-   "adset": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
-   "freq": 1.52,
-   "gasto": 9152,
-   "leads": 452,
-   "cpl": 20
-  },
-  {
    "cuenta": "Valle Dorado",
    "ad": "VID-CIATICA",
    "adset": "ESPALDA",
    "freq": 1.22,
-   "gasto": 587,
-   "leads": 27,
-   "cpl": 22
+   "gasto": 592,
+   "leads": 29,
+   "cpl": 20
+  },
+  {
+   "cuenta": "Xochimilco",
+   "ad": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
+   "adset": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
+   "freq": 1.52,
+   "gasto": 9164,
+   "leads": 452,
+   "cpl": 20
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID - NEUROPATIA DIABETICA 3 JUN",
    "adset": "NEUROPATIA",
-   "freq": 1.51,
-   "gasto": 702,
+   "freq": 1.52,
+   "gasto": 706,
    "leads": 31,
    "cpl": 23
   },
@@ -170,7 +170,7 @@ window.FATIGA_DATA = {
    "ad": "VID - RODILLA EXITO",
    "adset": "Rodilla",
    "freq": 1.33,
-   "gasto": 640,
+   "gasto": 641,
    "leads": 28,
    "cpl": 23
   },
@@ -188,7 +188,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿Vives en la zona del Ajusco y sufres de dolor? 🌱\"",
    "adset": "VIDEO AJUSCO",
    "freq": 1.42,
-   "gasto": 6541,
+   "gasto": 6559,
    "leads": 275,
    "cpl": 24
   },
@@ -206,7 +206,7 @@ window.FATIGA_DATA = {
    "ad": "vid_ESPALDA PAUTA MARZO",
    "adset": "Espalda",
    "freq": 1.98,
-   "gasto": 1676,
+   "gasto": 1679,
    "leads": 70,
    "cpl": 24
   },
@@ -215,7 +215,7 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO",
    "freq": 1.26,
-   "gasto": 835,
+   "gasto": 839,
    "leads": 34,
    "cpl": 25
   },
@@ -224,7 +224,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEUROPATIA DIABETICA 3 JUN",
    "adset": "NEUROPATIA",
    "freq": 1.52,
-   "gasto": 514,
+   "gasto": 515,
    "leads": 20,
    "cpl": 26
   }
