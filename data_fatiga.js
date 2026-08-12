@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "12/08/2026 08:21",
+ "actualizado": "12/08/2026 08:23",
  "periodo": "2026-08-01 a 2026-08-12",
  "diagnostico": [
   {
@@ -45,6 +45,15 @@ window.FATIGA_DATA = {
    "gasto": 2429,
    "leads": 535,
    "cpl": 5
+  },
+  {
+   "cuenta": "Pachuca",
+   "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
+   "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
+   "freq": 1.61,
+   "gasto": 1952,
+   "leads": 207,
+   "cpl": 9
   },
   {
    "cuenta": "Laura (sedes)",
@@ -117,6 +126,15 @@ window.FATIGA_DATA = {
    "gasto": 2282,
    "leads": 120,
    "cpl": 19
+  },
+  {
+   "cuenta": "Satelite",
+   "ad": "VID - NEUROPATIA DIABETICA 3 JUN",
+   "adset": "NEUROPATIA",
+   "freq": 1.35,
+   "gasto": 762,
+   "leads": 38,
+   "cpl": 20
   },
   {
    "cuenta": "Promo/Compl.",
@@ -234,24 +252,6 @@ window.FATIGA_DATA = {
    "gasto": 2069,
    "leads": 75,
    "cpl": 28
-  },
-  {
-   "cuenta": "Claveria",
-   "ad": "VID - RODILLA",
-   "adset": "RODILLA - CHECK",
-   "freq": 1.4,
-   "gasto": 1534,
-   "leads": 53,
-   "cpl": 29
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"¡Atención a nuestra comunidad en Mixquiahuala! 🎉\"",
-   "adset": "Publicación: \"¡Atención a nuestra comunidad en Mixquiahuala! 🎉\"",
-   "freq": 1.97,
-   "gasto": 3012,
-   "leads": 102,
-   "cpl": 30
   }
  ],
  "sin_leads": []
