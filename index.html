@@ -26,6 +26,8 @@
 <!-- DATA_BUNDLE_END -->
 <!-- Fatiga de anuncios/públicos: lo genera generar_fatiga.py (vía ACTUALIZAR TODO); cache-buster porque va fuera del bundle versionado -->
 <script>document.write('<script src="data_fatiga.js?v=' + Date.now() + '"><\/script>');</script>
+<!-- Auditoría de campañas + prioridades: lo genera generar_auditoria.py (vía ACTUALIZAR TODO) -->
+<script>document.write('<script src="data_auditoria.js?v=' + Date.now() + '"><\/script>');</script>
 <style>
 /* ═══════════════════════════════════════════════════════════════════════════
    DASH FABIAN — Dark purple-navy style (NUEVO ESTILO reference)
@@ -255,6 +257,29 @@ tr:hover td{background:rgba(155,93,229,.05)}
 .badge-pausado {background:rgba(255,96,64,.15);color:var(--coral)}
 .badge-nuevo   {background:linear-gradient(90deg,var(--violet),var(--coral));color:#fff}
 
+/* ── Auditoría de campañas ──────────────────────────────────────────────── */
+.aud-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-bottom:24px}
+.aud-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;
+  box-shadow:0 1px 3px rgba(28,27,58,.05),0 10px 26px rgba(28,27,58,.04)}
+.aud-card .aud-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.aud-card .aud-name{font-size:14px;font-weight:700;color:var(--text)}
+.aud-box{background:var(--card2);border-radius:9px;padding:8px 10px;margin:8px 0;font-size:11.5px}
+.aud-box .aud-line{display:flex;gap:6px;align-items:baseline;margin-bottom:3px}
+.aud-box .aud-line:last-child{margin-bottom:0}
+.aud-box .aud-lbl{font-size:9px;text-transform:uppercase;font-weight:700;color:var(--text2);letter-spacing:.04em;min-width:58px;flex-shrink:0}
+.aud-box .aud-det{color:var(--text2)}
+.aud-kpis{display:flex;flex-wrap:wrap;gap:5px 12px;font-size:11px;color:var(--text2);margin-top:6px}
+.aud-kpis b{color:var(--text)}
+.aud-motivos{margin:6px 0 0 0;padding-left:15px;font-size:11px;color:var(--text2)}
+.aud-motivos li{margin-bottom:2px}
+.aud-check{font-size:10px;color:var(--text3);border-top:1px solid var(--border);padding-top:6px;margin-top:6px}
+.aud-check.mismatch{color:var(--coral);font-weight:700}
+.aud-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;align-items:center}
+.aud-filters select,.aud-filters input[type=text]{background:var(--card);border:1px solid var(--border);
+  border-radius:8px;padding:6px 10px;font-size:12px;color:var(--text);font-family:inherit}
+.aud-filters input[type=text]{min-width:200px}
+.aud-filters .aud-count{font-size:11.5px;color:var(--text2);margin-left:auto}
+
 /* ── Progress bars ───────────────────────────────────────────────────────── */
 .prog-wrap{display:flex;align-items:center;gap:8px;min-width:84px}
 .prog-bar{flex:1;min-width:36px;height:5px;background:rgba(255,255,255,.07);
@@ -429,6 +454,7 @@ body:not(.unlocked) #login{display:flex}
     <button class="nav-item" data-title="Ad Sets" onclick="switchTab('adsets',this)"><span class="nav-ico">🎯</span><span>Ad Sets</span></button>
     <button class="nav-item" data-title="Top Anuncios" onclick="switchTab('anuncios',this)"><span class="nav-ico">📢</span><span>Top Anuncios</span></button>
     <button class="nav-item" data-title="Fatiga de Anuncios y Públicos" onclick="switchTab('fatiga',this)"><span class="nav-ico">🚦</span><span>Fatiga</span></button>
+    <button class="nav-item" data-title="Auditoría de Campañas" onclick="switchTab('auditoria',this)"><span class="nav-ico">🔍</span><span>Auditoría</span></button>
     <button class="nav-item" data-title="Leads &amp; Gasto Diario" onclick="switchTab('diario',this)"><span class="nav-ico">📅</span><span>Leads &amp; Gasto</span></button>
     <button class="nav-item" data-title="Optimizar" onclick="switchTab('optimizar',this)"><span class="nav-ico">📈</span><span>Optimizar</span></button>
     <button class="nav-item" data-title="Recomendaciones" onclick="switchTab('recomendaciones',this)"><span class="nav-ico">💡</span><span>Recomendaciones</span></button>
@@ -670,6 +696,44 @@ body:not(.unlocked) #login{display:flex}
     <table>
       <thead><tr><th>Cuenta</th><th>Ad Set</th><th>Frec.</th><th>Gasto</th></tr></thead>
       <tbody id="tablaFatigaSinLeads"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- AUDITORÍA DE CAMPAÑAS (lo genera generar_auditoria.py) -->
+<div id="tab-auditoria" class="tab-panel">
+  <div class="sec-header">
+    <div class="sec-title">🔍 Auditoría de campañas <span id="audMeta" style="font-weight:400;font-size:12px;color:var(--text2)"></span></div>
+  </div>
+
+  <div class="kpi-row" id="audPresupuesto"></div>
+
+  <div class="sec-header"><div class="sec-title">Orden de prioridad — qué atacar primero</div></div>
+  <div class="aud-grid" id="audCards"></div>
+
+  <div class="sec-header"><div class="sec-title">Campañas / ad sets</div></div>
+  <div class="aud-filters">
+    <select id="audFClinica"></select>
+    <select id="audFStatus">
+      <option value="ACTIVE">Sólo activas</option>
+      <option value="">Todas</option>
+    </select>
+    <select id="audFFreq">
+      <option value="">Frecuencia: todas</option>
+      <option value="rojo">🔴 Quemada (≥3.0)</option>
+      <option value="amarillo">🟡 Vigilar (2.5–3.0)</option>
+      <option value="verde">🟢 Sana (&lt;2.5)</option>
+    </select>
+    <input type="text" id="audFSearch" placeholder="Buscar campaña / ad set…">
+    <span class="aud-count" id="audFCount"></span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th>Clínica</th><th>Campaña</th><th>Ad set</th><th>Status</th><th>Días activo</th>
+        <th>Frecuencia</th><th>Gasto</th><th>Leads</th><th>CPL</th><th>Días p/quemarse</th><th>Diagnóstico</th>
+      </tr></thead>
+      <tbody id="tablaAudCampanas"></tbody>
     </table>
   </div>
 </div>
@@ -956,6 +1020,7 @@ function switchTab(id, btn) {
     if (id === 'diario')       { renderLeadsFiltros(); renderLeadsDiarios(); renderCplFiltros(); renderDiario(diarioMode); renderGeroDiario(); }
     if (id === 'anuncios')     renderTopAds();
     if (id === 'fatiga')       renderFatiga();
+    if (id === 'auditoria')    renderAuditoria();
     if (id === 'optimizar')    renderOptimizar();
     if (id === 'gero')         { renderGero(); renderGeroDiario(); }
     if (id === 'complementos') renderComplementos();
@@ -1686,6 +1751,107 @@ function renderFatiga() {
     return '<tr><td>' + f.cuenta + '</td><td><b>' + f.adset + '</b></td><td>' + f.freq.toFixed(2) + 'x</td>' +
       '<td><span class="badge badge-red">' + fmt(f.gasto) + '</span></td></tr>';
   }).join('') || '<tr><td colspan="4">Ninguno — todo el gasto está dando leads 🎉</td></tr>';
+}
+
+// ── Auditoría de campañas (window.AUDITORIA_DATA de data_auditoria.js) ──
+var PRIO_BADGE = {ALTA: 'badge-red', MEDIA: 'badge-yellow', BAJA: 'badge-green'};
+var AUD_FREQ_BADGE = {rojo: 'badge-red', amarillo: 'badge-yellow', verde: 'badge-green', sin_dato: 'badge-blue'};
+var _audFiltersWired = false;
+
+function renderAuditoria() {
+  var A = window.AUDITORIA_DATA;
+  var meta = document.getElementById('audMeta');
+  if (!A) {
+    if (meta) meta.textContent = '— sin datos: corre ACTUALIZAR TODO.py (o python generar_auditoria.py)';
+    return;
+  }
+  meta.textContent = '· corte ' + A.hoy + ' (día ' + A.dias_transcurridos + ' de mes) · actualizado ' + A.actualizado;
+
+  var P = A.presupuesto;
+  document.getElementById('audPresupuesto').innerHTML =
+    '<div class="kpi-card c1"><span class="kpi-icon">💰</span><div class="kpi-val">' + fmt(P.gasto_mtd) + '</div>' +
+      '<div class="kpi-label">Gasto acumulado</div><div class="kpi-sub">de ' + fmt(P.cap) + ' tope</div></div>' +
+    '<div class="kpi-card c2"><span class="kpi-icon">📈</span><div class="kpi-val">' + fmt(P.proyeccion_fin_mes) + '</div>' +
+      '<div class="kpi-label">Proyección fin de mes</div><div class="kpi-sub" style="color:' + (P.se_pasa_del_tope ? 'var(--coral)' : 'var(--teal)') + '">' +
+      (P.se_pasa_del_tope ? 'se pasaría del tope' : 'dentro del tope') + '</div></div>' +
+    '<div class="kpi-card c3"><span class="kpi-icon">🧮</span><div class="kpi-val">' + fmt(P.margen_diario_disponible) + '</div>' +
+      '<div class="kpi-label">Margen diario disponible</div><div class="kpi-sub">para ' + P.dias_restantes + ' días restantes</div></div>' +
+    '<div class="kpi-card c4"><span class="kpi-icon">⚡</span><div class="kpi-val">' + fmt(P.ritmo_diario_actual) + '</div>' +
+      '<div class="kpi-label">Ritmo diario actual</div><div class="kpi-sub">Laura+Promo+Gerontología</div></div>';
+
+  var clinicas = (A.clinicas || []).slice().sort(function(a, b) { return b.prioridad_score - a.prioridad_score; });
+  document.getElementById('audCards').innerHTML = clinicas.map(function(c) {
+    var t = c.cpl_trend || {}; var arrow = t.tendencia === 'subiendo' ? '↑' : t.tendencia === 'bajando' ? '↓' : '→';
+    var trendColor = t.tendencia === 'subiendo' ? 'var(--coral)' : t.tendencia === 'bajando' ? 'var(--teal)' : 'var(--text2)';
+    var motivos = (c.prioridad_motivos || []).length
+      ? c.prioridad_motivos.slice(0, 3).map(function(m) { return '<li>' + m + '</li>'; }).join('')
+      : '<li>Sin focos rojos — desempeño en línea</li>';
+    var asistidas = c.irving_asistidas != null ? c.irving_asistidas : c.asistidas;
+    var checklistMatch = c.prioridad_coincide_checklist;
+    var alcanzaBadge = c.alcanza_con_ritmo_actual
+      ? '<span class="badge ' + (c.alcanza_con_ritmo_actual === 'SÍ' ? 'badge-green' : 'badge-red') + '">' +
+        (c.alcanza_con_ritmo_actual === 'SÍ' ? 'Alcanza meta citas' : 'No alcanza — faltan leads') + '</span>'
+      : '';
+    return '<div class="aud-card">' +
+      '<div class="aud-top"><span class="aud-name">' + c.clinica + '</span><span class="badge ' + (PRIO_BADGE[c.prioridad] || 'badge-blue') + '">' + c.prioridad + '</span></div>' +
+      '<div><span class="badge badge-blue">' + (c.grupo === 'sede' ? 'Sede' : 'Franquicia') + '</span> ' + alcanzaBadge + '</div>' +
+      '<div class="aud-box">' +
+        '<div class="aud-line"><span class="aud-lbl">Contenido</span><b>' + c.diagnostico_contenido + '</b></div>' +
+        '<div class="aud-line"><span class="aud-det">' + c.diagnostico_contenido_detalle + '</span></div>' +
+        '<div class="aud-line"><span class="aud-lbl">Acción</span><b>' + c.recomendacion_accion + '</b></div>' +
+        '<div class="aud-line"><span class="aud-det">' + c.recomendacion_detalle + '</span></div>' +
+      '</div>' +
+      '<div class="aud-kpis">' +
+        '<span>Leads: <b>' + fmtN(c.leads_mes) + '</b>/' + fmtN(c.meta_leads) + ' (' + (c.pct_meta_leads != null ? c.pct_meta_leads.toFixed(0) : '—') + '%)</span>' +
+        '<span>CPL: <b>' + fmt(c.cpl) + '</b> <span style="color:' + trendColor + ';font-weight:700">' + arrow + (t.delta_pct != null ? ' ' + Math.abs(t.delta_pct) + '%' : '') + '</span></span>' +
+        '<span>Citas: <b>' + fmtN(asistidas) + '</b>/' + (c.meta_cc_citas != null ? c.meta_cc_citas : '—') + '</span>' +
+        '<span>Freq. máx: <b>' + (c.fatiga && c.fatiga.freq_max != null ? c.fatiga.freq_max : '—') + '</b></span>' +
+      '</div>' +
+      '<ul class="aud-motivos">' + motivos + '</ul>' +
+      '<div class="aud-check' + (checklistMatch ? '' : ' mismatch') + '">' +
+        (checklistMatch ? 'Coincide con prioridad ' + c.prioridad_checklist_actual + ' del checklist de grabación.'
+          : 'Checklist de grabación la tiene en <b>' + c.prioridad_checklist_actual + '</b> — hoy sugiere <b>' + c.prioridad + '</b>.') +
+      '</div></div>';
+  }).join('');
+
+  if (!_audFiltersWired) {
+    var selClinica = document.getElementById('audFClinica');
+    selClinica.innerHTML = '<option value="">Todas las clínicas</option>' +
+      (A.clinicas || []).map(function(c) { return '<option value="' + c.clinica + '">' + c.clinica + '</option>'; }).join('');
+    ['audFClinica', 'audFStatus', 'audFFreq'].forEach(function(id) {
+      document.getElementById(id).addEventListener('change', renderAuditoriaCampanas);
+    });
+    document.getElementById('audFSearch').addEventListener('input', renderAuditoriaCampanas);
+    _audFiltersWired = true;
+  }
+  renderAuditoriaCampanas();
+}
+
+function renderAuditoriaCampanas() {
+  var A = window.AUDITORIA_DATA;
+  if (!A) return;
+  var clinica = document.getElementById('audFClinica').value;
+  var status = document.getElementById('audFStatus').value;
+  var freq = document.getElementById('audFFreq').value;
+  var q = document.getElementById('audFSearch').value.trim().toLowerCase();
+  var rows = (A.campanas || []).filter(function(r) {
+    if (clinica && r.clinica !== clinica) return false;
+    if (status && r.status !== status) return false;
+    if (freq && r.clasif_frecuencia !== freq) return false;
+    if (q && (r.campana + ' ' + r.adset).toLowerCase().indexOf(q) === -1) return false;
+    return true;
+  }).sort(function(a, b) { return (b.gasto || 0) - (a.gasto || 0); });
+  document.getElementById('audFCount').textContent = rows.length + ' de ' + (A.campanas || []).length + ' campañas/ad sets';
+  document.getElementById('tablaAudCampanas').innerHTML = rows.slice(0, 400).map(function(r) {
+    return '<tr><td>' + r.clinica + '</td>' +
+      '<td style="max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + r.campana + '</td>' +
+      '<td style="max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><b>' + r.adset + '</b></td>' +
+      '<td>' + r.status + '</td><td>' + (r.dias_activo != null ? r.dias_activo : '—') + '</td>' +
+      '<td><span class="badge ' + (AUD_FREQ_BADGE[r.clasif_frecuencia] || 'badge-blue') + '">' + (r.frecuencia != null ? r.frecuencia : '—') + '</span></td>' +
+      '<td>' + fmt(r.gasto) + '</td><td>' + fmtN(r.leads) + '</td><td>' + (r.cpl != null ? fmt(r.cpl) : '—') + '</td>' +
+      '<td>' + (r.dias_para_quemar_freq3 != null ? r.dias_para_quemar_freq3 + ' d' : '—') + '</td>' +
+      '<td>' + (r.veredicto_publico_creativo || '—') + '</td></tr>';
+  }).join('') || '<tr><td colspan="11">Sin campañas para los filtros seleccionados</td></tr>';
 }
 
 // ── Top Anuncios ──
