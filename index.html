@@ -2279,20 +2279,31 @@ function renderLeadsDiarios() {
   var fechas, labels, valores, titulo, colorBar;
 
   if (leadsModo === 'todas_sedes') {
-    fechas  = Object.keys(diarioS).sort();
+    // OJO: diario_sedes es un campo viejo/incompleto (solo capta una parte del
+    // gasto directo, ej. 181 leads el 13-ago cuando la suma real de las 9
+    // sedes por diario_por_clinica da 539) — mismo tipo de bug que ya
+    // arreglamos en "Leads y gasto de ayer". Se suma directo de
+    // diario_por_clinica, que sí es la fuente completa y verificada.
+    var SEDES_REALES_DIARIO = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco',
+                                'Balbuena','Tlahuac','Mixquiahuala','Milpa Alta'];
+    fechas  = Object.keys(diarioPc).sort();
     labels  = fechas.map(function(f){ return f.slice(5); });
-    valores = fechas.map(function(f){ return (diarioS[f]||{}).leads||0; });
+    valores = fechas.map(function(f){
+      var dia = diarioPc[f] || {};
+      return SEDES_REALES_DIARIO.reduce(function(s,c){ return s + ((dia[c]||{}).leads||0); }, 0);
+    });
     titulo  = 'Leads Diarios — Todas las Sedes';
     colorBar= 'rgba(63,122,137,0.7)';
 
   } else if (leadsModo === 'todas_franq') {
-    var todasFechas = new Set();
-    Object.keys(diarioF).forEach(function(f){ todasFechas.add(f); });
-    fechas  = Array.from(todasFechas).sort();
+    // Mismo ajuste que en sedes: sumar de diario_por_clinica (fuente completa)
+    // en vez de diario_franquicias, que queda ~3% por debajo del real.
+    var FRANQ_NOMBRES_DIARIO = Object.keys(DATA.franquicias);
+    fechas  = Object.keys(diarioPc).sort();
     labels  = fechas.map(function(f){ return f.slice(5); });
     valores = fechas.map(function(f){
-      var dia = diarioF[f]||{};
-      return Object.values(dia).reduce(function(s,v){ return s+(v.leads||0); }, 0);
+      var dia = diarioPc[f] || {};
+      return FRANQ_NOMBRES_DIARIO.reduce(function(s,c){ return s + ((dia[c]||{}).leads||0); }, 0);
     });
     titulo  = 'Leads Diarios — Todas las Franquicias';
     colorBar= 'rgba(46,98,115,0.7)';
