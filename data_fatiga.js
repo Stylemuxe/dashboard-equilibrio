@@ -1,40 +1,52 @@
 window.FATIGA_DATA = {
- "actualizado": "13/08/2026 16:04",
- "periodo": "2026-08-01 a 2026-08-13",
+ "actualizado": "14/08/2026 00:10",
+ "periodo": "2026-08-01 a 2026-08-14",
  "diagnostico": [
   {
    "cuenta": "Pachuca",
    "adset": "NEUROPATÍA",
    "veredicto": "PUBLICO CANSANDOSE",
-   "freq": 2.45,
-   "gasto": 2181,
-   "leads": 76,
+   "freq": 2.48,
+   "gasto": 2205,
+   "leads": 77,
    "cpl": 29,
-   "pct_nuevos": 29,
+   "pct_nuevos": 22,
    "cpm1": 32,
-   "cpm2": 42
+   "cpm2": 43
+  },
+  {
+   "cuenta": "Pachuca",
+   "adset": "ESPOLÓN",
+   "veredicto": "PUBLICO CANSANDOSE",
+   "freq": 1.84,
+   "gasto": 4116,
+   "leads": 115,
+   "cpl": 36,
+   "pct_nuevos": 34,
+   "cpm1": 29,
+   "cpm2": 39
   },
   {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.64,
-   "gasto": 2416,
-   "leads": 73,
-   "cpl": 33,
-   "pct_nuevos": 324,
+   "gasto": 2546,
+   "leads": 74,
+   "cpl": 34,
+   "pct_nuevos": 211,
    "cpm1": 61,
-   "cpm2": 56
+   "cpm2": 55
   },
   {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"El dolor articular no desaparece solo. Actúa y...\"",
    "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.58,
-   "gasto": 28091,
-   "leads": 512,
-   "cpl": 55,
-   "pct_nuevos": 53,
+   "freq": 2.59,
+   "gasto": 28842,
+   "leads": 532,
+   "cpl": 54,
+   "pct_nuevos": 43,
    "cpm1": 23,
    "cpm2": 25
   },
@@ -42,11 +54,11 @@ window.FATIGA_DATA = {
    "cuenta": "Queretaro",
    "adset": "NEUROPATIA",
    "veredicto": "VIGILAR",
-   "freq": 2.47,
-   "gasto": 2474,
-   "leads": 150,
+   "freq": 2.5,
+   "gasto": 2545,
+   "leads": 157,
    "cpl": 16,
-   "pct_nuevos": 45,
+   "pct_nuevos": 35,
    "cpm1": 45,
    "cpm2": 48
   },
@@ -54,23 +66,23 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"¿Vives o eres de Mixquiahuala y el dolor de...\"",
    "veredicto": "VIGILAR",
-   "freq": 2.33,
-   "gasto": 18149,
-   "leads": 298,
+   "freq": 2.36,
+   "gasto": 18514,
+   "leads": 302,
    "cpl": 61,
-   "pct_nuevos": 53,
-   "cpm1": 24,
+   "pct_nuevos": 43,
+   "cpm1": 25,
    "cpm2": 28
   },
   {
    "cuenta": "Laura (sedes)",
    "adset": "NEUROPATIA",
    "veredicto": "VIGILAR",
-   "freq": 2.3,
-   "gasto": 529,
+   "freq": 2.31,
+   "gasto": 534,
    "leads": 12,
-   "cpl": 44,
-   "pct_nuevos": 24,
+   "cpl": 45,
+   "pct_nuevos": 16,
    "cpm1": 34,
    "cpm2": 37
   },
@@ -78,11 +90,11 @@ window.FATIGA_DATA = {
    "cuenta": "Nicolas Romero",
    "adset": "Publicación: \"¡Atención, Nicolás Romero! ¿Buscas terapia de...\"",
    "veredicto": "VIGILAR",
-   "freq": 2.27,
-   "gasto": 10667,
-   "leads": 379,
+   "freq": 2.29,
+   "gasto": 10927,
+   "leads": 389,
    "cpl": 28,
-   "pct_nuevos": 88,
+   "pct_nuevos": 64,
    "cpm1": 23,
    "cpm2": 23
   },
@@ -90,13 +102,25 @@ window.FATIGA_DATA = {
    "cuenta": "Queretaro",
    "adset": "RODILLA",
    "veredicto": "VIGILAR",
-   "freq": 2.24,
-   "gasto": 527,
+   "freq": 2.27,
+   "gasto": 539,
    "leads": 25,
-   "cpl": 21,
-   "pct_nuevos": 93,
+   "cpl": 22,
+   "pct_nuevos": 76,
    "cpm1": 49,
-   "cpm2": 54
+   "cpm2": 53
+  },
+  {
+   "cuenta": "Ajusco",
+   "adset": "HOM",
+   "veredicto": "VIGILAR",
+   "freq": 2.2,
+   "gasto": 1128,
+   "leads": 11,
+   "cpl": 103,
+   "pct_nuevos": 62,
+   "cpm1": 52,
+   "cpm2": 61
   }
  ],
  "exitosos": [
@@ -104,9 +128,9 @@ window.FATIGA_DATA = {
    "cuenta": "Gerontologia",
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
-   "freq": 1.77,
-   "gasto": 934,
-   "leads": 229,
+   "freq": 1.79,
+   "gasto": 981,
+   "leads": 239,
    "cpl": 4
   },
   {
@@ -114,17 +138,17 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.62,
-   "gasto": 2620,
-   "leads": 577,
+   "gasto": 2699,
+   "leads": 596,
    "cpl": 5
   },
   {
    "cuenta": "Cuautitlan",
    "ad": "Publicación: \"Si eres de la zona Cuautitlán Izcalli, 📍\"",
    "adset": "Publicación: \"Si eres de la zona Cuautitlán Izcalli, 📍\"",
-   "freq": 1.43,
-   "gasto": 1936,
-   "leads": 239,
+   "freq": 1.45,
+   "gasto": 2305,
+   "leads": 276,
    "cpl": 8
   },
   {
@@ -132,53 +156,62 @@ window.FATIGA_DATA = {
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA",
    "freq": 1.52,
-   "gasto": 1420,
-   "leads": 148,
-   "cpl": 10
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-   "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-   "freq": 1.45,
-   "gasto": 871,
-   "leads": 85,
-   "cpl": 10
+   "gasto": 1453,
+   "leads": 153,
+   "cpl": 9
   },
   {
    "cuenta": "Gerontologia",
    "ad": "VID_TARD2",
    "adset": "Publicación: \"Más movimiento, más independencia y más momentos...\"",
-   "freq": 1.73,
-   "gasto": 3618,
-   "leads": 375,
+   "freq": 1.75,
+   "gasto": 3733,
+   "leads": 387,
    "cpl": 10
   },
   {
    "cuenta": "Pachuca",
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
-   "freq": 1.74,
-   "gasto": 2581,
-   "leads": 257,
+   "freq": 1.76,
+   "gasto": 2717,
+   "leads": 267,
    "cpl": 10
   },
   {
    "cuenta": "Nicolas Romero",
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
-   "freq": 1.76,
-   "gasto": 2799,
-   "leads": 288,
+   "freq": 1.78,
+   "gasto": 2857,
+   "leads": 289,
    "cpl": 10
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
+   "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
+   "freq": 1.52,
+   "gasto": 1018,
+   "leads": 93,
+   "cpl": 11
   },
   {
    "cuenta": "Gerontologia",
    "ad": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "adset": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
-   "freq": 1.7,
-   "gasto": 4030,
-   "leads": 311,
+   "freq": 1.71,
+   "gasto": 4149,
+   "leads": 324,
+   "cpl": 13
+  },
+  {
+   "cuenta": "Valle Dorado",
+   "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
+   "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
+   "freq": 1.26,
+   "gasto": 956,
+   "leads": 73,
    "cpl": 13
   },
   {
@@ -186,8 +219,8 @@ window.FATIGA_DATA = {
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
    "freq": 1.79,
-   "gasto": 2292,
-   "leads": 175,
+   "gasto": 2339,
+   "leads": 178,
    "cpl": 13
   },
   {
@@ -195,26 +228,17 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBRO PAUTA ENERO",
    "adset": "HOMBRO",
    "freq": 1.75,
-   "gasto": 1220,
-   "leads": 85,
-   "cpl": 14
-  },
-  {
-   "cuenta": "Valle Dorado",
-   "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "freq": 1.23,
-   "gasto": 731,
-   "leads": 53,
+   "gasto": 1244,
+   "leads": 87,
    "cpl": 14
   },
   {
    "cuenta": "Queretaro",
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
-   "freq": 1.39,
-   "gasto": 3385,
-   "leads": 243,
+   "freq": 1.41,
+   "gasto": 3478,
+   "leads": 251,
    "cpl": 14
   },
   {
@@ -222,25 +246,25 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO CHECK",
    "freq": 1.44,
-   "gasto": 2103,
-   "leads": 127,
-   "cpl": 17
+   "gasto": 2147,
+   "leads": 131,
+   "cpl": 16
   },
   {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID-NEUROPATIA.SEP",
+   "cuenta": "Queretaro",
+   "ad": "VID - NEURO MARY",
    "adset": "NEUROPATIA",
-   "freq": 1.45,
-   "gasto": 732,
-   "leads": 40,
-   "cpl": 18
+   "freq": 1.97,
+   "gasto": 1682,
+   "leads": 106,
+   "cpl": 16
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID-RODILLA2 6-MAY",
    "adset": "RODILLA CHECK",
    "freq": 1.2,
-   "gasto": 596,
+   "gasto": 599,
    "leads": 34,
    "cpl": 18
   },
@@ -249,16 +273,25 @@ window.FATIGA_DATA = {
    "ad": "VID_NEU_JUL",
    "adset": "Neuropatia",
    "freq": 1.65,
-   "gasto": 1265,
+   "gasto": 1284,
    "leads": 72,
    "cpl": 18
   },
   {
    "cuenta": "Laura (sedes)",
+   "ad": "VID-NEUROPATIA.SEP",
+   "adset": "NEUROPATIA",
+   "freq": 1.48,
+   "gasto": 792,
+   "leads": 40,
+   "cpl": 20
+  },
+  {
+   "cuenta": "Laura (sedes)",
    "ad": "EST _ RODILLA _ MIXQUI _ 10 ABRIL",
    "adset": "Rodilla",
-   "freq": 1.74,
-   "gasto": 612,
+   "freq": 1.76,
+   "gasto": 623,
    "leads": 31,
    "cpl": 20
   },
@@ -266,63 +299,54 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"Si eres de Plaza Neza, 📍\"",
    "adset": "Publicación: \"Si eres de Plaza Neza, 📍\"",
-   "freq": 1.79,
-   "gasto": 3321,
-   "leads": 164,
-   "cpl": 20
+   "freq": 1.8,
+   "gasto": 3483,
+   "leads": 169,
+   "cpl": 21
   },
   {
    "cuenta": "Satelite",
    "ad": "VID-HOMBRODOLOROSO - Copia",
    "adset": "HOMBRO - CHECK",
-   "freq": 1.23,
-   "gasto": 508,
+   "freq": 1.22,
+   "gasto": 524,
    "leads": 25,
-   "cpl": 20
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID - IRVIN EXITOSO",
-   "adset": "HOMBRO",
-   "freq": 1.31,
-   "gasto": 1596,
-   "leads": 71,
-   "cpl": 22
+   "cpl": 21
   },
   {
    "cuenta": "Satelite",
    "ad": "VID - NEUROPATIA DIABETICA 3 JUN",
    "adset": "NEUROPATIA",
-   "freq": 1.39,
-   "gasto": 871,
-   "leads": 40,
+   "freq": 1.4,
+   "gasto": 891,
+   "leads": 43,
+   "cpl": 21
+  },
+  {
+   "cuenta": "Tepeyac",
+   "ad": "VID - ESTUDIO DE COLUMNA JUL",
+   "adset": "Espalda",
+   "freq": 1.67,
+   "gasto": 1770,
+   "leads": 79,
    "cpl": 22
   },
   {
    "cuenta": "Xochimilco",
    "ad": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
    "adset": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
-   "freq": 1.82,
-   "gasto": 14333,
-   "leads": 652,
+   "freq": 1.83,
+   "gasto": 14644,
+   "leads": 661,
    "cpl": 22
   },
   {
-   "cuenta": "Promo/Compl.",
-   "ad": "TLAHUAC 1",
-   "adset": "PROMOCIONES CDMX",
-   "freq": 1.37,
-   "gasto": 2772,
-   "leads": 121,
-   "cpl": 23
-  },
-  {
-   "cuenta": "Tepeyac",
-   "ad": "VID - ESTUDIO DE COLUMNA JUL",
-   "adset": "Espalda",
-   "freq": 1.66,
-   "gasto": 1743,
-   "leads": 77,
+   "cuenta": "Laura (sedes)",
+   "ad": "VID - IRVIN EXITOSO",
+   "adset": "HOMBRO",
+   "freq": 1.32,
+   "gasto": 1624,
+   "leads": 71,
    "cpl": 23
   }
  ],
