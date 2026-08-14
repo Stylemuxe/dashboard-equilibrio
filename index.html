@@ -8,15 +8,15 @@
 <meta http-equiv="Expires" content="0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <title>Dashboard Meta Ads | Equilibrio Total</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- DATA_BUNDLE_START -->
-<script src="data_meta_2026-05.js?v=1786745209"></script>
-<script src="data_meta_2026-06.js?v=1786745209"></script>
-<script src="data_meta_2026-07.js?v=1786745209"></script>
-<script src="data_meta_2026-08.js?v=1786745209"></script>
-<script src="data_months.js?v=1786745209"></script>
+<script src="data_meta_2026-05.js?v=1786744980"></script>
+<script src="data_meta_2026-06.js?v=1786744980"></script>
+<script src="data_meta_2026-07.js?v=1786744980"></script>
+<script src="data_meta_2026-08.js?v=1786744980"></script>
+<script src="data_months.js?v=1786744980"></script>
 <script>
 (function(){
   var d=window.MESES_DISPONIBLES||[];
@@ -31,45 +31,53 @@
 <style>
 /* ═══════════════════════════════════════════════════════════════════════════
    DASH FABIAN — Dark purple-navy style (NUEVO ESTILO reference)
-   Palette: #14132A bg · #1E1D3F card · #FF6040 coral · #9B5DE5 violet
+   Palette: #19363E bg · #254B56 card · #407887 coral · #31606D violet
    Font: Open Sans
    ═══════════════════════════════════════════════════════════════════════════ */
 :root{
-  /* ── Light theme (estilo mockup) ── */
-  --bg:    #F3F4FA;
+  /* ── Marca Equilibrio Total (teal del logo #407887 + acento naranja) ── */
+  --bg:    #F9FAFB;
   --bg2:   #FFFFFF;
-  --bg3:   #EDEFF7;
+  --bg3:   #F0F3F4;
   --card:  #FFFFFF;
-  --card2: #F7F8FC;
-  --border:  rgba(28,27,58,0.09);
-  --border2: rgba(28,27,58,0.15);
-  --coral:   #FF6040;
-  --violet:  #9B5DE5;
-  --gold:    #F4A93C;
-  --teal:    #16C2A3;
-  --pink:    #FF4D8D;
-  --text:    #1B1B33;
-  --text2:   #6A6F8E;
-  --text3:   #A6AAC2;
-  /* ── Sidebar oscuro ── */
-  --side-bg:    #1E1D3F;
-  --side-bg2:   #14132A;
-  --side-text:  #B9BCE0;
-  --side-text2: #6E7199;
+  --card2: #F9FAFB;
+  --border:  rgba(25,32,36,0.09);
+  --border2: rgba(25,32,36,0.15);
+  --coral:   #407887;  /* acento principal de marca (antes coral) */
+  --violet:  #31606D;  /* acento secundario de marca (antes violeta) */
+  --gold:    #F09D0F;  /* warning */
+  --teal:    #428CD7;  /* info / identidad secundaria (antes teal) */
+  --pink:    #DD382C;  /* danger / estado "malo" (antes pink) */
+  --text:    #192024;
+  --text2:   #57646B;
+  --text3:   #9DA9AF;
+  /* ── Sidebar (teal oscuro de marca) ── */
+  --side-bg:    #254B56;
+  --side-bg2:   #19363E;
+  --side-text:  #DEEEF2;
+  --side-text2: #94C4D1;
   /* ── Aliases usados en el JS existente ── */
-  --cyan:    #6C5CE7;   /* acento principal (violeta-azul) */
-  --green:   #16C2A3;
-  --yellow:  #F4A93C;
-  --purple:  #9B5DE5;
-  --orange:  #FF6040;
+  --cyan:    #407887;   /* acento principal (antes violeta-azul) */
+  --green:   #2C9658;   /* success */
+  --yellow:  #F09D0F;   /* warning */
+  --purple:  #31606D;
+  --orange:  #E05A29;   /* accent de marca, solo para CTAs puntuales */
+  /* Escala completa de marca, por si hace falta un tono intermedio */
+  --primary-50:#F0F7F9; --primary-100:#DEEEF2; --primary-200:#BEDCE4; --primary-300:#94C4D1;
+  --primary-400:#61A5B8; --primary-500:#4C91A4; --primary-600:#407887; --primary-700:#31606D;
+  --primary-800:#254B56; --primary-900:#19363E;
+  --success-light:#DFF6E9; --warning-light:#FCEFCF; --danger-light:#FBE2E0; --info-light:#E1EDFA;
+  --radius:14px; --radius-sm:8px;
+  --shadow: 0 1px 2px rgba(25,32,36,0.06), 0 4px 16px rgba(25,32,36,0.06);
   /* ── Transitions ── */
   --ease: cubic-bezier(0.4,0,0.2,1);
   --bounce: cubic-bezier(0.34,1.56,0.64,1);
 }
 
 /* ── Reset ───────────────────────────────────────────────────────────────── */
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Open Sans',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',system-ui,sans-serif}
 body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+.sidebar-brand h1,.header-title h1,.kpi-val,.aud-card .aud-name,.top-ad-leads{font-family:'Sora',system-ui,sans-serif}
 
 /* ── App layout (sidebar + main) ─────────────────────────────────────────── */
 .app{display:flex;min-height:100vh;position:relative;z-index:1}
@@ -85,7 +93,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 .sidebar::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1);border-radius:3px}
 .sidebar-brand{display:flex;align-items:center;gap:11px;padding:22px 20px 16px}
 .sidebar-brand .logo-circle{width:40px;height:40px;display:flex;align-items:center;
-  justify-content:center;filter:drop-shadow(0 0 9px rgba(255,96,64,.45));flex-shrink:0}
+  justify-content:center;filter:drop-shadow(0 0 9px rgba(64,120,135,.45));flex-shrink:0}
 .sidebar-brand h1{font-size:15px;font-weight:700;color:#fff;letter-spacing:-.2px;line-height:1.15}
 .sidebar-brand p{font-size:10px;color:var(--side-text2);margin-top:3px}
 .nav-group-label{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
@@ -100,7 +108,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 .nav-item .nav-ico{font-size:15px;width:20px;text-align:center;flex-shrink:0}
 .nav-item:hover{background:rgba(255,255,255,.06);color:#fff}
 .nav-item.active{background:linear-gradient(135deg,var(--violet),var(--coral));color:#fff;
-  box-shadow:0 7px 20px rgba(155,93,229,.4)}
+  box-shadow:0 7px 20px rgba(49,96,109,.4)}
 
 /* ── Topbar ── */
 .topbar{
@@ -128,7 +136,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 }
 .header-left{display:flex;align-items:center;gap:14px}
 .logo-circle{width:44px;height:44px;display:flex;align-items:center;justify-content:center;
-  filter:drop-shadow(0 0 8px rgba(255,96,64,0.4))}
+  filter:drop-shadow(0 0 8px rgba(64,120,135,0.4))}
 .header-title h1{font-size:18px;font-weight:700;color:var(--coral);letter-spacing:-.2px}
 .header-title p{font-size:11px;color:var(--text2);margin-top:2px}
 .header-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
@@ -162,11 +170,11 @@ body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 .tab-panel{display:none}.tab-panel.active{display:block}
 
 /* ── KPI cards ───────────────────────────────────────────────────────────── */
-.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin-bottom:26px}
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:14px;margin-bottom:26px}
 .kpi-card{
   background:var(--card);border:1px solid var(--border);border-radius:14px;
   padding:20px 20px 18px;position:relative;overflow:hidden;
-  box-shadow:0 1px 3px rgba(28,27,58,.05),0 10px 26px rgba(28,27,58,.04);
+  box-shadow:0 1px 3px rgba(25,32,36,.05),0 10px 26px rgba(25,32,36,.04);
   transition:transform .25s var(--ease),box-shadow .25s var(--ease)
 }
 .kpi-card::after{
@@ -180,14 +188,14 @@ body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
   .kpi-card:nth-child(5){animation-delay:280ms}  .kpi-card:nth-child(6){animation-delay:350ms}
   .kpi-card:nth-child(7){animation-delay:420ms}  .kpi-card:nth-child(8){animation-delay:490ms}
 }
-.kpi-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(28,27,58,.14)}
+.kpi-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(25,32,36,.14)}
 .kpi-card.c1{--kpi-grad:linear-gradient(90deg,var(--coral),var(--violet))}
 .kpi-card.c2{--kpi-grad:linear-gradient(90deg,var(--violet),var(--pink))}
 .kpi-card.c3{--kpi-grad:linear-gradient(90deg,var(--teal),var(--violet))}
 .kpi-card.c4{--kpi-grad:linear-gradient(90deg,var(--gold),var(--coral))}
 .kpi-card.c5{--kpi-grad:linear-gradient(90deg,var(--violet),var(--teal))}
 .kpi-icon{font-size:22px;margin-bottom:10px;display:block;opacity:.8}
-.kpi-val{font-size:30px;font-weight:700;line-height:1;color:var(--text)}
+.kpi-val{font-size:26px;font-weight:700;line-height:1.15;color:var(--text);white-space:nowrap}
 .kpi-label{font-size:10px;font-weight:600;color:var(--text2);
   margin-top:7px;text-transform:uppercase;letter-spacing:.06em}
 .kpi-sub{font-size:11px;margin-top:4px;color:var(--text3)}
@@ -214,13 +222,13 @@ body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 }
 .toggle-btn.active{
   background:linear-gradient(135deg,var(--violet),var(--coral));
-  color:#fff;box-shadow:0 2px 12px rgba(155,93,229,.35)
+  color:#fff;box-shadow:0 2px 12px rgba(49,96,109,.35)
 }
 
 /* ── Tables ──────────────────────────────────────────────────────────────── */
 .table-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--border);
   margin-bottom:22px;background:var(--card);
-  box-shadow:0 1px 3px rgba(28,27,58,.05),0 10px 26px rgba(28,27,58,.04)}
+  box-shadow:0 1px 3px rgba(25,32,36,.05),0 10px 26px rgba(25,32,36,.04)}
 table{width:100%;border-collapse:collapse;font-size:13px}
 thead{background:var(--card2)}
 th{padding:10px 8px;text-align:left;font-size:10px;font-weight:700;
@@ -236,31 +244,38 @@ td{padding:10px 8px;border-top:1px solid var(--border);
   tbody tr:nth-child(7){animation-delay:210ms}  tbody tr:nth-child(8){animation-delay:245ms}
   tbody tr:nth-child(9){animation-delay:280ms}
 }
-tr:hover td{background:rgba(155,93,229,.05)}
-.sum-row td{font-weight:700;background:rgba(255,96,64,.08);color:var(--coral)}
+tr:hover td{background:rgba(49,96,109,.05)}
+/* ── Filas expandibles (progressive disclosure) ── */
+tr.row-toggle{cursor:pointer}
+tr.row-toggle .row-caret{color:var(--text3);font-size:11px}
+tr.row-toggle:hover .row-caret{color:var(--violet)}
+tr.row-detail{display:none}
+tr.row-detail.open{display:table-row}
+tr.row-detail td{background:var(--card2);color:var(--text2);font-size:11.5px;white-space:normal;padding:8px 8px 10px}
+.sum-row td{font-weight:700;background:rgba(64,120,135,.08);color:var(--coral)}
 
 /* ── Badges ──────────────────────────────────────────────────────────────── */
 .badge{display:inline-flex;align-items:center;padding:3px 9px;border-radius:20px;
   font-size:10px;font-weight:700;letter-spacing:.04em}
-.badge-green {background:rgba(78,205,196,.15);color:var(--teal)}
-.badge-yellow{background:rgba(248,200,64,.15);color:var(--gold)}
-.badge-red   {background:rgba(255,96,64,.15);color:var(--coral)}
-.badge-blue  {background:rgba(155,93,229,.15);color:var(--violet)}
+.badge-green {background:rgba(44,150,88,.15);color:var(--green)}
+.badge-yellow{background:rgba(240,157,15,.15);color:var(--gold)}
+.badge-red   {background:rgba(221,56,44,.15);color:var(--pink)}
+.badge-blue  {background:rgba(49,96,109,.15);color:var(--violet)}
 @media(prefers-reduced-motion:no-preference){
   .badge-green,.badge-yellow,.badge-red{animation:glowPulse 3s ease-in-out infinite}
 }
-.badge-video   {background:rgba(155,93,229,.15);color:var(--violet)}
-.badge-imagen  {background:rgba(78,205,196,.15);color:var(--teal)}
-.badge-carrusel{background:rgba(248,200,64,.15);color:var(--gold)}
+.badge-video   {background:rgba(49,96,109,.15);color:var(--violet)}
+.badge-imagen  {background:rgba(44,150,88,.15);color:var(--green)}
+.badge-carrusel{background:rgba(240,157,15,.15);color:var(--gold)}
 .badge-otro    {background:rgba(255,255,255,.06);color:var(--text2)}
-.badge-activo  {background:rgba(78,205,196,.15);color:var(--teal)}
-.badge-pausado {background:rgba(255,96,64,.15);color:var(--coral)}
+.badge-activo  {background:rgba(44,150,88,.15);color:var(--green)}
+.badge-pausado {background:rgba(221,56,44,.15);color:var(--pink)}
 .badge-nuevo   {background:linear-gradient(90deg,var(--violet),var(--coral));color:#fff}
 
 /* ── Auditoría de campañas ──────────────────────────────────────────────── */
 .aud-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-bottom:24px}
 .aud-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;
-  box-shadow:0 1px 3px rgba(28,27,58,.05),0 10px 26px rgba(28,27,58,.04)}
+  box-shadow:0 1px 3px rgba(25,32,36,.05),0 10px 26px rgba(25,32,36,.04)}
 .aud-card .aud-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
 .aud-card .aud-name{font-size:14px;font-weight:700;color:var(--text)}
 .aud-box{background:var(--card2);border-radius:9px;padding:8px 10px;margin:8px 0;font-size:11.5px}
@@ -291,10 +306,57 @@ tr:hover td{background:rgba(155,93,229,.05)}
 /* ── Charts ──────────────────────────────────────────────────────────────── */
 .charts-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:22px}
 .chart-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;
-  box-shadow:0 1px 3px rgba(28,27,58,.05),0 10px 26px rgba(28,27,58,.04)}
+  box-shadow:0 1px 3px rgba(25,32,36,.05),0 10px 26px rgba(25,32,36,.04)}
 .chart-title{font-size:11px;font-weight:700;color:var(--text2);
   margin-bottom:14px;text-transform:uppercase;letter-spacing:.06em}
 .chart-canvas-wrap{position:relative;height:260px}
+
+/* ── Ritmo de presupuesto (tope mensual) ─────────────────────────────────── */
+.pace-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:22px 24px 20px;margin-bottom:22px;box-shadow:var(--shadow)}
+.pace-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px 16px;margin-bottom:22px}
+.pace-title{font-family:'Sora',system-ui;font-size:14px;font-weight:700;color:var(--text)}
+.pace-status{font-size:12.5px;font-weight:700}
+.pace-status.ok{color:var(--green)}
+.pace-status.bad{color:var(--pink)}
+.pace-track-wrap{padding-top:20px;margin-bottom:8px}
+.pace-track{position:relative;height:24px;background:var(--bg3);border-radius:12px}
+.pace-fill{position:absolute;top:0;left:0;height:100%;border-radius:12px;background:var(--coral);
+  transition:width .6s var(--ease)}
+.pace-fill.bad{background:var(--pink)}
+.pace-proj{position:absolute;top:0;height:100%;border-radius:0 12px 12px 0;box-sizing:border-box;
+  border:2px dashed rgba(255,255,255,.75)}
+.pace-proj.ok{background:rgba(44,150,88,.35)}
+.pace-proj.bad{background:rgba(221,56,44,.35)}
+.pace-tick{position:absolute;top:-6px;width:2px;height:36px;background:var(--text2);border-radius:1px}
+.pace-tick-label{position:absolute;top:-20px;transform:translateX(-50%);font-size:9px;font-weight:700;
+  color:var(--text2);white-space:nowrap;text-transform:uppercase;letter-spacing:.03em}
+.pace-scale{display:flex;justify-content:space-between;font-size:10.5px;color:var(--text3);
+  font-weight:600;margin-bottom:10px}
+.pace-legend{display:flex;flex-wrap:wrap;gap:14px;font-size:11px;color:var(--text2);
+  font-weight:600;margin-bottom:20px}
+.pace-legend-item{display:flex;align-items:center;gap:6px}
+.pace-legend-dot{width:9px;height:9px;border-radius:2px;background:var(--coral);flex-shrink:0}
+.pace-legend-dot.bad{background:var(--pink)}
+.pace-legend-dot.proj{background:transparent;border:2px dashed var(--green)}
+.pace-legend-dot.proj.bad{border-color:var(--pink)}
+.pace-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:10px}
+.pace-stat{background:var(--card2);border-radius:10px;padding:10px 13px;border-left:3px solid var(--border2)}
+.pace-stat .lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;
+  color:var(--text3);margin-bottom:4px}
+.pace-stat .val{font-family:'Sora',system-ui;font-size:16.5px;font-weight:800;color:var(--text);
+  font-variant-numeric:tabular-nums}
+
+.pace-breakdown{margin-top:18px;padding-top:16px;border-top:1px solid var(--border)}
+.pace-breakdown-title{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;
+  color:var(--text3);margin-bottom:10px}
+.pace-breakdown-bar{display:flex;height:14px;border-radius:7px;overflow:hidden;background:var(--bg3);
+  margin-bottom:12px}
+.pace-breakdown-bar>div{height:100%;transition:width .6s var(--ease)}
+.pace-breakdown-legend{display:flex;flex-wrap:wrap;gap:10px 18px;font-size:12px;color:var(--text2)}
+.pace-breakdown-legend b{color:var(--text);font-weight:700}
+.pace-breakdown-legend .pace-legend-dot{width:9px;height:9px;border-radius:2px;flex-shrink:0;
+  display:inline-block;margin-right:6px}
 
 /* ── Alerts ──────────────────────────────────────────────────────────────── */
 .sec-header{display:flex;align-items:center;justify-content:space-between;
@@ -306,10 +368,10 @@ tr:hover td{background:rgba(155,93,229,.05)}
   transition:transform .2s var(--ease)
 }
 .alert-item:hover{transform:translateX(4px)}
-.alert-crit{background:rgba(255,96,64,.08);border-color:var(--coral)}
-.alert-warn{background:rgba(248,200,64,.07);border-color:var(--gold)}
-.alert-ok  {background:rgba(78,205,196,.07);border-color:var(--teal)}
-.alert-info{background:rgba(155,93,229,.07);border-color:var(--violet)}
+.alert-crit{background:rgba(221,56,44,.08);border-color:var(--pink)}
+.alert-warn{background:rgba(240,157,15,.07);border-color:var(--gold)}
+.alert-ok  {background:rgba(44,150,88,.07);border-color:var(--green)}
+.alert-info{background:rgba(49,96,109,.07);border-color:var(--violet)}
 .alert-icon{font-size:20px;flex-shrink:0;margin-top:1px}
 .alert-title{font-size:13px;font-weight:700;margin-bottom:3px;color:var(--text)}
 .alert-desc{font-size:12px;color:var(--text2);line-height:1.5}
@@ -320,11 +382,11 @@ tr:hover td{background:rgba(155,93,229,.05)}
   background:var(--card);border:1px solid var(--border);border-radius:10px;
   margin-bottom:8px;transition:transform .2s var(--ease),border-color .2s
 }
-.top-ad-item:hover{transform:translateX(4px);border-color:rgba(255,96,64,.3)}
+.top-ad-item:hover{transform:translateX(4px);border-color:rgba(64,120,135,.3)}
 .top-ad-num{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;
   justify-content:center;font-size:11px;font-weight:700;flex-shrink:0}
 .num-1{background:linear-gradient(135deg,var(--gold),var(--coral));color:#fff}
-.num-2{background:linear-gradient(135deg,#5A5A8A,#3A3A6A);color:#fff}
+.num-2{background:linear-gradient(135deg,#8A97A0,#57646B);color:#fff}
 .num-3{background:linear-gradient(135deg,var(--coral),var(--pink));color:#fff}
 .num-other{background:rgba(255,255,255,.07);color:var(--text2)}
 .top-ad-info{flex:1;min-width:0}
@@ -346,7 +408,10 @@ tr:hover td{background:rgba(155,93,229,.05)}
 /* ── Ad name cells ───────────────────────────────────────────────────────── */
 .ad-table-row td{vertical-align:top;padding:10px 14px}
 .ad-name-cell{max-width:260px}
-.ad-name-main{font-size:13px;font-weight:600;line-height:1.3;margin-bottom:4px;color:var(--text)}
+/* hereda white-space:nowrap del td genérico — sin esto el título largo del anuncio
+   se pinta encima de las columnas vecinas (Clínica/Leads) en vez de ajustarse. */
+.ad-name-main{font-size:13px;font-weight:600;line-height:1.3;margin-bottom:4px;color:var(--text);
+  white-space:normal;overflow-wrap:break-word}
 .ad-name-camp{font-size:11px;color:var(--text3);white-space:nowrap;overflow:hidden;
   text-overflow:ellipsis;max-width:240px}
 .ad-name-adset{font-size:11px;color:var(--text2);white-space:nowrap;overflow:hidden;
@@ -434,11 +499,7 @@ body:not(.unlocked) #login{display:flex}
 <aside class="sidebar">
   <div class="sidebar-brand">
     <div class="logo-circle">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 115" width="40" height="46" fill="#FF6040">
-        <circle cx="42" cy="16" r="14"/>
-        <circle cx="76" cy="38" r="10"/>
-        <path d="M56 28 C70 32 80 44 76 58 C72 70 60 74 52 68 C46 63 47 53 54 50 C60 47 65 52 62 58 C59 64 52 64 48 60 C38 52 40 38 50 30 C38 26 22 34 18 50 C14 66 24 86 42 92 C60 98 78 88 82 72 C86 56 76 40 62 32" stroke="#FF6040" stroke-width="7" fill="none" stroke-linecap="round"/>
-      </svg>
+      <img src="logo-equilibrio-total.png" alt="Equilibrio Total" width="40" height="32" style="object-fit:contain">
     </div>
     <div>
       <h1>Equilibrio Total</h1>
@@ -482,12 +543,17 @@ body:not(.unlocked) #login{display:flex}
   </div>
 </div>
 
+<div id="ccStaleBanner"></div>
+
 <div class="content">
 
 <!-- RESUMEN -->
 <div id="tab-resumen" class="tab-panel active">
   <div class="kpi-row" id="kpiRow"></div>
+  <div class="kpi-row" id="kpiRowCplCpa" style="margin-top:-12px;grid-template-columns:repeat(6,minmax(150px,1fr))"></div>
+  <div id="geroCpaDetalle"></div>
   <div id="proyRow"></div>
+  <div id="presupuestoPaceCard"></div>
   <div class="charts-row">
     <div class="chart-card">
       <div class="chart-title" id="tituloLeadsSedes">Leads por Sede</div>
@@ -511,7 +577,7 @@ body:not(.unlocked) #login{display:flex}
   <!-- Desglose gasto por franquicia -->
   <div class="charts-row" style="grid-template-columns:1fr 1fr;margin-bottom:24px">
     <div class="chart-card">
-      <div class="chart-title" id="tituloGastoSedes" style="margin-bottom:14px">💸 Gasto Laura por Sede (sin Promo)</div>
+      <div class="chart-title" id="tituloGastoSedes" style="margin-bottom:14px">💸 Gasto por Sede (Laura + Promo)</div>
       <div id="gastoSedesDetalle"></div>
     </div>
     <div class="chart-card">
@@ -574,9 +640,8 @@ body:not(.unlocked) #login{display:flex}
   <div class="table-wrap">
     <table>
       <thead><tr>
-        <th>Clínica</th><th>Leads</th><th>Meta Leads</th><th>Proy. Leads</th><th>% Leads</th><th class="col-gasto-mes">Gasto</th><th>CPL</th>
-        <th>Leads CC</th><th>Reales</th><th>Agendadas CC</th><th>Proy. Agend</th><th>Asistidas</th><th>Proy. Asist</th>
-        <th>Meta CC</th><th>% Avance CC</th><th>Conv. A→Asist</th><th>Conv. L→A</th><th>Restan</th><th>CPA</th>
+        <th style="width:26px"></th><th>Clínica</th><th>Leads</th><th>% Leads</th><th class="col-gasto-mes">Gasto</th><th>CPL</th>
+        <th>Asistidas</th><th>% Avance CC</th>
       </tr></thead>
       <tbody id="tablaSedes"></tbody>
     </table>
@@ -602,9 +667,8 @@ body:not(.unlocked) #login{display:flex}
   <div class="table-wrap">
     <table>
       <thead><tr>
-        <th>Franquicia</th><th>Leads</th><th>Meta Leads</th><th>Proy. Leads</th><th>% Leads</th><th class="col-gasto-mes">Gasto</th><th>CPL</th>
-        <th>Leads CC</th><th>Reales</th><th>Reserv.</th><th>Proy. Reserv</th><th>Asistidas</th><th>Proy. Asist</th>
-        <th>Meta CC</th><th>% Avance CC</th><th>Conv. L→A</th><th>Restan</th><th>CPA</th>
+        <th style="width:26px"></th><th>Franquicia</th><th>Leads</th><th>% Leads</th><th class="col-gasto-mes">Gasto</th><th>CPL</th>
+        <th>Asistidas</th><th>% Avance CC</th>
       </tr></thead>
       <tbody id="tablaFranq"></tbody>
     </table>
@@ -730,8 +794,8 @@ body:not(.unlocked) #login{display:flex}
   <div class="table-wrap">
     <table>
       <thead><tr>
-        <th>Clínica</th><th>Campaña</th><th>Ad set</th><th>Status</th><th>Días activo</th>
-        <th>Frecuencia</th><th>Gasto</th><th>Leads</th><th>CPL</th><th>Días p/quemarse</th><th>Diagnóstico</th>
+        <th style="width:26px"></th><th>Clínica</th><th>Ad set</th>
+        <th>Frecuencia</th><th>Gasto</th><th>Leads</th><th>CPL</th><th>Diagnóstico</th>
       </tr></thead>
       <tbody id="tablaAudCampanas"></tbody>
     </table>
@@ -800,12 +864,19 @@ body:not(.unlocked) #login{display:flex}
   <div class="chart-card" style="margin-bottom:24px">
     <div class="chart-canvas-wrap" style="height:320px"><canvas id="chartDiarioDetalle"></canvas></div>
   </div>
-  <div class="table-wrap" style="margin-bottom:32px">
-    <table id="tablaDiaria">
-      <thead id="tablaDiariaHead"></thead>
-      <tbody id="tablaDiariaBody"></tbody>
-    </table>
-  </div>
+  <!-- Tabla matriz fecha×clínica: mismos datos que la gráfica de arriba, colapsada por
+       defecto para no imponer 11-15 columnas de golpe — el detalle exacto queda a un clic. -->
+  <details style="margin-bottom:32px">
+    <summary style="cursor:pointer;font-size:12.5px;font-weight:700;color:var(--text2);padding:8px 0;user-select:none">
+      Ver tabla detallada (valores exactos por día y clínica)
+    </summary>
+    <div class="table-wrap" style="margin-top:10px">
+      <table id="tablaDiaria">
+        <thead id="tablaDiariaHead"></thead>
+        <tbody id="tablaDiariaBody"></tbody>
+      </table>
+    </div>
+  </details>
 
   <!-- GERONTOLOGÍA APARTE -->
   <div style="border-top:2px solid var(--border);padding-top:24px;margin-top:8px">
@@ -849,7 +920,7 @@ body:not(.unlocked) #login{display:flex}
 <div id="tab-gero" class="tab-panel">
   <div class="kpi-row" id="kpiGero"></div>
 
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:24px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-bottom:24px">
     <!-- Consulta Gerontologia -->
     <div class="chart-card" style="border-top:3px solid var(--cyan)">
       <div class="chart-title" style="font-size:14px;font-weight:700;color:var(--cyan);margin-bottom:16px">🩺 Consulta Gerontología</div>
@@ -859,6 +930,17 @@ body:not(.unlocked) #login{display:flex}
     <div class="chart-card" style="border-top:3px solid var(--purple)">
       <div class="chart-title" style="font-size:14px;font-weight:700;color:var(--purple);margin-bottom:16px">💃 Taller Baile</div>
       <div id="geroTallerCard"></div>
+    </div>
+    <!-- Paquete Longevidad -->
+    <div class="chart-card" style="border-top:3px solid var(--gold)">
+      <div class="chart-title" style="font-size:14px;font-weight:700;color:var(--gold);margin-bottom:16px">🌿 Paquete Longevidad</div>
+      <div id="geroLongevidadCard"></div>
+    </div>
+    <!-- Otros -->
+    <div class="chart-card" style="border-top:3px solid var(--teal)">
+      <div class="chart-title" style="font-size:14px;font-weight:700;color:var(--teal);margin-bottom:16px">📋 Otros Gerontología</div>
+      <div id="geroOtrosCard"></div>
+      <div style="font-size:10.5px;color:var(--text3);margin-top:8px">Club Gerontología, sesiones sueltas, evaluaciones — sin categoría propia todavía.</div>
     </div>
   </div>
 
@@ -915,7 +997,8 @@ let chartInst = {};
 let adModo = 'top';
 let leadsModo = 'todas_sedes';
 let diarioMode = 'sedes';
-let gastoDiarioModo = 'todos';
+const GASTO_DIARIO_KEYS = ['sedes','franquicias','complementos'];
+let gastoDiarioModo = new Set(GASTO_DIARIO_KEYS);  // multi-select — antes solo dejaba elegir 1
 
 // ── Cargar datos ── (DATA es var global → la comparte cargarMes al cambiar de mes)
 function tryInit() {
@@ -935,7 +1018,7 @@ function init() {
   // Títulos dinámicos por mes
   if (document.getElementById('tituloLeadsSedes'))  document.getElementById('tituloLeadsSedes').textContent  = 'Leads por Sede — ' + ml;
   if (document.getElementById('tituloLeadsFranq'))  document.getElementById('tituloLeadsFranq').textContent  = 'Leads por Franquicia — ' + ml;
-  if (document.getElementById('tituloGastoSedes'))  document.getElementById('tituloGastoSedes').innerHTML    = '💸 Gasto Laura (sin Promo) — ' + ml;
+  if (document.getElementById('tituloGastoSedes'))  document.getElementById('tituloGastoSedes').innerHTML    = '💸 Gasto por Sede (Laura + Promo) — ' + ml;
   if (document.getElementById('tituloGastoFranq'))  document.getElementById('tituloGastoFranq').innerHTML    = '🏢 Gasto por Franquicia — ' + ml;
   // Encabezados de tablas
   document.querySelectorAll('.col-gasto-mes').forEach(function(el){ el.textContent = 'Gasto ' + ml; });
@@ -943,10 +1026,12 @@ function init() {
   if (window.Chart) {
     Chart.defaults.font.family = "'Open Sans', system-ui";
     Chart.defaults.font.weight = "400";
-    Chart.defaults.color = "#6A6F8E";
+    Chart.defaults.color = "#57646B";
     Chart.defaults.animation = { duration: 1200, easing: 'easeOutQuart' };
   }
+  renderCcStaleBanner();
   renderKPIs();
+  renderPresupuestoPace();
   renderAyer();
   renderGastoCuentas();
   renderChartLeads();
@@ -1049,11 +1134,40 @@ function getMesCorto() {
   return MESES[parseInt(d.slice(5,7))];
 }
 
+// ── Alerta: Excel de Contact Center desactualizado ──
+// El pipeline corre solo cada 4h, pero RESULTADOS CC AGOSTO.xlsx lo actualiza
+// una persona a mano — si nadie lo vuelve a guardar, agendadas/asistidas se
+// quedan congeladas aunque todo lo demás (Meta Ads) siga fresco. Detectado
+// 2026-08-14: el archivo llevaba 6 días sin guardarse y nadie se dio cuenta
+// hasta comparar contra el Excel real.
+function renderCcStaleBanner() {
+  var el = document.getElementById('ccStaleBanner');
+  if (!el) return;
+  var dias = DATA.cc_excel_dias_desde_actualizacion;
+  if (dias == null || dias < 2) { el.innerHTML = ''; return; }
+  var critico = dias >= 4;
+  var bg = critico ? 'rgba(221,56,44,0.12)' : 'rgba(240,157,15,0.12)';
+  var border = critico ? 'var(--pink)' : 'var(--yellow)';
+  var color = critico ? 'var(--pink)' : 'var(--yellow)';
+  el.innerHTML =
+    '<div style="background:' + bg + ';border-bottom:2px solid ' + border + ';padding:9px 24px;' +
+      'font-size:12.5px;font-weight:600;color:' + color + ';display:flex;align-items:center;gap:8px">' +
+      '<span style="font-size:15px">⚠️</span>' +
+      '<span>El Excel de Contact Center (RESULTADOS CC AGOSTO.xlsx) lleva <b>' + dias + ' día' + (dias===1?'':'s') + '</b> sin actualizarse' +
+      (DATA.cc_excel_actualizado ? ' (última vez: ' + DATA.cc_excel_actualizado + ')' : '') +
+      ' — agendadas/asistidas/CPA pueden estar desactualizados hasta que alguien lo vuelva a guardar en esta carpeta.</span>' +
+    '</div>';
+}
+
 // ── KPIs ──
 function renderKPIs() {
   const s = DATA.sedes, f = DATA.franquicias;
-  // KPIs de sedes = SOLO las 9 sedes reales (mismas de la tabla) — excluye
-  // "Promociones" y cualquier pauta mapeada a otra clínica dentro del bucket.
+  // KPIs de sedes = SOLO las 9 sedes reales (mismas de la tabla). El gasto_mes
+  // de cada sede YA incluye pauta con nombre de esa sede corrida dentro de la
+  // cuenta de Promociones (es la misma plata de Equilibrio Total, solo cambia
+  // la cuenta técnica que la procesó — a diferencia de una franquicia, no hay
+  // un dueño externo transfiriendo ese dinero aparte). Lo que sí se excluye es
+  // cualquier franquicia o Gerontología, que viven en sus propios buckets.
   const SEDES_KPI = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco',
                      'Balbuena','Tlahuac','Mixquiahuala','Milpa Alta',
                      'Chalco / Milpa Alta / Tlahuac'];
@@ -1061,6 +1175,9 @@ function renderKPIs() {
   let leadsF=0, gastoF=0, asistF=0;
   SEDES_KPI.forEach(k => { const v = s[k]||{}; leadsS+=v.leads_mes||0; gastoS+=v.gasto_mes||0; asistS+=v.asistidas||0; });
   Object.values(f).forEach(v => { leadsF+=v.leads_mes; gastoF+=v.gasto_mes; asistF+=v.asistidas||0; });
+  // Expuesto para renderPresupuestoPace() (mismo tab, se llama justo después) —
+  // no duplica el cálculo, solo comparte el resultado ya obtenido arriba.
+  window.__resumenTotales = { gastoS, gastoF, leadsS, leadsF };
   const tLeads = leadsS+leadsF, tGasto = gastoS+gastoF, tAsist = asistS+asistF;
   const cpl = tLeads > 0 ? tGasto/tLeads : 0;
   const cpa = tAsist > 0 ? tGasto/tAsist : 0;
@@ -1073,23 +1190,68 @@ function renderKPIs() {
   const cplF = leadsF > 0 ? gastoF/leadsF : 0;
   const cpaS = asistS > 0 ? gastoS/asistS : 0;
   const cpaF = asistF > 0 ? gastoF/asistF : 0;
+
+  // Gerontología — propia cuenta, propio KPI, nunca mezclada con Sedes/Franquicias.
+  let leadsG=0, gastoG=0, asistG=0;
+  Object.values(DATA.gerontologia || {}).forEach(v => { leadsG+=v.leads_mes||0; gastoG+=v.gasto_mes||0; asistG+=v.asistidas||0; });
+  const cplG = leadsG > 0 ? gastoG/leadsG : 0;
+  const cpaG = asistG > 0 ? gastoG/asistG : 0;
+
   const kpis = [
     {icon:'🏥', val: fmtN(leadsS),  label:'Leads Sedes',        sub:'9 sedes — Laura',                 cls:'c1'},
     {icon:'🏢', val: fmtN(leadsF),  label:'Leads Franquicias',  sub:'13 franquicias al '+dia,           cls:'c5'},
-    {icon:'💰', val: fmt(gastoS),   label:'Gasto Laura',        sub:'Sin Promo · 9 sedes al '+dia,      cls:'c2'},
+    {icon:'💰', val: fmt(gastoS),   label:'Gasto Sedes',        sub:'Laura + Promo (pauta de sede) · 9 sedes al '+dia, cls:'c2'},
     {icon:'💳', val: fmt(gastoF),   label:'Gasto Franquicias',  sub:'13 cuentas al '+dia,               cls:'c3'},
-    {icon:'📊', val: fmt(cplS),     label:'CPL Sedes',          sub:'Gasto sedes ÷ Leads sedes',        cls:'c2'},
-    {icon:'📊', val: fmt(cplF),     label:'CPL Franquicias',    sub:'Gasto franq ÷ Leads franq',        cls:'c5'},
-    {icon:'🎯', val: fmt(cpaS),     label:'CPA Sedes',          sub:'Gasto sedes ÷ Asistidas sedes',    cls:'c4'},
-    {icon:'🎯', val: fmt(cpaF),     label:'CPA Franquicias',    sub:'Gasto franq ÷ Asistidas franq',    cls:'c3'},
     {icon:'📋', val: convCC,        label:'Conv. Agend→Asist',  sub:fmtN(tAgendSedes)+' agend → '+fmtN(tAsistSedes)+' asist (sedes)', cls:'c5'},
   ];
-  document.getElementById('kpiRow').innerHTML = kpis.map(k =>
+  // Fila aparte, dedicada, para que los 3 pares CPL/CPA queden agrupados por
+  // entidad (Sedes → Gerontología → Franquicias) sin que el wrap del grid los
+  // corte a la mitad como pasaba cuando compartían fila con Leads/Gasto.
+  const kpisCplCpa = [
+    {icon:'📊', val: fmt(cplS),     label:'CPL Sedes',          sub:'Gasto sedes ÷ Leads sedes',        cls:'c2'},
+    {icon:'🎯', val: fmt(cpaS),     label:'CPA Sedes',          sub:'Gasto sedes ÷ Asistidas sedes',    cls:'c4'},
+    {icon:'📊', val: fmt(cplG),     label:'CPL Gerontología',   sub:fmtN(leadsG)+' leads · '+fmt(gastoG)+' gasto', cls:'c2'},
+    {icon:'🎯', val: asistG>0?fmt(cpaG):'—', label:'CPA Gerontología', sub:fmtN(asistG)+' asistidas',   cls:'c4'},
+    {icon:'📊', val: fmt(cplF),     label:'CPL Franquicias',    sub:'Gasto franq ÷ Leads franq',        cls:'c5'},
+    {icon:'🎯', val: fmt(cpaF),     label:'CPA Franquicias',    sub:'Gasto franq ÷ Asistidas franq',    cls:'c3'},
+  ];
+  const kpiHtml = arr => arr.map(k =>
     `<div class="kpi-card ${k.cls}"><span class="kpi-icon">${k.icon}</span>
      <div class="kpi-val">${k.val}</div>
      <div class="kpi-label">${k.label}</div>
      <div class="kpi-sub">${k.sub}</div></div>`
   ).join('');
+  document.getElementById('kpiRow').innerHTML = kpiHtml(kpis);
+  if (document.getElementById('kpiRowCplCpa')) document.getElementById('kpiRowCplCpa').innerHTML = kpiHtml(kpisCplCpa);
+
+  // Desglose de CPA de Gerontología por categoría — el CPA promedio ($134.91)
+  // esconde que Taller Baile cuesta $35 y Consulta cuesta $591; verlo junto
+  // sin abrir el tab de Gerontología es justo el punto de este bloque.
+  var geroEl = document.getElementById('geroCpaDetalle');
+  if (geroEl) {
+    var ORDEN_GERO = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Otros Gerontología'];
+    var geroData = DATA.gerontologia || {};
+    var geroCards = ORDEN_GERO.filter(function(c){ return geroData[c]; }).map(function(c) {
+      var v = geroData[c];
+      var asist = v.asistidas || 0;
+      var cpa = asist > 0 ? v.gasto_mes / asist : 0;
+      return {
+        icon: '👵', val: asist > 0 ? fmt(cpa) : '—',
+        label: 'CPA ' + c,
+        sub: fmtN(asist) + ' asistidas · ' + fmtN(v.leads_mes||0) + ' leads',
+        cls: 'c4',
+      };
+    });
+    if (geroCards.length) {
+      geroEl.innerHTML =
+        '<div style="font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--text3);margin:-8px 0 8px 2px">Gerontología por categoría</div>' +
+        '<div class="kpi-row" style="margin-bottom:22px;grid-template-columns:repeat(' + geroCards.length + ',minmax(160px,1fr))">' +
+          kpiHtml(geroCards) +
+        '</div>';
+    } else {
+      geroEl.innerHTML = '';
+    }
+  }
 
   // ── PROYECCIÓN DE CIERRE — solo en el mes en curso ──
   (function(){
@@ -1149,8 +1311,8 @@ function renderKPIs() {
       +   '<span style="font-size:10.5px;color:var(--text3)">al ritmo del día '+dia+' de '+diasMes+'</span>'
       + '</div>'
       + '<div style="display:flex;flex-wrap:wrap;gap:8px">'
-      + grupo('SEDES', '#16C2A3', proy(pLeadsS), mlS, proy(pAgendS), 'Agendadas', proy(pAsistS), mccS, proy(pGastoS))
-      + grupo('FRANQUICIAS', '#9B5DE5', proy(leadsF), mlF, proy(resF), 'Reservadas', proy(asistF), mccF, proy(gastoF))
+      + grupo('SEDES', '#428CD7', proy(pLeadsS), mlS, proy(pAgendS), 'Agendadas', proy(pAsistS), mccS, proy(pGastoS))
+      + grupo('FRANQUICIAS', '#31606D', proy(leadsF), mlF, proy(resF), 'Reservadas', proy(asistF), mccF, proy(gastoF))
       + '</div></div>';
   })();
 
@@ -1159,12 +1321,92 @@ function renderKPIs() {
   renderGastoDesglose('gastoFranqDetalle', f, 'purple');
 }
 
+// ── Ritmo de presupuesto — tope mensual (Laura+Promo+Gerontología) ──
+// Lee AUDITORIA_DATA.presupuesto (calculado en generar_auditoria.py, ya
+// corre cada 4h) — NO recalcula nada aquí, solo visualiza.
+function renderPresupuestoPace() {
+  var el = document.getElementById('presupuestoPaceCard');
+  if (!el) return;
+  var A = window.AUDITORIA_DATA;
+  var P = A && A.presupuesto;
+  if (!P || !P.cap) { el.innerHTML = ''; return; }
+
+  var yaSobrado  = P.gasto_mtd > P.cap;
+  var sobra      = !!P.se_pasa_del_tope || yaSobrado;
+  var statusCls  = sobra ? 'bad' : 'ok';
+
+  var pctGastado = Math.max(0, Math.min(P.gasto_mtd / P.cap * 100, 100));
+  var pctProy    = P.cap > 0 ? P.proyeccion_fin_mes / P.cap * 100 : 0;
+  var diasTotal  = (P.dias_transcurridos || 0) + (P.dias_restantes || 0);
+  var pctPace    = diasTotal > 0 ? Math.max(0, Math.min(P.dias_transcurridos / diasTotal * 100, 100)) : 0;
+
+  var projLeft   = pctGastado;
+  var projWidth  = Math.max(Math.min(pctProy, 100) - projLeft, 0);
+
+  var statusTxt = sobra
+    ? (yaSobrado
+        ? 'Ya vas ' + fmt(P.gasto_mtd - P.cap) + ' arriba del tope este mes'
+        : 'A este ritmo, cierras en ' + fmt(P.proyeccion_fin_mes) + ' — te pasarías del tope por ' + fmt(P.proyeccion_fin_mes - P.cap))
+    : 'A este ritmo, cierras el mes en ' + fmt(P.proyeccion_fin_mes) + ' — dentro del tope';
+
+  // ── Desglose de a qué corresponde el "gasto acumulado" (para que nunca se
+  // vea como una cifra suelta que no cuadra con Gasto Sedes / Franquicias) ──
+  var gastoSedes = (window.__resumenTotales && window.__resumenTotales.gastoS) || 0;
+  var gastoGero = Object.values(DATA.gerontologia || {}).reduce((a, v) => a + (v.gasto_mes || 0), 0);
+  var gastoSinAsignar = Object.values(DATA.complementos || {}).reduce((a, v) => a + (v.gasto_mes || 0), 0);
+  var gastoFranqEnLauraPromo = Math.max(0, P.gasto_mtd - gastoSedes - gastoGero - gastoSinAsignar);
+  var desgloseItems = [
+    { lbl: 'Sedes', val: gastoSedes, color: 'var(--teal)' },
+    { lbl: 'Franquicias (pauta en Laura/Promo)', val: gastoFranqEnLauraPromo, color: 'var(--gold)' },
+    { lbl: 'Gerontología', val: gastoGero, color: 'var(--violet)' },
+    { lbl: 'Sin asignar a clínica', val: gastoSinAsignar, color: 'var(--text3)' },
+  ].filter(it => it.val > 0.5);
+  var desgloseHtml = '<div class="pace-breakdown">' +
+    '<div class="pace-breakdown-title">¿De qué se compone el gasto acumulado?</div>' +
+    '<div class="pace-breakdown-bar">' + desgloseItems.map(it =>
+      '<div style="width:' + (P.gasto_mtd > 0 ? it.val / P.gasto_mtd * 100 : 0) + '%;background:' + it.color + '" title="' + it.lbl + ': ' + fmt(it.val) + '"></div>'
+    ).join('') + '</div>' +
+    '<div class="pace-breakdown-legend">' + desgloseItems.map(it =>
+      '<span><span class="pace-legend-dot" style="background:' + it.color + '"></span>' + it.lbl + ' — <b>' + fmt(it.val) + '</b></span>'
+    ).join('') + '</div>' +
+  '</div>';
+
+  el.innerHTML =
+    '<div class="pace-card">' +
+      '<div class="pace-head">' +
+        '<span class="pace-title">💰 Ritmo de presupuesto — tope mensual</span>' +
+        '<span class="pace-status ' + statusCls + '">' + (sobra ? '⚠️ ' : '✅ ') + statusTxt + '</span>' +
+      '</div>' +
+      '<div class="pace-track-wrap"><div class="pace-track">' +
+        '<div class="pace-fill' + (yaSobrado ? ' bad' : '') + '" style="width:' + pctGastado + '%"></div>' +
+        (projWidth > 0 ? '<div class="pace-proj ' + statusCls + '" style="left:' + projLeft + '%;width:' + projWidth + '%"></div>' : '') +
+        '<div class="pace-tick" style="left:' + pctPace + '%"></div>' +
+        '<div class="pace-tick-label" style="left:' + pctPace + '%">Ritmo esperado hoy</div>' +
+      '</div></div>' +
+      '<div class="pace-scale"><span>$0</span><span>' + fmt(P.cap) + ' tope</span></div>' +
+      '<div class="pace-legend">' +
+        '<span class="pace-legend-item"><span class="pace-legend-dot' + (yaSobrado ? ' bad' : '') + '"></span>Gastado (' + fmt(P.gasto_mtd) + ')</span>' +
+        '<span class="pace-legend-item"><span class="pace-legend-dot proj ' + statusCls + '"></span>Proyectado al cierre (' + fmt(P.proyeccion_fin_mes) + ')</span>' +
+      '</div>' +
+      '<div class="pace-stats">' +
+        '<div class="pace-stat"><div class="lbl">Gasto acumulado</div><div class="val">' + fmt(P.gasto_mtd) + '</div></div>' +
+        '<div class="pace-stat"><div class="lbl">Margen restante</div><div class="val">' + fmt(P.margen_restante) + '</div></div>' +
+        '<div class="pace-stat"><div class="lbl">Ritmo diario actual</div><div class="val">' + fmt(P.ritmo_diario_actual) + '</div></div>' +
+        '<div class="pace-stat"><div class="lbl">Margen diario disponible</div><div class="val">' + fmt(P.margen_diario_disponible) + '</div></div>' +
+        '<div class="pace-stat"><div class="lbl">Días restantes</div><div class="val">' + (P.dias_restantes != null ? P.dias_restantes : '—') + '</div></div>' +
+        '<div class="pace-stat" style="border-left-color:' + (sobra ? 'var(--pink)' : 'var(--green)') + '">' +
+          '<div class="lbl">Proyección fin de mes</div><div class="val" style="color:' + (sobra ? 'var(--pink)' : 'var(--text)') + '">' + fmt(P.proyeccion_fin_mes) + '</div></div>' +
+      '</div>' +
+      desgloseHtml +
+    '</div>';
+}
+
 function renderGastoDesglose(elId, data, color) {
   const orden = Object.keys(data).sort((a,b) => data[b].gasto_mes - data[a].gasto_mes);
   const max   = data[orden[0]] ? data[orden[0]].gasto_mes : 1;
   const grad  = color === 'cyan'
-    ? 'linear-gradient(90deg,#9B5DE5,#6C5CE7)'
-    : 'linear-gradient(90deg,#FF6040,#F4A93C)';
+    ? 'linear-gradient(90deg,#31606D,#407887)'
+    : 'linear-gradient(90deg,#407887,#F09D0F)';
 
   const filas = orden.map(c => {
     const v   = data[c];
@@ -1292,7 +1534,9 @@ function renderGastoCuentas() {
 }
 
 function renderChartLeads() {
-  const colores = ['#9B5DE5','#FF6040','#16C2A3','#F4A93C','#FF4D8D','#6C5CE7','#00BCD4','#5A8DEE','#26DE81'];
+  // Una sola métrica (leads) por categoría (clínica): un solo tono de marca,
+  // no arcoíris — el color no está codificando identidad aquí.
+  const colores = ['#407887'];
 
   const sNombres = Object.keys(DATA.sedes).sort();
   const sLeads   = sNombres.map(k => DATA.sedes[k].leads_mes);
@@ -1303,15 +1547,22 @@ function renderChartLeads() {
   mkChart('chartLeadsFranq','bar',fNombres,fLeads,colores,'Leads');
 }
 
-// ── Filtro de la gráfica de gasto diario ──
+// ── Filtro de la gráfica de gasto diario (multi-select: se puede combinar
+// ej. Sedes + Franquicias a la vez, no solo una opción sola) ──
 function setGastoDiario(modo){
-  gastoDiarioModo = modo;
+  if (modo === 'todos') {
+    gastoDiarioModo = new Set(GASTO_DIARIO_KEYS);
+  } else if (gastoDiarioModo.has(modo)) {
+    if (gastoDiarioModo.size > 1) gastoDiarioModo.delete(modo);  // no permitir dejar 0 seleccionados
+  } else {
+    gastoDiarioModo.add(modo);
+  }
   renderGastoDiarioFiltros();
   const g = chartInst['chartGastoDiario'];
   if (g) {
     // Chart.js NO respeta dataset.hidden en update() — hay que usar setDatasetVisibility()
     g.data.datasets.forEach(function(d, i){
-      g.setDatasetVisibility(i, modo === 'todos' || d.key === modo);
+      g.setDatasetVisibility(i, gastoDiarioModo.has(d.key));
     });
     g.update();
   } else {
@@ -1321,9 +1572,10 @@ function setGastoDiario(modo){
 function renderGastoDiarioFiltros(){
   const wrap = document.getElementById('gastoDiarioFiltros');
   if(!wrap) return;
+  const todosSel = GASTO_DIARIO_KEYS.every(k => gastoDiarioModo.has(k));
   const opts = [['todos','Todos'],['sedes','Sedes'],['franquicias','Franquicias'],['complementos','Complementos']];
   wrap.innerHTML = opts.map(([k,lbl])=>{
-    const sel = (gastoDiarioModo === k);
+    const sel = (k === 'todos') ? todosSel : gastoDiarioModo.has(k);
     return '<button onclick="setGastoDiario(\''+k+'\')" style="'
       + 'padding:4px 11px;font-size:11px;font-weight:600;border-radius:20px;cursor:pointer;border:1.5px solid;'
       + (sel ? 'background:var(--cyan);color:#fff;border-color:var(--cyan)' : 'background:none;color:var(--text2);border-color:var(--border)')
@@ -1361,10 +1613,10 @@ function renderGastoDiario() {
   // Siempre los 3 datasets; se ocultan con hidden según el filtro (más estable que filtrar el array)
   const base = {fill:true, tension:0.4, borderWidth:2.5, pointRadius:0, pointHoverRadius:5};
   const datasets = [
-    Object.assign({key:'sedes',        label:'Sedes',        data:gastoS, borderColor:'#9B5DE5', backgroundColor:areaGrad('155,93,229'),  pointBackgroundColor:'#9B5DE5'}, base),
-    Object.assign({key:'franquicias',  label:'Franquicias',  data:gastoF, borderColor:'#FF6040', backgroundColor:areaGrad('255,96,64'),   pointBackgroundColor:'#FF6040'}, base),
-    Object.assign({key:'complementos', label:'Complementos', data:gastoC, borderColor:'#F4A93C', backgroundColor:areaGrad('244,169,60'),  pointBackgroundColor:'#F4A93C'}, base),
-  ].map(d => Object.assign(d, {hidden: (gastoDiarioModo !== 'todos' && d.key !== gastoDiarioModo)}));
+    Object.assign({key:'sedes',        label:'Sedes',        data:gastoS, borderColor:'#31606D', backgroundColor:areaGrad('155,93,229'),  pointBackgroundColor:'#31606D'}, base),
+    Object.assign({key:'franquicias',  label:'Franquicias',  data:gastoF, borderColor:'#407887', backgroundColor:areaGrad('255,96,64'),   pointBackgroundColor:'#407887'}, base),
+    Object.assign({key:'complementos', label:'Complementos', data:gastoC, borderColor:'#F09D0F', backgroundColor:areaGrad('244,169,60'),  pointBackgroundColor:'#F09D0F'}, base),
+  ].map(d => Object.assign(d, {hidden: !gastoDiarioModo.has(d.key)}));
 
   const ctx = document.getElementById('chartGastoDiario').getContext('2d');
   if (chartInst['chartGastoDiario']) chartInst['chartGastoDiario'].destroy();
@@ -1378,15 +1630,15 @@ function renderGastoDiario() {
       animation:false,                 /* evita interpolar el degradado (bug "this._fn is not a function") */
       interaction:{mode:'index', intersect:false},
       plugins:{
-        legend:{display:true, labels:{color:'#6A6F8E',font:{size:11},boxWidth:12,padding:12,usePointStyle:true}},
+        legend:{display:true, labels:{color:'#57646B',font:{size:11},boxWidth:12,padding:12,usePointStyle:true}},
         tooltip:{
-          backgroundColor:'rgba(20,19,42,0.94)',titleColor:'#B9BCE0',bodyColor:'#FFFFFF',padding:11,cornerRadius:10,
+          backgroundColor:'rgba(20,19,42,0.94)',titleColor:'#DEEEF2',bodyColor:'#FFFFFF',padding:11,cornerRadius:10,
           callbacks:{label:c=>'  '+c.dataset.label+': $'+Number(c.parsed.y).toLocaleString('es-MX',{minimumFractionDigits:2})}
         }
       },
       scales:{
         x:{ticks:{color:'#9095AE',font:{size:10}},grid:{display:false}},
-        y:{ticks:{color:'#9095AE',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')},grid:{color:'rgba(28,27,58,0.06)'},border:{display:false}}
+        y:{ticks:{color:'#9095AE',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')},grid:{color:'rgba(25,32,36,0.06)'},border:{display:false}}
       }
     }
   });
@@ -1424,6 +1676,7 @@ function renderGeroDiario() {
       }]
     },
     options:{responsive:true,maintainAspectRatio:false,
+      animation:false,   /* bug de Chart.js "this._fn is not a function" al hacer hover — ver mkChart() */
       plugins:{legend:{display:false}},
       scales:{
         x:{ticks:{color:'#8AACB5',font:{size:10}},grid:{display:false}},
@@ -1510,7 +1763,7 @@ function renderAyer() {
 
   var MESES_AYER = ['','enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
   var mesAyer = MESES_AYER[parseInt(ayer.slice(5,7))] || '';
-  var etiqueta = esAyerReal ? 'Leads de ayer' : 'Leads del último día del mes';
+  var etiqueta = esAyerReal ? 'Leads y gasto de ayer' : 'Leads y gasto del último día del mes';
   document.getElementById('ayerTitulo').textContent = '⚡ ' + etiqueta + ' — ' + ayer.slice(8) + ' de ' + mesAyer;
 
   function filaAyer(nombre, leads, gasto) {
@@ -1522,22 +1775,34 @@ function renderAyer() {
       + '</div>';
   }
 
+  // gasto total del día = gasto directo (Laura/cuenta propia) + gasto_compl
+  // (pauta corrida en Promociones) — antes solo se mostraba gasto directo,
+  // que para sedes como Milpa Alta/Coacalco es una fracción chica del real
+  // (su pauta vive sobre todo en Promociones). Los leads ya sumaban ambas
+  // fuentes correctamente, solo el $ mostrado estaba incompleto.
+  function gastoTotalDia(d) { return (d.gasto||0) + (d.gasto_compl||0); }
+
   var totalS = 0, totalF = 0;
   var htmlS = sedes.map(function(c) {
     var d = diaSedes[c] || {}; totalS += d.leads||0;
-    return filaAyer(c, d.leads||0, d.gasto||0);
+    return filaAyer(c, d.leads||0, gastoTotalDia(d));
   }).join('');
   htmlS += '<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:12px;font-weight:700;color:var(--cyan)">'
     + '<span>TOTAL SEDES</span><span>' + totalS + ' leads</span></div>';
-  htmlS += '<div style="margin-top:8px;padding:4px 0;font-size:10px;font-weight:700;color:var(--yellow);letter-spacing:1px;border-top:1px dashed var(--border)">🧪 PILOTO MULTI-SEDE</div>';
+  // Piloto multi-sede: solo mostrarlo si ese día tuvo algo — en 0 solo ensucia
+  // la vista sin aportar nada.
   var htmlPiloto = piloto.map(function(c) {
-    var d = diaSedes[c] || {}; return filaAyer(c, d.leads||0, d.gasto||0);
-  }).join('');
-  htmlS += htmlPiloto;
+    var d = diaSedes[c] || {}; return {c: c, leads: d.leads||0, gasto: gastoTotalDia(d)};
+  }).filter(function(x){ return x.leads > 0 || x.gasto > 0; })
+    .map(function(x){ return filaAyer(x.c, x.leads, x.gasto); }).join('');
+  if (htmlPiloto) {
+    htmlS += '<div style="margin-top:8px;padding:4px 0;font-size:10px;font-weight:700;color:var(--yellow);letter-spacing:1px;border-top:1px dashed var(--border)">🧪 PILOTO MULTI-SEDE</div>';
+    htmlS += htmlPiloto;
+  }
 
   var htmlF = franqs.map(function(c) {
     var d = diaFranq[c] || {}; totalF += d.leads||0;
-    return filaAyer(c, d.leads||0, d.gasto||0);
+    return filaAyer(c, d.leads||0, gastoTotalDia(d));
   }).join('');
   htmlF += '<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:12px;font-weight:700;color:var(--purple)">'
     + '<span>TOTAL FRANQUICIAS</span><span>' + totalF + ' leads</span></div>';
@@ -1580,7 +1845,9 @@ function pctLeadsBar(leads, meta) {
 
 // ── Tabla Sedes ──
 function renderSedes() {
-  const orden = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta','Chalco / Milpa Alta / Tlahuac'];
+  // "Chalco / Milpa Alta / Tlahuac" (piloto multi-sede) se quita de esta tabla
+  // a pedido del dueño — lleva en 0 y solo ensucia la vista.
+  const orden = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta'];
   let html = '', tLeads=0, tGasto=0, tAsist=0, tAgend=0, tLeadsCC=0, tReales=0;
   orden.forEach(c => {
     const v = DATA.sedes[c] || {};
@@ -1596,40 +1863,42 @@ function renderSedes() {
     const convAAc = (v.agendadas||0)>0 ? ((v.asistidas||0)/(v.agendadas||1)*100 >= 65 ? 'var(--green)' : (v.asistidas||0)/(v.agendadas||1)*100 >= 50 ? 'var(--yellow)' : 'var(--pink)') : 'var(--text3)';
     const ml = v.meta_leads||0;
     const proyL = calcProy(v.leads_mes||0);
-    html += `<tr>
+    const detalle = '<b>Meta leads:</b> ' + (ml>0?fmtN(ml):'—') +
+      ' &nbsp;·&nbsp; <b>Proy. leads:</b> ' + (proyL>0?fmtN(proyL):'—') +
+      ' &nbsp;·&nbsp; <b>Leads CC:</b> ' + fmtN(cc.leads_cc||0) +
+      ' &nbsp;·&nbsp; <b>Reales:</b> ' + fmtN(cc.reales||0) +
+      ' &nbsp;·&nbsp; <b>Agendadas CC:</b> ' + fmtN(v.agendadas||0) +
+      ' &nbsp;·&nbsp; <b>Proy. agend.:</b> ' + ((v.agendadas||0)>0?fmtN(calcProy(v.agendadas||0)):'—') +
+      ' &nbsp;·&nbsp; <b>Proy. asist.:</b> ' + (proy>0?fmtN(proy):'—') +
+      ' &nbsp;·&nbsp; <b>Meta CC:</b> ' + fmtN(v.meta_cc||0) +
+      ' &nbsp;·&nbsp; <b>Conv. A→Asist:</b> ' + convAA +
+      ' &nbsp;·&nbsp; <b>Conv. L→A:</b> ' + convLA +
+      ' &nbsp;·&nbsp; <b>Restan:</b> ' + fmtN(v.restan||0) +
+      ' &nbsp;·&nbsp; <b>CPA:</b> ' + fmt(v.cpa||0);
+    html += `<tr class="row-toggle" onclick="toggleDetailRow(this)">
+      <td class="row-caret">▸</td>
       <td><b>${c}</b></td>
       <td>${fmtN(v.leads_mes||0)}</td>
-      <td>${ml>0?fmtN(ml):'—'}</td>
-      <td style="font-weight:700;color:${proyColor(proyL, ml)}">${proyL>0?fmtN(proyL):'—'}</td>
       <td>${pctLeadsBar(v.leads_mes||0, ml)}</td>
       <td>${fmt(v.gasto_mes||0)}</td>
       <td>${fmt(v.cpl||0)}</td>
-      <td>${fmtN(cc.leads_cc||0)}</td>
-      <td>${fmtN(cc.reales||0)}</td>
-      <td style="font-weight:700">${fmtN(v.agendadas||0)}</td>
-      <td style="font-weight:700;color:var(--cyan)">${(v.agendadas||0)>0?fmtN(calcProy(v.agendadas||0)):'—'}</td>
       <td style="font-weight:700">${fmtN(v.asistidas||0)}</td>
-      <td style="font-weight:700;color:${proyColor(proy,v.meta_cc||0)}">${proy>0?fmtN(proy):'—'}</td>
-      <td>${fmtN(v.meta_cc||0)}</td>
       <td><div class="prog-wrap">
         <div class="prog-bar"><div class="prog-fill" style="width:${Math.min(pct,100)}%;background:${pct>=70?'var(--green)':pct>=40?'var(--yellow)':'var(--pink)'}"></div></div>
         <span class="prog-val"><span class="badge badge-${color}">${pct}%</span></span>
       </div></td>
-      <td style="font-weight:700;color:${convAAc}">${convAA}</td>
-      <td style="color:${convLAc}">${convLA}</td>
-      <td>${fmtN(v.restan||0)}</td>
-      <td>${fmt(v.cpa||0)}</td>
-    </tr>`;
+    </tr>
+    <tr class="row-detail"><td></td><td colspan="7">${detalle}</td></tr>`;
   });
   const cpaTotal = tAsist > 0 ? tGasto/tAsist : 0;
   const tMl = orden.reduce((a,c)=>(DATA.sedes[c]?(DATA.sedes[c].meta_leads||0):0)+a, 0);
-  html += `<tr class="sum-row"><td>TOTAL</td><td>${fmtN(tLeads)}</td><td>${fmtN(tMl)}</td><td style="font-weight:700;color:${proyColor(calcProy(tLeads),tMl)}">${fmtN(calcProy(tLeads))}</td><td>${pctLeadsBar(tLeads,tMl)}</td><td>${fmt(tGasto)}</td><td>—</td><td>${fmtN(tLeadsCC)}</td><td>${fmtN(tReales)}</td><td>${fmtN(tAgend)}</td><td style="font-weight:700;color:var(--cyan)">${fmtN(calcProy(tAgend))}</td><td>${fmtN(tAsist)}</td><td style="font-weight:700;color:var(--cyan)">${fmtN(calcProy(tAsist))}</td><td>—</td><td>—</td><td style="font-weight:700;color:var(--green)">${convRate(tAgend,tAsist)}</td><td>${convRate(tLeads,tAsist)}</td><td>—</td><td>${fmt(cpaTotal)}</td></tr>`;
+  html += `<tr class="sum-row"><td></td><td>TOTAL</td><td>${fmtN(tLeads)}</td><td>${pctLeadsBar(tLeads,tMl)}</td><td>${fmt(tGasto)}</td><td>—</td><td>${fmtN(tAsist)}</td><td>—</td></tr>`;
   document.getElementById('tablaSedes').innerHTML = html;
 
   const nombres = orden.filter(c=>DATA.sedes[c]);
   const cpls = nombres.map(c=>DATA.sedes[c].cpl||0);
   const cpas = nombres.map(c=>DATA.sedes[c].cpa||0);
-  mkChart('chartCplSedes','bar',nombres,cpls,['rgba(155,93,229,0.85)'],'CPL $');
+  mkChart('chartCplSedes','bar',nombres,cpls,['rgba(49,96,109,0.85)'],'CPL $');
   mkChart('chartCpaSedes','bar',nombres,cpas,['rgba(255,77,141,0.80)'],'CPA $');
   const asisS  = nombres.map(c=>DATA.sedes[c].asistidas||0);
   const metasS = nombres.map(c=>DATA.sedes[c].meta_cc||0);
@@ -1652,36 +1921,38 @@ function renderFranquicias() {
     const convC = v.leads_mes>0 ? (v.asistidas/v.leads_mes*100>=10?'var(--green)':v.asistidas/v.leads_mes*100>=5?'var(--yellow)':'var(--pink)') : 'var(--text3)';
     const mlf = v.meta_leads||0;
     const proyLf = calcProy(v.leads_mes||0);
-    html += `<tr>
+    const detalleF = '<b>Meta leads:</b> ' + (mlf>0?fmtN(mlf):'—') +
+      ' &nbsp;·&nbsp; <b>Proy. leads:</b> ' + (proyLf>0?fmtN(proyLf):'—') +
+      ' &nbsp;·&nbsp; <b>Leads CC:</b> ' + fmtN(cc.leads_cc||0) +
+      ' &nbsp;·&nbsp; <b>Reales:</b> ' + fmtN(cc.reales||0) +
+      ' &nbsp;·&nbsp; <b>Reserv.:</b> ' + fmtN(cc.res||0) +
+      ' &nbsp;·&nbsp; <b>Proy. reserv.:</b> ' + ((cc.res||0)>0?fmtN(calcProy(cc.res||0)):'—') +
+      ' &nbsp;·&nbsp; <b>Proy. asist.:</b> ' + (proy>0?fmtN(proy):'—') +
+      ' &nbsp;·&nbsp; <b>Meta CC:</b> ' + (v.meta_cc>0?fmtN(v.meta_cc):'—') +
+      ' &nbsp;·&nbsp; <b>Conv. L→A:</b> ' + conv +
+      ' &nbsp;·&nbsp; <b>Restan:</b> ' + (v.meta_cc>0?fmtN(v.restan||0):'—') +
+      ' &nbsp;·&nbsp; <b>CPA:</b> ' + fmt(v.cpa||0);
+    html += `<tr class="row-toggle" onclick="toggleDetailRow(this)">
+      <td class="row-caret">▸</td>
       <td><b>${c}</b></td>
       <td>${fmtN(v.leads_mes)}</td>
-      <td>${mlf>0?fmtN(mlf):'—'}</td>
-      <td style="font-weight:700;color:${proyColor(proyLf, mlf)}">${proyLf>0?fmtN(proyLf):'—'}</td>
       <td>${pctLeadsBar(v.leads_mes||0, mlf)}</td>
       <td>${fmt(v.gasto_mes)}</td>
       <td>${fmt(v.cpl)}</td>
-      <td>${fmtN(cc.leads_cc||0)}</td>
-      <td>${fmtN(cc.reales||0)}</td>
-      <td>${fmtN(cc.res||0)}</td>
-      <td style="font-weight:700;color:var(--cyan)">${(cc.res||0)>0?fmtN(calcProy(cc.res||0)):'—'}</td>
       <td>${fmtN(v.asistidas||0)}</td>
-      <td style="font-weight:700;color:${proyColor(proy,v.meta_cc||0)}">${proy>0?fmtN(proy):'—'}</td>
-      <td>${v.meta_cc>0?fmtN(v.meta_cc):'—'}</td>
       <td>${v.meta_cc>0?`<div class="prog-wrap"><div class="prog-bar"><div class="prog-fill" style="width:${Math.min(pct,100)}%;background:${pct>=70?'var(--green)':pct>=40?'var(--yellow)':'var(--pink)'}"></div></div><span class="prog-val"><span class="badge badge-${color}">${pct}%</span></span></div>`:'—'}</td>
-      <td style="font-weight:700;color:${convC}">${conv}</td>
-      <td>${v.meta_cc>0?fmtN(v.restan||0):'—'}</td>
-      <td>${fmt(v.cpa||0)}</td>
-    </tr>`;
+    </tr>
+    <tr class="row-detail"><td></td><td colspan="7">${detalleF}</td></tr>`;
   });
   const cpaTotal = tAsist > 0 ? tGasto/tAsist : 0;
   const tMlf = orden.reduce((a,c)=>((DATA.franquicias[c]||{}).meta_leads||0)+a, 0);
-  html += `<tr class="sum-row"><td>TOTAL</td><td>${fmtN(tLeads)}</td><td>${fmtN(tMlf)}</td><td style="font-weight:700;color:${proyColor(calcProy(tLeads),tMlf)}">${fmtN(calcProy(tLeads))}</td><td>${pctLeadsBar(tLeads,tMlf)}</td><td>${fmt(tGasto)}</td><td>—</td><td>${fmtN(tLeadsCC)}</td><td>${fmtN(tReales)}</td><td>${fmtN(tRes)}</td><td style="font-weight:700;color:var(--cyan)">${fmtN(calcProy(tRes))}</td><td>${fmtN(tAsist)}</td><td style="font-weight:700;color:var(--cyan)">${fmtN(calcProy(tAsist))}</td><td>—</td><td>—</td><td>${convRate(tLeads,tAsist)}</td><td>—</td><td>${fmt(cpaTotal)}</td></tr>`;
+  html += `<tr class="sum-row"><td></td><td>TOTAL</td><td>${fmtN(tLeads)}</td><td>${pctLeadsBar(tLeads,tMlf)}</td><td>${fmt(tGasto)}</td><td>—</td><td>${fmtN(tAsist)}</td><td>—</td></tr>`;
   document.getElementById('tablaFranq').innerHTML = html;
 
   const nombres = orden;
   const cpls = nombres.map(c=>DATA.franquicias[c].cpl||0);
   const cpas = nombres.map(c=>DATA.franquicias[c].cpa||0);
-  mkChart('chartCplFranq','bar',nombres,cpls,['rgba(155,93,229,0.85)'],'CPL $');
+  mkChart('chartCplFranq','bar',nombres,cpls,['rgba(49,96,109,0.85)'],'CPL $');
   mkChart('chartCpaFranq','bar',nombres,cpas,['rgba(22,194,163,0.80)'],'CPA $');
   const asisF  = nombres.map(c=>DATA.franquicias[c].asistidas||0);
   const metasF = nombres.map(c=>DATA.franquicias[c].meta_cc||0);
@@ -1842,16 +2113,22 @@ function renderAuditoriaCampanas() {
     return true;
   }).sort(function(a, b) { return (b.gasto || 0) - (a.gasto || 0); });
   document.getElementById('audFCount').textContent = rows.length + ' de ' + (A.campanas || []).length + ' campañas/ad sets';
-  document.getElementById('tablaAudCampanas').innerHTML = rows.slice(0, 400).map(function(r) {
-    return '<tr><td>' + r.clinica + '</td>' +
-      '<td style="max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + r.campana + '</td>' +
-      '<td style="max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><b>' + r.adset + '</b></td>' +
-      '<td>' + r.status + '</td><td>' + (r.dias_activo != null ? r.dias_activo : '—') + '</td>' +
+  document.getElementById('tablaAudCampanas').innerHTML = rows.slice(0, 400).map(function(r, i) {
+    var detalle = '<b>Campaña:</b> ' + r.campana + ' &nbsp;·&nbsp; <b>Status:</b> ' + r.status +
+      ' &nbsp;·&nbsp; <b>Días activo:</b> ' + (r.dias_activo != null ? r.dias_activo : '—') +
+      ' &nbsp;·&nbsp; <b>Días p/quemarse:</b> ' + (r.dias_para_quemar_freq3 != null ? r.dias_para_quemar_freq3 + ' d' : '—');
+    return '<tr class="row-toggle" onclick="toggleDetailRow(this)"><td class="row-caret">▸</td><td>' + r.clinica + '</td>' +
+      '<td style="max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><b>' + r.adset + '</b></td>' +
       '<td><span class="badge ' + (AUD_FREQ_BADGE[r.clasif_frecuencia] || 'badge-blue') + '">' + (r.frecuencia != null ? r.frecuencia : '—') + '</span></td>' +
       '<td>' + fmt(r.gasto) + '</td><td>' + fmtN(r.leads) + '</td><td>' + (r.cpl != null ? fmt(r.cpl) : '—') + '</td>' +
-      '<td>' + (r.dias_para_quemar_freq3 != null ? r.dias_para_quemar_freq3 + ' d' : '—') + '</td>' +
-      '<td>' + (r.veredicto_publico_creativo || '—') + '</td></tr>';
-  }).join('') || '<tr><td colspan="11">Sin campañas para los filtros seleccionados</td></tr>';
+      '<td>' + (r.veredicto_publico_creativo || '—') + '</td></tr>' +
+      '<tr class="row-detail"><td></td><td colspan="6">' + detalle + '</td></tr>';
+  }).join('') || '<tr><td colspan="7">Sin campañas para los filtros seleccionados</td></tr>';
+}
+function toggleDetailRow(tr) {
+  var detail = tr.nextElementSibling;
+  var open = detail.classList.toggle('open');
+  tr.querySelector('.row-caret').textContent = open ? '▾' : '▸';
 }
 
 // ── Top Anuncios ──
@@ -2054,6 +2331,7 @@ function renderLeadsDiarios() {
     },
     options: {
       responsive: true, maintainAspectRatio: false,
+      animation: false,   /* bug de Chart.js "this._fn is not a function" al hacer hover — ver mkChart() */
       plugins: {
         legend: { display: false },
         title: { display: true, text: titulo, color: '#8AACB5', font: {size:13, weight:'700'}, padding:{bottom:10} },
@@ -2150,6 +2428,7 @@ function renderCplClinica() {
     },
     options: {
       responsive:true, maintainAspectRatio:false, interaction:{mode:'index',intersect:false},
+      animation:false,   /* bug de Chart.js "this._fn is not a function" al hacer hover — ver mkChart() */
       plugins:{ legend:{labels:{color:'#4A7885',font:{size:11},boxWidth:12}},
         title:{ display:true, text:`${clinica} — Leads, Gasto y CPL diario`, color:'#1E3A45', font:{size:13,weight:'700'}, padding:{bottom:12} }
       },
@@ -2191,7 +2470,7 @@ function renderDiario(modo) {
   const fechas = Object.keys(fuente || {}).sort();
 
   // Chart
-  const colores = ['#9B5DE5','#FF6040','#16C2A3','#F4A93C','#FF4D8D','#6C5CE7','#00BCD4','#5A8DEE','#26DE81','#FD9644','#E84393','#4ECDC4','#FFB84D'];
+  const colores = ['#31606D','#407887','#428CD7','#F09D0F','#DD382C','#407887','#00BCD4','#5A8DEE','#26DE81','#FD9644','#E84393','#4ECDC4','#FFB84D'];
   const ctx = document.getElementById('chartDiarioDetalle').getContext('2d');
   if (chartInst['chartDiario']) chartInst['chartDiario'].destroy();
 
@@ -2204,6 +2483,7 @@ function renderDiario(modo) {
     type:'bar',
     data:{ labels: fechas.map(f=>f.slice(5)), datasets },
     options:{responsive:true,maintainAspectRatio:false,
+      animation:false,   /* bug de Chart.js "this._fn is not a function" al hacer hover — ver mkChart() */
       plugins:{
         legend:{
           display:true,
@@ -2436,7 +2716,11 @@ function renderOptimizar() {
 // ── Gerontología ──
 function renderGero() {
   var g = DATA.gerontologia || {};
-  var orden = ['Consulta Gerontologia', 'Taller Baile'];
+  // Las 4 categorías reales que arma actualizar_meta.py (ver MAPA_CAMPANAS_GERO
+  // y leer_cc_gerontologia) — antes solo se mostraban las primeras 2 y las
+  // otras 2 quedaban invisibles en esta pestaña aunque ya se contaban en el
+  // gasto total.
+  var orden = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Otros Gerontología'];
 
   // KPIs globales
   var tLeads=0, tGasto=0, tAsist=0, tAgend=0;
@@ -2449,7 +2733,7 @@ function renderGero() {
   var cpaT = tAsist > 0 ? tGasto/tAsist : 0;
 
   document.getElementById('kpiGero').innerHTML = [
-    {icon:'📥', val:fmtN(tLeads),          label:'Total Leads Gero',   sub:'Consulta + Taller Baile', cls:'c1'},
+    {icon:'📥', val:fmtN(tLeads),          label:'Total Leads Gero',   sub:'Consulta + Baile + Longevidad + Otros', cls:'c1'},
     {icon:'📅', val:fmtN(tAgend),           label:'Agendadas CC',       sub:'Citas agendadas',          cls:'c3'},
     {icon:'✅', val:fmtN(tAsist),           label:'Asistidas',          sub:'Pacientes que asistieron', cls:'c5'},
     {icon:'📊', val:fmt(cplT),              label:'CPL Promedio',        sub:'Costo por lead',           cls:'c2'},
@@ -2482,8 +2766,10 @@ function renderGero() {
         +'<span style="font-size:13px;font-weight:800;color:'+convColor+'">'+conv+'</span></div>'
       + fila('CPA', v.asistidas>0?fmt(v.cpa||0):'—', false);
   }
-  miniCard('Consulta Gerontologia', 'geroConsultaCard', 'cyan');
-  miniCard('Taller Baile',          'geroTallerCard',   'purple');
+  miniCard('Consulta Gerontologia', 'geroConsultaCard',    'cyan');
+  miniCard('Taller Baile',          'geroTallerCard',      'purple');
+  miniCard('Paquete Longevidad',    'geroLongevidadCard',  'gold');
+  miniCard('Otros Gerontología',    'geroOtrosCard',       'teal');
 
   // Tabla resumen
   var html = '';
@@ -2511,7 +2797,7 @@ function renderGero() {
 
   // Charts
   var nombresG = orden.filter(function(c){ return g[c]; });
-  var coloresG = ['rgba(77,191,214,0.75)','rgba(124,143,212,0.75)'];
+  var coloresG = ['rgba(77,191,214,0.75)','rgba(124,143,212,0.75)','rgba(240,157,15,0.75)','rgba(64,120,135,0.75)'];
   mkChart('chartLeadsGero','bar', nombresG, nombresG.map(function(c){return (g[c]||{}).leads_mes||0;}), coloresG, 'Leads');
   mkChart('chartCplGero',  'bar', nombresG, nombresG.map(function(c){return (g[c]||{}).cpl||0;}),      coloresG, 'CPL $');
 }
@@ -2548,10 +2834,8 @@ function renderComplementos() {
   html += '<tr class="sum-row"><td>TOTAL</td><td>' + fmtN(tLeads) + '</td><td>' + fmt(tGasto) + '</td><td>$' + cplGlobal + '</td></tr>';
   document.getElementById('tablaComplementos').innerHTML = html;
 
-  // Charts
-  var colores = ['rgba(63,122,137,0.75)','rgba(167,186,141,0.75)','rgba(247,47,123,0.65)',
-                 'rgba(124,143,212,0.75)','rgba(247,174,52,0.75)','rgba(77,191,214,0.75)',
-                 'rgba(200,80,80,0.75)','rgba(100,180,100,0.75)','rgba(180,100,200,0.75)'];
+  // Charts — una sola métrica por cuenta: un solo tono de marca, no arcoíris.
+  var colores = ['rgba(64,120,135,0.85)'];
   mkChart('chartGastoCompl', 'bar', orden, orden.map(function(k){ return (c[k]||{}).gasto_mes||0; }), colores, 'Gasto $');
   mkChart('chartCplCompl',   'bar', orden, orden.map(function(k){ return (c[k]||{}).cpl||0; }),       colores, 'CPL $');
 }
@@ -2571,6 +2855,7 @@ function mkChart(id, type, labels, data, colors, label) {
       borderRadius:5
     }]},
     options:{responsive:true,maintainAspectRatio:false,
+      animation:false,   /* evita el bug de Chart.js "this._fn is not a function" en el tooltip al hacer hover (mismo fix ya usado en chartGastoDiario) */
       interaction:{mode:'index', intersect:false},
       plugins:{
         legend:{display:false},
@@ -2606,6 +2891,7 @@ function mkChart2(id, labels, l1, d1, l2, d2, c1, c2) {
       { label: l2, data: d2, backgroundColor: c2 || 'rgba(138,172,181,0.35)', borderRadius: 5 }
     ]},
     options: { responsive:true, maintainAspectRatio:false,
+      animation:false,   /* mismo bug de Chart.js "this._fn is not a function" al hacer hover — ver mkChart() */
       interaction:{mode:'index', intersect:false},
       plugins:{
         legend:{display:true, labels:{color:'#8AACB5', font:{size:11}, boxWidth:12}},
@@ -2647,7 +2933,7 @@ document.getElementById('headerDate');
       var sel = (mesSeleccionado === k);
       html += '<button onclick="cargarMes(\''+k+'\')" style="'
         + 'padding:4px 11px;font-size:11px;font-weight:600;border-radius:20px;cursor:pointer;border:1.5px solid;'
-        + (sel ? 'background:var(--yellow);color:#14132A;border-color:var(--yellow)' : 'background:none;color:var(--text2);border-color:var(--border)')
+        + (sel ? 'background:var(--yellow);color:#19363E;border-color:var(--yellow)' : 'background:none;color:var(--text2);border-color:var(--border)')
         + '">'+labelMes(k)+'</button>';
     });
     wrap.innerHTML = html;
