@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "17/08/2026 10:51",
+ "actualizado": "17/08/2026 11:10",
  "periodo": "2026-08-01 a 2026-08-17",
  "diagnostico": [
   {
@@ -19,7 +19,7 @@ window.FATIGA_DATA = {
    "adset": "NEUROPATÍA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 2.61,
-   "gasto": 2484,
+   "gasto": 2487,
    "leads": 82,
    "cpl": 30,
    "pct_nuevos": 24,
@@ -43,7 +43,7 @@ window.FATIGA_DATA = {
    "adset": "MIX",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.63,
-   "gasto": 1701,
+   "gasto": 1702,
    "leads": 54,
    "cpl": 32,
    "pct_nuevos": 23,
@@ -54,8 +54,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"El dolor articular no desaparece solo. Actúa y...\"",
    "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.79,
-   "gasto": 36747,
+   "freq": 2.8,
+   "gasto": 36842,
    "leads": 667,
    "cpl": 55,
    "pct_nuevos": 48,
@@ -67,10 +67,10 @@ window.FATIGA_DATA = {
    "adset": "NEUROPATIA",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.69,
-   "gasto": 3278,
+   "gasto": 3286,
    "leads": 194,
    "cpl": 17,
-   "pct_nuevos": 57,
+   "pct_nuevos": 58,
    "cpm1": 46,
    "cpm2": 44
   },
@@ -79,8 +79,8 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¿Vives o eres de Mixquiahuala y el dolor de...\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.55,
-   "gasto": 23699,
-   "leads": 363,
+   "gasto": 23750,
+   "leads": 364,
    "cpl": 65,
    "pct_nuevos": 47,
    "cpm1": 25,
@@ -89,21 +89,21 @@ window.FATIGA_DATA = {
   {
    "cuenta": "Nicolas Romero",
    "adset": "Publicación: \"¡Atención, Nicolás Romero! ¿Buscas terapia de...\"",
-   "veredicto": "VIGILAR",
+   "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.5,
-   "gasto": 13891,
-   "leads": 462,
+   "gasto": 13928,
+   "leads": 464,
    "cpl": 30,
    "pct_nuevos": 59,
    "cpm1": 23,
-   "cpm2": 24
+   "cpm2": 25
   },
   {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"¡Atención a nuestra comunidad en Mixquiahuala! 🎉\"",
    "veredicto": "VIGILAR",
-   "freq": 2.46,
-   "gasto": 5621,
+   "freq": 2.47,
+   "gasto": 5642,
    "leads": 147,
    "cpl": 38,
    "pct_nuevos": 289,
@@ -127,7 +127,7 @@ window.FATIGA_DATA = {
    "adset": "RODILLA",
    "veredicto": "VIGILAR",
    "freq": 2.42,
-   "gasto": 679,
+   "gasto": 680,
    "leads": 36,
    "cpl": 19,
    "pct_nuevos": 84,
@@ -138,11 +138,11 @@ window.FATIGA_DATA = {
    "cuenta": "San Juan del Rio",
    "adset": "Publicación: \"Atención zona San Juan del Río. 📍\"",
    "veredicto": "VIGILAR",
-   "freq": 2.32,
-   "gasto": 5726,
+   "freq": 2.33,
+   "gasto": 5739,
    "leads": 260,
    "cpl": 22,
-   "pct_nuevos": 488,
+   "pct_nuevos": 489,
    "cpm1": 29,
    "cpm2": 25
   },
@@ -150,8 +150,8 @@ window.FATIGA_DATA = {
    "cuenta": "Ajusco",
    "adset": "HOM",
    "veredicto": "VIGILAR",
-   "freq": 2.26,
-   "gasto": 1274,
+   "freq": 2.27,
+   "gasto": 1275,
    "leads": 13,
    "cpl": 98,
    "pct_nuevos": 60,
@@ -165,7 +165,7 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.94,
-   "gasto": 1247,
+   "gasto": 1249,
    "leads": 290,
    "cpl": 4
   },
@@ -174,7 +174,7 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.74,
-   "gasto": 3262,
+   "gasto": 3273,
    "leads": 701,
    "cpl": 5
   },
@@ -183,7 +183,7 @@ window.FATIGA_DATA = {
    "ad": "VID_TARD2",
    "adset": "Publicación: \"Más movimiento, más independencia y más momentos...\"",
    "freq": 1.89,
-   "gasto": 4641,
+   "gasto": 4650,
    "leads": 507,
    "cpl": 9
   },
@@ -191,9 +191,9 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA",
-   "freq": 1.55,
-   "gasto": 1763,
-   "leads": 180,
+   "freq": 1.54,
+   "gasto": 1767,
+   "leads": 181,
    "cpl": 10
   },
   {
@@ -201,16 +201,16 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.92,
-   "gasto": 3529,
-   "leads": 343,
+   "gasto": 3533,
+   "leads": 344,
    "cpl": 10
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
    "adset": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
-   "freq": 1.62,
-   "gasto": 2102,
+   "freq": 1.63,
+   "gasto": 2118,
    "leads": 198,
    "cpl": 11
   },
@@ -219,7 +219,7 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.87,
-   "gasto": 4177,
+   "gasto": 4186,
    "leads": 368,
    "cpl": 11
   },
@@ -237,8 +237,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de la zona Cuautitlán Izcalli, 📍\"",
    "adset": "Publicación: \"Si eres de la zona Cuautitlán Izcalli, 📍\"",
    "freq": 1.57,
-   "gasto": 5281,
-   "leads": 433,
+   "gasto": 5311,
+   "leads": 434,
    "cpl": 12
   },
   {
@@ -246,8 +246,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "adset": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "freq": 1.83,
-   "gasto": 5339,
-   "leads": 424,
+   "gasto": 5347,
+   "leads": 425,
    "cpl": 13
   },
   {
@@ -255,7 +255,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
    "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
    "freq": 1.76,
-   "gasto": 2312,
+   "gasto": 2321,
    "leads": 170,
    "cpl": 14
   },
@@ -263,17 +263,17 @@ window.FATIGA_DATA = {
    "cuenta": "Queretaro",
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
-   "freq": 1.47,
-   "gasto": 4398,
-   "leads": 319,
+   "freq": 1.48,
+   "gasto": 4410,
+   "leads": 320,
    "cpl": 14
   },
   {
    "cuenta": "Nicolas Romero",
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
-   "freq": 1.92,
-   "gasto": 2922,
+   "freq": 1.93,
+   "gasto": 2926,
    "leads": 203,
    "cpl": 14
   },
@@ -282,7 +282,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBRO PAUTA ENERO",
    "adset": "HOMBRO",
    "freq": 1.84,
-   "gasto": 1598,
+   "gasto": 1600,
    "leads": 107,
    "cpl": 15
   },
@@ -290,8 +290,8 @@ window.FATIGA_DATA = {
    "cuenta": "Tepeyac",
    "ad": "Publicación: \"📍 ¡Atención Tepeyac y alrededores! ¿El dolor te...\"",
    "adset": "Publicación: \"📍 ¡Atención Tepeyac y alrededores! ¿El dolor te...\"",
-   "freq": 1.46,
-   "gasto": 1779,
+   "freq": 1.47,
+   "gasto": 1793,
    "leads": 120,
    "cpl": 15
   },
@@ -309,7 +309,7 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO CHECK",
    "freq": 1.52,
-   "gasto": 2723,
+   "gasto": 2730,
    "leads": 157,
    "cpl": 17
   },
@@ -317,19 +317,19 @@ window.FATIGA_DATA = {
    "cuenta": "Cuautla",
    "ad": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "adset": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
-   "freq": 1.37,
-   "gasto": 619,
+   "freq": 1.39,
+   "gasto": 632,
    "leads": 36,
-   "cpl": 17
+   "cpl": 18
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "EST _ RODILLA _ MIXQUI _ 10 ABRIL",
    "adset": "Rodilla",
-   "freq": 1.84,
-   "gasto": 720,
+   "freq": 1.85,
+   "gasto": 722,
    "leads": 37,
-   "cpl": 19
+   "cpl": 20
   },
   {
    "cuenta": "La Moderna",
@@ -345,8 +345,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Plaza Neza, 📍\"",
    "adset": "Publicación: \"Si eres de Plaza Neza, 📍\"",
    "freq": 1.97,
-   "gasto": 5851,
-   "leads": 281,
+   "gasto": 5884,
+   "leads": 283,
    "cpl": 21
   },
   {
@@ -372,8 +372,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
    "adset": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
    "freq": 1.97,
-   "gasto": 18183,
-   "leads": 789,
+   "gasto": 18230,
+   "leads": 791,
    "cpl": 23
   },
   {
@@ -381,7 +381,7 @@ window.FATIGA_DATA = {
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA",
    "freq": 1.56,
-   "gasto": 1511,
+   "gasto": 1515,
    "leads": 64,
    "cpl": 24
   }
