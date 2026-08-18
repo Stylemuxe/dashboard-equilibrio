@@ -516,6 +516,7 @@ body:not(.unlocked) #login{display:flex}
     <button class="nav-item" data-title="Top Anuncios" onclick="switchTab('anuncios',this)"><span class="nav-ico">📢</span><span>Top Anuncios</span></button>
     <button class="nav-item" data-title="Fatiga de Anuncios y Públicos" onclick="switchTab('fatiga',this)"><span class="nav-ico">🚦</span><span>Fatiga</span></button>
     <button class="nav-item" data-title="Auditoría de Campañas" onclick="switchTab('auditoria',this)"><span class="nav-ico">🔍</span><span>Auditoría</span></button>
+    <button class="nav-item" data-title="Tendencias" onclick="switchTab('tendencias',this)"><span class="nav-ico">🧭</span><span>Tendencias</span></button>
     <button class="nav-item" data-title="Leads &amp; Gasto Diario" onclick="switchTab('diario',this)"><span class="nav-ico">📅</span><span>Leads &amp; Gasto</span></button>
     <button class="nav-item" data-title="Optimizar" onclick="switchTab('optimizar',this)"><span class="nav-ico">📈</span><span>Optimizar</span></button>
     <button class="nav-item" data-title="Recomendaciones" onclick="switchTab('recomendaciones',this)"><span class="nav-ico">💡</span><span>Recomendaciones</span></button>
@@ -798,6 +799,64 @@ body:not(.unlocked) #login{display:flex}
         <th>Frecuencia</th><th>Gasto</th><th>Leads</th><th>CPL</th><th>Diagnóstico</th>
       </tr></thead>
       <tbody id="tablaAudCampanas"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- TENDENCIAS -->
+<div id="tab-tendencias" class="tab-panel">
+  <div class="sec-header">
+    <div class="sec-title">🧭 Tendencias <span id="tendMeta" style="font-weight:400;font-size:12px;color:var(--text2)"></span></div>
+  </div>
+  <div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:18px;font-size:12px;color:var(--text2);line-height:1.5">
+    Con lo que llevamos del mes: frecuencia (público repetido), CPL y gasto de cada anuncio/ad set, más la tendencia de CPL de cada clínica (1ª vs 2ª mitad del mes), para anticipar antes de que se caigan los agendamientos. <b>Nota:</b> el CTR y el historial diario por anuncio todavía no se capturan del pipeline — solo frecuencia/CPL/gasto acumulados y la comparación de mitades de mes. Si se necesita, se puede agregar al script que jala Meta Ads.
+  </div>
+
+  <div class="kpi-row" id="tendKpis" style="margin-bottom:22px"></div>
+
+  <div class="sec-header"><div class="sec-title">🚨 Radar de riesgo — anuncios a vigilar primero</div></div>
+  <div class="aud-filters">
+    <select id="tendFClinica"></select>
+    <select id="tendFTipo">
+      <option value="">Todos — sedes y franquicias</option>
+      <option value="sede">Sólo sedes</option>
+      <option value="franquicia">Sólo franquicias</option>
+    </select>
+    <input type="text" id="tendFSearch" placeholder="Buscar campaña / ad set…">
+    <span class="aud-count" id="tendFCount"></span>
+  </div>
+  <div class="table-wrap" style="margin-bottom:26px">
+    <table>
+      <thead><tr>
+        <th style="width:26px"></th><th>Clínica</th><th>Tipo</th><th>Ad set</th>
+        <th>Frecuencia</th><th>Días p/quemarse</th><th>CPL</th><th>Gasto</th><th>Leads</th><th>Riesgo</th>
+      </tr></thead>
+      <tbody id="tablaTendRiesgo"></tbody>
+    </table>
+  </div>
+
+  <div class="charts-row" style="margin-bottom:26px">
+    <div class="chart-card">
+      <div class="chart-title">Correlación Frecuencia × CPL — por anuncio</div>
+      <div style="font-size:11px;color:var(--text3);margin:-6px 0 10px">Cada punto es un ad set activo · tamaño = gasto · color = semáforo de frecuencia. Si los puntos rojos/amarillos se agrupan arriba, confirma que la frecuencia alta sube el CPL.</div>
+      <div class="chart-canvas-wrap" style="height:320px"><canvas id="chartTendScatter"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">CPL — 1ª vs 2ª mitad del mes, por clínica</div>
+      <div style="font-size:11px;color:var(--text3);margin:-6px 0 10px">Ordenado por quién más se le está subiendo el CPL dentro del mismo mes.</div>
+      <div class="chart-canvas-wrap" style="height:320px"><canvas id="chartTendCplMitades"></canvas></div>
+    </div>
+  </div>
+
+  <div class="sec-header"><div class="sec-title">🎯 ¿La tendencia ya le está pegando a los agendamientos?</div></div>
+  <div style="font-size:11.5px;color:var(--text3);margin:-8px 0 10px">Cruce por clínica: hacia dónde va el CPL en lo que va del mes vs si al ritmo actual va a alcanzar la meta de citas. Las de arriba son las que hay que atender primero.</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th>Clínica</th><th>Tipo</th><th>CPL actual</th><th>Tendencia CPL</th><th>Freq. máx</th>
+        <th>Citas</th><th>Alcanza meta citas</th><th>Leads extra necesarios</th>
+      </tr></thead>
+      <tbody id="tablaTendCorrelacion"></tbody>
     </table>
   </div>
 </div>
@@ -1106,6 +1165,7 @@ function switchTab(id, btn) {
     if (id === 'anuncios')     renderTopAds();
     if (id === 'fatiga')       renderFatiga();
     if (id === 'auditoria')    renderAuditoria();
+    if (id === 'tendencias')   renderTendencias();
     if (id === 'optimizar')    renderOptimizar();
     if (id === 'gero')         { renderGero(); renderGeroDiario(); }
     if (id === 'complementos') renderComplementos();
@@ -2050,7 +2110,13 @@ function renderAuditoria() {
     '<div class="kpi-card c4"><span class="kpi-icon">⚡</span><div class="kpi-val">' + fmt(P.ritmo_diario_actual) + '</div>' +
       '<div class="kpi-label">Ritmo diario actual</div><div class="kpi-sub">Laura+Promo+Gerontología</div></div>';
 
-  var clinicas = (A.clinicas || []).slice().sort(function(a, b) { return b.prioridad_score - a.prioridad_score; });
+  var PRIO_ORDEN = {ALTA: 0, MEDIA: 1, BAJA: 2};
+  var clinicas = (A.clinicas || []).slice().sort(function(a, b) {
+    var pa = PRIO_ORDEN[a.prioridad] != null ? PRIO_ORDEN[a.prioridad] : 3;
+    var pb = PRIO_ORDEN[b.prioridad] != null ? PRIO_ORDEN[b.prioridad] : 3;
+    if (pa !== pb) return pa - pb;
+    return b.prioridad_score - a.prioridad_score;
+  });
   document.getElementById('audCards').innerHTML = clinicas.map(function(c) {
     var t = c.cpl_trend || {}; var arrow = t.tendencia === 'subiendo' ? '↑' : t.tendencia === 'bajando' ? '↓' : '→';
     var trendColor = t.tendencia === 'subiendo' ? 'var(--coral)' : t.tendencia === 'bajando' ? 'var(--teal)' : 'var(--text2)';
@@ -2129,6 +2195,213 @@ function toggleDetailRow(tr) {
   var detail = tr.nextElementSibling;
   var open = detail.classList.toggle('open');
   tr.querySelector('.row-caret').textContent = open ? '▾' : '▸';
+}
+
+// ── TENDENCIAS ──────────────────────────────────────────────────────────────
+// Todo esto lee de AUDITORIA_DATA.campanas (una fila por ad set, ya trae
+// frecuencia/CPL/gasto/impresiones/días para quemarse) y AUDITORIA_DATA.clinicas
+// (trae cpl_trend = mitad 1 vs mitad 2 del mes en curso). No se recalcula nada
+// del lado del pipeline — solo se combina y visualiza. CTR e historial diario
+// por anuncio no están en la fuente todavía (ver nota en el HTML del tab).
+var _tendFiltersWired = false;
+
+// Score 0–100: qué tan urgente es revisar este ad set ANTES de que arrastre
+// el CPL/las citas de la clínica. Combina semáforo de frecuencia (peso mayor,
+// es la señal directa de público repetido/quemado), cercanía a quemarse
+// (freq=3) y relevancia de gasto (para no priorizar anuncios de $50).
+function _tendRiesgoScore(r) {
+  var freqScore = r.clasif_frecuencia === 'rojo' ? 45 : r.clasif_frecuencia === 'amarillo' ? 22 : 0;
+  var dias = r.dias_para_quemar_freq3;
+  var urgenciaScore = dias != null ? Math.max(0, 30 - Math.min(dias, 30)) : 0;
+  var gastoScore = Math.min(25, (r.gasto || 0) / 200);
+  return freqScore + urgenciaScore + gastoScore;
+}
+
+function renderTendencias() {
+  var A = window.AUDITORIA_DATA;
+  var meta = document.getElementById('tendMeta');
+  if (!A) {
+    if (meta) meta.textContent = '— sin datos: corre ACTUALIZAR TODO.py (o python generar_auditoria.py)';
+    return;
+  }
+  meta.textContent = '· corte ' + A.hoy + ' (día ' + A.dias_transcurridos + ' de mes) · actualizado ' + A.actualizado;
+
+  var todas = (A.campanas || []).filter(function(r) { return r.status === 'ACTIVE' && (r.gasto || 0) >= 100; });
+  todas.forEach(function(r) { r._riesgo = _tendRiesgoScore(r); });
+
+  // ── KPIs ──
+  var nRojo = todas.filter(function(r){ return r.clasif_frecuencia === 'rojo'; }).length;
+  var nAmarillo = todas.filter(function(r){ return r.clasif_frecuencia === 'amarillo'; }).length;
+  var nVerde = todas.filter(function(r){ return r.clasif_frecuencia === 'verde'; }).length;
+  var conDias = todas.filter(function(r){ return r.dias_para_quemar_freq3 != null; });
+  var promDias = conDias.length ? conDias.reduce(function(s,r){return s+r.dias_para_quemar_freq3;},0)/conDias.length : null;
+  var clinSubiendo = (A.clinicas || []).filter(function(c){ return c.cpl_trend && c.cpl_trend.tendencia === 'subiendo'; }).length;
+  document.getElementById('tendKpis').innerHTML =
+    '<div class="kpi-card c4"><span class="kpi-icon">🔴</span><div class="kpi-val">' + nRojo + '</div>' +
+      '<div class="kpi-label">Ad sets quemados</div><div class="kpi-sub">frecuencia ≥ 2.5 — renovar público ya</div></div>' +
+    '<div class="kpi-card c3"><span class="kpi-icon">🟡</span><div class="kpi-val">' + nAmarillo + '</div>' +
+      '<div class="kpi-label">Ad sets a vigilar</div><div class="kpi-sub">frecuencia 2.2–2.5</div></div>' +
+    '<div class="kpi-card c1"><span class="kpi-icon">🟢</span><div class="kpi-val">' + nVerde + '</div>' +
+      '<div class="kpi-label">Ad sets sanos</div><div class="kpi-sub">de ' + todas.length + ' activos con gasto relevante</div></div>' +
+    '<div class="kpi-card c2"><span class="kpi-icon">⏳</span><div class="kpi-val">' + (promDias != null ? promDias.toFixed(0) + ' d' : '—') + '</div>' +
+      '<div class="kpi-label">Días prom. para quemarse</div><div class="kpi-sub">si sigue el ritmo actual de frecuencia</div></div>' +
+    '<div class="kpi-card c5"><span class="kpi-icon">📈</span><div class="kpi-val">' + clinSubiendo + '</div>' +
+      '<div class="kpi-label">Clínicas con CPL subiendo</div><div class="kpi-sub">de ' + (A.clinicas||[]).length + ' · 2ª mitad vs 1ª mitad del mes</div></div>';
+
+  // ── Filtros tabla de riesgo ──
+  if (!_tendFiltersWired) {
+    var selClinica = document.getElementById('tendFClinica');
+    var nombresClinica = Array.from(new Set((A.campanas || []).map(function(r){ return r.clinica; }))).sort();
+    selClinica.innerHTML = '<option value="">Todas las clínicas</option>' +
+      nombresClinica.map(function(c) { return '<option value="' + c + '">' + c + '</option>'; }).join('');
+    ['tendFClinica', 'tendFTipo'].forEach(function(id) {
+      document.getElementById(id).addEventListener('change', renderTendTablas);
+    });
+    document.getElementById('tendFSearch').addEventListener('input', renderTendTablas);
+    _tendFiltersWired = true;
+  }
+  renderTendTablas();
+  renderTendScatter(todas);
+  renderTendCplMitades();
+}
+
+function renderTendTablas() {
+  var A = window.AUDITORIA_DATA;
+  if (!A) return;
+  var clinica = document.getElementById('tendFClinica').value;
+  var tipo = document.getElementById('tendFTipo').value;
+  var q = document.getElementById('tendFSearch').value.trim().toLowerCase();
+
+  var rows = (A.campanas || []).filter(function(r) {
+    if (r.status !== 'ACTIVE' || (r.gasto || 0) < 100) return false;
+    if (clinica && r.clinica !== clinica) return false;
+    if (tipo && r.tipo !== tipo) return false;
+    if (q && (r.campana + ' ' + r.adset).toLowerCase().indexOf(q) === -1) return false;
+    return true;
+  });
+  rows.forEach(function(r) { r._riesgo = _tendRiesgoScore(r); });
+  rows.sort(function(a, b) { return b._riesgo - a._riesgo; });
+
+  document.getElementById('tendFCount').textContent = rows.length + ' ad sets activos (gasto ≥ $100)';
+  document.getElementById('tablaTendRiesgo').innerHTML = rows.slice(0, 100).map(function(r) {
+    var riesgoColor = r._riesgo >= 50 ? 'var(--pink)' : r._riesgo >= 25 ? 'var(--yellow)' : 'var(--green)';
+    var riesgoLbl = r._riesgo >= 50 ? 'ALTO' : r._riesgo >= 25 ? 'MEDIO' : 'BAJO';
+    var detalle = '<b>Campaña:</b> ' + r.campana + ' &nbsp;·&nbsp; <b>Anuncio:</b> ' + (r.anuncio || '—') +
+      ' &nbsp;·&nbsp; <b>Impresiones:</b> ' + (r.impresiones != null ? fmtN(r.impresiones) : '—') +
+      ' &nbsp;·&nbsp; <b>Días activo:</b> ' + (r.dias_activo != null ? r.dias_activo : '—') +
+      ' &nbsp;·&nbsp; <b>Veredicto público/creativo:</b> ' + (r.veredicto_publico_creativo || 'sin señal aún');
+    return '<tr class="row-toggle" onclick="toggleDetailRow(this)"><td class="row-caret">▸</td><td>' + r.clinica + '</td>' +
+      '<td><span class="badge badge-blue">' + (r.tipo === 'sede' ? 'Sede' : 'Franquicia') + '</span></td>' +
+      '<td style="max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><b>' + r.adset + '</b></td>' +
+      '<td><span class="badge ' + (AUD_FREQ_BADGE[r.clasif_frecuencia] || 'badge-blue') + '">' + (r.frecuencia != null ? r.frecuencia.toFixed(2) : '—') + '</span></td>' +
+      '<td>' + (r.dias_para_quemar_freq3 != null ? r.dias_para_quemar_freq3.toFixed(0) + ' d' : '—') + '</td>' +
+      '<td>' + (r.cpl != null ? fmt(r.cpl) : '—') + '</td>' +
+      '<td>' + fmt(r.gasto) + '</td><td>' + fmtN(r.leads) + '</td>' +
+      '<td style="font-weight:800;color:' + riesgoColor + '">' + riesgoLbl + '</td></tr>' +
+      '<tr class="row-detail"><td></td><td colspan="8">' + detalle + '</td></tr>';
+  }).join('') || '<tr><td colspan="9">Sin ad sets para los filtros seleccionados</td></tr>';
+}
+
+function renderTendScatter(todas) {
+  var puntos = todas.filter(function(r){ return r.frecuencia != null && r.cpl != null; });
+  var colorMap = { rojo: 'rgba(221,56,44,0.75)', amarillo: 'rgba(240,157,15,0.75)', verde: 'rgba(44,150,88,0.7)' };
+  var grupos = { rojo: [], amarillo: [], verde: [] };
+  puntos.forEach(function(r) {
+    var g = grupos[r.clasif_frecuencia] || grupos.verde;
+    g.push({ x: r.frecuencia, y: r.cpl, r: Math.max(3, Math.min(18, Math.sqrt(r.gasto || 0) / 6)), _row: r });
+  });
+  var ctx = document.getElementById('chartTendScatter').getContext('2d');
+  if (chartInst['chartTendScatter']) chartInst['chartTendScatter'].destroy();
+  chartInst['chartTendScatter'] = new Chart(ctx, {
+    type: 'bubble',
+    data: {
+      datasets: ['rojo','amarillo','verde'].map(function(k) {
+        return {
+          label: k === 'rojo' ? '🔴 Quemada' : k === 'amarillo' ? '🟡 Vigilar' : '🟢 Sana',
+          data: grupos[k],
+          backgroundColor: colorMap[k],
+          borderWidth: 0,
+        };
+      })
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false, animation: false,
+      plugins: {
+        legend: { labels: { color: '#8AACB5', font: { size: 11 } } },
+        tooltip: {
+          backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#8AACB5', bodyColor:'#E8F4F8', padding:10, cornerRadius:8,
+          callbacks: {
+            label: function(c) {
+              var row = c.raw._row;
+              return [row.clinica + ' — ' + row.adset, 'Freq ' + row.frecuencia.toFixed(2) + ' · CPL ' + fmt(row.cpl) + ' · Gasto ' + fmt(row.gasto)];
+            }
+          }
+        }
+      },
+      scales: {
+        x: { title:{display:true,text:'Frecuencia',color:'#3F7A89',font:{size:10}}, ticks:{color:'#8AACB5',font:{size:11}}, grid:{color:'rgba(63,122,137,0.08)'} },
+        y: { title:{display:true,text:'CPL',color:'#3F7A89',font:{size:10}}, ticks:{color:'#8AACB5',font:{size:11}}, grid:{color:'rgba(63,122,137,0.08)'} }
+      }
+    }
+  });
+}
+
+function renderTendCplMitades() {
+  var A = window.AUDITORIA_DATA;
+  var clinicas = (A.clinicas || []).filter(function(c) { return c.cpl_trend && c.cpl_trend.cpl_1a_mitad != null; })
+    .slice().sort(function(a, b) { return (b.cpl_trend.delta_pct||0) - (a.cpl_trend.delta_pct||0); })
+    .slice(0, 16);
+  var ctx = document.getElementById('chartTendCplMitades').getContext('2d');
+  if (chartInst['chartTendCplMitades']) chartInst['chartTendCplMitades'].destroy();
+  chartInst['chartTendCplMitades'] = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: clinicas.map(function(c){ return c.clinica; }),
+      datasets: [
+        { label: '1ª mitad del mes', data: clinicas.map(function(c){ return c.cpl_trend.cpl_1a_mitad; }), backgroundColor: 'rgba(63,122,137,0.7)', borderRadius: 4 },
+        { label: '2ª mitad del mes', data: clinicas.map(function(c){ return c.cpl_trend.cpl_2a_mitad; }), backgroundColor: 'rgba(221,56,44,0.7)', borderRadius: 4 },
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false, animation: false,
+      plugins: {
+        legend: { labels: { color: '#8AACB5', font: { size: 11 } } },
+        tooltip: { backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#8AACB5', bodyColor:'#E8F4F8', padding:10, cornerRadius:8 }
+      },
+      scales: {
+        x: { ticks:{color:'#8AACB5',font:{size:10}}, grid:{display:false} },
+        y: { ticks:{color:'#8AACB5',font:{size:11}}, grid:{color:'rgba(63,122,137,0.08)'}, title:{display:true,text:'CPL',color:'#3F7A89',font:{size:10}} }
+      }
+    }
+  });
+
+  // Tabla correlación CPL ↔ agendamientos
+  var filas = (A.clinicas || []).slice().sort(function(a, b) {
+    var aw = (a.cpl_trend && a.cpl_trend.tendencia === 'subiendo' ? 1 : 0) + (a.alcanza_con_ritmo_actual === 'NO' ? 1 : 0);
+    var bw = (b.cpl_trend && b.cpl_trend.tendencia === 'subiendo' ? 1 : 0) + (b.alcanza_con_ritmo_actual === 'NO' ? 1 : 0);
+    if (bw !== aw) return bw - aw;
+    return (b.cpl_trend ? b.cpl_trend.delta_pct||0 : 0) - (a.cpl_trend ? a.cpl_trend.delta_pct||0 : 0);
+  });
+  document.getElementById('tablaTendCorrelacion').innerHTML = filas.map(function(c) {
+    var t = c.cpl_trend || {};
+    var arrow = t.tendencia === 'subiendo' ? '↑' : t.tendencia === 'bajando' ? '↓' : '→';
+    var trendColor = t.tendencia === 'subiendo' ? 'var(--pink)' : t.tendencia === 'bajando' ? 'var(--green)' : 'var(--text2)';
+    var asistidas = c.irving_asistidas != null ? c.irving_asistidas : c.asistidas;
+    var alcanzaBadge = c.alcanza_con_ritmo_actual
+      ? '<span class="badge ' + (c.alcanza_con_ritmo_actual === 'SÍ' ? 'badge-green' : 'badge-red') + '">' +
+        (c.alcanza_con_ritmo_actual === 'SÍ' ? 'Sí' : 'No') + '</span>'
+      : '—';
+    return '<tr>' +
+      '<td><b>' + c.clinica + '</b></td>' +
+      '<td><span class="badge badge-blue">' + (c.grupo === 'sede' ? 'Sede' : 'Franquicia') + '</span></td>' +
+      '<td>' + (c.cpl != null ? fmt(c.cpl) : '—') + '</td>' +
+      '<td style="color:' + trendColor + ';font-weight:700">' + arrow + ' ' + (t.delta_pct != null ? Math.abs(t.delta_pct) + '%' : '—') + '</td>' +
+      '<td>' + (c.fatiga && c.fatiga.freq_max != null ? c.fatiga.freq_max : '—') + '</td>' +
+      '<td>' + fmtN(asistidas) + '/' + (c.meta_cc_citas != null ? c.meta_cc_citas : '—') + '</td>' +
+      '<td>' + alcanzaBadge + '</td>' +
+      '<td>' + (c.leads_adicionales_necesarios != null ? fmtN(c.leads_adicionales_necesarios) : '—') + '</td>' +
+    '</tr>';
+  }).join('') || '<tr><td colspan="8">Sin datos de clínicas</td></tr>';
 }
 
 // ── Top Anuncios ──
