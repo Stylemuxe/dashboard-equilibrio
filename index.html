@@ -3253,22 +3253,23 @@ document.getElementById('headerDate');
 <div id="tab-metajunio" class="tab-panel">
 <div class="content" style="max-width:1400px">
 
-<h2 style="font-size:20px;font-weight:800;margin-bottom:4px;color:var(--cyan)">Proyector de Metas — Sedes</h2>
+<h2 style="font-size:20px;font-weight:800;margin-bottom:4px;color:var(--cyan)">Proyector de Metas — Sedes y Franquicias</h2>
 <p style="color:var(--text2);font-size:13px;margin-bottom:28px">
-  Escribe tu meta de asistidas por sede y el proyector calcula automáticamente cuántas citas tienes que agendar en CC, cuántos leads necesita Meta y cuánto presupuesto pedir.<br>
+  Escribe tu meta de asistidas por clínica y el proyector calcula automáticamente cuántas citas tienes que agendar en CC, cuántos leads necesita Meta y cuánto presupuesto pedir.<br>
   <span style="color:var(--text3)">Los porcentajes de eficiencia arrancan con los datos reales del <b id="mjMesRef">mes seleccionado</b> (cámbialo con el selector de mes de arriba).</span>
 </p>
 
-<!-- KPIs resumen mayo -->
-<div class="kpi-row" style="margin-bottom:28px" id="mjKpis"></div>
+<!-- ══════════ SEDES ══════════ -->
+<h3 style="font-size:15px;font-weight:800;color:var(--text);margin:0 0 14px;display:flex;align-items:center;gap:8px">🏥 Sedes</h3>
 
-<!-- TABLA REFERENCIA MAYO -->
+<div class="kpi-row" style="margin-bottom:28px" id="mjKpisSedes"></div>
+
 <div style="margin-bottom:32px">
   <div class="section-title" style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text2);text-transform:uppercase;letter-spacing:.06em">
     Referencia — <span id="mjRefTitulo">mes seleccionado</span>
   </div>
   <div class="table-wrap">
-    <table id="tablaMayo">
+    <table id="tablaRefSedes">
       <thead><tr>
         <th>Sede</th>
         <th>Leads Meta</th><th>Gasto</th><th>CPL</th>
@@ -3281,13 +3282,12 @@ document.getElementById('headerDate');
   </div>
 </div>
 
-<!-- PROYECTOR INTERACTIVO -->
-<div>
+<div style="margin-bottom:44px">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
     <div class="section-title" style="font-size:14px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em">
       Proyector — Escribe tu meta de asistidas por sede
     </div>
-    <button onclick="mjReset()" style="background:var(--bg2);border:1px solid var(--border);color:var(--text2);border-radius:6px;padding:6px 14px;font-size:12px;cursor:pointer;font-weight:600">
+    <button onclick="mjResetSedes()" style="background:var(--bg2);border:1px solid var(--border);color:var(--text2);border-radius:6px;padding:6px 14px;font-size:12px;cursor:pointer;font-weight:600">
       ↺ Restaurar % reales
     </button>
   </div>
@@ -3295,7 +3295,7 @@ document.getElementById('headerDate');
     Puedes editar los <b style="color:var(--yellow)">% de efectividad</b> para simular mejoras del CC. Los valores arrancan con los porcentajes reales del mes seleccionado.
   </p>
   <div class="table-wrap">
-    <table id="tablaProyector">
+    <table id="tablaProyectorSedes">
       <thead><tr>
         <th>Sede</th>
         <th style="color:var(--yellow);font-size:11px">% Lead→Agend<br><span style="font-weight:400;color:var(--text3)">editable</span></th>
@@ -3306,8 +3306,61 @@ document.getElementById('headerDate');
         <th>Leads Meta<br><span style="font-size:10px;font-weight:400">necesarios</span></th>
         <th>Presupuesto<br><span style="font-size:10px;font-weight:400">estimado</span></th>
       </tr></thead>
-      <tbody id="tbodyProyector"></tbody>
-      <tfoot id="tfootProyector"></tfoot>
+      <tbody id="tbodyProyectorSedes"></tbody>
+      <tfoot id="tfootProyectorSedes"></tfoot>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════ FRANQUICIAS ══════════ -->
+<h3 style="font-size:15px;font-weight:800;color:var(--text);margin:0 0 14px;display:flex;align-items:center;gap:8px">🏢 Franquicias</h3>
+
+<div class="kpi-row" style="margin-bottom:28px" id="mjKpisFranq"></div>
+
+<div style="margin-bottom:32px">
+  <div class="section-title" style="font-size:14px;font-weight:700;margin-bottom:12px;color:var(--text2);text-transform:uppercase;letter-spacing:.06em">
+    Referencia — <span id="mjRefTituloFranq">mes seleccionado</span>
+  </div>
+  <div class="table-wrap">
+    <table id="tablaRefFranq">
+      <thead><tr>
+        <th>Franquicia</th>
+        <th>Leads Meta</th><th>Gasto</th><th>CPL</th>
+        <th>Agendadas CC</th><th>% Lead→Agend</th>
+        <th>Asistidas</th><th>% Agend→Asist</th>
+        <th>CPA</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<div>
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+    <div class="section-title" style="font-size:14px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em">
+      Proyector — Escribe tu meta de asistidas por franquicia
+    </div>
+    <button onclick="mjResetFranq()" style="background:var(--bg2);border:1px solid var(--border);color:var(--text2);border-radius:6px;padding:6px 14px;font-size:12px;cursor:pointer;font-weight:600">
+      ↺ Restaurar % reales
+    </button>
+  </div>
+  <p style="font-size:12px;color:var(--text3);margin-bottom:12px">
+    Puedes editar los <b style="color:var(--yellow)">% de efectividad</b> para simular mejoras del CC. Los valores arrancan con los porcentajes reales del mes seleccionado.
+  </p>
+  <div class="table-wrap">
+    <table id="tablaProyectorFranq">
+      <thead><tr>
+        <th>Franquicia</th>
+        <th style="color:var(--yellow);font-size:11px">% Lead→Agend<br><span style="font-weight:400;color:var(--text3)">editable</span></th>
+        <th style="color:var(--yellow);font-size:11px">% Agend→Asist<br><span style="font-weight:400;color:var(--text3)">editable</span></th>
+        <th style="color:var(--yellow);font-size:11px">CPL<br><span style="font-weight:400;color:var(--text3)">editable</span></th>
+        <th style="background:var(--cyan);color:#000;border-radius:6px 6px 0 0">Meta Asistidas<br><span style="font-size:10px;font-weight:400">(escribe aquí)</span></th>
+        <th>Agendadas CC<br><span style="font-size:10px;font-weight:400">necesarias</span></th>
+        <th>Leads Meta<br><span style="font-size:10px;font-weight:400">necesarios</span></th>
+        <th>Presupuesto<br><span style="font-size:10px;font-weight:400">estimado</span></th>
+      </tr></thead>
+      <tbody id="tbodyProyectorFranq"></tbody>
+      <tfoot id="tfootProyectorFranq"></tfoot>
     </table>
   </div>
 </div>
@@ -3318,34 +3371,43 @@ document.getElementById('headerDate');
 <script>
 (function(){
   // ── Proyector dinámico: usa los datos reales del mes seleccionado (DATA) ──
-  var ORDEN = ["Balbuena","Chalco","Coacalco","Ecatepec","Milpa Alta","Mixquiahuala","Neza","Plaza Neza","Tlahuac"];
+  // Sedes: orden fijo (son siempre las mismas 9). Franquicias: se toman de
+  // DATA.franquicias tal cual vengan del mes (varían/crecen), ordenadas alfabético.
+  var ORDEN_SEDES = ["Balbuena","Chalco","Coacalco","Ecatepec","Milpa Alta","Mixquiahuala","Neza","Plaza Neza","Tlahuac"];
 
   var fmt  = function(n){ return '$' + n.toLocaleString('es-MX', {minimumFractionDigits:0, maximumFractionDigits:0}); };
   var fmtN = function(n){ return n.toLocaleString('es-MX'); };
   var pct  = function(a,b){ return b>0 ? (a/b*100).toFixed(1)+'%' : '—'; };
   var pctN = function(a,b){ return b>0 ? (a/b*100) : 0; };
 
-  var REF = {};   // datos del mes seleccionado, por sede
+  var REF_SEDES = {}, REF_FRANQ = {};
 
-  function datosMes(){
+  function datosMes(fuente, orden){
     var out = {};
-    if (!window.DATA || !DATA.sedes) return out;
-    ORDEN.forEach(function(c){
-      var v = DATA.sedes[c];
+    if (!fuente) return out;
+    orden.forEach(function(c){
+      var v = fuente[c];
       if (!v) return;
+      // Sedes traen "agendadas" (citas agendadas en CC) directo. Franquicias
+      // NO tienen ese campo en el pivot — cc.res ahí es "confirmadas/en espera"
+      // (un conteo chico de pendientes, no el total del mes) así que no sirve
+      // como sustituto. Sin una etapa de agenda separada, se usa asistidas
+      // como "agend" para que el embudo colapse a Leads→Asistidas directo
+      // (el % Agend→Asist queda en 100%, honesto dado el dato disponible).
+      var agend = v.agendadas != null ? v.agendadas : (v.asistidas || 0);
       out[c] = {
         leads: v.leads_mes || 0,
         gasto: v.gasto_mes || 0,
-        agend: v.agendadas || 0,
+        agend: agend,
         asist: v.asistidas || 0
       };
     });
     return out;
   }
 
-  // ── Proyector interactivo ─────────────────────────────────────────────────
-  function calcProyector(){
-    var rows = document.querySelectorAll('#tbodyProyector tr');
+  // ── Proyector interactivo (genérico: sirve para sedes y franquicias) ──────
+  function calcProyector(tbodyId, tfootId){
+    var rows = document.querySelectorAll('#'+tbodyId+' tr');
     var totMeta=0, totAgendNec=0, totLeadsNec=0, totPres=0;
     rows.forEach(function(row){
       var inp  = row.querySelector('.inp-meta');
@@ -3375,7 +3437,7 @@ document.getElementById('headerDate');
       tdLeads.style.color = leadsNec > 0 ? 'var(--text)' : 'var(--text3)';
       tdPres.style.color  = presupuesto > 0 ? 'var(--cyan)' : 'var(--text3)';
     });
-    var tf = document.getElementById('tfootProyector');
+    var tf = document.getElementById(tfootId);
     tf.innerHTML = '<tr class="sum-row">'
       + '<td colspan="3">TOTAL</td>'
       + '<td style="color:var(--cyan);font-size:16px;font-weight:800">'+(totMeta>0?fmtN(totMeta):'—')+'</td>'
@@ -3385,30 +3447,33 @@ document.getElementById('headerDate');
       + '</tr>';
   }
 
-  window.mjCalc = calcProyector;
+  window.mjCalcSedes = function(){ calcProyector('tbodyProyectorSedes','tfootProyectorSedes'); };
+  window.mjCalcFranq = function(){ calcProyector('tbodyProyectorFranq','tfootProyectorFranq'); };
 
-  window.mjReset = function(){
-    document.querySelectorAll('#tbodyProyector tr').forEach(function(row){
+  function mjResetTabla(tbodyId, calcFn){
+    document.querySelectorAll('#'+tbodyId+' tr').forEach(function(row){
       row.querySelector('.inp-lag').value = row.dataset.lag;
       row.querySelector('.inp-aga').value = row.dataset.aga;
       row.querySelector('.inp-cpl').value = row.dataset.cpl;
     });
-    calcProyector();
-  };
+    calcFn();
+  }
+  window.mjResetSedes = function(){ mjResetTabla('tbodyProyectorSedes', window.mjCalcSedes); };
+  window.mjResetFranq = function(){ mjResetTabla('tbodyProyectorFranq', window.mjCalcFranq); };
 
-  // ── Render completo del tab (se llama en init/renderAll, con el mes activo) ──
-  window.renderProyector = function(){
-    REF = datosMes();
-    var sedes = ORDEN.filter(function(c){ return REF[c]; });
-    if (!sedes.length) return;
+  // ── Renderiza un grupo completo (sedes o franquicias) en sus tablas ───────
+  function renderGrupo(REF, nombres, ids, calcFn, etiquetaCol){
+    if (!nombres.length) {
+      document.getElementById(ids.kpis).innerHTML = '<div class="kpi-card"><div class="kpi-label">Sin datos</div><div class="kpi-val">—</div></div>';
+      document.querySelector('#'+ids.tablaRef+' tbody').innerHTML = '';
+      document.getElementById(ids.tbody).innerHTML = '';
+      document.getElementById(ids.tfoot).innerHTML = '';
+      return;
+    }
 
-    var mesLbl = (typeof getMesLabel === 'function') ? getMesLabel() : '';
-    var el = document.getElementById('mjMesRef');   if (el) el.textContent = mesLbl || 'mes seleccionado';
-    el = document.getElementById('mjRefTitulo');    if (el) el.textContent = mesLbl || 'mes seleccionado';
-
-    // KPIs resumen
     var totLeads=0, totGasto=0, totAgend=0, totAsist=0;
-    sedes.forEach(function(c){ var v=REF[c]; totLeads+=v.leads; totGasto+=v.gasto; totAgend+=v.agend; totAsist+=v.asist; });
+    nombres.forEach(function(c){ var v=REF[c]; totLeads+=v.leads; totGasto+=v.gasto; totAgend+=v.agend; totAsist+=v.asist; });
+    var mesLbl = (typeof getMesLabel === 'function') ? getMesLabel() : '';
     var kpis = [
       {label:'Leads Meta '+mesLbl,  val: fmtN(totLeads)},
       {label:'Gasto Total', val: fmt(totGasto)},
@@ -3423,11 +3488,11 @@ document.getElementById('headerDate');
     kpis.forEach(function(k){
       kHtml += '<div class="kpi-card"><div class="kpi-label">'+k.label+'</div><div class="kpi-val">'+k.val+'</div></div>';
     });
-    document.getElementById('mjKpis').innerHTML = kHtml;
+    document.getElementById(ids.kpis).innerHTML = kHtml;
 
     // Tabla de referencia del mes
     var mHtml = '';
-    sedes.forEach(function(c){
+    nombres.forEach(function(c){
       var v = REF[c];
       var cpl  = v.leads>0 ? v.gasto / v.leads : 0;
       var cpa  = v.asist>0 ? v.gasto / v.asist : 0;
@@ -3459,7 +3524,7 @@ document.getElementById('headerDate');
       + '<td style="font-weight:700">'+pct(totAsist,totAgend)+'</td>'
       + '<td>'+fmt(Math.round(cpaT))+'</td>'
       + '</tr>';
-    document.querySelector('#tablaMayo tbody').innerHTML = mHtml;
+    document.querySelector('#'+ids.tablaRef+' tbody').innerHTML = mHtml;
 
     // Filas del proyector (inputs arrancan con los % reales del mes)
     var inputStyle = 'width:72px;background:var(--bg3,var(--bg2));border:1.5px solid var(--yellow);border-radius:6px;'
@@ -3468,7 +3533,7 @@ document.getElementById('headerDate');
       + 'color:var(--cyan);font-size:15px;font-weight:700;padding:6px 10px;text-align:center;outline:none';
 
     var pHtml = '';
-    sedes.forEach(function(c){
+    nombres.forEach(function(c){
       var v    = REF[c];
       var pLag = v.leads>0 ? (v.agend/v.leads*100).toFixed(1) : '0';
       var pAga = v.agend>0 ? (v.asist/v.agend*100).toFixed(1) : '0';
@@ -3476,27 +3541,46 @@ document.getElementById('headerDate');
       pHtml += '<tr data-clinica="'+c+'" data-lag="'+pLag+'" data-aga="'+pAga+'" data-cpl="'+cplV+'">'
         + '<td><b>'+c+'</b></td>'
         + '<td style="background:rgba(255,220,0,.05);padding:5px 8px">'
-        +   '<input type="number" class="inp-lag" min="0" max="100" step="0.1" value="'+pLag+'" oninput="mjCalc()" style="'+inputStyle+'">'
+        +   '<input type="number" class="inp-lag" min="0" max="100" step="0.1" value="'+pLag+'" oninput="'+etiquetaCol+'()" style="'+inputStyle+'">'
         +   '<span style="font-size:11px;color:var(--text3);margin-left:3px">%</span>'
         + '</td>'
         + '<td style="background:rgba(255,220,0,.05);padding:5px 8px">'
-        +   '<input type="number" class="inp-aga" min="0" max="100" step="0.1" value="'+pAga+'" oninput="mjCalc()" style="'+inputStyle+'">'
+        +   '<input type="number" class="inp-aga" min="0" max="100" step="0.1" value="'+pAga+'" oninput="'+etiquetaCol+'()" style="'+inputStyle+'">'
         +   '<span style="font-size:11px;color:var(--text3);margin-left:3px">%</span>'
         + '</td>'
         + '<td style="background:rgba(255,220,0,.05);padding:5px 8px">'
-        +   '<input type="number" class="inp-cpl" min="0" step="0.01" value="'+cplV+'" oninput="mjCalc()" style="'+inputStyle+'">'
+        +   '<input type="number" class="inp-cpl" min="0" step="0.01" value="'+cplV+'" oninput="'+etiquetaCol+'()" style="'+inputStyle+'">'
         +   '<span style="font-size:11px;color:var(--text3);margin-left:3px">$</span>'
         + '</td>'
         + '<td style="background:rgba(0,240,255,.07);padding:6px 8px">'
-        +   '<input type="number" class="inp-meta" min="0" max="9999" placeholder="0" oninput="mjCalc()" style="'+metaStyle+'">'
+        +   '<input type="number" class="inp-meta" min="0" max="9999" placeholder="0" oninput="'+etiquetaCol+'()" style="'+metaStyle+'">'
         + '</td>'
         + '<td class="td-agend" style="color:var(--text3)">—</td>'
         + '<td class="td-leads" style="color:var(--text3)">—</td>'
         + '<td class="td-pres"  style="color:var(--text3)">—</td>'
         + '</tr>';
     });
-    document.getElementById('tbodyProyector').innerHTML = pHtml;
-    calcProyector();
+    document.getElementById(ids.tbody).innerHTML = pHtml;
+    calcFn();
+  }
+
+  // ── Render completo del tab (se llama en init/renderAll, con el mes activo) ──
+  window.renderProyector = function(){
+    if (!window.DATA) return;
+
+    var mesLbl = (typeof getMesLabel === 'function') ? getMesLabel() : '';
+    var el = document.getElementById('mjMesRef');        if (el) el.textContent = mesLbl || 'mes seleccionado';
+    el = document.getElementById('mjRefTitulo');         if (el) el.textContent = mesLbl || 'mes seleccionado';
+    el = document.getElementById('mjRefTituloFranq');    if (el) el.textContent = mesLbl || 'mes seleccionado';
+
+    REF_SEDES = datosMes(DATA.sedes, ORDEN_SEDES);
+    var sedes = ORDEN_SEDES.filter(function(c){ return REF_SEDES[c]; });
+    renderGrupo(REF_SEDES, sedes, {kpis:'mjKpisSedes', tablaRef:'tablaRefSedes', tbody:'tbodyProyectorSedes', tfoot:'tfootProyectorSedes'}, window.mjCalcSedes, 'mjCalcSedes');
+
+    var ORDEN_FRANQ = Object.keys(DATA.franquicias || {}).sort();
+    REF_FRANQ = datosMes(DATA.franquicias, ORDEN_FRANQ);
+    var franq = ORDEN_FRANQ.filter(function(c){ return REF_FRANQ[c]; });
+    renderGrupo(REF_FRANQ, franq, {kpis:'mjKpisFranq', tablaRef:'tablaRefFranq', tbody:'tbodyProyectorFranq', tfoot:'tfootProyectorFranq'}, window.mjCalcFranq, 'mjCalcFranq');
   };
 
   // Auto-render: si init() ya corrio durante el parseo (DATA lista antes de que
