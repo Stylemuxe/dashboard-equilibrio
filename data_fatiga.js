@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "21/08/2026 08:38",
+ "actualizado": "21/08/2026 09:05",
  "periodo": "2026-08-01 a 2026-08-21",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Espalda",
    "veredicto": "RENOVAR PUBLICO",
    "freq": 2.09,
-   "gasto": 1916,
+   "gasto": 1917,
    "leads": 52,
    "cpl": 37,
    "pct_nuevos": 6,
@@ -19,7 +19,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"El dolor articular no desaparece solo. Actúa y...\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.97,
-   "gasto": 43765,
+   "gasto": 43808,
    "leads": 777,
    "cpl": 56,
    "pct_nuevos": 39,
@@ -31,7 +31,7 @@ window.FATIGA_DATA = {
    "adset": "NEUROPATIA",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.86,
-   "gasto": 4049,
+   "gasto": 4053,
    "leads": 241,
    "cpl": 17,
    "pct_nuevos": 75,
@@ -43,8 +43,8 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¿Vives o eres de Mixquiahuala y el dolor de...\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.83,
-   "gasto": 28954,
-   "leads": 434,
+   "gasto": 28999,
+   "leads": 436,
    "cpl": 67,
    "pct_nuevos": 36,
    "cpm1": 26,
@@ -55,8 +55,8 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¡Atención, Nicolás Romero! ¿Buscas terapia de...\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.8,
-   "gasto": 17801,
-   "leads": 542,
+   "gasto": 17832,
+   "leads": 543,
    "cpl": 33,
    "pct_nuevos": 53,
    "cpm1": 24,
@@ -67,7 +67,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¡Atención a nuestra comunidad en Mixquiahuala! 🎉\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.77,
-   "gasto": 7589,
+   "gasto": 7610,
    "leads": 181,
    "cpl": 42,
    "pct_nuevos": 103,
@@ -78,8 +78,8 @@ window.FATIGA_DATA = {
    "cuenta": "Pachuca",
    "adset": "NEUROPATÍA",
    "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.75,
-   "gasto": 2831,
+   "freq": 2.76,
+   "gasto": 2833,
    "leads": 91,
    "cpl": 31,
    "pct_nuevos": 24,
@@ -90,8 +90,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "adset": "NEUROPATIA",
    "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.59,
-   "gasto": 852,
+   "freq": 2.6,
+   "gasto": 853,
    "leads": 17,
    "cpl": 50,
    "pct_nuevos": 47,
@@ -103,10 +103,10 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Atención zona San Juan del Río. 📍\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.58,
-   "gasto": 8213,
+   "gasto": 8235,
    "leads": 315,
    "cpl": 26,
-   "pct_nuevos": 272,
+   "pct_nuevos": 273,
    "cpm1": 31,
    "cpm2": 26
   },
@@ -115,7 +115,7 @@ window.FATIGA_DATA = {
    "adset": "RODILLA",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.58,
-   "gasto": 862,
+   "gasto": 863,
    "leads": 44,
    "cpl": 20,
    "pct_nuevos": 78,
@@ -127,7 +127,7 @@ window.FATIGA_DATA = {
    "adset": "NEU",
    "veredicto": "VIGILAR",
    "freq": 2.42,
-   "gasto": 2494,
+   "gasto": 2498,
    "leads": 42,
    "cpl": 59,
    "pct_nuevos": 157,
@@ -151,9 +151,9 @@ window.FATIGA_DATA = {
    "adset": "HOM",
    "veredicto": "VIGILAR",
    "freq": 2.37,
-   "gasto": 1442,
+   "gasto": 1448,
    "leads": 15,
-   "cpl": 96,
+   "cpl": 97,
    "pct_nuevos": 41,
    "cpm1": 55,
    "cpm2": 60
@@ -163,7 +163,7 @@ window.FATIGA_DATA = {
    "adset": "Paralisis -  Check",
    "veredicto": "VIGILAR",
    "freq": 2.27,
-   "gasto": 1467,
+   "gasto": 1468,
    "leads": 39,
    "cpl": 38,
    "pct_nuevos": 11,
@@ -186,11 +186,11 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"Si eres de Plaza Neza, 📍\"",
    "veredicto": "VIGILAR",
-   "freq": 2.2,
-   "gasto": 8424,
+   "freq": 2.21,
+   "gasto": 8453,
    "leads": 371,
    "cpl": 23,
-   "pct_nuevos": 367,
+   "pct_nuevos": 368,
    "cpm1": 32,
    "cpm2": 27
   }
@@ -201,7 +201,7 @@ window.FATIGA_DATA = {
    "ad": "NEZA DOMINGOS",
    "adset": "Imagen Gerontologia - NEZA",
    "freq": 1.84,
-   "gasto": 691,
+   "gasto": 693,
    "leads": 159,
    "cpl": 4
   },
@@ -210,8 +210,8 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.9,
-   "gasto": 4022,
-   "leads": 838,
+   "gasto": 4026,
+   "leads": 839,
    "cpl": 5
   },
   {
@@ -219,8 +219,8 @@ window.FATIGA_DATA = {
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA",
    "freq": 1.63,
-   "gasto": 2551,
-   "leads": 233,
+   "gasto": 2557,
+   "leads": 234,
    "cpl": 11
   },
   {
@@ -228,7 +228,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "adset": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "freq": 1.98,
-   "gasto": 6890,
+   "gasto": 6901,
    "leads": 497,
    "cpl": 14
   },
@@ -237,8 +237,8 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.55,
-   "gasto": 5721,
-   "leads": 403,
+   "gasto": 5731,
+   "leads": 404,
    "cpl": 14
   },
   {
@@ -246,8 +246,8 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBRO PAUTA ENERO",
    "adset": "HOMBRO",
    "freq": 1.95,
-   "gasto": 1970,
-   "leads": 128,
+   "gasto": 1974,
+   "leads": 129,
    "cpl": 15
   },
   {
@@ -255,8 +255,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
    "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
    "freq": 1.99,
-   "gasto": 4568,
-   "leads": 278,
+   "gasto": 4597,
+   "leads": 279,
    "cpl": 16
   },
   {
@@ -264,8 +264,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de la zona Cuautitlán Izcalli, 📍\"",
    "adset": "Publicación: \"Si eres de la zona Cuautitlán Izcalli, 📍\"",
    "freq": 1.8,
-   "gasto": 9390,
-   "leads": 593,
+   "gasto": 9426,
+   "leads": 594,
    "cpl": 16
   },
   {
@@ -282,8 +282,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"📍 ¡Atención Tepeyac y alrededores! ¿El dolor te...\"",
    "adset": "Publicación: \"📍 ¡Atención Tepeyac y alrededores! ¿El dolor te...\"",
    "freq": 1.69,
-   "gasto": 4139,
-   "leads": 225,
+   "gasto": 4161,
+   "leads": 226,
    "cpl": 18
   },
   {
@@ -291,7 +291,7 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO CHECK",
    "freq": 1.62,
-   "gasto": 3784,
+   "gasto": 3797,
    "leads": 203,
    "cpl": 19
   },
@@ -299,9 +299,9 @@ window.FATIGA_DATA = {
    "cuenta": "Valle Dorado",
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "freq": 1.58,
-   "gasto": 4461,
-   "leads": 236,
+   "freq": 1.57,
+   "gasto": 4495,
+   "leads": 237,
    "cpl": 19
   },
   {
@@ -326,8 +326,8 @@ window.FATIGA_DATA = {
    "cuenta": "La Moderna",
    "ad": "VID_NEU_JUL",
    "adset": "Neuropatia",
-   "freq": 1.8,
-   "gasto": 1998,
+   "freq": 1.79,
+   "gasto": 2005,
    "leads": 95,
    "cpl": 21
   },
@@ -354,16 +354,25 @@ window.FATIGA_DATA = {
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
    "freq": 1.77,
-   "gasto": 2037,
+   "gasto": 2038,
    "leads": 90,
    "cpl": 23
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID-NEUROPATIA.SEP",
+   "adset": "NEUROPATIA",
+   "freq": 1.65,
+   "gasto": 1945,
+   "leads": 80,
+   "cpl": 24
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO",
    "freq": 1.41,
-   "gasto": 2407,
+   "gasto": 2409,
    "leads": 99,
    "cpl": 24
   },
@@ -372,7 +381,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEUROPATIA DIABETICA 3 JUN",
    "adset": "NEUROPATIA",
    "freq": 1.53,
-   "gasto": 1558,
+   "gasto": 1562,
    "leads": 65,
    "cpl": 24
   },
@@ -386,20 +395,11 @@ window.FATIGA_DATA = {
    "cpl": 25
   },
   {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID-NEUROPATIA.SEP",
-   "adset": "NEUROPATIA",
-   "freq": 1.65,
-   "gasto": 1943,
-   "leads": 78,
-   "cpl": 25
-  },
-  {
    "cuenta": "Promo/Compl.",
    "ad": "TLAHUAC 1",
    "adset": "PROMOCIONES CDMX",
    "freq": 1.42,
-   "gasto": 3797,
+   "gasto": 3804,
    "leads": 153,
    "cpl": 25
   },
@@ -408,7 +408,7 @@ window.FATIGA_DATA = {
    "ad": "VID - RODILLA",
    "adset": "RODILLA - CHECK",
    "freq": 1.48,
-   "gasto": 1850,
+   "gasto": 1851,
    "leads": 74,
    "cpl": 25
   },
