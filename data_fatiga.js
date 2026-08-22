@@ -1,76 +1,88 @@
 window.FATIGA_DATA = {
- "actualizado": "21/08/2026 21:17",
- "periodo": "2026-08-01 a 2026-08-21",
+ "actualizado": "22/08/2026 04:06",
+ "periodo": "2026-08-01 a 2026-08-22",
  "diagnostico": [
   {
    "cuenta": "Laura (sedes)",
    "adset": "Espalda",
    "veredicto": "RENOVAR PUBLICO",
    "freq": 2.1,
-   "gasto": 1931,
+   "gasto": 1933,
    "leads": 52,
    "cpl": 37,
-   "pct_nuevos": 6,
+   "pct_nuevos": 5,
    "cpm1": 22,
    "cpm2": 26
   },
   {
    "cuenta": "Promo/Compl.",
+   "adset": "VIDEO COACALCO",
+   "veredicto": "PUBLICO CANSANDOSE",
+   "freq": 1.97,
+   "gasto": 43091,
+   "leads": 702,
+   "cpl": 61,
+   "pct_nuevos": 28,
+   "cpm1": 28,
+   "cpm2": 42
+  },
+  {
+   "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"El dolor articular no desaparece solo. Actúa y...\"",
    "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.98,
-   "gasto": 44430,
-   "leads": 787,
+   "freq": 2.99,
+   "gasto": 44581,
+   "leads": 792,
    "cpl": 56,
-   "pct_nuevos": 40,
+   "pct_nuevos": 33,
    "cpm1": 24,
-   "cpm2": 28
+   "cpm2": 30
   },
   {
    "cuenta": "Queretaro",
    "adset": "NEUROPATIA",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.9,
-   "gasto": 4152,
+   "gasto": 4167,
    "leads": 249,
    "cpl": 17,
-   "pct_nuevos": 78,
-   "cpm1": 47,
-   "cpm2": 43
+   "pct_nuevos": 69,
+   "cpm1": 48,
+   "cpm2": 42
   },
   {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"¿Vives o eres de Mixquiahuala y el dolor de...\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.86,
-   "gasto": 29673,
-   "leads": 444,
+   "gasto": 29793,
+   "leads": 448,
    "cpl": 67,
-   "pct_nuevos": 37,
+   "pct_nuevos": 31,
    "cpm1": 26,
-   "cpm2": 30
+   "cpm2": 31
   },
   {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"¡Atención a nuestra comunidad en Mixquiahuala! 🎉\"",
    "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.85,
-   "gasto": 8005,
-   "leads": 185,
+   "freq": 2.86,
+   "gasto": 8067,
+   "leads": 187,
    "cpl": 43,
-   "pct_nuevos": 106,
-   "cpm1": 18,
-   "cpm2": 18
+   "pct_nuevos": 74,
+   "cpm1": 17,
+   "cpm2": 19
   },
   {
    "cuenta": "Nicolas Romero",
    "adset": "Publicación: \"¡Atención, Nicolás Romero! ¿Buscas terapia de...\"",
    "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.85,
-   "gasto": 18498,
-   "leads": 559,
+   "freq": 2.86,
+   "gasto": 18587,
+   "leads": 562,
    "cpl": 33,
-   "pct_nuevos": 55,
+   "pct_nuevos": 39,
    "cpm1": 24,
    "cpm2": 26
   },
@@ -78,60 +90,60 @@ window.FATIGA_DATA = {
    "cuenta": "Pachuca",
    "adset": "NEUROPATÍA",
    "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.76,
-   "gasto": 2897,
+   "freq": 2.77,
+   "gasto": 2907,
    "leads": 91,
    "cpl": 32,
-   "pct_nuevos": 26,
-   "cpm1": 35,
+   "pct_nuevos": 20,
+   "cpm1": 36,
    "cpm2": 40
   },
   {
    "cuenta": "Laura (sedes)",
    "adset": "NEUROPATIA",
    "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.62,
-   "gasto": 889,
+   "freq": 2.63,
+   "gasto": 891,
    "leads": 19,
    "cpl": 47,
-   "pct_nuevos": 52,
+   "pct_nuevos": 50,
    "cpm1": 35,
-   "cpm2": 36
-  },
-  {
-   "cuenta": "San Juan del Rio",
-   "adset": "Publicación: \"Atención zona San Juan del Río. 📍\"",
-   "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.6,
-   "gasto": 8631,
-   "leads": 324,
-   "cpl": 27,
-   "pct_nuevos": 285,
-   "cpm1": 31,
-   "cpm2": 26
+   "cpm2": 37
   },
   {
    "cuenta": "Queretaro",
    "adset": "RODILLA",
    "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.6,
-   "gasto": 890,
+   "freq": 2.61,
+   "gasto": 894,
    "leads": 45,
    "cpl": 20,
-   "pct_nuevos": 80,
-   "cpm1": 53,
+   "pct_nuevos": 60,
+   "cpm1": 52,
    "cpm2": 54
+  },
+  {
+   "cuenta": "San Juan del Rio",
+   "adset": "Publicación: \"Atención zona San Juan del Río. 📍\"",
+   "veredicto": "CAMBIAR CREATIVO",
+   "freq": 2.58,
+   "gasto": 8688,
+   "leads": 324,
+   "cpl": 27,
+   "pct_nuevos": 141,
+   "cpm1": 28,
+   "cpm2": 27
   },
   {
    "cuenta": "Ajusco",
    "adset": "NEU",
    "veredicto": "VIGILAR",
-   "freq": 2.47,
-   "gasto": 2632,
+   "freq": 2.48,
+   "gasto": 2656,
    "leads": 49,
    "cpl": 54,
-   "pct_nuevos": 163,
-   "cpm1": 56,
+   "pct_nuevos": 114,
+   "cpm1": 54,
    "cpm2": 51
   },
   {
@@ -139,59 +151,59 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "VIGILAR",
    "freq": 2.39,
-   "gasto": 1890,
-   "leads": 66,
-   "cpl": 29,
-   "pct_nuevos": 82,
-   "cpm1": 25,
-   "cpm2": 28
+   "gasto": 1895,
+   "leads": 67,
+   "cpl": 28,
+   "pct_nuevos": 59,
+   "cpm1": 26,
+   "cpm2": 29
   },
   {
    "cuenta": "Ajusco",
    "adset": "HOM",
    "veredicto": "VIGILAR",
    "freq": 2.39,
-   "gasto": 1484,
-   "leads": 16,
-   "cpl": 93,
-   "pct_nuevos": 43,
-   "cpm1": 55,
+   "gasto": 1488,
+   "leads": 17,
+   "cpl": 88,
+   "pct_nuevos": 31,
+   "cpm1": 56,
    "cpm2": 61
+  },
+  {
+   "cuenta": "San Juan del Rio",
+   "adset": "Paralisis -  Check",
+   "veredicto": "VIGILAR",
+   "freq": 2.28,
+   "gasto": 1475,
+   "leads": 39,
+   "cpl": 38,
+   "pct_nuevos": 9,
+   "cpm1": 39,
+   "cpm2": 35
   },
   {
    "cuenta": "San Juan del Rio",
    "adset": "Neuropatia - Check",
    "veredicto": "VIGILAR",
    "freq": 2.27,
-   "gasto": 1359,
+   "gasto": 1361,
    "leads": 41,
    "cpl": 33,
-   "pct_nuevos": 15,
+   "pct_nuevos": 13,
    "cpm1": 34,
-   "cpm2": 34
-  },
-  {
-   "cuenta": "San Juan del Rio",
-   "adset": "Paralisis -  Check",
-   "veredicto": "VIGILAR",
-   "freq": 2.27,
-   "gasto": 1474,
-   "leads": 39,
-   "cpl": 38,
-   "pct_nuevos": 11,
-   "cpm1": 39,
-   "cpm2": 35
+   "cpm2": 33
   },
   {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"Si eres de Plaza Neza, 📍\"",
    "veredicto": "VIGILAR",
    "freq": 2.23,
-   "gasto": 8912,
-   "leads": 387,
+   "gasto": 8976,
+   "leads": 389,
    "cpl": 23,
-   "pct_nuevos": 385,
-   "cpm1": 32,
+   "pct_nuevos": 250,
+   "cpm1": 31,
    "cpm2": 27
   },
   {
@@ -199,12 +211,12 @@ window.FATIGA_DATA = {
    "adset": "ROD",
    "veredicto": "VIGILAR",
    "freq": 2.22,
-   "gasto": 4149,
-   "leads": 61,
-   "cpl": 68,
-   "pct_nuevos": 82,
-   "cpm1": 50,
-   "cpm2": 46
+   "gasto": 4168,
+   "leads": 62,
+   "cpl": 67,
+   "pct_nuevos": 55,
+   "cpm1": 49,
+   "cpm2": 47
   }
  ],
  "exitosos": [
@@ -212,18 +224,18 @@ window.FATIGA_DATA = {
    "cuenta": "Gerontologia",
    "ad": "NEZA DOMINGOS",
    "adset": "Imagen Gerontologia - NEZA",
-   "freq": 1.85,
-   "gasto": 722,
-   "leads": 166,
+   "freq": 1.86,
+   "gasto": 731,
+   "leads": 167,
    "cpl": 4
   },
   {
    "cuenta": "Gerontologia",
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
-   "freq": 1.92,
-   "gasto": 4133,
-   "leads": 857,
+   "freq": 1.93,
+   "gasto": 4191,
+   "leads": 871,
    "cpl": 5
   },
   {
@@ -231,26 +243,17 @@ window.FATIGA_DATA = {
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA",
    "freq": 1.64,
-   "gasto": 2700,
-   "leads": 243,
+   "gasto": 2719,
+   "leads": 245,
    "cpl": 11
-  },
-  {
-   "cuenta": "Gerontologia",
-   "ad": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
-   "adset": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
-   "freq": 2.0,
-   "gasto": 7073,
-   "leads": 511,
-   "cpl": 14
   },
   {
    "cuenta": "Queretaro",
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.56,
-   "gasto": 6012,
-   "leads": 420,
+   "gasto": 6056,
+   "leads": 422,
    "cpl": 14
   },
   {
@@ -258,7 +261,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBRO PAUTA ENERO",
    "adset": "HOMBRO",
    "freq": 1.96,
-   "gasto": 2031,
+   "gasto": 2043,
    "leads": 137,
    "cpl": 15
   },
@@ -266,8 +269,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID-RODILLA2 6-MAY",
    "adset": "RODILLA CHECK",
-   "freq": 1.22,
-   "gasto": 785,
+   "freq": 1.23,
+   "gasto": 791,
    "leads": 48,
    "cpl": 16
   },
@@ -276,17 +279,17 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de la zona Cuautitlán Izcalli, 📍\"",
    "adset": "Publicación: \"Si eres de la zona Cuautitlán Izcalli, 📍\"",
    "freq": 1.83,
-   "gasto": 10016,
-   "leads": 614,
+   "gasto": 10115,
+   "leads": 619,
    "cpl": 16
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
    "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-   "freq": 1.99,
-   "gasto": 4953,
-   "leads": 296,
+   "freq": 2.0,
+   "gasto": 5051,
+   "leads": 299,
    "cpl": 17
   },
   {
@@ -294,8 +297,8 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO CHECK",
    "freq": 1.64,
-   "gasto": 4002,
-   "leads": 213,
+   "gasto": 4037,
+   "leads": 216,
    "cpl": 19
   },
   {
@@ -303,8 +306,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"📍 ¡Atención Tepeyac y alrededores! ¿El dolor te...\"",
    "adset": "Publicación: \"📍 ¡Atención Tepeyac y alrededores! ¿El dolor te...\"",
    "freq": 1.72,
-   "gasto": 4508,
-   "leads": 240,
+   "gasto": 4551,
+   "leads": 243,
    "cpl": 19
   },
   {
@@ -312,7 +315,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ RODILLA _ MIXQUI _ 10 ABRIL",
    "adset": "Rodilla",
    "freq": 1.93,
-   "gasto": 841,
+   "gasto": 842,
    "leads": 42,
    "cpl": 20
   },
@@ -320,9 +323,9 @@ window.FATIGA_DATA = {
    "cuenta": "Valle Dorado",
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "freq": 1.58,
-   "gasto": 4937,
-   "leads": 250,
+   "freq": 1.57,
+   "gasto": 5018,
+   "leads": 257,
    "cpl": 20
   },
   {
@@ -330,7 +333,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEUROPATIA DIABETICA V2 JUN",
    "adset": "Neuropatia",
    "freq": 1.6,
-   "gasto": 650,
+   "gasto": 655,
    "leads": 33,
    "cpl": 20
   },
@@ -338,9 +341,9 @@ window.FATIGA_DATA = {
    "cuenta": "La Moderna",
    "ad": "VID_NEU_JUL",
    "adset": "Neuropatia",
-   "freq": 1.81,
-   "gasto": 2080,
-   "leads": 99,
+   "freq": 1.8,
+   "gasto": 2086,
+   "leads": 100,
    "cpl": 21
   },
   {
@@ -353,20 +356,11 @@ window.FATIGA_DATA = {
    "cpl": 21
   },
   {
-   "cuenta": "Cuautla",
-   "ad": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
-   "adset": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
-   "freq": 1.66,
-   "gasto": 2200,
-   "leads": 98,
-   "cpl": 22
-  },
-  {
    "cuenta": "Tepeyac",
    "ad": "VID - NEUROPATIA JUN",
    "adset": "Neuropatia",
-   "freq": 1.78,
-   "gasto": 522,
+   "freq": 1.79,
+   "gasto": 528,
    "leads": 23,
    "cpl": 23
   },
@@ -375,8 +369,17 @@ window.FATIGA_DATA = {
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
    "freq": 1.78,
-   "gasto": 2083,
+   "gasto": 2089,
    "leads": 92,
+   "cpl": 23
+  },
+  {
+   "cuenta": "Cuautla",
+   "ad": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
+   "adset": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
+   "freq": 1.66,
+   "gasto": 2325,
+   "leads": 102,
    "cpl": 23
   },
   {
@@ -384,7 +387,7 @@ window.FATIGA_DATA = {
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA",
    "freq": 1.66,
-   "gasto": 1999,
+   "gasto": 2008,
    "leads": 82,
    "cpl": 24
   },
@@ -393,7 +396,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEUROPATIA DIABETICA 3 JUN",
    "adset": "NEUROPATIA",
    "freq": 1.54,
-   "gasto": 1610,
+   "gasto": 1612,
    "leads": 66,
    "cpl": 24
   },
@@ -402,7 +405,7 @@ window.FATIGA_DATA = {
    "ad": "VID-HOMBRO",
    "adset": "HOMBRO",
    "freq": 1.33,
-   "gasto": 1006,
+   "gasto": 1007,
    "leads": 41,
    "cpl": 25
   },
@@ -411,7 +414,7 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO",
    "freq": 1.41,
-   "gasto": 2439,
+   "gasto": 2443,
    "leads": 99,
    "cpl": 25
   },
@@ -420,8 +423,8 @@ window.FATIGA_DATA = {
    "ad": "TLAHUAC 1",
    "adset": "PROMOCIONES CDMX",
    "freq": 1.43,
-   "gasto": 3919,
-   "leads": 158,
+   "gasto": 3956,
+   "leads": 159,
    "cpl": 25
   },
   {
@@ -429,8 +432,17 @@ window.FATIGA_DATA = {
    "ad": "VID - RODILLA",
    "adset": "RODILLA - CHECK",
    "freq": 1.49,
-   "gasto": 1874,
+   "gasto": 1877,
    "leads": 75,
+   "cpl": 25
+  },
+  {
+   "cuenta": "Claveria",
+   "ad": "EST - NEUROPATIA MANO",
+   "adset": "NEUROPATIA - CHECK",
+   "freq": 1.65,
+   "gasto": 2465,
+   "leads": 99,
    "cpl": 25
   }
  ],
