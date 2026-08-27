@@ -596,7 +596,7 @@ body:not(.unlocked) #login{display:flex}
       <div class="sec-title" style="margin-bottom:0" id="hoyTitulo">🔴 Ritmo de Hoy</div>
       <span id="hoySub" style="font-size:11px;color:var(--text3)"></span>
     </div>
-    <div class="kpi-row" id="hoyKpis" style="margin-bottom:14px"></div>
+    <div id="hoyKpis" style="margin-bottom:14px"></div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
       <div class="chart-card" style="padding:16px">
         <div style="font-size:12px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px">🏥 Sedes</div>
@@ -1889,6 +1889,7 @@ function renderHoy() {
 
   var diaSedes = (DATA.diario_por_clinica || {})[hoyISO] || {};
   var diaFranq = (DATA.diario_franquicias || {})[hoyISO] || {};
+  var diaOrganico = (DATA.diario_complementos || {})[hoyISO] || {};
   var sedes = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta'];
   var franqs = Object.keys(DATA.franquicias).sort();
 
@@ -1908,6 +1909,10 @@ function renderHoy() {
     totalLeadsS += d.leads||0; totalGastoS += g;
     return filaHoy(c, d.leads||0, g);
   }).join('');
+  // Pauta Orgánica ("Promociones") va DENTRO de Sedes, no aparte — mismo
+  // criterio que el resto del dashboard (pedido de Irving 2026-08-27).
+  totalLeadsS += diaOrganico.leads||0; totalGastoS += diaOrganico.gasto||0;
+  htmlS += filaHoy('Promociones (Orgánico)', diaOrganico.leads||0, diaOrganico.gasto||0);
   htmlS += '<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:12px;font-weight:700;color:var(--cyan)">'
     + '<span>TOTAL SEDES</span><span>' + totalLeadsS + ' leads</span></div>';
 
@@ -1925,33 +1930,38 @@ function renderHoy() {
   var MESES = ['','enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
   document.getElementById('hoyTitulo').textContent = '🔴 Ritmo de Hoy — ' + hoyISO.slice(8) + ' de ' + (MESES[parseInt(hoyISO.slice(5,7))]||'');
 
-  var gastoHoy = totalGastoS + totalGastoF, leadsHoy = totalLeadsS + totalLeadsF;
   var hh = horaStr ? parseInt(horaStr.split(':')[0]) : null;
   var mm = horaStr ? parseInt(horaStr.split(':')[1]) : null;
   var horasTranscurridas = (hh != null && !isNaN(hh)) ? (hh + (mm||0)/60) : null;
-  var proyGasto = null, proyLeads = null;
-  if (horasTranscurridas && horasTranscurridas > 0.3) {
-    proyGasto = gastoHoy / horasTranscurridas * 24;
-    proyLeads = leadsHoy / horasTranscurridas * 24;
-  }
+  function proyecta(v) { return (horasTranscurridas && horasTranscurridas > 0.3) ? v / horasTranscurridas * 24 : null; }
 
   document.getElementById('hoySub').textContent = horaStr
     ? 'último corte: ' + horaStr + (horasTranscurridas ? ' · ' + horasTranscurridas.toFixed(1) + 'h del día' : '') + ' — no es en vivo, se refresca cada 4h'
     : '';
 
-  var kpis = [
-    {icon:'📊', val: fmtN(leadsHoy), label:'Leads hoy (parcial)', sub:'sedes + franquicias', cls:'c1'},
-    {icon:'💰', val: fmt(gastoHoy), label:'Gasto hoy (parcial)', sub:'sedes + franquicias', cls:'c2'},
-  ];
-  if (proyGasto != null) {
-    kpis.push({icon:'📈', val: fmt(proyGasto), label:'Ritmo proyectado — gasto', sub:'si el resto del día sigue igual', cls:'c3'});
-    kpis.push({icon:'🎯', val: fmtN(Math.round(proyLeads)), label:'Ritmo proyectado — leads', sub:'si el resto del día sigue igual', cls:'c4'});
+  // Sedes y Franquicias SIEMPRE separadas, nunca en una sola cifra combinada
+  // (pedido explícito de Irving 2026-07-11) — mismo patrón visual que usa el
+  // bloque de Proyección Cierre justo arriba.
+  function celdaHoy(tit, val, esDinero) {
+    return '<div style="flex:1 1 105px;min-width:105px;text-align:center;padding:8px 6px;white-space:nowrap">'
+      + '<div style="font-size:10.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px">' + tit + '</div>'
+      + '<div style="font-size:16px;font-weight:800">' + (esDinero ? fmt(val) : fmtN(val)) + '</div></div>';
   }
-  document.getElementById('hoyKpis').innerHTML = kpis.map(function(k){
-    return '<div class="kpi-card ' + k.cls + '"><span class="kpi-icon">' + k.icon + '</span>'
-      + '<div class="kpi-val">' + k.val + '</div><div class="kpi-label">' + k.label + '</div>'
-      + '<div class="kpi-sub">' + k.sub + '</div></div>';
-  }).join('');
+  function grupoHoy(nombre, color, leads, gasto, proyGasto, proyLeads) {
+    return '<div style="flex:1 1 300px;display:flex;align-items:center;flex-wrap:wrap;'
+      + 'border:1px solid ' + color + '40;border-left:4px solid ' + color + ';border-radius:12px;padding:4px 8px">'
+      + '<div style="min-width:90px;padding:4px 6px;font-size:11.5px;font-weight:800;color:' + color + '">' + nombre + '</div>'
+      + celdaHoy('Leads hoy', leads, false)
+      + celdaHoy('Gasto hoy', gasto, true)
+      + (proyGasto != null ? celdaHoy('Ritmo gasto', proyGasto, true) : '')
+      + (proyLeads != null ? celdaHoy('Ritmo leads', proyLeads, false) : '')
+      + '</div>';
+  }
+  document.getElementById('hoyKpis').innerHTML =
+    '<div style="display:flex;flex-wrap:wrap;gap:10px">'
+    + grupoHoy('SEDES', '#428CD7', totalLeadsS, totalGastoS, proyecta(totalGastoS), Math.round(proyecta(totalLeadsS)||0))
+    + grupoHoy('FRANQUICIAS', '#31606D', totalLeadsF, totalGastoF, proyecta(totalGastoF), Math.round(proyecta(totalLeadsF)||0))
+    + '</div>';
   } catch(e) {
     var el = document.getElementById('hoySedes');
     if (el) el.innerHTML = '<span style="color:red;font-size:11px">Error: '+e.message+'</span>';
@@ -1976,6 +1986,7 @@ function renderAyer() {
 
   var diaSedes = (DATA.diario_por_clinica || {})[ayer] || {};
   var diaFranq = (DATA.diario_franquicias || {})[ayer] || {};
+  var diaOrganico = (DATA.diario_complementos || {})[ayer] || {};
   var sedes = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta'];
   var piloto = ['Chalco / Milpa Alta / Tlahuac'];
   var franqs = Object.keys(DATA.franquicias).sort();
@@ -2006,6 +2017,10 @@ function renderAyer() {
     var d = diaSedes[c] || {}; totalS += d.leads||0;
     return filaAyer(c, d.leads||0, gastoTotalDia(d));
   }).join('');
+  // Pauta Orgánica ("Promociones") va DENTRO de Sedes, no aparte — mismo
+  // criterio que el resto del dashboard (pedido de Irving 2026-08-27).
+  totalS += diaOrganico.leads||0;
+  htmlS += filaAyer('Promociones (Orgánico)', diaOrganico.leads||0, diaOrganico.gasto||0);
   htmlS += '<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:12px;font-weight:700;color:var(--cyan)">'
     + '<span>TOTAL SEDES</span><span>' + totalS + ' leads</span></div>';
   // Piloto multi-sede: solo mostrarlo si ese día tuvo algo — en 0 solo ensucia
