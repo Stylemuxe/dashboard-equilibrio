@@ -1234,6 +1234,13 @@ function renderKPIs() {
   let leadsS=0, gastoS=0, asistS=0;
   let leadsF=0, gastoF=0, asistF=0;
   SEDES_KPI.forEach(k => { const v = s[k]||{}; leadsS+=v.leads_mes||0; gastoS+=v.gasto_mes||0; asistS+=v.asistidas||0; });
+  // Pauta Orgánico ("Promociones") cuenta como gasto de Sedes, no aparte —
+  // pedido explícito de Irving 2026-08-27 ("esa campaña es gasto de nosotros").
+  // No tiene CC/asistidas propias (contenido de marca, sin clínica), por eso
+  // solo suma a leads/gasto y nunca a asistS ni a la tabla de avance CC.
+  const organico = Object.values(DATA.promociones_organico || {})
+    .reduce((a,v) => ({ leads: a.leads + (v.leads||0), gasto: a.gasto + (v.gasto||0) }), { leads: 0, gasto: 0 });
+  leadsS += organico.leads; gastoS += organico.gasto;
   Object.values(f).forEach(v => { leadsF+=v.leads_mes; gastoF+=v.gasto_mes; asistF+=v.asistidas||0; });
   // Expuesto para renderPresupuestoPace() (mismo tab, se llama justo después) —
   // no duplica el cálculo, solo comparte el resultado ya obtenido arriba.
@@ -1258,9 +1265,9 @@ function renderKPIs() {
   const cpaG = asistG > 0 ? gastoG/asistG : 0;
 
   const kpis = [
-    {icon:'🏥', val: fmtN(leadsS),  label:'Leads Sedes',        sub:'9 sedes — Laura',                 cls:'c1'},
+    {icon:'🏥', val: fmtN(leadsS),  label:'Leads Sedes',        sub:'9 sedes + Orgánico — Laura',       cls:'c1'},
     {icon:'🏢', val: fmtN(leadsF),  label:'Leads Franquicias',  sub:'13 franquicias al '+dia,           cls:'c5'},
-    {icon:'💰', val: fmt(gastoS),   label:'Gasto Sedes',        sub:'Laura + Promo (pauta de sede) · 9 sedes al '+dia, cls:'c2'},
+    {icon:'💰', val: fmt(gastoS),   label:'Gasto Sedes',        sub:'Laura + Promo (pauta de sede + orgánico) · 9 sedes al '+dia, cls:'c2'},
     {icon:'💳', val: fmt(gastoF),   label:'Gasto Franquicias',  sub:'13 cuentas al '+dia,               cls:'c3'},
     {icon:'📋', val: convCC,        label:'Conv. Agend→Asist',  sub:fmtN(tAgendSedes)+' agend → '+fmtN(tAsistSedes)+' asist (sedes)', cls:'c5'},
   ];
@@ -1376,12 +1383,15 @@ function renderKPIs() {
       + '</div></div>';
   })();
 
-  // Desglose gasto por sede y por franquicia
-  renderGastoDesglose('gastoSedesDetalle', s, 'cyan');
+  // Desglose gasto por sede y por franquicia (incluye Orgánico como fila más de Sedes)
+  const sConOrganico = Object.assign({}, s, organico.gasto > 0
+    ? { 'Promociones (Orgánico)': { gasto_mes: organico.gasto, leads_mes: organico.leads } }
+    : {});
+  renderGastoDesglose('gastoSedesDetalle', sConOrganico, 'cyan');
   renderGastoDesglose('gastoFranqDetalle', f, 'purple');
 }
 
-// ── Ritmo de presupuesto — tope mensual (Laura+Promo+Gerontología) ──
+// ── Ritmo de presupuesto — tope mensual (Laura+Promo, NO incluye Gerontología) ──
 // Lee AUDITORIA_DATA.presupuesto (calculado en generar_auditoria.py, ya
 // corre cada 4h) — NO recalcula nada aquí, solo visualiza.
 function renderPresupuestoPace() {
@@ -1411,14 +1421,18 @@ function renderPresupuestoPace() {
 
   // ── Desglose de a qué corresponde el "gasto acumulado" (para que nunca se
   // vea como una cifra suelta que no cuadra con Gasto Sedes / Franquicias) ──
+  // Gerontología NO entra aquí — tiene cuenta y presupuesto propios, fuera del
+  // tope de $730k de Laura+Promo (bug corregido 2026-08-27, ver generar_auditoria.py).
+  // "Promociones" (Pauta Orgánico) ya se sumó dentro de gastoSedes (ver
+  // renderResumen) — se excluye aquí para no contarlo dos veces.
   var gastoSedes = (window.__resumenTotales && window.__resumenTotales.gastoS) || 0;
-  var gastoGero = Object.values(DATA.gerontologia || {}).reduce((a, v) => a + (v.gasto_mes || 0), 0);
-  var gastoSinAsignar = Object.values(DATA.complementos || {}).reduce((a, v) => a + (v.gasto_mes || 0), 0);
-  var gastoFranqEnLauraPromo = Math.max(0, P.gasto_mtd - gastoSedes - gastoGero - gastoSinAsignar);
+  var gastoSinAsignar = Object.entries(DATA.complementos || {})
+    .filter(function(e){ return e[0] !== 'Promociones'; })
+    .reduce((a, e) => a + (e[1].gasto_mes || 0), 0);
+  var gastoFranqEnLauraPromo = Math.max(0, P.gasto_mtd - gastoSedes - gastoSinAsignar);
   var desgloseItems = [
     { lbl: 'Sedes', val: gastoSedes, color: 'var(--teal)' },
     { lbl: 'Franquicias (pauta en Laura/Promo)', val: gastoFranqEnLauraPromo, color: 'var(--gold)' },
-    { lbl: 'Gerontología', val: gastoGero, color: 'var(--violet)' },
     { lbl: 'Sin asignar a clínica', val: gastoSinAsignar, color: 'var(--text3)' },
   ].filter(it => it.val > 0.5);
   var desgloseHtml = '<div class="pace-breakdown">' +
@@ -2108,7 +2122,7 @@ function renderAuditoria() {
     '<div class="kpi-card c3"><span class="kpi-icon">🧮</span><div class="kpi-val">' + fmt(P.margen_diario_disponible) + '</div>' +
       '<div class="kpi-label">Margen diario disponible</div><div class="kpi-sub">para ' + P.dias_restantes + ' días restantes</div></div>' +
     '<div class="kpi-card c4"><span class="kpi-icon">⚡</span><div class="kpi-val">' + fmt(P.ritmo_diario_actual) + '</div>' +
-      '<div class="kpi-label">Ritmo diario actual</div><div class="kpi-sub">Laura+Promo+Gerontología</div></div>';
+      '<div class="kpi-label">Ritmo diario actual</div><div class="kpi-sub">Laura+Promo</div></div>';
 
   var PRIO_ORDEN = {ALTA: 0, MEDIA: 1, BAJA: 2};
   var clinicas = (A.clinicas || []).slice().sort(function(a, b) {
