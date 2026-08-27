@@ -516,6 +516,7 @@ body:not(.unlocked) #login{display:flex}
     <button class="nav-item" data-title="Top Anuncios" onclick="switchTab('anuncios',this)"><span class="nav-ico">📢</span><span>Top Anuncios</span></button>
     <button class="nav-item" data-title="Fatiga de Anuncios y Públicos" onclick="switchTab('fatiga',this)"><span class="nav-ico">🚦</span><span>Fatiga</span></button>
     <button class="nav-item" data-title="Auditoría de Campañas" onclick="switchTab('auditoria',this)"><span class="nav-ico">🔍</span><span>Auditoría</span></button>
+    <button class="nav-item" data-title="Plan de Acción" onclick="switchTab('plan',this)"><span class="nav-ico">📋</span><span>Plan de Acción</span></button>
     <button class="nav-item" data-title="Tendencias" onclick="switchTab('tendencias',this)"><span class="nav-ico">🧭</span><span>Tendencias</span></button>
     <button class="nav-item" data-title="Leads &amp; Gasto Diario" onclick="switchTab('diario',this)"><span class="nav-ico">📅</span><span>Leads &amp; Gasto</span></button>
     <button class="nav-item" data-title="Optimizar" onclick="switchTab('optimizar',this)"><span class="nav-ico">📈</span><span>Optimizar</span></button>
@@ -975,6 +976,20 @@ body:not(.unlocked) #login{display:flex}
   <div class="alert-feed" id="recoFeed"></div>
 </div>
 
+<!-- PLAN DE ACCIÓN -->
+<div id="tab-plan" class="tab-panel">
+  <div class="sec-title" style="margin-bottom:4px">📋 Plan de Acción — qué hacer con cada ad set fatigado</div>
+  <div style="font-size:11.5px;color:var(--text3);margin-bottom:16px">
+    Generado por la regla de fatiga (frecuencia + % de gente nueva). 🎥 = grabar contenido nuevo y mandarlo a pauta desde el feed (Promocionar/Reel) · 🔁 = ya hay otro creativo sano de la misma clínica, solo pausar y redistribuir presupuesto · 👥 = el problema es el público, no el creativo · 🟡 = vigilar, aún no urgente.
+  </div>
+  <div class="kpi-row" id="kpiPlan" style="margin-bottom:20px"></div>
+  <div class="alert-feed" id="planFeed"></div>
+
+  <div class="sec-title" style="margin:28px 0 4px">📜 Registro de Cambios</div>
+  <div style="font-size:11.5px;color:var(--text3);margin-bottom:14px">Bitácora de lo que ya se aplicó — para responder "qué has hecho" en junta sin tener que recordarlo de memoria.</div>
+  <div id="registroCambiosList"></div>
+</div>
+
 <!-- GERONTOLOGÍA -->
 <div id="tab-gero" class="tab-panel">
   <div class="kpi-row" id="kpiGero"></div>
@@ -1165,6 +1180,7 @@ function switchTab(id, btn) {
     if (id === 'anuncios')     renderTopAds();
     if (id === 'fatiga')       renderFatiga();
     if (id === 'auditoria')    renderAuditoria();
+    if (id === 'plan')         renderPlanAccion();
     if (id === 'tendencias')   renderTendencias();
     if (id === 'optimizar')    renderOptimizar();
     if (id === 'gero')         { renderGero(); renderGeroDiario(); }
@@ -2901,6 +2917,83 @@ function renderRecomendaciones() {
       <div><div class="alert-title">${a.titulo}</div><div class="alert-desc">${a.desc}</div></div>
     </div>`
   ).join('');
+}
+
+// ── Plan de Acción (AUDITORIA_DATA.plan_accion) + Registro de Cambios ──
+// Ambos ya vienen calculados/guardados por generar_auditoria.py — aquí solo
+// se pintan. plan_accion se recalcula cada corrida (es "estado actual");
+// registro_cambios vive en su propio archivo y solo crece (es la bitácora).
+function renderPlanAccion() {
+  var A = window.AUDITORIA_DATA;
+  var feedEl = document.getElementById('planFeed');
+  var kpiEl = document.getElementById('kpiPlan');
+  if (!A || !feedEl) return;
+  var plan = A.plan_accion || [];
+
+  var CLASE = {GRABAR_NUEVO:'crit', USAR_CREATIVO_EXISTENTE:'warn', RENOVAR_PUBLICO:'info', VIGILAR:'ok'};
+  var TITULO = {GRABAR_NUEVO:'Grabar contenido nuevo', USAR_CREATIVO_EXISTENTE:'Usar creativo que ya existe',
+                RENOVAR_PUBLICO:'Renovar público', VIGILAR:'Vigilar'};
+
+  var conteo = {GRABAR_NUEVO:0, USAR_CREATIVO_EXISTENTE:0, RENOVAR_PUBLICO:0, VIGILAR:0};
+  plan.forEach(function(p){ conteo[p.tipo] = (conteo[p.tipo]||0) + 1; });
+  kpiEl.innerHTML = [
+    {icon:'🎥', val: conteo.GRABAR_NUEVO, label:'Grabar nuevo', sub:'sin creativo sano disponible', cls:'c3'},
+    {icon:'🔁', val: conteo.USAR_CREATIVO_EXISTENTE, label:'Usar creativo existente', sub:'solo pausar y redistribuir', cls:'c2'},
+    {icon:'👥', val: conteo.RENOVAR_PUBLICO, label:'Renovar público', sub:'ampliar radio / lookalike', cls:'c5'},
+    {icon:'🟡', val: conteo.VIGILAR, label:'Vigilar', sub:'aún no urgente', cls:'c1'},
+  ].map(function(k){
+    return '<div class="kpi-card ' + k.cls + '"><span class="kpi-icon">' + k.icon + '</span>' +
+      '<div class="kpi-val">' + k.val + '</div><div class="kpi-label">' + k.label + '</div>' +
+      '<div class="kpi-sub">' + k.sub + '</div></div>';
+  }).join('');
+
+  if (!plan.length) {
+    feedEl.innerHTML = '<div class="alert-item alert-ok"><span class="alert-icon">✅</span>' +
+      '<div><div class="alert-title">Nada pendiente</div><div class="alert-desc">Ningún ad set activo pide cambio de público o creativo ahora mismo.</div></div></div>';
+    return;
+  }
+
+  feedEl.innerHTML = plan.map(function(p) {
+    var nombreAdset = p.adset.indexOf('"') >= 0 ? p.adset : ('"' + p.adset + '"');
+    var meta = [
+      p.clinica,
+      'ad set ' + nombreAdset,
+      p.frecuencia != null ? 'freq ' + p.frecuencia : null,
+      p.cpl != null ? 'CPL ' + fmt(p.cpl) : null,
+      p.gasto != null ? 'gasto ' + fmt(p.gasto) : null,
+    ].filter(Boolean).join(' · ');
+    return '<div class="alert-item alert-' + CLASE[p.tipo] + '">' +
+      '<span class="alert-icon">' + p.icono + '</span>' +
+      '<div><div class="alert-title">' + TITULO[p.tipo] + ' — ' + p.clinica + '</div>' +
+      '<div class="alert-desc" style="margin-bottom:4px;font-weight:600">' + meta + '</div>' +
+      '<div class="alert-desc">' + p.texto + '</div></div></div>';
+  }).join('');
+
+  var registro = A.registro_cambios || [];
+  var regEl = document.getElementById('registroCambiosList');
+  if (regEl) {
+    if (!registro.length) {
+      regEl.innerHTML = '<div style="font-size:12px;color:var(--text3)">Todavía no hay cambios registrados.</div>';
+    } else {
+      var porFecha = {};
+      registro.slice().reverse().forEach(function(r){ (porFecha[r.fecha] = porFecha[r.fecha] || []).push(r); });
+      regEl.innerHTML = Object.keys(porFecha).sort().reverse().map(function(fecha) {
+        var items = porFecha[fecha].map(function(r) {
+          return '<div style="padding:10px 0;border-bottom:1px solid var(--border)">' +
+            '<div style="font-size:12.5px;font-weight:700;color:var(--text)">' + (r.accion||'') + '</div>' +
+            '<div style="font-size:11px;color:var(--text3);margin:2px 0 4px">' + (r.area||'') + '</div>' +
+            '<div style="font-size:12px;color:var(--text2);line-height:1.5">' + (r.detalle||'') + '</div>' +
+            (r.antes || r.despues
+              ? '<div style="font-size:11.5px;margin-top:5px"><span style="color:var(--pink)">Antes: ' + (r.antes||'—') +
+                '</span> &nbsp;→&nbsp; <span style="color:var(--green)">Después: ' + (r.despues||'—') + '</span></div>'
+              : '') +
+          '</div>';
+        }).join('');
+        return '<div style="margin-bottom:18px"><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--text3);margin-bottom:4px">' +
+          fecha + '</div>' + items + '</div>';
+      }).join('');
+    }
+  }
 }
 
 // ── Optimizar — Análisis por Padecimiento ──
