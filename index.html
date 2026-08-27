@@ -289,6 +289,8 @@ tr.row-detail td{background:var(--card2);color:var(--text2);font-size:11.5px;whi
 .aud-motivos li{margin-bottom:2px}
 .aud-check{font-size:10px;color:var(--text3);border-top:1px solid var(--border);padding-top:6px;margin-top:6px}
 .aud-check.mismatch{color:var(--coral);font-weight:700}
+.aud-irving{font-size:10px;color:var(--text3);border-top:1px dashed var(--border);padding-top:6px;margin-top:6px}
+.aud-irving b{color:var(--text2)}
 .aud-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;align-items:center}
 .aud-filters select,.aud-filters input[type=text]{background:var(--card);border:1px solid var(--border);
   border-radius:8px;padding:6px 10px;font-size:12px;color:var(--text);font-family:inherit}
@@ -2132,6 +2134,23 @@ var PRIO_BADGE = {ALTA: 'badge-red', MEDIA: 'badge-yellow', BAJA: 'badge-green'}
 var AUD_FREQ_BADGE = {rojo: 'badge-red', amarillo: 'badge-yellow', verde: 'badge-green', sin_dato: 'badge-blue'};
 var _audFiltersWired = false;
 
+// Cross-check contra el Centro de Mando Comercial de Irving (dashboard
+// público de CC, jalado aparte con jalar_cc_irving.py) — no es la fuente
+// principal, es un chequeo de que la atribución automática no se desvíe.
+function irvingCcHtml(cc) {
+  if (!cc) return '';
+  var partes = [];
+  if (cc.facebook) {
+    partes.push('Facebook: ' + fmtN(cc.facebook.leads) + ' leads · ' + fmt(cc.facebook.gastado) +
+      ' · <b>' + fmtN(cc.facebook.asistidos) + ' asistidos</b>');
+  }
+  var otros = cc.otros_canales_asistidos || {};
+  var otrosTxt = Object.keys(otros).map(function(k){ return k.charAt(0)+k.slice(1).toLowerCase()+': '+fmtN(otros[k]); }).join(' · ');
+  if (otrosTxt) partes.push(otrosTxt);
+  if (!partes.length) return '';
+  return '<div class="aud-irving">🔎 CC Irving (corte ' + cc.fecha_max_registro_cc + ', cross-check no oficial): ' + partes.join(' &nbsp;|&nbsp; ') + '</div>';
+}
+
 function renderAuditoria() {
   var A = window.AUDITORIA_DATA;
   var meta = document.getElementById('audMeta');
@@ -2191,7 +2210,9 @@ function renderAuditoria() {
       '<div class="aud-check' + (checklistMatch ? '' : ' mismatch') + '">' +
         (checklistMatch ? 'Coincide con prioridad ' + c.prioridad_checklist_actual + ' del checklist de grabación.'
           : 'Checklist de grabación la tiene en <b>' + c.prioridad_checklist_actual + '</b> — hoy sugiere <b>' + c.prioridad + '</b>.') +
-      '</div></div>';
+      '</div>' +
+      irvingCcHtml(c.irving_cc) +
+      '</div>';
   }).join('');
 
   if (!_audFiltersWired) {
