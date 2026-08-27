@@ -1424,7 +1424,10 @@ function renderPresupuestoPace() {
   // Gerontología NO entra aquí — tiene cuenta y presupuesto propios, fuera del
   // tope de $730k de Laura+Promo (bug corregido 2026-08-27, ver generar_auditoria.py).
   // "Promociones" (Pauta Orgánico) ya se sumó dentro de gastoSedes (ver
-  // renderResumen) — se excluye aquí para no contarlo dos veces.
+  // renderResumen) — se excluye aquí para no contarlo dos veces. Reclutamiento
+  // ya se excluyó de P.gasto_mtd en generar_auditoria.py (no cuenta para el
+  // tope) pero antes se colaba sin etiqueta en este residual de "Franquicias";
+  // ahora no aparece en absoluto (no está en P.gasto_mtd ni en la resta).
   var gastoSedes = (window.__resumenTotales && window.__resumenTotales.gastoS) || 0;
   var gastoSinAsignar = Object.entries(DATA.complementos || {})
     .filter(function(e){ return e[0] !== 'Promociones'; })
@@ -1435,6 +1438,7 @@ function renderPresupuestoPace() {
     { lbl: 'Franquicias (pauta en Laura/Promo)', val: gastoFranqEnLauraPromo, color: 'var(--gold)' },
     { lbl: 'Sin asignar a clínica', val: gastoSinAsignar, color: 'var(--text3)' },
   ].filter(it => it.val > 0.5);
+  var gastoReclu = P.gasto_reclutamiento || 0;
   var desgloseHtml = '<div class="pace-breakdown">' +
     '<div class="pace-breakdown-title">¿De qué se compone el gasto acumulado?</div>' +
     '<div class="pace-breakdown-bar">' + desgloseItems.map(it =>
@@ -1443,6 +1447,9 @@ function renderPresupuestoPace() {
     '<div class="pace-breakdown-legend">' + desgloseItems.map(it =>
       '<span><span class="pace-legend-dot" style="background:' + it.color + '"></span>' + it.lbl + ' — <b>' + fmt(it.val) + '</b></span>'
     ).join('') + '</div>' +
+    (gastoReclu > 0.5
+      ? '<div style="margin-top:8px;font-size:10.5px;color:var(--text3)">↳ Aparte, no cuenta para este tope: <b>Reclutamiento</b> (gasto de personal, cuenta Promociones) — ' + fmt(gastoReclu) + '</div>'
+      : '') +
   '</div>';
 
   el.innerHTML =
