@@ -590,6 +590,25 @@ body:not(.unlocked) #login{display:flex}
     </div>
   </div>
 
+  <!-- Ritmo de HOY (parcial, en vivo hasta la última corrida) -->
+  <div id="hoySec" style="margin-bottom:24px;display:none">
+    <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:12px">
+      <div class="sec-title" style="margin-bottom:0" id="hoyTitulo">🔴 Ritmo de Hoy</div>
+      <span id="hoySub" style="font-size:11px;color:var(--text3)"></span>
+    </div>
+    <div class="kpi-row" id="hoyKpis" style="margin-bottom:14px"></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="chart-card" style="padding:16px">
+        <div style="font-size:12px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px">🏥 Sedes</div>
+        <div id="hoySedes"></div>
+      </div>
+      <div class="chart-card" style="padding:16px">
+        <div style="font-size:12px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px">🏢 Franquicias</div>
+        <div id="hoyFranq"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Leads de ayer -->
   <div style="margin-bottom:24px">
     <div class="sec-title" style="margin-bottom:12px" id="ayerTitulo">⚡ Leads de Ayer</div>
@@ -1114,6 +1133,7 @@ function init() {
   renderCcStaleBanner();
   renderKPIs();
   renderPresupuestoPace();
+  renderHoy();
   renderAyer();
   renderGastoCuentas();
   renderChartLeads();
@@ -1842,6 +1862,100 @@ function generarAlertas() {
     alertas.push({tipo:'ok',icon:'⭐',titulo:'Ecatepec — Mayor volumen de leads en Sedes',desc:`${fmtN(e.leads_mes)} leads con CPL de ${fmt(e.cpl)}. Mayor volumen del mes.`});
   }
   return alertas.slice(0,8);
+}
+
+// ── Ritmo de Hoy (parcial) ──
+// Contraparte de renderAyer(): esa función EXCLUYE hoy a propósito (día
+// incompleto). Esta SÍ lo muestra, con la proyección de cierre calculada
+// a partir de la hora de la última corrida — no es en vivo-en-vivo (el
+// pipeline solo corre cada 4h), es "tan fresco como la última corrida".
+function renderHoy() {
+  try {
+  var sec = document.getElementById('hoySec');
+  var fSet = {};
+  Object.keys(DATA.diario_sedes || {}).forEach(function(f){ fSet[f] = 1; });
+  Object.keys(DATA.diario_franquicias || {}).forEach(function(f){ fSet[f] = 1; });
+  var fechas = Object.keys(fSet).sort();
+  var hoyISO = '';
+  var horaStr = '';
+  if (DATA.actualizado) {
+    var partes = DATA.actualizado.split(' ');
+    var p = partes[0].split('/');
+    if (p.length === 3) hoyISO = p[2] + '-' + p[1] + '-' + p[0];
+    horaStr = partes[1] || '';
+  }
+  if (!hoyISO || fechas.indexOf(hoyISO) === -1) { if (sec) sec.style.display = 'none'; return; }
+  if (sec) sec.style.display = '';
+
+  var diaSedes = (DATA.diario_por_clinica || {})[hoyISO] || {};
+  var diaFranq = (DATA.diario_franquicias || {})[hoyISO] || {};
+  var sedes = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta'];
+  var franqs = Object.keys(DATA.franquicias).sort();
+
+  function gastoTotalDia(d) { return (d.gasto||0) + (d.gasto_compl||0); }
+  function filaHoy(nombre, leads, gasto) {
+    var color = leads >= 60 ? 'var(--green)' : leads >= 30 ? 'var(--yellow)' : leads > 0 ? 'var(--text)' : 'var(--text3)';
+    return '<div style="display:flex;align-items:center;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--border)">'
+      + '<span style="font-size:12px;font-weight:600;min-width:120px">' + nombre + '</span>'
+      + '<span style="font-size:18px;font-weight:800;color:' + color + ';min-width:40px;text-align:right">' + (leads || '0') + '</span>'
+      + '<span style="font-size:11px;color:var(--text3);min-width:70px;text-align:right">' + (gasto > 0 ? fmt(gasto) : '—') + '</span>'
+      + '</div>';
+  }
+
+  var totalLeadsS = 0, totalGastoS = 0, totalLeadsF = 0, totalGastoF = 0;
+  var htmlS = sedes.map(function(c) {
+    var d = diaSedes[c] || {}; var g = gastoTotalDia(d);
+    totalLeadsS += d.leads||0; totalGastoS += g;
+    return filaHoy(c, d.leads||0, g);
+  }).join('');
+  htmlS += '<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:12px;font-weight:700;color:var(--cyan)">'
+    + '<span>TOTAL SEDES</span><span>' + totalLeadsS + ' leads</span></div>';
+
+  var htmlF = franqs.map(function(c) {
+    var d = diaFranq[c] || {}; var g = gastoTotalDia(d);
+    totalLeadsF += d.leads||0; totalGastoF += g;
+    return filaHoy(c, d.leads||0, g);
+  }).join('');
+  htmlF += '<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:12px;font-weight:700;color:var(--purple)">'
+    + '<span>TOTAL FRANQUICIAS</span><span>' + totalLeadsF + ' leads</span></div>';
+
+  document.getElementById('hoySedes').innerHTML = htmlS;
+  document.getElementById('hoyFranq').innerHTML = htmlF;
+
+  var MESES = ['','enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  document.getElementById('hoyTitulo').textContent = '🔴 Ritmo de Hoy — ' + hoyISO.slice(8) + ' de ' + (MESES[parseInt(hoyISO.slice(5,7))]||'');
+
+  var gastoHoy = totalGastoS + totalGastoF, leadsHoy = totalLeadsS + totalLeadsF;
+  var hh = horaStr ? parseInt(horaStr.split(':')[0]) : null;
+  var mm = horaStr ? parseInt(horaStr.split(':')[1]) : null;
+  var horasTranscurridas = (hh != null && !isNaN(hh)) ? (hh + (mm||0)/60) : null;
+  var proyGasto = null, proyLeads = null;
+  if (horasTranscurridas && horasTranscurridas > 0.3) {
+    proyGasto = gastoHoy / horasTranscurridas * 24;
+    proyLeads = leadsHoy / horasTranscurridas * 24;
+  }
+
+  document.getElementById('hoySub').textContent = horaStr
+    ? 'último corte: ' + horaStr + (horasTranscurridas ? ' · ' + horasTranscurridas.toFixed(1) + 'h del día' : '') + ' — no es en vivo, se refresca cada 4h'
+    : '';
+
+  var kpis = [
+    {icon:'📊', val: fmtN(leadsHoy), label:'Leads hoy (parcial)', sub:'sedes + franquicias', cls:'c1'},
+    {icon:'💰', val: fmt(gastoHoy), label:'Gasto hoy (parcial)', sub:'sedes + franquicias', cls:'c2'},
+  ];
+  if (proyGasto != null) {
+    kpis.push({icon:'📈', val: fmt(proyGasto), label:'Ritmo proyectado — gasto', sub:'si el resto del día sigue igual', cls:'c3'});
+    kpis.push({icon:'🎯', val: fmtN(Math.round(proyLeads)), label:'Ritmo proyectado — leads', sub:'si el resto del día sigue igual', cls:'c4'});
+  }
+  document.getElementById('hoyKpis').innerHTML = kpis.map(function(k){
+    return '<div class="kpi-card ' + k.cls + '"><span class="kpi-icon">' + k.icon + '</span>'
+      + '<div class="kpi-val">' + k.val + '</div><div class="kpi-label">' + k.label + '</div>'
+      + '<div class="kpi-sub">' + k.sub + '</div></div>';
+  }).join('');
+  } catch(e) {
+    var el = document.getElementById('hoySedes');
+    if (el) el.innerHTML = '<span style="color:red;font-size:11px">Error: '+e.message+'</span>';
+  }
 }
 
 // ── Leads de Ayer ──
