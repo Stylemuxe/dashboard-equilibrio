@@ -1713,7 +1713,11 @@ function renderGastoDiario() {
   renderGastoDiarioFiltros();
   const diarioS = DATA.diario_sedes        || {};
   const diarioF = DATA.diario_franquicias  || {};
-  const diarioC = DATA.diario_complementos || {};
+  // diario_organico = SOLO Pauta Orgánico (gasto+leads); diario_complementos
+  // es la cuenta Promociones COMPLETA (boosts de franquicia, sedes,
+  // Reclutamiento incluidos) — usarlo aquí inflaba esta línea ~14x
+  // (bug encontrado 2026-08-28).
+  const diarioC = DATA.diario_organico || {};
   const fechas  = [...new Set([...Object.keys(diarioS), ...Object.keys(diarioF), ...Object.keys(diarioC)])].sort();
 
   const gastoS = fechas.map(f => (diarioS[f]||{}).gasto||0);
@@ -1889,7 +1893,7 @@ function renderHoy() {
 
   var diaSedes = (DATA.diario_por_clinica || {})[hoyISO] || {};
   var diaFranq = (DATA.diario_franquicias || {})[hoyISO] || {};
-  var diaOrganico = (DATA.diario_complementos || {})[hoyISO] || {};
+  var diaOrganico = (DATA.diario_organico || {})[hoyISO] || {};
   var sedes = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta'];
   var franqs = Object.keys(DATA.franquicias).sort();
 
@@ -1986,7 +1990,7 @@ function renderAyer() {
 
   var diaSedes = (DATA.diario_por_clinica || {})[ayer] || {};
   var diaFranq = (DATA.diario_franquicias || {})[ayer] || {};
-  var diaOrganico = (DATA.diario_complementos || {})[ayer] || {};
+  var diaOrganico = (DATA.diario_organico || {})[ayer] || {};
   var sedes = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta'];
   var piloto = ['Chalco / Milpa Alta / Tlahuac'];
   var franqs = Object.keys(DATA.franquicias).sort();
@@ -2752,11 +2756,15 @@ function renderLeadsDiarios() {
     // diario_por_clinica, que sí es la fuente completa y verificada.
     var SEDES_REALES_DIARIO = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco',
                                 'Balbuena','Tlahuac','Mixquiahuala','Milpa Alta'];
+    var diarioCompl = DATA.diario_organico || {};
     fechas  = Object.keys(diarioPc).sort();
     labels  = fechas.map(function(f){ return f.slice(5); });
     valores = fechas.map(function(f){
       var dia = diarioPc[f] || {};
-      return SEDES_REALES_DIARIO.reduce(function(s,c){ return s + ((dia[c]||{}).leads||0); }, 0);
+      var base = SEDES_REALES_DIARIO.reduce(function(s,c){ return s + ((dia[c]||{}).leads||0); }, 0);
+      // Pauta Orgánica ("Promociones") va DENTRO de Sedes, no aparte — mismo
+      // criterio que "Leads y gasto de ayer/hoy" (pedido de Irving 2026-08-27).
+      return base + ((diarioCompl[f]||{}).leads||0);
     });
     titulo  = 'Leads Diarios — Todas las Sedes';
     colorBar= 'rgba(63,122,137,0.7)';
