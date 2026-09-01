@@ -2130,8 +2130,9 @@ function renderSedes() {
     <tr class="row-detail"><td></td><td colspan="7">${detalle}</td></tr>`;
   });
   const cpaTotal = tAsist > 0 ? tGasto/tAsist : 0;
+  const cplTotal = tLeads > 0 ? tGasto/tLeads : 0;
   const tMl = orden.reduce((a,c)=>(DATA.sedes[c]?(DATA.sedes[c].meta_leads||0):0)+a, 0);
-  html += `<tr class="sum-row"><td></td><td>TOTAL</td><td>${fmtN(tLeads)}</td><td>${pctLeadsBar(tLeads,tMl)}</td><td>${fmt(tGasto)}</td><td>—</td><td>${fmtN(tAsist)}</td><td>—</td></tr>`;
+  html += `<tr class="sum-row"><td></td><td>TOTAL</td><td>${fmtN(tLeads)}</td><td>${pctLeadsBar(tLeads,tMl)}</td><td>${fmt(tGasto)}</td><td>${fmt(cplTotal)}</td><td>${fmtN(tAsist)}</td><td>—</td></tr>`;
   document.getElementById('tablaSedes').innerHTML = html;
 
   const nombres = orden.filter(c=>DATA.sedes[c]);
@@ -2184,8 +2185,9 @@ function renderFranquicias() {
     <tr class="row-detail"><td></td><td colspan="7">${detalleF}</td></tr>`;
   });
   const cpaTotal = tAsist > 0 ? tGasto/tAsist : 0;
+  const cplTotal = tLeads > 0 ? tGasto/tLeads : 0;
   const tMlf = orden.reduce((a,c)=>((DATA.franquicias[c]||{}).meta_leads||0)+a, 0);
-  html += `<tr class="sum-row"><td></td><td>TOTAL</td><td>${fmtN(tLeads)}</td><td>${pctLeadsBar(tLeads,tMlf)}</td><td>${fmt(tGasto)}</td><td>—</td><td>${fmtN(tAsist)}</td><td>—</td></tr>`;
+  html += `<tr class="sum-row"><td></td><td>TOTAL</td><td>${fmtN(tLeads)}</td><td>${pctLeadsBar(tLeads,tMlf)}</td><td>${fmt(tGasto)}</td><td>${fmt(cplTotal)}</td><td>${fmtN(tAsist)}</td><td>—</td></tr>`;
   document.getElementById('tablaFranq').innerHTML = html;
 
   const nombres = orden;
