@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "01/09/2026 12:00",
+ "actualizado": "01/09/2026 12:08",
  "periodo": "2026-09-01 a 2026-09-01",
  "diagnostico": [],
  "exitosos": [
@@ -7,28 +7,37 @@ window.FATIGA_DATA = {
    "cuenta": "Tepeyac",
    "ad": "Publicación: \"📍 ¡Atención Tepeyac y alrededores! ¿El dolor te...\"",
    "adset": "Publicación: \"📍 ¡Atención Tepeyac y alrededores! ¿El dolor te...\"",
-   "freq": 1.14,
-   "gasto": 530,
+   "freq": 1.13,
+   "gasto": 553,
    "leads": 19,
-   "cpl": 28
+   "cpl": 29
   },
   {
    "cuenta": "Satelite",
    "ad": "Publicación: \"¿Vives en Ciudad Satélite, cerca del Parque...\"",
    "adset": "Publicación: \"¿Vives en Ciudad Satélite, cerca del Parque...\"",
-   "freq": 1.08,
-   "gasto": 688,
+   "freq": 1.07,
+   "gasto": 694,
    "leads": 18,
-   "cpl": 38
+   "cpl": 39
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "Publicación: \"¿Vives en la zona de Balbuena y el dolor ya forma...\"",
    "adset": "VIDEO BALBUENA",
-   "freq": 1.1,
-   "gasto": 917,
+   "freq": 1.07,
+   "gasto": 943,
    "leads": 15,
-   "cpl": 61
+   "cpl": 63
+  },
+  {
+   "cuenta": "Xochimilco",
+   "ad": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
+   "adset": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
+   "freq": 1.1,
+   "gasto": 1102,
+   "leads": 16,
+   "cpl": 69
   }
  ],
  "sin_leads": []
