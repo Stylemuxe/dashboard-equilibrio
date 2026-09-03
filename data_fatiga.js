@@ -1,33 +1,46 @@
 window.FATIGA_DATA = {
- "actualizado": "02/09/2026 20:38",
- "periodo": "2026-09-01 a 2026-09-02",
- "diagnostico": [],
+ "actualizado": "03/09/2026 00:13",
+ "periodo": "2026-09-01 a 2026-09-03",
+ "diagnostico": [
+  {
+   "cuenta": "Promo/Compl.",
+   "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
+   "veredicto": "VIGILAR",
+   "freq": 2.29,
+   "gasto": 894,
+   "leads": 8,
+   "cpl": 112,
+   "pct_nuevos": null,
+   "cpm1": null,
+   "cpm2": null
+  }
+ ],
  "exitosos": [
   {
    "cuenta": "Cuautla",
    "ad": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
    "adset": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
    "freq": 1.33,
-   "gasto": 563,
-   "leads": 60,
+   "gasto": 637,
+   "leads": 72,
    "cpl": 9
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
-   "freq": 1.49,
-   "gasto": 1185,
-   "leads": 54,
-   "cpl": 22
+   "freq": 1.34,
+   "gasto": 1383,
+   "leads": 66,
+   "cpl": 21
   },
   {
    "cuenta": "Nicolas Romero",
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
-   "freq": 1.13,
-   "gasto": 642,
-   "leads": 29,
+   "freq": 1.12,
+   "gasto": 671,
+   "leads": 30,
    "cpl": 22
   },
   {
@@ -35,35 +48,35 @@ window.FATIGA_DATA = {
    "ad": "VID - MARY",
    "adset": "Neuropatia",
    "freq": 1.19,
-   "gasto": 673,
-   "leads": 29,
+   "gasto": 701,
+   "leads": 31,
    "cpl": 23
-  },
-  {
-   "cuenta": "Nicolas Romero",
-   "ad": "VID_HOMBNICO_JUL",
-   "adset": "HOMBRO",
-   "freq": 1.18,
-   "gasto": 756,
-   "leads": 33,
-   "cpl": 23
-  },
-  {
-   "cuenta": "Pachuca",
-   "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
-   "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
-   "freq": 1.17,
-   "gasto": 1369,
-   "leads": 55,
-   "cpl": 25
   },
   {
    "cuenta": "Queretaro",
    "ad": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
    "adset": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
-   "freq": 1.49,
-   "gasto": 1497,
-   "leads": 60,
+   "freq": 1.46,
+   "gasto": 1744,
+   "leads": 73,
+   "cpl": 24
+  },
+  {
+   "cuenta": "Nicolas Romero",
+   "ad": "VID_HOMBNICO_JUL",
+   "adset": "HOMBRO",
+   "freq": 1.19,
+   "gasto": 787,
+   "leads": 33,
+   "cpl": 24
+  },
+  {
+   "cuenta": "Pachuca",
+   "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
+   "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
+   "freq": 1.16,
+   "gasto": 1415,
+   "leads": 57,
    "cpl": 25
   },
   {
@@ -71,8 +84,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "adset": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "freq": 1.16,
-   "gasto": 747,
-   "leads": 27,
+   "gasto": 775,
+   "leads": 28,
    "cpl": 28
   },
   {
@@ -80,89 +93,116 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Mixquiahuala Hidalgo, 📍\"",
    "adset": "Publicación: \"Si eres de Mixquiahuala Hidalgo, 📍\"",
    "freq": 1.21,
-   "gasto": 502,
-   "leads": 16,
+   "gasto": 529,
+   "leads": 17,
    "cpl": 31
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID - IRVIN EXITOSO",
+   "adset": "HOMBRO CHECK",
+   "freq": 1.19,
+   "gasto": 1759,
+   "leads": 51,
+   "cpl": 34
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"¡Que el dolor no te apague el grito este...\"",
    "adset": "Publicación: \"¡Que el dolor no te apague el grito este...\"",
    "freq": 1.33,
-   "gasto": 574,
-   "leads": 17,
+   "gasto": 613,
+   "leads": 18,
    "cpl": 34
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID - IRVIN EXITOSO",
-   "adset": "HOMBRO CHECK",
-   "freq": 1.17,
-   "gasto": 1686,
-   "leads": 48,
-   "cpl": 35
   },
   {
    "cuenta": "Satelite",
    "ad": "VID-HOMBRODOLOROSO - Copia",
    "adset": "HOMBRO - CHECK",
    "freq": 1.08,
-   "gasto": 628,
-   "leads": 18,
-   "cpl": 35
+   "gasto": 676,
+   "leads": 20,
+   "cpl": 34
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "Publicación: \"Si eres de zona Tláhuac, 📍\"",
+   "adset": "Publicación: \"Si eres de zona Tláhuac, 📍\"",
+   "freq": 1.27,
+   "gasto": 582,
+   "leads": 16,
+   "cpl": 36
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"¿Dolor de espalda al agacharte?\"",
    "adset": "Publicación: \"¿Dolor de espalda al agacharte?\"",
-   "freq": 1.22,
-   "gasto": 561,
-   "leads": 15,
+   "freq": 1.27,
+   "gasto": 637,
+   "leads": 17,
    "cpl": 37
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"Si eres de Plaza Neza, 📍\"",
    "adset": "Publicación: \"Si eres de Plaza Neza, 📍\"",
-   "freq": 1.22,
-   "gasto": 1403,
-   "leads": 34,
-   "cpl": 41
-  },
-  {
-   "cuenta": "San Juan del Rio",
-   "ad": "Publicación: \"Atención zona San Juan del Río. 📍\"",
-   "adset": "Publicación: \"Atención zona San Juan del Río. 📍\"",
-   "freq": 1.28,
-   "gasto": 1493,
-   "leads": 36,
-   "cpl": 41
+   "freq": 1.21,
+   "gasto": 1500,
+   "leads": 40,
+   "cpl": 38
   },
   {
    "cuenta": "Valle Dorado",
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "freq": 1.15,
-   "gasto": 1189,
-   "leads": 28,
-   "cpl": 42
+   "freq": 1.16,
+   "gasto": 1320,
+   "leads": 33,
+   "cpl": 40
   },
   {
-   "cuenta": "Laura (sedes)",
-   "ad": "Publicación: \"¿Vives en la zona del Ajusco y sufres de dolor? 🌱\"",
-   "adset": "VIDEO AJUSCO",
-   "freq": 1.15,
-   "gasto": 804,
-   "leads": 18,
-   "cpl": 45
+   "cuenta": "San Juan del Rio",
+   "ad": "Publicación: \"Atención zona San Juan del Río. 📍\"",
+   "adset": "Publicación: \"Atención zona San Juan del Río. 📍\"",
+   "freq": 1.29,
+   "gasto": 1548,
+   "leads": 38,
+   "cpl": 41
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
    "adset": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
-   "freq": 1.23,
-   "gasto": 2121,
-   "leads": 45,
+   "freq": 1.25,
+   "gasto": 2308,
+   "leads": 54,
+   "cpl": 43
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "Publicación: \"¿Vives en la zona del Ajusco y sufres de dolor? 🌱\"",
+   "adset": "VIDEO AJUSCO",
+   "freq": 1.13,
+   "gasto": 909,
+   "leads": 20,
+   "cpl": 45
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "Publicación: \"El dolor articular no desaparece solo. Actúa y...\"",
+   "adset": "Publicación: \"El dolor articular no desaparece solo. Actúa y...\"",
+   "freq": 1.32,
+   "gasto": 677,
+   "leads": 15,
+   "cpl": 45
+  },
+  {
+   "cuenta": "Claveria",
+   "ad": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
+   "adset": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
+   "freq": 1.18,
+   "gasto": 1692,
+   "leads": 36,
    "cpl": 47
   },
   {
@@ -170,36 +210,27 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿Sabías que en la Alcaldía Iztacalco está el...\"",
    "adset": "Publicación: \"¿Sabías que en la Alcaldía Iztacalco está el...\"",
    "freq": 1.12,
-   "gasto": 995,
+   "gasto": 997,
    "leads": 21,
    "cpl": 47
-  },
-  {
-   "cuenta": "Claveria",
-   "ad": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
-   "adset": "Publicación: \"¿Vives o trabajas en Azcapotzalco y el dolor ya...\"",
-   "freq": 1.17,
-   "gasto": 1606,
-   "leads": 33,
-   "cpl": 49
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "Publicación: \"¿Vives en la zona de Balbuena y el dolor ya forma...\"",
    "adset": "VIDEO BALBUENA",
-   "freq": 1.16,
-   "gasto": 5560,
-   "leads": 90,
+   "freq": 1.19,
+   "gasto": 5929,
+   "leads": 96,
    "cpl": 62
   },
   {
    "cuenta": "Xochimilco",
    "ad": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
    "adset": "Publicación: \"¡Atención Zona Sur! ¿Ese dolor de espalda...\"",
-   "freq": 1.14,
-   "gasto": 3524,
+   "freq": 1.16,
+   "gasto": 3657,
    "leads": 55,
-   "cpl": 64
+   "cpl": 66
   }
  ],
  "sin_leads": []
