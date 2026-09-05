@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "05/09/2026 08:20",
+ "actualizado": "05/09/2026 09:18",
  "periodo": "2026-09-01 a 2026-09-05",
  "diagnostico": [],
  "exitosos": [
@@ -7,9 +7,9 @@ window.FATIGA_DATA = {
    "cuenta": "Gerontologia",
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
-   "freq": 1.28,
-   "gasto": 633,
-   "leads": 107,
+   "freq": 1.29,
+   "gasto": 641,
+   "leads": 108,
    "cpl": 6
   },
   {
@@ -17,17 +17,17 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.4,
-   "gasto": 520,
-   "leads": 93,
+   "gasto": 526,
+   "leads": 94,
    "cpl": 6
   },
   {
    "cuenta": "Gerontologia",
    "ad": "VID_TARD2",
    "adset": "Publicación: \"Más movimiento, más independencia y más momentos...\"",
-   "freq": 1.34,
-   "gasto": 1404,
-   "leads": 129,
+   "freq": 1.36,
+   "gasto": 1446,
+   "leads": 133,
    "cpl": 11
   },
   {
@@ -35,7 +35,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
    "adset": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
    "freq": 1.57,
-   "gasto": 1780,
+   "gasto": 1811,
    "leads": 142,
    "cpl": 13
   },
@@ -43,9 +43,9 @@ window.FATIGA_DATA = {
    "cuenta": "Cuautitlan",
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
-   "freq": 1.35,
-   "gasto": 861,
-   "leads": 61,
+   "freq": 1.37,
+   "gasto": 893,
+   "leads": 63,
    "cpl": 14
   },
   {
@@ -53,8 +53,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "adset": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "freq": 1.35,
-   "gasto": 1471,
-   "leads": 72,
+   "gasto": 1493,
+   "leads": 73,
    "cpl": 20
   },
   {
@@ -62,16 +62,16 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.29,
-   "gasto": 1390,
-   "leads": 69,
+   "gasto": 1408,
+   "leads": 70,
    "cpl": 20
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
-   "freq": 1.33,
-   "gasto": 2809,
+   "freq": 1.34,
+   "gasto": 2845,
    "leads": 136,
    "cpl": 21
   },
@@ -80,7 +80,7 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.26,
-   "gasto": 2543,
+   "gasto": 2585,
    "leads": 118,
    "cpl": 22
   },
@@ -89,7 +89,7 @@ window.FATIGA_DATA = {
    "ad": "TLAHUAC 1",
    "adset": "PROMOCIONES CDMX",
    "freq": 1.17,
-   "gasto": 540,
+   "gasto": 541,
    "leads": 22,
    "cpl": 25
   },
@@ -98,16 +98,16 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
    "adset": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
    "freq": 1.53,
-   "gasto": 3686,
-   "leads": 145,
+   "gasto": 3719,
+   "leads": 148,
    "cpl": 25
   },
   {
    "cuenta": "Nicolas Romero",
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
-   "freq": 1.24,
-   "gasto": 1179,
+   "freq": 1.25,
+   "gasto": 1205,
    "leads": 48,
    "cpl": 25
   },
@@ -116,7 +116,7 @@ window.FATIGA_DATA = {
    "ad": "VID-NEURO-6-MAY",
    "adset": "NEUROPATIA",
    "freq": 1.51,
-   "gasto": 955,
+   "gasto": 967,
    "leads": 34,
    "cpl": 28
   },
@@ -134,35 +134,26 @@ window.FATIGA_DATA = {
    "ad": "VID - Estudio_Completo_Columna",
    "adset": "ESPALDA",
    "freq": 1.32,
-   "gasto": 904,
-   "leads": 32,
+   "gasto": 910,
+   "leads": 33,
    "cpl": 28
   },
   {
    "cuenta": "Claveria",
    "ad": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "adset": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
-   "freq": 1.23,
-   "gasto": 616,
-   "leads": 21,
+   "freq": 1.25,
+   "gasto": 657,
+   "leads": 23,
    "cpl": 29
-  },
-  {
-   "cuenta": "Valle Dorado",
-   "ad": "VID_QUIRO ESPALDA",
-   "adset": "ESPALDA",
-   "freq": 1.16,
-   "gasto": 873,
-   "leads": 28,
-   "cpl": 31
   },
   {
    "cuenta": "Valle Dorado",
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "freq": 1.28,
-   "gasto": 3129,
-   "leads": 101,
+   "freq": 1.27,
+   "gasto": 3173,
+   "leads": 102,
    "cpl": 31
   },
   {
@@ -170,7 +161,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEUROPATIA DIABETICA 3 JUN",
    "adset": "NEUROPATIA",
    "freq": 1.18,
-   "gasto": 951,
+   "gasto": 960,
    "leads": 31,
    "cpl": 31
   },
@@ -179,26 +170,53 @@ window.FATIGA_DATA = {
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA",
    "freq": 1.35,
-   "gasto": 1283,
-   "leads": 39,
-   "cpl": 33
+   "gasto": 1305,
+   "leads": 41,
+   "cpl": 32
+  },
+  {
+   "cuenta": "Claveria",
+   "ad": "VID_HOMBRO OLI MARZO",
+   "adset": "HOMBRO - CHECK",
+   "freq": 1.17,
+   "gasto": 583,
+   "leads": 18,
+   "cpl": 32
+  },
+  {
+   "cuenta": "Valle Dorado",
+   "ad": "VID_QUIRO ESPALDA",
+   "adset": "ESPALDA",
+   "freq": 1.17,
+   "gasto": 888,
+   "leads": 28,
+   "cpl": 32
   },
   {
    "cuenta": "Satelite",
    "ad": "VID-HOMBRODOLOROSO - Copia",
    "adset": "HOMBRO - CHECK",
    "freq": 1.14,
-   "gasto": 1521,
-   "leads": 46,
+   "gasto": 1545,
+   "leads": 48,
+   "cpl": 32
+  },
+  {
+   "cuenta": "Pachuca",
+   "ad": "VID - RODILLA JUN",
+   "adset": "RODILLA",
+   "freq": 1.43,
+   "gasto": 893,
+   "leads": 27,
    "cpl": 33
   },
   {
    "cuenta": "Tepeyac",
    "ad": "Publicación: \"📍 ¡Atención Tepeyac y alrededores! ¿El dolor te...\"",
    "adset": "Publicación: \"📍 ¡Atención Tepeyac y alrededores! ¿El dolor te...\"",
-   "freq": 1.31,
-   "gasto": 3950,
-   "leads": 119,
+   "freq": 1.32,
+   "gasto": 3997,
+   "leads": 121,
    "cpl": 33
   },
   {
@@ -206,26 +224,8 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO CHECK",
    "freq": 1.32,
-   "gasto": 3337,
+   "gasto": 3393,
    "leads": 98,
-   "cpl": 34
-  },
-  {
-   "cuenta": "Claveria",
-   "ad": "VID_HOMBRO OLI MARZO",
-   "adset": "HOMBRO - CHECK",
-   "freq": 1.17,
-   "gasto": 572,
-   "leads": 17,
-   "cpl": 34
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"Si eres de Mixquiahuala Hidalgo, 📍\"",
-   "adset": "Publicación: \"Si eres de Mixquiahuala Hidalgo, 📍\"",
-   "freq": 1.28,
-   "gasto": 875,
-   "leads": 25,
    "cpl": 35
   }
  ],
