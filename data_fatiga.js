@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "06/09/2026 09:03",
+ "actualizado": "06/09/2026 09:08",
  "periodo": "2026-09-01 a 2026-09-06",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.3,
-   "gasto": 4583,
+   "gasto": 4585,
    "leads": 175,
    "cpl": 26,
    "pct_nuevos": 26,
@@ -19,10 +19,10 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Vecinos de Mixquiahuala 📍\"",
    "veredicto": "VIGILAR",
    "freq": 2.38,
-   "gasto": 2409,
+   "gasto": 2415,
    "leads": 23,
    "cpl": 105,
-   "pct_nuevos": 78,
+   "pct_nuevos": 79,
    "cpm1": 19,
    "cpm2": 24
   }
@@ -42,7 +42,7 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.46,
-   "gasto": 720,
+   "gasto": 722,
    "leads": 118,
    "cpl": 6
   },
@@ -78,7 +78,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
    "freq": 1.44,
-   "gasto": 1240,
+   "gasto": 1242,
    "leads": 79,
    "cpl": 16
   },
@@ -87,7 +87,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "adset": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "freq": 1.31,
-   "gasto": 1154,
+   "gasto": 1158,
    "leads": 62,
    "cpl": 19
   },
@@ -96,7 +96,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "adset": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "freq": 1.38,
-   "gasto": 1880,
+   "gasto": 1883,
    "leads": 94,
    "cpl": 20
   },
@@ -113,8 +113,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
-   "freq": 1.41,
-   "gasto": 4056,
+   "freq": 1.4,
+   "gasto": 4068,
    "leads": 197,
    "cpl": 21
   },
@@ -123,7 +123,7 @@ window.FATIGA_DATA = {
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
    "freq": 1.42,
-   "gasto": 531,
+   "gasto": 532,
    "leads": 24,
    "cpl": 22
   },
@@ -132,7 +132,7 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.3,
-   "gasto": 3204,
+   "gasto": 3211,
    "leads": 141,
    "cpl": 23
   },
@@ -150,7 +150,7 @@ window.FATIGA_DATA = {
    "ad": "VID-HOMBRODOLOROSO - Copia",
    "adset": "HOMBRO - CHECK",
    "freq": 1.17,
-   "gasto": 1842,
+   "gasto": 1843,
    "leads": 63,
    "cpl": 29
   },
@@ -186,7 +186,7 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO ESPALDA",
    "adset": "ESPALDA",
    "freq": 1.17,
-   "gasto": 1069,
+   "gasto": 1071,
    "leads": 36,
    "cpl": 30
   },
@@ -195,7 +195,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.3,
-   "gasto": 3957,
+   "gasto": 3961,
    "leads": 134,
    "cpl": 30
   },
@@ -209,29 +209,29 @@ window.FATIGA_DATA = {
    "cpl": 30
   },
   {
-   "cuenta": "Promo/Compl.",
-   "ad": "TLAHUAC 1",
-   "adset": "PROMOCIONES CDMX",
-   "freq": 1.2,
-   "gasto": 875,
-   "leads": 27,
-   "cpl": 32
-  },
-  {
    "cuenta": "Claveria",
    "ad": "VID_HOMBRO OLI MARZO",
    "adset": "HOMBRO - CHECK",
    "freq": 1.11,
-   "gasto": 725,
+   "gasto": 726,
    "leads": 23,
    "cpl": 32
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "TLAHUAC 1",
+   "adset": "PROMOCIONES CDMX",
+   "freq": 1.21,
+   "gasto": 878,
+   "leads": 27,
+   "cpl": 33
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID-RODILLA2 6-MAY",
    "adset": "RODILLA CHECK",
    "freq": 1.13,
-   "gasto": 958,
+   "gasto": 959,
    "leads": 28,
    "cpl": 34
   },
@@ -240,8 +240,8 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO CHECK",
    "freq": 1.38,
-   "gasto": 4218,
-   "leads": 123,
+   "gasto": 4222,
+   "leads": 124,
    "cpl": 34
   },
   {
@@ -249,7 +249,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEUROPATIA DIABETICA 3 JUN",
    "adset": "NEUROPATIA",
    "freq": 1.17,
-   "gasto": 1173,
+   "gasto": 1174,
    "leads": 35,
    "cpl": 34
   }
