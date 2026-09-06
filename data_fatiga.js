@@ -1,16 +1,16 @@
 window.FATIGA_DATA = {
- "actualizado": "06/09/2026 13:03",
+ "actualizado": "06/09/2026 14:03",
  "periodo": "2026-09-01 a 2026-09-06",
  "diagnostico": [
   {
    "cuenta": "Queretaro",
    "adset": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
    "veredicto": "PUBLICO CANSANDOSE",
-   "freq": 1.31,
-   "gasto": 4718,
-   "leads": 180,
+   "freq": 1.32,
+   "gasto": 4749,
+   "leads": 182,
    "cpl": 26,
-   "pct_nuevos": 28,
+   "pct_nuevos": 29,
    "cpm1": 30,
    "cpm2": 43
   },
@@ -18,10 +18,10 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"Vecinos de Mixquiahuala 📍\"",
    "veredicto": "VIGILAR",
-   "freq": 2.43,
-   "gasto": 2566,
+   "freq": 2.45,
+   "gasto": 2605,
    "leads": 24,
-   "cpl": 107,
+   "cpl": 109,
    "pct_nuevos": 84,
    "cpm1": 19,
    "cpm2": 25
@@ -33,8 +33,8 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.32,
-   "gasto": 773,
-   "leads": 128,
+   "gasto": 776,
+   "leads": 129,
    "cpl": 6
   },
   {
@@ -42,8 +42,8 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.48,
-   "gasto": 773,
-   "leads": 130,
+   "gasto": 786,
+   "leads": 131,
    "cpl": 6
   },
   {
@@ -69,26 +69,26 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.17,
-   "gasto": 808,
-   "leads": 56,
+   "gasto": 821,
+   "leads": 58,
    "cpl": 14
   },
   {
    "cuenta": "Cuautitlan",
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
-   "freq": 1.46,
-   "gasto": 1315,
+   "freq": 1.45,
+   "gasto": 1335,
    "leads": 80,
-   "cpl": 16
+   "cpl": 17
   },
   {
    "cuenta": "Claveria",
    "ad": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "adset": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "freq": 1.36,
-   "gasto": 1320,
-   "leads": 69,
+   "gasto": 1349,
+   "leads": 70,
    "cpl": 19
   },
   {
@@ -96,17 +96,8 @@ window.FATIGA_DATA = {
    "ad": "VID - QUIRO 15 ABR - Copia",
    "adset": "Hombro",
    "freq": 1.36,
-   "gasto": 528,
+   "gasto": 541,
    "leads": 27,
-   "cpl": 20
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "FUNCIONALES 1",
-   "adset": "FUNCIONALES 10",
-   "freq": 1.41,
-   "gasto": 4359,
-   "leads": 213,
    "cpl": 20
   },
   {
@@ -119,30 +110,39 @@ window.FATIGA_DATA = {
    "cpl": 20
   },
   {
+   "cuenta": "Promo/Compl.",
+   "ad": "FUNCIONALES 1",
+   "adset": "FUNCIONALES 10",
+   "freq": 1.41,
+   "gasto": 4411,
+   "leads": 213,
+   "cpl": 21
+  },
+  {
    "cuenta": "Gerontologia",
    "ad": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "adset": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "freq": 1.37,
-   "gasto": 1982,
+   "gasto": 1994,
    "leads": 96,
    "cpl": 21
-  },
-  {
-   "cuenta": "Tepeyac",
-   "ad": "VID - ESTUDIO DE COLUMNA JUL",
-   "adset": "Espalda",
-   "freq": 1.44,
-   "gasto": 595,
-   "leads": 27,
-   "cpl": 22
   },
   {
    "cuenta": "Pachuca",
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.3,
-   "gasto": 3383,
-   "leads": 149,
+   "gasto": 3420,
+   "leads": 152,
+   "cpl": 22
+  },
+  {
+   "cuenta": "Tepeyac",
+   "ad": "VID - ESTUDIO DE COLUMNA JUL",
+   "adset": "Espalda",
+   "freq": 1.43,
+   "gasto": 608,
+   "leads": 27,
    "cpl": 23
   },
   {
@@ -159,26 +159,26 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "Hombro - Check",
    "freq": 1.27,
-   "gasto": 508,
-   "leads": 18,
+   "gasto": 522,
+   "leads": 19,
+   "cpl": 27
+  },
+  {
+   "cuenta": "Pachuca",
+   "ad": "VID - Estudio_Completo_Columna",
+   "adset": "ESPALDA",
+   "freq": 1.37,
+   "gasto": 1221,
+   "leads": 43,
    "cpl": 28
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID-NEURO-6-MAY",
    "adset": "NEUROPATIA",
-   "freq": 1.58,
-   "gasto": 1213,
-   "leads": 42,
-   "cpl": 29
-  },
-  {
-   "cuenta": "Pachuca",
-   "ad": "VID - Estudio_Completo_Columna",
-   "adset": "ESPALDA",
-   "freq": 1.36,
-   "gasto": 1204,
-   "leads": 42,
+   "freq": 1.6,
+   "gasto": 1228,
+   "leads": 43,
    "cpl": 29
   },
   {
@@ -195,17 +195,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.31,
-   "gasto": 4161,
-   "leads": 138,
-   "cpl": 30
-  },
-  {
-   "cuenta": "Satelite",
-   "ad": "VID-HOMBRODOLOROSO - Copia",
-   "adset": "HOMBRO - CHECK",
-   "freq": 1.19,
-   "gasto": 1932,
-   "leads": 64,
+   "gasto": 4201,
+   "leads": 140,
    "cpl": 30
   },
   {
@@ -213,8 +204,8 @@ window.FATIGA_DATA = {
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA",
    "freq": 1.4,
-   "gasto": 1616,
-   "leads": 52,
+   "gasto": 1632,
+   "leads": 53,
    "cpl": 31
   },
   {
@@ -222,8 +213,17 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO ESPALDA",
    "adset": "ESPALDA",
    "freq": 1.16,
-   "gasto": 1153,
-   "leads": 37,
+   "gasto": 1170,
+   "leads": 38,
+   "cpl": 31
+  },
+  {
+   "cuenta": "Satelite",
+   "ad": "VID-HOMBRODOLOROSO - Copia",
+   "adset": "HOMBRO - CHECK",
+   "freq": 1.18,
+   "gasto": 1960,
+   "leads": 64,
    "cpl": 31
   },
   {
@@ -240,8 +240,8 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO CHECK",
    "freq": 1.4,
-   "gasto": 4550,
-   "leads": 136,
+   "gasto": 4646,
+   "leads": 139,
    "cpl": 33
   },
   {
@@ -249,7 +249,7 @@ window.FATIGA_DATA = {
    "ad": "TLAHUAC 1",
    "adset": "PROMOCIONES CDMX",
    "freq": 1.22,
-   "gasto": 949,
+   "gasto": 965,
    "leads": 29,
    "cpl": 33
   }
