@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "06/09/2026 15:02",
+ "actualizado": "06/09/2026 16:03",
  "periodo": "2026-09-01 a 2026-09-06",
  "diagnostico": [
   {
@@ -7,10 +7,10 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.31,
-   "gasto": 4794,
-   "leads": 184,
+   "gasto": 4832,
+   "leads": 185,
    "cpl": 26,
-   "pct_nuevos": 30,
+   "pct_nuevos": 31,
    "cpm1": 30,
    "cpm2": 43
   },
@@ -18,11 +18,11 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"Vecinos de Mixquiahuala 📍\"",
    "veredicto": "VIGILAR",
-   "freq": 2.46,
-   "gasto": 2645,
-   "leads": 25,
-   "cpl": 106,
-   "pct_nuevos": 85,
+   "freq": 2.48,
+   "gasto": 2688,
+   "leads": 26,
+   "cpl": 103,
+   "pct_nuevos": 86,
    "cpm1": 19,
    "cpm2": 25
   }
@@ -33,8 +33,8 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.32,
-   "gasto": 780,
-   "leads": 130,
+   "gasto": 783,
+   "leads": 131,
    "cpl": 6
   },
   {
@@ -42,7 +42,7 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.48,
-   "gasto": 792,
+   "gasto": 801,
    "leads": 134,
    "cpl": 6
   },
@@ -68,26 +68,26 @@ window.FATIGA_DATA = {
    "cuenta": "Queretaro",
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
-   "freq": 1.19,
-   "gasto": 837,
-   "leads": 58,
+   "freq": 1.18,
+   "gasto": 851,
+   "leads": 60,
    "cpl": 14
   },
   {
    "cuenta": "Cuautitlan",
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
-   "freq": 1.46,
-   "gasto": 1351,
+   "freq": 1.45,
+   "gasto": 1367,
    "leads": 82,
-   "cpl": 16
+   "cpl": 17
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID - QUIRO 15 ABR - Copia",
    "adset": "Hombro",
-   "freq": 1.36,
-   "gasto": 556,
+   "freq": 1.37,
+   "gasto": 570,
    "leads": 28,
    "cpl": 20
   },
@@ -95,8 +95,8 @@ window.FATIGA_DATA = {
    "cuenta": "Claveria",
    "ad": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "adset": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
-   "freq": 1.36,
-   "gasto": 1375,
+   "freq": 1.37,
+   "gasto": 1397,
    "leads": 70,
    "cpl": 20
   },
@@ -105,7 +105,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.28,
-   "gasto": 1576,
+   "gasto": 1577,
    "leads": 78,
    "cpl": 20
   },
@@ -113,9 +113,9 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
-   "freq": 1.42,
-   "gasto": 4466,
-   "leads": 215,
+   "freq": 1.41,
+   "gasto": 4512,
+   "leads": 216,
    "cpl": 21
   },
   {
@@ -123,8 +123,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "adset": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "freq": 1.37,
-   "gasto": 2009,
-   "leads": 96,
+   "gasto": 2022,
+   "leads": 97,
    "cpl": 21
   },
   {
@@ -132,8 +132,8 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.3,
-   "gasto": 3452,
-   "leads": 152,
+   "gasto": 3496,
+   "leads": 153,
    "cpl": 23
   },
   {
@@ -141,9 +141,9 @@ window.FATIGA_DATA = {
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
    "freq": 1.43,
-   "gasto": 622,
+   "gasto": 638,
    "leads": 27,
-   "cpl": 23
+   "cpl": 24
   },
   {
    "cuenta": "Nicolas Romero",
@@ -159,8 +159,8 @@ window.FATIGA_DATA = {
    "ad": "VID-NEURO-6-MAY",
    "adset": "NEUROPATIA",
    "freq": 1.6,
-   "gasto": 1245,
-   "leads": 43,
+   "gasto": 1261,
+   "leads": 44,
    "cpl": 29
   },
   {
@@ -168,7 +168,7 @@ window.FATIGA_DATA = {
    "ad": "VID - Estudio_Completo_Columna",
    "adset": "ESPALDA",
    "freq": 1.38,
-   "gasto": 1238,
+   "gasto": 1249,
    "leads": 43,
    "cpl": 29
   },
@@ -176,10 +176,19 @@ window.FATIGA_DATA = {
    "cuenta": "San Juan del Rio",
    "ad": "VID - HOMBRO IRVIN",
    "adset": "Hombro - Check",
-   "freq": 1.27,
-   "gasto": 542,
+   "freq": 1.28,
+   "gasto": 554,
    "leads": 19,
    "cpl": 29
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID-HOMBRO",
+   "adset": "HOMBRO",
+   "freq": 1.16,
+   "gasto": 511,
+   "leads": 17,
+   "cpl": 30
   },
   {
    "cuenta": "Promo/Compl.",
@@ -191,12 +200,21 @@ window.FATIGA_DATA = {
    "cpl": 30
   },
   {
+   "cuenta": "Claveria",
+   "ad": "VID_HOMBRO OLI MARZO",
+   "adset": "HOMBRO - CHECK",
+   "freq": 1.11,
+   "gasto": 753,
+   "leads": 25,
+   "cpl": 30
+  },
+  {
    "cuenta": "Valle Dorado",
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "freq": 1.31,
-   "gasto": 4240,
-   "leads": 140,
+   "freq": 1.32,
+   "gasto": 4278,
+   "leads": 141,
    "cpl": 30
   },
   {
@@ -204,26 +222,26 @@ window.FATIGA_DATA = {
    "ad": "VID-HOMBRODOLOROSO - Copia",
    "adset": "HOMBRO - CHECK",
    "freq": 1.18,
-   "gasto": 1980,
-   "leads": 65,
+   "gasto": 2006,
+   "leads": 66,
    "cpl": 30
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID-HOMBRO",
-   "adset": "HOMBRO",
-   "freq": 1.16,
-   "gasto": 500,
-   "leads": 16,
-   "cpl": 31
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA",
    "freq": 1.41,
-   "gasto": 1652,
+   "gasto": 1672,
    "leads": 54,
+   "cpl": 31
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "TLAHUAC 1",
+   "adset": "PROMOCIONES CDMX",
+   "freq": 1.21,
+   "gasto": 989,
+   "leads": 32,
    "cpl": 31
   },
   {
@@ -231,27 +249,9 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO ESPALDA",
    "adset": "ESPALDA",
    "freq": 1.16,
-   "gasto": 1191,
-   "leads": 38,
+   "gasto": 1204,
+   "leads": 39,
    "cpl": 31
-  },
-  {
-   "cuenta": "Claveria",
-   "ad": "VID_HOMBRO OLI MARZO",
-   "adset": "HOMBRO - CHECK",
-   "freq": 1.11,
-   "gasto": 736,
-   "leads": 23,
-   "cpl": 32
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "TLAHUAC 1",
-   "adset": "PROMOCIONES CDMX",
-   "freq": 1.21,
-   "gasto": 979,
-   "leads": 30,
-   "cpl": 33
   }
  ],
  "sin_leads": []
