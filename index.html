@@ -2892,7 +2892,11 @@ function renderCplClinica() {
   const dias = fechas.map(f => {
     const d = (fuente[f] || {})[clinica] || {};
     const leads = d.leads || 0;
-    const gasto = d.gasto || 0;
+    // Sedes: "gasto" es solo cuenta Laura; el boost en Promociones vive aparte
+    // en "gasto_compl" (mismo criterio que la hoja GASTO TOTAL CLINICA del
+    // Excel) — sin sumarlo, dias donde el gasto corrio solo por Promociones
+    // se veian en $0 y con CPL "—" aunque sí hubiera leads reales ese día.
+    const gasto = (d.gasto || 0) + (d.gasto_compl || 0);
     const cpl   = leads > 0 ? gasto / leads : 0;
     return { fecha: f.slice(5), leads, gasto, cpl };
   }).filter(d => d.leads > 0 || d.gasto > 0);
