@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "07/09/2026 08:40",
+ "actualizado": "07/09/2026 08:53",
  "periodo": "2026-09-01 a 2026-09-07",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Vecinos de Mixquiahuala 📍\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.62,
-   "gasto": 3069,
+   "gasto": 3078,
    "leads": 28,
    "cpl": 110,
    "pct_nuevos": 94,
@@ -21,7 +21,7 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.34,
-   "gasto": 819,
+   "gasto": 820,
    "leads": 138,
    "cpl": 6
   },
@@ -30,7 +30,7 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.52,
-   "gasto": 886,
+   "gasto": 888,
    "leads": 146,
    "cpl": 6
   },
@@ -57,8 +57,8 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.21,
-   "gasto": 967,
-   "leads": 68,
+   "gasto": 968,
+   "leads": 69,
    "cpl": 14
   },
   {
@@ -66,16 +66,16 @@ window.FATIGA_DATA = {
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
    "freq": 1.49,
-   "gasto": 1520,
-   "leads": 96,
+   "gasto": 1526,
+   "leads": 97,
    "cpl": 16
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID - ANSIEDAD V1 JUL",
    "adset": "MIX",
-   "freq": 1.53,
-   "gasto": 518,
+   "freq": 1.52,
+   "gasto": 526,
    "leads": 28,
    "cpl": 19
   },
@@ -84,7 +84,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "adset": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "freq": 1.39,
-   "gasto": 2138,
+   "gasto": 2143,
    "leads": 110,
    "cpl": 19
   },
@@ -93,7 +93,7 @@ window.FATIGA_DATA = {
    "ad": "VID - QUIRO 15 ABR - Copia",
    "adset": "Hombro",
    "freq": 1.42,
-   "gasto": 664,
+   "gasto": 668,
    "leads": 33,
    "cpl": 20
   },
@@ -102,7 +102,7 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
    "freq": 1.43,
-   "gasto": 5019,
+   "gasto": 5032,
    "leads": 248,
    "cpl": 20
   },
@@ -120,7 +120,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "adset": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "freq": 1.46,
-   "gasto": 1638,
+   "gasto": 1642,
    "leads": 76,
    "cpl": 22
   },
@@ -129,8 +129,8 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.31,
-   "gasto": 3742,
-   "leads": 170,
+   "gasto": 3745,
+   "leads": 171,
    "cpl": 22
   },
   {
@@ -138,7 +138,7 @@ window.FATIGA_DATA = {
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
    "freq": 1.43,
-   "gasto": 722,
+   "gasto": 724,
    "leads": 31,
    "cpl": 23
   },
@@ -156,7 +156,7 @@ window.FATIGA_DATA = {
    "ad": "VID-NEURO-6-MAY",
    "adset": "NEUROPATIA",
    "freq": 1.62,
-   "gasto": 1428,
+   "gasto": 1435,
    "leads": 51,
    "cpl": 28
   },
@@ -174,7 +174,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "Hombro - Check",
    "freq": 1.28,
-   "gasto": 664,
+   "gasto": 666,
    "leads": 23,
    "cpl": 29
   },
@@ -192,7 +192,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.33,
-   "gasto": 4628,
+   "gasto": 4635,
    "leads": 155,
    "cpl": 30
   },
@@ -201,8 +201,8 @@ window.FATIGA_DATA = {
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA",
    "freq": 1.44,
-   "gasto": 1885,
-   "leads": 60,
+   "gasto": 1891,
+   "leads": 62,
    "cpl": 31
   },
   {
@@ -210,7 +210,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBRO OLI MARZO",
    "adset": "HOMBRO - CHECK",
    "freq": 1.12,
-   "gasto": 830,
+   "gasto": 831,
    "leads": 27,
    "cpl": 31
   },
@@ -219,7 +219,7 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO ESPALDA",
    "adset": "ESPALDA",
    "freq": 1.18,
-   "gasto": 1285,
+   "gasto": 1288,
    "leads": 41,
    "cpl": 31
   },
@@ -228,7 +228,7 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO CHECK",
    "freq": 1.44,
-   "gasto": 5316,
+   "gasto": 5327,
    "leads": 166,
    "cpl": 32
   },
@@ -237,7 +237,7 @@ window.FATIGA_DATA = {
    "ad": "VID-HOMBRODOLOROSO - Copia",
    "adset": "HOMBRO - CHECK",
    "freq": 1.21,
-   "gasto": 2174,
+   "gasto": 2177,
    "leads": 68,
    "cpl": 32
   }
