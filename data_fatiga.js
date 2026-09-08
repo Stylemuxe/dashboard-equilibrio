@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "08/09/2026 09:03",
+ "actualizado": "08/09/2026 09:10",
  "periodo": "2026-09-01 a 2026-09-08",
  "diagnostico": [
   {
@@ -7,12 +7,12 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Vecinos de Mixquiahuala 📍\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.81,
-   "gasto": 3753,
+   "gasto": 3765,
    "leads": 30,
-   "cpl": 125,
+   "cpl": 126,
    "pct_nuevos": 59,
    "cpm1": 20,
-   "cpm2": 29
+   "cpm2": 30
   }
  ],
  "exitosos": [
@@ -20,9 +20,9 @@ window.FATIGA_DATA = {
    "cuenta": "Gerontologia",
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
-   "freq": 1.39,
-   "gasto": 922,
-   "leads": 159,
+   "freq": 1.4,
+   "gasto": 923,
+   "leads": 160,
    "cpl": 6
   },
   {
@@ -30,8 +30,8 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.6,
-   "gasto": 1082,
-   "leads": 165,
+   "gasto": 1085,
+   "leads": 166,
    "cpl": 7
   },
   {
@@ -47,8 +47,8 @@ window.FATIGA_DATA = {
    "cuenta": "Cuautla",
    "ad": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
    "adset": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
-   "freq": 1.76,
-   "gasto": 2560,
+   "freq": 1.77,
+   "gasto": 2566,
    "leads": 171,
    "cpl": 15
   },
@@ -57,7 +57,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
    "freq": 1.56,
-   "gasto": 1837,
+   "gasto": 1840,
    "leads": 117,
    "cpl": 16
   },
@@ -75,7 +75,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "adset": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "freq": 1.33,
-   "gasto": 1677,
+   "gasto": 1679,
    "leads": 90,
    "cpl": 19
   },
@@ -84,7 +84,7 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
    "freq": 1.45,
-   "gasto": 6268,
+   "gasto": 6276,
    "leads": 292,
    "cpl": 21
   },
@@ -92,8 +92,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID - QUIRO 15 ABR - Copia",
    "adset": "Hombro",
-   "freq": 1.44,
-   "gasto": 964,
+   "freq": 1.45,
+   "gasto": 967,
    "leads": 43,
    "cpl": 22
   },
@@ -111,7 +111,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "adset": "Publicación: \"🌟 ¡Durante AGOSTO tenemos el Paquete Longevidad...\"",
    "freq": 1.44,
-   "gasto": 2604,
+   "gasto": 2607,
    "leads": 121,
    "cpl": 22
   },
@@ -120,8 +120,8 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.35,
-   "gasto": 4377,
-   "leads": 198,
+   "gasto": 4381,
+   "leads": 199,
    "cpl": 22
   },
   {
@@ -129,7 +129,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.32,
-   "gasto": 1843,
+   "gasto": 1845,
    "leads": 83,
    "cpl": 22
   },
@@ -138,7 +138,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "adset": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "freq": 1.54,
-   "gasto": 2409,
+   "gasto": 2417,
    "leads": 102,
    "cpl": 24
   },
@@ -147,7 +147,7 @@ window.FATIGA_DATA = {
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
    "freq": 1.52,
-   "gasto": 935,
+   "gasto": 938,
    "leads": 37,
    "cpl": 25
   },
@@ -155,8 +155,8 @@ window.FATIGA_DATA = {
    "cuenta": "Nicolas Romero",
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
-   "freq": 1.32,
-   "gasto": 1566,
+   "freq": 1.33,
+   "gasto": 1570,
    "leads": 63,
    "cpl": 25
   },
@@ -170,21 +170,21 @@ window.FATIGA_DATA = {
    "cpl": 28
   },
   {
-   "cuenta": "Pachuca",
-   "ad": "VID - ESPALDA GABO V1 JUN",
-   "adset": "ESPALDA",
-   "freq": 1.18,
-   "gasto": 512,
-   "leads": 18,
-   "cpl": 28
-  },
-  {
    "cuenta": "Claveria",
    "ad": "VID_HOMBRO OLI MARZO",
    "adset": "HOMBRO - CHECK",
    "freq": 1.15,
-   "gasto": 923,
+   "gasto": 926,
    "leads": 32,
+   "cpl": 29
+  },
+  {
+   "cuenta": "Pachuca",
+   "ad": "VID - ESPALDA GABO V1 JUN",
+   "adset": "ESPALDA",
+   "freq": 1.19,
+   "gasto": 513,
+   "leads": 18,
    "cpl": 29
   },
   {
@@ -192,17 +192,17 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "Hombro - Check",
    "freq": 1.34,
-   "gasto": 822,
+   "gasto": 823,
    "leads": 28,
    "cpl": 29
   },
   {
    "cuenta": "Valle Dorado",
-   "ad": "VID_QUIRO ESPALDA",
-   "adset": "ESPALDA",
-   "freq": 1.22,
-   "gasto": 1524,
-   "leads": 50,
+   "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
+   "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
+   "freq": 1.39,
+   "gasto": 5484,
+   "leads": 180,
    "cpl": 30
   },
   {
@@ -210,7 +210,7 @@ window.FATIGA_DATA = {
    "ad": "VID - Estudio_Completo_Columna",
    "adset": "ESPALDA",
    "freq": 1.42,
-   "gasto": 1489,
+   "gasto": 1490,
    "leads": 50,
    "cpl": 30
   },
@@ -219,17 +219,17 @@ window.FATIGA_DATA = {
    "ad": "Rodilla Martin",
    "adset": "RODILLA",
    "freq": 1.34,
-   "gasto": 652,
+   "gasto": 653,
    "leads": 21,
    "cpl": 31
   },
   {
    "cuenta": "Valle Dorado",
-   "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "freq": 1.39,
-   "gasto": 5479,
-   "leads": 179,
+   "ad": "VID_QUIRO ESPALDA",
+   "adset": "ESPALDA",
+   "freq": 1.22,
+   "gasto": 1526,
+   "leads": 50,
    "cpl": 31
   },
   {
@@ -237,7 +237,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ HOMBRO _ SATELITE  _ 27 MAR",
    "adset": "HOMBRO - CHECK",
    "freq": 1.29,
-   "gasto": 1008,
+   "gasto": 1011,
    "leads": 33,
    "cpl": 31
   }
