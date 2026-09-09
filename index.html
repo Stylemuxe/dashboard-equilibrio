@@ -12,12 +12,12 @@
 <title>Dashboard Meta Ads | Equilibrio Total</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- DATA_BUNDLE_START -->
-<script src="data_meta_2026-05.js?v=1788966941"></script>
-<script src="data_meta_2026-06.js?v=1788966941"></script>
-<script src="data_meta_2026-07.js?v=1788966941"></script>
-<script src="data_meta_2026-08.js?v=1788966941"></script>
-<script src="data_meta_2026-09.js?v=1788966941"></script>
-<script src="data_months.js?v=1788966941"></script>
+<script src="data_meta_2026-05.js?v=1788967571"></script>
+<script src="data_meta_2026-06.js?v=1788967571"></script>
+<script src="data_meta_2026-07.js?v=1788967571"></script>
+<script src="data_meta_2026-08.js?v=1788967571"></script>
+<script src="data_meta_2026-09.js?v=1788967571"></script>
+<script src="data_months.js?v=1788967571"></script>
 <script>
 (function(){
   var d=window.MESES_DISPONIBLES||[];
@@ -1020,6 +1020,13 @@ body:not(.unlocked) #login{display:flex}
 
 <!-- GERONTOLOGÍA -->
 <div id="tab-gero" class="tab-panel">
+  <div class="sec-header" style="margin-bottom:16px">
+    <div class="sec-title">Gerontología</div>
+    <select class="filter-select" id="filtroGeroFecha" onchange="renderGero()">
+      <option value="">— Todo el mes —</option>
+    </select>
+  </div>
+  <div id="geroDiaNota" style="display:none;font-size:11px;color:var(--text3);margin:-8px 0 16px;font-style:italic">Agendadas/Asistidas del CC no se desglosan por día — solo se muestran a nivel mes.</div>
   <div class="kpi-row" id="kpiGero"></div>
 
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-bottom:24px">
@@ -1159,6 +1166,7 @@ function init() {
   renderDiario('sedes');
   renderGeroDiario();
   renderRecomendaciones();
+  renderGeroFiltros();
   renderGero();
   renderComplementos();
   if (typeof renderProyector === 'function') renderProyector();
@@ -1217,7 +1225,7 @@ function switchTab(id, btn) {
     if (id === 'plan')         renderPlanAccion();
     if (id === 'tendencias')   renderTendencias();
     if (id === 'optimizar')    renderOptimizar();
-    if (id === 'gero')         { renderGero(); renderGeroDiario(); }
+    if (id === 'gero')         { renderGeroFiltros(); renderGero(); renderGeroDiario(); }
     if (id === 'complementos') renderComplementos();
     // Redibujar SOLO las gráficas visibles. Hacer resize() a un canvas de un tab
     // oculto (display:none) lo colapsa a 0×0 y la gráfica queda en blanco al volver.
@@ -3288,13 +3296,54 @@ function renderOptimizar() {
 }
 
 // ── Gerontología ──
+function renderGeroFiltros() {
+  var sel = document.getElementById('filtroGeroFecha');
+  if (!sel) return;
+  var categorias = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Gym Autonomía', 'Otros Gerontología'];
+  var dpc = DATA.diario_por_clinica || {};
+  var fechas = Object.keys(dpc).filter(function(f) {
+    return categorias.some(function(c) { return dpc[f] && dpc[f][c]; });
+  }).sort();
+  var actual = sel.value;
+  sel.innerHTML = '<option value="">— Todo el mes —</option>';
+  fechas.forEach(function(f) {
+    var o = document.createElement('option');
+    o.value = f;
+    var dt = new Date(f + 'T00:00:00');
+    o.textContent = dt.toLocaleDateString('es-MX', {day:'numeric', month:'long'});
+    sel.appendChild(o);
+  });
+  // conservar el dia seleccionado si sigue existiendo tras cambiar de mes; si no, cae a "Todo el mes"
+  if (fechas.indexOf(actual) !== -1) sel.value = actual;
+}
+
 function renderGero() {
-  var g = DATA.gerontologia || {};
-  // Las 4 categorías reales que arma actualizar_meta.py (ver MAPA_CAMPANAS_GERO
+  // Las 5 categorías reales que arma actualizar_meta.py (ver MAPA_CAMPANAS_GERO
   // y leer_cc_gerontologia) — antes solo se mostraban las primeras 2 y las
-  // otras 2 quedaban invisibles en esta pestaña aunque ya se contaban en el
+  // otras quedaban invisibles en esta pestaña aunque ya se contaban en el
   // gasto total.
   var orden = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Gym Autonomía', 'Otros Gerontología'];
+
+  // Selector de fecha: "Todo el mes" (default) usa el acumulado mensual
+  // (DATA.gerontologia, incluye Agendadas/Asistidas del CC); un día
+  // específico usa el desglose diario por categoría (DATA.diario_por_clinica)
+  // — ahí no hay Agendadas/Asistidas porque el CC no se corta por día.
+  var fechaSel = (document.getElementById('filtroGeroFecha') || {}).value || '';
+  var g;
+  if (fechaSel) {
+    var dia = (DATA.diario_por_clinica || {})[fechaSel] || {};
+    g = {};
+    orden.forEach(function(c) {
+      var v = dia[c];
+      if (!v) return;
+      var l = v.leads || 0, ga = v.gasto || 0;
+      g[c] = {leads_mes: l, gasto_mes: ga, cpl: l > 0 ? Math.round(ga/l*100)/100 : 0, agendadas: 0, asistidas: 0, cpa: 0};
+    });
+  } else {
+    g = DATA.gerontologia || {};
+  }
+  var notaEl = document.getElementById('geroDiaNota');
+  if (notaEl) notaEl.style.display = fechaSel ? 'block' : 'none';
 
   // KPIs globales
   var tLeads=0, tGasto=0, tAsist=0, tAgend=0;
