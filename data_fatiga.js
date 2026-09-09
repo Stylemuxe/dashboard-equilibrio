@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "08/09/2026 21:03",
+ "actualizado": "08/09/2026 22:04",
  "periodo": "2026-09-01 a 2026-09-08",
  "diagnostico": [
   {
@@ -7,10 +7,10 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Vecinos de Mixquiahuala 📍\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.93,
-   "gasto": 4214,
+   "gasto": 4232,
    "leads": 36,
-   "cpl": 117,
-   "pct_nuevos": 66,
+   "cpl": 118,
+   "pct_nuevos": 67,
    "cpm1": 20,
    "cpm2": 30
   },
@@ -18,11 +18,11 @@ window.FATIGA_DATA = {
    "cuenta": "Queretaro",
    "adset": "NEUROPATIA",
    "veredicto": "VIGILAR",
-   "freq": 2.21,
-   "gasto": 1163,
-   "leads": 62,
-   "cpl": 19,
-   "pct_nuevos": 100,
+   "freq": 2.2,
+   "gasto": 1178,
+   "leads": 64,
+   "cpl": 18,
+   "pct_nuevos": 104,
    "cpm1": 47,
    "cpm2": 44
   }
@@ -32,9 +32,9 @@ window.FATIGA_DATA = {
    "cuenta": "Gerontologia",
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
-   "freq": 1.41,
-   "gasto": 1022,
-   "leads": 178,
+   "freq": 1.42,
+   "gasto": 1029,
+   "leads": 180,
    "cpl": 6
   },
   {
@@ -42,17 +42,17 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.67,
-   "gasto": 1224,
-   "leads": 186,
+   "gasto": 1232,
+   "leads": 187,
    "cpl": 7
   },
   {
    "cuenta": "Queretaro",
    "ad": "VID - NEURO MARY",
    "adset": "NEUROPATIA",
-   "freq": 1.6,
-   "gasto": 584,
-   "leads": 38,
+   "freq": 1.59,
+   "gasto": 594,
+   "leads": 40,
    "cpl": 15
   },
   {
@@ -60,17 +60,8 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.29,
-   "gasto": 1404,
-   "leads": 87,
-   "cpl": 16
-  },
-  {
-   "cuenta": "Queretaro",
-   "ad": "VID - HOMBRO DOLOROSO JUN",
-   "adset": "HOMBRO",
-   "freq": 1.33,
-   "gasto": 692,
-   "leads": 42,
+   "gasto": 1418,
+   "leads": 88,
    "cpl": 16
   },
   {
@@ -78,17 +69,26 @@ window.FATIGA_DATA = {
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
    "freq": 1.61,
-   "gasto": 2161,
-   "leads": 135,
+   "gasto": 2181,
+   "leads": 136,
    "cpl": 16
+  },
+  {
+   "cuenta": "Queretaro",
+   "ad": "VID - HOMBRO DOLOROSO JUN",
+   "adset": "HOMBRO",
+   "freq": 1.33,
+   "gasto": 698,
+   "leads": 42,
+   "cpl": 17
   },
   {
    "cuenta": "Cuautla",
    "ad": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
    "adset": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
-   "freq": 1.81,
-   "gasto": 3065,
-   "leads": 182,
+   "freq": 1.82,
+   "gasto": 3096,
+   "leads": 184,
    "cpl": 17
   },
   {
@@ -96,7 +96,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "adset": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "freq": 1.35,
-   "gasto": 1910,
+   "gasto": 1924,
    "leads": 102,
    "cpl": 19
   },
@@ -105,8 +105,8 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 2",
    "adset": "FUNCIONALES 10",
    "freq": 1.33,
-   "gasto": 660,
-   "leads": 31,
+   "gasto": 664,
+   "leads": 32,
    "cpl": 21
   },
   {
@@ -114,8 +114,8 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
    "freq": 1.48,
-   "gasto": 7123,
-   "leads": 327,
+   "gasto": 7197,
+   "leads": 328,
    "cpl": 22
   },
   {
@@ -123,15 +123,15 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.37,
-   "gasto": 4876,
-   "leads": 218,
+   "gasto": 4912,
+   "leads": 220,
    "cpl": 22
   },
   {
    "cuenta": "Nicolas Romero",
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
-   "freq": 1.36,
+   "freq": 1.37,
    "gasto": 2226,
    "leads": 92,
    "cpl": 24
@@ -141,7 +141,7 @@ window.FATIGA_DATA = {
    "ad": "EST - PLANTAR V1 JUL",
    "adset": "MIX",
    "freq": 1.65,
-   "gasto": 594,
+   "gasto": 595,
    "leads": 24,
    "cpl": 25
   },
@@ -150,34 +150,34 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "adset": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "freq": 1.57,
-   "gasto": 2981,
-   "leads": 117,
+   "gasto": 3007,
+   "leads": 120,
    "cpl": 25
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID - QUIRO 15 ABR - Copia",
-   "adset": "Hombro",
-   "freq": 1.45,
-   "gasto": 1184,
-   "leads": 45,
-   "cpl": 26
   },
   {
    "cuenta": "Tepeyac",
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
-   "freq": 1.56,
-   "gasto": 1177,
+   "freq": 1.55,
+   "gasto": 1189,
    "leads": 45,
    "cpl": 26
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID - QUIRO 15 ABR - Copia",
+   "adset": "Hombro",
+   "freq": 1.46,
+   "gasto": 1194,
+   "leads": 45,
+   "cpl": 27
   },
   {
    "cuenta": "Satelite",
    "ad": "VID_ HOMBRO _ SATELITE  _ 27 MAR",
    "adset": "HOMBRO - CHECK",
-   "freq": 1.3,
-   "gasto": 1149,
+   "freq": 1.31,
+   "gasto": 1154,
    "leads": 42,
    "cpl": 27
   },
@@ -185,9 +185,9 @@ window.FATIGA_DATA = {
    "cuenta": "Nicolas Romero",
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
-   "freq": 1.36,
-   "gasto": 1804,
-   "leads": 67,
+   "freq": 1.38,
+   "gasto": 1895,
+   "leads": 69,
    "cpl": 27
   },
   {
@@ -195,34 +195,34 @@ window.FATIGA_DATA = {
    "ad": "VID - CIATICA LUMBALGIA - JUN",
    "adset": "Espalda",
    "freq": 1.54,
-   "gasto": 546,
+   "gasto": 549,
    "leads": 19,
    "cpl": 29
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "Publicación: \"Si eres de Mixquiahuala Hidalgo, 📍\"",
+   "adset": "Publicación: \"Si eres de Mixquiahuala Hidalgo, 📍\"",
+   "freq": 1.39,
+   "gasto": 1548,
+   "leads": 51,
+   "cpl": 30
   },
   {
    "cuenta": "Valle Dorado",
    "ad": "VID_QUIRO ESPALDA",
    "adset": "ESPALDA",
    "freq": 1.21,
-   "gasto": 1703,
-   "leads": 57,
-   "cpl": 30
-  },
-  {
-   "cuenta": "Pachuca",
-   "ad": "VID - Estudio_Completo_Columna",
-   "adset": "ESPALDA",
-   "freq": 1.45,
-   "gasto": 1675,
-   "leads": 55,
+   "gasto": 1716,
+   "leads": 58,
    "cpl": 30
   },
   {
    "cuenta": "Pachuca",
    "ad": "VID - ESPALDA GABO V1 JUN",
    "adset": "ESPALDA",
-   "freq": 1.2,
-   "gasto": 683,
+   "freq": 1.21,
+   "gasto": 690,
    "leads": 23,
    "cpl": 30
   },
@@ -231,26 +231,26 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.44,
-   "gasto": 6167,
-   "leads": 198,
+   "gasto": 6208,
+   "leads": 200,
+   "cpl": 31
+  },
+  {
+   "cuenta": "Pachuca",
+   "ad": "VID - Estudio_Completo_Columna",
+   "adset": "ESPALDA",
+   "freq": 1.45,
+   "gasto": 1681,
+   "leads": 55,
    "cpl": 31
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID-NEURO-6-MAY",
    "adset": "NEUROPATIA",
-   "freq": 1.75,
-   "gasto": 1966,
+   "freq": 1.76,
+   "gasto": 1977,
    "leads": 61,
-   "cpl": 32
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"Si eres de Mixquiahuala Hidalgo, 📍\"",
-   "adset": "Publicación: \"Si eres de Mixquiahuala Hidalgo, 📍\"",
-   "freq": 1.39,
-   "gasto": 1538,
-   "leads": 48,
    "cpl": 32
   }
  ],
