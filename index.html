@@ -12,12 +12,12 @@
 <title>Dashboard Meta Ads | Equilibrio Total</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- DATA_BUNDLE_START -->
-<script src="data_meta_2026-05.js?v=1788966306"></script>
-<script src="data_meta_2026-06.js?v=1788966306"></script>
-<script src="data_meta_2026-07.js?v=1788966306"></script>
-<script src="data_meta_2026-08.js?v=1788966306"></script>
-<script src="data_meta_2026-09.js?v=1788966306"></script>
-<script src="data_months.js?v=1788966306"></script>
+<script src="data_meta_2026-05.js?v=1788966941"></script>
+<script src="data_meta_2026-06.js?v=1788966941"></script>
+<script src="data_meta_2026-07.js?v=1788966941"></script>
+<script src="data_meta_2026-08.js?v=1788966941"></script>
+<script src="data_meta_2026-09.js?v=1788966941"></script>
+<script src="data_months.js?v=1788966941"></script>
 <script>
 (function(){
   var d=window.MESES_DISPONIBLES||[];
@@ -1038,6 +1038,11 @@ body:not(.unlocked) #login{display:flex}
       <div class="chart-title" style="font-size:14px;font-weight:700;color:var(--gold);margin-bottom:16px">🌿 Paquete Longevidad</div>
       <div id="geroLongevidadCard"></div>
     </div>
+    <!-- Gym Autonomía -->
+    <div class="chart-card" style="border-top:3px solid var(--violet)">
+      <div class="chart-title" style="font-size:14px;font-weight:700;color:var(--violet);margin-bottom:16px">🏋️ Gym Autonomía</div>
+      <div id="geroGymCard"></div>
+    </div>
     <!-- Otros -->
     <div class="chart-card" style="border-top:3px solid var(--teal)">
       <div class="chart-title" style="font-size:14px;font-weight:700;color:var(--teal);margin-bottom:16px">📋 Otros Gerontología</div>
@@ -1341,7 +1346,7 @@ function renderKPIs() {
   // sin abrir el tab de Gerontología es justo el punto de este bloque.
   var geroEl = document.getElementById('geroCpaDetalle');
   if (geroEl) {
-    var ORDEN_GERO = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Otros Gerontología'];
+    var ORDEN_GERO = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Gym Autonomía', 'Otros Gerontología'];
     var geroData = DATA.gerontologia || {};
     var geroCards = ORDEN_GERO.filter(function(c){ return geroData[c]; }).map(function(c) {
       var v = geroData[c];
@@ -3289,7 +3294,7 @@ function renderGero() {
   // y leer_cc_gerontologia) — antes solo se mostraban las primeras 2 y las
   // otras 2 quedaban invisibles en esta pestaña aunque ya se contaban en el
   // gasto total.
-  var orden = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Otros Gerontología'];
+  var orden = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Gym Autonomía', 'Otros Gerontología'];
 
   // KPIs globales
   var tLeads=0, tGasto=0, tAsist=0, tAgend=0;
@@ -3302,7 +3307,7 @@ function renderGero() {
   var cpaT = tAsist > 0 ? tGasto/tAsist : 0;
 
   document.getElementById('kpiGero').innerHTML = [
-    {icon:'📥', val:fmtN(tLeads),          label:'Total Leads Gero',   sub:'Consulta + Baile + Longevidad + Otros', cls:'c1'},
+    {icon:'📥', val:fmtN(tLeads),          label:'Total Leads Gero',   sub:'Consulta + Baile + Longevidad + Gym + Otros', cls:'c1'},
     {icon:'📅', val:fmtN(tAgend),           label:'Agendadas CC',       sub:'Citas agendadas',          cls:'c3'},
     {icon:'✅', val:fmtN(tAsist),           label:'Asistidas',          sub:'Pacientes que asistieron', cls:'c5'},
     {icon:'📊', val:fmt(cplT),              label:'CPL Promedio',        sub:'Costo por lead',           cls:'c2'},
@@ -3338,6 +3343,7 @@ function renderGero() {
   miniCard('Consulta Gerontologia', 'geroConsultaCard',    'cyan');
   miniCard('Taller Baile',          'geroTallerCard',      'purple');
   miniCard('Paquete Longevidad',    'geroLongevidadCard',  'gold');
+  miniCard('Gym Autonomía',         'geroGymCard',         'violet');
   miniCard('Otros Gerontología',    'geroOtrosCard',       'teal');
 
   // Tabla resumen
@@ -3366,7 +3372,7 @@ function renderGero() {
 
   // Charts
   var nombresG = orden.filter(function(c){ return g[c]; });
-  var coloresG = ['rgba(77,191,214,0.75)','rgba(124,143,212,0.75)','rgba(240,157,15,0.75)','rgba(64,120,135,0.75)'];
+  var coloresG = ['rgba(77,191,214,0.75)','rgba(124,143,212,0.75)','rgba(240,157,15,0.75)','rgba(49,96,109,0.75)','rgba(64,120,135,0.75)'];
   mkChart('chartLeadsGero','bar', nombresG, nombresG.map(function(c){return (g[c]||{}).leads_mes||0;}), coloresG, 'Leads');
   mkChart('chartCplGero',  'bar', nombresG, nombresG.map(function(c){return (g[c]||{}).cpl||0;}),      coloresG, 'CPL $');
 }
