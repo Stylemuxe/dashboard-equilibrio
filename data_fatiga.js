@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "12/09/2026 09:06",
+ "actualizado": "12/09/2026 09:14",
  "periodo": "2026-09-01 a 2026-09-12",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 2.16,
-   "gasto": 13304,
+   "gasto": 13310,
    "leads": 317,
    "cpl": 42,
    "pct_nuevos": 34,
@@ -18,8 +18,8 @@ window.FATIGA_DATA = {
    "cuenta": "Xochimilco",
    "adset": "Hombro - Check",
    "veredicto": "PUBLICO CANSANDOSE",
-   "freq": 1.88,
-   "gasto": 3163,
+   "freq": 1.87,
+   "gasto": 3165,
    "leads": 47,
    "cpl": 67,
    "pct_nuevos": 29,
@@ -44,16 +44,16 @@ window.FATIGA_DATA = {
    "cuenta": "Gerontologia",
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "BALBUENA",
-   "freq": 1.53,
-   "gasto": 828,
-   "leads": 197,
+   "freq": 1.54,
+   "gasto": 831,
+   "leads": 198,
    "cpl": 4
   },
   {
    "cuenta": "Gerontologia",
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
-   "freq": 1.5,
+   "freq": 1.51,
    "gasto": 1386,
    "leads": 249,
    "cpl": 6
@@ -63,7 +63,7 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.79,
-   "gasto": 1568,
+   "gasto": 1569,
    "leads": 243,
    "cpl": 6
   },
@@ -99,7 +99,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
    "freq": 1.69,
-   "gasto": 3329,
+   "gasto": 3330,
    "leads": 200,
    "cpl": 17
   },
@@ -117,7 +117,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "adset": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "freq": 1.49,
-   "gasto": 2677,
+   "gasto": 2679,
    "leads": 127,
    "cpl": 21
   },
@@ -126,7 +126,7 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
    "freq": 1.54,
-   "gasto": 9356,
+   "gasto": 9362,
    "leads": 422,
    "cpl": 22
   },
@@ -135,7 +135,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"En Equilibrio Total La Moderna (Iztacalco),...\"",
    "adset": "Publicación: \"En Equilibrio Total La Moderna (Iztacalco),...\"",
    "freq": 1.29,
-   "gasto": 770,
+   "gasto": 779,
    "leads": 35,
    "cpl": 22
   },
@@ -144,7 +144,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.52,
-   "gasto": 3344,
+   "gasto": 3347,
    "leads": 149,
    "cpl": 22
   },
@@ -153,7 +153,7 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.5,
-   "gasto": 6807,
+   "gasto": 6810,
    "leads": 293,
    "cpl": 23
   },
@@ -162,7 +162,7 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 2",
    "adset": "FUNCIONALES 10",
    "freq": 1.39,
-   "gasto": 1000,
+   "gasto": 1002,
    "leads": 42,
    "cpl": 24
   },
@@ -180,7 +180,7 @@ window.FATIGA_DATA = {
    "ad": "VID_CONSULTA_GE _ REEDITAR CON EL NUEVO LOGO",
    "adset": "Balbuena",
    "freq": 1.33,
-   "gasto": 752,
+   "gasto": 754,
    "leads": 28,
    "cpl": 27
   },
@@ -207,8 +207,8 @@ window.FATIGA_DATA = {
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
    "freq": 1.64,
-   "gasto": 1868,
-   "leads": 69,
+   "gasto": 1869,
+   "leads": 70,
    "cpl": 27
   },
   {
@@ -216,7 +216,7 @@ window.FATIGA_DATA = {
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO",
    "freq": 1.27,
-   "gasto": 1119,
+   "gasto": 1121,
    "leads": 39,
    "cpl": 29
   },
@@ -225,7 +225,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.57,
-   "gasto": 8632,
+   "gasto": 8637,
    "leads": 287,
    "cpl": 30
   },
@@ -234,7 +234,7 @@ window.FATIGA_DATA = {
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
    "freq": 1.61,
-   "gasto": 3072,
+   "gasto": 3075,
    "leads": 103,
    "cpl": 30
   },
@@ -243,7 +243,7 @@ window.FATIGA_DATA = {
    "ad": "VID - QUIRO 15 ABR - Copia",
    "adset": "Hombro",
    "freq": 1.65,
-   "gasto": 1904,
+   "gasto": 1906,
    "leads": 62,
    "cpl": 31
   },
@@ -251,8 +251,8 @@ window.FATIGA_DATA = {
    "cuenta": "Pachuca",
    "ad": "VID - Estudio_Completo_Columna",
    "adset": "ESPALDA",
-   "freq": 1.55,
-   "gasto": 2251,
+   "freq": 1.56,
+   "gasto": 2252,
    "leads": 73,
    "cpl": 31
   },
