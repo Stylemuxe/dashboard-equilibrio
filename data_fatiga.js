@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "12/09/2026 09:45",
+ "actualizado": "12/09/2026 10:04",
  "periodo": "2026-09-01 a 2026-09-12",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 2.16,
-   "gasto": 13338,
+   "gasto": 13352,
    "leads": 317,
    "cpl": 42,
    "pct_nuevos": 34,
@@ -19,10 +19,10 @@ window.FATIGA_DATA = {
    "adset": "Hombro - Check",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.88,
-   "gasto": 3179,
+   "gasto": 3183,
    "leads": 47,
    "cpl": 68,
-   "pct_nuevos": 29,
+   "pct_nuevos": 30,
    "cpm1": 26,
    "cpm2": 34
   },
@@ -45,8 +45,8 @@ window.FATIGA_DATA = {
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "BALBUENA",
    "freq": 1.54,
-   "gasto": 839,
-   "leads": 200,
+   "gasto": 843,
+   "leads": 202,
    "cpl": 4
   },
   {
@@ -54,7 +54,7 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.51,
-   "gasto": 1389,
+   "gasto": 1392,
    "leads": 249,
    "cpl": 6
   },
@@ -63,7 +63,7 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.79,
-   "gasto": 1571,
+   "gasto": 1572,
    "leads": 243,
    "cpl": 6
   },
@@ -99,7 +99,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
    "freq": 1.69,
-   "gasto": 3335,
+   "gasto": 3337,
    "leads": 201,
    "cpl": 17
   },
@@ -113,20 +113,11 @@ window.FATIGA_DATA = {
    "cpl": 19
   },
   {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"En Equilibrio Total La Moderna (Iztacalco),...\"",
-   "adset": "Publicación: \"En Equilibrio Total La Moderna (Iztacalco),...\"",
-   "freq": 1.3,
-   "gasto": 808,
-   "leads": 38,
-   "cpl": 21
-  },
-  {
    "cuenta": "Cuautla",
    "ad": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "adset": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "freq": 1.49,
-   "gasto": 2686,
+   "gasto": 2691,
    "leads": 127,
    "cpl": 21
   },
@@ -135,8 +126,17 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
    "freq": 1.54,
-   "gasto": 9382,
+   "gasto": 9388,
    "leads": 423,
+   "cpl": 22
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "Publicación: \"En Equilibrio Total La Moderna (Iztacalco),...\"",
+   "adset": "Publicación: \"En Equilibrio Total La Moderna (Iztacalco),...\"",
+   "freq": 1.29,
+   "gasto": 829,
+   "leads": 38,
    "cpl": 22
   },
   {
@@ -144,7 +144,7 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.5,
-   "gasto": 6835,
+   "gasto": 6843,
    "leads": 294,
    "cpl": 23
   },
@@ -153,7 +153,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.52,
-   "gasto": 3357,
+   "gasto": 3364,
    "leads": 149,
    "cpl": 23
   },
@@ -161,36 +161,18 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "FUNCIONALES 2",
    "adset": "FUNCIONALES 10",
-   "freq": 1.38,
-   "gasto": 1004,
+   "freq": 1.39,
+   "gasto": 1007,
    "leads": 42,
    "cpl": 24
-  },
-  {
-   "cuenta": "Tepeyac",
-   "ad": "VID - ESTUDIO DE COLUMNA JUL",
-   "adset": "Espalda",
-   "freq": 1.64,
-   "gasto": 1881,
-   "leads": 71,
-   "cpl": 26
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "EST - PLANTAR V1 JUL",
    "adset": "MIX",
    "freq": 1.79,
-   "gasto": 795,
+   "gasto": 797,
    "leads": 29,
-   "cpl": 27
-  },
-  {
-   "cuenta": "Gerontologia",
-   "ad": "VID_CONSULTA_GE _ REEDITAR CON EL NUEVO LOGO",
-   "adset": "Balbuena",
-   "freq": 1.33,
-   "gasto": 767,
-   "leads": 28,
    "cpl": 27
   },
   {
@@ -198,7 +180,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "adset": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "freq": 1.66,
-   "gasto": 5347,
+   "gasto": 5348,
    "leads": 197,
    "cpl": 27
   },
@@ -207,16 +189,34 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO ESPALDA",
    "adset": "ESPALDA",
    "freq": 1.28,
-   "gasto": 2396,
+   "gasto": 2400,
    "leads": 90,
    "cpl": 27
+  },
+  {
+   "cuenta": "Tepeyac",
+   "ad": "VID - ESTUDIO DE COLUMNA JUL",
+   "adset": "Espalda",
+   "freq": 1.64,
+   "gasto": 1891,
+   "leads": 71,
+   "cpl": 27
+  },
+  {
+   "cuenta": "Gerontologia",
+   "ad": "VID_CONSULTA_GE _ REEDITAR CON EL NUEVO LOGO",
+   "adset": "Balbuena",
+   "freq": 1.33,
+   "gasto": 773,
+   "leads": 28,
+   "cpl": 28
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID - IRVIN EXITOSO",
    "adset": "HOMBRO",
    "freq": 1.27,
-   "gasto": 1129,
+   "gasto": 1133,
    "leads": 39,
    "cpl": 29
   },
@@ -225,7 +225,7 @@ window.FATIGA_DATA = {
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
    "freq": 1.61,
-   "gasto": 3084,
+   "gasto": 3088,
    "leads": 105,
    "cpl": 29
   },
@@ -234,7 +234,7 @@ window.FATIGA_DATA = {
    "ad": "VID - QUIRO 15 ABR - Copia",
    "adset": "Hombro",
    "freq": 1.65,
-   "gasto": 1912,
+   "gasto": 1917,
    "leads": 63,
    "cpl": 30
   },
@@ -243,7 +243,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.57,
-   "gasto": 8653,
+   "gasto": 8662,
    "leads": 287,
    "cpl": 30
   },
@@ -252,7 +252,7 @@ window.FATIGA_DATA = {
    "ad": "VID - Estudio_Completo_Columna",
    "adset": "ESPALDA",
    "freq": 1.55,
-   "gasto": 2257,
+   "gasto": 2261,
    "leads": 73,
    "cpl": 31
   },
@@ -261,7 +261,7 @@ window.FATIGA_DATA = {
    "ad": "VID - ESPALDA GABO V1 JUN",
    "adset": "ESPALDA",
    "freq": 1.3,
-   "gasto": 1042,
+   "gasto": 1043,
    "leads": 34,
    "cpl": 31
   }
