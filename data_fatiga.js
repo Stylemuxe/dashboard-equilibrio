@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "14/09/2026 20:57",
+ "actualizado": "14/09/2026 21:03",
  "periodo": "2026-09-01 a 2026-09-14",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Visita nuestra clínica en Plaza Neza. 📍\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.96,
-   "gasto": 12266,
+   "gasto": 12267,
    "leads": 204,
    "cpl": 60,
    "pct_nuevos": 18,
@@ -31,7 +31,7 @@ window.FATIGA_DATA = {
    "adset": "RODILLA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.7,
-   "gasto": 3935,
+   "gasto": 3936,
    "leads": 93,
    "cpl": 42,
    "pct_nuevos": 34,
@@ -43,7 +43,7 @@ window.FATIGA_DATA = {
    "adset": "VIDEO AJUSCO",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.44,
-   "gasto": 6953,
+   "gasto": 6954,
    "leads": 117,
    "cpl": 59,
    "pct_nuevos": 34,
@@ -79,7 +79,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¡Atención, Nicolás Romero! ¿Buscas terapia de...\"",
    "veredicto": "VIGILAR",
    "freq": 2.3,
-   "gasto": 10006,
+   "gasto": 10008,
    "leads": 168,
    "cpl": 60,
    "pct_nuevos": 75,
@@ -91,8 +91,8 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
    "veredicto": "VIGILAR",
    "freq": 2.29,
-   "gasto": 16465,
-   "leads": 376,
+   "gasto": 16470,
+   "leads": 377,
    "cpl": 44,
    "pct_nuevos": 36,
    "cpm1": 19,
@@ -103,7 +103,7 @@ window.FATIGA_DATA = {
    "adset": "NEUROPATÍA",
    "veredicto": "VIGILAR",
    "freq": 2.24,
-   "gasto": 765,
+   "gasto": 766,
    "leads": 18,
    "cpl": 43,
    "pct_nuevos": 37,
@@ -115,7 +115,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
    "veredicto": "VIGILAR",
    "freq": 2.2,
-   "gasto": 6670,
+   "gasto": 6673,
    "leads": 283,
    "cpl": 24,
    "pct_nuevos": 76,
@@ -128,8 +128,8 @@ window.FATIGA_DATA = {
    "cuenta": "Gerontologia",
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "BALBUENA",
-   "freq": 1.58,
-   "gasto": 1728,
+   "freq": 1.57,
+   "gasto": 1730,
    "leads": 325,
    "cpl": 5
   },
@@ -138,7 +138,7 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.57,
-   "gasto": 1887,
+   "gasto": 1889,
    "leads": 318,
    "cpl": 6
   },
@@ -147,7 +147,7 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.85,
-   "gasto": 1739,
+   "gasto": 1740,
    "leads": 258,
    "cpl": 7
   },
@@ -156,7 +156,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.36,
-   "gasto": 2691,
+   "gasto": 2692,
    "leads": 152,
    "cpl": 18
   },
@@ -174,7 +174,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
    "freq": 1.73,
-   "gasto": 4390,
+   "gasto": 4396,
    "leads": 244,
    "cpl": 18
   },
@@ -192,7 +192,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO MARY",
    "adset": "NEUROPATIA",
    "freq": 1.76,
-   "gasto": 1582,
+   "gasto": 1583,
    "leads": 83,
    "cpl": 19
   },
@@ -201,7 +201,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "adset": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "freq": 1.52,
-   "gasto": 3237,
+   "gasto": 3240,
    "leads": 149,
    "cpl": 22
   },
@@ -210,7 +210,7 @@ window.FATIGA_DATA = {
    "ad": "VID - RODILLA V2 _ 6 JUN",
    "adset": "RODILLA",
    "freq": 1.93,
-   "gasto": 843,
+   "gasto": 844,
    "leads": 37,
    "cpl": 23
   },
@@ -219,7 +219,7 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
    "freq": 1.54,
-   "gasto": 11211,
+   "gasto": 11215,
    "leads": 483,
    "cpl": 23
   },
@@ -237,7 +237,7 @@ window.FATIGA_DATA = {
    "ad": "VID _  CIATICA  _ SEP",
    "adset": "ESPALDA",
    "freq": 1.31,
-   "gasto": 1766,
+   "gasto": 1769,
    "leads": 74,
    "cpl": 24
   },
@@ -245,8 +245,8 @@ window.FATIGA_DATA = {
    "cuenta": "Pachuca",
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
-   "freq": 1.57,
-   "gasto": 8296,
+   "freq": 1.56,
+   "gasto": 8298,
    "leads": 344,
    "cpl": 24
   },
@@ -255,7 +255,7 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 2",
    "adset": "FUNCIONALES 10",
    "freq": 1.37,
-   "gasto": 1132,
+   "gasto": 1133,
    "leads": 46,
    "cpl": 25
   },
@@ -264,7 +264,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🏥 Conoce Equilibrio Total San Juan del Río, tu...\"",
    "adset": "Publicación: \"🏥 Conoce Equilibrio Total San Juan del Río, tu...\"",
    "freq": 1.61,
-   "gasto": 1255,
+   "gasto": 1256,
    "leads": 49,
    "cpl": 26
   },
@@ -291,7 +291,7 @@ window.FATIGA_DATA = {
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
    "freq": 1.65,
-   "gasto": 2424,
+   "gasto": 2425,
    "leads": 88,
    "cpl": 28
   },
@@ -309,7 +309,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"En Equilibrio Total La Moderna (Iztacalco),...\"",
    "adset": "Publicación: \"En Equilibrio Total La Moderna (Iztacalco),...\"",
    "freq": 1.37,
-   "gasto": 2266,
+   "gasto": 2268,
    "leads": 79,
    "cpl": 29
   },
@@ -318,7 +318,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "adset": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "freq": 1.75,
-   "gasto": 7405,
+   "gasto": 7415,
    "leads": 256,
    "cpl": 29
   },
@@ -327,7 +327,7 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO ESPALDA",
    "adset": "ESPALDA",
    "freq": 1.32,
-   "gasto": 2844,
+   "gasto": 2848,
    "leads": 99,
    "cpl": 29
   },
@@ -336,8 +336,8 @@ window.FATIGA_DATA = {
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
    "freq": 1.72,
-   "gasto": 3832,
-   "leads": 130,
+   "gasto": 3833,
+   "leads": 131,
    "cpl": 29
   },
   {
@@ -345,9 +345,9 @@ window.FATIGA_DATA = {
    "ad": "VID - QUIRO 15 ABR - Copia",
    "adset": "Hombro",
    "freq": 1.78,
-   "gasto": 2448,
-   "leads": 80,
-   "cpl": 31
+   "gasto": 2449,
+   "leads": 81,
+   "cpl": 30
   }
  ],
  "sin_leads": []
