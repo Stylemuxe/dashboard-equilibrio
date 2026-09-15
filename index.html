@@ -360,6 +360,9 @@ tr.row-detail td{background:var(--card2);color:var(--text2);font-size:11.5px;whi
 .pace-breakdown-legend b{color:var(--text);font-weight:700}
 .pace-breakdown-legend .pace-legend-dot{width:9px;height:9px;border-radius:2px;flex-shrink:0;
   display:inline-block;margin-right:6px}
+.pace-breakdown-legend input[type=checkbox]{accent-color:var(--teal);cursor:pointer}
+.pace-breakdown-total{margin-top:12px;font-size:13px;color:var(--text2)}
+.pace-breakdown-total b{color:var(--cyan);font-size:15px}
 
 /* ── Alerts ──────────────────────────────────────────────────────────────── */
 .sec-header{display:flex;align-items:center;justify-content:space-between;
@@ -1486,28 +1489,36 @@ function renderPresupuestoPace() {
   // ya se excluyó de P.gasto_mtd en generar_auditoria.py (no cuenta para el
   // tope) pero antes se colaba sin etiqueta en este residual de "Franquicias";
   // ahora no aparece en absoluto (no está en P.gasto_mtd ni en la resta).
+  // Cada componente es seleccionable con checkbox — Irving pidió poder armar
+  // su propia suma (ej. "solo Sedes + Reclutamiento") en vez de solo ver el
+  // desglose fijo del tope (detectado 2026-09-14).
   var gastoSedes = (window.__resumenTotales && window.__resumenTotales.gastoS) || 0;
   var gastoSinAsignar = Object.entries(DATA.complementos || {})
     .filter(function(e){ return e[0] !== 'Promociones'; })
     .reduce((a, e) => a + (e[1].gasto_mes || 0), 0);
   var gastoFranqEnLauraPromo = Math.max(0, P.gasto_mtd - gastoSedes - gastoSinAsignar);
-  var desgloseItems = [
-    { lbl: 'Sedes', val: gastoSedes, color: 'var(--teal)' },
-    { lbl: 'Franquicias (pauta en Laura/Promo)', val: gastoFranqEnLauraPromo, color: 'var(--gold)' },
-    { lbl: 'Sin asignar a clínica', val: gastoSinAsignar, color: 'var(--text3)' },
+  var gastoGero = Object.values(DATA.gerontologia || {}).reduce((a, v) => a + (v.gasto_mes || 0), 0);
+  var gastoReclutamiento = P.gasto_reclutamiento || 0;
+  window.__desgloseGasto = [
+    { id: 'sedes', lbl: 'Sedes', val: gastoSedes, color: 'var(--teal)', defecto: true },
+    { id: 'franq', lbl: 'Franquicias (pauta en Laura/Promo)', val: gastoFranqEnLauraPromo, color: 'var(--gold)', defecto: true },
+    { id: 'sinasignar', lbl: 'Sin asignar a clínica', val: gastoSinAsignar, color: 'var(--text3)', defecto: true },
+    { id: 'gero', lbl: 'Gerontología', val: gastoGero, color: 'var(--violet)', defecto: false },
+    { id: 'reclutamiento', lbl: 'Reclutamiento (personal)', val: gastoReclutamiento, color: 'var(--pink)', defecto: false },
   ].filter(it => it.val > 0.5);
-  var gastoReclu = P.gasto_reclutamiento || 0;
+  var totalBarra = window.__desgloseGasto.reduce((a, it) => a + it.val, 0);
   var desgloseHtml = '<div class="pace-breakdown">' +
-    '<div class="pace-breakdown-title">¿De qué se compone el gasto acumulado?</div>' +
-    '<div class="pace-breakdown-bar">' + desgloseItems.map(it =>
-      '<div style="width:' + (P.gasto_mtd > 0 ? it.val / P.gasto_mtd * 100 : 0) + '%;background:' + it.color + '" title="' + it.lbl + ': ' + fmt(it.val) + '"></div>'
+    '<div class="pace-breakdown-title">¿De qué se compone el gasto? <span style="font-weight:400;color:var(--text3)">— marca lo que quieras sumar</span></div>' +
+    '<div class="pace-breakdown-bar">' + window.__desgloseGasto.map(it =>
+      '<div style="width:' + (totalBarra > 0 ? it.val / totalBarra * 100 : 0) + '%;background:' + it.color + '" title="' + it.lbl + ': ' + fmt(it.val) + '"></div>'
     ).join('') + '</div>' +
-    '<div class="pace-breakdown-legend">' + desgloseItems.map(it =>
-      '<span><span class="pace-legend-dot" style="background:' + it.color + '"></span>' + it.lbl + ' — <b>' + fmt(it.val) + '</b></span>'
+    '<div class="pace-breakdown-legend">' + window.__desgloseGasto.map(it =>
+      '<label style="cursor:pointer;display:inline-flex;align-items:center;gap:5px">' +
+        '<input type="checkbox" data-gasto-id="' + it.id + '" ' + (it.defecto ? 'checked' : '') + ' onchange="recalcGastoSeleccionado()">' +
+        '<span class="pace-legend-dot" style="background:' + it.color + '"></span>' + it.lbl + ' — <b>' + fmt(it.val) + '</b>' +
+      '</label>'
     ).join('') + '</div>' +
-    (gastoReclu > 0.5
-      ? '<div style="margin-top:8px;font-size:10.5px;color:var(--text3)">↳ Aparte, no cuenta para este tope: <b>Reclutamiento</b> (gasto de personal, cuenta Promociones) — ' + fmt(gastoReclu) + '</div>'
-      : '') +
+    '<div class="pace-breakdown-total">Total seleccionado: <b id="gastoSeleccionadoVal">' + fmt(0) + '</b></div>' +
   '</div>';
 
   el.innerHTML =
@@ -1538,6 +1549,21 @@ function renderPresupuestoPace() {
       '</div>' +
       desgloseHtml +
     '</div>';
+  recalcGastoSeleccionado();
+}
+
+// Suma en vivo de los componentes de gasto marcados con checkbox en el
+// desglose de "Ritmo de presupuesto" — ver nota en renderPresupuestoPace.
+function recalcGastoSeleccionado() {
+  var items = window.__desgloseGasto || [];
+  var total = 0;
+  document.querySelectorAll('[data-gasto-id]').forEach(function (chk) {
+    if (!chk.checked) return;
+    var it = items.find(function (x) { return x.id === chk.dataset.gastoId; });
+    if (it) total += it.val;
+  });
+  var el = document.getElementById('gastoSeleccionadoVal');
+  if (el) el.textContent = fmt(total);
 }
 
 function renderGastoDesglose(elId, data, color) {
