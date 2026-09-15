@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "15/09/2026 08:29",
+ "actualizado": "15/09/2026 08:38",
  "periodo": "2026-09-01 a 2026-09-15",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Visita nuestra clínica en Plaza Neza. 📍\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.96,
-   "gasto": 12374,
+   "gasto": 12377,
    "leads": 205,
    "cpl": 60,
    "pct_nuevos": 19,
@@ -43,8 +43,8 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
    "veredicto": "VIGILAR",
    "freq": 2.32,
-   "gasto": 16969,
-   "leads": 385,
+   "gasto": 16976,
+   "leads": 386,
    "cpl": 44,
    "pct_nuevos": 37,
    "cpm1": 19,
@@ -55,7 +55,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¡Atención, Nicolás Romero! ¿Buscas terapia de...\"",
    "veredicto": "VIGILAR",
    "freq": 2.31,
-   "gasto": 10266,
+   "gasto": 10273,
    "leads": 170,
    "cpl": 60,
    "pct_nuevos": 78,
@@ -79,7 +79,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
    "veredicto": "VIGILAR",
    "freq": 2.22,
-   "gasto": 6863,
+   "gasto": 6869,
    "leads": 286,
    "cpl": 24,
    "pct_nuevos": 78,
@@ -93,7 +93,7 @@ window.FATIGA_DATA = {
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "BALBUENA",
    "freq": 1.6,
-   "gasto": 1850,
+   "gasto": 1853,
    "leads": 347,
    "cpl": 5
   },
@@ -102,7 +102,7 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.56,
-   "gasto": 1977,
+   "gasto": 1978,
    "leads": 334,
    "cpl": 6
   },
@@ -111,7 +111,7 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.85,
-   "gasto": 1772,
+   "gasto": 1773,
    "leads": 265,
    "cpl": 7
   },
@@ -138,7 +138,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
    "freq": 1.74,
-   "gasto": 4522,
+   "gasto": 4527,
    "leads": 248,
    "cpl": 18
   },
@@ -155,8 +155,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "EST _ CIATICA V2 _ 14 MAY",
    "adset": "ESPALDA - CHECK",
-   "freq": 1.37,
-   "gasto": 630,
+   "freq": 1.38,
+   "gasto": 631,
    "leads": 32,
    "cpl": 20
   },
@@ -164,9 +164,9 @@ window.FATIGA_DATA = {
    "cuenta": "Cuautla",
    "ad": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "adset": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
-   "freq": 1.53,
-   "gasto": 3316,
-   "leads": 149,
+   "freq": 1.52,
+   "gasto": 3318,
+   "leads": 150,
    "cpl": 22
   },
   {
@@ -174,7 +174,7 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
    "freq": 1.55,
-   "gasto": 11456,
+   "gasto": 11459,
    "leads": 497,
    "cpl": 23
   },
@@ -183,7 +183,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.61,
-   "gasto": 4285,
+   "gasto": 4288,
    "leads": 187,
    "cpl": 23
   },
@@ -192,7 +192,7 @@ window.FATIGA_DATA = {
    "ad": "VID - RODILLA V2 _ 6 JUN",
    "adset": "RODILLA",
    "freq": 1.95,
-   "gasto": 894,
+   "gasto": 895,
    "leads": 38,
    "cpl": 24
   },
@@ -201,7 +201,7 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 2",
    "adset": "FUNCIONALES 10",
    "freq": 1.37,
-   "gasto": 1144,
+   "gasto": 1145,
    "leads": 48,
    "cpl": 24
   },
@@ -210,16 +210,16 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.57,
-   "gasto": 8518,
-   "leads": 355,
+   "gasto": 8522,
+   "leads": 356,
    "cpl": 24
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID _  CIATICA  _ SEP",
    "adset": "ESPALDA",
-   "freq": 1.29,
-   "gasto": 1983,
+   "freq": 1.3,
+   "gasto": 1987,
    "leads": 79,
    "cpl": 25
   },
@@ -237,7 +237,7 @@ window.FATIGA_DATA = {
    "ad": "VID - RODILLA EXITOSO",
    "adset": "RODILLA",
    "freq": 1.57,
-   "gasto": 653,
+   "gasto": 654,
    "leads": 23,
    "cpl": 28
   },
@@ -245,8 +245,8 @@ window.FATIGA_DATA = {
    "cuenta": "San Juan del Rio",
    "ad": "Publicación: \"🏥 Conoce Equilibrio Total San Juan del Río, tu...\"",
    "adset": "Publicación: \"🏥 Conoce Equilibrio Total San Juan del Río, tu...\"",
-   "freq": 1.63,
-   "gasto": 1358,
+   "freq": 1.64,
+   "gasto": 1360,
    "leads": 49,
    "cpl": 28
   },
@@ -255,7 +255,7 @@ window.FATIGA_DATA = {
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
    "freq": 1.65,
-   "gasto": 2489,
+   "gasto": 2490,
    "leads": 89,
    "cpl": 28
   },
@@ -273,7 +273,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "adset": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "freq": 1.77,
-   "gasto": 7685,
+   "gasto": 7688,
    "leads": 261,
    "cpl": 29
   },
@@ -291,7 +291,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"En Equilibrio Total La Moderna (Iztacalco),...\"",
    "adset": "Publicación: \"En Equilibrio Total La Moderna (Iztacalco),...\"",
    "freq": 1.37,
-   "gasto": 2449,
+   "gasto": 2452,
    "leads": 83,
    "cpl": 30
   },
@@ -300,8 +300,8 @@ window.FATIGA_DATA = {
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
    "freq": 1.72,
-   "gasto": 3940,
-   "leads": 132,
+   "gasto": 3943,
+   "leads": 133,
    "cpl": 30
   },
   {
@@ -309,7 +309,7 @@ window.FATIGA_DATA = {
    "ad": "VID - QUIRO 15 ABR - Copia",
    "adset": "Hombro",
    "freq": 1.8,
-   "gasto": 2508,
+   "gasto": 2510,
    "leads": 82,
    "cpl": 31
   }
