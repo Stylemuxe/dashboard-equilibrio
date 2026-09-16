@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "16/09/2026 09:55",
+ "actualizado": "16/09/2026 10:04",
  "periodo": "2026-09-01 a 2026-09-16",
  "diagnostico": [
   {
@@ -7,8 +7,8 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Visita nuestra clínica en Plaza Neza. 📍\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.98,
-   "gasto": 12797,
-   "leads": 209,
+   "gasto": 12800,
+   "leads": 210,
    "cpl": 61,
    "pct_nuevos": 8,
    "cpm1": 37,
@@ -19,7 +19,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¿Vives en la zona de Tláhuac y el dolor ya forma...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.75,
-   "gasto": 5766,
+   "gasto": 5771,
    "leads": 61,
    "cpl": 95,
    "pct_nuevos": 15,
@@ -31,7 +31,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla?\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.68,
-   "gasto": 3812,
+   "gasto": 3814,
    "leads": 59,
    "cpl": 65,
    "pct_nuevos": 31,
@@ -55,7 +55,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
    "veredicto": "VIGILAR",
    "freq": 2.46,
-   "gasto": 18683,
+   "gasto": 18689,
    "leads": 408,
    "cpl": 46,
    "pct_nuevos": 33,
@@ -67,7 +67,7 @@ window.FATIGA_DATA = {
    "adset": "NEUROPATIA",
    "veredicto": "VIGILAR",
    "freq": 2.44,
-   "gasto": 2842,
+   "gasto": 2844,
    "leads": 143,
    "cpl": 20,
    "pct_nuevos": 90,
@@ -78,8 +78,8 @@ window.FATIGA_DATA = {
    "cuenta": "Nicolas Romero",
    "adset": "Publicación: \"¡Atención, Nicolás Romero! ¿Buscas terapia de...\"",
    "veredicto": "VIGILAR",
-   "freq": 2.41,
-   "gasto": 11314,
+   "freq": 2.42,
+   "gasto": 11322,
    "leads": 180,
    "cpl": 63,
    "pct_nuevos": 57,
@@ -91,7 +91,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
    "veredicto": "VIGILAR",
    "freq": 2.33,
-   "gasto": 7809,
+   "gasto": 7814,
    "leads": 312,
    "cpl": 25,
    "pct_nuevos": 56,
@@ -114,7 +114,7 @@ window.FATIGA_DATA = {
    "cuenta": "San Juan del Rio",
    "adset": "Paralisis -  Check",
    "veredicto": "VIGILAR",
-   "freq": 2.26,
+   "freq": 2.27,
    "gasto": 569,
    "leads": 15,
    "cpl": 38,
@@ -127,7 +127,7 @@ window.FATIGA_DATA = {
    "adset": "NEU",
    "veredicto": "VIGILAR",
    "freq": 2.24,
-   "gasto": 1563,
+   "gasto": 1564,
    "leads": 27,
    "cpl": 58,
    "pct_nuevos": 33,
@@ -139,10 +139,10 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "VIGILAR",
    "freq": 2.22,
-   "gasto": 879,
+   "gasto": 880,
    "leads": 31,
    "cpl": 28,
-   "pct_nuevos": 43,
+   "pct_nuevos": 44,
    "cpm1": 29,
    "cpm2": 35
   }
@@ -153,8 +153,8 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.59,
-   "gasto": 2226,
-   "leads": 366,
+   "gasto": 2227,
+   "leads": 367,
    "cpl": 6
   },
   {
@@ -162,7 +162,7 @@ window.FATIGA_DATA = {
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "BALBUENA",
    "freq": 1.74,
-   "gasto": 2303,
+   "gasto": 2308,
    "leads": 404,
    "cpl": 6
   },
@@ -171,17 +171,17 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.89,
-   "gasto": 1892,
-   "leads": 284,
+   "gasto": 1893,
+   "leads": 285,
    "cpl": 7
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "Neuropatia",
    "adset": "ORGANICO PAUTA",
-   "freq": 1.36,
-   "gasto": 893,
-   "leads": 71,
+   "freq": 1.37,
+   "gasto": 900,
+   "leads": 72,
    "cpl": 13
   },
   {
@@ -198,7 +198,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO DOLOROSO JUN",
    "adset": "HOMBRO",
    "freq": 1.42,
-   "gasto": 1115,
+   "gasto": 1116,
    "leads": 61,
    "cpl": 18
   },
@@ -207,7 +207,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO MARY",
    "adset": "NEUROPATIA",
    "freq": 1.79,
-   "gasto": 1696,
+   "gasto": 1697,
    "leads": 88,
    "cpl": 19
   },
@@ -216,7 +216,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
    "freq": 1.77,
-   "gasto": 5024,
+   "gasto": 5028,
    "leads": 267,
    "cpl": 19
   },
@@ -225,7 +225,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ CIATICA V2 _ 14 MAY",
    "adset": "ESPALDA - CHECK",
    "freq": 1.35,
-   "gasto": 738,
+   "gasto": 740,
    "leads": 33,
    "cpl": 22
   },
@@ -234,7 +234,7 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
    "freq": 1.57,
-   "gasto": 12342,
+   "gasto": 12346,
    "leads": 530,
    "cpl": 23
   },
@@ -243,7 +243,7 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 2",
    "adset": "FUNCIONALES 10",
    "freq": 1.41,
-   "gasto": 1313,
+   "gasto": 1314,
    "leads": 57,
    "cpl": 23
   },
@@ -261,7 +261,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.68,
-   "gasto": 4824,
+   "gasto": 4826,
    "leads": 212,
    "cpl": 23
   },
@@ -270,7 +270,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "adset": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "freq": 1.56,
-   "gasto": 3616,
+   "gasto": 3619,
    "leads": 155,
    "cpl": 23
   },
@@ -279,7 +279,7 @@ window.FATIGA_DATA = {
    "ad": "VID - RODILLA V2 _ 6 JUN",
    "adset": "RODILLA",
    "freq": 1.94,
-   "gasto": 1065,
+   "gasto": 1067,
    "leads": 44,
    "cpl": 24
   },
@@ -297,7 +297,7 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.61,
-   "gasto": 9373,
+   "gasto": 9379,
    "leads": 379,
    "cpl": 25
   },
@@ -315,7 +315,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ RODILLA _ MIXQUI _ 10 ABRIL",
    "adset": "Rodilla",
    "freq": 1.84,
-   "gasto": 505,
+   "gasto": 506,
    "leads": 18,
    "cpl": 28
   },
@@ -333,7 +333,7 @@ window.FATIGA_DATA = {
    "ad": "VID - RODILLA EXITOSO",
    "adset": "RODILLA",
    "freq": 1.57,
-   "gasto": 697,
+   "gasto": 698,
    "leads": 24,
    "cpl": 29
   },
@@ -350,8 +350,8 @@ window.FATIGA_DATA = {
    "cuenta": "San Juan del Rio",
    "ad": "Publicación: \"🏥 Conoce Equilibrio Total San Juan del Río, tu...\"",
    "adset": "Publicación: \"🏥 Conoce Equilibrio Total San Juan del Río, tu...\"",
-   "freq": 1.73,
-   "gasto": 1786,
+   "freq": 1.74,
+   "gasto": 1788,
    "leads": 61,
    "cpl": 29
   },
@@ -360,7 +360,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
    "adset": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
    "freq": 1.8,
-   "gasto": 11196,
+   "gasto": 11199,
    "leads": 387,
    "cpl": 29
   },
@@ -368,8 +368,8 @@ window.FATIGA_DATA = {
    "cuenta": "Tepeyac",
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
-   "freq": 1.67,
-   "gasto": 2749,
+   "freq": 1.68,
+   "gasto": 2751,
    "leads": 96,
    "cpl": 29
   }
