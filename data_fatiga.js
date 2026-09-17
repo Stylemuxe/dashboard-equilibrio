@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "17/09/2026 04:07",
+ "actualizado": "17/09/2026 04:15",
  "periodo": "2026-09-01 a 2026-09-17",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¡Que el dolor no te apague el grito este...\"",
    "veredicto": "RENOVAR PUBLICO",
    "freq": 2.01,
-   "gasto": 11429,
+   "gasto": 11431,
    "leads": 189,
    "cpl": 60,
    "pct_nuevos": 19,
@@ -31,7 +31,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¿Vives en la zona de Tláhuac y el dolor ya forma...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.77,
-   "gasto": 6130,
+   "gasto": 6131,
    "leads": 69,
    "cpl": 89,
    "pct_nuevos": 19,
@@ -43,7 +43,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla?\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.69,
-   "gasto": 3899,
+   "gasto": 3900,
    "leads": 61,
    "cpl": 64,
    "pct_nuevos": 32,
@@ -55,7 +55,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.51,
-   "gasto": 19480,
+   "gasto": 19481,
    "leads": 435,
    "cpl": 45,
    "pct_nuevos": 37,
@@ -67,7 +67,7 @@ window.FATIGA_DATA = {
    "adset": "NEUROPATIA",
    "veredicto": "VIGILAR",
    "freq": 2.49,
-   "gasto": 2924,
+   "gasto": 2925,
    "leads": 146,
    "cpl": 20,
    "pct_nuevos": 94,
@@ -127,7 +127,7 @@ window.FATIGA_DATA = {
    "adset": "NEU",
    "veredicto": "VIGILAR",
    "freq": 2.27,
-   "gasto": 1614,
+   "gasto": 1615,
    "leads": 28,
    "cpl": 58,
    "pct_nuevos": 36,
@@ -139,7 +139,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Si eres de Plaza Neza, 📍\"",
    "veredicto": "VIGILAR",
    "freq": 2.23,
-   "gasto": 20674,
+   "gasto": 20676,
    "leads": 435,
    "cpl": 48,
    "pct_nuevos": 43,
@@ -249,7 +249,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ HERNIA V4 _ 14 MAY -",
    "adset": "Directo",
    "freq": 1.8,
-   "gasto": 5259,
+   "gasto": 5260,
    "leads": 284,
    "cpl": 19
   },
@@ -285,7 +285,7 @@ window.FATIGA_DATA = {
    "ad": "FUNCIONALES 1",
    "adset": "FUNCIONALES 10",
    "freq": 1.58,
-   "gasto": 12671,
+   "gasto": 12672,
    "leads": 543,
    "cpl": 23
   },
@@ -312,7 +312,7 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.64,
-   "gasto": 9739,
+   "gasto": 9740,
    "leads": 400,
    "cpl": 24
   },
@@ -324,15 +324,6 @@ window.FATIGA_DATA = {
    "gasto": 3791,
    "leads": 159,
    "cpl": 24
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID - RODILLA V2 _ 6 JUN",
-   "adset": "RODILLA",
-   "freq": 1.97,
-   "gasto": 1173,
-   "leads": 46,
-   "cpl": 25
   },
   {
    "cuenta": "Laura (sedes)",
@@ -362,6 +353,15 @@ window.FATIGA_DATA = {
    "cpl": 26
   },
   {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID - RODILLA V2 _ 6 JUN",
+   "adset": "RODILLA",
+   "freq": 1.97,
+   "gasto": 1173,
+   "leads": 46,
+   "cpl": 26
+  },
+  {
    "cuenta": "Satelite",
    "ad": "VID_ HOMBRO _ SATELITE  _ 27 MAR",
    "adset": "HOMBRO - CHECK",
@@ -375,7 +375,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"En Equilibrio Total La Moderna (Iztacalco),...\"",
    "adset": "Publicación: \"En Equilibrio Total La Moderna (Iztacalco),...\"",
    "freq": 1.39,
-   "gasto": 3536,
+   "gasto": 3537,
    "leads": 125,
    "cpl": 28
   },
