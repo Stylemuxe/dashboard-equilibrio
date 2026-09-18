@@ -12,12 +12,12 @@
 <title>Dashboard Meta Ads | Equilibrio Total</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- DATA_BUNDLE_START -->
-<script src="data_meta_2026-05.js?v=1789750428"></script>
-<script src="data_meta_2026-06.js?v=1789750428"></script>
-<script src="data_meta_2026-07.js?v=1789750428"></script>
-<script src="data_meta_2026-08.js?v=1789750428"></script>
-<script src="data_meta_2026-09.js?v=1789750428"></script>
-<script src="data_months.js?v=1789750428"></script>
+<script src="data_meta_2026-05.js?v=1789751163"></script>
+<script src="data_meta_2026-06.js?v=1789751163"></script>
+<script src="data_meta_2026-07.js?v=1789751163"></script>
+<script src="data_meta_2026-08.js?v=1789751163"></script>
+<script src="data_meta_2026-09.js?v=1789751163"></script>
+<script src="data_months.js?v=1789751163"></script>
 <script>
 (function(){
   var d=window.MESES_DISPONIBLES||[];
@@ -29,6 +29,8 @@
 <script>document.write('<script src="data_fatiga.js?v=' + Date.now() + '"><\/script>');</script>
 <!-- Auditoría de campañas + prioridades: lo genera generar_auditoria.py (vía ACTUALIZAR TODO) -->
 <script>document.write('<script src="data_auditoria.js?v=' + Date.now() + '"><\/script>');</script>
+<!-- Optimización: diagnóstico + acción sugerida por anuncio, lo genera generar_optimizacion.py (vía ACTUALIZAR TODO) -->
+<script>document.write('<script src="data_optimizacion.js?v=' + Date.now() + '"><\/script>');</script>
 <style>
 /* ═══════════════════════════════════════════════════════════════════════════
    DASH FABIAN — Dark purple-navy style (NUEVO ESTILO reference)
@@ -545,6 +547,7 @@ body:not(.unlocked) #login{display:flex}
     <button class="nav-item" data-title="Top Anuncios" onclick="switchTab('anuncios',this)"><span class="nav-ico">📢</span><span>Top Anuncios</span></button>
     <button class="nav-item" data-title="Fatiga de Anuncios y Públicos" onclick="switchTab('fatiga',this)"><span class="nav-ico">🚦</span><span>Fatiga</span></button>
     <button class="nav-item" data-title="Auditoría de Campañas" onclick="switchTab('auditoria',this)"><span class="nav-ico">🔍</span><span>Auditoría</span></button>
+    <button class="nav-item" data-title="Optimización — diagnóstico y acción por anuncio" onclick="switchTab('optimizacion',this)"><span class="nav-ico">🧭</span><span>Optimización</span></button>
     <button class="nav-item" data-title="Plan de Acción" onclick="switchTab('plan',this)"><span class="nav-ico">📋</span><span>Plan de Acción</span></button>
     <button class="nav-item" data-title="Tendencias" onclick="switchTab('tendencias',this)"><span class="nav-ico">🧭</span><span>Tendencias</span></button>
     <button class="nav-item" data-title="Leads &amp; Gasto Diario" onclick="switchTab('diario',this)"><span class="nav-ico">📅</span><span>Leads &amp; Gasto</span></button>
@@ -848,6 +851,39 @@ body:not(.unlocked) #login{display:flex}
         <th>Frecuencia</th><th>Gasto</th><th>Leads</th><th>CPL</th><th>Diagnóstico</th>
       </tr></thead>
       <tbody id="tablaAudCampanas"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- OPTIMIZACIÓN: diagnóstico + acción sugerida por anuncio (lo genera generar_optimizacion.py) -->
+<div id="tab-optimizacion" class="tab-panel">
+  <div class="sec-header">
+    <div class="sec-title">🧭 Optimización — qué apagar, qué escalar <span id="optiMeta" style="font-weight:400;font-size:12px;color:var(--text2)"></span></div>
+  </div>
+  <div style="background:rgba(63,122,137,0.07);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin-bottom:20px;font-size:12px;color:var(--text2);line-height:1.7">
+    Centraliza sedes + franquicias + Promociones + Gerontología en un solo lugar por <b>anuncio individual</b>.
+    Combina fatiga (frecuencia/público, mes en curso) con anuncios que rinden mal <b>sin</b> estar fatigados (últimos 7 días,
+    comparado contra el promedio de su propia cuenta). Solo diagnóstico — pausar/bajar presupuesto se hace manual en Meta.
+  </div>
+
+  <div class="kpi-row" id="optiKpis"></div>
+
+  <div class="sec-header"><div class="sec-title">Anuncios / ad sets</div></div>
+  <div class="aud-filters">
+    <select id="optiFClinica"></select>
+    <select id="optiFDiag"></select>
+    <select id="optiFAccion"></select>
+    <input type="text" id="optiFSearch" placeholder="Buscar campaña / ad set / anuncio…">
+    <span class="aud-count" id="optiFCount"></span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th style="width:26px"></th><th>Clínica</th><th>Campaña / Ad set / Anuncio</th><th>Formato</th>
+        <th>Gasto</th><th>Resultados</th><th>Costo/resultado</th><th>Frec.</th>
+        <th>Diagnóstico</th><th>Acción sugerida</th><th>Nivel</th>
+      </tr></thead>
+      <tbody id="tablaOptimizacion"></tbody>
     </table>
   </div>
 </div>
@@ -1248,6 +1284,7 @@ function switchTab(id, btn) {
     if (id === 'anuncios')     renderTopAds();
     if (id === 'fatiga')       renderFatiga();
     if (id === 'auditoria')    renderAuditoria();
+    if (id === 'optimizacion') renderOptimizacion();
     if (id === 'plan')         renderPlanAccion();
     if (id === 'tendencias')   renderTendencias();
     if (id === 'optimizar')    renderOptimizar();
@@ -2512,6 +2549,101 @@ function toggleDetailRow(tr) {
   var detail = tr.nextElementSibling;
   var open = detail.classList.toggle('open');
   tr.querySelector('.row-caret').textContent = open ? '▾' : '▸';
+}
+
+// ── Optimización: diagnóstico + acción sugerida por anuncio (window.OPTIMIZACION_DATA) ──
+var OPTI_DIAG_BADGE = {
+  'SIN RESULTADOS': 'badge-red', 'PÚBLICO QUEMADO': 'badge-red',
+  'CONTENIDO QUEMADO (alta frecuencia)': 'badge-red',
+  'CPL/CPR ALTO (targeting o creativo débil, no es fatiga)': 'badge-red',
+  'PÚBLICO CANSÁNDOSE': 'badge-yellow', 'FRECUENCIA SUBIENDO': 'badge-yellow',
+  'RINDE BIEN': 'badge-green'
+};
+function optiAccionBadge(accion) {
+  if (!accion) return 'badge-blue';
+  if (accion.indexOf('APAGAR') === 0) return 'badge-red';
+  if (accion === 'CAMBIAR PÚBLICO') return 'badge-yellow';
+  if (accion.indexOf('VIGILAR') === 0) return 'badge-blue';
+  if (accion.indexOf('ESCALAR') === 0) return 'badge-green';
+  return 'badge-blue';
+}
+var _optiFiltersWired = false;
+
+function renderOptimizacion() {
+  var O = window.OPTIMIZACION_DATA;
+  var meta = document.getElementById('optiMeta');
+  if (!O) {
+    if (meta) meta.textContent = '— sin datos: corre ACTUALIZAR TODO.py (o python generar_optimizacion.py)';
+    return;
+  }
+  meta.textContent = '· ' + O.periodo + ' · actualizado ' + O.actualizado;
+
+  var R = O.resumen || {};
+  document.getElementById('optiKpis').innerHTML =
+    '<div class="kpi-card c2"><span class="kpi-icon">🛑</span><div class="kpi-val">' + fmtN(R.n_apagar || 0) + '</div>' +
+      '<div class="kpi-label">Apagar</div><div class="kpi-sub">sin resultados o contenido quemado</div></div>' +
+    '<div class="kpi-card c4"><span class="kpi-icon">👥</span><div class="kpi-val">' + fmtN(R.n_cambiar_publico || 0) + '</div>' +
+      '<div class="kpi-label">Cambiar público</div><div class="kpi-sub">público quemado</div></div>' +
+    '<div class="kpi-card c4"><span class="kpi-icon">🎬</span><div class="kpi-val">' + fmtN(R.n_contenido_nuevo || 0) + '</div>' +
+      '<div class="kpi-label">Pedir contenido nuevo</div><div class="kpi-sub">video / estático / carrusel</div></div>' +
+    '<div class="kpi-card c3"><span class="kpi-icon">👀</span><div class="kpi-val">' + fmtN(R.n_vigilar || 0) + '</div>' +
+      '<div class="kpi-label">Vigilar</div><div class="kpi-sub">sin acción todavía</div></div>' +
+    '<div class="kpi-card c1"><span class="kpi-icon">🚀</span><div class="kpi-val">' + fmtN(R.n_escalar || 0) + '</div>' +
+      '<div class="kpi-label">Escalar</div><div class="kpi-sub">subir presupuesto</div></div>' +
+    '<div class="kpi-card c5"><span class="kpi-icon">💸</span><div class="kpi-val">' + fmt(R.gasto_liberable_estimado_dia || 0) + '</div>' +
+      '<div class="kpi-label">Gasto liberable/día est.</div><div class="kpi-sub">solo APAGAR fuera de campañas CBO</div></div>';
+
+  if (!_optiFiltersWired) {
+    var clinicas = [...new Set((O.items || []).map(function(it) { return it.clinica; }))].filter(Boolean).sort();
+    var diags = [...new Set((O.items || []).map(function(it) { return it.diagnostico; }))].filter(Boolean);
+    var acciones = [...new Set((O.items || []).map(function(it) { return it.accion_sugerida; }))].filter(Boolean);
+    document.getElementById('optiFClinica').innerHTML = '<option value="">Todas las clínicas</option>' +
+      clinicas.map(function(c) { return '<option value="' + c + '">' + c + '</option>'; }).join('');
+    document.getElementById('optiFDiag').innerHTML = '<option value="">Diagnóstico: todos</option>' +
+      diags.map(function(d) { return '<option value="' + d + '">' + d + '</option>'; }).join('');
+    document.getElementById('optiFAccion').innerHTML = '<option value="">Acción: todas</option>' +
+      acciones.map(function(a) { return '<option value="' + a + '">' + a + '</option>'; }).join('');
+    ['optiFClinica', 'optiFDiag', 'optiFAccion'].forEach(function(id) {
+      document.getElementById(id).addEventListener('change', renderOptimizacionTabla);
+    });
+    document.getElementById('optiFSearch').addEventListener('input', renderOptimizacionTabla);
+    _optiFiltersWired = true;
+  }
+  renderOptimizacionTabla();
+}
+
+function renderOptimizacionTabla() {
+  var O = window.OPTIMIZACION_DATA;
+  if (!O) return;
+  var clinica = document.getElementById('optiFClinica').value;
+  var diag = document.getElementById('optiFDiag').value;
+  var accion = document.getElementById('optiFAccion').value;
+  var q = document.getElementById('optiFSearch').value.trim().toLowerCase();
+  var rows = (O.items || []).filter(function(it) {
+    if (clinica && it.clinica !== clinica) return false;
+    if (diag && it.diagnostico !== diag) return false;
+    if (accion && it.accion_sugerida !== accion) return false;
+    if (q && (it.campana + ' ' + it.adset + ' ' + it.anuncio).toLowerCase().indexOf(q) === -1) return false;
+    return true;
+  });
+  document.getElementById('optiFCount').textContent = rows.length + ' de ' + (O.items || []).length + ' items';
+  document.getElementById('tablaOptimizacion').innerHTML = rows.map(function(it) {
+    var nombre = it.anuncio || it.adset || it.campana || '—';
+    var costoLbl = it.costo_resultado != null ? fmt(it.costo_resultado) + (it.tipo_resultado === 'conversacion' ? ' /conv.' : ' /lead') : '—';
+    var detalle = (it.campana ? '<b>Campaña:</b> ' + it.campana + ' &nbsp;·&nbsp; ' : '') +
+      (it.adset && it.adset !== nombre ? '<b>Ad set:</b> ' + it.adset + ' &nbsp;·&nbsp; ' : '') +
+      '<b>Detalle:</b> ' + (it.detalle || '—') +
+      (it.formato_sugerido ? ' &nbsp;·&nbsp; <b>Formato sugerido:</b> ' + it.formato_sugerido : '');
+    return '<tr class="row-toggle" onclick="toggleDetailRow(this)"><td class="row-caret">▸</td><td>' + it.clinica + '</td>' +
+      '<td style="max-width:260px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><b>' + nombre + '</b></td>' +
+      '<td>' + tipoBadge(it.formato_actual) + '</td>' +
+      '<td>' + fmt(it.gasto_7d) + '</td><td>' + fmtN(it.resultados_7d) + '</td><td>' + costoLbl + '</td>' +
+      '<td>' + (it.frecuencia ? it.frecuencia.toFixed(2) + 'x' : '—') + '</td>' +
+      '<td><span class="badge ' + (OPTI_DIAG_BADGE[it.diagnostico] || 'badge-blue') + '">' + it.diagnostico + '</span></td>' +
+      '<td><span class="badge ' + optiAccionBadge(it.accion_sugerida) + '">' + it.accion_sugerida + '</span></td>' +
+      '<td style="font-size:11px;color:var(--text2)">' + it.nivel_accion + '</td></tr>' +
+      '<tr class="row-detail"><td></td><td colspan="9">' + detalle + '</td></tr>';
+  }).join('') || '<tr><td colspan="10">Sin items para los filtros seleccionados</td></tr>';
 }
 
 // ── TENDENCIAS ──────────────────────────────────────────────────────────────
