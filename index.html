@@ -2982,6 +2982,7 @@ function renderCplFiltros() {
   sel.innerHTML = '<option value="">— Selecciona una clínica —</option>';  // reset: evita optgroups duplicados al cambiar de mes
 
   const grpS = document.createElement('optgroup'); grpS.label = '── Sedes ──';
+  const oST = document.createElement('option'); oST.value='s|__TODAS__'; oST.textContent='📊 Todas las sedes (promedio combinado)'; grpS.appendChild(oST);
   sedes.forEach(c => { const o=document.createElement('option'); o.value='s|'+c; o.textContent=c; grpS.appendChild(o); });
   sel.appendChild(grpS);
 
@@ -2990,6 +2991,7 @@ function renderCplFiltros() {
   sel.appendChild(grpP);
 
   const grpF = document.createElement('optgroup'); grpF.label = '── Franquicias ──';
+  const oFT = document.createElement('option'); oFT.value='f|__TODAS__'; oFT.textContent='📊 Todas las franquicias (promedio combinado)'; grpF.appendChild(oFT);
   franq.forEach(c => { const o=document.createElement('option'); o.value='f|'+c; o.textContent=c; grpF.appendChild(o); });
   sel.appendChild(grpF);
 }
@@ -3005,16 +3007,31 @@ function renderCplClinica() {
   const [tipo, clinica] = val.split('|');
   const fuente = tipo === 's' ? DATA.diario_por_clinica : DATA.diario_franquicias;
   const fechas = Object.keys(fuente).sort();
+  const esPromedio = clinica === '__TODAS__';
+  // Mismo listado que renderCplFiltros() — el promedio combinado solo suma
+  // las clínicas reales del grupo (no pilotos ni duplicados).
+  const gruposPromedio = tipo === 's'
+    ? ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco','Balbuena','Tlahuac','Mixquiahuala','Milpa Alta']
+    : Object.keys(DATA.franquicias || {});
 
   const dias = fechas.map(f => {
-    const d = (fuente[f] || {})[clinica] || {};
-    const leads = d.leads || 0;
-    // Sedes: "gasto" es solo cuenta Laura; el boost en Promociones vive aparte
-    // en "gasto_compl" (mismo criterio que la hoja GASTO TOTAL CLINICA del
-    // Excel) — sin sumarlo, dias donde el gasto corrio solo por Promociones
-    // se veian en $0 y con CPL "—" aunque sí hubiera leads reales ese día.
-    const gasto = (d.gasto || 0) + (d.gasto_compl || 0);
-    const cpl   = leads > 0 ? gasto / leads : 0;
+    let leads = 0, gasto = 0;
+    if (esPromedio) {
+      gruposPromedio.forEach(c => {
+        const d = (fuente[f] || {})[c] || {};
+        leads += d.leads || 0;
+        // Sedes: "gasto" es solo cuenta Laura; el boost en Promociones vive
+        // aparte en "gasto_compl" (mismo criterio que la hoja GASTO TOTAL
+        // CLINICA del Excel) — hay que sumar ambos por clínica antes de
+        // combinar, si no el promedio queda incompleto.
+        gasto += (d.gasto || 0) + (d.gasto_compl || 0);
+      });
+    } else {
+      const d = (fuente[f] || {})[clinica] || {};
+      leads = d.leads || 0;
+      gasto = (d.gasto || 0) + (d.gasto_compl || 0);
+    }
+    const cpl = leads > 0 ? gasto / leads : 0;
     return { fecha: f.slice(5), leads, gasto, cpl };
   }).filter(d => d.leads > 0 || d.gasto > 0);
 
@@ -3039,7 +3056,9 @@ function renderCplClinica() {
       responsive:true, maintainAspectRatio:false, interaction:{mode:'index',intersect:false},
       animation:false,   /* bug de Chart.js "this._fn is not a function" al hacer hover — ver mkChart() */
       plugins:{ legend:{labels:{color:'#4A7885',font:{size:11},boxWidth:12}},
-        title:{ display:true, text:`${clinica} — Leads, Gasto y CPL diario`, color:'#1E3A45', font:{size:13,weight:'700'}, padding:{bottom:12} }
+        title:{ display:true,
+          text: (esPromedio ? (tipo==='s'?'Todas las sedes':'Todas las franquicias')+' — promedio combinado' : clinica) + ' — Leads, Gasto y CPL diario',
+          color:'#1E3A45', font:{size:13,weight:'700'}, padding:{bottom:12} }
       },
       scales:{
         yLeads:{ type:'linear', position:'left',  title:{display:true,text:'Leads',color:'#3F7A89',font:{size:10}},
