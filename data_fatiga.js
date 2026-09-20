@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "20/09/2026 06:03",
+ "actualizado": "20/09/2026 06:07",
  "periodo": "2026-09-01 a 2026-09-20",
  "diagnostico": [
   {
@@ -67,7 +67,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¡Atención, Nicolás Romero! ¿Buscas terapia de...\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.66,
-   "gasto": 13979,
+   "gasto": 13980,
    "leads": 241,
    "cpl": 58,
    "pct_nuevos": 48,
@@ -115,7 +115,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.51,
-   "gasto": 9630,
+   "gasto": 9631,
    "leads": 370,
    "cpl": 26,
    "pct_nuevos": 50,
@@ -211,7 +211,7 @@ window.FATIGA_DATA = {
    "adset": "ESPALDA",
    "veredicto": "VIGILAR",
    "freq": 2.23,
-   "gasto": 10590,
+   "gasto": 10597,
    "leads": 361,
    "cpl": 29,
    "pct_nuevos": 81,
@@ -264,7 +264,7 @@ window.FATIGA_DATA = {
    "ad": "Neuropatia",
    "adset": "ORGANICO PAUTA",
    "freq": 1.71,
-   "gasto": 5480,
+   "gasto": 5481,
    "leads": 460,
    "cpl": 12
   },
@@ -272,8 +272,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
    "adset": "ESPALDA",
-   "freq": 1.22,
-   "gasto": 1477,
+   "freq": 1.23,
+   "gasto": 1480,
    "leads": 109,
    "cpl": 14
   },
@@ -282,7 +282,7 @@ window.FATIGA_DATA = {
    "ad": "Neuropatia",
    "adset": "ORGANICO PAUTA",
    "freq": 1.31,
-   "gasto": 1302,
+   "gasto": 1303,
    "leads": 96,
    "cpl": 14
   },
@@ -408,7 +408,7 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.72,
-   "gasto": 11371,
+   "gasto": 11372,
    "leads": 471,
    "cpl": 24
   },
@@ -426,7 +426,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🏥 Conoce Equilibrio Total San Juan del Río, tu...\"",
    "adset": "Publicación: \"🏥 Conoce Equilibrio Total San Juan del Río, tu...\"",
    "freq": 1.94,
-   "gasto": 2777,
+   "gasto": 2778,
    "leads": 106,
    "cpl": 26
   },
