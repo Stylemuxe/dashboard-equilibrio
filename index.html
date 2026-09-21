@@ -1468,6 +1468,16 @@ function renderKPIs() {
     });
     Object.values(f).forEach(function(v){ mlF += v.meta_leads||0; mccF += v.meta_cc||0; resF += (v.cc||{}).res||0; });
     function celda(tit, val, meta, esDinero, sub){
+      // val === null → no hay fuente confiable para este dato (ej. Agendadas
+      // de Sedes: el CC no trae una cuenta de citas agendadas independiente
+      // del estado final, ver comentario en leer_dashboard_cc() de
+      // actualizar_meta.py) — mostrar "—" en vez de un 0 que parece dato roto.
+      if (val === null) {
+        return '<div style="flex:1 1 105px;min-width:105px;text-align:center;padding:8px 6px;white-space:nowrap">'
+          + '<div style="font-size:10.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px">'+tit+'</div>'
+          + '<div style="font-size:19px;font-weight:800;color:var(--text3)">—</div>'
+          + (sub ? '<div style="font-size:11px;color:var(--text3)">'+sub+'</div>' : '') + '</div>';
+      }
       var extra = '';
       if (meta > 0){
         var pct = Math.round(val / meta * 100);
@@ -1481,12 +1491,12 @@ function renderKPIs() {
         + '<div style="font-size:19px;font-weight:800">'+(esDinero ? fmt(Math.round(val)) : fmtN(Math.round(val)))+'</div>'
         + extra + '</div>';
     }
-    function grupo(nombre, color, pLeads, ml, pAgend, lblAgend, pAsist, mcc, pGasto){
+    function grupo(nombre, color, pLeads, ml, pAgend, lblAgend, pAsist, mcc, pGasto, agendSub){
       return '<div style="flex:1 1 500px;display:flex;align-items:center;flex-wrap:wrap;'
         + 'border:1px solid '+color+'40;border-left:4px solid '+color+';border-radius:12px;padding:4px 8px">'
         + '<div style="min-width:90px;padding:4px 6px;font-size:11.5px;font-weight:800;color:'+color+'">'+nombre+'</div>'
         + celda('Leads', pLeads, ml, false)
-        + celda(lblAgend, pAgend, 0, false)
+        + celda(lblAgend, pAgend, 0, false, agendSub)
         + celda('Asistidas', pAsist, mcc, false)
         + celda('Gasto', pGasto, 0, true)
         + '</div>';
@@ -1499,7 +1509,9 @@ function renderKPIs() {
       +   '<span style="font-size:10.5px;color:var(--text3)">al ritmo del día '+dia+' de '+diasMes+'</span>'
       + '</div>'
       + '<div style="display:flex;flex-wrap:wrap;gap:8px">'
-      + grupo('SEDES', '#428CD7', proy(pLeadsS), mlS, proy(pAgendS), 'Agendadas', proy(pAsistS), mccS, proy(pGastoS))
+      // Sedes: el CC no trae agendadas reales (siempre 0, ver leer_dashboard_cc())
+      // — mostrar "—" en vez de proyectar un 0 que parece un dato roto.
+      + grupo('SEDES', '#428CD7', proy(pLeadsS), mlS, null, 'Agendadas', proy(pAsistS), mccS, proy(pGastoS), 'CC sin agendadas reales de sedes')
       + grupo('FRANQUICIAS', '#31606D', proy(leadsF), mlF, proy(resF), 'Reservadas', proy(asistF), mccF, proy(gastoF))
       + '</div></div>';
   })();
