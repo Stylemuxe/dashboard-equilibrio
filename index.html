@@ -12,12 +12,12 @@
 <title>Dashboard Meta Ads | Equilibrio Total</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- DATA_BUNDLE_START -->
-<script src="data_meta_2026-05.js?v=1790006584"></script>
-<script src="data_meta_2026-06.js?v=1790006584"></script>
-<script src="data_meta_2026-07.js?v=1790006584"></script>
-<script src="data_meta_2026-08.js?v=1790006584"></script>
-<script src="data_meta_2026-09.js?v=1790006584"></script>
-<script src="data_months.js?v=1790006584"></script>
+<script src="data_meta_2026-05.js?v=1790008709"></script>
+<script src="data_meta_2026-06.js?v=1790008709"></script>
+<script src="data_meta_2026-07.js?v=1790008709"></script>
+<script src="data_meta_2026-08.js?v=1790008709"></script>
+<script src="data_meta_2026-09.js?v=1790008709"></script>
+<script src="data_months.js?v=1790008709"></script>
 <script>
 (function(){
   var d=window.MESES_DISPONIBLES||[];
@@ -1509,9 +1509,7 @@ function renderKPIs() {
       +   '<span style="font-size:10.5px;color:var(--text3)">al ritmo del día '+dia+' de '+diasMes+'</span>'
       + '</div>'
       + '<div style="display:flex;flex-wrap:wrap;gap:8px">'
-      // Sedes: el CC no trae agendadas reales (siempre 0, ver leer_dashboard_cc())
-      // — mostrar "—" en vez de proyectar un 0 que parece un dato roto.
-      + grupo('SEDES', '#428CD7', proy(pLeadsS), mlS, null, 'Agendadas', proy(pAsistS), mccS, proy(pGastoS), 'CC sin agendadas reales de sedes')
+      + grupo('SEDES', '#428CD7', proy(pLeadsS), mlS, proy(pAgendS), 'Agendadas', proy(pAsistS), mccS, proy(pGastoS))
       + grupo('FRANQUICIAS', '#31606D', proy(leadsF), mlF, proy(resF), 'Reservadas', proy(asistF), mccF, proy(gastoF))
       + '</div></div>';
   })();
