@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "22/09/2026 01:25",
+ "actualizado": "22/09/2026 01:36",
  "periodo": "2026-09-01 a 2026-09-22",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¡Que el dolor no te apague el grito este...\"",
    "veredicto": "RENOVAR PUBLICO",
    "freq": 2.09,
-   "gasto": 12807,
+   "gasto": 12808,
    "leads": 213,
    "cpl": 60,
    "pct_nuevos": 16,
@@ -19,7 +19,7 @@ window.FATIGA_DATA = {
    "adset": "ESPALDA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 2.06,
-   "gasto": 3095,
+   "gasto": 3098,
    "leads": 53,
    "cpl": 58,
    "pct_nuevos": 34,
@@ -31,7 +31,7 @@ window.FATIGA_DATA = {
    "adset": "NEUROPATIA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.9,
-   "gasto": 2532,
+   "gasto": 2533,
    "leads": 43,
    "cpl": 59,
    "pct_nuevos": 34,
@@ -79,7 +79,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 3.05,
-   "gasto": 28110,
+   "gasto": 28114,
    "leads": 602,
    "cpl": 47,
    "pct_nuevos": 43,
@@ -91,7 +91,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¡Atención, Nicolás Romero! ¿Buscas terapia de...\"",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.75,
-   "gasto": 15450,
+   "gasto": 15453,
    "leads": 268,
    "cpl": 58,
    "pct_nuevos": 47,
@@ -111,28 +111,28 @@ window.FATIGA_DATA = {
    "cpm2": 53
   },
   {
-   "cuenta": "Laura (sedes)",
-   "adset": "ESPALDA",
-   "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.63,
-   "gasto": 16683,
-   "leads": 769,
-   "cpl": 22,
-   "pct_nuevos": 150,
-   "cpm1": 26,
-   "cpm2": 25
-  },
-  {
    "cuenta": "Cuautla",
    "adset": "Publicación: \"¿Te duele el hombro, la espalda o la rodilla? 😖\"",
    "veredicto": "CAMBIAR CREATIVO",
-   "freq": 2.63,
+   "freq": 2.64,
    "gasto": 10621,
    "leads": 391,
    "cpl": 27,
    "pct_nuevos": 49,
    "cpm1": 17,
    "cpm2": 23
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "adset": "ESPALDA",
+   "veredicto": "CAMBIAR CREATIVO",
+   "freq": 2.63,
+   "gasto": 16690,
+   "leads": 769,
+   "cpl": 22,
+   "pct_nuevos": 150,
+   "cpm1": 26,
+   "cpm2": 25
   },
   {
    "cuenta": "Pachuca",
@@ -187,7 +187,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Si eres de Plaza Neza, 📍\"",
    "veredicto": "VIGILAR",
    "freq": 2.42,
-   "gasto": 25929,
+   "gasto": 25930,
    "leads": 540,
    "cpl": 48,
    "pct_nuevos": 44,
@@ -211,7 +211,7 @@ window.FATIGA_DATA = {
    "adset": "Rodilla",
    "veredicto": "VIGILAR",
    "freq": 2.31,
-   "gasto": 1694,
+   "gasto": 1695,
    "leads": 51,
    "cpl": 33,
    "pct_nuevos": 203,
@@ -226,7 +226,7 @@ window.FATIGA_DATA = {
    "gasto": 6673,
    "leads": 160,
    "cpl": 42,
-   "pct_nuevos": 61,
+   "pct_nuevos": 62,
    "cpm1": 30,
    "cpm2": 36
   },
@@ -235,9 +235,9 @@ window.FATIGA_DATA = {
    "adset": "NEU",
    "veredicto": "VIGILAR",
    "freq": 2.27,
-   "gasto": 2488,
+   "gasto": 2493,
    "leads": 38,
-   "cpl": 65,
+   "cpl": 66,
    "pct_nuevos": 68,
    "cpm1": 63,
    "cpm2": 84
@@ -258,8 +258,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "adset": "RODILLA",
    "veredicto": "VIGILAR",
-   "freq": 2.23,
-   "gasto": 2665,
+   "freq": 2.24,
+   "gasto": 2667,
    "leads": 109,
    "cpl": 24,
    "pct_nuevos": 344,
@@ -270,7 +270,7 @@ window.FATIGA_DATA = {
    "cuenta": "Pachuca",
    "adset": "RODILLA",
    "veredicto": "VIGILAR",
-   "freq": 2.23,
+   "freq": 2.24,
    "gasto": 3971,
    "leads": 100,
    "cpl": 40,
@@ -295,7 +295,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"El dolor articular no desaparece solo. Actúa y...\"",
    "veredicto": "VIGILAR",
    "freq": 2.22,
-   "gasto": 14674,
+   "gasto": 14675,
    "leads": 258,
    "cpl": 57,
    "pct_nuevos": 32,
@@ -307,7 +307,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"Atención zona San Juan del Río. 📍\"",
    "veredicto": "VIGILAR",
    "freq": 2.2,
-   "gasto": 9088,
+   "gasto": 9090,
    "leads": 185,
    "cpl": 49,
    "pct_nuevos": 23,
@@ -317,20 +317,38 @@ window.FATIGA_DATA = {
  ],
  "exitosos": [
   {
+   "cuenta": "Gerontologia",
+   "ad": "NEZA DOMINGOS",
+   "adset": "Imagen Gerontologia - NEZA",
+   "freq": 1.77,
+   "gasto": 689,
+   "leads": 126,
+   "cpl": 5
+  },
+  {
+   "cuenta": "Gerontologia",
+   "ad": "BALBUENA SABADO",
+   "adset": "Imagen Gerontologia -  BALBUENA",
+   "freq": 1.7,
+   "gasto": 3142,
+   "leads": 509,
+   "cpl": 6
+  },
+  {
    "cuenta": "Promo/Compl.",
    "ad": "Neuropatia",
    "adset": "ORGANICO PAUTA",
-   "freq": 1.83,
-   "gasto": 7691,
-   "leads": 615,
-   "cpl": 13
+   "freq": 1.82,
+   "gasto": 7698,
+   "leads": 616,
+   "cpl": 12
   },
   {
    "cuenta": "Cuautitlan",
    "ad": "VID_QUIRO _ 1 ABRIL - Copia 2",
    "adset": "Directo",
-   "freq": 1.21,
-   "gasto": 535,
+   "freq": 1.2,
+   "gasto": 536,
    "leads": 40,
    "cpl": 13
   },
@@ -339,8 +357,8 @@ window.FATIGA_DATA = {
    "ad": "VID  _ CERVICALGIA _ SEP",
    "adset": "ESPALDA",
    "freq": 1.4,
-   "gasto": 2954,
-   "leads": 212,
+   "gasto": 2959,
+   "leads": 213,
    "cpl": 14
   },
   {
@@ -348,7 +366,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
    "adset": "ESPALDA",
    "freq": 1.53,
-   "gasto": 5007,
+   "gasto": 5008,
    "leads": 343,
    "cpl": 15
   },
@@ -357,7 +375,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.47,
-   "gasto": 3394,
+   "gasto": 3395,
    "leads": 204,
    "cpl": 17
   },
@@ -380,11 +398,20 @@ window.FATIGA_DATA = {
    "cpl": 18
   },
   {
+   "cuenta": "Gerontologia",
+   "ad": "VID_CONSULTA_GE _ NUEVO - Copia",
+   "adset": "Coacalco",
+   "freq": 1.44,
+   "gasto": 766,
+   "leads": 41,
+   "cpl": 19
+  },
+  {
    "cuenta": "Valle Dorado",
    "ad": "VID _ PADECIMIENTO _ SEP",
    "adset": "HOMBRO",
    "freq": 1.44,
-   "gasto": 1523,
+   "gasto": 1524,
    "leads": 79,
    "cpl": 19
   },
@@ -410,8 +437,8 @@ window.FATIGA_DATA = {
    "cuenta": "Nicolas Romero",
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
-   "freq": 1.93,
-   "gasto": 6515,
+   "freq": 1.92,
+   "gasto": 6518,
    "leads": 297,
    "cpl": 22
   },
@@ -428,8 +455,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
-   "freq": 1.42,
-   "gasto": 9077,
+   "freq": 1.43,
+   "gasto": 9081,
    "leads": 387,
    "cpl": 23
   },
@@ -438,16 +465,25 @@ window.FATIGA_DATA = {
    "ad": "VID_ ESPALDA SINTOMAS _SEP",
    "adset": "Espalda",
    "freq": 1.32,
-   "gasto": 657,
+   "gasto": 661,
    "leads": 29,
    "cpl": 23
+  },
+  {
+   "cuenta": "Gerontologia",
+   "ad": "VID_CONSULTA_GE _ NUEVO",
+   "adset": "Balbuena",
+   "freq": 1.87,
+   "gasto": 3897,
+   "leads": 165,
+   "cpl": 24
   },
   {
    "cuenta": "Pachuca",
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.79,
-   "gasto": 12750,
+   "gasto": 12753,
    "leads": 522,
    "cpl": 24
   },
@@ -456,7 +492,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEUROPATIA DIABETICA 3 JUN",
    "adset": "NEUROPATIA",
    "freq": 1.48,
-   "gasto": 546,
+   "gasto": 547,
    "leads": 22,
    "cpl": 25
   },
@@ -465,7 +501,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "adset": "Publicación: \"Vivir con dolor no es normal. 🛑\"",
    "freq": 1.77,
-   "gasto": 4685,
+   "gasto": 4686,
    "leads": 188,
    "cpl": 25
   },
@@ -504,42 +540,6 @@ window.FATIGA_DATA = {
    "gasto": 1512,
    "leads": 55,
    "cpl": 27
-  },
-  {
-   "cuenta": "Cuautla",
-   "ad": "vid_ESPALDA PAUTA MARZO",
-   "adset": "Espalda",
-   "freq": 1.62,
-   "gasto": 515,
-   "leads": 19,
-   "cpl": 27
-  },
-  {
-   "cuenta": "Cuautla",
-   "ad": "VID - ESPALDA GABO V1 JUN",
-   "adset": "Espalda",
-   "freq": 1.4,
-   "gasto": 558,
-   "leads": 21,
-   "cpl": 27
-  },
-  {
-   "cuenta": "Valle Dorado",
-   "ad": "VID_QUIRO ESPALDA",
-   "adset": "ESPALDA",
-   "freq": 1.35,
-   "gasto": 3162,
-   "leads": 113,
-   "cpl": 28
-  },
-  {
-   "cuenta": "Satelite",
-   "ad": "VID-HOMBRODOLOROSO - Copia",
-   "adset": "HOMBRO - CHECK",
-   "freq": 1.32,
-   "gasto": 4707,
-   "leads": 167,
-   "cpl": 28
   }
  ],
  "sin_leads": []
