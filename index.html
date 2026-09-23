@@ -2080,8 +2080,14 @@ function renderHoy() {
   }).join('');
   // Pauta Orgánica ("Promociones") va DENTRO de Sedes, no aparte — mismo
   // criterio que el resto del dashboard (pedido de Irving 2026-08-27).
+  // Separada por versión (1.0/2.0/3.0) — pedido de Irving 2026-09-22, cada
+  // campaña con sus propios leads en vez de un solo renglón "Promociones".
   totalLeadsS += diaOrganico.leads||0; totalGastoS += diaOrganico.gasto||0;
-  htmlS += filaHoy('Promociones (Orgánico)', diaOrganico.leads||0, diaOrganico.gasto||0);
+  var campanasHoy = diaOrganico.campanas || {};
+  Object.keys(campanasHoy).sort().forEach(function(nombre) {
+    var v = campanasHoy[nombre] || {};
+    htmlS += filaHoy(nombre, v.leads||0, v.gasto||0);
+  });
   htmlS += '<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:12px;font-weight:700;color:var(--cyan)">'
     + '<span>TOTAL SEDES</span><span>' + totalLeadsS + ' leads</span></div>';
 
@@ -2188,8 +2194,13 @@ function renderAyer() {
   }).join('');
   // Pauta Orgánica ("Promociones") va DENTRO de Sedes, no aparte — mismo
   // criterio que el resto del dashboard (pedido de Irving 2026-08-27).
+  // Separada por versión (1.0/2.0/3.0) — pedido de Irving 2026-09-22.
   totalS += diaOrganico.leads||0;
-  htmlS += filaAyer('Promociones (Orgánico)', diaOrganico.leads||0, diaOrganico.gasto||0);
+  var campanasAyer = diaOrganico.campanas || {};
+  Object.keys(campanasAyer).sort().forEach(function(nombre) {
+    var v = campanasAyer[nombre] || {};
+    htmlS += filaAyer(nombre, v.leads||0, v.gasto||0);
+  });
   htmlS += '<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:12px;font-weight:700;color:var(--cyan)">'
     + '<span>TOTAL SEDES</span><span>' + totalS + ' leads</span></div>';
   // Piloto multi-sede: solo mostrarlo si ese día tuvo algo — en 0 solo ensucia
