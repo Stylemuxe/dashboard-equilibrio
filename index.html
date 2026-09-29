@@ -1112,6 +1112,11 @@ body:not(.unlocked) #login{display:flex}
       <div class="chart-title" style="font-size:14px;font-weight:700;color:var(--violet);margin-bottom:16px">🏋️ Gym Autonomía</div>
       <div id="geroGymCard"></div>
     </div>
+    <!-- Evento 18 Oct -->
+    <div class="chart-card" style="border-top:3px solid var(--pink)">
+      <div class="chart-title" style="font-size:14px;font-weight:700;color:var(--pink);margin-bottom:16px">🎉 Evento 18 Oct</div>
+      <div id="geroEventoCard"></div>
+    </div>
     <!-- Otros -->
     <div class="chart-card" style="border-top:3px solid var(--teal)">
       <div class="chart-title" style="font-size:14px;font-weight:700;color:var(--teal);margin-bottom:16px">📋 Otros Gerontología</div>
@@ -1417,7 +1422,7 @@ function renderKPIs() {
   // sin abrir el tab de Gerontología es justo el punto de este bloque.
   var geroEl = document.getElementById('geroCpaDetalle');
   if (geroEl) {
-    var ORDEN_GERO = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Gym Autonomía', 'Otros Gerontología'];
+    var ORDEN_GERO = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Gym Autonomía', 'Evento 18 Oct', 'Otros Gerontología'];
     var geroData = DATA.gerontologia || {};
     var geroCards = ORDEN_GERO.filter(function(c){ return geroData[c]; }).map(function(c) {
       var v = geroData[c];
@@ -3575,7 +3580,7 @@ function renderOptimizar() {
 function renderGeroFiltros() {
   var sel = document.getElementById('filtroGeroFecha');
   if (!sel) return;
-  var categorias = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Gym Autonomía', 'Otros Gerontología'];
+  var categorias = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Gym Autonomía', 'Evento 18 Oct', 'Otros Gerontología'];
   var dpc = DATA.diario_por_clinica || {};
   var fechas = Object.keys(dpc).filter(function(f) {
     return categorias.some(function(c) { return dpc[f] && dpc[f][c]; });
@@ -3598,7 +3603,7 @@ function renderGero() {
   // y leer_cc_gerontologia) — antes solo se mostraban las primeras 2 y las
   // otras quedaban invisibles en esta pestaña aunque ya se contaban en el
   // gasto total.
-  var orden = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Gym Autonomía', 'Otros Gerontología'];
+  var orden = ['Consulta Gerontologia', 'Taller Baile', 'Paquete Longevidad', 'Gym Autonomía', 'Evento 18 Oct', 'Otros Gerontología'];
 
   // Selector de fecha: "Todo el mes" (default) usa el acumulado mensual
   // (DATA.gerontologia, incluye Agendadas/Asistidas del CC); un día
@@ -3632,7 +3637,7 @@ function renderGero() {
   var cpaT = tAsist > 0 ? tGasto/tAsist : 0;
 
   document.getElementById('kpiGero').innerHTML = [
-    {icon:'📥', val:fmtN(tLeads),          label:'Total Leads Gero',   sub:'Consulta + Baile + Longevidad + Gym + Otros', cls:'c1'},
+    {icon:'📥', val:fmtN(tLeads),          label:'Total Leads Gero',   sub:'Consulta + Baile + Longevidad + Gym + Evento + Otros', cls:'c1'},
     {icon:'📅', val:fmtN(tAgend),           label:'Agendadas CC',       sub:'Citas agendadas',          cls:'c3'},
     {icon:'✅', val:fmtN(tAsist),           label:'Asistidas',          sub:'Pacientes que asistieron', cls:'c5'},
     {icon:'📊', val:fmt(cplT),              label:'CPL Promedio',        sub:'Costo por lead',           cls:'c2'},
@@ -3669,6 +3674,7 @@ function renderGero() {
   miniCard('Taller Baile',          'geroTallerCard',      'purple');
   miniCard('Paquete Longevidad',    'geroLongevidadCard',  'gold');
   miniCard('Gym Autonomía',         'geroGymCard',         'violet');
+  miniCard('Evento 18 Oct',         'geroEventoCard',      'pink');
   miniCard('Otros Gerontología',    'geroOtrosCard',       'teal');
 
   // Tabla resumen
@@ -3697,7 +3703,7 @@ function renderGero() {
 
   // Charts
   var nombresG = orden.filter(function(c){ return g[c]; });
-  var coloresG = ['rgba(77,191,214,0.75)','rgba(124,143,212,0.75)','rgba(240,157,15,0.75)','rgba(49,96,109,0.75)','rgba(64,120,135,0.75)'];
+  var coloresG = ['rgba(77,191,214,0.75)','rgba(124,143,212,0.75)','rgba(240,157,15,0.75)','rgba(49,96,109,0.75)','rgba(64,120,135,0.75)','rgba(201,90,140,0.75)'];
   mkChart('chartLeadsGero','bar', nombresG, nombresG.map(function(c){return (g[c]||{}).leads_mes||0;}), coloresG, 'Leads');
   mkChart('chartCplGero',  'bar', nombresG, nombresG.map(function(c){return (g[c]||{}).cpl||0;}),      coloresG, 'CPL $');
 }
