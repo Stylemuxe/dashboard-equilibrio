@@ -1,5 +1,5 @@
 window.OPTIMIZACION_DATA = {
- "actualizado": "01/10/2026 09:04",
+ "actualizado": "01/10/2026 09:11",
  "periodo": "2026-09-24 a 2026-09-30 (7 días) + fatiga mes en curso (2026-10-01 a 2026-10-01)",
  "items": [
   {
@@ -99,15 +99,15 @@ window.OPTIMIZACION_DATA = {
    "campaign_id": "",
    "adset_id": "",
    "ad_id": "",
-   "gasto_7d": 852,
-   "resultados_7d": 16,
-   "costo_resultado": 53,
+   "gasto_7d": 860,
+   "resultados_7d": 17,
+   "costo_resultado": 51,
    "tipo_resultado": "lead",
-   "frecuencia": 1.1,
+   "frecuencia": 1.08,
    "pct_nuevos": null,
    "diagnostico": "RINDE BIEN",
    "accion_sugerida": "ESCALAR — subir presupuesto",
-   "detalle": "Frecuencia baja (1.1x) + costo/resultado mejor que su cuenta + volumen decente.",
+   "detalle": "Frecuencia baja (1.08x) + costo/resultado mejor que su cuenta + volumen decente.",
    "nivel_accion": "AD SET",
    "formato_actual": "OTRO",
    "formato_sugerido": null
