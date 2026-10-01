@@ -12,13 +12,13 @@
 <title>Dashboard Meta Ads | Equilibrio Total</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- DATA_BUNDLE_START -->
-<script src="data_meta_2026-05.js?v=1790872987"></script>
-<script src="data_meta_2026-06.js?v=1790872987"></script>
-<script src="data_meta_2026-07.js?v=1790872987"></script>
-<script src="data_meta_2026-08.js?v=1790872987"></script>
-<script src="data_meta_2026-09.js?v=1790872987"></script>
-<script src="data_meta_2026-10.js?v=1790872987"></script>
-<script src="data_months.js?v=1790872987"></script>
+<script src="data_meta_2026-05.js?v=1790876233"></script>
+<script src="data_meta_2026-06.js?v=1790876233"></script>
+<script src="data_meta_2026-07.js?v=1790876233"></script>
+<script src="data_meta_2026-08.js?v=1790876233"></script>
+<script src="data_meta_2026-09.js?v=1790876233"></script>
+<script src="data_meta_2026-10.js?v=1790876233"></script>
+<script src="data_months.js?v=1790876233"></script>
 <script>
 (function(){
   var d=window.MESES_DISPONIBLES||[];
@@ -1322,7 +1322,7 @@ function getMesCorto() {
 }
 
 // ── Alerta: Excel de Contact Center desactualizado ──
-// El pipeline corre solo cada 4h, pero RESULTADOS CC AGOSTO.xlsx lo actualiza
+// El pipeline corre solo cada 4h, pero el Excel de CC del mes lo actualiza
 // una persona a mano — si nadie lo vuelve a guardar, agendadas/asistidas se
 // quedan congeladas aunque todo lo demás (Meta Ads) siga fresco. Detectado
 // 2026-08-14: el archivo llevaba 6 días sin guardarse y nadie se dio cuenta
@@ -1340,7 +1340,7 @@ function renderCcStaleBanner() {
     '<div style="background:' + bg + ';border-bottom:2px solid ' + border + ';padding:9px 24px;' +
       'font-size:12.5px;font-weight:600;color:' + color + ';display:flex;align-items:center;gap:8px">' +
       '<span style="font-size:15px">⚠️</span>' +
-      '<span>El Excel de Contact Center (RESULTADOS CC AGOSTO.xlsx) lleva <b>' + dias + ' día' + (dias===1?'':'s') + '</b> sin actualizarse' +
+      '<span>El Excel de Contact Center (' + (DATA.cc_excel_archivo || 'CC del mes') + ') lleva <b>' + dias + ' día' + (dias===1?'':'s') + '</b> sin actualizarse' +
       (DATA.cc_excel_actualizado ? ' (última vez: ' + DATA.cc_excel_actualizado + ')' : '') +
       ' — agendadas/asistidas/CPA pueden estar desactualizados hasta que alguien lo vuelva a guardar en esta carpeta.</span>' +
     '</div>';

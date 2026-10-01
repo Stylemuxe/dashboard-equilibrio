@@ -1,5 +1,5 @@
 window.OPTIMIZACION_DATA = {
- "actualizado": "01/10/2026 10:44",
+ "actualizado": "01/10/2026 11:38",
  "periodo": "2026-09-24 a 2026-09-30 (7 días) + fatiga mes en curso (2026-10-01 a 2026-10-01)",
  "items": [
   {
@@ -11,7 +11,7 @@ window.OPTIMIZACION_DATA = {
    "campaign_id": "120250479651020739",
    "adset_id": "120250479651370739",
    "ad_id": "120250479653190739",
-   "gasto_7d": 2435.11,
+   "gasto_7d": 2435.13,
    "resultados_7d": 27,
    "costo_resultado": 90.19,
    "tipo_resultado": "lead",
@@ -55,9 +55,9 @@ window.OPTIMIZACION_DATA = {
    "campaign_id": "120243818119160209",
    "adset_id": "120243818119180209",
    "ad_id": "120243818119510209",
-   "gasto_7d": 915.32,
+   "gasto_7d": 915.48,
    "resultados_7d": 9,
-   "costo_resultado": 101.7,
+   "costo_resultado": 101.72,
    "tipo_resultado": "lead",
    "frecuencia": 1.44,
    "pct_nuevos": null,
@@ -77,7 +77,7 @@ window.OPTIMIZACION_DATA = {
    "campaign_id": "120253055286840730",
    "adset_id": "120253055286860730",
    "ad_id": "120253055292950730",
-   "gasto_7d": 577.74,
+   "gasto_7d": 577.75,
    "resultados_7d": 6,
    "costo_resultado": 96.29,
    "tipo_resultado": "lead",
@@ -89,6 +89,50 @@ window.OPTIMIZACION_DATA = {
    "nivel_accion": "CAMPAÑA (CBO, reasigna si solo pausas 1 anuncio)",
    "formato_actual": "VIDEO",
    "formato_sugerido": null
+  },
+  {
+   "clinica": "Laura (sedes)",
+   "grupo": "sede",
+   "campana": "",
+   "adset": "ESPALDA",
+   "anuncio": "VID  _ CERVICALGIA _ SEP",
+   "campaign_id": "",
+   "adset_id": "",
+   "ad_id": "",
+   "gasto_7d": 589,
+   "resultados_7d": 15,
+   "costo_resultado": 39,
+   "tipo_resultado": "lead",
+   "frecuencia": 1.09,
+   "pct_nuevos": null,
+   "diagnostico": "RINDE BIEN",
+   "accion_sugerida": "ESCALAR — subir presupuesto",
+   "detalle": "Frecuencia baja (1.09x) + costo/resultado mejor que su cuenta + volumen decente.",
+   "nivel_accion": "AD SET",
+   "formato_actual": "VIDEO",
+   "formato_sugerido": null
+  },
+  {
+   "clinica": "Promo/Compl.",
+   "grupo": "sede",
+   "campana": "",
+   "adset": "PROMOCIONES CDMX",
+   "anuncio": "FEED",
+   "campaign_id": "",
+   "adset_id": "",
+   "ad_id": "",
+   "gasto_7d": 511,
+   "resultados_7d": 29,
+   "costo_resultado": 18,
+   "tipo_resultado": "lead",
+   "frecuencia": 1.09,
+   "pct_nuevos": null,
+   "diagnostico": "RINDE BIEN",
+   "accion_sugerida": "ESCALAR — subir presupuesto",
+   "detalle": "Frecuencia baja (1.09x) + costo/resultado mejor que su cuenta + volumen decente.",
+   "nivel_accion": "AD SET",
+   "formato_actual": "OTRO",
+   "formato_sugerido": null
   }
  ],
  "resumen": {
@@ -96,7 +140,7 @@ window.OPTIMIZACION_DATA = {
   "n_cambiar_publico": 0,
   "n_contenido_nuevo": 0,
   "n_vigilar": 0,
-  "n_escalar": 0,
+  "n_escalar": 2,
   "gasto_liberable_estimado_dia": 0
  }
 };
