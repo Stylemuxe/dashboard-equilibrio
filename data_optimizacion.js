@@ -1,5 +1,5 @@
 window.OPTIMIZACION_DATA = {
- "actualizado": "01/10/2026 08:23",
+ "actualizado": "01/10/2026 09:04",
  "periodo": "2026-09-24 a 2026-09-30 (7 días) + fatiga mes en curso (2026-10-01 a 2026-10-01)",
  "items": [
   {
@@ -33,9 +33,9 @@ window.OPTIMIZACION_DATA = {
    "campaign_id": "120250439639590739",
    "adset_id": "120250439639980739",
    "ad_id": "120250439641790739",
-   "gasto_7d": 2429.55,
+   "gasto_7d": 2429.74,
    "resultados_7d": 21,
-   "costo_resultado": 115.69,
+   "costo_resultado": 115.7,
    "tipo_resultado": "lead",
    "frecuencia": 2.75,
    "pct_nuevos": null,
@@ -55,9 +55,9 @@ window.OPTIMIZACION_DATA = {
    "campaign_id": "120243818119160209",
    "adset_id": "120243818119180209",
    "ad_id": "120243818119510209",
-   "gasto_7d": 915.24,
+   "gasto_7d": 915.28,
    "resultados_7d": 9,
-   "costo_resultado": 101.69,
+   "costo_resultado": 101.7,
    "tipo_resultado": "lead",
    "frecuencia": 1.44,
    "pct_nuevos": null,
@@ -81,13 +81,35 @@ window.OPTIMIZACION_DATA = {
    "resultados_7d": 6,
    "costo_resultado": 96.29,
    "tipo_resultado": "lead",
-   "frecuencia": 1.72,
+   "frecuencia": 1.71,
    "pct_nuevos": null,
    "diagnostico": "CPL/CPR ALTO (targeting o creativo débil, no es fatiga)",
    "accion_sugerida": "APAGAR o BAJAR PRESUPUESTO",
-   "detalle": "Costo por resultado 3.0x el promedio de Gerontologia ($32) en los últimos 7 días, con frecuencia baja (1.72x) — no es fatiga, el problema es targeting/creativo desde el inicio.",
+   "detalle": "Costo por resultado 3.0x el promedio de Gerontologia ($32) en los últimos 7 días, con frecuencia baja (1.71x) — no es fatiga, el problema es targeting/creativo desde el inicio.",
    "nivel_accion": "CAMPAÑA (CBO, reasigna si solo pausas 1 anuncio)",
    "formato_actual": "VIDEO",
+   "formato_sugerido": null
+  },
+  {
+   "clinica": "Laura (sedes)",
+   "grupo": "sede",
+   "campana": "",
+   "adset": "VIDEO BALBUENA",
+   "anuncio": "Publicación: \"¿Vives en la zona de Balbuena y el dolor ya forma...\"",
+   "campaign_id": "",
+   "adset_id": "",
+   "ad_id": "",
+   "gasto_7d": 852,
+   "resultados_7d": 16,
+   "costo_resultado": 53,
+   "tipo_resultado": "lead",
+   "frecuencia": 1.1,
+   "pct_nuevos": null,
+   "diagnostico": "RINDE BIEN",
+   "accion_sugerida": "ESCALAR — subir presupuesto",
+   "detalle": "Frecuencia baja (1.1x) + costo/resultado mejor que su cuenta + volumen decente.",
+   "nivel_accion": "AD SET",
+   "formato_actual": "OTRO",
    "formato_sugerido": null
   }
  ],
@@ -96,7 +118,7 @@ window.OPTIMIZACION_DATA = {
   "n_cambiar_publico": 0,
   "n_contenido_nuevo": 0,
   "n_vigilar": 0,
-  "n_escalar": 0,
+  "n_escalar": 1,
   "gasto_liberable_estimado_dia": 0
  }
 };
