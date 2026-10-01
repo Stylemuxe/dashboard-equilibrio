@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "01/10/2026 15:14",
+ "actualizado": "01/10/2026 15:19",
  "periodo": "2026-10-01 a 2026-10-01",
  "diagnostico": [],
  "exitosos": [
@@ -8,34 +8,34 @@ window.FATIGA_DATA = {
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
    "freq": 1.1,
-   "gasto": 750,
-   "leads": 39,
+   "gasto": 754,
+   "leads": 40,
    "cpl": 19
   },
   {
    "cuenta": "Pachuca",
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
-   "freq": 1.1,
-   "gasto": 686,
+   "freq": 1.11,
+   "gasto": 690,
    "leads": 28,
-   "cpl": 24
+   "cpl": 25
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID _  CIATICA  _ SEP",
    "adset": "ESPALDA",
    "freq": 1.05,
-   "gasto": 691,
-   "leads": 25,
-   "cpl": 28
+   "gasto": 695,
+   "leads": 26,
+   "cpl": 27
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID  _ CERVICALGIA _ SEP",
    "adset": "ESPALDA",
-   "freq": 1.08,
-   "gasto": 867,
+   "freq": 1.07,
+   "gasto": 875,
    "leads": 25,
    "cpl": 35
   },
@@ -43,17 +43,17 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
    "adset": "ESPALDA",
-   "freq": 1.12,
-   "gasto": 989,
+   "freq": 1.1,
+   "gasto": 999,
    "leads": 28,
-   "cpl": 35
+   "cpl": 36
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID _ DESGASTE _ SEP",
    "adset": "RODILLA",
-   "freq": 1.09,
-   "gasto": 629,
+   "freq": 1.1,
+   "gasto": 636,
    "leads": 15,
    "cpl": 42
   },
@@ -61,8 +61,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
    "adset": "Publicación: \"📍 ¿Vives en Milpa Alta y el dolor de rodilla ya...\"",
-   "freq": 1.18,
-   "gasto": 757,
+   "freq": 1.19,
+   "gasto": 767,
    "leads": 17,
    "cpl": 45
   }
