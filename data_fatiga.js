@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "01/10/2026 11:37",
+ "actualizado": "01/10/2026 11:50",
  "periodo": "2026-10-01 a 2026-10-01",
  "diagnostico": [],
  "exitosos": [
@@ -7,19 +7,19 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
-   "freq": 1.09,
-   "gasto": 511,
-   "leads": 29,
+   "freq": 1.11,
+   "gasto": 527,
+   "leads": 30,
    "cpl": 18
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID  _ CERVICALGIA _ SEP",
    "adset": "ESPALDA",
-   "freq": 1.09,
-   "gasto": 589,
-   "leads": 15,
-   "cpl": 39
+   "freq": 1.08,
+   "gasto": 605,
+   "leads": 16,
+   "cpl": 38
   }
  ],
  "sin_leads": []
