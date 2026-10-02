@@ -1536,6 +1536,30 @@ function renderPresupuestoPace() {
   if (!el) return;
   var A = window.AUDITORIA_DATA;
   var P = A && A.presupuesto;
+  // Mes pasado seleccionado en el selector de meses: AUDITORIA_DATA solo trae
+  // el mes en curso, así que el cierre se arma con el DATA del mes que se está
+  // viendo (Irving 2026-10-02: al elegir septiembre seguía mostrando el ritmo
+  // de octubre). Gasto contra tope = Sedes + Pauta Orgánica 1/2/3, la misma
+  // regla del tope mensual.
+  var TOPE_POR_MES = { '2026-09': 750000 };
+  var _hoy = new Date();
+  var _mesVista = (DATA && DATA.fecha_ayer || '').slice(0, 7);
+  var _mesReal = _hoy.getFullYear() + '-' + ('0' + (_hoy.getMonth() + 1)).slice(-2);
+  var esCierre = !!_mesVista && _mesVista < _mesReal;
+  var nombreMes = '';
+  if (esCierre) {
+    var _MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+    nombreMes = _MESES[parseInt(_mesVista.slice(5, 7), 10) - 1];
+    var _diasMes = new Date(parseInt(_mesVista.slice(0, 4), 10), parseInt(_mesVista.slice(5, 7), 10), 0).getDate();
+    var _gasto = (window.__resumenTotales && window.__resumenTotales.gastoS) || 0;
+    var _cap = TOPE_POR_MES[_mesVista] || (P && P.cap) || 750000;
+    P = {
+      cap: _cap, gasto_mtd: _gasto, proyeccion_fin_mes: _gasto, se_pasa_del_tope: _gasto > _cap,
+      dias_transcurridos: _diasMes, dias_restantes: 0, margen_restante: _cap - _gasto,
+      ritmo_diario_actual: _gasto / _diasMes, margen_diario_disponible: 0,
+      gasto_reclutamiento: (DATA.reclutamiento || {}).gasto_mes || 0,
+    };
+  }
   if (!P || !P.cap) { el.innerHTML = ''; return; }
 
   var yaSobrado  = P.gasto_mtd > P.cap;
@@ -1550,7 +1574,9 @@ function renderPresupuestoPace() {
   var projLeft   = pctGastado;
   var projWidth  = Math.max(Math.min(pctProy, 100) - projLeft, 0);
 
-  var statusTxt = sobra
+  var statusTxt = esCierre
+    ? 'Cerraste ' + nombreMes + ' en ' + fmt(P.gasto_mtd) + (yaSobrado ? ' — ' + fmt(P.gasto_mtd - P.cap) + ' arriba del tope' : ' — dentro del tope')
+    : sobra
     ? (yaSobrado
         ? 'Ya vas ' + fmt(P.gasto_mtd - P.cap) + ' arriba del tope este mes'
         : 'A este ritmo, cierras en ' + fmt(P.proyeccion_fin_mes) + ' — te pasarías del tope por ' + fmt(P.proyeccion_fin_mes - P.cap))
@@ -1572,13 +1598,15 @@ function renderPresupuestoPace() {
   var gastoSinAsignar = Object.entries(DATA.complementos || {})
     .filter(function(e){ return e[0] !== 'Promociones'; })
     .reduce((a, e) => a + (e[1].gasto_mes || 0), 0);
-  var gastoFranqEnLauraPromo = Math.max(0, P.gasto_mtd - gastoSedes - gastoSinAsignar);
+  var gastoFranqEnLauraPromo = esCierre
+    ? (DATA.boost_detalle_franq || []).reduce(function(a, x){ return a + (x.gasto_mes || 0); }, 0)
+    : Math.max(0, P.gasto_mtd - gastoSedes - gastoSinAsignar);
   var gastoGero = Object.values(DATA.gerontologia || {}).reduce((a, v) => a + (v.gasto_mes || 0), 0);
   var gastoReclutamiento = P.gasto_reclutamiento || 0;
   window.__desgloseGasto = [
     { id: 'sedes', lbl: 'Sedes', val: gastoSedes, color: 'var(--teal)', defecto: true },
-    { id: 'franq', lbl: 'Franquicias (pauta en Laura/Promo)', val: gastoFranqEnLauraPromo, color: 'var(--gold)', defecto: true },
-    { id: 'sinasignar', lbl: 'Sin asignar a clínica', val: gastoSinAsignar, color: 'var(--text3)', defecto: true },
+    { id: 'franq', lbl: 'Franquicias (pauta en Laura/Promo)', val: gastoFranqEnLauraPromo, color: 'var(--gold)', defecto: !esCierre },
+    { id: 'sinasignar', lbl: 'Sin asignar a clínica', val: gastoSinAsignar, color: 'var(--text3)', defecto: !esCierre },
     { id: 'gero', lbl: 'Gerontología', val: gastoGero, color: 'var(--violet)', defecto: false },
     { id: 'reclutamiento', lbl: 'Reclutamiento (personal)', val: gastoReclutamiento, color: 'var(--pink)', defecto: false },
   ].filter(it => it.val > 0.5);
@@ -1647,14 +1675,14 @@ function renderPresupuestoPace() {
   el.innerHTML =
     '<div class="pace-card">' +
       '<div class="pace-head">' +
-        '<span class="pace-title">💰 Ritmo de presupuesto — tope mensual</span>' +
+        '<span class="pace-title">' + (esCierre ? '💰 Cierre de presupuesto de ' + nombreMes + ' — Sedes + Pauta Orgánica' : '💰 Ritmo de presupuesto — tope mensual') + '</span>' +
         '<span class="pace-status ' + statusCls + '">' + (sobra ? '⚠️ ' : '✅ ') + statusTxt + '</span>' +
       '</div>' +
       '<div class="pace-track-wrap"><div class="pace-track">' +
         '<div class="pace-fill' + (yaSobrado ? ' bad' : '') + '" style="width:' + pctGastado + '%"></div>' +
         (projWidth > 0 ? '<div class="pace-proj ' + statusCls + '" style="left:' + projLeft + '%;width:' + projWidth + '%"></div>' : '') +
         '<div class="pace-tick" style="left:' + pctPace + '%"></div>' +
-        '<div class="pace-tick-label" style="left:' + pctPace + '%">Ritmo esperado hoy</div>' +
+        '<div class="pace-tick-label" style="left:' + pctPace + '%">' + (esCierre ? 'Fin de mes' : 'Ritmo esperado hoy') + '</div>' +
       '</div></div>' +
       '<div class="pace-scale"><span>$0</span><span>' + fmt(P.cap) + ' tope</span></div>' +
       '<div class="pace-legend">' +
@@ -1662,13 +1690,13 @@ function renderPresupuestoPace() {
         '<span class="pace-legend-item"><span class="pace-legend-dot proj ' + statusCls + '"></span>Proyectado al cierre (' + fmt(P.proyeccion_fin_mes) + ')</span>' +
       '</div>' +
       '<div class="pace-stats">' +
-        '<div class="pace-stat"><div class="lbl">Gasto acumulado</div><div class="val">' + fmt(P.gasto_mtd) + '</div></div>' +
-        '<div class="pace-stat"><div class="lbl">Margen restante</div><div class="val">' + fmt(P.margen_restante) + '</div></div>' +
-        '<div class="pace-stat"><div class="lbl">Ritmo diario actual</div><div class="val">' + fmt(P.ritmo_diario_actual) + '</div></div>' +
-        '<div class="pace-stat"><div class="lbl">Margen diario disponible</div><div class="val">' + fmt(P.margen_diario_disponible) + '</div></div>' +
-        '<div class="pace-stat"><div class="lbl">Días restantes</div><div class="val">' + (P.dias_restantes != null ? P.dias_restantes : '—') + '</div></div>' +
+        '<div class="pace-stat"><div class="lbl">' + (esCierre ? 'Gasto del mes' : 'Gasto acumulado') + '</div><div class="val">' + fmt(P.gasto_mtd) + '</div></div>' +
+        '<div class="pace-stat"><div class="lbl">' + (esCierre ? 'Contra el tope' : 'Margen restante') + '</div><div class="val">' + (esCierre ? (P.margen_restante < 0 ? '+' + fmt(-P.margen_restante) + ' arriba' : fmt(P.margen_restante) + ' abajo') : fmt(P.margen_restante)) + '</div></div>' +
+        '<div class="pace-stat"><div class="lbl">' + (esCierre ? 'Promedio diario' : 'Ritmo diario actual') + '</div><div class="val">' + fmt(P.ritmo_diario_actual) + '</div></div>' +
+        (esCierre ? '' : '<div class="pace-stat"><div class="lbl">Margen diario disponible</div><div class="val">' + fmt(P.margen_diario_disponible) + '</div></div>' +
+        '<div class="pace-stat"><div class="lbl">Días restantes</div><div class="val">' + (P.dias_restantes != null ? P.dias_restantes : '—') + '</div></div>') +
         '<div class="pace-stat" style="border-left-color:' + (sobra ? 'var(--pink)' : 'var(--green)') + '">' +
-          '<div class="lbl">Proyección fin de mes</div><div class="val" style="color:' + (sobra ? 'var(--pink)' : 'var(--text)') + '">' + fmt(P.proyeccion_fin_mes) + '</div></div>' +
+          '<div class="lbl">' + (esCierre ? 'Cierre del mes' : 'Proyección fin de mes') + '</div><div class="val" style="color:' + (sobra ? 'var(--pink)' : 'var(--text)') + '">' + fmt(P.proyeccion_fin_mes) + '</div></div>' +
       '</div>' +
       desgloseHtml +
     '</div>';
