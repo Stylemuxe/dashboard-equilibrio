@@ -1541,7 +1541,7 @@ function renderPresupuestoPace() {
   // viendo (Irving 2026-10-02: al elegir septiembre seguía mostrando el ritmo
   // de octubre). Gasto contra tope = Sedes + Pauta Orgánica 1/2/3, la misma
   // regla del tope mensual.
-  var TOPE_POR_MES = { '2026-09': 750000 };
+  var TOPE_POR_MES = { '2026-08': 750000, '2026-09': 750000 };
   var _hoy = new Date();
   var _mesVista = (DATA && DATA.fecha_ayer || '').slice(0, 7);
   var _mesReal = _hoy.getFullYear() + '-' + ('0' + (_hoy.getMonth() + 1)).slice(-2);
