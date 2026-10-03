@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "03/10/2026 09:03",
+ "actualizado": "03/10/2026 09:08",
  "periodo": "2026-10-01 a 2026-10-03",
  "diagnostico": [],
  "exitosos": [
@@ -8,7 +8,7 @@ window.FATIGA_DATA = {
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "BALBUENA",
    "freq": 1.28,
-   "gasto": 551,
+   "gasto": 554,
    "leads": 62,
    "cpl": 9
   },
@@ -17,7 +17,7 @@ window.FATIGA_DATA = {
    "ad": "Neuropatia",
    "adset": "ORGANICO PAUTA",
    "freq": 1.2,
-   "gasto": 555,
+   "gasto": 556,
    "leads": 44,
    "cpl": 13
   },
@@ -26,7 +26,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.17,
-   "gasto": 591,
+   "gasto": 593,
    "leads": 40,
    "cpl": 15
   },
@@ -34,8 +34,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
-   "freq": 1.18,
-   "gasto": 2749,
+   "freq": 1.19,
+   "gasto": 2756,
    "leads": 126,
    "cpl": 22
   },
@@ -43,8 +43,8 @@ window.FATIGA_DATA = {
    "cuenta": "Pachuca",
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
-   "freq": 1.29,
-   "gasto": 2470,
+   "freq": 1.28,
+   "gasto": 2474,
    "leads": 101,
    "cpl": 24
   },
@@ -53,7 +53,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "adset": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "freq": 1.19,
-   "gasto": 2108,
+   "gasto": 2111,
    "leads": 89,
    "cpl": 24
   },
@@ -61,8 +61,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "VID - NEURO PADECIMIENTO - OCT",
    "adset": "Neuropatia",
-   "freq": 1.46,
-   "gasto": 2076,
+   "freq": 1.45,
+   "gasto": 2078,
    "leads": 84,
    "cpl": 25
   },
@@ -71,7 +71,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.28,
-   "gasto": 1168,
+   "gasto": 1170,
    "leads": 47,
    "cpl": 25
   },
@@ -80,7 +80,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
    "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
    "freq": 1.86,
-   "gasto": 660,
+   "gasto": 661,
    "leads": 25,
    "cpl": 26
   },
@@ -88,8 +88,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID _ DESGATE _ SEP",
    "adset": "Rodilla",
-   "freq": 1.41,
-   "gasto": 552,
+   "freq": 1.4,
+   "gasto": 555,
    "leads": 19,
    "cpl": 29
   },
@@ -107,7 +107,7 @@ window.FATIGA_DATA = {
    "ad": "VID _  CIATICA  _ SEP",
    "adset": "ESPALDA",
    "freq": 1.13,
-   "gasto": 2509,
+   "gasto": 2512,
    "leads": 80,
    "cpl": 31
   },
@@ -115,8 +115,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID _ RODILLA PADECIMIENTO _ OCT",
    "adset": "RODILLA",
-   "freq": 1.3,
-   "gasto": 1275,
+   "freq": 1.31,
+   "gasto": 1277,
    "leads": 40,
    "cpl": 32
   },
@@ -124,8 +124,8 @@ window.FATIGA_DATA = {
    "cuenta": "Claveria",
    "ad": "VID _ PADECIMIENTO RODILLA _ OCT",
    "adset": "RODILLA - CHECK",
-   "freq": 1.2,
-   "gasto": 1071,
+   "freq": 1.21,
+   "gasto": 1074,
    "leads": 34,
    "cpl": 32
   },
@@ -134,7 +134,7 @@ window.FATIGA_DATA = {
    "ad": "VID  _ CERVICALGIA _ SEP",
    "adset": "ESPALDA",
    "freq": 1.16,
-   "gasto": 2536,
+   "gasto": 2542,
    "leads": 78,
    "cpl": 33
   },
@@ -143,7 +143,7 @@ window.FATIGA_DATA = {
    "ad": "VID  _ NEUROPATIA DIABETICA _ OCT",
    "adset": "Neuropatia",
    "freq": 1.36,
-   "gasto": 854,
+   "gasto": 855,
    "leads": 26,
    "cpl": 33
   },
@@ -152,7 +152,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ CIATICA  _ OCT",
    "adset": "ESPALDA",
    "freq": 1.22,
-   "gasto": 781,
+   "gasto": 784,
    "leads": 23,
    "cpl": 34
   },
@@ -160,18 +160,9 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
    "adset": "ESPALDA",
-   "freq": 1.26,
-   "gasto": 3102,
+   "freq": 1.27,
+   "gasto": 3105,
    "leads": 86,
-   "cpl": 36
-  },
-  {
-   "cuenta": "Valle Dorado",
-   "ad": "VID _ PADECIMIENTO _ SEP",
-   "adset": "HOMBRO",
-   "freq": 1.22,
-   "gasto": 763,
-   "leads": 21,
    "cpl": 36
   },
   {
@@ -179,16 +170,25 @@ window.FATIGA_DATA = {
    "ad": "VID_RODNICO_JUL",
    "adset": "RODILLA",
    "freq": 1.25,
-   "gasto": 832,
+   "gasto": 834,
    "leads": 23,
    "cpl": 36
+  },
+  {
+   "cuenta": "Valle Dorado",
+   "ad": "VID _ PADECIMIENTO _ SEP",
+   "adset": "HOMBRO",
+   "freq": 1.22,
+   "gasto": 767,
+   "leads": 21,
+   "cpl": 37
   },
   {
    "cuenta": "Tepeyac",
    "ad": "Publicación: \"📍 ¡Atención Tepeyac y alrededores! ¿El dolor te...\"",
    "adset": "Publicación: \"📍 ¡Atención Tepeyac y alrededores! ¿El dolor te...\"",
    "freq": 1.32,
-   "gasto": 1883,
+   "gasto": 1890,
    "leads": 51,
    "cpl": 37
   },
@@ -196,26 +196,26 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"¡Que el dolor no te apague el grito este...\"",
    "adset": "Publicación: \"¡Que el dolor no te apague el grito este...\"",
-   "freq": 1.3,
-   "gasto": 669,
-   "leads": 16,
-   "cpl": 42
+   "freq": 1.29,
+   "gasto": 670,
+   "leads": 17,
+   "cpl": 39
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID  _ MANGUITO ROTADOR _ OCT",
    "adset": "Hombro",
    "freq": 1.22,
-   "gasto": 651,
-   "leads": 15,
-   "cpl": 43
+   "gasto": 654,
+   "leads": 16,
+   "cpl": 41
   },
   {
    "cuenta": "San Juan del Rio",
    "ad": "Publicación: \"🏥 Conoce Equilibrio Total San Juan del Río, tu...\"",
    "adset": "Publicación: \"🏥 Conoce Equilibrio Total San Juan del Río, tu...\"",
-   "freq": 1.26,
-   "gasto": 905,
+   "freq": 1.27,
+   "gasto": 906,
    "leads": 21,
    "cpl": 43
   },
@@ -223,7 +223,7 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID - QUIRO 15 ABR - Copia",
    "adset": "Hombro",
-   "freq": 1.26,
+   "freq": 1.27,
    "gasto": 802,
    "leads": 18,
    "cpl": 45
