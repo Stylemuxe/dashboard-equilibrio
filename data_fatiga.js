@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "05/10/2026 09:13",
+ "actualizado": "05/10/2026 09:21",
  "periodo": "2026-10-01 a 2026-10-05",
  "diagnostico": [],
  "exitosos": [
@@ -8,7 +8,7 @@ window.FATIGA_DATA = {
    "ad": "NEZA DOMINGOS",
    "adset": "Imagen Gerontologia - NEZA",
    "freq": 1.4,
-   "gasto": 573,
+   "gasto": 574,
    "leads": 103,
    "cpl": 6
   },
@@ -26,7 +26,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.23,
-   "gasto": 1143,
+   "gasto": 1144,
    "leads": 75,
    "cpl": 15
   },
@@ -35,7 +35,7 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO _ 1 ABRIL - Copia 2",
    "adset": "Directo",
    "freq": 1.18,
-   "gasto": 713,
+   "gasto": 714,
    "leads": 42,
    "cpl": 17
   },
@@ -53,27 +53,27 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO MARY",
    "adset": "NEUROPATIA",
    "freq": 1.42,
-   "gasto": 596,
+   "gasto": 597,
    "leads": 34,
    "cpl": 18
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "VID - NEURO SINTOMAS - OCT",
-   "adset": "Neuropatia",
-   "freq": 1.32,
-   "gasto": 844,
-   "leads": 40,
-   "cpl": 21
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
    "adset": "Espalda",
    "freq": 1.35,
-   "gasto": 943,
-   "leads": 43,
-   "cpl": 22
+   "gasto": 945,
+   "leads": 44,
+   "cpl": 21
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "VID - NEURO SINTOMAS - OCT",
+   "adset": "Neuropatia",
+   "freq": 1.32,
+   "gasto": 845,
+   "leads": 40,
+   "cpl": 21
   },
   {
    "cuenta": "Queretaro",
@@ -89,8 +89,8 @@ window.FATIGA_DATA = {
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
    "freq": 1.25,
-   "gasto": 4854,
-   "leads": 191,
+   "gasto": 4858,
+   "leads": 192,
    "cpl": 25
   },
   {
@@ -98,8 +98,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "adset": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "freq": 1.32,
-   "gasto": 4239,
-   "leads": 169,
+   "gasto": 4242,
+   "leads": 170,
    "cpl": 25
   },
   {
@@ -107,7 +107,7 @@ window.FATIGA_DATA = {
    "ad": "NEUROPATIA MARY",
    "adset": "Neuropatia",
    "freq": 1.48,
-   "gasto": 508,
+   "gasto": 509,
    "leads": 20,
    "cpl": 25
   },
@@ -124,8 +124,8 @@ window.FATIGA_DATA = {
    "cuenta": "Pachuca",
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
-   "freq": 1.45,
-   "gasto": 4614,
+   "freq": 1.44,
+   "gasto": 4616,
    "leads": 179,
    "cpl": 26
   },
@@ -143,7 +143,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.36,
-   "gasto": 1950,
+   "gasto": 1951,
    "leads": 69,
    "cpl": 28
   },
@@ -151,8 +151,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA CHECK",
-   "freq": 1.28,
-   "gasto": 914,
+   "freq": 1.27,
+   "gasto": 915,
    "leads": 32,
    "cpl": 29
   },
@@ -160,8 +160,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID_ RODILLA DESGASTE ARTICULAR _ SEP _ OCT",
    "adset": "RODILLA",
-   "freq": 1.37,
-   "gasto": 1045,
+   "freq": 1.36,
+   "gasto": 1046,
    "leads": 34,
    "cpl": 31
   },
@@ -170,8 +170,8 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO PADECIMIENTO - OCT",
    "adset": "Neuropatia",
    "freq": 1.63,
-   "gasto": 4237,
-   "leads": 137,
+   "gasto": 4246,
+   "leads": 138,
    "cpl": 31
   },
   {
@@ -197,8 +197,17 @@ window.FATIGA_DATA = {
    "ad": "VID  _ CERVICALGIA _ SEP",
    "adset": "ESPALDA",
    "freq": 1.28,
-   "gasto": 3555,
-   "leads": 110,
+   "gasto": 3557,
+   "leads": 112,
+   "cpl": 32
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
+   "adset": "ESPALDA",
+   "freq": 1.4,
+   "gasto": 5028,
+   "leads": 155,
    "cpl": 32
   },
   {
@@ -206,7 +215,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ PADECIMIENTO RODILLA _ OCT",
    "adset": "RODILLA - CHECK",
    "freq": 1.32,
-   "gasto": 1900,
+   "gasto": 1902,
    "leads": 60,
    "cpl": 32
   },
@@ -215,17 +224,8 @@ window.FATIGA_DATA = {
    "ad": "VID _  CIATICA  _ SEP",
    "adset": "ESPALDA",
    "freq": 1.25,
-   "gasto": 3985,
+   "gasto": 3987,
    "leads": 120,
-   "cpl": 33
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
-   "adset": "ESPALDA",
-   "freq": 1.4,
-   "gasto": 5025,
-   "leads": 154,
    "cpl": 33
   }
  ],
