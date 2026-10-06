@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "06/10/2026 05:07",
+ "actualizado": "06/10/2026 05:19",
  "periodo": "2026-10-01 a 2026-10-06",
  "diagnostico": [],
  "exitosos": [
@@ -17,7 +17,7 @@ window.FATIGA_DATA = {
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "BALBUENA",
    "freq": 1.38,
-   "gasto": 1221,
+   "gasto": 1222,
    "leads": 119,
    "cpl": 10
   },
@@ -44,7 +44,7 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO _ 1 ABRIL - Copia 2",
    "adset": "Directo",
    "freq": 1.23,
-   "gasto": 936,
+   "gasto": 937,
    "leads": 53,
    "cpl": 18
   },
@@ -53,7 +53,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO MARY",
    "adset": "NEUROPATIA",
    "freq": 1.46,
-   "gasto": 722,
+   "gasto": 723,
    "leads": 39,
    "cpl": 19
   },
@@ -80,7 +80,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
    "adset": "Espalda",
    "freq": 1.41,
-   "gasto": 1420,
+   "gasto": 1421,
    "leads": 69,
    "cpl": 21
   },
@@ -89,7 +89,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO SINTOMAS - OCT",
    "adset": "Neuropatia",
    "freq": 1.43,
-   "gasto": 1068,
+   "gasto": 1070,
    "leads": 50,
    "cpl": 21
   },
@@ -98,7 +98,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ NEUROPATIA  01 ABRIL - Copia",
    "adset": "Directo",
    "freq": 1.28,
-   "gasto": 654,
+   "gasto": 656,
    "leads": 28,
    "cpl": 23
   },
@@ -107,7 +107,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ RODILLA SINTOMAS  _ OCT",
    "adset": "RODILLA - CHECK",
    "freq": 1.26,
-   "gasto": 606,
+   "gasto": 607,
    "leads": 24,
    "cpl": 25
   },
@@ -116,17 +116,8 @@ window.FATIGA_DATA = {
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
    "freq": 1.26,
-   "gasto": 5898,
+   "gasto": 5906,
    "leads": 226,
-   "cpl": 26
-  },
-  {
-   "cuenta": "Pachuca",
-   "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
-   "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
-   "freq": 1.46,
-   "gasto": 5510,
-   "leads": 208,
    "cpl": 26
   },
   {
@@ -139,11 +130,20 @@ window.FATIGA_DATA = {
    "cpl": 27
   },
   {
+   "cuenta": "Pachuca",
+   "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
+   "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
+   "freq": 1.46,
+   "gasto": 5514,
+   "leads": 208,
+   "cpl": 27
+  },
+  {
    "cuenta": "Xochimilco",
    "ad": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "adset": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "freq": 1.35,
-   "gasto": 5160,
+   "gasto": 5162,
    "leads": 192,
    "cpl": 27
   },
@@ -152,7 +152,7 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO ESPALDA",
    "adset": "ESPALDA",
    "freq": 1.2,
-   "gasto": 1065,
+   "gasto": 1066,
    "leads": 35,
    "cpl": 30
   },
@@ -161,7 +161,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.4,
-   "gasto": 2354,
+   "gasto": 2355,
    "leads": 78,
    "cpl": 30
   },
@@ -170,7 +170,7 @@ window.FATIGA_DATA = {
    "ad": "NEUROPATIA MARY",
    "adset": "Neuropatia",
    "freq": 1.56,
-   "gasto": 682,
+   "gasto": 683,
    "leads": 23,
    "cpl": 30
   },
@@ -179,7 +179,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
    "adset": "ESPALDA",
    "freq": 1.45,
-   "gasto": 6135,
+   "gasto": 6139,
    "leads": 198,
    "cpl": 31
   },
@@ -197,7 +197,7 @@ window.FATIGA_DATA = {
    "ad": "VID  _ CERVICALGIA _ SEP",
    "adset": "ESPALDA",
    "freq": 1.33,
-   "gasto": 4006,
+   "gasto": 4007,
    "leads": 126,
    "cpl": 32
   },
@@ -206,7 +206,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ CIATICA  _ OCT",
    "adset": "ESPALDA",
    "freq": 1.39,
-   "gasto": 3149,
+   "gasto": 3152,
    "leads": 99,
    "cpl": 32
   },
@@ -215,7 +215,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO PADECIMIENTO - OCT",
    "adset": "Neuropatia",
    "freq": 1.69,
-   "gasto": 5280,
+   "gasto": 5283,
    "leads": 167,
    "cpl": 32
   },
@@ -224,7 +224,7 @@ window.FATIGA_DATA = {
    "ad": "VID _  RODILLA _ TROPICALIZADO",
    "adset": "Tropicalizados",
    "freq": 1.23,
-   "gasto": 1156,
+   "gasto": 1157,
    "leads": 35,
    "cpl": 33
   }
