@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "07/10/2026 08:32",
+ "actualizado": "07/10/2026 08:40",
  "periodo": "2026-10-01 a 2026-10-07",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Rodilla",
    "veredicto": "RENOVAR PUBLICO",
    "freq": 2.01,
-   "gasto": 2087,
+   "gasto": 2088,
    "leads": 51,
    "cpl": 41,
    "pct_nuevos": 19,
@@ -19,9 +19,9 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "VIGILAR",
    "freq": 2.34,
-   "gasto": 1817,
-   "leads": 74,
-   "cpl": 25,
+   "gasto": 1820,
+   "leads": 75,
+   "cpl": 24,
    "pct_nuevos": 61,
    "cpm1": 31,
    "cpm2": 26
@@ -31,7 +31,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
    "veredicto": "VIGILAR",
    "freq": 2.34,
-   "gasto": 2169,
+   "gasto": 2171,
    "leads": 55,
    "cpl": 39,
    "pct_nuevos": 52,
@@ -42,11 +42,11 @@ window.FATIGA_DATA = {
    "cuenta": "San Juan del Rio",
    "adset": "Neuropatia - Check",
    "veredicto": "VIGILAR",
-   "freq": 2.21,
-   "gasto": 1202,
+   "freq": 2.2,
+   "gasto": 1204,
    "leads": 51,
    "cpl": 24,
-   "pct_nuevos": 157,
+   "pct_nuevos": 159,
    "cpm1": 31,
    "cpm2": 31
   }
@@ -57,7 +57,7 @@ window.FATIGA_DATA = {
    "ad": "NEZA DOMINGOS",
    "adset": "Imagen Gerontologia - NEZA",
    "freq": 1.49,
-   "gasto": 1074,
+   "gasto": 1075,
    "leads": 211,
    "cpl": 5
   },
@@ -66,7 +66,7 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.52,
-   "gasto": 537,
+   "gasto": 538,
    "leads": 83,
    "cpl": 6
   },
@@ -75,7 +75,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.26,
-   "gasto": 1580,
+   "gasto": 1581,
    "leads": 93,
    "cpl": 17
   },
@@ -92,8 +92,8 @@ window.FATIGA_DATA = {
    "cuenta": "Queretaro",
    "ad": "VID - NEURO MARY",
    "adset": "NEUROPATIA",
-   "freq": 1.54,
-   "gasto": 879,
+   "freq": 1.55,
+   "gasto": 880,
    "leads": 46,
    "cpl": 19
   },
@@ -102,7 +102,7 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO _ 1 ABRIL - Copia 2",
    "adset": "Directo",
    "freq": 1.25,
-   "gasto": 1360,
+   "gasto": 1361,
    "leads": 70,
    "cpl": 19
   },
@@ -111,8 +111,8 @@ window.FATIGA_DATA = {
    "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
    "adset": "Neuropatia",
    "freq": 1.77,
-   "gasto": 774,
-   "leads": 38,
+   "gasto": 776,
+   "leads": 39,
    "cpl": 20
   },
   {
@@ -120,7 +120,7 @@ window.FATIGA_DATA = {
    "ad": "VID_CONSULTA_GE _ NUEVO - Copia",
    "adset": "Coacalco",
    "freq": 1.3,
-   "gasto": 1472,
+   "gasto": 1474,
    "leads": 74,
    "cpl": 20
   },
@@ -128,8 +128,8 @@ window.FATIGA_DATA = {
    "cuenta": "San Juan del Rio",
    "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
    "adset": "Neuropatia - Check",
-   "freq": 1.71,
-   "gasto": 634,
+   "freq": 1.7,
+   "gasto": 635,
    "leads": 31,
    "cpl": 20
   },
@@ -138,7 +138,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO SINTOMAS - OCT",
    "adset": "Neuropatia",
    "freq": 1.49,
-   "gasto": 1428,
+   "gasto": 1429,
    "leads": 66,
    "cpl": 22
   },
@@ -147,7 +147,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ RODILLA GENERAL _ SEP _ OCT",
    "adset": "Rodilla -  Check",
    "freq": 1.54,
-   "gasto": 523,
+   "gasto": 524,
    "leads": 24,
    "cpl": 22
   },
@@ -165,7 +165,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
    "adset": "Espalda",
    "freq": 1.52,
-   "gasto": 2007,
+   "gasto": 2013,
    "leads": 89,
    "cpl": 23
   },
@@ -174,7 +174,7 @@ window.FATIGA_DATA = {
    "ad": "EST - NEURO - OCT - 6 OCT",
    "adset": "Tropicalizados",
    "freq": 1.32,
-   "gasto": 579,
+   "gasto": 582,
    "leads": 23,
    "cpl": 25
   },
@@ -182,8 +182,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "VID - ACUPUNTURA JUN",
    "adset": "ORGANICO PAUTA",
-   "freq": 1.4,
-   "gasto": 676,
+   "freq": 1.41,
+   "gasto": 678,
    "leads": 27,
    "cpl": 25
   },
@@ -192,7 +192,7 @@ window.FATIGA_DATA = {
    "ad": "VID - RODILLA - OCT",
    "adset": "RODILLA",
    "freq": 1.34,
-   "gasto": 573,
+   "gasto": 574,
    "leads": 21,
    "cpl": 27
   },
@@ -201,7 +201,7 @@ window.FATIGA_DATA = {
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
    "freq": 1.25,
-   "gasto": 8042,
+   "gasto": 8053,
    "leads": 294,
    "cpl": 27
   },
@@ -210,7 +210,7 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.42,
-   "gasto": 3019,
+   "gasto": 3022,
    "leads": 110,
    "cpl": 27
   },
@@ -219,7 +219,7 @@ window.FATIGA_DATA = {
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.51,
-   "gasto": 7330,
+   "gasto": 7338,
    "leads": 261,
    "cpl": 28
   },
@@ -228,7 +228,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "adset": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "freq": 1.4,
-   "gasto": 7062,
+   "gasto": 7072,
    "leads": 241,
    "cpl": 29
   },
@@ -246,7 +246,7 @@ window.FATIGA_DATA = {
    "ad": "NEUROPATIA MARY",
    "adset": "Neuropatia",
    "freq": 1.64,
-   "gasto": 990,
+   "gasto": 991,
    "leads": 34,
    "cpl": 29
   },
@@ -255,17 +255,8 @@ window.FATIGA_DATA = {
    "ad": "VID _ CIATICA  _ OCT",
    "adset": "ESPALDA",
    "freq": 1.44,
-   "gasto": 3986,
+   "gasto": 3989,
    "leads": 131,
-   "cpl": 30
-  },
-  {
-   "cuenta": "Pachuca",
-   "ad": "VID - RODILLA V6 _   JUN",
-   "adset": "RODILLA",
-   "freq": 1.5,
-   "gasto": 701,
-   "leads": 23,
    "cpl": 30
   },
   {
@@ -273,8 +264,17 @@ window.FATIGA_DATA = {
    "ad": "VID  _ CERVICALGIA _ SEP",
    "adset": "ESPALDA",
    "freq": 1.39,
-   "gasto": 4769,
+   "gasto": 4774,
    "leads": 154,
+   "cpl": 31
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
+   "adset": "ESPALDA",
+   "freq": 1.5,
+   "gasto": 7221,
+   "leads": 235,
    "cpl": 31
   }
  ],
