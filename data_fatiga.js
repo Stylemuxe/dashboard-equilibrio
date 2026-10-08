@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "08/10/2026 04:09",
+ "actualizado": "08/10/2026 04:21",
  "periodo": "2026-10-01 a 2026-10-08",
  "diagnostico": [
   {
@@ -55,7 +55,7 @@ window.FATIGA_DATA = {
    "adset": "HOMBRO",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.53,
-   "gasto": 2584,
+   "gasto": 2585,
    "leads": 152,
    "cpl": 17,
    "pct_nuevos": 32,
@@ -67,7 +67,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.36,
-   "gasto": 2423,
+   "gasto": 2424,
    "leads": 50,
    "cpl": 48,
    "pct_nuevos": 33,
@@ -135,7 +135,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.28,
-   "gasto": 1732,
+   "gasto": 1733,
    "leads": 107,
    "cpl": 16
   },
@@ -153,7 +153,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO MARY",
    "adset": "NEUROPATIA",
    "freq": 1.65,
-   "gasto": 1082,
+   "gasto": 1083,
    "leads": 56,
    "cpl": 19
   },
@@ -180,7 +180,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ NEUROPATIA  01 ABRIL - Copia",
    "adset": "Directo",
    "freq": 1.4,
-   "gasto": 1197,
+   "gasto": 1198,
    "leads": 58,
    "cpl": 21
   },
@@ -189,7 +189,7 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO _ 1 ABRIL - Copia 2",
    "adset": "Directo",
    "freq": 1.26,
-   "gasto": 1623,
+   "gasto": 1624,
    "leads": 78,
    "cpl": 21
   },
@@ -261,7 +261,7 @@ window.FATIGA_DATA = {
    "ad": "VID - RODILLA - OCT",
    "adset": "RODILLA",
    "freq": 1.35,
-   "gasto": 648,
+   "gasto": 649,
    "leads": 25,
    "cpl": 26
   },
@@ -288,9 +288,18 @@ window.FATIGA_DATA = {
    "ad": "VID_HOMBNICO_JUL",
    "adset": "HOMBRO",
    "freq": 1.48,
-   "gasto": 3366,
+   "gasto": 3367,
    "leads": 125,
    "cpl": 27
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "FEED",
+   "adset": "PROMOCIONES CDMX",
+   "freq": 1.32,
+   "gasto": 9376,
+   "leads": 329,
+   "cpl": 28
   },
   {
    "cuenta": "Cuautla",
@@ -302,20 +311,11 @@ window.FATIGA_DATA = {
    "cpl": 28
   },
   {
-   "cuenta": "Promo/Compl.",
-   "ad": "FEED",
-   "adset": "PROMOCIONES CDMX",
-   "freq": 1.32,
-   "gasto": 9373,
-   "leads": 328,
-   "cpl": 29
-  },
-  {
    "cuenta": "Pachuca",
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
-   "freq": 1.57,
-   "gasto": 8185,
+   "freq": 1.56,
+   "gasto": 8187,
    "leads": 281,
    "cpl": 29
   },
@@ -324,7 +324,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "adset": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "freq": 1.41,
-   "gasto": 8004,
+   "gasto": 8006,
    "leads": 277,
    "cpl": 29
   },
