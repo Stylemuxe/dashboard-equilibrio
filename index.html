@@ -8,7 +8,7 @@
 <meta http-equiv="Expires" content="0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
 <title>Dashboard Meta Ads | Equilibrio Total</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- DATA_BUNDLE_START -->
@@ -40,49 +40,51 @@
    Font: Open Sans
    ═══════════════════════════════════════════════════════════════════════════ */
 :root{
-  /* ── Marca Equilibrio Total (teal del logo #407887 + acento naranja) ── */
-  --bg:    #F9FAFB;
-  --bg2:   #FFFFFF;
-  --bg3:   #F0F3F4;
-  --card:  #FFFFFF;
-  --card2: #F9FAFB;
-  --border:  rgba(25,32,36,0.09);
-  --border2: rgba(25,32,36,0.15);
-  --coral:   #407887;  /* acento principal de marca (antes coral) */
-  --violet:  #31606D;  /* acento secundario de marca (antes violeta) */
-  --gold:    #F09D0F;  /* warning */
-  --teal:    #428CD7;  /* info / identidad secundaria (antes teal) */
-  --pink:    #DD382C;  /* danger / estado "malo" (antes pink) */
-  --text:    #192024;
-  --text2:   #57646B;
-  --text3:   #9DA9AF;
-  /* ── Sidebar (teal oscuro de marca) ── */
-  --side-bg:    #254B56;
-  --side-bg2:   #19363E;
-  --side-text:  #DEEEF2;
-  --side-text2: #94C4D1;
+  /* ── Manual de Rebranding ETH (09-oct-2026): Azul Petróleo, Verde Oliva Claro,
+     Beige Marfil, Gris Perla, Azul Profundo y Carbón. Estados (bien/vigilar/mal)
+     en tonos apagados que no se salen de la familia de la marca. ── */
+  --marfil:#F4EDE3; --petroleo:#3F7A89; --oliva:#A7BA8D; --perla:#DADADA; --profundo:#1F3A5F; --carbon:#1E1E1E;
+  --bg:    #F4EDE3;
+  --bg2:   #FFFDF9;
+  --bg3:   #EDE4D6;
+  --card:  #FFFDF9;
+  --card2: #F8F2E9;
+  --border:  rgba(31,58,95,0.10);
+  --border2: rgba(31,58,95,0.18);
+  --coral:   #3F7A89;  /* acento principal: Azul Petróleo */
+  --violet:  #1F3A5F;  /* acento secundario: Azul Profundo */
+  --gold:    #B8862B;  /* vigilar */
+  --teal:    #1F3A5F;  /* info */
+  --pink:    #A44A35;  /* mal */
+  --text:    #1E1E1E;
+  --text2:   #4A5560;
+  --text3:   #7C868D;
+  /* ── Sidebar: Azul Profundo ── */
+  --side-bg:    #1F3A5F;
+  --side-bg2:   #172D4A;
+  --side-text:  #F4EDE3;
+  --side-text2: #A7BA8D;
   /* ── Aliases usados en el JS existente ── */
-  --cyan:    #407887;   /* acento principal (antes violeta-azul) */
-  --green:   #2C9658;   /* success */
-  --yellow:  #F09D0F;   /* warning */
-  --purple:  #31606D;
-  --orange:  #E05A29;   /* accent de marca, solo para CTAs puntuales */
-  /* Escala completa de marca, por si hace falta un tono intermedio */
-  --primary-50:#F0F7F9; --primary-100:#DEEEF2; --primary-200:#BEDCE4; --primary-300:#94C4D1;
-  --primary-400:#61A5B8; --primary-500:#4C91A4; --primary-600:#407887; --primary-700:#31606D;
-  --primary-800:#254B56; --primary-900:#19363E;
-  --success-light:#DFF6E9; --warning-light:#FCEFCF; --danger-light:#FBE2E0; --info-light:#E1EDFA;
-  --radius:14px; --radius-sm:8px;
-  --shadow: 0 1px 2px rgba(25,32,36,0.06), 0 4px 16px rgba(25,32,36,0.06);
+  --cyan:    #3F7A89;
+  --green:   #55703A;   /* bien (oliva oscuro, legible sobre marfil) */
+  --yellow:  #B8862B;   /* vigilar */
+  --purple:  #1F3A5F;
+  --orange:  #3F7A89;
+  --primary-50:#EEF4F5; --primary-100:#E3EEF0; --primary-200:#C5DADF; --primary-300:#9DBFC7;
+  --primary-400:#6E9EAA; --primary-500:#558C99; --primary-600:#3F7A89; --primary-700:#2F6B78;
+  --primary-800:#1F3A5F; --primary-900:#172D4A;
+  --success-light:#E9F0DF; --warning-light:#F6ECD6; --danger-light:#F6E4DD; --info-light:#E3EEF0;
+  --radius:16px; --radius-sm:10px;
+  --shadow: 0 1px 2px rgba(31,58,95,0.06), 0 6px 18px rgba(31,58,95,0.07);
   /* ── Transitions ── */
   --ease: cubic-bezier(0.4,0,0.2,1);
   --bounce: cubic-bezier(0.34,1.56,0.64,1);
 }
 
 /* ── Reset ───────────────────────────────────────────────────────────────── */
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',system-ui,sans-serif}
 body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
-.sidebar-brand h1,.header-title h1,.kpi-val,.aud-card .aud-name,.top-ad-leads{font-family:'Sora',system-ui,sans-serif}
+.sidebar-brand h1,.header-title h1,.kpi-val,.aud-card .aud-name,.top-ad-leads{font-family:'Montserrat',system-ui,sans-serif}
 
 /* ── App layout (sidebar + main) ─────────────────────────────────────────── */
 .app{display:flex;min-height:100vh;position:relative;z-index:1}
@@ -98,7 +100,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 .sidebar::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1);border-radius:3px}
 .sidebar-brand{display:flex;align-items:center;gap:11px;padding:22px 20px 16px}
 .sidebar-brand .logo-circle{width:40px;height:40px;display:flex;align-items:center;
-  justify-content:center;filter:drop-shadow(0 0 9px rgba(64,120,135,.45));flex-shrink:0}
+  justify-content:center;filter:drop-shadow(0 0 9px rgba(63,122,137,.45));flex-shrink:0}
 .sidebar-brand h1{font-size:15px;font-weight:700;color:#fff;letter-spacing:-.2px;line-height:1.15}
 .sidebar-brand p{font-size:10px;color:var(--side-text2);margin-top:3px}
 .nav-group-label{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
@@ -113,7 +115,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 .nav-item .nav-ico{font-size:15px;width:20px;text-align:center;flex-shrink:0}
 .nav-item:hover{background:rgba(255,255,255,.06);color:#fff}
 .nav-item.active{background:linear-gradient(135deg,var(--violet),var(--coral));color:#fff;
-  box-shadow:0 7px 20px rgba(49,96,109,.4)}
+  box-shadow:0 7px 20px rgba(31,58,95,.4)}
 
 /* ── Topbar ── */
 .topbar{
@@ -141,7 +143,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 }
 .header-left{display:flex;align-items:center;gap:14px}
 .logo-circle{width:44px;height:44px;display:flex;align-items:center;justify-content:center;
-  filter:drop-shadow(0 0 8px rgba(64,120,135,0.4))}
+  filter:drop-shadow(0 0 8px rgba(63,122,137,0.4))}
 .header-title h1{font-size:18px;font-weight:700;color:var(--coral);letter-spacing:-.2px}
 .header-title p{font-size:11px;color:var(--text2);margin-top:2px}
 .header-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
@@ -179,7 +181,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 .kpi-card{
   background:var(--card);border:1px solid var(--border);border-radius:14px;
   padding:20px 20px 18px;position:relative;overflow:hidden;
-  box-shadow:0 1px 3px rgba(25,32,36,.05),0 10px 26px rgba(25,32,36,.04);
+  box-shadow:0 1px 3px rgba(30,30,30,.05),0 10px 26px rgba(30,30,30,.04);
   transition:transform .25s var(--ease),box-shadow .25s var(--ease)
 }
 .kpi-card::after{
@@ -193,7 +195,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
   .kpi-card:nth-child(5){animation-delay:280ms}  .kpi-card:nth-child(6){animation-delay:350ms}
   .kpi-card:nth-child(7){animation-delay:420ms}  .kpi-card:nth-child(8){animation-delay:490ms}
 }
-.kpi-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(25,32,36,.14)}
+.kpi-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(30,30,30,.14)}
 .kpi-card.c1{--kpi-grad:linear-gradient(90deg,var(--coral),var(--violet))}
 .kpi-card.c2{--kpi-grad:linear-gradient(90deg,var(--violet),var(--pink))}
 .kpi-card.c3{--kpi-grad:linear-gradient(90deg,var(--teal),var(--violet))}
@@ -227,13 +229,13 @@ body{background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 }
 .toggle-btn.active{
   background:linear-gradient(135deg,var(--violet),var(--coral));
-  color:#fff;box-shadow:0 2px 12px rgba(49,96,109,.35)
+  color:#fff;box-shadow:0 2px 12px rgba(31,58,95,.35)
 }
 
 /* ── Tables ──────────────────────────────────────────────────────────────── */
 .table-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--border);
   margin-bottom:22px;background:var(--card);
-  box-shadow:0 1px 3px rgba(25,32,36,.05),0 10px 26px rgba(25,32,36,.04)}
+  box-shadow:0 1px 3px rgba(30,30,30,.05),0 10px 26px rgba(30,30,30,.04)}
 table{width:100%;border-collapse:collapse;font-size:13px}
 thead{background:var(--card2)}
 th{padding:10px 8px;text-align:left;font-size:10px;font-weight:700;
@@ -249,7 +251,7 @@ td{padding:10px 8px;border-top:1px solid var(--border);
   tbody tr:nth-child(7){animation-delay:210ms}  tbody tr:nth-child(8){animation-delay:245ms}
   tbody tr:nth-child(9){animation-delay:280ms}
 }
-tr:hover td{background:rgba(49,96,109,.05)}
+tr:hover td{background:rgba(31,58,95,.05)}
 /* ── Filas expandibles (progressive disclosure) ── */
 tr.row-toggle{cursor:pointer}
 tr.row-toggle .row-caret{color:var(--text3);font-size:11px}
@@ -257,30 +259,30 @@ tr.row-toggle:hover .row-caret{color:var(--violet)}
 tr.row-detail{display:none}
 tr.row-detail.open{display:table-row}
 tr.row-detail td{background:var(--card2);color:var(--text2);font-size:11.5px;white-space:normal;padding:8px 8px 10px}
-.sum-row td{font-weight:700;background:rgba(64,120,135,.08);color:var(--coral)}
+.sum-row td{font-weight:700;background:rgba(63,122,137,.08);color:var(--coral)}
 
 /* ── Badges ──────────────────────────────────────────────────────────────── */
 .badge{display:inline-flex;align-items:center;padding:3px 9px;border-radius:20px;
   font-size:10px;font-weight:700;letter-spacing:.04em}
-.badge-green {background:rgba(44,150,88,.15);color:var(--green)}
-.badge-yellow{background:rgba(240,157,15,.15);color:var(--gold)}
-.badge-red   {background:rgba(221,56,44,.15);color:var(--pink)}
-.badge-blue  {background:rgba(49,96,109,.15);color:var(--violet)}
+.badge-green {background:rgba(85,112,58,.15);color:var(--green)}
+.badge-yellow{background:rgba(184,134,43,.15);color:var(--gold)}
+.badge-red   {background:rgba(164,74,53,.15);color:var(--pink)}
+.badge-blue  {background:rgba(31,58,95,.15);color:var(--violet)}
 @media(prefers-reduced-motion:no-preference){
   .badge-green,.badge-yellow,.badge-red{animation:glowPulse 3s ease-in-out infinite}
 }
-.badge-video   {background:rgba(49,96,109,.15);color:var(--violet)}
-.badge-imagen  {background:rgba(44,150,88,.15);color:var(--green)}
-.badge-carrusel{background:rgba(240,157,15,.15);color:var(--gold)}
+.badge-video   {background:rgba(31,58,95,.15);color:var(--violet)}
+.badge-imagen  {background:rgba(85,112,58,.15);color:var(--green)}
+.badge-carrusel{background:rgba(184,134,43,.15);color:var(--gold)}
 .badge-otro    {background:rgba(255,255,255,.06);color:var(--text2)}
-.badge-activo  {background:rgba(44,150,88,.15);color:var(--green)}
-.badge-pausado {background:rgba(221,56,44,.15);color:var(--pink)}
+.badge-activo  {background:rgba(85,112,58,.15);color:var(--green)}
+.badge-pausado {background:rgba(164,74,53,.15);color:var(--pink)}
 .badge-nuevo   {background:linear-gradient(90deg,var(--violet),var(--coral));color:#fff}
 
 /* ── Auditoría de campañas ──────────────────────────────────────────────── */
 .aud-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-bottom:24px}
 .aud-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 16px;
-  box-shadow:0 1px 3px rgba(25,32,36,.05),0 10px 26px rgba(25,32,36,.04)}
+  box-shadow:0 1px 3px rgba(30,30,30,.05),0 10px 26px rgba(30,30,30,.04)}
 .aud-card .aud-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
 .aud-card .aud-name{font-size:14px;font-weight:700;color:var(--text)}
 .aud-box{background:var(--card2);border-radius:9px;padding:8px 10px;margin:8px 0;font-size:11.5px}
@@ -313,7 +315,7 @@ tr.row-detail td{background:var(--card2);color:var(--text2);font-size:11.5px;whi
 /* ── Charts ──────────────────────────────────────────────────────────────── */
 .charts-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:22px}
 .chart-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;
-  box-shadow:0 1px 3px rgba(25,32,36,.05),0 10px 26px rgba(25,32,36,.04)}
+  box-shadow:0 1px 3px rgba(30,30,30,.05),0 10px 26px rgba(30,30,30,.04)}
 .chart-title{font-size:11px;font-weight:700;color:var(--text2);
   margin-bottom:14px;text-transform:uppercase;letter-spacing:.06em}
 .chart-canvas-wrap{position:relative;height:260px}
@@ -322,7 +324,7 @@ tr.row-detail td{background:var(--card2);color:var(--text2);font-size:11.5px;whi
 .pace-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
   padding:22px 24px 20px;margin-bottom:22px;box-shadow:var(--shadow)}
 .pace-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px 16px;margin-bottom:22px}
-.pace-title{font-family:'Sora',system-ui;font-size:14px;font-weight:700;color:var(--text)}
+.pace-title{font-family:'Montserrat',system-ui;font-size:14px;font-weight:700;color:var(--text)}
 .pace-status{font-size:12.5px;font-weight:700}
 .pace-status.ok{color:var(--green)}
 .pace-status.bad{color:var(--pink)}
@@ -333,8 +335,8 @@ tr.row-detail td{background:var(--card2);color:var(--text2);font-size:11.5px;whi
 .pace-fill.bad{background:var(--pink)}
 .pace-proj{position:absolute;top:0;height:100%;border-radius:0 12px 12px 0;box-sizing:border-box;
   border:2px dashed rgba(255,255,255,.75)}
-.pace-proj.ok{background:rgba(44,150,88,.35)}
-.pace-proj.bad{background:rgba(221,56,44,.35)}
+.pace-proj.ok{background:rgba(85,112,58,.35)}
+.pace-proj.bad{background:rgba(164,74,53,.35)}
 .pace-tick{position:absolute;top:-6px;width:2px;height:36px;background:var(--text2);border-radius:1px}
 .pace-tick-label{position:absolute;top:-20px;transform:translateX(-50%);font-size:9px;font-weight:700;
   color:var(--text2);white-space:nowrap;text-transform:uppercase;letter-spacing:.03em}
@@ -351,7 +353,7 @@ tr.row-detail td{background:var(--card2);color:var(--text2);font-size:11.5px;whi
 .pace-stat{background:var(--card2);border-radius:10px;padding:10px 13px;border-left:3px solid var(--border2)}
 .pace-stat .lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;
   color:var(--text3);margin-bottom:4px}
-.pace-stat .val{font-family:'Sora',system-ui;font-size:16.5px;font-weight:800;color:var(--text);
+.pace-stat .val{font-family:'Montserrat',system-ui;font-size:16.5px;font-weight:800;color:var(--text);
   font-variant-numeric:tabular-nums}
 
 .pace-breakdown{margin-top:18px;padding-top:16px;border-top:1px solid var(--border)}
@@ -401,10 +403,10 @@ tr.row-detail td{background:var(--card2);color:var(--text2);font-size:11.5px;whi
   transition:transform .2s var(--ease)
 }
 .alert-item:hover{transform:translateX(4px)}
-.alert-crit{background:rgba(221,56,44,.08);border-color:var(--pink)}
-.alert-warn{background:rgba(240,157,15,.07);border-color:var(--gold)}
-.alert-ok  {background:rgba(44,150,88,.07);border-color:var(--green)}
-.alert-info{background:rgba(49,96,109,.07);border-color:var(--violet)}
+.alert-crit{background:rgba(164,74,53,.08);border-color:var(--pink)}
+.alert-warn{background:rgba(184,134,43,.07);border-color:var(--gold)}
+.alert-ok  {background:rgba(85,112,58,.07);border-color:var(--green)}
+.alert-info{background:rgba(31,58,95,.07);border-color:var(--violet)}
 .alert-icon{font-size:20px;flex-shrink:0;margin-top:1px}
 .alert-title{font-size:13px;font-weight:700;margin-bottom:3px;color:var(--text)}
 .alert-desc{font-size:12px;color:var(--text2);line-height:1.5}
@@ -415,11 +417,11 @@ tr.row-detail td{background:var(--card2);color:var(--text2);font-size:11.5px;whi
   background:var(--card);border:1px solid var(--border);border-radius:10px;
   margin-bottom:8px;transition:transform .2s var(--ease),border-color .2s
 }
-.top-ad-item:hover{transform:translateX(4px);border-color:rgba(64,120,135,.3)}
+.top-ad-item:hover{transform:translateX(4px);border-color:rgba(63,122,137,.3)}
 .top-ad-num{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;
   justify-content:center;font-size:11px;font-weight:700;flex-shrink:0}
 .num-1{background:linear-gradient(135deg,var(--gold),var(--coral));color:#fff}
-.num-2{background:linear-gradient(135deg,#8A97A0,#57646B);color:#fff}
+.num-2{background:linear-gradient(135deg,#6B7480,#4A5560);color:#fff}
 .num-3{background:linear-gradient(135deg,var(--coral),var(--pink));color:#fff}
 .num-other{background:rgba(255,255,255,.07);color:var(--text2)}
 .top-ad-info{flex:1;min-width:0}
@@ -459,28 +461,64 @@ tr.row-detail td{background:var(--card2);color:var(--text2);font-size:11.5px;whi
   .nav-item{justify-content:center;padding:11px 0}
   .nav-list{padding:0 8px}
 }
+
+/* ══ Rediseño Manual ETH (09-oct-2026) ══ */
+*{font-family:'Montserrat',system-ui,sans-serif}
+body{background:var(--bg)}
+.sidebar-brand h1,.header-title h1,.kpi-val,.aud-card .aud-name,.top-ad-leads,.pace-title,.pace-stat .val{font-family:'Montserrat',system-ui,sans-serif;letter-spacing:-.01em}
+.sidebar-brand .logo-circle{filter:none}
+.sidebar-brand .logo-circle svg{width:34px;height:auto;display:block}
+.sidebar-brand h1{color:var(--marfil)}
+/* Pestañas verde oliva, redondeadas a la izquierda y pegadas al borde derecho (manual) */
+.nav-list{padding:0 0 0 13px}
+.nav-item{border-radius:999px 0 0 999px}
+.nav-item:hover{background:rgba(244,237,227,.08);color:var(--marfil)}
+.nav-item.active{background:var(--oliva);color:var(--carbon);box-shadow:none}
+.topbar{background:rgba(244,237,227,.92)}
+.sec-title{color:var(--profundo)}
+.kpi-card,.card,.aud-card,.tab-panel .chart-card{border-radius:var(--radius)}
+th{color:var(--petroleo)}
+::selection{background:var(--oliva);color:var(--carbon)}
+
+/* ══ Gerontología: Manual Autonomía con Sentido (retro 60s) ══ */
+#tab-gero,#geroCpaDetalle{
+  --coral:#5795a0; --violet:#f5643c; --gold:#f2c342; --teal:#53bbc9; --pink:#f5643c;
+  --cyan:#5795a0; --green:#7f8320; --yellow:#c99a1e; --purple:#5795a0; --orange:#f5643c;
+  --border:rgba(87,149,160,.22); --border2:rgba(87,149,160,.35);
+  --card:#FFFDF8; --card2:#FBF5EA;
+}
+#tab-gero{position:relative;background:#F4EDE3;border-radius:22px;padding:18px 18px 22px;margin-top:4px}
+#tab-gero::before{content:"";display:block;height:10px;border-radius:999px;margin:0 0 16px;
+  background:linear-gradient(90deg,#5795a0 0 20%,#b1b526 20% 40%,#f2c342 40% 60%,#f5643c 60% 80%,#53bbc9 80% 100%)}
+#tab-gero .sec-title{font-family:'Fraunces',Georgia,serif;font-weight:700;color:#5795a0;font-size:22px}
+#tab-gero .kpi-val{font-family:'Fraunces',Georgia,serif;color:#5795a0}
+#tab-gero th{color:#5795a0}
+#tab-gero .kpi-card{border-top:4px solid #f2c342}
+#tab-gero .kpi-card:nth-child(2n){border-top-color:#f5643c}
+#tab-gero .kpi-card:nth-child(3n){border-top-color:#53bbc9}
+.nav-item.gero-nav.active{background:#f2c342;color:#1E1E1E}
 </style>
 </head>
 <body>
 
 <style>
 body:not(.unlocked) .app{display:none}
-#login{display:none;position:fixed;inset:0;z-index:999;align-items:center;justify-content:center;padding:20px;background:#0b0d14}
+#login{display:none;position:fixed;inset:0;z-index:999;align-items:center;justify-content:center;padding:20px;background:#1F3A5F}
 body:not(.unlocked) #login{display:flex}
-#login-card{width:100%;max-width:340px;background:#161925;border:1px solid #262b3d;
+#login-card{width:100%;max-width:340px;background:#F4EDE3;border:1px solid rgba(31,58,95,.18);
   border-radius:20px;padding:32px 28px;text-align:center;
-  box-shadow:0 1px 0 rgba(255,255,255,.08) inset,0 20px 50px rgba(0,0,0,.55)}
+  box-shadow:0 20px 50px rgba(0,0,0,.35)}
 #login-card .ico{font-size:30px;margin-bottom:6px}
-#login-card h2{font-size:16px;font-weight:700;margin-bottom:4px;color:#fff}
-#login-card p{font-size:11.5px;color:#8a90a6;margin-bottom:20px}
-#login-card input{width:100%;background:#0f121c;border:1px solid #262b3d;border-radius:12px;
-  color:#fff;padding:11px 14px;font-size:14px;text-align:center;outline:none;
+#login-card h2{font-size:16px;font-weight:700;margin-bottom:4px;color:#1F3A5F}
+#login-card p{font-size:11.5px;color:#4A5560;margin-bottom:20px}
+#login-card input{width:100%;background:#FFFDF9;border:1px solid rgba(31,58,95,.25);border-radius:12px;
+  color:#1E1E1E;padding:11px 14px;font-size:14px;text-align:center;outline:none;
   font-family:inherit;letter-spacing:2px;margin-bottom:12px}
-#login-card input:focus{border-color:#FF6040}
+#login-card input:focus{border-color:#3F7A89}
 #login-card button{width:100%;border:none;border-radius:12px;padding:11px 14px;font-size:13px;
   font-weight:700;color:#fff;cursor:pointer;font-family:inherit;
-  background:#FF6040;box-shadow:0 6px 18px rgba(255,96,64,.35)}
-#login-err{font-size:11.5px;color:#ff4d6d;margin-top:12px;min-height:14px}
+  background:#3F7A89;box-shadow:0 6px 18px rgba(63,122,137,.35)}
+#login-err{font-size:11.5px;color:#A44A35;margin-top:12px;min-height:14px}
 </style>
 
 <div id="login">
@@ -532,7 +570,7 @@ body:not(.unlocked) #login{display:flex}
 <aside class="sidebar">
   <div class="sidebar-brand">
     <div class="logo-circle">
-      <img src="logo-equilibrio-total.png" alt="Equilibrio Total" width="40" height="32" style="object-fit:contain">
+      <svg viewBox="0 0 53 62" role="img" aria-label="Equilibrio Total"><path fill="#F4EDE3" d="M21.19 1.99C19.41 2.16 17.76 3.29 16.86 4.93C15.55 7.33 16.17 10.29 18.31 11.82C19.26 12.5 20.24 12.81 21.47 12.81C22.39 12.81 22.96 12.68 23.75 12.29C25.17 11.61 26.31 10.23 26.78 8.63C26.97 8 27.01 6.79 26.88 6.1C26.35 3.47 23.92 1.72 21.19 1.99M14.5 12.42C13.38 12.56 11.98 13.16 10.85 13.96C10.12 14.48 8.73 15.84 8.04 16.71C7.05 17.97 5.85 19.91 5.18 21.34C2.65 26.75 1.87 32.95 2.92 39.25C3.53 42.88 5.31 47.25 7.44 50.3C9.84 53.73 13.34 56.73 17.28 58.7C19.29 59.71 21.26 60.39 23.63 60.92C27.12 61.69 30.64 61.79 33.96 61.2C42.04 59.78 48.76 53.85 50.55 46.58C51.46 42.88 50.9 39.28 48.95 36.28C47.63 34.26 45.64 32.61 43.18 31.51C41.79 30.89 40.79 30.57 37.96 29.84C34.95 29.07 33.83 28.69 32.25 27.9C30.48 27.01 29.12 26.06 27.75 24.72C26.22 23.23 25.6 22.42 23.28 18.94C21.18 15.79 20.41 14.81 19.32 13.94C18.41 13.2 17.43 12.71 16.48 12.51C15.9 12.4 15.02 12.35 14.5 12.42M18.85 24.19C19.81 24.44 21.02 25.17 22.19 26.2C25.52 29.13 28.25 30.65 31.43 31.35C31.74 31.41 32.06 31.49 32.15 31.51C32.28 31.54 32.19 31.58 31.74 31.71C28.33 32.75 25.37 35.19 23.79 38.26C23.16 39.49 22.81 40.65 22.62 42.05C22.49 43.06 22.52 44.61 22.71 45.48C23.33 48.41 25.21 50.92 27.7 52.15C29.38 52.98 31.39 53.33 32.92 53.05C33.87 52.89 34.31 52.52 34.26 51.94C34.21 51.44 33.98 51.26 32.95 50.95C30.89 50.34 29.45 48.87 28.96 46.9C28.32 44.27 29.5 40.55 31.65 38.4C32.8 37.25 34.13 36.57 35.76 36.3C36.67 36.15 38.27 36.22 39.12 36.43C41.57 37.04 43.55 38.54 44.59 40.58C45.51 42.36 45.68 44.84 45.05 46.96C43.86 50.86 40.4 53.94 35.52 55.42C33.69 55.97 32.04 56.18 29.75 56.13C27.73 56.08 26.38 55.88 24.54 55.36C17.29 53.28 12.11 47.52 11.07 40.4C10.57 36.98 11.02 33.17 12.33 29.88C12.75 28.79 13.12 28.08 13.65 27.3C14.98 25.32 16.06 24.38 17.38 24.1C17.71 24.02 18.36 24.07 18.85 24.19M42.81 18.63C40.51 19.11 38.9 20.67 38.3 23C38.13 23.67 38.14 24.85 38.32 25.52C38.92 27.71 40.65 29.14 42.88 29.26C44.46 29.35 45.89 28.8 47.15 27.61C47.89 26.92 48.3 26.23 48.62 25.18C48.78 24.68 48.79 24.53 48.79 23.63C48.8 22.75 48.78 22.57 48.66 22.16C48.34 21.17 47.74 20.27 47 19.66C46.55 19.3 45.66 18.84 45.11 18.69C44.58 18.55 43.35 18.52 42.81 18.63"/></svg>
     </div>
     <div>
       <h1>Equilibrio Total</h1>
@@ -561,7 +599,7 @@ body:not(.unlocked) #login{display:flex}
 
   <div class="nav-group-label">Otras cuentas</div>
   <nav class="nav-list">
-    <button class="nav-item" data-title="Gerontología" onclick="switchTab('gero',this)"><span class="nav-ico">🧓</span><span>Gerontología</span></button>
+    <button class="nav-item gero-nav" data-title="Gerontología" onclick="switchTab('gero',this)"><span class="nav-ico">🧓</span><span>Gerontología</span></button>
     <button class="nav-item" data-title="Complementos" onclick="switchTab('complementos',this)"><span class="nav-ico">📣</span><span>Complementos</span></button>
   </nav>
 </aside>
@@ -1092,7 +1130,7 @@ body:not(.unlocked) #login{display:flex}
 <!-- GERONTOLOGÍA -->
 <div id="tab-gero" class="tab-panel">
   <div class="sec-header" style="margin-bottom:16px">
-    <div class="sec-title">Gerontología</div>
+    <div class="sec-title">Autonomía con Sentido <span style="font-family:Montserrat,sans-serif;font-size:12px;font-weight:600;color:#f5643c;letter-spacing:.12em;text-transform:uppercase;margin-left:8px">Club Gerontológico</span></div>
     <select class="filter-select" id="filtroGeroFecha" onchange="renderGero()">
       <option value="">— Todo el mes —</option>
     </select>
@@ -1216,7 +1254,7 @@ function init() {
   if (window.Chart) {
     Chart.defaults.font.family = "'Open Sans', system-ui";
     Chart.defaults.font.weight = "400";
-    Chart.defaults.color = "#57646B";
+    Chart.defaults.color = "#4A5560";
     Chart.defaults.animation = { duration: 1200, easing: 'easeOutQuart' };
   }
   renderCcStaleBanner();
@@ -1342,7 +1380,7 @@ function renderCcStaleBanner() {
   var dias = DATA.cc_excel_dias_desde_actualizacion;
   if (dias == null || dias < 2) { el.innerHTML = ''; return; }
   var critico = dias >= 4;
-  var bg = critico ? 'rgba(221,56,44,0.12)' : 'rgba(240,157,15,0.12)';
+  var bg = critico ? 'rgba(164,74,53,0.12)' : 'rgba(184,134,43,0.12)';
   var border = critico ? 'var(--pink)' : 'var(--yellow)';
   var color = critico ? 'var(--pink)' : 'var(--yellow)';
   el.innerHTML =
@@ -1518,7 +1556,7 @@ function renderKPIs() {
       }
       return '<div style="flex:1 1 105px;min-width:105px;text-align:center;padding:8px 6px;white-space:nowrap">'
         + '<div style="font-size:10.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px">'+tit+'</div>'
-        + '<div style="font-size:19px;font-weight:800">'+(esDinero ? fmt(Math.round(val)) : fmtN(Math.round(val)))+'</div>'
+        + '<div style="font-size:'+(esDinero?'16px':'19px')+';font-weight:800">'+(esDinero ? fmt(Math.round(val)) : fmtN(Math.round(val)))+'</div>'
         + extra + '</div>';
     }
     function grupo(nombre, color, pLeads, ml, pAgend, lblAgend, pAsist, mcc, pGasto, agendSub){
@@ -1532,15 +1570,15 @@ function renderKPIs() {
         + '</div>';
     }
     el.innerHTML = '<div style="'
-      + 'background:rgba(255,255,255,.03);border:1px solid rgba(255,214,80,.25);border-radius:14px;'
+      + 'background:rgba(255,255,255,.03);border:1px solid rgba(184,134,43,.25);border-radius:14px;'
       + 'padding:8px 14px;margin:0 0 16px">'
       + '<div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px">'
       +   '<span style="font-size:13px;font-weight:800;color:var(--yellow)">🔮 PROYECCIÓN CIERRE</span>'
       +   '<span style="font-size:10.5px;color:var(--text3)">al ritmo del día '+dia+' de '+diasMes+'</span>'
       + '</div>'
       + '<div style="display:flex;flex-wrap:wrap;gap:8px">'
-      + grupo('SEDES', '#428CD7', proy(pLeadsS), mlS, proy(pAgendS), 'Agendadas', proyGrupo(s, SEDES_REALES), mccS, proy(pGastoS))
-      + grupo('FRANQUICIAS', '#31606D', proy(leadsF), mlF, proy(resF), 'Reservadas', proyGrupo(f, Object.keys(f)), mccF, proy(gastoF))
+      + grupo('SEDES', '#3F7A89', proy(pLeadsS), mlS, proy(pAgendS), 'Agendadas', proyGrupo(s, SEDES_REALES), mccS, proy(pGastoS))
+      + grupo('FRANQUICIAS', '#1F3A5F', proy(leadsF), mlF, proy(resF), 'Reservadas', proyGrupo(f, Object.keys(f)), mccF, proy(gastoF))
       + '</div>'
       + proyAsistDetalle()
       + '</div>';
@@ -1580,8 +1618,8 @@ function renderKPIs() {
       return '<div style="margin-top:10px;border-top:1px dashed var(--border);padding-top:8px">'
         + '<div style="font-size:10.5px;color:var(--text3);margin-bottom:6px">'+(PA ? 'Asistidas proyectadas con el ritmo del Contact Center <b>por día de la semana</b>: cada clínica lleva su patrón de '+PA.mes_base+' (el sábado es el pico; en domingo solo cuentan las que abren: '+PA.abren_domingo.join(', ')+'). Corte al día '+diasCC+'. Con la fórmula lineal (÷ '+diasCC+' × '+diasMes+') las sedes darían '+fmtN(PA.totales.sedes.lineal)+'.' : 'Asistidas proyectadas con el ritmo del Contact Center: asistidas al corte ÷ '+diasCC+' días × '+diasMes+'.')+' "Necesita/día" = lo que falta para su meta ÷ días restantes.</div>'
         + '<div style="display:flex;flex-wrap:wrap;gap:14px">'
-        + tabla('SEDES', '#428CD7', s, sedesN, mccS)
-        + tabla('FRANQUICIAS', '#31606D', f, franqN, mccF)
+        + tabla('SEDES', '#3F7A89', s, sedesN, mccS)
+        + tabla('FRANQUICIAS', '#1F3A5F', f, franqN, mccF)
         + '</div></div>';
     }
   })();
@@ -1795,8 +1833,8 @@ function renderGastoDesglose(elId, data, color) {
   const orden = Object.keys(data).sort((a,b) => data[b].gasto_mes - data[a].gasto_mes);
   const max   = data[orden[0]] ? data[orden[0]].gasto_mes : 1;
   const grad  = color === 'cyan'
-    ? 'linear-gradient(90deg,#31606D,#407887)'
-    : 'linear-gradient(90deg,#407887,#F09D0F)';
+    ? 'linear-gradient(90deg,#1F3A5F,#3F7A89)'
+    : 'linear-gradient(90deg,#3F7A89,#B8862B)';
 
   const filas = orden.map(c => {
     const v   = data[c];
@@ -1926,7 +1964,7 @@ function renderGastoCuentas() {
 function renderChartLeads() {
   // Una sola métrica (leads) por categoría (clínica): un solo tono de marca,
   // no arcoíris — el color no está codificando identidad aquí.
-  const colores = ['#407887'];
+  const colores = ['#3F7A89'];
 
   const sNombres = Object.keys(DATA.sedes).sort();
   const sLeads   = sNombres.map(k => DATA.sedes[k].leads_mes);
@@ -2007,9 +2045,9 @@ function renderGastoDiario() {
   // Siempre los 3 datasets; se ocultan con hidden según el filtro (más estable que filtrar el array)
   const base = {fill:true, tension:0.4, borderWidth:2.5, pointRadius:0, pointHoverRadius:5};
   const datasets = [
-    Object.assign({key:'sedes',        label:'Sedes',        data:gastoS, borderColor:'#31606D', backgroundColor:areaGrad('155,93,229'),  pointBackgroundColor:'#31606D'}, base),
-    Object.assign({key:'franquicias',  label:'Franquicias',  data:gastoF, borderColor:'#407887', backgroundColor:areaGrad('255,96,64'),   pointBackgroundColor:'#407887'}, base),
-    Object.assign({key:'complementos', label:'Complementos', data:gastoC, borderColor:'#F09D0F', backgroundColor:areaGrad('244,169,60'),  pointBackgroundColor:'#F09D0F'}, base),
+    Object.assign({key:'sedes',        label:'Sedes',        data:gastoS, borderColor:'#1F3A5F', backgroundColor:areaGrad('155,93,229'),  pointBackgroundColor:'#1F3A5F'}, base),
+    Object.assign({key:'franquicias',  label:'Franquicias',  data:gastoF, borderColor:'#3F7A89', backgroundColor:areaGrad('255,96,64'),   pointBackgroundColor:'#3F7A89'}, base),
+    Object.assign({key:'complementos', label:'Complementos', data:gastoC, borderColor:'#B8862B', backgroundColor:areaGrad('244,169,60'),  pointBackgroundColor:'#B8862B'}, base),
   ].map(d => Object.assign(d, {hidden: !gastoDiarioModo.has(d.key)}));
 
   const ctx = document.getElementById('chartGastoDiario').getContext('2d');
@@ -2024,15 +2062,15 @@ function renderGastoDiario() {
       animation:false,                 /* evita interpolar el degradado (bug "this._fn is not a function") */
       interaction:{mode:'index', intersect:false},
       plugins:{
-        legend:{display:true, labels:{color:'#57646B',font:{size:11},boxWidth:12,padding:12,usePointStyle:true}},
+        legend:{display:true, labels:{color:'#4A5560',font:{size:11},boxWidth:12,padding:12,usePointStyle:true}},
         tooltip:{
-          backgroundColor:'rgba(20,19,42,0.94)',titleColor:'#DEEEF2',bodyColor:'#FFFFFF',padding:11,cornerRadius:10,
+          backgroundColor:'rgba(20,19,42,0.94)',titleColor:'#F4EDE3',bodyColor:'#FFFFFF',padding:11,cornerRadius:10,
           callbacks:{label:c=>'  '+c.dataset.label+': $'+Number(c.parsed.y).toLocaleString('es-MX',{minimumFractionDigits:2})}
         }
       },
       scales:{
-        x:{ticks:{color:'#9095AE',font:{size:10}},grid:{display:false}},
-        y:{ticks:{color:'#9095AE',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')},grid:{color:'rgba(25,32,36,0.06)'},border:{display:false}}
+        x:{ticks:{color:'#6B7480',font:{size:10}},grid:{display:false}},
+        y:{ticks:{color:'#6B7480',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')},grid:{color:'rgba(30,30,30,0.06)'},border:{display:false}}
       }
     }
   });
@@ -2073,8 +2111,8 @@ function renderGeroDiario() {
       animation:false,   /* bug de Chart.js "this._fn is not a function" al hacer hover — ver mkChart() */
       plugins:{legend:{display:false}},
       scales:{
-        x:{ticks:{color:'#8AACB5',font:{size:10}},grid:{display:false}},
-        y:{ticks:{color:'#8AACB5',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')},grid:{color:'rgba(63,122,137,0.08)'}}
+        x:{ticks:{color:'#6B7480',font:{size:10}},grid:{display:false}},
+        y:{ticks:{color:'#6B7480',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')},grid:{color:'rgba(63,122,137,0.08)'}}
       }
     }
   });
@@ -2088,8 +2126,8 @@ function renderGeroDiario() {
         + '<td>' + f.slice(5) + '</td>'
         + '<td style="font-weight:700">' + fmt(g) + '</td>'
         + '<td>' + fmtN(l) + '</td>'
-        + '<td><div style="background:rgba(124,143,212,0.15);border-radius:4px;height:8px;width:100%">'
-          + '<div style="background:rgba(124,143,212,0.8);border-radius:4px;height:8px;width:'+bar+'%"></div>'
+        + '<td><div style="background:rgba(31,58,95,0.12);border-radius:4px;height:8px;width:100%">'
+          + '<div style="background:rgba(31,58,95,0.8);border-radius:4px;height:8px;width:'+bar+'%"></div>'
           + '</div></td>'
         + '</tr>';
     }).join('')
@@ -2234,8 +2272,8 @@ function renderHoy() {
   }
   document.getElementById('hoyKpis').innerHTML =
     '<div style="display:flex;flex-wrap:wrap;gap:10px">'
-    + grupoHoy('SEDES', '#428CD7', totalLeadsS, totalGastoS, proyecta(totalGastoS), Math.round(proyecta(totalLeadsS)||0))
-    + grupoHoy('FRANQUICIAS', '#31606D', totalLeadsF, totalGastoF, proyecta(totalGastoF), Math.round(proyecta(totalLeadsF)||0))
+    + grupoHoy('SEDES', '#3F7A89', totalLeadsS, totalGastoS, proyecta(totalGastoS), Math.round(proyecta(totalLeadsS)||0))
+    + grupoHoy('FRANQUICIAS', '#1F3A5F', totalLeadsF, totalGastoF, proyecta(totalGastoF), Math.round(proyecta(totalLeadsF)||0))
     + '</div>';
   } catch(e) {
     var el = document.getElementById('hoySedes');
@@ -2431,8 +2469,8 @@ function renderSedes() {
   const nombres = orden.filter(c=>DATA.sedes[c]);
   const cpls = nombres.map(c=>DATA.sedes[c].cpl||0);
   const cpas = nombres.map(c=>DATA.sedes[c].cpa||0);
-  mkChart('chartCplSedes','bar',nombres,cpls,['rgba(49,96,109,0.85)'],'CPL $');
-  mkChart('chartCpaSedes','bar',nombres,cpas,['rgba(255,77,141,0.80)'],'CPA $');
+  mkChart('chartCplSedes','bar',nombres,cpls,['rgba(31,58,95,0.85)'],'CPL $');
+  mkChart('chartCpaSedes','bar',nombres,cpas,['rgba(63,122,137,0.85)'],'CPA $');
   const asisS  = nombres.map(c=>DATA.sedes[c].asistidas||0);
   const metasS = nombres.map(c=>DATA.sedes[c].meta_cc||0);
   mkChart2('chartAvanceSedes', nombres, 'Asistidas', asisS, 'Meta CC', metasS);
@@ -2486,8 +2524,8 @@ function renderFranquicias() {
   const nombres = orden;
   const cpls = nombres.map(c=>DATA.franquicias[c].cpl||0);
   const cpas = nombres.map(c=>DATA.franquicias[c].cpa||0);
-  mkChart('chartCplFranq','bar',nombres,cpls,['rgba(49,96,109,0.85)'],'CPL $');
-  mkChart('chartCpaFranq','bar',nombres,cpas,['rgba(22,194,163,0.80)'],'CPA $');
+  mkChart('chartCplFranq','bar',nombres,cpls,['rgba(31,58,95,0.85)'],'CPL $');
+  mkChart('chartCpaFranq','bar',nombres,cpas,['rgba(167,186,141,0.9)'],'CPA $');
   const asisF  = nombres.map(c=>DATA.franquicias[c].asistidas||0);
   const metasF = nombres.map(c=>DATA.franquicias[c].meta_cc||0);
   mkChart2('chartAvanceFranq', nombres, 'Asistidas', asisF, 'Meta CC', metasF);
@@ -2567,7 +2605,7 @@ function renderProyecciones(){
       + '<tr style="color:var(--text3);font-size:10px;text-transform:uppercase"><th style="text-align:left;padding:4px 8px">Clínica</th><th>Llevan</th><th>Día semana ⭐</th><th>Últ. 7 días</th><th>Lineal</th><th>Días abiertos</th><th>Meta</th><th>Necesita/día</th><th>Necesita sábado</th></tr>'
       + rows + '</table></div>';
   }
-  var html = grupo('sedes', 'SEDES PROPIAS', '#428CD7') + grupo('franquicias', 'FRANQUICIAS', '#31606D');
+  var html = grupo('sedes', 'SEDES PROPIAS', '#3F7A89') + grupo('franquicias', 'FRANQUICIAS', '#1F3A5F');
   html += '<div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:18px">' + tabla('sedes', 'Sedes por clínica') + tabla('franquicias', 'Franquicias por clínica') + '</div>'
     + '<div style="font-size:11px;color:var(--text3);margin:-8px 0 18px">D = abre en domingo. "Necesita sábado" = cuántas tendría que hacer un sábado para ir en camino a su meta, según su patrón (el sábado pesa más que entre semana). Colores: verde ≥100% de la meta, ámbar ≥85%, rosa abajo.</div>';
   var E = P.evento;
@@ -2967,7 +3005,7 @@ function renderTendTablas() {
 
 function renderTendScatter(todas) {
   var puntos = todas.filter(function(r){ return r.frecuencia != null && r.cpl != null; });
-  var colorMap = { rojo: 'rgba(221,56,44,0.75)', amarillo: 'rgba(240,157,15,0.75)', verde: 'rgba(44,150,88,0.7)' };
+  var colorMap = { rojo: 'rgba(164,74,53,0.75)', amarillo: 'rgba(184,134,43,0.75)', verde: 'rgba(85,112,58,0.7)' };
   var grupos = { rojo: [], amarillo: [], verde: [] };
   puntos.forEach(function(r) {
     var g = grupos[r.clasif_frecuencia] || grupos.verde;
@@ -2990,9 +3028,9 @@ function renderTendScatter(todas) {
     options: {
       responsive: true, maintainAspectRatio: false, animation: false,
       plugins: {
-        legend: { labels: { color: '#8AACB5', font: { size: 11 } } },
+        legend: { labels: { color: '#6B7480', font: { size: 11 } } },
         tooltip: {
-          backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#8AACB5', bodyColor:'#E8F4F8', padding:10, cornerRadius:8,
+          backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#6B7480', bodyColor:'#E3EEF0', padding:10, cornerRadius:8,
           callbacks: {
             label: function(c) {
               var row = c.raw._row;
@@ -3002,8 +3040,8 @@ function renderTendScatter(todas) {
         }
       },
       scales: {
-        x: { title:{display:true,text:'Frecuencia',color:'#3F7A89',font:{size:10}}, ticks:{color:'#8AACB5',font:{size:11}}, grid:{color:'rgba(63,122,137,0.08)'} },
-        y: { title:{display:true,text:'CPL',color:'#3F7A89',font:{size:10}}, ticks:{color:'#8AACB5',font:{size:11}}, grid:{color:'rgba(63,122,137,0.08)'} }
+        x: { title:{display:true,text:'Frecuencia',color:'#3F7A89',font:{size:10}}, ticks:{color:'#6B7480',font:{size:11}}, grid:{color:'rgba(63,122,137,0.08)'} },
+        y: { title:{display:true,text:'CPL',color:'#3F7A89',font:{size:10}}, ticks:{color:'#6B7480',font:{size:11}}, grid:{color:'rgba(63,122,137,0.08)'} }
       }
     }
   });
@@ -3022,18 +3060,18 @@ function renderTendCplMitades() {
       labels: clinicas.map(function(c){ return c.clinica; }),
       datasets: [
         { label: '1ª mitad del mes', data: clinicas.map(function(c){ return c.cpl_trend.cpl_1a_mitad; }), backgroundColor: 'rgba(63,122,137,0.7)', borderRadius: 4 },
-        { label: '2ª mitad del mes', data: clinicas.map(function(c){ return c.cpl_trend.cpl_2a_mitad; }), backgroundColor: 'rgba(221,56,44,0.7)', borderRadius: 4 },
+        { label: '2ª mitad del mes', data: clinicas.map(function(c){ return c.cpl_trend.cpl_2a_mitad; }), backgroundColor: 'rgba(164,74,53,0.7)', borderRadius: 4 },
       ]
     },
     options: {
       responsive: true, maintainAspectRatio: false, animation: false,
       plugins: {
-        legend: { labels: { color: '#8AACB5', font: { size: 11 } } },
-        tooltip: { backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#8AACB5', bodyColor:'#E8F4F8', padding:10, cornerRadius:8 }
+        legend: { labels: { color: '#6B7480', font: { size: 11 } } },
+        tooltip: { backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#6B7480', bodyColor:'#E3EEF0', padding:10, cornerRadius:8 }
       },
       scales: {
-        x: { ticks:{color:'#8AACB5',font:{size:10}}, grid:{display:false} },
-        y: { ticks:{color:'#8AACB5',font:{size:11}}, grid:{color:'rgba(63,122,137,0.08)'}, title:{display:true,text:'CPL',color:'#3F7A89',font:{size:10}} }
+        x: { ticks:{color:'#6B7480',font:{size:10}}, grid:{display:false} },
+        y: { ticks:{color:'#6B7480',font:{size:11}}, grid:{color:'rgba(63,122,137,0.08)'}, title:{display:true,text:'CPL',color:'#3F7A89',font:{size:10}} }
       }
     }
   });
@@ -3246,7 +3284,7 @@ function renderLeadsDiarios() {
       return FRANQ_NOMBRES_DIARIO.reduce(function(s,c){ return s + ((dia[c]||{}).leads||0); }, 0);
     });
     titulo  = 'Leads Diarios — Todas las Franquicias';
-    colorBar= 'rgba(46,98,115,0.7)';
+    colorBar= 'rgba(63,122,137,0.7)';
 
   } else {
     var val = document.getElementById('filtroLeadsClinica').value;
@@ -3285,15 +3323,15 @@ function renderLeadsDiarios() {
       animation: false,   /* bug de Chart.js "this._fn is not a function" al hacer hover — ver mkChart() */
       plugins: {
         legend: { display: false },
-        title: { display: true, text: titulo, color: '#8AACB5', font: {size:13, weight:'700'}, padding:{bottom:10} },
+        title: { display: true, text: titulo, color: '#6B7480', font: {size:13, weight:'700'}, padding:{bottom:10} },
         tooltip: {
-          backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#8AACB5', bodyColor:'#E8F4F8', padding:10, cornerRadius:8,
+          backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#6B7480', bodyColor:'#E3EEF0', padding:10, cornerRadius:8,
           callbacks: { label: function(c) { return '  ' + Number(c.parsed.y).toLocaleString('es-MX') + ' leads'; } }
         }
       },
       scales: {
-        x: { ticks:{color:'#8AACB5',font:{size:11}}, grid:{display:false} },
-        y: { ticks:{color:'#8AACB5',font:{size:11},stepSize:1}, grid:{color:'rgba(63,122,137,0.08)'},
+        x: { ticks:{color:'#6B7480',font:{size:11}}, grid:{display:false} },
+        y: { ticks:{color:'#6B7480',font:{size:11},stepSize:1}, grid:{color:'rgba(63,122,137,0.08)'},
              title:{display:true,text:'Leads',color:'#3F7A89',font:{size:10}} }
       }
     }
@@ -3393,27 +3431,27 @@ function renderCplClinica() {
         { type:'bar',  label:'Gasto $',  data: dias.map(d=>d.gasto),
           backgroundColor:'rgba(167,186,141,0.55)', borderRadius:4, yAxisID:'yGasto' },
         { type:'line', label:'CPL $',    data: dias.map(d=>d.cpl),
-          borderColor:'#f72f7b', backgroundColor:'rgba(247,47,123,0.12)',
-          borderWidth:2.5, pointRadius:4, pointBackgroundColor:'#f72f7b',
+          borderColor:'#A44A35', backgroundColor:'rgba(164,74,53,0.12)',
+          borderWidth:2.5, pointRadius:4, pointBackgroundColor:'#A44A35',
           tension:0.3, fill:false, yAxisID:'yCpl' },
       ]
     },
     options: {
       responsive:true, maintainAspectRatio:false, interaction:{mode:'index',intersect:false},
       animation:false,   /* bug de Chart.js "this._fn is not a function" al hacer hover — ver mkChart() */
-      plugins:{ legend:{labels:{color:'#4A7885',font:{size:11},boxWidth:12}},
+      plugins:{ legend:{labels:{color:'#3F7A89',font:{size:11},boxWidth:12}},
         title:{ display:true,
           text: (esPromedio ? (tipo==='s'?'Todas las sedes':'Todas las franquicias')+' — promedio combinado' : clinica) + ' — Leads, Gasto y CPL diario',
-          color:'#1E3A45', font:{size:13,weight:'700'}, padding:{bottom:12} }
+          color:'#1F3A5F', font:{size:13,weight:'700'}, padding:{bottom:12} }
       },
       scales:{
         yLeads:{ type:'linear', position:'left',  title:{display:true,text:'Leads',color:'#3F7A89',font:{size:10}},
           ticks:{color:'#3F7A89',font:{size:10}}, grid:{color:'rgba(63,122,137,0.08)'} },
         yGasto:{ type:'linear', position:'right', title:{display:true,text:'Gasto $',color:'#A7BA8D',font:{size:10}},
           ticks:{color:'#A7BA8D',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')}, grid:{display:false} },
-        yCpl:  { type:'linear', position:'right', title:{display:true,text:'CPL $',color:'#f72f7b',font:{size:10}},
-          ticks:{color:'#f72f7b',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')}, grid:{display:false} },
-        x:{ ticks:{color:'#8AACB5',font:{size:10}}, grid:{display:false} }
+        yCpl:  { type:'linear', position:'right', title:{display:true,text:'CPL $',color:'#A44A35',font:{size:10}},
+          ticks:{color:'#A44A35',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')}, grid:{display:false} },
+        x:{ ticks:{color:'#6B7480',font:{size:10}}, grid:{display:false} }
       }
     }
   });
@@ -3444,7 +3482,7 @@ function renderDiario(modo) {
   const fechas = Object.keys(fuente || {}).sort();
 
   // Chart
-  const colores = ['#31606D','#407887','#428CD7','#F09D0F','#DD382C','#407887','#00BCD4','#5A8DEE','#26DE81','#FD9644','#E84393','#4ECDC4','#FFB84D'];
+  const colores = ['#1F3A5F','#3F7A89','#3F7A89','#B8862B','#A44A35','#3F7A89','#A7BA8D','#6B7480','#55703A','#B8862B','#A44A35','#8FB0B8','#D9C9A8'];
   const ctx = document.getElementById('chartDiarioDetalle').getContext('2d');
   if (chartInst['chartDiario']) chartInst['chartDiario'].destroy();
 
@@ -3461,16 +3499,16 @@ function renderDiario(modo) {
       plugins:{
         legend:{
           display:true,
-          labels:{color:'#8AACB5',font:{size:10},boxWidth:12,padding:10},
+          labels:{color:'#6B7480',font:{size:10},boxWidth:12,padding:10},
         },
         tooltip:{
-          backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#8AACB5', bodyColor:'#E8F4F8', padding:10, cornerRadius:8,
+          backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#6B7480', bodyColor:'#E3EEF0', padding:10, cornerRadius:8,
           callbacks:{ label: c => '  ' + c.dataset.label + ': $' + Number(c.parsed.y).toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2}) }
         }
       },
       scales:{
-        x:{stacked:true,ticks:{color:'#8A9AB5',font:{size:10}},grid:{display:false}},
-        y:{stacked:true,ticks:{color:'#8A9AB5',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')},grid:{color:'rgba(46,63,92,0.06)'}}
+        x:{stacked:true,ticks:{color:'#6B7480',font:{size:10}},grid:{display:false}},
+        y:{stacked:true,ticks:{color:'#6B7480',font:{size:10},callback:v=>'$'+Number(v).toLocaleString('es-MX')},grid:{color:'rgba(31,58,95,0.06)'}}
       }
     }
   });
@@ -3891,7 +3929,7 @@ function renderGero() {
 
   // Charts
   var nombresG = orden.filter(function(c){ return g[c]; });
-  var coloresG = ['rgba(77,191,214,0.75)','rgba(124,143,212,0.75)','rgba(240,157,15,0.75)','rgba(49,96,109,0.75)','rgba(64,120,135,0.75)','rgba(201,90,140,0.75)'];
+  var coloresG = ['#5795a0','#f5643c','#f2c342','#b1b526','#53bbc9','#ff378d'];  // paleta Autonomía con Sentido
   mkChart('chartLeadsGero','bar', nombresG, nombresG.map(function(c){return (g[c]||{}).leads_mes||0;}), coloresG, 'Leads');
   mkChart('chartCplGero',  'bar', nombresG, nombresG.map(function(c){return (g[c]||{}).cpl||0;}),      coloresG, 'CPL $');
 }
@@ -3929,7 +3967,7 @@ function renderComplementos() {
   document.getElementById('tablaComplementos').innerHTML = html;
 
   // Charts — una sola métrica por cuenta: un solo tono de marca, no arcoíris.
-  var colores = ['rgba(64,120,135,0.85)'];
+  var colores = ['rgba(63,122,137,0.85)'];
   mkChart('chartGastoCompl', 'bar', orden, orden.map(function(k){ return (c[k]||{}).gasto_mes||0; }), colores, 'Gasto $');
   mkChart('chartCplCompl',   'bar', orden, orden.map(function(k){ return (c[k]||{}).cpl||0; }),       colores, 'CPL $');
 }
@@ -3945,7 +3983,7 @@ function mkChart(id, type, labels, data, colors, label) {
   chartInst[id] = new Chart(ctx, {
     type,
     data:{labels, datasets:[{label, data,
-      backgroundColor: Array.isArray(colors)&&colors.length>1 ? colors : data.map((_,i)=>colors[0]||'rgba(108,92,231,0.8)'),
+      backgroundColor: Array.isArray(colors)&&colors.length>1 ? colors : data.map((_,i)=>colors[0]||'rgba(63,122,137,0.85)'),
       borderRadius:5
     }]},
     options:{responsive:true,maintainAspectRatio:false,
@@ -3955,8 +3993,8 @@ function mkChart(id, type, labels, data, colors, label) {
         legend:{display:false},
         tooltip:{
           backgroundColor:'rgba(5,13,20,0.92)',
-          titleColor:'#8AACB5',
-          bodyColor:'#E8F4F8',
+          titleColor:'#6B7480',
+          bodyColor:'#E3EEF0',
           padding:10,
           cornerRadius:8,
           callbacks:{
@@ -3965,8 +4003,8 @@ function mkChart(id, type, labels, data, colors, label) {
         }
       },
       scales:{
-        x:{ticks:{color:'#8AACB5',font:{size:10}},grid:{display:false}},
-        y:{ticks:{color:'#8AACB5',font:{size:10},callback:v=>fmtVal(v)},grid:{color:'rgba(63,122,137,0.08)'}}
+        x:{ticks:{color:'#6B7480',font:{size:10}},grid:{display:false}},
+        y:{ticks:{color:'#6B7480',font:{size:10},callback:v=>fmtVal(v)},grid:{color:'rgba(63,122,137,0.08)'}}
       }
     }
   });
@@ -3981,22 +4019,22 @@ function mkChart2(id, labels, l1, d1, l2, d2, c1, c2) {
   chartInst[id] = new Chart(ctx, {
     type: 'bar',
     data: { labels, datasets: [
-      { label: l1, data: d1, backgroundColor: c1 || 'rgba(22,194,163,0.85)', borderRadius: 5 },
-      { label: l2, data: d2, backgroundColor: c2 || 'rgba(138,172,181,0.35)', borderRadius: 5 }
+      { label: l1, data: d1, backgroundColor: c1 || 'rgba(63,122,137,0.85)', borderRadius: 5 },
+      { label: l2, data: d2, backgroundColor: c2 || 'rgba(218,218,218,0.9)', borderRadius: 5 }
     ]},
     options: { responsive:true, maintainAspectRatio:false,
       animation:false,   /* mismo bug de Chart.js "this._fn is not a function" al hacer hover — ver mkChart() */
       interaction:{mode:'index', intersect:false},
       plugins:{
-        legend:{display:true, labels:{color:'#8AACB5', font:{size:11}, boxWidth:12}},
+        legend:{display:true, labels:{color:'#6B7480', font:{size:11}, boxWidth:12}},
         tooltip:{
-          backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#8AACB5', bodyColor:'#E8F4F8',
+          backgroundColor:'rgba(5,13,20,0.92)', titleColor:'#6B7480', bodyColor:'#E3EEF0',
           padding:10, cornerRadius:8
         }
       },
       scales:{
-        x:{ticks:{color:'#8AACB5',font:{size:10}},grid:{display:false}},
-        y:{ticks:{color:'#8AACB5',font:{size:10}},grid:{color:'rgba(63,122,137,0.08)'}}
+        x:{ticks:{color:'#6B7480',font:{size:10}},grid:{display:false}},
+        y:{ticks:{color:'#6B7480',font:{size:10}},grid:{color:'rgba(63,122,137,0.08)'}}
       }
     }
   });
@@ -4027,7 +4065,7 @@ document.getElementById('headerDate');
       var sel = (mesSeleccionado === k);
       html += '<button onclick="cargarMes(\''+k+'\')" style="'
         + 'padding:4px 11px;font-size:11px;font-weight:600;border-radius:20px;cursor:pointer;border:1.5px solid;'
-        + (sel ? 'background:var(--yellow);color:#19363E;border-color:var(--yellow)' : 'background:none;color:var(--text2);border-color:var(--border)')
+        + (sel ? 'background:var(--coral);color:#FFFDF9;border-color:var(--coral)' : 'background:none;color:var(--text2);border-color:var(--border)')
         + '">'+labelMes(k)+'</button>';
     });
     wrap.innerHTML = html;
@@ -4350,19 +4388,19 @@ document.getElementById('headerDate');
       var cplV = v.leads>0 ? (v.gasto/v.leads).toFixed(2) : '0';
       pHtml += '<tr data-clinica="'+c+'" data-lag="'+pLag+'" data-aga="'+pAga+'" data-cpl="'+cplV+'">'
         + '<td><b>'+c+'</b></td>'
-        + '<td style="background:rgba(255,220,0,.05);padding:5px 8px">'
+        + '<td style="background:rgba(184,134,43,.05);padding:5px 8px">'
         +   '<input type="number" class="inp-lag" min="0" max="100" step="0.1" value="'+pLag+'" oninput="'+etiquetaCol+'()" style="'+inputStyle+'">'
         +   '<span style="font-size:11px;color:var(--text3);margin-left:3px">%</span>'
         + '</td>'
-        + '<td style="background:rgba(255,220,0,.05);padding:5px 8px">'
+        + '<td style="background:rgba(184,134,43,.05);padding:5px 8px">'
         +   '<input type="number" class="inp-aga" min="0" max="100" step="0.1" value="'+pAga+'" oninput="'+etiquetaCol+'()" style="'+inputStyle+'">'
         +   '<span style="font-size:11px;color:var(--text3);margin-left:3px">%</span>'
         + '</td>'
-        + '<td style="background:rgba(255,220,0,.05);padding:5px 8px">'
+        + '<td style="background:rgba(184,134,43,.05);padding:5px 8px">'
         +   '<input type="number" class="inp-cpl" min="0" step="0.01" value="'+cplV+'" oninput="'+etiquetaCol+'()" style="'+inputStyle+'">'
         +   '<span style="font-size:11px;color:var(--text3);margin-left:3px">$</span>'
         + '</td>'
-        + '<td style="background:rgba(0,240,255,.07);padding:6px 8px">'
+        + '<td style="background:rgba(63,122,137,.07);padding:6px 8px">'
         +   '<input type="number" class="inp-meta" min="0" max="9999" placeholder="0" oninput="'+etiquetaCol+'()" style="'+metaStyle+'">'
         + '</td>'
         + '<td class="td-agend" style="color:var(--text3)">—</td>'
