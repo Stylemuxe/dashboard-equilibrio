@@ -2317,6 +2317,18 @@ function calcProy(asistidas) {
   var diasMes = new Date(parseInt(d.slice(0,4)), parseInt(d.slice(5,7)), 0).getDate();
   return diaActual > 0 ? Math.round(asistidas / diaActual * diasMes) : 0;
 }
+// Para datos del Contact Center (asistidas/agendadas/reservadas): el CC trae
+// hasta AYER, así que en el mes en curso se divide entre dia-1 (misma fórmula
+// que la proyección de cierre y que las presentaciones; Irving 09-oct).
+function calcProyCC(v) {
+  var d = DATA.fecha_ayer;
+  var dia = parseInt(d.slice(8));
+  var diasMes = new Date(parseInt(d.slice(0,4)), parseInt(d.slice(5,7)), 0).getDate();
+  var hoy = new Date();
+  var mesReal = hoy.getFullYear() + '-' + ('0'+(hoy.getMonth()+1)).slice(-2);
+  var dias = (d.slice(0,7) === mesReal) ? Math.max(dia - 1, 1) : dia;
+  return dias > 0 ? Math.round(v / dias * diasMes) : 0;
+}
 function convRate(leads, asistidas) {
   return leads > 0 ? (asistidas / leads * 100).toFixed(1) + '%' : '—';
 }
@@ -2351,7 +2363,7 @@ function renderSedes() {
     tLeadsCC+=cc.leads_cc||0; tReales+=cc.reales||0;
     const pct   = v.pct_meta||0;
     const color = pct>=70?'green':pct>=40?'yellow':'red';
-    const proy  = calcProy(v.asistidas||0);
+    const proy  = calcProyCC(v.asistidas||0);
     const convLA = convRate(v.leads_mes||0, v.asistidas||0);
     const convAA = convRate(v.agendadas||0, v.asistidas||0);
     const convLAc = (v.leads_mes||0)>0 ? ((v.asistidas||0)/(v.leads_mes||1)*100 >= 10 ? 'var(--green)' : (v.asistidas||0)/(v.leads_mes||1)*100 >= 5 ? 'var(--yellow)' : 'var(--pink)') : 'var(--text3)';
@@ -2363,7 +2375,7 @@ function renderSedes() {
       ' &nbsp;·&nbsp; <b>Leads CC:</b> ' + fmtN(cc.leads_cc||0) +
       ' &nbsp;·&nbsp; <b>Reales:</b> ' + fmtN(cc.reales||0) +
       ' &nbsp;·&nbsp; <b>Agendadas CC:</b> ' + fmtN(v.agendadas||0) +
-      ' &nbsp;·&nbsp; <b>Proy. agend.:</b> ' + ((v.agendadas||0)>0?fmtN(calcProy(v.agendadas||0)):'—') +
+      ' &nbsp;·&nbsp; <b>Proy. agend.:</b> ' + ((v.agendadas||0)>0?fmtN(calcProyCC(v.agendadas||0)):'—') +
       ' &nbsp;·&nbsp; <b>Proy. asist.:</b> ' + (proy>0?fmtN(proy):'—') +
       ' &nbsp;·&nbsp; <b>Meta CC:</b> ' + fmtN(v.meta_cc||0) +
       ' &nbsp;·&nbsp; <b>Conv. A→Asist:</b> ' + convAA +
@@ -2412,7 +2424,7 @@ function renderFranquicias() {
     tLeadsCC+=cc.leads_cc||0; tReales+=cc.reales||0; tRes+=cc.res||0;
     const pct  = v.pct_meta||0;
     const color = pct>=70?'green':pct>=40?'yellow':'red';
-    const proy  = calcProy(v.asistidas||0);
+    const proy  = calcProyCC(v.asistidas||0);
     const conv  = convRate(v.leads_mes||0, v.asistidas||0);
     const convC = v.leads_mes>0 ? (v.asistidas/v.leads_mes*100>=10?'var(--green)':v.asistidas/v.leads_mes*100>=5?'var(--yellow)':'var(--pink)') : 'var(--text3)';
     const mlf = v.meta_leads||0;
@@ -2422,7 +2434,7 @@ function renderFranquicias() {
       ' &nbsp;·&nbsp; <b>Leads CC:</b> ' + fmtN(cc.leads_cc||0) +
       ' &nbsp;·&nbsp; <b>Reales:</b> ' + fmtN(cc.reales||0) +
       ' &nbsp;·&nbsp; <b>Reserv.:</b> ' + fmtN(cc.res||0) +
-      ' &nbsp;·&nbsp; <b>Proy. reserv.:</b> ' + ((cc.res||0)>0?fmtN(calcProy(cc.res||0)):'—') +
+      ' &nbsp;·&nbsp; <b>Proy. reserv.:</b> ' + ((cc.res||0)>0?fmtN(calcProyCC(cc.res||0)):'—') +
       ' &nbsp;·&nbsp; <b>Proy. asist.:</b> ' + (proy>0?fmtN(proy):'—') +
       ' &nbsp;·&nbsp; <b>Meta CC:</b> ' + (v.meta_cc>0?fmtN(v.meta_cc):'—') +
       ' &nbsp;·&nbsp; <b>Conv. L→A:</b> ' + conv +
