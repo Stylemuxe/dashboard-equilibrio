@@ -12,13 +12,13 @@
 <title>Dashboard Meta Ads | Equilibrio Total</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- DATA_BUNDLE_START -->
-<script src="data_meta_2026-05.js?v=1791566098"></script>
-<script src="data_meta_2026-06.js?v=1791566098"></script>
-<script src="data_meta_2026-07.js?v=1791566098"></script>
-<script src="data_meta_2026-08.js?v=1791566098"></script>
-<script src="data_meta_2026-09.js?v=1791566098"></script>
-<script src="data_meta_2026-10.js?v=1791566098"></script>
-<script src="data_months.js?v=1791566098"></script>
+<script src="data_meta_2026-05.js?v=1791567931"></script>
+<script src="data_meta_2026-06.js?v=1791567931"></script>
+<script src="data_meta_2026-07.js?v=1791567931"></script>
+<script src="data_meta_2026-08.js?v=1791567931"></script>
+<script src="data_meta_2026-09.js?v=1791567931"></script>
+<script src="data_meta_2026-10.js?v=1791567931"></script>
+<script src="data_months.js?v=1791567931"></script>
 <script>
 (function(){
   var d=window.MESES_DISPONIBLES||[];
@@ -28,6 +28,7 @@
 <!-- DATA_BUNDLE_END -->
 <!-- Fatiga de anuncios/públicos: lo genera generar_fatiga.py (vía ACTUALIZAR TODO); cache-buster porque va fuera del bundle versionado -->
 <script>document.write('<script src="data_fatiga.js?v=' + Date.now() + '"><\/script>');</script>
+<script>document.write('<script src="data_proy_asistidas.js?v=' + Date.now() + '"><\/script>');</script>
 <!-- Auditoría de campañas + prioridades: lo genera generar_auditoria.py (vía ACTUALIZAR TODO) -->
 <script>document.write('<script src="data_auditoria.js?v=' + Date.now() + '"><\/script>');</script>
 <!-- Optimización: diagnóstico + acción sugerida por anuncio, lo genera generar_optimizacion.py (vía ACTUALIZAR TODO) -->
@@ -1464,6 +1465,16 @@ function renderKPIs() {
     // (Irving 09-oct: "toma el ritmo que lleva contact center").
     var diasCC = Math.max(dia - 1, 1);
     function proyA(v){ return v / diasCC * diasMes; }
+    // Proyección por día de la semana (proy_asistidas.py): sábado pico y domingos
+    // solo en las clínicas que abren. Si no hay archivo o es de otro mes, lineal.
+    var PA = (window.PROY_ASIST && window.PROY_ASIST.mes === mesVista) ? window.PROY_ASIST : null;
+    function proyClin(k, a){
+      var c = PA && PA.clinicas[k];
+      return (c && c.asistidas === a) ? c.proy : proyA(a);
+    }
+    function proyGrupo(obj, nombres){
+      var t = 0; nombres.forEach(function(k){ if (obj[k]) t += proyClin(k, obj[k].asistidas||0); }); return t;
+    }
     // Sumar SOLO las sedes reales (las mismas de la tabla) — excluye boosts
     // mapeados a otras clinicas (ej. Ajusco) y "Promociones" que viven en el
     // bucket de sedes pero no son sedes.
@@ -1520,8 +1531,8 @@ function renderKPIs() {
       +   '<span style="font-size:10.5px;color:var(--text3)">al ritmo del día '+dia+' de '+diasMes+'</span>'
       + '</div>'
       + '<div style="display:flex;flex-wrap:wrap;gap:8px">'
-      + grupo('SEDES', '#428CD7', proy(pLeadsS), mlS, proy(pAgendS), 'Agendadas', proyA(pAsistS), mccS, proy(pGastoS))
-      + grupo('FRANQUICIAS', '#31606D', proy(leadsF), mlF, proy(resF), 'Reservadas', proyA(asistF), mccF, proy(gastoF))
+      + grupo('SEDES', '#428CD7', proy(pLeadsS), mlS, proy(pAgendS), 'Agendadas', proyGrupo(s, SEDES_REALES), mccS, proy(pGastoS))
+      + grupo('FRANQUICIAS', '#31606D', proy(leadsF), mlF, proy(resF), 'Reservadas', proyGrupo(f, Object.keys(f)), mccF, proy(gastoF))
       + '</div>'
       + proyAsistDetalle()
       + '</div>';
@@ -1529,7 +1540,7 @@ function renderKPIs() {
     function proyAsistDetalle(){
       function filas(obj, nombres){
         return nombres.filter(function(k){ return obj[k] && obj[k].meta_cc; }).map(function(k){
-          var v = obj[k], a = v.asistidas||0, m = v.meta_cc||0, p = Math.round(proyA(a));
+          var v = obj[k], a = v.asistidas||0, m = v.meta_cc||0, p = Math.round(proyClin(k, a));
           var pct = m ? Math.round(p / m * 100) : 0;
           var col = pct >= 100 ? 'var(--green)' : pct >= 85 ? 'var(--yellow)' : 'var(--pink)';
           var falta = Math.max(m - a, 0), diasRest = diasMes - diasCC;
@@ -1547,7 +1558,7 @@ function renderKPIs() {
       var franqN = Object.keys(f);
       function tabla(tit, color, obj, nombres, metaTot){
         var a = 0; nombres.forEach(function(k){ a += (obj[k]||{}).asistidas||0; });
-        var p = Math.round(proyA(a)), pct = metaTot ? Math.round(p/metaTot*100) : 0;
+        var p = Math.round(proyGrupo(obj, nombres)), pct = metaTot ? Math.round(p/metaTot*100) : 0;
         var col = pct >= 100 ? 'var(--green)' : pct >= 85 ? 'var(--yellow)' : 'var(--pink)';
         return '<div style="flex:1 1 420px;min-width:0;overflow-x:auto">'
           + '<div style="font-size:11.5px;font-weight:800;color:'+color+';margin:2px 0 4px">'+tit
@@ -1559,7 +1570,7 @@ function renderKPIs() {
           + filas(obj, nombres) + '</table></div>';
       }
       return '<div style="margin-top:10px;border-top:1px dashed var(--border);padding-top:8px">'
-        + '<div style="font-size:10.5px;color:var(--text3);margin-bottom:6px">Asistidas proyectadas con el ritmo del Contact Center: asistidas al corte ÷ '+diasCC+' días × '+diasMes+'. "Necesita/día" = lo que falta para su meta ÷ días restantes.</div>'
+        + '<div style="font-size:10.5px;color:var(--text3);margin-bottom:6px">'+(PA ? 'Asistidas proyectadas con el ritmo del Contact Center <b>por día de la semana</b>: cada clínica lleva su patrón de '+PA.mes_base+' (el sábado es el pico; en domingo solo cuentan las que abren: '+PA.abren_domingo.join(', ')+'). Corte al día '+diasCC+'. Con la fórmula lineal (÷ '+diasCC+' × '+diasMes+') las sedes darían '+fmtN(PA.totales.sedes.lineal)+'.' : 'Asistidas proyectadas con el ritmo del Contact Center: asistidas al corte ÷ '+diasCC+' días × '+diasMes+'.')+' "Necesita/día" = lo que falta para su meta ÷ días restantes.</div>'
         + '<div style="display:flex;flex-wrap:wrap;gap:14px">'
         + tabla('SEDES', '#428CD7', s, sedesN, mccS)
         + tabla('FRANQUICIAS', '#31606D', f, franqN, mccF)
@@ -2329,6 +2340,12 @@ function calcProyCC(v) {
   var dias = (d.slice(0,7) === mesReal) ? Math.max(dia - 1, 1) : dia;
   return dias > 0 ? Math.round(v / dias * diasMes) : 0;
 }
+// Asistidas por clínica: usa la proyección por día de la semana
+// (data_proy_asistidas.js) si es del mes que se está viendo; si no, calcProyCC.
+function calcProyAsist(clinica, asistidas) {
+  var PA = window.PROY_ASIST, c = PA && PA.mes === DATA.fecha_ayer.slice(0,7) && PA.clinicas[clinica];
+  return (c && c.asistidas === asistidas) ? c.proy : calcProyCC(asistidas);
+}
 function convRate(leads, asistidas) {
   return leads > 0 ? (asistidas / leads * 100).toFixed(1) + '%' : '—';
 }
@@ -2363,7 +2380,7 @@ function renderSedes() {
     tLeadsCC+=cc.leads_cc||0; tReales+=cc.reales||0;
     const pct   = v.pct_meta||0;
     const color = pct>=70?'green':pct>=40?'yellow':'red';
-    const proy  = calcProyCC(v.asistidas||0);
+    const proy  = calcProyAsist(c, v.asistidas||0);
     const convLA = convRate(v.leads_mes||0, v.asistidas||0);
     const convAA = convRate(v.agendadas||0, v.asistidas||0);
     const convLAc = (v.leads_mes||0)>0 ? ((v.asistidas||0)/(v.leads_mes||1)*100 >= 10 ? 'var(--green)' : (v.asistidas||0)/(v.leads_mes||1)*100 >= 5 ? 'var(--yellow)' : 'var(--pink)') : 'var(--text3)';
@@ -2424,7 +2441,7 @@ function renderFranquicias() {
     tLeadsCC+=cc.leads_cc||0; tReales+=cc.reales||0; tRes+=cc.res||0;
     const pct  = v.pct_meta||0;
     const color = pct>=70?'green':pct>=40?'yellow':'red';
-    const proy  = calcProyCC(v.asistidas||0);
+    const proy  = calcProyAsist(c, v.asistidas||0);
     const conv  = convRate(v.leads_mes||0, v.asistidas||0);
     const convC = v.leads_mes>0 ? (v.asistidas/v.leads_mes*100>=10?'var(--green)':v.asistidas/v.leads_mes*100>=5?'var(--yellow)':'var(--pink)') : 'var(--text3)';
     const mlf = v.meta_leads||0;
