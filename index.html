@@ -12,13 +12,13 @@
 <title>Dashboard Meta Ads | Equilibrio Total</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- DATA_BUNDLE_START -->
-<script src="data_meta_2026-05.js?v=1791556815"></script>
-<script src="data_meta_2026-06.js?v=1791556815"></script>
-<script src="data_meta_2026-07.js?v=1791556815"></script>
-<script src="data_meta_2026-08.js?v=1791556815"></script>
-<script src="data_meta_2026-09.js?v=1791556815"></script>
-<script src="data_meta_2026-10.js?v=1791556815"></script>
-<script src="data_months.js?v=1791556815"></script>
+<script src="data_meta_2026-05.js?v=1791557307"></script>
+<script src="data_meta_2026-06.js?v=1791557307"></script>
+<script src="data_meta_2026-07.js?v=1791557307"></script>
+<script src="data_meta_2026-08.js?v=1791557307"></script>
+<script src="data_meta_2026-09.js?v=1791557307"></script>
+<script src="data_meta_2026-10.js?v=1791557307"></script>
+<script src="data_months.js?v=1791557307"></script>
 <script>
 (function(){
   var d=window.MESES_DISPONIBLES||[];
@@ -1459,6 +1459,11 @@ function renderKPIs() {
     var diasMes = new Date(parseInt(DATA.fecha_ayer.slice(0,4)), parseInt(DATA.fecha_ayer.slice(5,7)), 0).getDate();
     if (!(dia > 0)) { el.innerHTML = ''; return; }
     function proy(v){ return v / dia * diasMes; }
+    // Asistidas: ritmo del Contact Center. El CC trae asistidas hasta AYER
+    // (se actualiza en la mañana), así que se divide entre dia-1, no entre dia
+    // (Irving 09-oct: "toma el ritmo que lleva contact center").
+    var diasCC = Math.max(dia - 1, 1);
+    function proyA(v){ return v / diasCC * diasMes; }
     // Sumar SOLO las sedes reales (las mismas de la tabla) — excluye boosts
     // mapeados a otras clinicas (ej. Ajusco) y "Promociones" que viven en el
     // bucket de sedes pero no son sedes.
@@ -1515,9 +1520,51 @@ function renderKPIs() {
       +   '<span style="font-size:10.5px;color:var(--text3)">al ritmo del día '+dia+' de '+diasMes+'</span>'
       + '</div>'
       + '<div style="display:flex;flex-wrap:wrap;gap:8px">'
-      + grupo('SEDES', '#428CD7', proy(pLeadsS), mlS, proy(pAgendS), 'Agendadas', proy(pAsistS), mccS, proy(pGastoS))
-      + grupo('FRANQUICIAS', '#31606D', proy(leadsF), mlF, proy(resF), 'Reservadas', proy(asistF), mccF, proy(gastoF))
-      + '</div></div>';
+      + grupo('SEDES', '#428CD7', proy(pLeadsS), mlS, proy(pAgendS), 'Agendadas', proyA(pAsistS), mccS, proy(pGastoS))
+      + grupo('FRANQUICIAS', '#31606D', proy(leadsF), mlF, proy(resF), 'Reservadas', proyA(asistF), mccF, proy(gastoF))
+      + '</div>'
+      + proyAsistDetalle()
+      + '</div>';
+    // Desglose por clínica: asistidas a hoy, ritmo diario del CC y a cuánto llegan al cierre
+    function proyAsistDetalle(){
+      function filas(obj, nombres){
+        return nombres.filter(function(k){ return obj[k] && obj[k].meta_cc; }).map(function(k){
+          var v = obj[k], a = v.asistidas||0, m = v.meta_cc||0, p = Math.round(proyA(a));
+          var pct = m ? Math.round(p / m * 100) : 0;
+          var col = pct >= 100 ? 'var(--green)' : pct >= 85 ? 'var(--yellow)' : 'var(--pink)';
+          var falta = Math.max(m - a, 0), diasRest = diasMes - diasCC;
+          var nec = diasRest > 0 ? (falta / diasRest) : 0;
+          return '<tr><td style="text-align:left;padding:3px 8px">'+k+'</td>'
+            + '<td style="padding:3px 8px">'+fmtN(a)+'</td>'
+            + '<td style="padding:3px 8px">'+(a/diasCC).toFixed(1)+'</td>'
+            + '<td style="padding:3px 8px;font-weight:800;color:'+col+'">'+fmtN(p)+'</td>'
+            + '<td style="padding:3px 8px">'+fmtN(m)+'</td>'
+            + '<td style="padding:3px 8px;font-weight:700;color:'+col+'">'+pct+'%</td>'
+            + '<td style="padding:3px 8px;color:var(--text3)">'+nec.toFixed(1)+'</td></tr>';
+        }).join('');
+      }
+      var sedesN = SEDES_REALES.filter(function(k){ return s[k]; });
+      var franqN = Object.keys(f);
+      function tabla(tit, color, obj, nombres, metaTot){
+        var a = 0; nombres.forEach(function(k){ a += (obj[k]||{}).asistidas||0; });
+        var p = Math.round(proyA(a)), pct = metaTot ? Math.round(p/metaTot*100) : 0;
+        var col = pct >= 100 ? 'var(--green)' : pct >= 85 ? 'var(--yellow)' : 'var(--pink)';
+        return '<div style="flex:1 1 420px;min-width:0;overflow-x:auto">'
+          + '<div style="font-size:11.5px;font-weight:800;color:'+color+';margin:2px 0 4px">'+tit
+          + ' · llegan a <span style="color:'+col+'">'+fmtN(p)+'</span> de '+fmtN(metaTot)+' ('+pct+'%)</div>'
+          + '<table style="width:100%;border-collapse:collapse;font-size:12px;text-align:right;font-variant-numeric:tabular-nums">'
+          + '<tr style="color:var(--text3);font-size:10px;text-transform:uppercase"><th style="text-align:left;padding:3px 8px">Clínica</th>'
+          + '<th style="padding:3px 8px">Asist. hoy</th><th style="padding:3px 8px">Por día</th><th style="padding:3px 8px">Proyección</th>'
+          + '<th style="padding:3px 8px">Meta</th><th style="padding:3px 8px">%</th><th style="padding:3px 8px">Necesita/día</th></tr>'
+          + filas(obj, nombres) + '</table></div>';
+      }
+      return '<div style="margin-top:10px;border-top:1px dashed var(--border);padding-top:8px">'
+        + '<div style="font-size:10.5px;color:var(--text3);margin-bottom:6px">Asistidas proyectadas con el ritmo del Contact Center: asistidas al corte ÷ '+diasCC+' días × '+diasMes+'. "Necesita/día" = lo que falta para su meta ÷ días restantes.</div>'
+        + '<div style="display:flex;flex-wrap:wrap;gap:14px">'
+        + tabla('SEDES', '#428CD7', s, sedesN, mccS)
+        + tabla('FRANQUICIAS', '#31606D', f, franqN, mccF)
+        + '</div></div>';
+    }
   })();
 
   // Desglose gasto por sede y por franquicia (incluye Orgánico como fila más de Sedes)
