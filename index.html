@@ -547,6 +547,7 @@ body:not(.unlocked) #login{display:flex}
     <button class="nav-item" data-title="Franquicias" onclick="switchTab('franquicias',this)"><span class="nav-ico">🏢</span><span>Franquicias</span></button>
     <button class="nav-item" data-title="Ad Sets" onclick="switchTab('adsets',this)"><span class="nav-ico">🎯</span><span>Ad Sets</span></button>
     <button class="nav-item" data-title="Top Anuncios" onclick="switchTab('anuncios',this)"><span class="nav-ico">📢</span><span>Top Anuncios</span></button>
+    <button class="nav-item" data-title="Proyecciones y escenarios" onclick="switchTab('proyecciones',this)"><span class="nav-ico">🔮</span><span>Proyecciones</span></button>
     <button class="nav-item" data-title="Fatiga de Anuncios y Públicos" onclick="switchTab('fatiga',this)"><span class="nav-ico">🚦</span><span>Fatiga</span></button>
     <button class="nav-item" data-title="Auditoría de Campañas" onclick="switchTab('auditoria',this)"><span class="nav-ico">🔍</span><span>Auditoría</span></button>
     <button class="nav-item" data-title="Optimización — diagnóstico y acción por anuncio" onclick="switchTab('optimizacion',this)"><span class="nav-ico">🧭</span><span>Optimización</span></button>
@@ -787,6 +788,12 @@ body:not(.unlocked) #login{display:flex}
     <button class="toggle-btn" onclick="switchAdFiltro('todos',this)">📋 Todos</button>
   </div>
   <div id="topAdsList"></div>
+</div>
+
+<!-- PROYECCIONES Y ESCENARIOS (mes en curso, lo genera proy_asistidas.py) -->
+<div id="tab-proyecciones" class="tab-panel">
+  <div class="sec-header"><div class="sec-title">🔮 Proyecciones y escenarios <span id="proyMeta" style="font-weight:400;font-size:12px;color:var(--text2)"></span></div></div>
+  <div id="proyBody"></div>
 </div>
 
 <!-- FATIGA DE ANUNCIOS Y PÚBLICOS (mes en curso, lo genera generar_fatiga.py) -->
@@ -1290,6 +1297,7 @@ function switchTab(id, btn) {
     if (id === 'diario')       { renderLeadsFiltros(); renderLeadsDiarios(); renderCplFiltros(); renderDiario(diarioMode); renderGeroDiario(); }
     if (id === 'anuncios')     renderTopAds();
     if (id === 'fatiga')       renderFatiga();
+    if (id === 'proyecciones') renderProyecciones();
     if (id === 'auditoria')    renderAuditoria();
     if (id === 'optimizacion') renderOptimizacion();
     if (id === 'plan')         renderPlanAccion();
@@ -2508,6 +2516,81 @@ function renderAdsets() {
      <td style="max-width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><b>${a.adset}</b></td>
      <td><b>${fmtN(a.leads)}</b></td><td>${fmt(a.gasto)}</td><td>${fmt(a.cpl)}</td></tr>`
   ).join('');
+}
+
+// ── Proyecciones y escenarios (window.PROY_ASIST de data_proy_asistidas.js) ──
+// Todos los escenarios de cierre en un solo lugar (Irving 09-oct-2026).
+function renderProyecciones(){
+  var P = window.PROY_ASIST, body = document.getElementById('proyBody'), meta = document.getElementById('proyMeta');
+  if (!body) return;
+  if (!P) { meta.textContent = '— sin datos: corre ACTUALIZAR TODO.py'; body.innerHTML = ''; return; }
+  meta.textContent = '— corte del CC al día ' + P.corte_dia + ' · ' + P.generado;
+  function pct(v, m){ return m ? Math.round(v / m * 100) : 0; }
+  function col(p){ return p >= 100 ? 'var(--green)' : p >= 85 ? 'var(--yellow)' : 'var(--pink)'; }
+  var CARD = 'flex:1 1 170px;min-width:150px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:12px;padding:10px 12px';
+  var LBL = 'font-size:10.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px';
+  function box(tit, val, m, sub){
+    var p = pct(val, m);
+    return '<div style="' + CARD + '"><div style="' + LBL + '">' + tit + '</div>'
+      + '<div style="font-size:24px;font-weight:800;color:' + col(p) + '">' + fmtN(val) + '</div>'
+      + '<div style="font-size:11.5px;font-weight:700;color:' + col(p) + '">' + p + '% de ' + fmtN(m) + '</div>'
+      + '<div style="font-size:11px;color:var(--text3);margin-top:3px;white-space:normal">' + sub + '</div></div>';
+  }
+  function boxTxt(tit, val, sub, color){
+    return '<div style="' + CARD + '"><div style="' + LBL + '">' + tit + '</div>'
+      + '<div style="font-size:22px;font-weight:800' + (color ? ';color:' + color : '') + '">' + val + '</div>'
+      + '<div style="font-size:11px;color:var(--text3);margin-top:3px;white-space:normal">' + sub + '</div></div>';
+  }
+  var ESC = [
+    ['proy', 'Por día de la semana ⭐', 'La oficial del dashboard: patrón de ' + P.mes_base + ' de cada clínica (el sábado es el pico; el domingo solo cuenta en las que abren).'],
+    ['ultimos7', 'Ritmo últimos 7 días', 'Lo que hicieron los últimos 7 días, repartido por día de la semana.'],
+    ['lineal', 'Lineal (calendario)', 'Asistidas ÷ ' + P.corte_dia + ' × ' + P.dias_mes + '. Es la cuenta del Excel del CC.'],
+    ['dias_abiertos', 'Días abiertos', 'Asistidas ÷ días que abrió × días que abre en el mes. Como el portal de Datos.']
+  ];
+  function grupo(g, tit, color){
+    var t = P.totales[g]; if (!t) return '';
+    return '<div style="margin:6px 0 16px"><div style="font-size:13px;font-weight:800;color:' + color + ';margin-bottom:6px">' + tit
+      + ' · llevan ' + fmtN(t.asistidas) + ' asistidas · meta ' + fmtN(t.meta) + '</div>'
+      + '<div style="display:flex;flex-wrap:wrap;gap:8px">' + ESC.map(function(e){ return box(e[1], t[e[0]], t.meta, e[2]); }).join('') + '</div></div>';
+  }
+  function tabla(g, tit){
+    var rows = Object.keys(P.clinicas).filter(function(k){ return P.clinicas[k].grupo === g; }).map(function(k){
+      var c = P.clinicas[k], m = c.meta;
+      function td(v, strong){ var p = pct(v, m); return '<td style="padding:4px 8px;' + (strong ? 'font-weight:800;' : '') + 'color:' + col(p) + '">' + fmtN(v) + '</td>'; }
+      return '<tr><td style="text-align:left;padding:4px 8px">' + k + (c.abre_domingo ? ' <span title="Abre en domingo" style="font-size:10px;color:var(--text3)">D</span>' : '') + '</td>'
+        + '<td style="padding:4px 8px">' + fmtN(c.asistidas) + '</td>' + td(c.proy, true) + td(c.ultimos7) + td(c.lineal) + td(c.dias_abiertos)
+        + '<td style="padding:4px 8px">' + fmtN(m) + '</td><td style="padding:4px 8px;color:var(--text3)">' + c.nec_dia + '</td>'
+        + '<td style="padding:4px 8px;color:var(--text3)">' + c.nec_sabado + '</td></tr>';
+    }).join('');
+    return '<div style="flex:1 1 560px;min-width:0;overflow-x:auto"><div style="font-size:12px;font-weight:800;margin:4px 0">' + tit + '</div>'
+      + '<table style="width:100%;border-collapse:collapse;font-size:12px;text-align:right;font-variant-numeric:tabular-nums">'
+      + '<tr style="color:var(--text3);font-size:10px;text-transform:uppercase"><th style="text-align:left;padding:4px 8px">Clínica</th><th>Llevan</th><th>Día semana ⭐</th><th>Últ. 7 días</th><th>Lineal</th><th>Días abiertos</th><th>Meta</th><th>Necesita/día</th><th>Necesita sábado</th></tr>'
+      + rows + '</table></div>';
+  }
+  var html = grupo('sedes', 'SEDES PROPIAS', '#428CD7') + grupo('franquicias', 'FRANQUICIAS', '#31606D');
+  html += '<div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:18px">' + tabla('sedes', 'Sedes por clínica') + tabla('franquicias', 'Franquicias por clínica') + '</div>'
+    + '<div style="font-size:11px;color:var(--text3);margin:-8px 0 18px">D = abre en domingo. "Necesita sábado" = cuántas tendría que hacer un sábado para ir en camino a su meta, según su patrón (el sábado pesa más que entre semana). Colores: verde ≥100% de la meta, ámbar ≥85%, rosa abajo.</div>';
+  var E = P.evento;
+  if (E) {
+    var pe = pct(E.proy, E.meta);
+    html += '<div style="font-size:13px;font-weight:800;color:var(--yellow);margin-bottom:6px">🎉 EVENTO 18 DE OCTUBRE · Gerontología</div><div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px">'
+      + box('Agendados hoy', E.agendados, E.meta, 'Capturados del Contact Center.')
+      + box('Proyección al 18-oct', E.proy, E.meta, 'Al ritmo de ' + E.ritmo_dia + ' agendados por día, con ' + E.dias_al_evento + ' días para el evento.')
+      + boxTxt('Para llegar a ' + fmtN(E.meta), E.necesita_dia + ' por día', pe < 100 ? 'Hoy van a ' + E.ritmo_dia + ' por día.' : 'Con el ritmo actual sí llega.')
+      + boxTxt('Pauta del evento', fmt(E.gasto), fmtN(E.leads) + ' conversaciones · ' + (E.costo_agendado ? fmt(E.costo_agendado) + ' por agendado' : '—'))
+      + '</div>';
+  }
+  var G = P.gasto;
+  if (G) {
+    var pg = pct(G.proyeccion_fin_mes, G.cap), cg = pg <= 100 ? 'var(--green)' : pg <= 102 ? 'var(--yellow)' : 'var(--pink)';
+    html += '<div style="font-size:13px;font-weight:800;color:var(--text2);margin-bottom:6px">💰 GASTO CONTRA EL PP GENERAL</div><div style="display:flex;flex-wrap:wrap;gap:8px">'
+      + boxTxt('PP general', fmt(G.cap), 'Sedes $918,946.78 + Ajusco $50,000')
+      + boxTxt('Gastado', fmt(G.gasto_mtd), fmt(G.ritmo_diario_actual) + ' por día en promedio')
+      + boxTxt('Cierre a este ritmo', fmt(G.proyeccion_fin_mes), pg + '% del PP', cg)
+      + boxTxt('Para cerrar en el PP', fmt(G.margen_diario_disponible) + ' por día', 'en los ' + G.dias_restantes + ' días que faltan')
+      + '</div>';
+  }
+  body.innerHTML = html;
 }
 
 // ── Fatiga de anuncios y públicos (window.FATIGA_DATA de data_fatiga.js) ──
