@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "10/10/2026 09:10",
+ "actualizado": "10/10/2026 10:04",
  "periodo": "2026-10-01 a 2026-10-10",
  "diagnostico": [
   {
@@ -7,34 +7,22 @@ window.FATIGA_DATA = {
    "adset": "HOMBRO",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.64,
-   "gasto": 3111,
-   "leads": 178,
+   "gasto": 3125,
+   "leads": 179,
    "cpl": 17,
    "pct_nuevos": 32,
    "cpm1": 24,
    "cpm2": 31
   },
   {
-   "cuenta": "Laura (sedes)",
-   "adset": "Neuropatia",
-   "veredicto": "VIGILAR",
-   "freq": 2.43,
-   "gasto": 3214,
-   "leads": 103,
-   "cpl": 31,
-   "pct_nuevos": 106,
-   "cpm1": 29,
-   "cpm2": 26
-  },
-  {
    "cuenta": "San Juan del Rio",
    "adset": "Neuropatia - Check",
    "veredicto": "VIGILAR",
-   "freq": 2.43,
-   "gasto": 2053,
+   "freq": 2.44,
+   "gasto": 2070,
    "leads": 78,
-   "cpl": 26,
-   "pct_nuevos": 163,
+   "cpl": 27,
+   "pct_nuevos": 164,
    "cpm1": 31,
    "cpm2": 27
   },
@@ -42,10 +30,22 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "adset": "Neuropatia",
    "veredicto": "VIGILAR",
-   "freq": 2.34,
-   "gasto": 5116,
+   "freq": 2.43,
+   "gasto": 3250,
+   "leads": 106,
+   "cpl": 31,
+   "pct_nuevos": 107,
+   "cpm1": 29,
+   "cpm2": 26
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "adset": "Neuropatia",
+   "veredicto": "VIGILAR",
+   "freq": 2.35,
+   "gasto": 5179,
    "leads": 111,
-   "cpl": 46,
+   "cpl": 47,
    "pct_nuevos": 62,
    "cpm1": 35,
    "cpm2": 42
@@ -54,11 +54,11 @@ window.FATIGA_DATA = {
    "cuenta": "Nicolas Romero",
    "adset": "NEUROPATIA",
    "veredicto": "VIGILAR",
-   "freq": 2.29,
-   "gasto": 2569,
+   "freq": 2.3,
+   "gasto": 2591,
    "leads": 53,
-   "cpl": 48,
-   "pct_nuevos": 40,
+   "cpl": 49,
+   "pct_nuevos": 41,
    "cpm1": 30,
    "cpm2": 28
   },
@@ -66,11 +66,11 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "adset": "Espalda",
    "veredicto": "VIGILAR",
-   "freq": 2.26,
-   "gasto": 4704,
-   "leads": 160,
-   "cpl": 29,
-   "pct_nuevos": 93,
+   "freq": 2.25,
+   "gasto": 4750,
+   "leads": 161,
+   "cpl": 30,
+   "pct_nuevos": 95,
    "cpm1": 22,
    "cpm2": 22
   },
@@ -79,12 +79,36 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "VIGILAR",
    "freq": 2.23,
-   "gasto": 11672,
-   "leads": 407,
+   "gasto": 11770,
+   "leads": 410,
    "cpl": 29,
-   "pct_nuevos": 49,
+   "pct_nuevos": 50,
    "cpm1": 33,
    "cpm2": 37
+  },
+  {
+   "cuenta": "Queretaro",
+   "adset": "NEUROPATIA",
+   "veredicto": "VIGILAR",
+   "freq": 2.21,
+   "gasto": 2124,
+   "leads": 102,
+   "cpl": 21,
+   "pct_nuevos": 54,
+   "cpm1": 43,
+   "cpm2": 48
+  },
+  {
+   "cuenta": "Cuautla",
+   "adset": "Neuropatia",
+   "veredicto": "VIGILAR",
+   "freq": 2.21,
+   "gasto": 1940,
+   "leads": 66,
+   "cpl": 29,
+   "pct_nuevos": 68,
+   "cpm1": 26,
+   "cpm2": 28
   }
  ],
  "exitosos": [
@@ -93,8 +117,8 @@ window.FATIGA_DATA = {
    "ad": "NEZA DOMINGOS",
    "adset": "Imagen Gerontologia - NEZA",
    "freq": 1.7,
-   "gasto": 1598,
-   "leads": 293,
+   "gasto": 1608,
+   "leads": 294,
    "cpl": 5
   },
   {
@@ -102,25 +126,25 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.69,
-   "gasto": 1076,
-   "leads": 148,
+   "gasto": 1090,
+   "leads": 149,
    "cpl": 7
   },
   {
    "cuenta": "Gerontologia",
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "COACALCO",
-   "freq": 1.68,
-   "gasto": 510,
+   "freq": 1.69,
+   "gasto": 525,
    "leads": 61,
-   "cpl": 8
+   "cpl": 9
   },
   {
    "cuenta": "Queretaro",
    "ad": "VID - HOMBRO IRVIN",
    "adset": "HOMBRO",
    "freq": 1.36,
-   "gasto": 2048,
+   "gasto": 2053,
    "leads": 124,
    "cpl": 17
   },
@@ -128,8 +152,8 @@ window.FATIGA_DATA = {
    "cuenta": "Queretaro",
    "ad": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
    "adset": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
-   "freq": 1.74,
-   "gasto": 1719,
+   "freq": 1.75,
+   "gasto": 1734,
    "leads": 94,
    "cpl": 18
   },
@@ -137,26 +161,26 @@ window.FATIGA_DATA = {
    "cuenta": "Queretaro",
    "ad": "VID - Estudio_Completo_Columna - Copia",
    "adset": "ESPALDA",
-   "freq": 1.47,
-   "gasto": 504,
-   "leads": 26,
+   "freq": 1.48,
+   "gasto": 515,
+   "leads": 27,
    "cpl": 19
   },
   {
    "cuenta": "Cuautitlan",
    "ad": "VID_QUIRO _ 1 ABRIL - Copia 2",
    "adset": "Directo",
-   "freq": 1.35,
-   "gasto": 2301,
-   "leads": 115,
+   "freq": 1.36,
+   "gasto": 2340,
+   "leads": 116,
    "cpl": 20
   },
   {
    "cuenta": "Queretaro",
    "ad": "VID - NEURO MARY",
    "adset": "NEUROPATIA",
-   "freq": 1.8,
-   "gasto": 1387,
+   "freq": 1.81,
+   "gasto": 1389,
    "leads": 67,
    "cpl": 21
   },
@@ -165,7 +189,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ NEUROPATIA  01 ABRIL - Copia",
    "adset": "Directo",
    "freq": 1.52,
-   "gasto": 1746,
+   "gasto": 1749,
    "leads": 82,
    "cpl": 21
   },
@@ -174,8 +198,17 @@ window.FATIGA_DATA = {
    "ad": "VID_CONSULTA_GE _ NUEVO - Copia",
    "adset": "Coacalco",
    "freq": 1.37,
-   "gasto": 1787,
+   "gasto": 1797,
    "leads": 83,
+   "cpl": 22
+  },
+  {
+   "cuenta": "Gerontologia",
+   "ad": "Publicación: \"¡Revive los mejores éxitos en nuestra gran...\"",
+   "adset": "Publicación: \"¡Revive los mejores éxitos en nuestra gran...\"",
+   "freq": 1.36,
+   "gasto": 519,
+   "leads": 24,
    "cpl": 22
   },
   {
@@ -183,17 +216,17 @@ window.FATIGA_DATA = {
    "ad": "VID-HOMBRODOLOROSO - Copia",
    "adset": "HOMBRO - CHECK",
    "freq": 1.29,
-   "gasto": 868,
+   "gasto": 875,
    "leads": 39,
    "cpl": 22
   },
   {
-   "cuenta": "Gerontologia",
-   "ad": "Publicación: \"¡Revive los mejores éxitos en nuestra gran...\"",
-   "adset": "Publicación: \"¡Revive los mejores éxitos en nuestra gran...\"",
-   "freq": 1.35,
-   "gasto": 507,
-   "leads": 22,
+   "cuenta": "Laura (sedes)",
+   "ad": "NEUROPATIA DIABETICA",
+   "adset": "NEUROPATIA",
+   "freq": 1.45,
+   "gasto": 748,
+   "leads": 32,
    "cpl": 23
   },
   {
@@ -201,44 +234,17 @@ window.FATIGA_DATA = {
    "ad": "VID _ NEUROPATIA DIABETICA _ OCT",
    "adset": "NEUROPATIA",
    "freq": 1.45,
-   "gasto": 520,
+   "gasto": 523,
    "leads": 23,
    "cpl": 23
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "NEUROPATIA DIABETICA",
-   "adset": "NEUROPATIA",
-   "freq": 1.44,
-   "gasto": 739,
-   "leads": 31,
-   "cpl": 24
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID - RODILLA V2 _ 6 JUN",
    "adset": "RODILLA",
    "freq": 1.6,
-   "gasto": 604,
+   "gasto": 609,
    "leads": 25,
-   "cpl": 24
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "VID - NEURO SINTOMAS - OCT",
-   "adset": "Neuropatia",
-   "freq": 1.58,
-   "gasto": 2120,
-   "leads": 89,
-   "cpl": 24
-  },
-  {
-   "cuenta": "San Juan del Rio",
-   "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
-   "adset": "Neuropatia - Check",
-   "freq": 1.98,
-   "gasto": 1345,
-   "leads": 55,
    "cpl": 24
   },
   {
@@ -246,26 +252,26 @@ window.FATIGA_DATA = {
    "ad": "VID _ CERVICALGIA - OCT",
    "adset": "ESPALDA",
    "freq": 1.4,
-   "gasto": 1232,
-   "leads": 50,
-   "cpl": 25
+   "gasto": 1266,
+   "leads": 52,
+   "cpl": 24
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "VID - NEURO SINTOMAS - OCT",
+   "adset": "Neuropatia",
+   "freq": 1.58,
+   "gasto": 2135,
+   "leads": 89,
+   "cpl": 24
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "EST - RODILLA - OCT - 6 OCT",
    "adset": "RODILLA",
-   "freq": 1.72,
-   "gasto": 953,
-   "leads": 38,
-   "cpl": 25
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "VID - ACUPUNTURA JUN",
-   "adset": "ORGANICO PAUTA",
-   "freq": 1.64,
-   "gasto": 1492,
-   "leads": 59,
+   "freq": 1.74,
+   "gasto": 978,
+   "leads": 39,
    "cpl": 25
   },
   {
@@ -278,39 +284,57 @@ window.FATIGA_DATA = {
    "cpl": 25
   },
   {
+   "cuenta": "San Juan del Rio",
+   "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
+   "adset": "Neuropatia - Check",
+   "freq": 1.99,
+   "gasto": 1359,
+   "leads": 55,
+   "cpl": 25
+  },
+  {
    "cuenta": "Cuautitlan",
-   "ad": "EST _ CIATICA V2 _ 14 MAY -",
+   "ad": "VID _ DOLOR _ 01 ABRIL - Copia 2",
    "adset": "Directo",
-   "freq": 1.42,
-   "gasto": 789,
-   "leads": 31,
+   "freq": 1.48,
+   "gasto": 520,
+   "leads": 21,
    "cpl": 25
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID - RODILLA - OCT",
    "adset": "RODILLA",
-   "freq": 1.36,
-   "gasto": 871,
-   "leads": 33,
+   "freq": 1.37,
+   "gasto": 891,
+   "leads": 34,
    "cpl": 26
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
    "adset": "Espalda",
-   "freq": 1.82,
-   "gasto": 3391,
+   "freq": 1.81,
+   "gasto": 3420,
    "leads": 131,
    "cpl": 26
   },
   {
-   "cuenta": "Nicolas Romero",
-   "ad": "VID_HOMBNICO_JUL",
-   "adset": "HOMBRO",
-   "freq": 1.55,
-   "gasto": 4226,
-   "leads": 163,
+   "cuenta": "Promo/Compl.",
+   "ad": "VID - ACUPUNTURA JUN",
+   "adset": "ORGANICO PAUTA",
+   "freq": 1.65,
+   "gasto": 1507,
+   "leads": 59,
+   "cpl": 26
+  },
+  {
+   "cuenta": "Tepeyac",
+   "ad": "EST - ESPOLON V3 - JUL",
+   "adset": "MIX",
+   "freq": 1.52,
+   "gasto": 545,
+   "leads": 21,
    "cpl": 26
   }
  ],
