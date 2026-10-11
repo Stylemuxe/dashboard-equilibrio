@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "11/10/2026 01:07",
+ "actualizado": "11/10/2026 01:19",
  "periodo": "2026-10-01 a 2026-10-11",
  "diagnostico": [
   {
@@ -43,7 +43,7 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "VIGILAR",
    "freq": 2.41,
-   "gasto": 5653,
+   "gasto": 5654,
    "leads": 117,
    "cpl": 48,
    "pct_nuevos": 71,
@@ -91,7 +91,7 @@ window.FATIGA_DATA = {
    "adset": "Espalda",
    "veredicto": "VIGILAR",
    "freq": 2.29,
-   "gasto": 5289,
+   "gasto": 5290,
    "leads": 176,
    "cpl": 30,
    "pct_nuevos": 112,
@@ -103,7 +103,7 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "VIGILAR",
    "freq": 2.26,
-   "gasto": 12755,
+   "gasto": 12757,
    "leads": 437,
    "cpl": 29,
    "pct_nuevos": 61,
@@ -115,7 +115,7 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "VIGILAR",
    "freq": 2.25,
-   "gasto": 2138,
+   "gasto": 2141,
    "leads": 68,
    "cpl": 31,
    "pct_nuevos": 83,
@@ -127,7 +127,7 @@ window.FATIGA_DATA = {
    "adset": "Evento 18 oct",
    "veredicto": "VIGILAR",
    "freq": 2.23,
-   "gasto": 4663,
+   "gasto": 4664,
    "leads": 99,
    "cpl": 47,
    "pct_nuevos": 206,
@@ -141,7 +141,7 @@ window.FATIGA_DATA = {
    "ad": "NEZA DOMINGOS",
    "adset": "Imagen Gerontologia - NEZA",
    "freq": 1.75,
-   "gasto": 1790,
+   "gasto": 1792,
    "leads": 318,
    "cpl": 6
   },
@@ -150,7 +150,7 @@ window.FATIGA_DATA = {
    "ad": "COACALCO VIERNES",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.73,
-   "gasto": 1186,
+   "gasto": 1187,
    "leads": 164,
    "cpl": 7
   },
@@ -200,6 +200,15 @@ window.FATIGA_DATA = {
    "cpl": 18
   },
   {
+   "cuenta": "Queretaro",
+   "ad": "VID - Estudio_Completo_Columna - Copia",
+   "adset": "ESPALDA",
+   "freq": 1.48,
+   "gasto": 583,
+   "leads": 32,
+   "cpl": 18
+  },
+  {
    "cuenta": "Gerontologia",
    "ad": "Publicación: \"¡Revive los mejores éxitos en nuestra gran...\"",
    "adset": "Publicación: \"¡Revive los mejores éxitos en nuestra gran...\"",
@@ -209,20 +218,11 @@ window.FATIGA_DATA = {
    "cpl": 19
   },
   {
-   "cuenta": "Queretaro",
-   "ad": "VID - Estudio_Completo_Columna - Copia",
-   "adset": "ESPALDA",
-   "freq": 1.48,
-   "gasto": 583,
-   "leads": 31,
-   "cpl": 19
-  },
-  {
    "cuenta": "Cuautitlan",
    "ad": "VID_QUIRO _ 1 ABRIL - Copia 2",
    "adset": "Directo",
    "freq": 1.4,
-   "gasto": 2677,
+   "gasto": 2679,
    "leads": 125,
    "cpl": 21
   },
@@ -267,7 +267,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ CERVICALGIA - OCT",
    "adset": "ESPALDA",
    "freq": 1.39,
-   "gasto": 1878,
+   "gasto": 1882,
    "leads": 79,
    "cpl": 24
   },
@@ -276,7 +276,7 @@ window.FATIGA_DATA = {
    "ad": "EST - RODILLA - OCT - 6 OCT",
    "adset": "RODILLA",
    "freq": 1.79,
-   "gasto": 1206,
+   "gasto": 1208,
    "leads": 51,
    "cpl": 24
   },
@@ -285,8 +285,17 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO SINTOMAS - OCT",
    "adset": "Neuropatia",
    "freq": 1.63,
-   "gasto": 2372,
+   "gasto": 2373,
    "leads": 98,
+   "cpl": 24
+  },
+  {
+   "cuenta": "San Juan del Rio",
+   "ad": "VID_ RODILLA GENERAL _ SEP _ OCT",
+   "adset": "Rodilla -  Check",
+   "freq": 1.62,
+   "gasto": 935,
+   "leads": 39,
    "cpl": 24
   },
   {
@@ -303,17 +312,8 @@ window.FATIGA_DATA = {
    "ad": "VID _ NEUROPATIA DIABETICA _ OCT",
    "adset": "NEUROPATIA",
    "freq": 1.46,
-   "gasto": 575,
+   "gasto": 576,
    "leads": 23,
-   "cpl": 25
-  },
-  {
-   "cuenta": "San Juan del Rio",
-   "ad": "VID_ RODILLA GENERAL _ SEP _ OCT",
-   "adset": "Rodilla -  Check",
-   "freq": 1.62,
-   "gasto": 934,
-   "leads": 38,
    "cpl": 25
   },
   {
@@ -321,7 +321,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
    "adset": "Neuropatia - Check",
    "freq": 1.99,
-   "gasto": 1491,
+   "gasto": 1492,
    "leads": 59,
    "cpl": 25
   },
@@ -330,7 +330,7 @@ window.FATIGA_DATA = {
    "ad": "VID - RODILLA V2 _ 6 JUN",
    "adset": "RODILLA",
    "freq": 1.62,
-   "gasto": 668,
+   "gasto": 669,
    "leads": 26,
    "cpl": 26
   },
