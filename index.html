@@ -12,13 +12,13 @@
 <title>Dashboard Meta Ads | Equilibrio Total</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- DATA_BUNDLE_START -->
-<script src="data_meta_2026-05.js?v=1792167164"></script>
-<script src="data_meta_2026-06.js?v=1792167164"></script>
-<script src="data_meta_2026-07.js?v=1792167164"></script>
-<script src="data_meta_2026-08.js?v=1792167164"></script>
-<script src="data_meta_2026-09.js?v=1792167164"></script>
-<script src="data_meta_2026-10.js?v=1792167164"></script>
-<script src="data_months.js?v=1792167164"></script>
+<script src="data_meta_2026-05.js?v=1792170316"></script>
+<script src="data_meta_2026-06.js?v=1792170316"></script>
+<script src="data_meta_2026-07.js?v=1792170316"></script>
+<script src="data_meta_2026-08.js?v=1792170316"></script>
+<script src="data_meta_2026-09.js?v=1792170316"></script>
+<script src="data_meta_2026-10.js?v=1792170316"></script>
+<script src="data_months.js?v=1792170316"></script>
 <script>
 (function(){
   var d=window.MESES_DISPONIBLES||[];
@@ -1515,8 +1515,8 @@ function renderKPIs() {
     // solo en las clínicas que abren. Si no hay archivo o es de otro mes, lineal.
     var PA = (window.PROY_ASIST && window.PROY_ASIST.mes === mesVista) ? window.PROY_ASIST : null;
     function proyClin(k, a){
-      var c = PA && PA.clinicas[k];
-      return (c && c.asistidas === a) ? c.proy : proyA(a);
+      var c = paClin(PA, k, a);
+      return c ? c.proy : proyA(a);
     }
     function proyGrupo(obj, nombres){
       var t = 0; nombres.forEach(function(k){ if (obj[k]) t += proyClin(k, obj[k].asistidas||0); }); return t;
@@ -2386,11 +2386,19 @@ function calcProyCC(v) {
   var dias = (d.slice(0,7) === mesReal) ? Math.max(dia - 1, 1) : dia;
   return dias > 0 ? Math.round(v / dias * diasMes) : 0;
 }
+// Sede que pasó a franquicia a medio mes: su parte de sede viene en PROY_ASIST como
+// "<clínica> (sede al DD-oct)" y la de franquicia con el nombre normal (16-oct-2026).
+function paClin(PA, k, a){
+  if (!PA) return null; var c = PA.clinicas[k];
+  if (c && c.asistidas === a) return c;
+  for (var n in PA.clinicas) if (n.indexOf(k + ' (sede al') === 0 && PA.clinicas[n].asistidas === a) return PA.clinicas[n];
+  return null;
+}
 // Asistidas por clínica: usa la proyección por día de la semana
 // (data_proy_asistidas.js) si es del mes que se está viendo; si no, calcProyCC.
 function calcProyAsist(clinica, asistidas) {
-  var PA = window.PROY_ASIST, c = PA && PA.mes === DATA.fecha_ayer.slice(0,7) && PA.clinicas[clinica];
-  return (c && c.asistidas === asistidas) ? c.proy : calcProyCC(asistidas);
+  var PA = window.PROY_ASIST, c = PA && PA.mes === DATA.fecha_ayer.slice(0,7) && paClin(PA, clinica, asistidas);
+  return c ? c.proy : calcProyCC(asistidas);
 }
 function convRate(leads, asistidas) {
   return leads > 0 ? (asistidas / leads * 100).toFixed(1) + '%' : '—';
