@@ -12,13 +12,13 @@
 <title>Dashboard Meta Ads | Equilibrio Total</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- DATA_BUNDLE_START -->
-<script src="data_meta_2026-05.js?v=1792421337"></script>
-<script src="data_meta_2026-06.js?v=1792421337"></script>
-<script src="data_meta_2026-07.js?v=1792421337"></script>
-<script src="data_meta_2026-08.js?v=1792421337"></script>
-<script src="data_meta_2026-09.js?v=1792421337"></script>
-<script src="data_meta_2026-10.js?v=1792421337"></script>
-<script src="data_months.js?v=1792421337"></script>
+<script src="data_meta_2026-05.js?v=1792421848"></script>
+<script src="data_meta_2026-06.js?v=1792421848"></script>
+<script src="data_meta_2026-07.js?v=1792421848"></script>
+<script src="data_meta_2026-08.js?v=1792421848"></script>
+<script src="data_meta_2026-09.js?v=1792421848"></script>
+<script src="data_meta_2026-10.js?v=1792421848"></script>
+<script src="data_months.js?v=1792421848"></script>
 <script>
 (function(){
   var d=window.MESES_DISPONIBLES||[];
@@ -1509,7 +1509,8 @@ function renderKPIs() {
     // Asistidas: ritmo del Contact Center. El CC trae asistidas hasta AYER
     // (se actualiza en la mañana), así que se divide entre dia-1, no entre dia
     // (Irving 09-oct: "toma el ritmo que lleva contact center").
-    var diasCC = Math.max(dia - 1, 1);
+    // 19-oct (Irving): todo a día vencido. Meta ya llega hasta ayer; el CC también.
+    var diasCC = Math.max(Math.min(dia, hoy.getDate() - 1), 1);
     function proyA(v){ return v / diasCC * diasMes; }
     // Proyección por día de la semana (proy_asistidas.py): sábado pico y domingos
     // solo en las clínicas que abren. Si no hay archivo o es de otro mes, lineal.
@@ -2383,7 +2384,7 @@ function calcProyCC(v) {
   var diasMes = new Date(parseInt(d.slice(0,4)), parseInt(d.slice(5,7)), 0).getDate();
   var hoy = new Date();
   var mesReal = hoy.getFullYear() + '-' + ('0'+(hoy.getMonth()+1)).slice(-2);
-  var dias = (d.slice(0,7) === mesReal) ? Math.max(dia - 1, 1) : dia;
+  var dias = (d.slice(0,7) === mesReal) ? Math.max(Math.min(dia, hoy.getDate() - 1), 1) : dia;
   return dias > 0 ? Math.round(v / dias * diasMes) : 0;
 }
 // Sede que pasó a franquicia a medio mes: su parte de sede viene en PROY_ASIST como
