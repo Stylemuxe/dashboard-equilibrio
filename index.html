@@ -12,13 +12,13 @@
 <title>Dashboard Meta Ads | Equilibrio Total</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <!-- DATA_BUNDLE_START -->
-<script src="data_meta_2026-05.js?v=1792685095"></script>
-<script src="data_meta_2026-06.js?v=1792685095"></script>
-<script src="data_meta_2026-07.js?v=1792685095"></script>
-<script src="data_meta_2026-08.js?v=1792685095"></script>
-<script src="data_meta_2026-09.js?v=1792685095"></script>
-<script src="data_meta_2026-10.js?v=1792685095"></script>
-<script src="data_months.js?v=1792685095"></script>
+<script src="data_meta_2026-05.js?v=1792686432"></script>
+<script src="data_meta_2026-06.js?v=1792686432"></script>
+<script src="data_meta_2026-07.js?v=1792686432"></script>
+<script src="data_meta_2026-08.js?v=1792686432"></script>
+<script src="data_meta_2026-09.js?v=1792686432"></script>
+<script src="data_meta_2026-10.js?v=1792686432"></script>
+<script src="data_months.js?v=1792686432"></script>
 <script>
 (function(){
   var d=window.MESES_DISPONIBLES||[];
@@ -1527,14 +1527,14 @@ function renderKPIs() {
     var SEDES_REALES = ['Ecatepec','Neza','Chalco','Plaza Neza','Coacalco',
                         'Balbuena','Tlahuac','Mixquiahuala','Milpa Alta',
                         'Chalco / Milpa Alta / Tlahuac'];
-    var pLeadsS=0, pGastoS=0, pAsistS=0, pAgendS=0, mlS=0, mccS=0, mlF=0, mccF=0, resF=0;
+    var pLeadsS=0, pGastoS=0, pAsistS=0, pAgendS=0, mlS=0, mccS=0, mlF=0, mccF=0, agendF=0;
     SEDES_REALES.forEach(function(k){
       var v = s[k] || {};
       pLeadsS += v.leads_mes||0; pGastoS += v.gasto_mes||0; pAsistS += v.asistidas||0;
       pAgendS += v.agendadas||0;
       mlS += v.meta_leads||0; mccS += v.meta_cc||0;
     });
-    Object.values(f).forEach(function(v){ mlF += v.meta_leads||0; mccF += v.meta_cc||0; resF += (v.cc||{}).res||0; });
+    Object.values(f).forEach(function(v){ mlF += v.meta_leads||0; mccF += v.meta_cc||0; agendF += v.agendadas||0; });
     function celda(tit, val, meta, esDinero, sub){
       // val === null → no hay fuente confiable para este dato (ej. Agendadas
       // de Sedes: el CC no trae una cuenta de citas agendadas independiente
@@ -1578,7 +1578,7 @@ function renderKPIs() {
       + '</div>'
       + '<div style="display:flex;flex-wrap:wrap;gap:8px">'
       + grupo('SEDES', '#3F7A89', proy(pLeadsS), mlS, proy(pAgendS), 'Agendadas', proyGrupo(s, SEDES_REALES), mccS, proy(pGastoS))
-      + grupo('FRANQUICIAS', '#1F3A5F', proy(leadsF), mlF, proy(resF), 'Reservadas', proyGrupo(f, Object.keys(f)), mccF, proy(gastoF))
+      + grupo('FRANQUICIAS', '#1F3A5F', proy(leadsF), mlF, proy(agendF), 'Agendadas', proyGrupo(f, Object.keys(f)), mccF, proy(gastoF))
       + '</div>'
       + proyAsistDetalle()
       + '</div>';
