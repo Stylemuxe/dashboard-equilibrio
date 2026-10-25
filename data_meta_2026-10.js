@@ -41,7 +41,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 160,
       "pct_meta": 63.7,
       "restan": 58,
-      "cpa": 599.65
+      "cpa": 599.65,
+      "cc": {
+        "leads_cc": 210,
+        "reales": 119,
+        "res": 8
+      }
     },
     "Neza": {
       "leads_mes": 1996,
@@ -76,7 +81,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 249,
       "pct_meta": 65.1,
       "restan": 87,
-      "cpa": 531.05
+      "cpa": 531.05,
+      "cc": {
+        "leads_cc": 322,
+        "reales": 188,
+        "res": 13
+      }
     },
     "Balbuena": {
       "leads_mes": 2046,
@@ -121,7 +131,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 230,
       "pct_meta": 67.4,
       "restan": 75,
-      "cpa": 653.5
+      "cpa": 653.5,
+      "cc": {
+        "leads_cc": 301,
+        "reales": 187,
+        "res": 20
+      }
     },
     "Mixquiahuala": {
       "leads_mes": 896,
@@ -172,7 +187,12 @@ MESES_DATA["2026-10"] = {
       "pct_meta": 100.0,
       "restan": 0,
       "cpa": 435.28,
-      "congelada_al": "2026-10-15"
+      "congelada_al": "2026-10-15",
+      "cc": {
+        "leads_cc": 269,
+        "reales": 168,
+        "res": 22
+      }
     },
     "Tlahuac": {
       "leads_mes": 994,
@@ -237,7 +257,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 120,
       "pct_meta": 75.0,
       "restan": 30,
-      "cpa": 679.44
+      "cpa": 679.44,
+      "cc": {
+        "leads_cc": 217,
+        "reales": 106,
+        "res": 19
+      }
     },
     "Milpa Alta": {
       "leads_mes": 781,
@@ -302,7 +327,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 100,
       "pct_meta": 55.0,
       "restan": 45,
-      "cpa": 1090.55
+      "cpa": 1090.55,
+      "cc": {
+        "leads_cc": 156,
+        "reales": 83,
+        "res": 19
+      }
     },
     "Chalco": {
       "leads_mes": 2197,
@@ -342,7 +372,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 239,
       "pct_meta": 97.9,
       "restan": 5,
-      "cpa": 413.86
+      "cpa": 413.86,
+      "cc": {
+        "leads_cc": 425,
+        "reales": 268,
+        "res": 19
+      }
     },
     "Coacalco": {
       "leads_mes": 2266,
@@ -377,7 +412,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 200,
       "pct_meta": 62.0,
       "restan": 76,
-      "cpa": 792.02
+      "cpa": 792.02,
+      "cc": {
+        "leads_cc": 322,
+        "reales": 183,
+        "res": 16
+      }
     },
     "Ecatepec": {
       "pp_diario_meta": 0,
@@ -391,7 +431,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 150,
       "pct_meta": 68.0,
       "restan": 48,
-      "cpa": 662.6
+      "cpa": 662.6,
+      "cc": {
+        "leads_cc": 277,
+        "reales": 137,
+        "res": 23
+      }
     }
   },
   "franquicias": {
@@ -406,7 +451,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 100,
       "pct_meta": 97.0,
       "restan": 3,
-      "cpa": 484.61
+      "cpa": 484.61,
+      "cc": {
+        "leads_cc": 186,
+        "reales": 109,
+        "res": 13
+      }
     },
     "Claveria": {
       "leads_mes": 908,
@@ -419,7 +469,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 124,
       "pct_meta": 112.9,
       "restan": 0,
-      "cpa": 275.08
+      "cpa": 275.08,
+      "cc": {
+        "leads_cc": 234,
+        "reales": 156,
+        "res": 14
+      }
     },
     "Valle Dorado": {
       "leads_mes": 956,
@@ -432,7 +487,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 83,
       "pct_meta": 104.8,
       "restan": 0,
-      "cpa": 447.6
+      "cpa": 447.6,
+      "cc": {
+        "leads_cc": 189,
+        "reales": 104,
+        "res": 18
+      }
     },
     "Pachuca": {
       "leads_mes": 1297,
@@ -445,7 +505,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 119,
       "pct_meta": 83.2,
       "restan": 20,
-      "cpa": 511.54
+      "cpa": 511.54,
+      "cc": {
+        "leads_cc": 183,
+        "reales": 108,
+        "res": 8
+      }
     },
     "Satelite": {
       "leads_mes": 758,
@@ -458,7 +523,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 79,
       "pct_meta": 75.9,
       "restan": 19,
-      "cpa": 580.18
+      "cpa": 580.18,
+      "cc": {
+        "leads_cc": 128,
+        "reales": 72,
+        "res": 13
+      }
     },
     "San Juan del Rio": {
       "leads_mes": 698,
@@ -471,7 +541,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 80,
       "pct_meta": 91.2,
       "restan": 7,
-      "cpa": 392.54
+      "cpa": 392.54,
+      "cc": {
+        "leads_cc": 140,
+        "reales": 92,
+        "res": 6
+      }
     },
     "Queretaro": {
       "leads_mes": 1006,
@@ -484,7 +559,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 105,
       "pct_meta": 79.0,
       "restan": 22,
-      "cpa": 283.83
+      "cpa": 283.83,
+      "cc": {
+        "leads_cc": 138,
+        "reales": 86,
+        "res": 8
+      }
     },
     "Tepeyac": {
       "leads_mes": 843,
@@ -497,7 +577,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 99,
       "pct_meta": 96.0,
       "restan": 4,
-      "cpa": 410.75
+      "cpa": 410.75,
+      "cc": {
+        "leads_cc": 158,
+        "reales": 121,
+        "res": 5
+      }
     },
     "Xochimilco": {
       "leads_mes": 906,
@@ -510,7 +595,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 112,
       "pct_meta": 120.5,
       "restan": 0,
-      "cpa": 277.64
+      "cpa": 277.64,
+      "cc": {
+        "leads_cc": 203,
+        "reales": 149,
+        "res": 13
+      }
     },
     "La Moderna": {
       "leads_mes": 295,
@@ -523,7 +613,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 66,
       "pct_meta": 0.0,
       "restan": 66,
-      "cpa": 0
+      "cpa": 0,
+      "cc": {
+        "leads_cc": 3,
+        "reales": 1,
+        "res": 0
+      }
     },
     "Cuautitlan": {
       "leads_mes": 1090,
@@ -536,7 +631,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 92,
       "pct_meta": 85.9,
       "restan": 13,
-      "cpa": 341.96
+      "cpa": 341.96,
+      "cc": {
+        "leads_cc": 201,
+        "reales": 107,
+        "res": 11
+      }
     },
     "Nicolas Romero": {
       "leads_mes": 978,
@@ -549,7 +649,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 79,
       "pct_meta": 126.6,
       "restan": 0,
-      "cpa": 350.25
+      "cpa": 350.25,
+      "cc": {
+        "leads_cc": 216,
+        "reales": 123,
+        "res": 16
+      }
     },
     "Cuautla": {
       "leads_mes": 614,
@@ -562,7 +667,12 @@ MESES_DATA["2026-10"] = {
       "meta_cc": 87,
       "pct_meta": 71.3,
       "restan": 25,
-      "cpa": 373.04
+      "cpa": 373.04,
+      "cc": {
+        "leads_cc": 120,
+        "reales": 71,
+        "res": 10
+      }
     },
     "Mixquiahuala": {
       "leads_mes": 409,
@@ -577,7 +687,12 @@ MESES_DATA["2026-10"] = {
       "cpa": 348.77,
       "account_id": "",
       "desde": "2026-10-15",
-      "asist_previas_sede": 84
+      "asist_previas_sede": 84,
+      "cc": {
+        "leads_cc": 269,
+        "reales": 168,
+        "res": 22
+      }
     }
   },
   "top_ads_sedes": [
@@ -22678,5 +22793,245 @@ MESES_DATA["2026-10"] = {
   },
   "reclutamiento": {
     "gasto_mes": 22652.5
+  },
+  "cc_dx": {
+    "Valle Dorado": {
+      "Espalda": 14,
+      "Rodilla": 26,
+      "Pie/Tobillo": 9,
+      "Hombro": 18,
+      "Neuropatia": 6,
+      "Tunel Carpiano": 3,
+      "Quiropractica": 1,
+      "Cervical": 4,
+      "Artritis": 1
+    },
+    "Cuautitlan": {
+      "Rodilla": 14,
+      "Pie/Tobillo": 7,
+      "Neuropatia": 14,
+      "Hombro": 16,
+      "Espalda": 26,
+      "Acupuntura": 3,
+      "Cervical": 3,
+      "Quiropractica": 4,
+      "Tunel Carpiano": 2
+    },
+    "Milpa Alta": {
+      "Rodilla": 28,
+      "Hombro": 10,
+      "Quiropractica": 4,
+      "Espalda": 13,
+      "Varices": 1,
+      "Pie/Tobillo": 3,
+      "Acupuntura": 3,
+      "Cervical": 5,
+      "Neuropatia": 6
+    },
+    "Chalco": {
+      "Espalda": 96,
+      "Hombro": 19,
+      "Cervical": 18,
+      "Pie/Tobillo": 17,
+      "Rodilla": 42,
+      "Acupuntura": 11,
+      "Quiropractica": 6,
+      "Varices": 2,
+      "Neuropatia": 15,
+      "Artritis": 1
+    },
+    "Neza": {
+      "Neuropatia": 12,
+      "Rodilla": 16,
+      "Espalda": 76,
+      "Cervical": 8,
+      "Hombro": 21,
+      "Acupuntura": 9,
+      "Pie/Tobillo": 6,
+      "Varices": 3,
+      "Quiropractica": 4
+    },
+    "Queretaro": {
+      "Neuropatia": 24,
+      "Espalda": 8,
+      "Cervical": 5,
+      "Acupuntura": 9,
+      "Rodilla": 10,
+      "Pie/Tobillo": 3,
+      "Hombro": 13,
+      "Varices": 1
+    },
+    "Balbuena": {
+      "Rodilla": 37,
+      "Espalda": 44,
+      "Tunel Carpiano": 2,
+      "Hombro": 30,
+      "Neuropatia": 10,
+      "Acupuntura": 11,
+      "Pie/Tobillo": 9,
+      "Quiropractica": 2,
+      "Cervical": 7,
+      "Artritis": 1,
+      "Varices": 1
+    },
+    "Ajusco": {
+      "Hombro": 8,
+      "Espalda": 38,
+      "Rodilla": 14,
+      "Cervical": 8,
+      "Neuropatia": 4,
+      "Quiropractica": 9,
+      "Pie/Tobillo": 3,
+      "Acupuntura": 3,
+      "Tunel Carpiano": 1,
+      "Artritis": 1
+    },
+    "Nicolas Romero": {
+      "Rodilla": 27,
+      "Espalda": 26,
+      "Hombro": 23,
+      "Pie/Tobillo": 2,
+      "Neuropatia": 8,
+      "Quiropractica": 5,
+      "Cervical": 5,
+      "Tunel Carpiano": 2,
+      "Acupuntura": 1
+    },
+    "Mixquiahuala": {
+      "Neuropatia": 19,
+      "Rodilla": 21,
+      "Hombro": 25,
+      "Espalda": 33,
+      "Acupuntura": 9,
+      "Cervical": 10,
+      "Pie/Tobillo": 11,
+      "Tunel Carpiano": 2
+    },
+    "Satelite": {
+      "Cervical": 4,
+      "Espalda": 8,
+      "Hombro": 15,
+      "Rodilla": 15,
+      "Varices": 2,
+      "Pie/Tobillo": 4,
+      "Neuropatia": 6,
+      "Quiropractica": 4
+    },
+    "Coacalco": {
+      "Cervical": 9,
+      "Espalda": 49,
+      "Acupuntura": 4,
+      "Rodilla": 36,
+      "Pie/Tobillo": 14,
+      "Neuropatia": 14,
+      "Tunel Carpiano": 2,
+      "Hombro": 16,
+      "Artritis": 2,
+      "Varices": 1
+    },
+    "Xochimilco": {
+      "Espalda": 62,
+      "Acupuntura": 9,
+      "Quiropractica": 5,
+      "Cervical": 7,
+      "Rodilla": 20,
+      "Hombro": 9,
+      "Neuropatia": 5,
+      "Pie/Tobillo": 13,
+      "Artritis": 1,
+      "Tunel Carpiano": 1
+    },
+    "Plaza Neza": {
+      "Hombro": 12,
+      "Neuropatia": 12,
+      "Rodilla": 37,
+      "Espalda": 24,
+      "Quiropractica": 2,
+      "Cervical": 3,
+      "Varices": 4,
+      "Tunel Carpiano": 2,
+      "Acupuntura": 6,
+      "Pie/Tobillo": 3
+    },
+    "Tlahuac": {
+      "Hombro": 14,
+      "Espalda": 19,
+      "Rodilla": 20,
+      "Quiropractica": 6,
+      "Neuropatia": 17,
+      "Cervical": 3,
+      "Pie/Tobillo": 5,
+      "Acupuntura": 8,
+      "Artritis": 1
+    },
+    "Tepeyac": {
+      "Espalda": 23,
+      "Pie/Tobillo": 6,
+      "Neuropatia": 9,
+      "Hombro": 19,
+      "Acupuntura": 3,
+      "Cervical": 9,
+      "Rodilla": 19,
+      "Quiropractica": 4,
+      "Varices": 1,
+      "Tunel Carpiano": 1
+    },
+    "Ecatepec": {
+      "Pie/Tobillo": 13,
+      "Acupuntura": 9,
+      "Rodilla": 20,
+      "Neuropatia": 24,
+      "Espalda": 33,
+      "Hombro": 14,
+      "Cervical": 4,
+      "Tunel Carpiano": 1,
+      "Varices": 3
+    },
+    "San Juan del Rio": {
+      "Espalda": 22,
+      "Quiropractica": 4,
+      "Hombro": 8,
+      "Cervical": 5,
+      "Acupuntura": 3,
+      "Neuropatia": 12,
+      "Rodilla": 11,
+      "Pie/Tobillo": 6
+    },
+    "Claveria": {
+      "Neuropatia": 15,
+      "Espalda": 27,
+      "Rodilla": 40,
+      "Cervical": 8,
+      "Quiropractica": 4,
+      "Acupuntura": 10,
+      "Pie/Tobillo": 7,
+      "Hombro": 9,
+      "Tunel Carpiano": 1,
+      "Varices": 1
+    },
+    "Pachuca": {
+      "Acupuntura": 16,
+      "Espalda": 17,
+      "Neuropatia": 24,
+      "Rodilla": 17,
+      "Hombro": 9,
+      "Pie/Tobillo": 12,
+      "Quiropractica": 4,
+      "Cervical": 2,
+      "Varices": 1
+    },
+    "Cuautla": {
+      "Hombro": 13,
+      "Espalda": 14,
+      "Rodilla": 9,
+      "Neuropatia": 7,
+      "Pie/Tobillo": 1,
+      "Cervical": 8,
+      "Acupuntura": 1,
+      "Quiropractica": 1
+    },
+    "La Moderna": {
+      "Rodilla": 1
+    }
   }
 };
