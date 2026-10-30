@@ -23223,7 +23223,7 @@ MESES_DATA["2026-09"] = {
       "leads_mes": 1627,
       "gasto_mes": 11394.97,
       "cpl": 7.0,
-      "agendadas": 279,
+      "agendadas": 130,
       "asistidas": 8,
       "meta_cc": 0,
       "cpa": 1424.37
@@ -23232,7 +23232,7 @@ MESES_DATA["2026-09"] = {
       "leads_mes": 719,
       "gasto_mes": 22548.55,
       "cpl": 31.36,
-      "agendadas": 26,
+      "agendadas": 22,
       "asistidas": 13,
       "meta_cc": 0,
       "cpa": 1734.5
@@ -23241,7 +23241,7 @@ MESES_DATA["2026-09"] = {
       "leads_mes": 1188,
       "gasto_mes": 10616.63,
       "cpl": 8.94,
-      "agendadas": 13,
+      "agendadas": 23,
       "asistidas": 5,
       "meta_cc": 0,
       "cpa": 2123.33
