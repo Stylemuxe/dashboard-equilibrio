@@ -252,12 +252,12 @@ MESES_DATA["2026-10"] = {
       "cpl": 64.81,
       "pp_diario_meta": 1933.05,
       "meta_leads": 1654,
-      "asistidas": 117,
+      "asistidas": 118,
       "agendadas": 216,
       "meta_cc": 120,
-      "pct_meta": 97.5,
-      "restan": 3,
-      "cpa": 652.54,
+      "pct_meta": 98.3,
+      "restan": 2,
+      "cpa": 647.01,
       "cc": {
         "leads_cc": 256,
         "reales": 136,
@@ -24372,7 +24372,7 @@ MESES_DATA["2026-10"] = {
       "cpa": 75.59
     }
   },
-  "cc_excel_archivo": "AgendaPro (agentes del CC) — corte oficial octubre, 02-nov-2026",
+  "cc_excel_archivo": "Cierre oficial octubre: Contact Center (cifras finales de Irving, 02-nov-2026)",
   "cc_excel_actualizado": "2026-10-31 14:01",
   "cc_excel_dias_desde_actualizacion": 1,
   "cc_sedes": {
@@ -24419,11 +24419,11 @@ MESES_DATA["2026-10"] = {
       "restan": 11
     },
     "Tlahuac": {
-      "asistidas": 117,
+      "asistidas": 118,
       "agendadas": 216,
       "meta": 120,
-      "pct_meta": 97.5,
-      "restan": 3
+      "pct_meta": 98.3,
+      "restan": 2
     },
     "Coacalco": {
       "asistidas": 173,
