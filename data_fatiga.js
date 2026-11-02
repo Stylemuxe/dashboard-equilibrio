@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "01/11/2026 19:44",
+ "actualizado": "01/11/2026 20:14",
  "periodo": "2026-11-01 a 2026-11-01",
  "diagnostico": [],
  "exitosos": [
@@ -7,8 +7,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA CHECK",
-   "freq": 1.17,
-   "gasto": 701,
+   "freq": 1.18,
+   "gasto": 711,
    "leads": 22,
    "cpl": 32
   },
@@ -16,73 +16,73 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
    "adset": "ESPALDA",
-   "freq": 1.09,
-   "gasto": 807,
+   "freq": 1.1,
+   "gasto": 835,
    "leads": 25,
-   "cpl": 32
+   "cpl": 33
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "EST - RODILLA - OCT - 6 OCT",
    "adset": "RODILLA",
-   "freq": 1.19,
-   "gasto": 730,
+   "freq": 1.2,
+   "gasto": 747,
    "leads": 20,
-   "cpl": 36
+   "cpl": 37
   },
   {
    "cuenta": "Xochimilco",
    "ad": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "adset": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
-   "freq": 1.08,
-   "gasto": 892,
+   "freq": 1.09,
+   "gasto": 919,
    "leads": 24,
-   "cpl": 37
+   "cpl": 38
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "VID - CERVICALGIA - OCT",
    "adset": "Espalda",
-   "freq": 1.09,
-   "gasto": 740,
+   "freq": 1.1,
+   "gasto": 758,
    "leads": 18,
-   "cpl": 41
+   "cpl": 42
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
-   "freq": 1.03,
-   "gasto": 1310,
+   "freq": 1.05,
+   "gasto": 1345,
    "leads": 31,
-   "cpl": 42
+   "cpl": 43
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "Publicación: \"¿Vives en la zona de Balbuena y el dolor ya forma...\"",
    "adset": "VIDEO BALBUENA",
    "freq": 1.11,
-   "gasto": 1661,
+   "gasto": 1693,
    "leads": 34,
-   "cpl": 49
+   "cpl": 50
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID _  CIATICA  _ SEP",
    "adset": "ESPALDA",
    "freq": 1.07,
-   "gasto": 1304,
+   "gasto": 1325,
    "leads": 23,
-   "cpl": 57
+   "cpl": 58
   },
   {
    "cuenta": "Pachuca",
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.14,
-   "gasto": 1443,
+   "gasto": 1478,
    "leads": 20,
-   "cpl": 72
+   "cpl": 74
   }
  ],
  "sin_leads": []
