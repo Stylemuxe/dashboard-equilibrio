@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "02/11/2026 10:34",
+ "actualizado": "02/11/2026 10:40",
  "periodo": "2026-11-01 a 2026-11-02",
  "diagnostico": [],
  "exitosos": [
@@ -17,7 +17,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
    "adset": "ESPALDA",
    "freq": 1.16,
-   "gasto": 1333,
+   "gasto": 1335,
    "leads": 44,
    "cpl": 30
   },
@@ -26,7 +26,7 @@ window.FATIGA_DATA = {
    "ad": "EST - RODILLA - OCT - 6 OCT",
    "adset": "RODILLA",
    "freq": 1.24,
-   "gasto": 1143,
+   "gasto": 1149,
    "leads": 35,
    "cpl": 33
   },
@@ -35,7 +35,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "adset": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "freq": 1.11,
-   "gasto": 1174,
+   "gasto": 1176,
    "leads": 30,
    "cpl": 39
   },
@@ -43,8 +43,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "VID - CERVICALGIA - OCT",
    "adset": "Espalda",
-   "freq": 1.11,
-   "gasto": 1190,
+   "freq": 1.12,
+   "gasto": 1193,
    "leads": 30,
    "cpl": 40
   },
@@ -52,8 +52,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
-   "freq": 1.06,
-   "gasto": 1652,
+   "freq": 1.05,
+   "gasto": 1656,
    "leads": 39,
    "cpl": 42
   },
@@ -61,8 +61,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA CHECK",
-   "freq": 1.21,
-   "gasto": 1219,
+   "freq": 1.19,
+   "gasto": 1222,
    "leads": 28,
    "cpl": 44
   },
@@ -71,7 +71,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO PADECIMIENTO - OCT",
    "adset": "Neuropatia",
    "freq": 1.15,
-   "gasto": 1007,
+   "gasto": 1010,
    "leads": 23,
    "cpl": 44
   },
@@ -80,7 +80,7 @@ window.FATIGA_DATA = {
    "ad": "VID - RODILLA - OCT",
    "adset": "RODILLA",
    "freq": 1.11,
-   "gasto": 917,
+   "gasto": 921,
    "leads": 18,
    "cpl": 51
   },
@@ -89,34 +89,34 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de la zona Ajusco, 📍\"",
    "adset": "Publicación: \"Si eres de la zona Ajusco, 📍\"",
    "freq": 1.06,
-   "gasto": 793,
+   "gasto": 795,
    "leads": 15,
    "cpl": 53
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID  _ NEUROPATIA DIABETICA _ OCT",
+   "adset": "Neuropatia",
+   "freq": 1.19,
+   "gasto": 870,
+   "leads": 16,
+   "cpl": 54
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "Publicación: \"¿Vives en la zona de Balbuena y el dolor ya forma...\"",
    "adset": "VIDEO BALBUENA",
    "freq": 1.14,
-   "gasto": 2611,
+   "gasto": 2619,
    "leads": 48,
-   "cpl": 54
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID  _ NEUROPATIA DIABETICA _ OCT",
-   "adset": "Neuropatia",
-   "freq": 1.2,
-   "gasto": 868,
-   "leads": 16,
-   "cpl": 54
+   "cpl": 55
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID _  CIATICA  _ SEP",
    "adset": "ESPALDA",
    "freq": 1.1,
-   "gasto": 1948,
+   "gasto": 1955,
    "leads": 35,
    "cpl": 56
   },
@@ -124,8 +124,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID _ DESGASTE _ SEP",
    "adset": "RODILLA",
-   "freq": 1.14,
-   "gasto": 856,
+   "freq": 1.13,
+   "gasto": 860,
    "leads": 15,
    "cpl": 57
   },
@@ -134,27 +134,18 @@ window.FATIGA_DATA = {
    "ad": "VID  _ CERVICALGIA _ SEP",
    "adset": "ESPALDA",
    "freq": 1.1,
-   "gasto": 1451,
+   "gasto": 1455,
    "leads": 25,
    "cpl": 58
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID _ CERVICALGIA - OCT",
-   "adset": "ESPALDA",
-   "freq": 1.07,
-   "gasto": 2689,
-   "leads": 44,
-   "cpl": 61
   },
   {
    "cuenta": "Pachuca",
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.18,
-   "gasto": 1811,
+   "gasto": 1818,
    "leads": 25,
-   "cpl": 72
+   "cpl": 73
   }
  ],
  "sin_leads": []
