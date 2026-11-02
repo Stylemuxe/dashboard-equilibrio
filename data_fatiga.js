@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "02/11/2026 05:16",
+ "actualizado": "02/11/2026 05:24",
  "periodo": "2026-11-01 a 2026-11-02",
  "diagnostico": [],
  "exitosos": [
@@ -26,7 +26,7 @@ window.FATIGA_DATA = {
    "ad": "EST - RODILLA - OCT - 6 OCT",
    "adset": "RODILLA",
    "freq": 1.21,
-   "gasto": 983,
+   "gasto": 984,
    "leads": 28,
    "cpl": 35
   },
@@ -44,7 +44,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO PADECIMIENTO - OCT",
    "adset": "Neuropatia",
    "freq": 1.11,
-   "gasto": 680,
+   "gasto": 682,
    "leads": 17,
    "cpl": 40
   },
@@ -53,7 +53,7 @@ window.FATIGA_DATA = {
    "ad": "VID-NEUROPATIA.SEP",
    "adset": "NEUROPATIA CHECK",
    "freq": 1.2,
-   "gasto": 938,
+   "gasto": 939,
    "leads": 23,
    "cpl": 41
   },
@@ -86,28 +86,28 @@ window.FATIGA_DATA = {
   },
   {
    "cuenta": "Laura (sedes)",
-   "ad": "Publicación: \"¿Vives en la zona de Balbuena y el dolor ya forma...\"",
-   "adset": "VIDEO BALBUENA",
-   "freq": 1.14,
-   "gasto": 2037,
-   "leads": 37,
-   "cpl": 55
-  },
-  {
-   "cuenta": "Laura (sedes)",
    "ad": "VID _  CIATICA  _ SEP",
    "adset": "ESPALDA",
    "freq": 1.09,
-   "gasto": 1674,
-   "leads": 30,
-   "cpl": 56
+   "gasto": 1675,
+   "leads": 31,
+   "cpl": 54
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "Publicación: \"¿Vives en la zona de Balbuena y el dolor ya forma...\"",
+   "adset": "VIDEO BALBUENA",
+   "freq": 1.14,
+   "gasto": 2040,
+   "leads": 37,
+   "cpl": 55
   },
   {
    "cuenta": "Pachuca",
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
    "freq": 1.16,
-   "gasto": 1691,
+   "gasto": 1692,
    "leads": 25,
    "cpl": 68
   }
