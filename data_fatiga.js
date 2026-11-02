@@ -1,6 +1,6 @@
 window.FATIGA_DATA = {
- "actualizado": "01/11/2026 23:16",
- "periodo": "2026-11-01 a 2026-11-01",
+ "actualizado": "02/11/2026 05:16",
+ "periodo": "2026-11-01 a 2026-11-02",
  "diagnostico": [],
  "exitosos": [
   {
@@ -8,89 +8,107 @@ window.FATIGA_DATA = {
    "ad": "VID_ RODILLA PADECIMIENTO _ OCT - 16 OCT",
    "adset": "Directo",
    "freq": 1.11,
-   "gasto": 544,
+   "gasto": 566,
    "leads": 20,
-   "cpl": 27
+   "cpl": 28
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
    "adset": "ESPALDA",
-   "freq": 1.14,
-   "gasto": 1011,
-   "leads": 31,
+   "freq": 1.13,
+   "gasto": 1153,
+   "leads": 35,
    "cpl": 33
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID-NEUROPATIA.SEP",
-   "adset": "NEUROPATIA CHECK",
-   "freq": 1.19,
-   "gasto": 818,
-   "leads": 22,
-   "cpl": 37
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "EST - RODILLA - OCT - 6 OCT",
    "adset": "RODILLA",
    "freq": 1.21,
-   "gasto": 886,
-   "leads": 23,
-   "cpl": 39
+   "gasto": 983,
+   "leads": 28,
+   "cpl": 35
   },
   {
    "cuenta": "Xochimilco",
    "ad": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "adset": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "freq": 1.1,
-   "gasto": 1068,
-   "leads": 27,
+   "gasto": 1131,
+   "leads": 30,
+   "cpl": 38
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "VID - NEURO PADECIMIENTO - OCT",
+   "adset": "Neuropatia",
+   "freq": 1.11,
+   "gasto": 680,
+   "leads": 17,
    "cpl": 40
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID-NEUROPATIA.SEP",
+   "adset": "NEUROPATIA CHECK",
+   "freq": 1.2,
+   "gasto": 938,
+   "leads": 23,
+   "cpl": 41
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
-   "freq": 1.03,
-   "gasto": 1439,
-   "leads": 34,
-   "cpl": 42
+   "freq": 1.04,
+   "gasto": 1546,
+   "leads": 38,
+   "cpl": 41
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "VID - CERVICALGIA - OCT",
    "adset": "Espalda",
-   "freq": 1.09,
-   "gasto": 830,
-   "leads": 19,
-   "cpl": 44
+   "freq": 1.12,
+   "gasto": 950,
+   "leads": 21,
+   "cpl": 45
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID - RODILLA - OCT",
+   "adset": "RODILLA",
+   "freq": 1.08,
+   "gasto": 747,
+   "leads": 15,
+   "cpl": 50
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "Publicación: \"¿Vives en la zona de Balbuena y el dolor ya forma...\"",
    "adset": "VIDEO BALBUENA",
-   "freq": 1.12,
-   "gasto": 1856,
-   "leads": 34,
+   "freq": 1.14,
+   "gasto": 2037,
+   "leads": 37,
    "cpl": 55
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID _  CIATICA  _ SEP",
    "adset": "ESPALDA",
-   "freq": 1.08,
-   "gasto": 1503,
-   "leads": 27,
+   "freq": 1.09,
+   "gasto": 1674,
+   "leads": 30,
    "cpl": 56
   },
   {
    "cuenta": "Pachuca",
    "ad": "Anuncio Campaña de mensajes personalizada 8/8/2026",
    "adset": "Conjunto de anuncios Campaña de mensajes personalizada 8/8/2026",
-   "freq": 1.15,
-   "gasto": 1640,
-   "leads": 24,
+   "freq": 1.16,
+   "gasto": 1691,
+   "leads": 25,
    "cpl": 68
   }
  ],
