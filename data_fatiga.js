@@ -1,24 +1,24 @@
 window.FATIGA_DATA = {
- "actualizado": "03/11/2026 15:18",
+ "actualizado": "03/11/2026 16:14",
  "periodo": "2026-11-01 a 2026-11-03",
  "diagnostico": [],
  "exitosos": [
   {
    "cuenta": "Gerontologia",
-   "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
-   "adset": "BALBUENA",
-   "freq": 1.2,
-   "gasto": 682,
-   "leads": 91,
-   "cpl": 7
-  },
-  {
-   "cuenta": "Gerontologia",
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.21,
-   "gasto": 989,
-   "leads": 121,
+   "gasto": 1000,
+   "leads": 122,
+   "cpl": 8
+  },
+  {
+   "cuenta": "Gerontologia",
+   "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
+   "adset": "BALBUENA",
+   "freq": 1.2,
+   "gasto": 696,
+   "leads": 92,
    "cpl": 8
   },
   {
@@ -26,7 +26,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ NEUROPATIA PADECIMIENTO _ OCT - 10 OCT",
    "adset": "NEUROPATIA",
    "freq": 1.21,
-   "gasto": 587,
+   "gasto": 604,
    "leads": 23,
    "cpl": 26
   },
@@ -34,8 +34,8 @@ window.FATIGA_DATA = {
    "cuenta": "Cuautitlan",
    "ad": "VID _ NEUROPATIA  01 ABRIL - Copia",
    "adset": "Directo",
-   "freq": 1.24,
-   "gasto": 725,
+   "freq": 1.25,
+   "gasto": 736,
    "leads": 26,
    "cpl": 28
   },
@@ -43,27 +43,27 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
    "adset": "ESPALDA",
-   "freq": 1.2,
-   "gasto": 2484,
-   "leads": 77,
-   "cpl": 32
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
-   "adset": "Espalda",
    "freq": 1.21,
-   "gasto": 851,
-   "leads": 25,
-   "cpl": 34
+   "gasto": 2574,
+   "leads": 79,
+   "cpl": 33
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "VID - NEURO SINTOMAS - OCT",
    "adset": "Neuropatia",
    "freq": 1.14,
-   "gasto": 745,
-   "leads": 21,
+   "gasto": 755,
+   "leads": 23,
+   "cpl": 33
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
+   "adset": "Espalda",
+   "freq": 1.22,
+   "gasto": 881,
+   "leads": 25,
    "cpl": 35
   },
   {
@@ -71,53 +71,44 @@ window.FATIGA_DATA = {
    "ad": "VID - MARY",
    "adset": "Neuropatia",
    "freq": 1.23,
-   "gasto": 1455,
+   "gasto": 1498,
    "leads": 42,
-   "cpl": 35
-  },
-  {
-   "cuenta": "Valle Dorado",
-   "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "freq": 1.31,
-   "gasto": 847,
-   "leads": 23,
-   "cpl": 37
+   "cpl": 36
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
    "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-   "freq": 1.24,
-   "gasto": 1358,
-   "leads": 35,
-   "cpl": 39
+   "freq": 1.23,
+   "gasto": 1382,
+   "leads": 36,
+   "cpl": 38
+  },
+  {
+   "cuenta": "Valle Dorado",
+   "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
+   "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
+   "freq": 1.3,
+   "gasto": 868,
+   "leads": 23,
+   "cpl": 38
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "VID - CERVICALGIA - OCT",
    "adset": "Espalda",
-   "freq": 1.19,
-   "gasto": 2427,
+   "freq": 1.2,
+   "gasto": 2455,
    "leads": 61,
    "cpl": 40
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID-NEUROPATIA.SEP",
-   "adset": "NEUROPATIA CHECK",
-   "freq": 1.3,
-   "gasto": 2618,
-   "leads": 62,
-   "cpl": 42
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "EST - RODILLA - OCT - 6 OCT",
    "adset": "RODILLA",
    "freq": 1.4,
-   "gasto": 2465,
-   "leads": 59,
+   "gasto": 2524,
+   "leads": 60,
    "cpl": 42
   },
   {
@@ -125,8 +116,8 @@ window.FATIGA_DATA = {
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
    "freq": 1.13,
-   "gasto": 5335,
-   "leads": 126,
+   "gasto": 5421,
+   "leads": 130,
    "cpl": 42
   },
   {
@@ -134,26 +125,44 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO ESPALDA",
    "adset": "ESPALDA",
    "freq": 1.16,
-   "gasto": 832,
-   "leads": 19,
-   "cpl": 44
+   "gasto": 847,
+   "leads": 20,
+   "cpl": 42
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID-NEUROPATIA.SEP",
+   "adset": "NEUROPATIA CHECK",
+   "freq": 1.3,
+   "gasto": 2663,
+   "leads": 62,
+   "cpl": 43
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID - RODILLA V2 _ 6 JUN",
+   "adset": "RODILLA",
+   "freq": 1.35,
+   "gasto": 686,
+   "leads": 16,
+   "cpl": 43
   },
   {
    "cuenta": "Pachuca",
    "ad": "VID-CIATICA",
    "adset": "ESPALDA",
    "freq": 1.13,
-   "gasto": 993,
+   "gasto": 1010,
    "leads": 21,
-   "cpl": 47
+   "cpl": 48
   },
   {
-   "cuenta": "Claveria",
-   "ad": "VID _ PADECIMIENTO RODILLA _ OCT",
-   "adset": "RODILLA - CHECK",
-   "freq": 1.18,
-   "gasto": 1624,
-   "leads": 33,
+   "cuenta": "Laura (sedes)",
+   "ad": "VID - RODILLA - OCT",
+   "adset": "RODILLA",
+   "freq": 1.22,
+   "gasto": 2342,
+   "leads": 48,
    "cpl": 49
   },
   {
@@ -161,72 +170,63 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¿Vives en la zona de Balbuena y el dolor ya forma...\"",
    "adset": "VIDEO BALBUENA",
    "freq": 1.18,
-   "gasto": 5421,
-   "leads": 108,
-   "cpl": 50
+   "gasto": 5533,
+   "leads": 109,
+   "cpl": 51
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID _  CIATICA  _ SEP",
    "adset": "ESPALDA",
    "freq": 1.15,
-   "gasto": 3955,
-   "leads": 79,
-   "cpl": 50
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID - RODILLA - OCT",
-   "adset": "RODILLA",
-   "freq": 1.23,
-   "gasto": 2245,
-   "leads": 45,
-   "cpl": 50
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID_ RODILLA DESGASTE ARTICULAR _ SEP _ OCT",
-   "adset": "RODILLA",
-   "freq": 1.15,
-   "gasto": 1243,
-   "leads": 25,
-   "cpl": 50
+   "gasto": 4053,
+   "leads": 80,
+   "cpl": 51
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID  _ CERVICALGIA _ SEP",
    "adset": "ESPALDA",
    "freq": 1.19,
-   "gasto": 2494,
-   "leads": 48,
-   "cpl": 52
+   "gasto": 2560,
+   "leads": 50,
+   "cpl": 51
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID_ RODILLA DESGASTE ARTICULAR _ SEP _ OCT",
+   "adset": "RODILLA",
+   "freq": 1.15,
+   "gasto": 1277,
+   "leads": 25,
+   "cpl": 51
+  },
+  {
+   "cuenta": "Claveria",
+   "ad": "VID _ PADECIMIENTO RODILLA _ OCT",
+   "adset": "RODILLA - CHECK",
+   "freq": 1.18,
+   "gasto": 1667,
+   "leads": 33,
+   "cpl": 51
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
    "adset": "NEUROPATIA",
-   "freq": 1.22,
-   "gasto": 842,
+   "freq": 1.21,
+   "gasto": 869,
    "leads": 16,
-   "cpl": 53
+   "cpl": 54
   },
   {
    "cuenta": "Xochimilco",
    "ad": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
    "adset": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
-   "freq": 1.29,
-   "gasto": 3758,
+   "freq": 1.3,
+   "gasto": 3850,
    "leads": 71,
-   "cpl": 53
-  },
-  {
-   "cuenta": "Nicolas Romero",
-   "ad": "VID_ HOMBRO PADECIMIENTO _ OCT - 10 OCT",
-   "adset": "HOMBRO",
-   "freq": 1.28,
-   "gasto": 1250,
-   "leads": 22,
-   "cpl": 57
+   "cpl": 54
   }
  ],
  "sin_leads": []
