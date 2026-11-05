@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "05/11/2026 06:13",
+ "actualizado": "05/11/2026 07:14",
  "periodo": "2026-11-01 a 2026-11-05",
  "diagnostico": [],
  "exitosos": [
@@ -8,7 +8,7 @@ window.FATIGA_DATA = {
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "BALBUENA",
    "freq": 1.21,
-   "gasto": 1066,
+   "gasto": 1070,
    "leads": 161,
    "cpl": 7
   },
@@ -17,8 +17,8 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.29,
-   "gasto": 1281,
-   "leads": 157,
+   "gasto": 1284,
+   "leads": 158,
    "cpl": 8
   },
   {
@@ -26,16 +26,16 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO MANGUITO V2 5 JUN",
    "adset": "HOMBRO",
    "freq": 1.25,
-   "gasto": 733,
-   "leads": 32,
-   "cpl": 23
+   "gasto": 734,
+   "leads": 33,
+   "cpl": 22
   },
   {
    "cuenta": "San Juan del Rio",
    "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
    "adset": "Neuropatia - Check",
    "freq": 1.38,
-   "gasto": 517,
+   "gasto": 518,
    "leads": 22,
    "cpl": 24
   },
@@ -43,8 +43,8 @@ window.FATIGA_DATA = {
    "cuenta": "Cuautitlan",
    "ad": "VID _ NEUROPATIA  01 ABRIL - Copia",
    "adset": "Directo",
-   "freq": 1.29,
-   "gasto": 980,
+   "freq": 1.3,
+   "gasto": 984,
    "leads": 39,
    "cpl": 25
   },
@@ -61,8 +61,8 @@ window.FATIGA_DATA = {
    "cuenta": "Nicolas Romero",
    "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
    "adset": "ESPALDA",
-   "freq": 1.38,
-   "gasto": 633,
+   "freq": 1.39,
+   "gasto": 638,
    "leads": 21,
    "cpl": 30
   },
@@ -89,7 +89,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.38,
-   "gasto": 1328,
+   "gasto": 1339,
    "leads": 38,
    "cpl": 35
   },
@@ -112,21 +112,21 @@ window.FATIGA_DATA = {
    "cpl": 37
   },
   {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-   "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-   "freq": 1.32,
-   "gasto": 2167,
-   "leads": 57,
-   "cpl": 38
-  },
-  {
    "cuenta": "Tepeyac",
    "ad": "VID - MARY",
    "adset": "Neuropatia",
    "freq": 1.35,
-   "gasto": 2203,
-   "leads": 58,
+   "gasto": 2218,
+   "leads": 60,
+   "cpl": 37
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
+   "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
+   "freq": 1.32,
+   "gasto": 2193,
+   "leads": 57,
    "cpl": 38
   },
   {
@@ -148,15 +148,6 @@ window.FATIGA_DATA = {
    "cpl": 41
   },
   {
-   "cuenta": "Cuautla",
-   "ad": "VID_ ESPALDA GENERAL _ OCT - 12 OCT",
-   "adset": "Espalda",
-   "freq": 1.5,
-   "gasto": 826,
-   "leads": 20,
-   "cpl": 41
-  },
-  {
    "cuenta": "Laura (sedes)",
    "ad": "VID_ RODILLA DESGASTE ARTICULAR _ SEP _ OCT",
    "adset": "Rodilla",
@@ -169,18 +160,18 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
-   "freq": 1.19,
-   "gasto": 7732,
-   "leads": 183,
+   "freq": 1.2,
+   "gasto": 7802,
+   "leads": 187,
    "cpl": 42
   },
   {
-   "cuenta": "Valle Dorado",
-   "ad": "VID_QUIRO ESPALDA",
-   "adset": "ESPALDA",
-   "freq": 1.19,
-   "gasto": 1227,
-   "leads": 29,
+   "cuenta": "Cuautla",
+   "ad": "VID_ ESPALDA GENERAL _ OCT - 12 OCT",
+   "adset": "Espalda",
+   "freq": 1.5,
+   "gasto": 830,
+   "leads": 20,
    "cpl": 42
   },
   {
@@ -190,6 +181,24 @@ window.FATIGA_DATA = {
    "freq": 1.38,
    "gasto": 1119,
    "leads": 26,
+   "cpl": 43
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "VID - CERVICALGIA - OCT",
+   "adset": "Espalda",
+   "freq": 1.26,
+   "gasto": 3483,
+   "leads": 81,
+   "cpl": 43
+  },
+  {
+   "cuenta": "Valle Dorado",
+   "ad": "VID_QUIRO ESPALDA",
+   "adset": "ESPALDA",
+   "freq": 1.19,
+   "gasto": 1235,
+   "leads": 29,
    "cpl": 43
   },
   {
@@ -206,17 +215,8 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO SINTOMAS - OCT",
    "adset": "Neuropatia",
    "freq": 1.25,
-   "gasto": 1272,
+   "gasto": 1290,
    "leads": 29,
-   "cpl": 44
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "VID - CERVICALGIA - OCT",
-   "adset": "Espalda",
-   "freq": 1.25,
-   "gasto": 3442,
-   "leads": 78,
    "cpl": 44
   },
   {
