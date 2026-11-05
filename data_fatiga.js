@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "05/11/2026 03:12",
+ "actualizado": "05/11/2026 04:11",
  "periodo": "2026-11-01 a 2026-11-05",
  "diagnostico": [],
  "exitosos": [
@@ -17,8 +17,8 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.28,
-   "gasto": 1277,
-   "leads": 155,
+   "gasto": 1278,
+   "leads": 156,
    "cpl": 8
   },
   {
@@ -26,7 +26,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
    "adset": "Neuropatia - Check",
    "freq": 1.38,
-   "gasto": 515,
+   "gasto": 517,
    "leads": 22,
    "cpl": 23
   },
@@ -34,7 +34,7 @@ window.FATIGA_DATA = {
    "cuenta": "Queretaro",
    "ad": "VID - HOMBRO MANGUITO V2 5 JUN",
    "adset": "HOMBRO",
-   "freq": 1.25,
+   "freq": 1.26,
    "gasto": 731,
    "leads": 32,
    "cpl": 23
@@ -44,7 +44,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ NEUROPATIA  01 ABRIL - Copia",
    "adset": "Directo",
    "freq": 1.29,
-   "gasto": 976,
+   "gasto": 978,
    "leads": 39,
    "cpl": 25
   },
@@ -80,7 +80,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ CIATICA PADECIMIENTO _ SEP _ OCT",
    "adset": "ESPALDA",
    "freq": 1.3,
-   "gasto": 4455,
+   "gasto": 4456,
    "leads": 128,
    "cpl": 35
   },
@@ -89,9 +89,9 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.37,
-   "gasto": 1318,
-   "leads": 37,
-   "cpl": 36
+   "gasto": 1320,
+   "leads": 38,
+   "cpl": 35
   },
   {
    "cuenta": "Laura (sedes)",
@@ -116,7 +116,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
    "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
    "freq": 1.31,
-   "gasto": 2144,
+   "gasto": 2147,
    "leads": 56,
    "cpl": 38
   },
@@ -125,7 +125,7 @@ window.FATIGA_DATA = {
    "ad": "VID - MARY",
    "adset": "Neuropatia",
    "freq": 1.34,
-   "gasto": 2184,
+   "gasto": 2188,
    "leads": 58,
    "cpl": 38
   },
@@ -134,7 +134,7 @@ window.FATIGA_DATA = {
    "ad": "EST - RODILLA - OCT - 6 OCT",
    "adset": "RODILLA",
    "freq": 1.44,
-   "gasto": 3823,
+   "gasto": 3824,
    "leads": 99,
    "cpl": 39
   },
@@ -169,8 +169,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
-   "freq": 1.2,
-   "gasto": 7677,
+   "freq": 1.19,
+   "gasto": 7687,
    "leads": 183,
    "cpl": 42
   },
@@ -179,7 +179,7 @@ window.FATIGA_DATA = {
    "ad": "VID_QUIRO ESPALDA",
    "adset": "ESPALDA",
    "freq": 1.19,
-   "gasto": 1222,
+   "gasto": 1223,
    "leads": 29,
    "cpl": 42
   },
@@ -197,7 +197,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO SINTOMAS - OCT",
    "adset": "Neuropatia",
    "freq": 1.24,
-   "gasto": 1256,
+   "gasto": 1258,
    "leads": 29,
    "cpl": 43
   },
@@ -206,7 +206,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ CERVICALGIA _ SEP _ OCT - 3 OCT",
    "adset": "ESPALDA - CHECK",
    "freq": 1.22,
-   "gasto": 835,
+   "gasto": 836,
    "leads": 19,
    "cpl": 44
   },
@@ -215,7 +215,7 @@ window.FATIGA_DATA = {
    "ad": "VID - CERVICALGIA - OCT",
    "adset": "Espalda",
    "freq": 1.25,
-   "gasto": 3391,
+   "gasto": 3395,
    "leads": 77,
    "cpl": 44
   },
@@ -224,7 +224,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ RODILLA DESGASTE ARTICULAR _ SEP _ OCT",
    "adset": "RODILLA",
    "freq": 1.18,
-   "gasto": 2043,
+   "gasto": 2044,
    "leads": 44,
    "cpl": 46
   }
