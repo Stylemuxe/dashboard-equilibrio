@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "07/11/2026 00:18",
+ "actualizado": "07/11/2026 00:27",
  "periodo": "2026-11-01 a 2026-11-07",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.62,
-   "gasto": 6426,
+   "gasto": 6429,
    "leads": 150,
    "cpl": 43,
    "pct_nuevos": 31,
@@ -19,7 +19,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"📍 En Equilibrio Total Clavería tu primera sesión...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.51,
-   "gasto": 1922,
+   "gasto": 1923,
    "leads": 17,
    "cpl": 113,
    "pct_nuevos": 26,
@@ -63,7 +63,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO MANGUITO V2 5 JUN",
    "adset": "HOMBRO",
    "freq": 1.3,
-   "gasto": 952,
+   "gasto": 953,
    "leads": 40,
    "cpl": 24
   },
@@ -72,7 +72,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ NEUROPATIA  01 ABRIL - Copia",
    "adset": "Directo",
    "freq": 1.35,
-   "gasto": 1218,
+   "gasto": 1219,
    "leads": 50,
    "cpl": 24
   },
@@ -90,7 +90,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
    "adset": "Neuropatia - Check",
    "freq": 1.48,
-   "gasto": 695,
+   "gasto": 696,
    "leads": 25,
    "cpl": 28
   },
@@ -126,7 +126,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ CERVICALGIA _ SEP _ OCT - 3 OCT",
    "adset": "Espalda",
    "freq": 1.56,
-   "gasto": 723,
+   "gasto": 724,
    "leads": 21,
    "cpl": 34
   },
@@ -144,7 +144,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEURO SINTOMAS - OCT",
    "adset": "Neuropatia",
    "freq": 1.35,
-   "gasto": 1775,
+   "gasto": 1776,
    "leads": 51,
    "cpl": 35
   },
@@ -153,9 +153,18 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.45,
-   "gasto": 1864,
+   "gasto": 1865,
    "leads": 53,
    "cpl": 35
+  },
+  {
+   "cuenta": "Tepeyac",
+   "ad": "VID - MARY",
+   "adset": "Neuropatia",
+   "freq": 1.41,
+   "gasto": 2940,
+   "leads": 81,
+   "cpl": 36
   },
   {
    "cuenta": "San Juan del Rio",
@@ -167,20 +176,11 @@ window.FATIGA_DATA = {
    "cpl": 37
   },
   {
-   "cuenta": "Tepeyac",
-   "ad": "VID - MARY",
-   "adset": "Neuropatia",
-   "freq": 1.41,
-   "gasto": 2939,
-   "leads": 80,
-   "cpl": 37
-  },
-  {
    "cuenta": "Nicolas Romero",
    "ad": "VID_ NEUROPATIA GENERAL _ SEP _ OCT - 3 OCT",
    "adset": "NEUROPATIA",
    "freq": 1.41,
-   "gasto": 550,
+   "gasto": 551,
    "leads": 15,
    "cpl": 37
   },
@@ -198,7 +198,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ CERVICALGIA _ SEP _ OCT - 3 OCT",
    "adset": "ESPALDA - CHECK",
    "freq": 1.35,
-   "gasto": 1343,
+   "gasto": 1344,
    "leads": 35,
    "cpl": 38
   },
@@ -207,7 +207,7 @@ window.FATIGA_DATA = {
    "ad": "EST - RODILLA - OCT - 6 OCT",
    "adset": "RODILLA",
    "freq": 1.56,
-   "gasto": 5539,
+   "gasto": 5540,
    "leads": 145,
    "cpl": 38
   },
@@ -234,7 +234,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
    "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
    "freq": 1.36,
-   "gasto": 3050,
+   "gasto": 3051,
    "leads": 79,
    "cpl": 39
   },
@@ -243,7 +243,7 @@ window.FATIGA_DATA = {
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
    "freq": 1.22,
-   "gasto": 10462,
+   "gasto": 10467,
    "leads": 270,
    "cpl": 39
   },
@@ -252,7 +252,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ HOMBRO SINTOMAS _ SEP _ OCT",
    "adset": "Hombro",
    "freq": 1.39,
-   "gasto": 757,
+   "gasto": 758,
    "leads": 19,
    "cpl": 40
   },
@@ -261,7 +261,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
    "adset": "Espalda",
    "freq": 1.47,
-   "gasto": 2155,
+   "gasto": 2156,
    "leads": 54,
    "cpl": 40
   }
