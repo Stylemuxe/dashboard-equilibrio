@@ -1,16 +1,16 @@
 window.FATIGA_DATA = {
- "actualizado": "06/11/2026 18:22",
- "periodo": "2026-11-01 a 2026-11-06",
+ "actualizado": "07/11/2026 00:08",
+ "periodo": "2026-11-01 a 2026-11-07",
  "diagnostico": [
   {
    "cuenta": "Promo/Compl.",
    "adset": "Neuropatia",
    "veredicto": "PUBLICO CANSANDOSE",
-   "freq": 1.6,
-   "gasto": 6293,
-   "leads": 147,
+   "freq": 1.62,
+   "gasto": 6425,
+   "leads": 150,
    "cpl": 43,
-   "pct_nuevos": 30,
+   "pct_nuevos": 31,
    "cpm1": 35,
    "cpm2": 47
   },
@@ -18,13 +18,25 @@ window.FATIGA_DATA = {
    "cuenta": "Claveria",
    "adset": "Publicación: \"📍 En Equilibrio Total Clavería tu primera sesión...\"",
    "veredicto": "PUBLICO CANSANDOSE",
-   "freq": 1.5,
-   "gasto": 1887,
+   "freq": 1.51,
+   "gasto": 1922,
    "leads": 17,
-   "cpl": 111,
-   "pct_nuevos": 25,
+   "cpl": 113,
+   "pct_nuevos": 26,
    "cpm1": 105,
-   "cpm2": 161
+   "cpm2": 160
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "adset": "RODILLA CHECK",
+   "veredicto": "PUBLICO CANSANDOSE",
+   "freq": 1.28,
+   "gasto": 1501,
+   "leads": 37,
+   "cpl": 41,
+   "pct_nuevos": 33,
+   "cpm1": 43,
+   "cpm2": 54
   }
  ],
  "exitosos": [
@@ -32,18 +44,18 @@ window.FATIGA_DATA = {
    "cuenta": "Gerontologia",
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "BALBUENA",
-   "freq": 1.25,
-   "gasto": 1278,
-   "leads": 190,
+   "freq": 1.26,
+   "gasto": 1296,
+   "leads": 191,
    "cpl": 7
   },
   {
    "cuenta": "Gerontologia",
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
-   "freq": 1.32,
-   "gasto": 1471,
-   "leads": 183,
+   "freq": 1.33,
+   "gasto": 1487,
+   "leads": 187,
    "cpl": 8
   },
   {
@@ -51,8 +63,8 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO MANGUITO V2 5 JUN",
    "adset": "HOMBRO",
    "freq": 1.3,
-   "gasto": 922,
-   "leads": 39,
+   "gasto": 951,
+   "leads": 40,
    "cpl": 24
   },
   {
@@ -60,7 +72,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ NEUROPATIA  01 ABRIL - Copia",
    "adset": "Directo",
    "freq": 1.35,
-   "gasto": 1201,
+   "gasto": 1218,
    "leads": 50,
    "cpl": 24
   },
@@ -69,188 +81,188 @@ window.FATIGA_DATA = {
    "ad": "VID_ NEUROPATIA PADECIMIENTO _ OCT - 10 OCT",
    "adset": "NEUROPATIA",
    "freq": 1.37,
-   "gasto": 1054,
-   "leads": 42,
+   "gasto": 1071,
+   "leads": 43,
    "cpl": 25
   },
   {
    "cuenta": "San Juan del Rio",
    "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
    "adset": "Neuropatia - Check",
-   "freq": 1.45,
-   "gasto": 659,
+   "freq": 1.48,
+   "gasto": 695,
    "leads": 25,
-   "cpl": 26
-  },
-  {
-   "cuenta": "Cuautitlan",
-   "ad": "EST _ CIATICA V2 _ 14 MAY -",
-   "adset": "Directo",
-   "freq": 1.32,
-   "gasto": 616,
-   "leads": 23,
-   "cpl": 27
+   "cpl": 28
   },
   {
    "cuenta": "Nicolas Romero",
    "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
    "adset": "ESPALDA",
-   "freq": 1.47,
-   "gasto": 854,
+   "freq": 1.48,
+   "gasto": 876,
    "leads": 30,
-   "cpl": 28
+   "cpl": 29
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "EST _ CIATICA V2 _ 14 MAY",
    "adset": "ESPALDA - CHECK",
-   "freq": 1.26,
-   "gasto": 1263,
-   "leads": 41,
-   "cpl": 31
+   "freq": 1.28,
+   "gasto": 1301,
+   "leads": 43,
+   "cpl": 30
   },
   {
    "cuenta": "Tepeyac",
    "ad": "VID - NEUROPATIA DIABETICA V2 JUN",
    "adset": "Neuropatia",
-   "freq": 1.32,
-   "gasto": 612,
+   "freq": 1.33,
+   "gasto": 626,
    "leads": 20,
    "cpl": 31
-  },
-  {
-   "cuenta": "Valle Dorado",
-   "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
-   "freq": 1.44,
-   "gasto": 1816,
-   "leads": 53,
-   "cpl": 34
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "VID - NEURO SINTOMAS - OCT",
-   "adset": "Neuropatia",
-   "freq": 1.34,
-   "gasto": 1728,
-   "leads": 50,
-   "cpl": 35
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID-NEURO-6MAY",
-   "adset": "NEUROPATIA",
-   "freq": 1.46,
-   "gasto": 1023,
-   "leads": 28,
-   "cpl": 37
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
-   "adset": "Neuropatia",
-   "freq": 1.76,
-   "gasto": 698,
-   "leads": 19,
-   "cpl": 37
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID_ CERVICALGIA _ SEP _ OCT - 3 OCT",
    "adset": "Espalda",
-   "freq": 1.53,
-   "gasto": 700,
-   "leads": 19,
-   "cpl": 37
+   "freq": 1.56,
+   "gasto": 723,
+   "leads": 21,
+   "cpl": 34
   },
   {
    "cuenta": "Laura (sedes)",
-   "ad": "EST - RODILLA - OCT - 6 OCT",
-   "adset": "RODILLA",
-   "freq": 1.55,
-   "gasto": 5432,
-   "leads": 143,
-   "cpl": 38
+   "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
+   "adset": "Neuropatia",
+   "freq": 1.79,
+   "gasto": 733,
+   "leads": 21,
+   "cpl": 35
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "VID - NEURO SINTOMAS - OCT",
+   "adset": "Neuropatia",
+   "freq": 1.35,
+   "gasto": 1774,
+   "leads": 51,
+   "cpl": 35
+  },
+  {
+   "cuenta": "Valle Dorado",
+   "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
+   "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
+   "freq": 1.45,
+   "gasto": 1863,
+   "leads": 53,
+   "cpl": 35
+  },
+  {
+   "cuenta": "San Juan del Rio",
+   "ad": "VID_ CERVICALGIA _ OCT - 10 OCT",
+   "adset": "Espalda - Check",
+   "freq": 1.28,
+   "gasto": 560,
+   "leads": 15,
+   "cpl": 37
   },
   {
    "cuenta": "Tepeyac",
    "ad": "VID - MARY",
    "adset": "Neuropatia",
    "freq": 1.41,
-   "gasto": 2881,
-   "leads": 76,
+   "gasto": 2938,
+   "leads": 80,
+   "cpl": 37
+  },
+  {
+   "cuenta": "Nicolas Romero",
+   "ad": "VID_ NEUROPATIA GENERAL _ SEP _ OCT - 3 OCT",
+   "adset": "NEUROPATIA",
+   "freq": 1.41,
+   "gasto": 550,
+   "leads": 15,
+   "cpl": 37
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID-NEURO-6MAY",
+   "adset": "NEUROPATIA",
+   "freq": 1.47,
+   "gasto": 1057,
+   "leads": 28,
    "cpl": 38
   },
   {
    "cuenta": "Laura (sedes)",
-   "ad": "VID_ HOMBRO SINTOMAS _ SEP _ OCT",
-   "adset": "Hombro",
-   "freq": 1.39,
-   "gasto": 738,
-   "leads": 19,
+   "ad": "VID_ CERVICALGIA _ SEP _ OCT - 3 OCT",
+   "adset": "ESPALDA - CHECK",
+   "freq": 1.35,
+   "gasto": 1341,
+   "leads": 35,
+   "cpl": 38
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "EST - RODILLA - OCT - 6 OCT",
+   "adset": "RODILLA",
+   "freq": 1.56,
+   "gasto": 5537,
+   "leads": 145,
+   "cpl": 38
+  },
+  {
+   "cuenta": "Cuautla",
+   "ad": "VID_ ESPALDA GENERAL _ OCT - 12 OCT",
+   "adset": "Espalda",
+   "freq": 1.57,
+   "gasto": 1017,
+   "leads": 27,
+   "cpl": 38
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID - NEUROPATIA DIABETICA 3 JUN",
+   "adset": "NEUROPATIA",
+   "freq": 1.47,
+   "gasto": 618,
+   "leads": 16,
+   "cpl": 39
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
+   "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
+   "freq": 1.36,
+   "gasto": 3048,
+   "leads": 79,
    "cpl": 39
   },
   {
    "cuenta": "Promo/Compl.",
    "ad": "FEED",
    "adset": "PROMOCIONES CDMX",
-   "freq": 1.21,
-   "gasto": 10295,
-   "leads": 264,
+   "freq": 1.22,
+   "gasto": 10458,
+   "leads": 270,
    "cpl": 39
   },
   {
    "cuenta": "Laura (sedes)",
-   "ad": "VID - NEUROPATIA DIABETICA 3 JUN",
-   "adset": "NEUROPATIA",
-   "freq": 1.46,
-   "gasto": 601,
-   "leads": 15,
+   "ad": "VID_ HOMBRO SINTOMAS _ SEP _ OCT",
+   "adset": "Hombro",
+   "freq": 1.39,
+   "gasto": 757,
+   "leads": 19,
    "cpl": 40
   },
   {
    "cuenta": "Laura (sedes)",
    "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
    "adset": "Espalda",
-   "freq": 1.46,
-   "gasto": 2117,
-   "leads": 53,
-   "cpl": 40
-  },
-  {
-   "cuenta": "Laura (sedes)",
-   "ad": "VID_ CERVICALGIA _ SEP _ OCT - 3 OCT",
-   "adset": "ESPALDA - CHECK",
-   "freq": 1.33,
-   "gasto": 1305,
-   "leads": 33,
-   "cpl": 40
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-   "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-   "freq": 1.37,
-   "gasto": 2987,
-   "leads": 75,
-   "cpl": 40
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "VID - CIATICA - OCT",
-   "adset": "Espalda",
-   "freq": 1.55,
-   "gasto": 792,
-   "leads": 20,
-   "cpl": 40
-  },
-  {
-   "cuenta": "Valle Dorado",
-   "ad": "VID_QUIRO ESPALDA",
-   "adset": "ESPALDA",
-   "freq": 1.25,
-   "gasto": 1620,
-   "leads": 41,
+   "freq": 1.47,
+   "gasto": 2155,
+   "leads": 54,
    "cpl": 40
   }
  ],
