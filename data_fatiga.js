@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "08/11/2026 04:09",
+ "actualizado": "08/11/2026 04:19",
  "periodo": "2026-11-01 a 2026-11-08",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.95,
-   "gasto": 2380,
+   "gasto": 2381,
    "leads": 24,
    "cpl": 99,
    "pct_nuevos": 28,
@@ -46,9 +46,21 @@ window.FATIGA_DATA = {
    "gasto": 1647,
    "leads": 42,
    "cpl": 39,
-   "pct_nuevos": 21,
+   "pct_nuevos": 22,
    "cpm1": 45,
    "cpm2": 57
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "adset": "Neuropatia",
+   "veredicto": "VIGILAR",
+   "freq": 2.2,
+   "gasto": 7168,
+   "leads": 104,
+   "cpl": 69,
+   "pct_nuevos": 26,
+   "cpm1": 35,
+   "cpm2": 38
   }
  ],
  "exitosos": [
@@ -174,7 +186,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Vecinos de Tláhuac: el dolor de espalda, rodilla...\"",
    "adset": "Publicación: \"Vecinos de Tláhuac: el dolor de espalda, rodilla...\"",
    "freq": 1.34,
-   "gasto": 1160,
+   "gasto": 1162,
    "leads": 37,
    "cpl": 31
   },
@@ -201,7 +213,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.45,
-   "gasto": 2150,
+   "gasto": 2151,
    "leads": 64,
    "cpl": 34
   },
@@ -218,7 +230,7 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "VID - RODILLA PADECIMIENTO - OCT",
    "adset": "Rodilla",
-   "freq": 1.48,
+   "freq": 1.47,
    "gasto": 560,
    "leads": 16,
    "cpl": 35
