@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "09/11/2026 09:09",
+ "actualizado": "09/11/2026 09:18",
  "periodo": "2026-11-01 a 2026-11-09",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 2.02,
-   "gasto": 2584,
+   "gasto": 2585,
    "leads": 28,
    "cpl": 92,
    "pct_nuevos": 33,
@@ -31,7 +31,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"📍 En Equilibrio Total Clavería tu primera sesión...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.58,
-   "gasto": 2364,
+   "gasto": 2366,
    "leads": 21,
    "cpl": 113,
    "pct_nuevos": 28,
@@ -43,7 +43,7 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "VIGILAR",
    "freq": 2.31,
-   "gasto": 8222,
+   "gasto": 8227,
    "leads": 114,
    "cpl": 72,
    "pct_nuevos": 35,
@@ -57,9 +57,9 @@ window.FATIGA_DATA = {
    "ad": "GERO BAILE NEZA - 3 NOV",
    "adset": "Imagen Gerontologia - NEZA",
    "freq": 1.73,
-   "gasto": 816,
-   "leads": 181,
-   "cpl": 5
+   "gasto": 819,
+   "leads": 182,
+   "cpl": 4
   },
   {
    "cuenta": "Gerontologia",
@@ -83,7 +83,7 @@ window.FATIGA_DATA = {
    "cuenta": "Gerontologia",
    "ad": "GERO BAILE COACALCO - 3 NOV",
    "adset": "Imagen Gerontologia -  COACALCO",
-   "freq": 1.57,
+   "freq": 1.58,
    "gasto": 576,
    "leads": 84,
    "cpl": 7
@@ -119,7 +119,7 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID_ RODILLA DESGASTE ARTICULAR _ SEP _ OCT",
    "adset": "RODILLA CHECK",
-   "freq": 1.35,
+   "freq": 1.36,
    "gasto": 515,
    "leads": 23,
    "cpl": 22
@@ -129,7 +129,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO MANGUITO V2 5 JUN",
    "adset": "HOMBRO",
    "freq": 1.35,
-   "gasto": 1285,
+   "gasto": 1286,
    "leads": 55,
    "cpl": 23
   },
@@ -146,8 +146,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "EST - PLANTAR V1 JUL",
    "adset": "MIX",
-   "freq": 1.84,
-   "gasto": 637,
+   "freq": 1.85,
+   "gasto": 638,
    "leads": 24,
    "cpl": 27
   },
@@ -157,15 +157,15 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia - Check",
    "freq": 1.53,
    "gasto": 784,
-   "leads": 27,
-   "cpl": 29
+   "leads": 28,
+   "cpl": 28
   },
   {
    "cuenta": "Nicolas Romero",
    "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
    "adset": "ESPALDA",
    "freq": 1.54,
-   "gasto": 1091,
+   "gasto": 1092,
    "leads": 36,
    "cpl": 30
   },
@@ -174,7 +174,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ CIATICA V2 _ 14 MAY",
    "adset": "ESPALDA - CHECK",
    "freq": 1.34,
-   "gasto": 1819,
+   "gasto": 1823,
    "leads": 59,
    "cpl": 31
   },
@@ -182,8 +182,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID_ RODILLA GENERAL _ SEP _ OCT",
    "adset": "Rodilla",
-   "freq": 1.51,
-   "gasto": 1441,
+   "freq": 1.52,
+   "gasto": 1445,
    "leads": 45,
    "cpl": 32
   },
@@ -192,16 +192,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ CERVICALGIA _ SEP _ OCT - 3 OCT",
    "adset": "Espalda",
    "freq": 1.77,
-   "gasto": 1068,
-   "leads": 33,
-   "cpl": 32
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"📍 Equilibrio Total Cuautla 🚨 Atención, Cuautla:...\"",
-   "adset": "Publicación: \"📍 Equilibrio Total Cuautla 🚨 Atención, Cuautla:...\"",
-   "freq": 1.6,
-   "gasto": 1071,
+   "gasto": 1069,
    "leads": 33,
    "cpl": 32
   },
@@ -210,16 +201,25 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Vecinos de Tláhuac: el dolor de espalda, rodilla...\"",
    "adset": "Publicación: \"Vecinos de Tláhuac: el dolor de espalda, rodilla...\"",
    "freq": 1.43,
-   "gasto": 2131,
+   "gasto": 2139,
    "leads": 67,
    "cpl": 32
+  },
+  {
+   "cuenta": "Promo/Compl.",
+   "ad": "Publicación: \"📍 Equilibrio Total Cuautla 🚨 Atención, Cuautla:...\"",
+   "adset": "Publicación: \"📍 Equilibrio Total Cuautla 🚨 Atención, Cuautla:...\"",
+   "freq": 1.6,
+   "gasto": 1073,
+   "leads": 33,
+   "cpl": 33
   },
   {
    "cuenta": "Valle Dorado",
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.48,
-   "gasto": 2490,
+   "gasto": 2492,
    "leads": 73,
    "cpl": 34
   },
@@ -227,7 +227,7 @@ window.FATIGA_DATA = {
    "cuenta": "Satelite",
    "ad": "VID-HOMBRODOLOROSO - Copia",
    "adset": "HOMBRO - CHECK",
-   "freq": 1.24,
+   "freq": 1.25,
    "gasto": 719,
    "leads": 21,
    "cpl": 34
@@ -255,7 +255,7 @@ window.FATIGA_DATA = {
    "ad": "VID - CIATICA - OCT",
    "adset": "Espalda",
    "freq": 1.64,
-   "gasto": 1204,
+   "gasto": 1206,
    "leads": 34,
    "cpl": 35
   },
@@ -269,12 +269,12 @@ window.FATIGA_DATA = {
    "cpl": 35
   },
   {
-   "cuenta": "Promo/Compl.",
-   "ad": "Publicación: \"Si el dolor de espalda, rodilla u hombros ya no...\"",
-   "adset": "Publicación: \"Si el dolor de espalda, rodilla u hombros ya no...\"",
-   "freq": 1.34,
-   "gasto": 1817,
-   "leads": 50,
+   "cuenta": "Valle Dorado",
+   "ad": "VID _ RODILLA PADECIMIENTO _ SEP",
+   "adset": "RODILLA",
+   "freq": 1.32,
+   "gasto": 683,
+   "leads": 19,
    "cpl": 36
   }
  ],
