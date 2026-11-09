@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "09/11/2026 03:47",
+ "actualizado": "09/11/2026 04:13",
  "periodo": "2026-11-01 a 2026-11-09",
  "diagnostico": [
   {
@@ -55,7 +55,7 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "VIGILAR",
    "freq": 2.3,
-   "gasto": 8123,
+   "gasto": 8124,
    "leads": 114,
    "cpl": 71,
    "pct_nuevos": 35,
@@ -69,7 +69,7 @@ window.FATIGA_DATA = {
    "ad": "GERO BAILE NEZA - 3 NOV",
    "adset": "Imagen Gerontologia - NEZA",
    "freq": 1.73,
-   "gasto": 807,
+   "gasto": 808,
    "leads": 181,
    "cpl": 4
   },
@@ -186,7 +186,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Vecinos de Tláhuac: el dolor de espalda, rodilla...\"",
    "adset": "Publicación: \"Vecinos de Tláhuac: el dolor de espalda, rodilla...\"",
    "freq": 1.41,
-   "gasto": 2015,
+   "gasto": 2016,
    "leads": 65,
    "cpl": 31
   },
@@ -203,7 +203,7 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID_ CERVICALGIA _ SEP _ OCT - 3 OCT",
    "adset": "Espalda",
-   "freq": 1.76,
+   "freq": 1.75,
    "gasto": 1035,
    "leads": 32,
    "cpl": 32
@@ -222,7 +222,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ RODILLA GENERAL _ SEP _ OCT",
    "adset": "Rodilla",
    "freq": 1.51,
-   "gasto": 1384,
+   "gasto": 1385,
    "leads": 42,
    "cpl": 33
   },
@@ -276,7 +276,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si el dolor de espalda, rodilla u hombros ya no...\"",
    "adset": "Publicación: \"Si el dolor de espalda, rodilla u hombros ya no...\"",
    "freq": 1.32,
-   "gasto": 1608,
+   "gasto": 1611,
    "leads": 46,
    "cpl": 35
   },
