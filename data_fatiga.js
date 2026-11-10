@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "10/11/2026 03:13",
+ "actualizado": "10/11/2026 04:16",
  "periodo": "2026-11-01 a 2026-11-10",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "ESPALDA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 2.14,
-   "gasto": 4770,
+   "gasto": 4771,
    "leads": 53,
    "cpl": 90,
    "pct_nuevos": 20,
@@ -19,43 +19,43 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 2.11,
-   "gasto": 3131,
+   "gasto": 3143,
    "leads": 33,
    "cpl": 95,
    "pct_nuevos": 31,
    "cpm1": 64,
-   "cpm2": 83
+   "cpm2": 84
   },
   {
    "cuenta": "Cuautitlan",
    "adset": "Directo",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.93,
-   "gasto": 8379,
+   "gasto": 8396,
    "leads": 323,
    "cpl": 26,
    "pct_nuevos": 21,
    "cpm1": 31,
-   "cpm2": 39
+   "cpm2": 38
   },
   {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.84,
-   "gasto": 2222,
+   "gasto": 2227,
    "leads": 19,
    "cpl": 117,
    "pct_nuevos": 25,
    "cpm1": 58,
-   "cpm2": 93
+   "cpm2": 92
   },
   {
    "cuenta": "Nicolas Romero",
    "adset": "RODILLA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.76,
-   "gasto": 2532,
+   "gasto": 2533,
    "leads": 48,
    "cpl": 53,
    "pct_nuevos": 22,
@@ -63,11 +63,23 @@ window.FATIGA_DATA = {
    "cpm2": 26
   },
   {
+   "cuenta": "Claveria",
+   "adset": "Publicación: \"📍 En Equilibrio Total Clavería tu primera sesión...\"",
+   "veredicto": "PUBLICO CANSANDOSE",
+   "freq": 1.62,
+   "gasto": 2604,
+   "leads": 24,
+   "cpl": 109,
+   "pct_nuevos": 23,
+   "cpm1": 118,
+   "cpm2": 174
+  },
+  {
    "cuenta": "Laura (sedes)",
    "adset": "MIX",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.61,
-   "gasto": 1946,
+   "gasto": 1948,
    "leads": 56,
    "cpl": 35,
    "pct_nuevos": 31,
@@ -75,23 +87,11 @@ window.FATIGA_DATA = {
    "cpm2": 33
   },
   {
-   "cuenta": "Claveria",
-   "adset": "Publicación: \"📍 En Equilibrio Total Clavería tu primera sesión...\"",
-   "veredicto": "PUBLICO CANSANDOSE",
-   "freq": 1.61,
-   "gasto": 2602,
-   "leads": 24,
-   "cpl": 108,
-   "pct_nuevos": 23,
-   "cpm1": 118,
-   "cpm2": 174
-  },
-  {
    "cuenta": "Promo/Compl.",
    "adset": "PROMOCIONES CDMX",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.37,
-   "gasto": 17874,
+   "gasto": 17914,
    "leads": 456,
    "cpl": 39,
    "pct_nuevos": 33,
@@ -103,7 +103,7 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "VIGILAR",
    "freq": 2.42,
-   "gasto": 8988,
+   "gasto": 8991,
    "leads": 120,
    "cpl": 75,
    "pct_nuevos": 23,
@@ -114,8 +114,8 @@ window.FATIGA_DATA = {
    "cuenta": "Cuautla",
    "adset": "Espalda",
    "veredicto": "VIGILAR",
-   "freq": 2.23,
-   "gasto": 3016,
+   "freq": 2.24,
+   "gasto": 3025,
    "leads": 78,
    "cpl": 39,
    "pct_nuevos": 27,
@@ -129,7 +129,7 @@ window.FATIGA_DATA = {
    "ad": "GERO BAILE NEZA - 3 NOV",
    "adset": "Imagen Gerontologia - NEZA",
    "freq": 1.75,
-   "gasto": 1131,
+   "gasto": 1132,
    "leads": 218,
    "cpl": 5
   },
@@ -138,8 +138,8 @@ window.FATIGA_DATA = {
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "BALBUENA",
    "freq": 1.35,
-   "gasto": 1876,
-   "leads": 270,
+   "gasto": 1878,
+   "leads": 271,
    "cpl": 7
   },
   {
@@ -147,7 +147,7 @@ window.FATIGA_DATA = {
    "ad": "GERO BAILE COACALCO - 3 NOV",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.63,
-   "gasto": 683,
+   "gasto": 684,
    "leads": 94,
    "cpl": 7
   },
@@ -156,7 +156,7 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.4,
-   "gasto": 2023,
+   "gasto": 2024,
    "leads": 267,
    "cpl": 8
   },
@@ -192,7 +192,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO MANGUITO V2 5 JUN",
    "adset": "HOMBRO",
    "freq": 1.38,
-   "gasto": 1378,
+   "gasto": 1379,
    "leads": 59,
    "cpl": 23
   },
@@ -210,7 +210,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ RODILLA DESGASTE ARTICULAR _ SEP _ OCT",
    "adset": "RODILLA CHECK",
    "freq": 1.36,
-   "gasto": 571,
+   "gasto": 572,
    "leads": 23,
    "cpl": 25
   },
@@ -219,7 +219,7 @@ window.FATIGA_DATA = {
    "ad": "EST - PLANTAR V1 JUL",
    "adset": "MIX",
    "freq": 1.91,
-   "gasto": 723,
+   "gasto": 724,
    "leads": 27,
    "cpl": 27
   },
@@ -228,7 +228,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT",
    "adset": "Neuropatia - Check",
    "freq": 1.56,
-   "gasto": 952,
+   "gasto": 954,
    "leads": 35,
    "cpl": 27
   },
@@ -237,7 +237,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ CIATICA V2 _ 14 MAY",
    "adset": "ESPALDA - CHECK",
    "freq": 1.38,
-   "gasto": 1985,
+   "gasto": 1986,
    "leads": 62,
    "cpl": 32
   },
@@ -246,7 +246,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
    "adset": "ESPALDA",
    "freq": 1.58,
-   "gasto": 1248,
+   "gasto": 1250,
    "leads": 39,
    "cpl": 32
   },
@@ -254,8 +254,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "Publicación: \"📍 Equilibrio Total Cuautla 🚨 Atención, Cuautla:...\"",
    "adset": "Publicación: \"📍 Equilibrio Total Cuautla 🚨 Atención, Cuautla:...\"",
-   "freq": 1.74,
-   "gasto": 1496,
+   "freq": 1.75,
+   "gasto": 1503,
    "leads": 45,
    "cpl": 33
   },
@@ -264,7 +264,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Vecinos de Tláhuac: el dolor de espalda, rodilla...\"",
    "adset": "Publicación: \"Vecinos de Tláhuac: el dolor de espalda, rodilla...\"",
    "freq": 1.48,
-   "gasto": 2749,
+   "gasto": 2755,
    "leads": 84,
    "cpl": 33
   },
@@ -281,8 +281,8 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID_ CERVICALGIA _ SEP _ OCT - 3 OCT",
    "adset": "Espalda",
-   "freq": 1.83,
-   "gasto": 1187,
+   "freq": 1.84,
+   "gasto": 1188,
    "leads": 35,
    "cpl": 34
   },
@@ -291,8 +291,8 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.48,
-   "gasto": 2828,
-   "leads": 83,
+   "gasto": 2833,
+   "leads": 84,
    "cpl": 34
   },
   {
@@ -300,8 +300,17 @@ window.FATIGA_DATA = {
    "ad": "VID-HOMBRODOLOROSO - Copia",
    "adset": "HOMBRO - CHECK",
    "freq": 1.26,
-   "gasto": 844,
+   "gasto": 847,
    "leads": 25,
+   "cpl": 34
+  },
+  {
+   "cuenta": "Tepeyac",
+   "ad": "VID - NEUROPATIA DIABETICA V2 JUN",
+   "adset": "Neuropatia",
+   "freq": 1.38,
+   "gasto": 1056,
+   "leads": 31,
    "cpl": 34
   },
   {
@@ -318,35 +327,26 @@ window.FATIGA_DATA = {
    "ad": "VID_ RODILLA GENERAL _ SEP _ OCT",
    "adset": "Rodilla",
    "freq": 1.56,
-   "gasto": 1704,
+   "gasto": 1706,
    "leads": 49,
    "cpl": 35
-  },
-  {
-   "cuenta": "Tepeyac",
-   "ad": "VID - NEUROPATIA DIABETICA V2 JUN",
-   "adset": "Neuropatia",
-   "freq": 1.37,
-   "gasto": 1052,
-   "leads": 30,
-   "cpl": 35
-  },
-  {
-   "cuenta": "Promo/Compl.",
-   "ad": "VID - RODILLA PADECIMIENTO - OCT",
-   "adset": "Rodilla",
-   "freq": 1.5,
-   "gasto": 1273,
-   "leads": 35,
-   "cpl": 36
   },
   {
    "cuenta": "Satelite",
    "ad": "ACU - NEU - VID  - SEPT",
    "adset": "NEUROPATIA",
    "freq": 1.68,
-   "gasto": 722,
+   "gasto": 723,
    "leads": 20,
+   "cpl": 36
+  },
+  {
+   "cuenta": "Nicolas Romero",
+   "ad": "VID_ NEUROPATIA GENERAL _ SEP _ OCT - 3 OCT",
+   "adset": "NEUROPATIA",
+   "freq": 1.51,
+   "gasto": 838,
+   "leads": 23,
    "cpl": 36
   }
  ],
