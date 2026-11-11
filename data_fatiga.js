@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "11/11/2026 09:27",
+ "actualizado": "11/11/2026 09:31",
  "periodo": "2026-11-01 a 2026-11-11",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "ESPALDA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 2.26,
-   "gasto": 5374,
+   "gasto": 5375,
    "leads": 61,
    "cpl": 88,
    "pct_nuevos": 26,
@@ -19,7 +19,7 @@ window.FATIGA_DATA = {
    "adset": "RODILLA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.79,
-   "gasto": 8642,
+   "gasto": 8643,
    "leads": 148,
    "cpl": 58,
    "pct_nuevos": 32,
@@ -43,7 +43,7 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.54,
-   "gasto": 10018,
+   "gasto": 10023,
    "leads": 134,
    "cpl": 75,
    "pct_nuevos": 29,
@@ -55,7 +55,7 @@ window.FATIGA_DATA = {
    "adset": "Espalda",
    "veredicto": "VIGILAR",
    "freq": 2.39,
-   "gasto": 3667,
+   "gasto": 3668,
    "leads": 88,
    "cpl": 42,
    "pct_nuevos": 43,
@@ -79,7 +79,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
    "veredicto": "VIGILAR",
    "freq": 2.21,
-   "gasto": 3681,
+   "gasto": 3682,
    "leads": 43,
    "cpl": 86,
    "pct_nuevos": 43,
@@ -93,8 +93,8 @@ window.FATIGA_DATA = {
    "ad": "GERO BAILE NEZA - 3 NOV",
    "adset": "Imagen Gerontologia - NEZA",
    "freq": 1.81,
-   "gasto": 1377,
-   "leads": 270,
+   "gasto": 1378,
+   "leads": 271,
    "cpl": 5
   },
   {
@@ -137,8 +137,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "NEZA V1 ORIGINAL - 10 NOV",
    "adset": "NEZA ZONA 25-65+",
-   "freq": 1.16,
-   "gasto": 1133,
+   "freq": 1.15,
+   "gasto": 1138,
    "leads": 85,
    "cpl": 13
   },
@@ -155,9 +155,9 @@ window.FATIGA_DATA = {
    "cuenta": "Cuautitlan",
    "ad": "EST _ CIATICA V1 _ 14 MAY -",
    "adset": "Directo",
-   "freq": 1.5,
-   "gasto": 1266,
-   "leads": 63,
+   "freq": 1.49,
+   "gasto": 1268,
+   "leads": 64,
    "cpl": 20
   },
   {
@@ -183,7 +183,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ NEUROPATIA  01 ABRIL - Copia",
    "adset": "Directo",
    "freq": 1.48,
-   "gasto": 2027,
+   "gasto": 2028,
    "leads": 78,
    "cpl": 26
   },
@@ -246,7 +246,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ NEUROPATIA DIABETICA _ SEP _ OCT - 3 OCT",
    "adset": "NEUROPATIA",
    "freq": 1.54,
-   "gasto": 679,
+   "gasto": 680,
    "leads": 22,
    "cpl": 31
   },
@@ -255,7 +255,7 @@ window.FATIGA_DATA = {
    "ad": "EST - ESPOLON V3 - JUL",
    "adset": "MIX",
    "freq": 1.52,
-   "gasto": 543,
+   "gasto": 544,
    "leads": 17,
    "cpl": 32
   },
@@ -282,7 +282,7 @@ window.FATIGA_DATA = {
    "ad": "VID - ESTUDIO DE COLUMNA JUL",
    "adset": "Espalda",
    "freq": 1.28,
-   "gasto": 515,
+   "gasto": 516,
    "leads": 15,
    "cpl": 34
   },
@@ -305,12 +305,12 @@ window.FATIGA_DATA = {
    "cpl": 36
   },
   {
-   "cuenta": "Satelite",
-   "ad": "ACU - NEU - VID  - SEPT",
-   "adset": "NEUROPATIA",
-   "freq": 1.75,
-   "gasto": 876,
-   "leads": 24,
+   "cuenta": "Tepeyac",
+   "ad": "VID - MARY",
+   "adset": "Neuropatia",
+   "freq": 1.49,
+   "gasto": 5791,
+   "leads": 162,
    "cpl": 36
   }
  ],
