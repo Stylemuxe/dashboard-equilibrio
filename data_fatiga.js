@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "10/11/2026 20:43",
+ "actualizado": "10/11/2026 20:49",
  "periodo": "2026-11-01 a 2026-11-10",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "ESPALDA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 2.23,
-   "gasto": 5170,
+   "gasto": 5173,
    "leads": 56,
    "cpl": 92,
    "pct_nuevos": 24,
@@ -19,7 +19,7 @@ window.FATIGA_DATA = {
    "adset": "RODILLA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.87,
-   "gasto": 2946,
+   "gasto": 2948,
    "leads": 51,
    "cpl": 58,
    "pct_nuevos": 32,
@@ -31,7 +31,7 @@ window.FATIGA_DATA = {
    "adset": "RODILLA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.78,
-   "gasto": 8455,
+   "gasto": 8460,
    "leads": 142,
    "cpl": 60,
    "pct_nuevos": 31,
@@ -43,7 +43,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"📍 En Equilibrio Total Clavería tu primera sesión...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.67,
-   "gasto": 2964,
+   "gasto": 2966,
    "leads": 25,
    "cpl": 119,
    "pct_nuevos": 31,
@@ -55,7 +55,7 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.51,
-   "gasto": 9730,
+   "gasto": 9737,
    "leads": 128,
    "cpl": 76,
    "pct_nuevos": 27,
@@ -67,7 +67,7 @@ window.FATIGA_DATA = {
    "adset": "Espalda",
    "veredicto": "VIGILAR",
    "freq": 2.35,
-   "gasto": 3507,
+   "gasto": 3509,
    "leads": 86,
    "cpl": 41,
    "pct_nuevos": 39,
@@ -91,7 +91,7 @@ window.FATIGA_DATA = {
    "adset": "NEUROPATIA",
    "veredicto": "VIGILAR",
    "freq": 2.2,
-   "gasto": 1605,
+   "gasto": 1606,
    "leads": 37,
    "cpl": 43,
    "pct_nuevos": 37,
@@ -105,7 +105,7 @@ window.FATIGA_DATA = {
    "ad": "GERO BAILE NEZA - 3 NOV",
    "adset": "Imagen Gerontologia - NEZA",
    "freq": 1.79,
-   "gasto": 1300,
+   "gasto": 1301,
    "leads": 255,
    "cpl": 5
   },
@@ -114,7 +114,7 @@ window.FATIGA_DATA = {
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "BALBUENA",
    "freq": 1.38,
-   "gasto": 2016,
+   "gasto": 2018,
    "leads": 290,
    "cpl": 7
   },
@@ -124,7 +124,7 @@ window.FATIGA_DATA = {
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.44,
    "gasto": 2240,
-   "leads": 292,
+   "leads": 293,
    "cpl": 8
   },
   {
@@ -133,15 +133,15 @@ window.FATIGA_DATA = {
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.68,
    "gasto": 762,
-   "leads": 98,
+   "leads": 99,
    "cpl": 8
   },
   {
    "cuenta": "Gerontologia",
    "ad": "GERO GYM COACALCO 01 - 3 NOV",
    "adset": "COACALCO",
-   "freq": 1.55,
-   "gasto": 1086,
+   "freq": 1.54,
+   "gasto": 1087,
    "leads": 119,
    "cpl": 9
   },
@@ -149,8 +149,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "ad": "NEZA V1 ORIGINAL - 10 NOV",
    "adset": "NEZA ZONA 25-65+",
-   "freq": 1.14,
-   "gasto": 632,
+   "freq": 1.13,
+   "gasto": 635,
    "leads": 43,
    "cpl": 15
   },
@@ -168,7 +168,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ NEUROPATIA PADECIMIENTO _ OCT - 10 OCT",
    "adset": "NEUROPATIA",
    "freq": 1.52,
-   "gasto": 1696,
+   "gasto": 1697,
    "leads": 77,
    "cpl": 22
   },
@@ -177,7 +177,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ CIATICA V1 _ 14 MAY -",
    "adset": "Directo",
    "freq": 1.47,
-   "gasto": 1151,
+   "gasto": 1152,
    "leads": 53,
    "cpl": 22
   },
@@ -187,7 +187,7 @@ window.FATIGA_DATA = {
    "adset": "HOMBRO",
    "freq": 1.41,
    "gasto": 1639,
-   "leads": 67,
+   "leads": 68,
    "cpl": 24
   },
   {
@@ -222,7 +222,7 @@ window.FATIGA_DATA = {
    "ad": "EST - PLANTAR V1 JUL",
    "adset": "MIX",
    "freq": 1.98,
-   "gasto": 853,
+   "gasto": 854,
    "leads": 28,
    "cpl": 30
   },
@@ -240,7 +240,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ CIATICA _ SEP _ OCT - 3 OCT",
    "adset": "ESPALDA",
    "freq": 1.62,
-   "gasto": 1448,
+   "gasto": 1449,
    "leads": 48,
    "cpl": 30
   },
@@ -249,7 +249,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.49,
-   "gasto": 3216,
+   "gasto": 3219,
    "leads": 103,
    "cpl": 31
   },
@@ -257,7 +257,7 @@ window.FATIGA_DATA = {
    "cuenta": "Laura (sedes)",
    "ad": "VID _ HOMBRO _ V3 _ 15 MAY _ ARTURO - Copia",
    "adset": "HOMBRO CHECK",
-   "freq": 1.29,
+   "freq": 1.28,
    "gasto": 511,
    "leads": 16,
    "cpl": 32
@@ -285,7 +285,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEUROPATIA DIABETICA V2 JUN",
    "adset": "Neuropatia",
    "freq": 1.37,
-   "gasto": 1316,
+   "gasto": 1317,
    "leads": 39,
    "cpl": 34
   },
@@ -294,7 +294,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ CERVICALGIA _ SEP _ OCT - 3 OCT",
    "adset": "Espalda",
    "freq": 1.89,
-   "gasto": 1345,
+   "gasto": 1346,
    "leads": 38,
    "cpl": 35
   },
@@ -312,7 +312,7 @@ window.FATIGA_DATA = {
    "ad": "VID-HOMBRODOLOROSO - Copia",
    "adset": "HOMBRO - CHECK",
    "freq": 1.27,
-   "gasto": 948,
+   "gasto": 949,
    "leads": 26,
    "cpl": 36
   },
