@@ -1,5 +1,5 @@
 window.FATIGA_DATA = {
- "actualizado": "12/11/2026 00:32",
+ "actualizado": "12/11/2026 01:17",
  "periodo": "2026-11-01 a 2026-11-12",
  "diagnostico": [
   {
@@ -7,7 +7,7 @@ window.FATIGA_DATA = {
    "adset": "ESPALDA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 2.31,
-   "gasto": 5733,
+   "gasto": 5736,
    "leads": 65,
    "cpl": 88,
    "pct_nuevos": 23,
@@ -19,7 +19,7 @@ window.FATIGA_DATA = {
    "adset": "RODILLA",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.89,
-   "gasto": 3249,
+   "gasto": 3250,
    "leads": 58,
    "cpl": 56,
    "pct_nuevos": 35,
@@ -31,7 +31,7 @@ window.FATIGA_DATA = {
    "adset": "Publicación: \"📍 En Equilibrio Total Clavería tu primera sesión...\"",
    "veredicto": "PUBLICO CANSANDOSE",
    "freq": 1.73,
-   "gasto": 3288,
+   "gasto": 3290,
    "leads": 29,
    "cpl": 113,
    "pct_nuevos": 31,
@@ -43,7 +43,7 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "CAMBIAR CREATIVO",
    "freq": 2.61,
-   "gasto": 10556,
+   "gasto": 10565,
    "leads": 139,
    "cpl": 76,
    "pct_nuevos": 26,
@@ -55,7 +55,7 @@ window.FATIGA_DATA = {
    "adset": "Espalda",
    "veredicto": "VIGILAR",
    "freq": 2.45,
-   "gasto": 3943,
+   "gasto": 3947,
    "leads": 94,
    "cpl": 42,
    "pct_nuevos": 42,
@@ -78,8 +78,8 @@ window.FATIGA_DATA = {
    "cuenta": "Promo/Compl.",
    "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
    "veredicto": "VIGILAR",
-   "freq": 2.28,
-   "gasto": 3955,
+   "freq": 2.27,
+   "gasto": 3959,
    "leads": 48,
    "cpl": 82,
    "pct_nuevos": 37,
@@ -91,7 +91,7 @@ window.FATIGA_DATA = {
    "adset": "Espalda",
    "veredicto": "VIGILAR",
    "freq": 2.26,
-   "gasto": 6244,
+   "gasto": 6248,
    "leads": 149,
    "cpl": 42,
    "pct_nuevos": 42,
@@ -103,8 +103,8 @@ window.FATIGA_DATA = {
    "adset": "NEUROPATIA",
    "veredicto": "VIGILAR",
    "freq": 2.25,
-   "gasto": 1851,
-   "leads": 47,
+   "gasto": 1853,
+   "leads": 48,
    "cpl": 39,
    "pct_nuevos": 43,
    "cpm1": 60,
@@ -115,7 +115,7 @@ window.FATIGA_DATA = {
    "adset": "Rodilla",
    "veredicto": "VIGILAR",
    "freq": 2.23,
-   "gasto": 6323,
+   "gasto": 6329,
    "leads": 82,
    "cpl": 77,
    "pct_nuevos": 47,
@@ -127,9 +127,9 @@ window.FATIGA_DATA = {
    "adset": "Neuropatia",
    "veredicto": "VIGILAR",
    "freq": 2.21,
-   "gasto": 1855,
-   "leads": 42,
-   "cpl": 44,
+   "gasto": 1856,
+   "leads": 43,
+   "cpl": 43,
    "pct_nuevos": 44,
    "cpm1": 26,
    "cpm2": 29
@@ -141,8 +141,8 @@ window.FATIGA_DATA = {
    "ad": "GERO BAILE NEZA - 3 NOV",
    "adset": "Imagen Gerontologia - NEZA",
    "freq": 1.83,
-   "gasto": 1533,
-   "leads": 300,
+   "gasto": 1536,
+   "leads": 301,
    "cpl": 5
   },
   {
@@ -150,7 +150,7 @@ window.FATIGA_DATA = {
    "ad": "BALBUENA SABADO",
    "adset": "Imagen Gerontologia -  BALBUENA",
    "freq": 1.45,
-   "gasto": 2509,
+   "gasto": 2515,
    "leads": 338,
    "cpl": 7
   },
@@ -159,7 +159,7 @@ window.FATIGA_DATA = {
    "ad": "VID _  Gym para personas mayores OMAR _ 08 SEP",
    "adset": "BALBUENA",
    "freq": 1.39,
-   "gasto": 2212,
+   "gasto": 2214,
    "leads": 324,
    "cpl": 7
   },
@@ -168,7 +168,7 @@ window.FATIGA_DATA = {
    "ad": "GERO BAILE COACALCO - 3 NOV",
    "adset": "Imagen Gerontologia -  COACALCO",
    "freq": 1.74,
-   "gasto": 840,
+   "gasto": 841,
    "leads": 111,
    "cpl": 8
   },
@@ -176,8 +176,8 @@ window.FATIGA_DATA = {
    "cuenta": "Gerontologia",
    "ad": "GERO GYM COACALCO 01 - 3 NOV",
    "adset": "COACALCO",
-   "freq": 1.54,
-   "gasto": 1227,
+   "freq": 1.55,
+   "gasto": 1229,
    "leads": 138,
    "cpl": 9
   },
@@ -186,7 +186,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ NEUROPATIA SINTOMAS _ OCT - 12 OCT",
    "adset": "Neuropatia",
    "freq": 1.84,
-   "gasto": 695,
+   "gasto": 696,
    "leads": 43,
    "cpl": 16
   },
@@ -195,7 +195,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ CIATICA V1 _ 14 MAY -",
    "adset": "Directo",
    "freq": 1.53,
-   "gasto": 1510,
+   "gasto": 1511,
    "leads": 77,
    "cpl": 20
   },
@@ -204,7 +204,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ NEUROPATIA PADECIMIENTO _ OCT - 10 OCT",
    "adset": "NEUROPATIA",
    "freq": 1.55,
-   "gasto": 1853,
+   "gasto": 1856,
    "leads": 84,
    "cpl": 22
   },
@@ -213,7 +213,7 @@ window.FATIGA_DATA = {
    "ad": "VID - HOMBRO MANGUITO V2 5 JUN",
    "adset": "HOMBRO",
    "freq": 1.45,
-   "gasto": 1854,
+   "gasto": 1855,
    "leads": 82,
    "cpl": 23
   },
@@ -222,18 +222,9 @@ window.FATIGA_DATA = {
    "ad": "EST - ESPOLON V3 - JUL",
    "adset": "MIX",
    "freq": 1.44,
-   "gasto": 836,
-   "leads": 36,
+   "gasto": 840,
+   "leads": 37,
    "cpl": 23
-  },
-  {
-   "cuenta": "Cuautitlan",
-   "ad": "VID _ NEUROPATIA  01 ABRIL - Copia",
-   "adset": "Directo",
-   "freq": 1.51,
-   "gasto": 2129,
-   "leads": 82,
-   "cpl": 26
   },
   {
    "cuenta": "Laura (sedes)",
@@ -249,7 +240,7 @@ window.FATIGA_DATA = {
    "ad": "VID - NEUROPATIA DIABETICA V2 JUN",
    "adset": "Neuropatia",
    "freq": 1.38,
-   "gasto": 1543,
+   "gasto": 1544,
    "leads": 55,
    "cpl": 28
   },
@@ -258,7 +249,7 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
    "freq": 1.5,
-   "gasto": 3574,
+   "gasto": 3579,
    "leads": 122,
    "cpl": 29
   },
@@ -312,7 +303,7 @@ window.FATIGA_DATA = {
    "ad": "VID_ NEUROPATIA PADECIMIENTO _ OCT - 12 OCT",
    "adset": "NEUROPATÍA",
    "freq": 1.54,
-   "gasto": 542,
+   "gasto": 543,
    "leads": 17,
    "cpl": 32
   },
@@ -330,7 +321,7 @@ window.FATIGA_DATA = {
    "ad": "EST _ CIATICA V2 _ 14 MAY",
    "adset": "ESPALDA - CHECK",
    "freq": 1.41,
-   "gasto": 2231,
+   "gasto": 2232,
    "leads": 68,
    "cpl": 33
   },
@@ -339,7 +330,7 @@ window.FATIGA_DATA = {
    "ad": "VID _ HOMBRO _ V3 _ 15 MAY _ ARTURO - Copia",
    "adset": "HOMBRO CHECK",
    "freq": 1.34,
-   "gasto": 599,
+   "gasto": 600,
    "leads": 18,
    "cpl": 33
   },
@@ -348,7 +339,7 @@ window.FATIGA_DATA = {
    "ad": "VID-HOMBRODOLOROSO - Copia",
    "adset": "HOMBRO - CHECK",
    "freq": 1.29,
-   "gasto": 1050,
+   "gasto": 1051,
    "leads": 32,
    "cpl": 33
   },
@@ -357,9 +348,18 @@ window.FATIGA_DATA = {
    "ad": "Publicación: \"Vecinos de Tláhuac: el dolor de espalda, rodilla...\"",
    "adset": "Publicación: \"Vecinos de Tláhuac: el dolor de espalda, rodilla...\"",
    "freq": 1.54,
-   "gasto": 4432,
-   "leads": 129,
+   "gasto": 4443,
+   "leads": 132,
    "cpl": 34
+  },
+  {
+   "cuenta": "Laura (sedes)",
+   "ad": "VID-NEUROPATIA.SEP",
+   "adset": "NEUROPATIA CHECK",
+   "freq": 1.59,
+   "gasto": 6621,
+   "leads": 184,
+   "cpl": 36
   }
  ],
  "sin_leads": []
