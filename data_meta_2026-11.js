@@ -1,44 +1,44 @@
 if(!window.MESES_DATA)window.MESES_DATA={};
 MESES_DATA["2026-11"] = {
-  "actualizado": "15/11/2026 03:10",
+  "actualizado": "15/11/2026 12:24",
   "fecha_ayer": "2026-11-15",
   "sedes": {
     "Plaza Neza": {
-      "leads_mes": 843,
-      "gasto_mes": 49776.73,
+      "leads_mes": 861,
+      "gasto_mes": 51288.49,
       "campanas": [
         {
           "nombre": "PLAZA NEZA - PADECIMIENTOS / NEUROPATIA",
-          "leads": 129,
-          "gasto": 6599.85
+          "leads": 132,
+          "gasto": 6743.46
         },
         {
           "nombre": "PLAZA NEZA - PADECIMIENTOS / HOMBRO",
           "leads": 13,
-          "gasto": 976.32
+          "gasto": 977.85
         },
         {
           "nombre": "PLAZA NEZA - PADECIMIENTOS / ESPOLON",
           "leads": 1,
-          "gasto": 54.0
+          "gasto": 54.23
         },
         {
           "nombre": "PLAZA NEZA - PADECIMIENTOS / ESPALDA",
-          "leads": 103,
-          "gasto": 4696.66
+          "leads": 110,
+          "gasto": 5106.34
         },
         {
           "nombre": "PLAZA NEZA - PADECIMIENTOS / RODILLA",
-          "leads": 171,
-          "gasto": 10002.31
+          "leads": 174,
+          "gasto": 10295.53
         },
         {
           "nombre": "PLAZA NEZA - PADECIMIENTOS / MIX",
           "leads": 27,
-          "gasto": 1013.44
+          "gasto": 1018.32
         }
       ],
-      "cpl": 59.05,
+      "cpl": 59.57,
       "pp_diario_meta": 1548.94,
       "meta_leads": 1585,
       "asistidas": 57,
@@ -46,7 +46,7 @@ MESES_DATA["2026-11"] = {
       "meta_cc": 170,
       "pct_meta": 33.5,
       "restan": 113,
-      "cpa": 873.28,
+      "cpa": 899.8,
       "cc": {
         "leads_cc": 166,
         "reales": 68,
@@ -54,28 +54,28 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Neza": {
-      "leads_mes": 1319,
-      "gasto_mes": 72792.02,
+      "leads_mes": 1364,
+      "gasto_mes": 75044.94,
       "campanas": [
         {
           "nombre": "NEZA - PADECIMIENTOS / RODILLA",
-          "leads": 441,
-          "gasto": 25268.25
+          "leads": 461,
+          "gasto": 26145.82
         },
         {
           "nombre": "NEZA - PADECIMIENTOS / NEUROPATIA",
-          "leads": 167,
-          "gasto": 9891.17
+          "leads": 169,
+          "gasto": 10155.41
         },
         {
           "nombre": "NEZA - PADECIMIENTOS / ESPALDA",
-          "leads": 393,
-          "gasto": 26193.62
+          "leads": 401,
+          "gasto": 26743.75
         },
         {
           "nombre": "NEZA - PADECIMIENTOS / HOMBRO",
           "leads": 85,
-          "gasto": 4689.68
+          "gasto": 4703.37
         },
         {
           "nombre": "NEZA - PADECIMIENTOS / HOMBRO · WA 2471",
@@ -98,7 +98,7 @@ MESES_DATA["2026-11"] = {
           "gasto": 1069.88
         }
       ],
-      "cpl": 55.19,
+      "cpl": 55.02,
       "pp_diario_meta": 3000.0,
       "meta_leads": 2588,
       "asistidas": 65,
@@ -106,7 +106,7 @@ MESES_DATA["2026-11"] = {
       "meta_cc": 266,
       "pct_meta": 24.4,
       "restan": 201,
-      "cpa": 1119.88,
+      "cpa": 1154.54,
       "cc": {
         "leads_cc": 171,
         "reales": 83,
@@ -114,28 +114,28 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Balbuena": {
-      "leads_mes": 1280,
-      "gasto_mes": 63626.01,
+      "leads_mes": 1320,
+      "gasto_mes": 66888.05,
       "campanas": [
         {
           "nombre": "BALBUENA - PADECIMIENTOS / ESPALDA - CHECK",
-          "leads": 195,
-          "gasto": 7333.72
+          "leads": 204,
+          "gasto": 7549.86
         },
         {
           "nombre": "BALBUENA - PADECIMIENTOS / RODILLA CHECK",
-          "leads": 81,
-          "gasto": 3057.85
+          "leads": 83,
+          "gasto": 3158.91
         },
         {
           "nombre": "BALBUENA - PADECIMIENTOS / HOMBRO CHECK",
           "leads": 30,
-          "gasto": 1094.43
+          "gasto": 1110.69
         },
         {
           "nombre": "BALBUENA - PADECIMIENTOS / NEUROPATIA CHECK",
-          "leads": 336,
-          "gasto": 12141.99
+          "leads": 344,
+          "gasto": 12619.79
         },
         {
           "nombre": "BALBUENA - PADECIMIENTOS / MIX",
@@ -144,11 +144,11 @@ MESES_DATA["2026-11"] = {
         },
         {
           "nombre": "VIDEO AJUSCO / BALBUENA / VIDEO BALBUENA",
-          "leads": 468,
-          "gasto": 27878.53
+          "leads": 475,
+          "gasto": 28686.01
         }
       ],
-      "cpl": 49.71,
+      "cpl": 50.67,
       "pp_diario_meta": 1573.77,
       "meta_leads": 2633,
       "asistidas": 104,
@@ -156,7 +156,7 @@ MESES_DATA["2026-11"] = {
       "meta_cc": 235,
       "pct_meta": 44.3,
       "restan": 131,
-      "cpa": 611.79,
+      "cpa": 643.15,
       "cc": {
         "leads_cc": 212,
         "reales": 115,
@@ -164,36 +164,36 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Chalco": {
-      "leads_mes": 1311,
-      "gasto_mes": 76022.13,
+      "leads_mes": 1350,
+      "gasto_mes": 79186.06,
       "campanas": [
         {
           "nombre": "CHALCO - PADECIMIENTOS / HOMBRO",
           "leads": 51,
-          "gasto": 3195.03
+          "gasto": 3401.64
         },
         {
           "nombre": "CHALCO - PADECIMIENTOS / RODILLA",
-          "leads": 85,
-          "gasto": 4540.92
+          "leads": 86,
+          "gasto": 4745.46
         },
         {
           "nombre": "CHALCO - PADECIMIENTOS / NEUROPATIA",
           "leads": 7,
-          "gasto": 283.98
+          "gasto": 284.07
         },
         {
           "nombre": "CHALCO - PADECIMIENTOS / ESPALDA",
-          "leads": 607,
-          "gasto": 29785.77
+          "leads": 626,
+          "gasto": 30796.39
         },
         {
           "nombre": "CHALCO - PADECIMIENTOS / MIX",
-          "leads": 69,
-          "gasto": 3025.0
+          "leads": 71,
+          "gasto": 3099.68
         }
       ],
-      "cpl": 57.99,
+      "cpl": 58.66,
       "pp_diario_meta": 2801.64,
       "meta_leads": 2746,
       "asistidas": 137,
@@ -201,7 +201,7 @@ MESES_DATA["2026-11"] = {
       "meta_cc": 256,
       "pct_meta": 53.5,
       "restan": 119,
-      "cpa": 554.91,
+      "cpa": 578.0,
       "cc": {
         "leads_cc": 254,
         "reales": 159,
@@ -209,31 +209,31 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Coacalco": {
-      "leads_mes": 1219,
-      "gasto_mes": 62526.18,
+      "leads_mes": 1256,
+      "gasto_mes": 65067.36,
       "campanas": [
         {
           "nombre": "COACALCO - PADECIMIENTOS / RODILLA",
-          "leads": 418,
-          "gasto": 19843.65
+          "leads": 426,
+          "gasto": 20423.05
         },
         {
           "nombre": "COACALCO - PADECIMIENTOS / ESPALDA",
-          "leads": 355,
-          "gasto": 18740.0
+          "leads": 364,
+          "gasto": 19435.84
         },
         {
           "nombre": "COACALCO - PADECIMIENTOS / Tropicalizados",
-          "leads": 194,
-          "gasto": 10565.56
+          "leads": 201,
+          "gasto": 10939.41
         },
         {
           "nombre": "COACALCO - PADECIMIENTOS / Hombro",
-          "leads": 52,
-          "gasto": 2470.92
+          "leads": 56,
+          "gasto": 2587.46
         }
       ],
-      "cpl": 51.29,
+      "cpl": 51.81,
       "pp_diario_meta": 3445.32,
       "meta_leads": 2901,
       "asistidas": 82,
@@ -241,7 +241,7 @@ MESES_DATA["2026-11"] = {
       "meta_cc": 230,
       "pct_meta": 35.7,
       "restan": 148,
-      "cpa": 762.51,
+      "cpa": 793.5,
       "cc": {
         "leads_cc": 246,
         "reales": 129,
@@ -249,31 +249,31 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Tlahuac": {
-      "leads_mes": 572,
-      "gasto_mes": 39138.28,
+      "leads_mes": 603,
+      "gasto_mes": 40946.57,
       "campanas": [
         {
           "nombre": "TLAHUAC - PADECIMIENTOS / Espalda",
-          "leads": 18,
-          "gasto": 1728.28
+          "leads": 20,
+          "gasto": 1783.07
         },
         {
           "nombre": "TLAHUAC - PADECIMIENTOS / Rodilla",
-          "leads": 101,
-          "gasto": 8232.49
+          "leads": 103,
+          "gasto": 8551.15
         },
         {
           "nombre": "TLAHUAC - PADECIMIENTOS / Hombro",
           "leads": 7,
-          "gasto": 611.95
+          "gasto": 637.07
         },
         {
           "nombre": "TLAHUAC - PADECIMIENTOS / Neuropatia",
-          "leads": 162,
-          "gasto": 12480.9
+          "leads": 169,
+          "gasto": 12843.59
         }
       ],
-      "cpl": 68.42,
+      "cpl": 67.9,
       "pp_diario_meta": 1546.44,
       "meta_leads": 1178,
       "asistidas": 42,
@@ -281,7 +281,7 @@ MESES_DATA["2026-11"] = {
       "meta_cc": 139,
       "pct_meta": 30.2,
       "restan": 97,
-      "cpa": 931.86,
+      "cpa": 974.92,
       "cc": {
         "leads_cc": 103,
         "reales": 49,
@@ -289,31 +289,31 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Milpa Alta": {
-      "leads_mes": 653,
-      "gasto_mes": 63047.58,
+      "leads_mes": 670,
+      "gasto_mes": 65691.08,
       "campanas": [
         {
           "nombre": "MILPA ALTA - PADECIMIENTOS / NEUROPATIA",
-          "leads": 140,
-          "gasto": 13789.84
+          "leads": 142,
+          "gasto": 14135.94
         },
         {
           "nombre": "MILPA ALTA - PADECIMIENTOS / HOMBRO",
-          "leads": 115,
-          "gasto": 11494.04
+          "leads": 116,
+          "gasto": 11835.61
         },
         {
           "nombre": "MILPA ALTA - PADECIMIENTOS / ESPALDA",
-          "leads": 79,
-          "gasto": 7192.27
+          "leads": 84,
+          "gasto": 7399.42
         },
         {
           "nombre": "MILPA ALTA - PADECIMIENTOS / RODILLA - Copia 2",
-          "leads": 60,
-          "gasto": 5801.82
+          "leads": 62,
+          "gasto": 6127.82
         }
       ],
-      "cpl": 96.55,
+      "cpl": 98.05,
       "pp_diario_meta": 2638.74,
       "meta_leads": 1070,
       "asistidas": 50,
@@ -321,7 +321,7 @@ MESES_DATA["2026-11"] = {
       "meta_cc": 105,
       "pct_meta": 47.6,
       "restan": 55,
-      "cpa": 1260.95,
+      "cpa": 1313.82,
       "cc": {
         "leads_cc": 133,
         "reales": 66,
@@ -330,9 +330,9 @@ MESES_DATA["2026-11"] = {
     },
     "Ecatepec": {
       "pp_diario_meta": 0,
-      "gasto_mes": 47845.21,
-      "leads_mes": 998,
-      "cpl": 47.94,
+      "gasto_mes": 49690.57,
+      "leads_mes": 1041,
+      "cpl": 47.73,
       "campanas": [],
       "meta_leads": 2325,
       "asistidas": 79,
@@ -340,7 +340,7 @@ MESES_DATA["2026-11"] = {
       "meta_cc": 161,
       "pct_meta": 49.1,
       "restan": 82,
-      "cpa": 605.64,
+      "cpa": 628.99,
       "cc": {
         "leads_cc": 186,
         "reales": 104,
@@ -350,17 +350,17 @@ MESES_DATA["2026-11"] = {
   },
   "franquicias": {
     "Ajusco": {
-      "leads_mes": 447,
-      "gasto_mes": 26261.43,
+      "leads_mes": 455,
+      "gasto_mes": 27263.68,
       "account_id": "act_671602108380869",
-      "cpl": 58.75,
+      "cpl": 59.92,
       "meta_leads": 1067,
       "agendadas": 79,
       "asistidas": 56,
       "meta_cc": 86,
       "pct_meta": 65.1,
       "restan": 30,
-      "cpa": 468.95,
+      "cpa": 486.85,
       "cc": {
         "leads_cc": 98,
         "reales": 63,
@@ -368,17 +368,17 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Claveria": {
-      "leads_mes": 433,
-      "gasto_mes": 22565.98,
+      "leads_mes": 454,
+      "gasto_mes": 23853.46,
       "account_id": "act_611554683609868",
-      "cpl": 52.12,
+      "cpl": 52.54,
       "meta_leads": 1183,
       "agendadas": 104,
       "asistidas": 64,
       "meta_cc": 148,
       "pct_meta": 43.2,
       "restan": 84,
-      "cpa": 352.59,
+      "cpa": 372.71,
       "cc": {
         "leads_cc": 120,
         "reales": 70,
@@ -387,16 +387,16 @@ MESES_DATA["2026-11"] = {
     },
     "Valle Dorado": {
       "leads_mes": 454,
-      "gasto_mes": 20492.84,
+      "gasto_mes": 20501.5,
       "account_id": "act_1232053057415419",
-      "cpl": 45.14,
+      "cpl": 45.16,
       "meta_leads": 1203,
       "agendadas": 75,
       "asistidas": 42,
       "meta_cc": 88,
       "pct_meta": 47.7,
       "restan": 46,
-      "cpa": 487.92,
+      "cpa": 488.13,
       "cc": {
         "leads_cc": 94,
         "reales": 53,
@@ -404,17 +404,17 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Pachuca": {
-      "leads_mes": 608,
-      "gasto_mes": 29877.02,
+      "leads_mes": 616,
+      "gasto_mes": 31081.42,
       "account_id": "act_1087216285577678",
-      "cpl": 49.14,
+      "cpl": 50.46,
       "meta_leads": 1661,
       "agendadas": 103,
       "asistidas": 53,
       "meta_cc": 143,
       "pct_meta": 37.1,
       "restan": 90,
-      "cpa": 563.72,
+      "cpa": 586.44,
       "cc": {
         "leads_cc": 117,
         "reales": 61,
@@ -422,17 +422,17 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Satelite": {
-      "leads_mes": 376,
-      "gasto_mes": 18668.47,
+      "leads_mes": 395,
+      "gasto_mes": 19804.03,
       "account_id": "act_881927326880225",
-      "cpl": 49.65,
+      "cpl": 50.14,
       "meta_leads": 958,
       "agendadas": 69,
       "asistidas": 38,
       "meta_cc": 111,
       "pct_meta": 34.2,
       "restan": 73,
-      "cpa": 491.28,
+      "cpa": 521.16,
       "cc": {
         "leads_cc": 77,
         "reales": 43,
@@ -440,17 +440,17 @@ MESES_DATA["2026-11"] = {
       }
     },
     "San Juan del Rio": {
-      "leads_mes": 329,
-      "gasto_mes": 16592.07,
+      "leads_mes": 337,
+      "gasto_mes": 17178.47,
       "account_id": "act_1759710301212519",
-      "cpl": 50.43,
+      "cpl": 50.97,
       "meta_leads": 868,
       "agendadas": 68,
       "asistidas": 52,
       "meta_cc": 81,
       "pct_meta": 64.2,
       "restan": 29,
-      "cpa": 319.08,
+      "cpa": 330.36,
       "cc": {
         "leads_cc": 83,
         "reales": 59,
@@ -458,17 +458,17 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Queretaro": {
-      "leads_mes": 470,
-      "gasto_mes": 12908.46,
+      "leads_mes": 485,
+      "gasto_mes": 13550.09,
       "account_id": "act_1534175958194422",
-      "cpl": 27.46,
+      "cpl": 27.94,
       "meta_leads": 1216,
       "agendadas": 57,
       "asistidas": 35,
       "meta_cc": 105,
       "pct_meta": 33.3,
       "restan": 70,
-      "cpa": 368.81,
+      "cpa": 387.15,
       "cc": {
         "leads_cc": 67,
         "reales": 39,
@@ -476,17 +476,17 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Tepeyac": {
-      "leads_mes": 694,
-      "gasto_mes": 22940.5,
+      "leads_mes": 701,
+      "gasto_mes": 23491.7,
       "account_id": "act_2069154100612974",
-      "cpl": 33.06,
+      "cpl": 33.51,
       "meta_leads": 1142,
       "agendadas": 57,
       "asistidas": 42,
       "meta_cc": 119,
       "pct_meta": 35.3,
       "restan": 77,
-      "cpa": 546.2,
+      "cpa": 559.33,
       "cc": {
         "leads_cc": 82,
         "reales": 52,
@@ -494,17 +494,17 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Xochimilco": {
-      "leads_mes": 399,
-      "gasto_mes": 23318.71,
+      "leads_mes": 412,
+      "gasto_mes": 24352.37,
       "account_id": "act_7756808404352134",
-      "cpl": 58.44,
+      "cpl": 59.11,
       "meta_leads": 1095,
       "agendadas": 78,
       "asistidas": 49,
       "meta_cc": 134,
       "pct_meta": 36.6,
       "restan": 85,
-      "cpa": 475.89,
+      "cpa": 496.99,
       "cc": {
         "leads_cc": 99,
         "reales": 63,
@@ -513,9 +513,9 @@ MESES_DATA["2026-11"] = {
     },
     "La Moderna": {
       "leads_mes": 77,
-      "gasto_mes": 3281.52,
+      "gasto_mes": 3300.09,
       "account_id": "act_1384167613599874",
-      "cpl": 42.62,
+      "cpl": 42.86,
       "meta_leads": 355,
       "agendadas": 0,
       "asistidas": 0,
@@ -530,17 +530,17 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Cuautitlan": {
-      "leads_mes": 659,
-      "gasto_mes": 17273.91,
+      "leads_mes": 683,
+      "gasto_mes": 18165.81,
       "account_id": "act_964439132412643",
-      "cpl": 26.21,
+      "cpl": 26.6,
       "meta_leads": 1417,
       "agendadas": 98,
       "asistidas": 48,
       "meta_cc": 119,
       "pct_meta": 40.3,
       "restan": 71,
-      "cpa": 359.87,
+      "cpa": 378.45,
       "cc": {
         "leads_cc": 135,
         "reales": 61,
@@ -548,17 +548,17 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Nicolas Romero": {
-      "leads_mes": 378,
-      "gasto_mes": 18146.27,
+      "leads_mes": 392,
+      "gasto_mes": 19119.13,
       "account_id": "act_572805598607345",
-      "cpl": 48.01,
+      "cpl": 48.77,
       "meta_leads": 1176,
       "agendadas": 97,
       "asistidas": 60,
       "meta_cc": 92,
       "pct_meta": 65.2,
       "restan": 32,
-      "cpa": 302.44,
+      "cpa": 318.65,
       "cc": {
         "leads_cc": 112,
         "reales": 69,
@@ -566,17 +566,17 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Cuautla": {
-      "leads_mes": 385,
-      "gasto_mes": 15343.89,
+      "leads_mes": 401,
+      "gasto_mes": 16243.96,
       "account_id": "act_647662238035240",
-      "cpl": 39.85,
+      "cpl": 40.51,
       "meta_leads": 736,
       "agendadas": 56,
       "asistidas": 34,
       "meta_cc": 87,
       "pct_meta": 39.1,
       "restan": 53,
-      "cpa": 451.29,
+      "cpa": 477.76,
       "cc": {
         "leads_cc": 70,
         "reales": 43,
@@ -584,16 +584,16 @@ MESES_DATA["2026-11"] = {
       }
     },
     "Mixquiahuala": {
-      "leads_mes": 443,
-      "gasto_mes": 20101.16,
-      "cpl": 45.38,
+      "leads_mes": 466,
+      "gasto_mes": 21041.19,
+      "cpl": 45.15,
       "meta_leads": 0,
       "asistidas": 53,
       "agendadas": 95,
       "meta_cc": 98,
       "pct_meta": 54.1,
       "restan": 45,
-      "cpa": 379.27,
+      "cpa": 397.0,
       "account_id": "",
       "cc": {
         "leads_cc": 135,
@@ -612,11 +612,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-11",
       "es_nuevo": false,
-      "leads": 468,
-      "gasto": 27878.53,
-      "cpl": 59.57,
+      "leads": 475,
+      "gasto": 28686.01,
+      "cpl": 60.39,
       "frecuencia": 1.48,
-      "impresiones": 413163
+      "impresiones": 419792
     },
     {
       "clinica": "Chalco",
@@ -627,11 +627,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-19",
       "es_nuevo": false,
-      "leads": 346,
-      "gasto": 16352.81,
-      "cpl": 47.26,
-      "frecuencia": 1.62,
-      "impresiones": 639243
+      "leads": 357,
+      "gasto": 16855.63,
+      "cpl": 47.21,
+      "frecuencia": 1.64,
+      "impresiones": 651248
     },
     {
       "clinica": "Coacalco",
@@ -642,11 +642,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-11",
       "es_nuevo": false,
-      "leads": 344,
-      "gasto": 18287.76,
-      "cpl": 53.16,
-      "frecuencia": 1.46,
-      "impresiones": 527343
+      "leads": 353,
+      "gasto": 18971.37,
+      "cpl": 53.74,
+      "frecuencia": 1.47,
+      "impresiones": 539281
     },
     {
       "clinica": "Neza",
@@ -657,11 +657,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-25",
       "es_nuevo": false,
-      "leads": 286,
-      "gasto": 16037.29,
-      "cpl": 56.07,
-      "frecuencia": 1.67,
-      "impresiones": 446482
+      "leads": 304,
+      "gasto": 16760.41,
+      "cpl": 55.13,
+      "frecuencia": 1.68,
+      "impresiones": 456774
     },
     {
       "clinica": "Coacalco",
@@ -672,11 +672,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-06",
       "es_nuevo": false,
-      "leads": 285,
-      "gasto": 11754.57,
-      "cpl": 41.24,
-      "frecuencia": 1.92,
-      "impresiones": 274432
+      "leads": 289,
+      "gasto": 12001.32,
+      "cpl": 41.53,
+      "frecuencia": 1.93,
+      "impresiones": 278110
     },
     {
       "clinica": "Balbuena",
@@ -687,11 +687,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-06-05",
       "es_nuevo": false,
-      "leads": 227,
-      "gasto": 8396.7,
-      "cpl": 36.99,
-      "frecuencia": 1.68,
-      "impresiones": 120246
+      "leads": 234,
+      "gasto": 8723.21,
+      "cpl": 37.28,
+      "frecuencia": 1.69,
+      "impresiones": 123075
     },
     {
       "clinica": "Neza",
@@ -702,11 +702,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-25",
       "es_nuevo": false,
-      "leads": 221,
-      "gasto": 15121.85,
-      "cpl": 68.42,
-      "frecuencia": 1.57,
-      "impresiones": 460737
+      "leads": 227,
+      "gasto": 15447.1,
+      "cpl": 68.05,
+      "frecuencia": 1.58,
+      "impresiones": 466124
     },
     {
       "clinica": "Coacalco",
@@ -717,11 +717,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-19",
       "es_nuevo": false,
-      "leads": 143,
-      "gasto": 7512.56,
-      "cpl": 52.54,
-      "frecuencia": 1.79,
-      "impresiones": 136757
+      "leads": 148,
+      "gasto": 7770.83,
+      "cpl": 52.51,
+      "frecuencia": 1.81,
+      "impresiones": 139506
     },
     {
       "clinica": "Chalco",
@@ -732,11 +732,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-19",
       "es_nuevo": false,
-      "leads": 142,
-      "gasto": 8141.52,
-      "cpl": 57.33,
-      "frecuencia": 1.42,
-      "impresiones": 241659
+      "leads": 146,
+      "gasto": 8424.97,
+      "cpl": 57.71,
+      "frecuencia": 1.43,
+      "impresiones": 245754
     },
     {
       "clinica": "Tlahuac",
@@ -747,11 +747,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-22",
       "es_nuevo": false,
-      "leads": 135,
-      "gasto": 9950.99,
-      "cpl": 73.71,
-      "frecuencia": 2.39,
-      "impresiones": 257429
+      "leads": 140,
+      "gasto": 10208.22,
+      "cpl": 72.92,
+      "frecuencia": 2.41,
+      "impresiones": 260781
     },
     {
       "clinica": "Mixquiahuala",
@@ -762,11 +762,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-03",
       "es_nuevo": false,
-      "leads": 124,
-      "gasto": 4905.7,
-      "cpl": 39.56,
-      "frecuencia": 1.81,
-      "impresiones": 205903
+      "leads": 137,
+      "gasto": 5148.22,
+      "cpl": 37.58,
+      "frecuencia": 1.83,
+      "impresiones": 212391
     },
     {
       "clinica": "Coacalco",
@@ -777,11 +777,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-11",
       "es_nuevo": false,
-      "leads": 118,
-      "gasto": 7309.78,
-      "cpl": 61.95,
-      "frecuencia": 1.7,
-      "impresiones": 168173
+      "leads": 122,
+      "gasto": 7617.61,
+      "cpl": 62.44,
+      "frecuencia": 1.71,
+      "impresiones": 172234
     },
     {
       "clinica": "Milpa Alta",
@@ -793,10 +793,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-03",
       "es_nuevo": false,
       "leads": 117,
-      "gasto": 11261.72,
-      "cpl": 96.25,
+      "gasto": 11499.39,
+      "cpl": 98.29,
       "frecuencia": 2.06,
-      "impresiones": 350170
+      "impresiones": 354976
     },
     {
       "clinica": "Ajusco",
@@ -807,11 +807,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-09",
       "es_nuevo": false,
-      "leads": 110,
-      "gasto": 6699.25,
-      "cpl": 60.9,
-      "frecuencia": 1.52,
-      "impresiones": 108122
+      "leads": 112,
+      "gasto": 6874.47,
+      "cpl": 61.38,
+      "frecuencia": 1.51,
+      "impresiones": 109651
     },
     {
       "clinica": "Milpa Alta",
@@ -822,11 +822,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-12",
       "es_nuevo": false,
-      "leads": 109,
-      "gasto": 10915.03,
-      "cpl": 100.14,
-      "frecuencia": 1.74,
-      "impresiones": 323352
+      "leads": 110,
+      "gasto": 11258.72,
+      "cpl": 102.35,
+      "frecuencia": 1.75,
+      "impresiones": 328227
     },
     {
       "clinica": "Neza",
@@ -837,11 +837,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-06-06",
       "es_nuevo": false,
-      "leads": 101,
-      "gasto": 4894.07,
-      "cpl": 48.46,
+      "leads": 103,
+      "gasto": 4978.23,
+      "cpl": 48.33,
       "frecuencia": 1.71,
-      "impresiones": 88373
+      "impresiones": 89223
     },
     {
       "clinica": "Plaza Neza",
@@ -852,11 +852,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-29",
       "es_nuevo": false,
-      "leads": 87,
-      "gasto": 5051.58,
-      "cpl": 58.06,
-      "frecuencia": 1.4,
-      "impresiones": 179402
+      "leads": 88,
+      "gasto": 5184.01,
+      "cpl": 58.91,
+      "frecuencia": 1.41,
+      "impresiones": 181588
     },
     {
       "clinica": "Neza",
@@ -882,26 +882,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-05-25",
       "es_nuevo": false,
-      "leads": 78,
-      "gasto": 2502.28,
-      "cpl": 32.08,
-      "frecuencia": 1.45,
-      "impresiones": 39523
-    },
-    {
-      "clinica": "Mixquiahuala",
-      "campana": "MIXQUIAHUALA - PADECIMIENTOS",
-      "adset": "Rodilla",
-      "anuncio": "VID_ RODILLA GENERAL _ SEP _ OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-10-02",
-      "es_nuevo": false,
-      "leads": 77,
-      "gasto": 3317.27,
-      "cpl": 43.08,
-      "frecuencia": 1.8,
-      "impresiones": 158602
+      "leads": 81,
+      "gasto": 2558.1,
+      "cpl": 31.58,
+      "frecuencia": 1.46,
+      "impresiones": 40059
     },
     {
       "clinica": "Balbuena",
@@ -912,11 +897,41 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-03",
       "es_nuevo": false,
-      "leads": 77,
-      "gasto": 3235.61,
-      "cpl": 42.02,
-      "frecuencia": 1.57,
-      "impresiones": 49222
+      "leads": 81,
+      "gasto": 3356.8,
+      "cpl": 41.44,
+      "frecuencia": 1.58,
+      "impresiones": 50470
+    },
+    {
+      "clinica": "Mixquiahuala",
+      "campana": "MIXQUIAHUALA - PADECIMIENTOS",
+      "adset": "Rodilla",
+      "anuncio": "VID_ RODILLA GENERAL _ SEP _ OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-10-02",
+      "es_nuevo": false,
+      "leads": 79,
+      "gasto": 3454.47,
+      "cpl": 43.73,
+      "frecuencia": 1.83,
+      "impresiones": 162676
+    },
+    {
+      "clinica": "Chalco",
+      "campana": "CHALCO - PADECIMIENTOS",
+      "adset": "ESPALDA",
+      "anuncio": "EST-HERNIA-6-MAY",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-08-23",
+      "es_nuevo": false,
+      "leads": 75,
+      "gasto": 3155.65,
+      "cpl": 42.08,
+      "frecuencia": 1.88,
+      "impresiones": 82632
     },
     {
       "clinica": "Neza",
@@ -934,21 +949,6 @@ MESES_DATA["2026-11"] = {
       "impresiones": 98447
     },
     {
-      "clinica": "Chalco",
-      "campana": "CHALCO - PADECIMIENTOS",
-      "adset": "ESPALDA",
-      "anuncio": "EST-HERNIA-6-MAY",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-08-23",
-      "es_nuevo": false,
-      "leads": 74,
-      "gasto": 2992.46,
-      "cpl": 40.44,
-      "frecuencia": 1.87,
-      "impresiones": 80051
-    },
-    {
       "clinica": "Plaza Neza",
       "campana": "PLAZA NEZA - PADECIMIENTOS",
       "adset": "ESPALDA",
@@ -957,11 +957,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-29",
       "es_nuevo": false,
-      "leads": 71,
-      "gasto": 3430.72,
-      "cpl": 48.32,
-      "frecuencia": 1.49,
-      "impresiones": 111316
+      "leads": 74,
+      "gasto": 3692.34,
+      "cpl": 49.9,
+      "frecuencia": 1.51,
+      "impresiones": 116980
+    },
+    {
+      "clinica": "Tlahuac",
+      "campana": "TLAHUAC - PADECIMIENTOS",
+      "adset": "Rodilla",
+      "anuncio": "VID_ RODILLA PADECIMIENTO _ OCT - 16 OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-10-16",
+      "es_nuevo": false,
+      "leads": 67,
+      "gasto": 5519.86,
+      "cpl": 82.39,
+      "frecuencia": 1.91,
+      "impresiones": 148794
     },
     {
       "clinica": "Neza",
@@ -973,25 +988,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-02-05",
       "es_nuevo": false,
       "leads": 66,
-      "gasto": 3363.72,
-      "cpl": 50.97,
-      "frecuencia": 1.7,
-      "impresiones": 63236
-    },
-    {
-      "clinica": "Tlahuac",
-      "campana": "TLAHUAC - PADECIMIENTOS",
-      "adset": "Rodilla",
-      "anuncio": "VID_ RODILLA PADECIMIENTO _ OCT - 16 OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-10-16",
-      "es_nuevo": false,
-      "leads": 65,
-      "gasto": 5292.76,
-      "cpl": 81.43,
-      "frecuencia": 1.89,
-      "impresiones": 145098
+      "gasto": 3459.06,
+      "cpl": 52.41,
+      "frecuencia": 1.71,
+      "impresiones": 64239
     },
     {
       "clinica": "Neza",
@@ -1003,10 +1003,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-23",
       "es_nuevo": false,
       "leads": 63,
-      "gasto": 4847.54,
-      "cpl": 76.95,
-      "frecuencia": 1.4,
-      "impresiones": 146485
+      "gasto": 4891.94,
+      "cpl": 77.65,
+      "frecuencia": 1.41,
+      "impresiones": 147226
     },
     {
       "clinica": "Chalco",
@@ -1018,10 +1018,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-19",
       "es_nuevo": false,
       "leads": 62,
-      "gasto": 3404.99,
-      "cpl": 54.92,
-      "frecuencia": 1.71,
-      "impresiones": 107461
+      "gasto": 3547.78,
+      "cpl": 57.22,
+      "frecuencia": 1.72,
+      "impresiones": 109991
     },
     {
       "clinica": "Plaza Neza",
@@ -1032,11 +1032,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-29",
       "es_nuevo": false,
-      "leads": 60,
-      "gasto": 3488.28,
-      "cpl": 58.14,
-      "frecuencia": 1.66,
-      "impresiones": 98451
+      "leads": 62,
+      "gasto": 3531.04,
+      "cpl": 56.95,
+      "frecuencia": 1.67,
+      "impresiones": 99087
     },
     {
       "clinica": "Plaza Neza",
@@ -1047,11 +1047,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-05-06",
       "es_nuevo": false,
-      "leads": 53,
-      "gasto": 2357.06,
-      "cpl": 44.47,
+      "leads": 54,
+      "gasto": 2455.3,
+      "cpl": 45.47,
       "frecuencia": 1.67,
-      "impresiones": 45774
+      "impresiones": 46969
     },
     {
       "clinica": "Chalco",
@@ -1063,10 +1063,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 51,
-      "gasto": 3169.19,
-      "cpl": 62.14,
-      "frecuencia": 1.4,
-      "impresiones": 113650
+      "gasto": 3375.8,
+      "cpl": 66.19,
+      "frecuencia": 1.41,
+      "impresiones": 118642
     },
     {
       "clinica": "Milpa Alta",
@@ -1077,11 +1077,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-12",
       "es_nuevo": false,
-      "leads": 46,
-      "gasto": 4074.66,
-      "cpl": 88.58,
-      "frecuencia": 1.95,
-      "impresiones": 98627
+      "leads": 49,
+      "gasto": 4211.45,
+      "cpl": 85.95,
+      "frecuencia": 1.96,
+      "impresiones": 100293
     },
     {
       "clinica": "Plaza Neza",
@@ -1092,11 +1092,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-05-06",
       "es_nuevo": false,
-      "leads": 44,
-      "gasto": 2224.39,
-      "cpl": 50.55,
-      "frecuencia": 1.43,
-      "impresiones": 85135
+      "leads": 46,
+      "gasto": 2324.52,
+      "cpl": 50.53,
+      "frecuencia": 1.44,
+      "impresiones": 87737
     },
     {
       "clinica": "Chalco",
@@ -1107,11 +1107,41 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-08-23",
       "es_nuevo": false,
+      "leads": 46,
+      "gasto": 2334.05,
+      "cpl": 50.74,
+      "frecuencia": 1.47,
+      "impresiones": 74960
+    },
+    {
+      "clinica": "Mixquiahuala",
+      "campana": "MIXQUIAHUALA - PADECIMIENTOS",
+      "adset": "Hombro",
+      "anuncio": "VID_ HOMBRO SINTOMAS _ SEP _ OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-10-02",
+      "es_nuevo": false,
       "leads": 43,
-      "gasto": 2272.18,
-      "cpl": 52.84,
-      "frecuencia": 1.46,
-      "impresiones": 73922
+      "gasto": 2103.9,
+      "cpl": 48.93,
+      "frecuencia": 1.72,
+      "impresiones": 81586
+    },
+    {
+      "clinica": "Mixquiahuala",
+      "campana": "MIXQUIAHUALA - PADECIMIENTOS",
+      "adset": "Espalda",
+      "anuncio": "VID_ CERVICALGIA _ SEP _ OCT - 3 OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-10-03",
+      "es_nuevo": false,
+      "leads": 43,
+      "gasto": 2136.74,
+      "cpl": 49.69,
+      "frecuencia": 2.15,
+      "impresiones": 63197
     },
     {
       "clinica": "Neza",
@@ -1123,25 +1153,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-02-05",
       "es_nuevo": false,
       "leads": 42,
-      "gasto": 2520.74,
-      "cpl": 60.02,
-      "frecuencia": 1.61,
-      "impresiones": 54977
-    },
-    {
-      "clinica": "Mixquiahuala",
-      "campana": "MIXQUIAHUALA - PADECIMIENTOS",
-      "adset": "Hombro",
-      "anuncio": "VID_ HOMBRO SINTOMAS _ SEP _ OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-10-02",
-      "es_nuevo": false,
-      "leads": 42,
-      "gasto": 2008.77,
-      "cpl": 47.83,
-      "frecuencia": 1.7,
-      "impresiones": 79281
+      "gasto": 2595.72,
+      "cpl": 61.8,
+      "frecuencia": 1.62,
+      "impresiones": 55846
     },
     {
       "clinica": "Neza",
@@ -1159,19 +1174,19 @@ MESES_DATA["2026-11"] = {
       "impresiones": 73210
     },
     {
-      "clinica": "Mixquiahuala",
-      "campana": "MIXQUIAHUALA - PADECIMIENTOS",
-      "adset": "Espalda",
-      "anuncio": "VID_ CERVICALGIA _ SEP _ OCT - 3 OCT",
+      "clinica": "Coacalco",
+      "campana": "COACALCO - PADECIMIENTOS",
+      "adset": "Hombro",
+      "anuncio": "VID _ MANGUITO _ OCT",
       "tipo": "VIDEO",
       "status": "ACTIVE",
-      "created": "2026-10-03",
+      "created": "2026-09-22",
       "es_nuevo": false,
       "leads": 41,
-      "gasto": 2006.92,
-      "cpl": 48.95,
-      "frecuencia": 2.12,
-      "impresiones": 61017
+      "gasto": 1774.4,
+      "cpl": 43.28,
+      "frecuencia": 1.73,
+      "impresiones": 31127
     },
     {
       "clinica": "Milpa Alta",
@@ -1183,25 +1198,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-12",
       "es_nuevo": false,
       "leads": 39,
-      "gasto": 3871.84,
-      "cpl": 99.28,
-      "frecuencia": 1.72,
-      "impresiones": 116642
-    },
-    {
-      "clinica": "Coacalco",
-      "campana": "COACALCO - PADECIMIENTOS",
-      "adset": "Hombro",
-      "anuncio": "VID _ MANGUITO _ OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-09-22",
-      "es_nuevo": false,
-      "leads": 38,
-      "gasto": 1695.48,
-      "cpl": 44.62,
+      "gasto": 4086.5,
+      "cpl": 104.78,
       "frecuencia": 1.74,
-      "impresiones": 30138
+      "impresiones": 120111
     },
     {
       "clinica": "Plaza Neza",
@@ -1213,10 +1213,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 37,
-      "gasto": 2518.82,
-      "cpl": 68.08,
+      "gasto": 2579.94,
+      "cpl": 69.73,
       "frecuencia": 1.33,
-      "impresiones": 87172
+      "impresiones": 88265
     },
     {
       "clinica": "Mixquiahuala",
@@ -1227,11 +1227,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-02",
       "es_nuevo": false,
-      "leads": 36,
-      "gasto": 1581.3,
-      "cpl": 43.92,
-      "frecuencia": 2.26,
-      "impresiones": 53809
+      "leads": 37,
+      "gasto": 1639.37,
+      "cpl": 44.31,
+      "frecuencia": 2.28,
+      "impresiones": 54892
     },
     {
       "clinica": "Chalco",
@@ -1243,10 +1243,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-08-23",
       "es_nuevo": false,
       "leads": 35,
-      "gasto": 1863.71,
-      "cpl": 53.25,
+      "gasto": 1882.48,
+      "cpl": 53.79,
       "frecuencia": 1.5,
-      "impresiones": 70526
+      "impresiones": 70902
     },
     {
       "clinica": "Mixquiahuala",
@@ -1258,10 +1258,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-02",
       "es_nuevo": false,
       "leads": 34,
-      "gasto": 2037.45,
-      "cpl": 59.93,
-      "frecuencia": 1.68,
-      "impresiones": 85706
+      "gasto": 2121.35,
+      "cpl": 62.39,
+      "frecuencia": 1.7,
+      "impresiones": 87556
     },
     {
       "clinica": "Balbuena",
@@ -1272,11 +1272,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-06-05",
       "es_nuevo": false,
-      "leads": 32,
-      "gasto": 1414.76,
-      "cpl": 44.21,
-      "frecuencia": 1.21,
-      "impresiones": 36912
+      "leads": 33,
+      "gasto": 1489.09,
+      "cpl": 45.12,
+      "frecuencia": 1.22,
+      "impresiones": 38134
     },
     {
       "clinica": "Neza",
@@ -1287,11 +1287,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-04",
       "es_nuevo": false,
-      "leads": 31,
-      "gasto": 1442.17,
-      "cpl": 46.52,
-      "frecuencia": 1.56,
-      "impresiones": 20588
+      "leads": 33,
+      "gasto": 1556.82,
+      "cpl": 47.18,
+      "frecuencia": 1.58,
+      "impresiones": 21596
     },
     {
       "clinica": "Chalco",
@@ -1302,26 +1302,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-08-23",
       "es_nuevo": false,
-      "leads": 31,
-      "gasto": 1091.24,
-      "cpl": 35.2,
-      "frecuencia": 2.1,
-      "impresiones": 24797
-    },
-    {
-      "clinica": "Coacalco",
-      "campana": "COACALCO - PADECIMIENTOS",
-      "adset": "Tropicalizados",
-      "anuncio": "VID_ NEUROPATIA GENERAL _ OCT - 19 OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-10-19",
-      "es_nuevo": false,
-      "leads": 31,
-      "gasto": 2058.69,
-      "cpl": 66.41,
-      "frecuencia": 1.75,
-      "impresiones": 42811
+      "leads": 33,
+      "gasto": 1147.04,
+      "cpl": 34.76,
+      "frecuencia": 2.12,
+      "impresiones": 25516
     },
     {
       "clinica": "Neza",
@@ -1332,11 +1317,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-02-05",
       "es_nuevo": false,
-      "leads": 30,
-      "gasto": 2152.39,
-      "cpl": 71.75,
+      "leads": 32,
+      "gasto": 2237.11,
+      "cpl": 69.91,
       "frecuencia": 1.58,
-      "impresiones": 40678
+      "impresiones": 41507
+    },
+    {
+      "clinica": "Coacalco",
+      "campana": "COACALCO - PADECIMIENTOS",
+      "adset": "Tropicalizados",
+      "anuncio": "VID_ NEUROPATIA GENERAL _ OCT - 19 OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-10-19",
+      "es_nuevo": false,
+      "leads": 32,
+      "gasto": 2137.92,
+      "cpl": 66.81,
+      "frecuencia": 1.76,
+      "impresiones": 43824
     },
     {
       "clinica": "Balbuena",
@@ -1348,10 +1348,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 29,
-      "gasto": 767.52,
-      "cpl": 26.47,
+      "gasto": 780.67,
+      "cpl": 26.92,
       "frecuencia": 1.44,
-      "impresiones": 13262
+      "impresiones": 13379
     },
     {
       "clinica": "Balbuena",
@@ -1363,10 +1363,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-05",
       "es_nuevo": false,
       "leads": 27,
-      "gasto": 690.56,
-      "cpl": 25.58,
-      "frecuencia": 1.73,
-      "impresiones": 5543
+      "gasto": 751.97,
+      "cpl": 27.85,
+      "frecuencia": 1.77,
+      "impresiones": 5885
     },
     {
       "clinica": "Balbuena",
@@ -1378,10 +1378,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 27,
-      "gasto": 940.3,
-      "cpl": 34.83,
+      "gasto": 962.73,
+      "cpl": 35.66,
       "frecuencia": 1.37,
-      "impresiones": 17183
+      "impresiones": 17380
+    },
+    {
+      "clinica": "Chalco",
+      "campana": "CHALCO - PADECIMIENTOS",
+      "adset": "RODILLA",
+      "anuncio": "EST - RODILLA - OCT - 6 OCT",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-10-06",
+      "es_nuevo": false,
+      "leads": 24,
+      "gasto": 1184.01,
+      "cpl": 49.33,
+      "frecuencia": 1.73,
+      "impresiones": 33230
     },
     {
       "clinica": "Plaza Neza",
@@ -1393,25 +1408,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-08",
       "es_nuevo": false,
       "leads": 23,
-      "gasto": 930.69,
-      "cpl": 40.46,
+      "gasto": 930.79,
+      "cpl": 40.47,
       "frecuencia": 1.34,
-      "impresiones": 39122
+      "impresiones": 39124
     },
     {
-      "clinica": "Chalco",
-      "campana": "CHALCO - PADECIMIENTOS",
-      "adset": "RODILLA",
-      "anuncio": "EST - RODILLA - OCT - 6 OCT",
-      "tipo": "OTRO",
+      "clinica": "Balbuena",
+      "campana": "BALBUENA - PADECIMIENTOS",
+      "adset": "ESPALDA - CHECK",
+      "anuncio": "VID-COLUMNA-6-MAY",
+      "tipo": "VIDEO",
       "status": "ACTIVE",
-      "created": "2026-10-06",
+      "created": "2026-05-25",
       "es_nuevo": false,
-      "leads": 23,
-      "gasto": 1122.26,
-      "cpl": 48.79,
-      "frecuencia": 1.71,
-      "impresiones": 32029
+      "leads": 21,
+      "gasto": 845.33,
+      "cpl": 40.25,
+      "frecuencia": 1.73,
+      "impresiones": 7191
     },
     {
       "clinica": "Balbuena",
@@ -1423,10 +1438,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-05",
       "es_nuevo": false,
       "leads": 20,
-      "gasto": 661.33,
-      "cpl": 33.07,
+      "gasto": 671.66,
+      "cpl": 33.58,
       "frecuencia": 1.38,
-      "impresiones": 12332
+      "impresiones": 12417
     },
     {
       "clinica": "Balbuena",
@@ -1438,10 +1453,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 20,
-      "gasto": 770.19,
-      "cpl": 38.51,
-      "frecuencia": 1.31,
-      "impresiones": 15084
+      "gasto": 796.18,
+      "cpl": 39.81,
+      "frecuencia": 1.32,
+      "impresiones": 15427
     },
     {
       "clinica": "Tlahuac",
@@ -1453,25 +1468,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-06",
       "es_nuevo": false,
       "leads": 20,
-      "gasto": 1738.79,
-      "cpl": 86.94,
+      "gasto": 1831.42,
+      "cpl": 91.57,
       "frecuencia": 2.06,
-      "impresiones": 42144
-    },
-    {
-      "clinica": "Balbuena",
-      "campana": "BALBUENA - PADECIMIENTOS",
-      "adset": "ESPALDA - CHECK",
-      "anuncio": "VID-COLUMNA-6-MAY",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-05-25",
-      "es_nuevo": false,
-      "leads": 19,
-      "gasto": 820.84,
-      "cpl": 43.2,
-      "frecuencia": 1.72,
-      "impresiones": 7067
+      "impresiones": 43714
     },
     {
       "clinica": "Balbuena",
@@ -1482,11 +1482,41 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-06-05",
       "es_nuevo": false,
-      "leads": 18,
-      "gasto": 622.79,
-      "cpl": 34.6,
+      "leads": 19,
+      "gasto": 635.04,
+      "cpl": 33.42,
       "frecuencia": 1.65,
-      "impresiones": 6396
+      "impresiones": 6483
+    },
+    {
+      "clinica": "Mixquiahuala",
+      "campana": "MIXQUIAHUALA - PADECIMIENTOS",
+      "adset": "Quiropractica",
+      "anuncio": "VID - QUIRO ALAN 5 JUN",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-06-20",
+      "es_nuevo": false,
+      "leads": 18,
+      "gasto": 907.96,
+      "cpl": 50.44,
+      "frecuencia": 1.8,
+      "impresiones": 27845
+    },
+    {
+      "clinica": "Plaza Neza",
+      "campana": "PLAZA NEZA - PADECIMIENTOS",
+      "adset": "ESPALDA",
+      "anuncio": "VID_ CERVICALGIA _ SEP _ OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-09-29",
+      "es_nuevo": false,
+      "leads": 18,
+      "gasto": 664.92,
+      "cpl": 36.94,
+      "frecuencia": 1.63,
+      "impresiones": 12574
     },
     {
       "clinica": "Balbuena",
@@ -1498,25 +1528,55 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 18,
-      "gasto": 559.76,
-      "cpl": 31.1,
+      "gasto": 567.8,
+      "cpl": 31.54,
       "frecuencia": 1.54,
-      "impresiones": 8720
+      "impresiones": 8833
     },
     {
-      "clinica": "Plaza Neza",
-      "campana": "PLAZA NEZA - PADECIMIENTOS",
-      "adset": "ESPALDA",
-      "anuncio": "VID_ CERVICALGIA _ SEP _ OCT",
+      "clinica": "Milpa Alta",
+      "campana": "MILPA ALTA - PADECIMIENTOS",
+      "adset": "RODILLA - Copia 2",
+      "anuncio": "VID_ RODILLA DESGASTE ARTICULAR _ SEP _ OCT _ 690",
       "tipo": "VIDEO",
       "status": "ACTIVE",
-      "created": "2026-09-29",
+      "created": "2026-10-12",
       "es_nuevo": false,
       "leads": 17,
-      "gasto": 584.12,
-      "cpl": 34.36,
-      "frecuencia": 1.62,
-      "impresiones": 11333
+      "gasto": 1628.99,
+      "cpl": 95.82,
+      "frecuencia": 1.63,
+      "impresiones": 28851
+    },
+    {
+      "clinica": "Tlahuac",
+      "campana": "TLAHUAC - PADECIMIENTOS",
+      "adset": "Espalda",
+      "anuncio": "VID_ ESPALDA HERNIA _ OCT - 16 OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-10-16",
+      "es_nuevo": false,
+      "leads": 17,
+      "gasto": 1414.59,
+      "cpl": 83.21,
+      "frecuencia": 1.82,
+      "impresiones": 37247
+    },
+    {
+      "clinica": "Tlahuac",
+      "campana": "TLAHUAC - PADECIMIENTOS",
+      "adset": "Neuropatia",
+      "anuncio": "VID_ NEUROPATIA PADECIMIENTO _ OCT - 16 OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-10-16",
+      "es_nuevo": false,
+      "leads": 17,
+      "gasto": 1144.09,
+      "cpl": 67.3,
+      "frecuencia": 1.97,
+      "impresiones": 23558
     },
     {
       "clinica": "Mixquiahuala",
@@ -1528,25 +1588,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-20",
       "es_nuevo": false,
       "leads": 16,
-      "gasto": 792.06,
-      "cpl": 49.5,
-      "frecuencia": 2.07,
-      "impresiones": 21120
-    },
-    {
-      "clinica": "Mixquiahuala",
-      "campana": "MIXQUIAHUALA - PADECIMIENTOS",
-      "adset": "Quiropractica",
-      "anuncio": "VID - QUIRO ALAN 5 JUN",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-06-20",
-      "es_nuevo": false,
-      "leads": 16,
-      "gasto": 873.1,
-      "cpl": 54.57,
-      "frecuencia": 1.79,
-      "impresiones": 27250
+      "gasto": 822.62,
+      "cpl": 51.41,
+      "frecuencia": 2.09,
+      "impresiones": 21749
     },
     {
       "clinica": "Tlahuac",
@@ -1588,10 +1633,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-06",
       "es_nuevo": false,
       "leads": 15,
-      "gasto": 581.84,
-      "cpl": 38.79,
-      "frecuencia": 1.41,
-      "impresiones": 14116
+      "gasto": 589.53,
+      "cpl": 39.3,
+      "frecuencia": 1.42,
+      "impresiones": 14208
     },
     {
       "clinica": "Coacalco",
@@ -1603,55 +1648,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-11",
       "es_nuevo": false,
       "leads": 15,
-      "gasto": 680.45,
-      "cpl": 45.36,
-      "frecuencia": 1.6,
-      "impresiones": 13290
-    },
-    {
-      "clinica": "Milpa Alta",
-      "campana": "MILPA ALTA - PADECIMIENTOS",
-      "adset": "RODILLA - Copia 2",
-      "anuncio": "VID_ RODILLA DESGASTE ARTICULAR _ SEP _ OCT _ 690",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-10-12",
-      "es_nuevo": false,
-      "leads": 15,
-      "gasto": 1525.28,
-      "cpl": 101.69,
+      "gasto": 705.23,
+      "cpl": 47.02,
       "frecuencia": 1.62,
-      "impresiones": 27587
+      "impresiones": 13736
     },
     {
-      "clinica": "Tlahuac",
-      "campana": "TLAHUAC - PADECIMIENTOS",
-      "adset": "Espalda",
-      "anuncio": "VID_ ESPALDA HERNIA _ OCT - 16 OCT",
+      "clinica": "Coacalco",
+      "campana": "COACALCO - PADECIMIENTOS",
+      "adset": "Hombro",
+      "anuncio": "VID_ HOMBRO GENERAL _ OCT - 19 OCT",
       "tipo": "VIDEO",
       "status": "ACTIVE",
-      "created": "2026-10-16",
+      "created": "2026-10-19",
       "es_nuevo": false,
       "leads": 15,
-      "gasto": 1372.88,
-      "cpl": 91.53,
-      "frecuencia": 1.8,
-      "impresiones": 36478
-    },
-    {
-      "clinica": "Tlahuac",
-      "campana": "TLAHUAC - PADECIMIENTOS",
-      "adset": "Neuropatia",
-      "anuncio": "VID_ NEUROPATIA PADECIMIENTO _ OCT - 16 OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-10-16",
-      "es_nuevo": false,
-      "leads": 15,
-      "gasto": 1075.02,
-      "cpl": 71.67,
-      "frecuencia": 1.95,
-      "impresiones": 22696
+      "gasto": 798.96,
+      "cpl": 53.26,
+      "frecuencia": 1.41,
+      "impresiones": 16581
     },
     {
       "clinica": "Balbuena",
@@ -1663,25 +1678,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-05",
       "es_nuevo": false,
       "leads": 14,
-      "gasto": 380.38,
-      "cpl": 27.17,
-      "frecuencia": 1.4,
-      "impresiones": 5662
-    },
-    {
-      "clinica": "Coacalco",
-      "campana": "COACALCO - PADECIMIENTOS",
-      "adset": "Hombro",
-      "anuncio": "VID_ HOMBRO GENERAL _ OCT - 19 OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-10-19",
-      "es_nuevo": false,
-      "leads": 14,
-      "gasto": 761.34,
-      "cpl": 54.38,
-      "frecuencia": 1.4,
-      "impresiones": 15985
+      "gasto": 401.77,
+      "cpl": 28.7,
+      "frecuencia": 1.42,
+      "impresiones": 5846
     },
     {
       "clinica": "Mixquiahuala",
@@ -1693,10 +1693,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-17",
       "es_nuevo": false,
       "leads": 13,
-      "gasto": 592.92,
-      "cpl": 45.61,
-      "frecuencia": 1.89,
-      "impresiones": 22361
+      "gasto": 641.77,
+      "cpl": 49.37,
+      "frecuencia": 1.9,
+      "impresiones": 23589
     },
     {
       "clinica": "Mixquiahuala",
@@ -1708,10 +1708,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-02",
       "es_nuevo": false,
       "leads": 13,
-      "gasto": 434.31,
-      "cpl": 33.41,
-      "frecuencia": 1.34,
-      "impresiones": 17435
+      "gasto": 448.23,
+      "cpl": 34.48,
+      "frecuencia": 1.35,
+      "impresiones": 17752
     },
     {
       "clinica": "Coacalco",
@@ -1729,6 +1729,21 @@ MESES_DATA["2026-11"] = {
       "impresiones": 4695
     },
     {
+      "clinica": "Milpa Alta",
+      "campana": "MILPA ALTA - PADECIMIENTOS",
+      "adset": "ESPALDA",
+      "anuncio": "VID_ ESPALDA SINTOMAS _ SEP _ OCT _ 690",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-10-12",
+      "es_nuevo": false,
+      "leads": 13,
+      "gasto": 1530.23,
+      "cpl": 117.71,
+      "frecuencia": 1.72,
+      "impresiones": 38574
+    },
+    {
       "clinica": "Tlahuac",
       "campana": "TLAHUAC - PADECIMIENTOS",
       "adset": "Neuropatia",
@@ -1738,10 +1753,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-23",
       "es_nuevo": false,
       "leads": 12,
-      "gasto": 1379.94,
-      "cpl": 115.0,
-      "frecuencia": 1.5,
-      "impresiones": 35090
+      "gasto": 1417.36,
+      "cpl": 118.11,
+      "frecuencia": 1.51,
+      "impresiones": 35672
+    },
+    {
+      "clinica": "Milpa Alta",
+      "campana": "MILPA ALTA - PADECIMIENTOS",
+      "adset": "NEUROPATIA",
+      "anuncio": "VID_ NEUROPATIA MES _ SEP _ OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-10-03",
+      "es_nuevo": false,
+      "leads": 12,
+      "gasto": 1263.42,
+      "cpl": 105.29,
+      "frecuencia": 2.03,
+      "impresiones": 18565
     },
     {
       "clinica": "Milpa Alta",
@@ -1753,10 +1783,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-03",
       "es_nuevo": false,
       "leads": 12,
-      "gasto": 1268.68,
-      "cpl": 105.72,
-      "frecuencia": 1.68,
-      "impresiones": 24624
+      "gasto": 1306.77,
+      "cpl": 108.9,
+      "frecuencia": 1.69,
+      "impresiones": 24986
     },
     {
       "clinica": "Neza",
@@ -1783,10 +1813,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-25",
       "es_nuevo": false,
       "leads": 11,
-      "gasto": 1081.55,
-      "cpl": 98.32,
-      "frecuencia": 1.59,
-      "impresiones": 23166
+      "gasto": 1111.29,
+      "cpl": 101.03,
+      "frecuencia": 1.58,
+      "impresiones": 23545
     },
     {
       "clinica": "Coacalco",
@@ -1798,40 +1828,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-06",
       "es_nuevo": false,
       "leads": 11,
-      "gasto": 440.27,
-      "cpl": 40.02,
+      "gasto": 452.19,
+      "cpl": 41.11,
       "frecuencia": 1.84,
-      "impresiones": 7015
-    },
-    {
-      "clinica": "Milpa Alta",
-      "campana": "MILPA ALTA - PADECIMIENTOS",
-      "adset": "ESPALDA",
-      "anuncio": "VID_ ESPALDA SINTOMAS _ SEP _ OCT _ 690",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-10-12",
-      "es_nuevo": false,
-      "leads": 11,
-      "gasto": 1482.19,
-      "cpl": 134.74,
-      "frecuencia": 1.7,
-      "impresiones": 37665
-    },
-    {
-      "clinica": "Milpa Alta",
-      "campana": "MILPA ALTA - PADECIMIENTOS",
-      "adset": "NEUROPATIA",
-      "anuncio": "VID_ NEUROPATIA MES _ SEP _ OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-10-03",
-      "es_nuevo": false,
-      "leads": 10,
-      "gasto": 1191.37,
-      "cpl": 119.14,
-      "frecuencia": 2.01,
-      "impresiones": 17944
+      "impresiones": 7205
     },
     {
       "clinica": "Balbuena",
@@ -1842,11 +1842,56 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-29",
       "es_nuevo": false,
-      "leads": 8,
-      "gasto": 298.68,
-      "cpl": 37.34,
+      "leads": 9,
+      "gasto": 303.17,
+      "cpl": 33.69,
       "frecuencia": 1.32,
-      "impresiones": 4468
+      "impresiones": 4507
+    },
+    {
+      "clinica": "Plaza Neza",
+      "campana": "PLAZA NEZA - PADECIMIENTOS",
+      "adset": "ESPALDA",
+      "anuncio": "EST _ HERNIA V2 _ 14 MAY - Copia",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-05-21",
+      "es_nuevo": false,
+      "leads": 8,
+      "gasto": 200.2,
+      "cpl": 25.02,
+      "frecuencia": 1.53,
+      "impresiones": 3168
+    },
+    {
+      "clinica": "Coacalco",
+      "campana": "COACALCO - PADECIMIENTOS",
+      "adset": "Tropicalizados",
+      "anuncio": "VID _  RODILLA _ TROPICALIZADO",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-09-11",
+      "es_nuevo": false,
+      "leads": 8,
+      "gasto": 654.87,
+      "cpl": 81.86,
+      "frecuencia": 1.51,
+      "impresiones": 13488
+    },
+    {
+      "clinica": "Mixquiahuala",
+      "campana": "MIXQUIAHUALA - PADECIMIENTOS",
+      "adset": "Espalda",
+      "anuncio": "VID_ ESPALDA GENERAL _ SEP _ OCT - 3 OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-10-03",
+      "es_nuevo": false,
+      "leads": 8,
+      "gasto": 474.24,
+      "cpl": 59.28,
+      "frecuencia": 1.76,
+      "impresiones": 13113
     },
     {
       "clinica": "Balbuena",
@@ -1858,10 +1903,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 8,
-      "gasto": 377.9,
-      "cpl": 47.24,
-      "frecuencia": 1.49,
-      "impresiones": 6167
+      "gasto": 382.08,
+      "cpl": 47.76,
+      "frecuencia": 1.5,
+      "impresiones": 6223
     },
     {
       "clinica": "Neza",
@@ -1873,10 +1918,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-05-15",
       "es_nuevo": false,
       "leads": 7,
-      "gasto": 246.04,
-      "cpl": 35.15,
+      "gasto": 303.3,
+      "cpl": 43.33,
       "frecuencia": 1.41,
-      "impresiones": 3864
+      "impresiones": 4621
     },
     {
       "clinica": "Chalco",
@@ -1894,21 +1939,6 @@ MESES_DATA["2026-11"] = {
       "impresiones": 5880
     },
     {
-      "clinica": "Coacalco",
-      "campana": "COACALCO - PADECIMIENTOS",
-      "adset": "Tropicalizados",
-      "anuncio": "VID _  RODILLA _ TROPICALIZADO",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-09-11",
-      "es_nuevo": false,
-      "leads": 7,
-      "gasto": 617.32,
-      "cpl": 88.19,
-      "frecuencia": 1.52,
-      "impresiones": 12878
-    },
-    {
       "clinica": "Plaza Neza",
       "campana": "PLAZA NEZA - PADECIMIENTOS",
       "adset": "NEUROPATIA",
@@ -1918,25 +1948,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 7,
-      "gasto": 445.65,
-      "cpl": 63.66,
+      "gasto": 448.26,
+      "cpl": 64.04,
       "frecuencia": 1.55,
-      "impresiones": 10317
+      "impresiones": 10349
     },
     {
       "clinica": "Mixquiahuala",
       "campana": "MIXQUIAHUALA - PADECIMIENTOS",
-      "adset": "Espalda",
-      "anuncio": "VID_ ESPALDA GENERAL _ SEP _ OCT - 3 OCT",
-      "tipo": "VIDEO",
+      "adset": "Rodilla",
+      "anuncio": "EST _ RODILLA _ MIXQUI _ 10 ABRIL - Copia",
+      "tipo": "OTRO",
       "status": "ACTIVE",
-      "created": "2026-10-03",
+      "created": "2026-06-17",
       "es_nuevo": false,
-      "leads": 7,
-      "gasto": 456.11,
-      "cpl": 65.16,
-      "frecuencia": 1.75,
-      "impresiones": 12755
+      "leads": 6,
+      "gasto": 228.8,
+      "cpl": 38.13,
+      "frecuencia": 1.63,
+      "impresiones": 6144
     },
     {
       "clinica": "Plaza Neza",
@@ -1963,10 +1993,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-03",
       "es_nuevo": false,
       "leads": 6,
-      "gasto": 294.92,
-      "cpl": 49.15,
-      "frecuencia": 1.3,
-      "impresiones": 5204
+      "gasto": 300.85,
+      "cpl": 50.14,
+      "frecuencia": 1.31,
+      "impresiones": 5267
     },
     {
       "clinica": "Milpa Alta",
@@ -1978,10 +2008,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-12",
       "es_nuevo": false,
       "leads": 6,
-      "gasto": 404.78,
-      "cpl": 67.46,
+      "gasto": 412.33,
+      "cpl": 68.72,
       "frecuencia": 1.35,
-      "impresiones": 11275
+      "impresiones": 11441
     },
     {
       "clinica": "Milpa Alta",
@@ -1993,10 +2023,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 6,
-      "gasto": 524.82,
-      "cpl": 87.47,
+      "gasto": 547.59,
+      "cpl": 91.27,
       "frecuencia": 2.0,
-      "impresiones": 13483
+      "impresiones": 13945
     },
     {
       "clinica": "Tlahuac",
@@ -2008,10 +2038,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-16",
       "es_nuevo": false,
       "leads": 6,
-      "gasto": 607.26,
-      "cpl": 101.21,
-      "frecuencia": 1.6,
-      "impresiones": 14007
+      "gasto": 632.38,
+      "cpl": 105.4,
+      "frecuencia": 1.61,
+      "impresiones": 14363
     },
     {
       "clinica": "Neza",
@@ -2044,21 +2074,6 @@ MESES_DATA["2026-11"] = {
       "impresiones": 2725
     },
     {
-      "clinica": "Plaza Neza",
-      "campana": "PLAZA NEZA - PADECIMIENTOS",
-      "adset": "ESPALDA",
-      "anuncio": "EST _ HERNIA V2 _ 14 MAY - Copia",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-05-21",
-      "es_nuevo": false,
-      "leads": 5,
-      "gasto": 167.79,
-      "cpl": 33.56,
-      "frecuencia": 1.5,
-      "impresiones": 2745
-    },
-    {
       "clinica": "Balbuena",
       "campana": "BALBUENA - PADECIMIENTOS",
       "adset": "NEUROPATIA CHECK",
@@ -2068,25 +2083,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-05",
       "es_nuevo": false,
       "leads": 5,
-      "gasto": 287.51,
-      "cpl": 57.5,
+      "gasto": 298.68,
+      "cpl": 59.74,
       "frecuencia": 1.69,
-      "impresiones": 4029
-    },
-    {
-      "clinica": "Mixquiahuala",
-      "campana": "MIXQUIAHUALA - PADECIMIENTOS",
-      "adset": "Rodilla",
-      "anuncio": "EST _ RODILLA _ MIXQUI _ 10 ABRIL - Copia",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-06-17",
-      "es_nuevo": false,
-      "leads": 5,
-      "gasto": 221.62,
-      "cpl": 44.32,
-      "frecuencia": 1.63,
-      "impresiones": 6053
+      "impresiones": 4133
     },
     {
       "clinica": "Mixquiahuala",
@@ -2098,10 +2098,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-02",
       "es_nuevo": false,
       "leads": 5,
-      "gasto": 232.0,
-      "cpl": 46.4,
-      "frecuencia": 1.83,
-      "impresiones": 5948
+      "gasto": 239.79,
+      "cpl": 47.96,
+      "frecuencia": 1.84,
+      "impresiones": 6087
     },
     {
       "clinica": "Mixquiahuala",
@@ -2113,10 +2113,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-02",
       "es_nuevo": false,
       "leads": 5,
-      "gasto": 166.37,
-      "cpl": 33.27,
-      "frecuencia": 1.63,
-      "impresiones": 5509
+      "gasto": 172.16,
+      "cpl": 34.43,
+      "frecuencia": 1.64,
+      "impresiones": 5659
     },
     {
       "clinica": "Neza",
@@ -2143,10 +2143,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-06",
       "es_nuevo": false,
       "leads": 5,
-      "gasto": 263.94,
-      "cpl": 52.79,
+      "gasto": 264.87,
+      "cpl": 52.97,
       "frecuencia": 1.88,
-      "impresiones": 6887
+      "impresiones": 6912
     },
     {
       "clinica": "Mixquiahuala",
@@ -2158,10 +2158,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-04",
       "es_nuevo": false,
       "leads": 4,
-      "gasto": 110.32,
-      "cpl": 27.58,
-      "frecuencia": 1.65,
-      "impresiones": 3924
+      "gasto": 117.44,
+      "cpl": 29.36,
+      "frecuencia": 1.66,
+      "impresiones": 4044
     },
     {
       "clinica": "Plaza Neza",
@@ -2203,10 +2203,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-06",
       "es_nuevo": false,
       "leads": 3,
-      "gasto": 42.2,
-      "cpl": 14.07,
-      "frecuencia": 1.31,
-      "impresiones": 643
+      "gasto": 46.51,
+      "cpl": 15.5,
+      "frecuencia": 1.33,
+      "impresiones": 687
     },
     {
       "clinica": "Plaza Neza",
@@ -2218,10 +2218,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-07",
       "es_nuevo": false,
       "leads": 3,
-      "gasto": 212.18,
-      "cpl": 70.73,
-      "frecuencia": 1.51,
-      "impresiones": 4559
+      "gasto": 225.06,
+      "cpl": 75.02,
+      "frecuencia": 1.53,
+      "impresiones": 4752
     },
     {
       "clinica": "Plaza Neza",
@@ -2233,10 +2233,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-08",
       "es_nuevo": false,
       "leads": 3,
-      "gasto": 26.29,
-      "cpl": 8.76,
-      "frecuencia": 1.43,
-      "impresiones": 387
+      "gasto": 28.1,
+      "cpl": 9.37,
+      "frecuencia": 1.44,
+      "impresiones": 419
     },
     {
       "clinica": "Chalco",
@@ -2263,10 +2263,10 @@ MESES_DATA["2026-11"] = {
       "created": "2025-12-23",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 135.39,
-      "cpl": 67.69,
+      "gasto": 145.68,
+      "cpl": 72.84,
       "frecuencia": 1.42,
-      "impresiones": 2302
+      "impresiones": 2461
     },
     {
       "clinica": "Neza",
@@ -2278,10 +2278,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-02-05",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 30.92,
-      "cpl": 15.46,
+      "gasto": 33.43,
+      "cpl": 16.71,
       "frecuencia": 1.13,
-      "impresiones": 211
+      "impresiones": 236
     },
     {
       "clinica": "Neza",
@@ -2293,10 +2293,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-03-13",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 97.55,
-      "cpl": 48.77,
-      "frecuencia": 1.18,
-      "impresiones": 2177
+      "gasto": 107.58,
+      "cpl": 53.79,
+      "frecuencia": 1.19,
+      "impresiones": 2394
     },
     {
       "clinica": "Balbuena",
@@ -2308,10 +2308,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-05-25",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 98.79,
-      "cpl": 49.4,
-      "frecuencia": 1.27,
-      "impresiones": 1845
+      "gasto": 100.11,
+      "cpl": 50.05,
+      "frecuencia": 1.28,
+      "impresiones": 1861
     },
     {
       "clinica": "Mixquiahuala",
@@ -2323,10 +2323,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-04",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 118.39,
-      "cpl": 59.2,
-      "frecuencia": 1.63,
-      "impresiones": 2944
+      "gasto": 122.45,
+      "cpl": 61.23,
+      "frecuencia": 1.64,
+      "impresiones": 2996
     },
     {
       "clinica": "Balbuena",
@@ -2353,10 +2353,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-07",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 110.09,
-      "cpl": 55.05,
+      "gasto": 110.69,
+      "cpl": 55.34,
       "frecuencia": 1.05,
-      "impresiones": 3245
+      "impresiones": 3255
     },
     {
       "clinica": "Tlahuac",
@@ -2473,10 +2473,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-05-07",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 68.23,
-      "cpl": 68.23,
+      "gasto": 72.3,
+      "cpl": 72.3,
       "frecuencia": 1.46,
-      "impresiones": 1180
+      "impresiones": 1221
     },
     {
       "clinica": "Plaza Neza",
@@ -2488,10 +2488,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-05-07",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 56.03,
-      "cpl": 56.03,
-      "frecuencia": 1.51,
-      "impresiones": 686
+      "gasto": 59.33,
+      "cpl": 59.33,
+      "frecuencia": 1.53,
+      "impresiones": 727
     },
     {
       "clinica": "Neza",
@@ -2518,10 +2518,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-17",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 4.72,
-      "cpl": 4.72,
+      "gasto": 4.76,
+      "cpl": 4.76,
       "frecuencia": 1.12,
-      "impresiones": 81
+      "impresiones": 82
     },
     {
       "clinica": "Balbuena",
@@ -2533,10 +2533,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-04",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 86.25,
-      "cpl": 86.25,
+      "gasto": 88.27,
+      "cpl": 88.27,
       "frecuencia": 1.39,
-      "impresiones": 1374
+      "impresiones": 1386
     },
     {
       "clinica": "Balbuena",
@@ -2563,10 +2563,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-08",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 14.61,
-      "cpl": 14.61,
+      "gasto": 17.45,
+      "cpl": 17.45,
       "frecuencia": 1.18,
-      "impresiones": 287
+      "impresiones": 294
     },
     {
       "clinica": "Neza",
@@ -2608,10 +2608,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 165.98,
-      "cpl": 165.98,
+      "gasto": 166.62,
+      "cpl": 166.62,
       "frecuencia": 1.23,
-      "impresiones": 3042
+      "impresiones": 3049
     },
     {
       "clinica": "Balbuena",
@@ -2713,10 +2713,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 26.19,
-      "cpl": 26.19,
-      "frecuencia": 1.4,
-      "impresiones": 760
+      "gasto": 30.76,
+      "cpl": 30.76,
+      "frecuencia": 1.41,
+      "impresiones": 835
     },
     {
       "clinica": "Mixquiahuala",
@@ -2728,10 +2728,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 122.02,
-      "cpl": 122.02,
+      "gasto": 132.81,
+      "cpl": 132.81,
       "frecuencia": 1.67,
-      "impresiones": 3911
+      "impresiones": 4076
     },
     {
       "clinica": "Tlahuac",
@@ -2743,10 +2743,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-16",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 195.7,
-      "cpl": 195.7,
-      "frecuencia": 1.53,
-      "impresiones": 4576
+      "gasto": 209.28,
+      "cpl": 209.28,
+      "frecuencia": 1.54,
+      "impresiones": 4773
     },
     {
       "clinica": "Tlahuac",
@@ -2833,10 +2833,10 @@ MESES_DATA["2026-11"] = {
       "created": "2025-12-23",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 13.84,
+      "gasto": 14.07,
       "cpl": 0,
-      "frecuencia": 1.0,
-      "impresiones": 302
+      "frecuencia": 1.01,
+      "impresiones": 305
     },
     {
       "clinica": "Neza",
@@ -2863,10 +2863,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-02-05",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 27.27,
+      "gasto": 27.36,
       "cpl": 0,
       "frecuencia": 1.09,
-      "impresiones": 570
+      "impresiones": 572
     },
     {
       "clinica": "Neza",
@@ -2893,10 +2893,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-02-05",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 1.96,
+      "gasto": 7.44,
       "cpl": 0,
-      "frecuencia": 1.08,
-      "impresiones": 13
+      "frecuencia": 1.19,
+      "impresiones": 76
     },
     {
       "clinica": "Neza",
@@ -2908,10 +2908,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-02-05",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 1.4,
+      "gasto": 1.74,
       "cpl": 0,
-      "frecuencia": 1.25,
-      "impresiones": 25
+      "frecuencia": 1.36,
+      "impresiones": 30
     },
     {
       "clinica": "Neza",
@@ -2923,10 +2923,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-02-05",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 10.46,
+      "gasto": 10.82,
       "cpl": 0,
       "frecuencia": 1.09,
-      "impresiones": 200
+      "impresiones": 201
     },
     {
       "clinica": "Neza",
@@ -2938,10 +2938,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-02-05",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 4.72,
+      "gasto": 14.19,
       "cpl": 0,
-      "frecuencia": 1.03,
-      "impresiones": 111
+      "frecuencia": 1.08,
+      "impresiones": 248
     },
     {
       "clinica": "Neza",
@@ -2983,10 +2983,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-03-07",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 3.41,
+      "gasto": 3.88,
       "cpl": 0,
-      "frecuencia": 1.16,
-      "impresiones": 36
+      "frecuencia": 1.19,
+      "impresiones": 37
     },
     {
       "clinica": "Neza",
@@ -2998,10 +2998,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-03-08",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 13.72,
+      "gasto": 15.15,
       "cpl": 0,
-      "frecuencia": 1.07,
-      "impresiones": 148
+      "frecuencia": 1.09,
+      "impresiones": 165
     },
     {
       "clinica": "Neza",
@@ -3028,10 +3028,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-03-13",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 4.9,
+      "gasto": 5.43,
       "cpl": 0,
-      "frecuencia": 1.18,
-      "impresiones": 105
+      "frecuencia": 1.2,
+      "impresiones": 110
     },
     {
       "clinica": "Neza",
@@ -3043,10 +3043,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-03-13",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 4.61,
+      "gasto": 6.22,
       "cpl": 0,
       "frecuencia": 1.24,
-      "impresiones": 72
+      "impresiones": 78
     },
     {
       "clinica": "Neza",
@@ -3103,10 +3103,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-05-07",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 6.52,
+      "gasto": 12.01,
       "cpl": 0,
-      "frecuencia": 1.19,
-      "impresiones": 82
+      "frecuencia": 1.29,
+      "impresiones": 123
     },
     {
       "clinica": "Neza",
@@ -3118,10 +3118,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-05-07",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 20.91,
+      "gasto": 23.46,
       "cpl": 0,
       "frecuencia": 1.25,
-      "impresiones": 204
+      "impresiones": 223
     },
     {
       "clinica": "Neza",
@@ -3163,10 +3163,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-05-25",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 1.31,
+      "gasto": 1.7,
       "cpl": 0,
       "frecuencia": 1.04,
-      "impresiones": 24
+      "impresiones": 25
     },
     {
       "clinica": "Balbuena",
@@ -3313,10 +3313,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-06",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 45.75,
+      "gasto": 46.26,
       "cpl": 0,
-      "frecuencia": 1.11,
-      "impresiones": 712
+      "frecuencia": 1.1,
+      "impresiones": 728
     },
     {
       "clinica": "Neza",
@@ -3343,10 +3343,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-06",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 22.21,
+      "gasto": 29.51,
       "cpl": 0,
-      "frecuencia": 1.39,
-      "impresiones": 322
+      "frecuencia": 1.38,
+      "impresiones": 437
     },
     {
       "clinica": "Neza",
@@ -3358,10 +3358,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-06",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 43.75,
+      "gasto": 59.5,
       "cpl": 0,
-      "frecuencia": 1.27,
-      "impresiones": 670
+      "frecuencia": 1.29,
+      "impresiones": 710
     },
     {
       "clinica": "Mixquiahuala",
@@ -3418,10 +3418,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-08",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 41.85,
+      "gasto": 41.98,
       "cpl": 0,
       "frecuencia": 1.68,
-      "impresiones": 882
+      "impresiones": 883
     },
     {
       "clinica": "Chalco",
@@ -3433,10 +3433,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-08-23",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 18.74,
+      "gasto": 18.83,
       "cpl": 0,
-      "frecuencia": 1.07,
-      "impresiones": 407
+      "frecuencia": 1.08,
+      "impresiones": 408
     },
     {
       "clinica": "Chalco",
@@ -3658,10 +3658,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 20.31,
+      "gasto": 20.43,
       "cpl": 0,
       "frecuencia": 1.18,
-      "impresiones": 261
+      "impresiones": 265
     },
     {
       "clinica": "Balbuena",
@@ -3853,10 +3853,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-06",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 18.87,
+      "gasto": 18.96,
       "cpl": 0,
       "frecuencia": 1.31,
-      "impresiones": 333
+      "impresiones": 337
     },
     {
       "clinica": "Chalco",
@@ -4002,11 +4002,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-26",
       "es_nuevo": false,
-      "leads": 263,
-      "gasto": 10128.01,
-      "cpl": 38.51,
+      "leads": 276,
+      "gasto": 10487.45,
+      "cpl": 38.0,
       "frecuencia": 1.6,
-      "impresiones": 285245
+      "impresiones": 290247
     },
     {
       "clinica": "Ecatepec",
@@ -4017,11 +4017,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-24",
       "es_nuevo": false,
-      "leads": 237,
-      "gasto": 15318.12,
-      "cpl": 64.63,
-      "frecuencia": 1.81,
-      "impresiones": 329834
+      "leads": 243,
+      "gasto": 15793.36,
+      "cpl": 64.99,
+      "frecuencia": 1.83,
+      "impresiones": 336613
     },
     {
       "clinica": "Plaza Neza",
@@ -4047,26 +4047,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-25",
       "es_nuevo": false,
-      "leads": 189,
-      "gasto": 7985.36,
-      "cpl": 42.25,
+      "leads": 197,
+      "gasto": 8203.89,
+      "cpl": 41.64,
       "frecuencia": 1.67,
-      "impresiones": 194842
-    },
-    {
-      "clinica": "Coacalco",
-      "campana": "COACALCO FEED",
-      "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-      "anuncio": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-08-11",
-      "es_nuevo": false,
-      "leads": 173,
-      "gasto": 7021.97,
-      "cpl": 40.59,
-      "frecuencia": 1.57,
-      "impresiones": 118080
+      "impresiones": 197853
     },
     {
       "clinica": "Tlahuac",
@@ -4077,11 +4062,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-06",
       "es_nuevo": false,
-      "leads": 173,
-      "gasto": 6858.67,
-      "cpl": 39.65,
+      "leads": 181,
+      "gasto": 7225.42,
+      "cpl": 39.92,
       "frecuencia": 1.55,
-      "impresiones": 169510
+      "impresiones": 175213
+    },
+    {
+      "clinica": "Coacalco",
+      "campana": "COACALCO FEED",
+      "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
+      "anuncio": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-08-11",
+      "es_nuevo": false,
+      "leads": 177,
+      "gasto": 7242.32,
+      "cpl": 40.92,
+      "frecuencia": 1.58,
+      "impresiones": 120919
     },
     {
       "clinica": "Chalco",
@@ -4092,11 +4092,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-16",
       "es_nuevo": false,
-      "leads": 149,
-      "gasto": 13277.63,
-      "cpl": 89.11,
-      "frecuencia": 2.12,
-      "impresiones": 370501
+      "leads": 153,
+      "gasto": 13653.83,
+      "cpl": 89.24,
+      "frecuencia": 2.14,
+      "impresiones": 377515
     },
     {
       "clinica": "Chalco",
@@ -4107,11 +4107,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-06",
       "es_nuevo": false,
-      "leads": 148,
-      "gasto": 6408.0,
-      "cpl": 43.3,
-      "frecuencia": 1.45,
-      "impresiones": 191019
+      "leads": 152,
+      "gasto": 6718.92,
+      "cpl": 44.2,
+      "frecuencia": 1.46,
+      "impresiones": 197257
     },
     {
       "clinica": "Neza",
@@ -4123,10 +4123,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 121,
-      "gasto": 1702.31,
-      "cpl": 14.07,
+      "gasto": 1709.51,
+      "cpl": 14.13,
       "frecuencia": 1.16,
-      "impresiones": 37153
+      "impresiones": 37255
     },
     {
       "clinica": "Plaza Neza",
@@ -4137,11 +4137,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-08-08",
       "es_nuevo": false,
-      "leads": 114,
-      "gasto": 5682.05,
-      "cpl": 49.84,
-      "frecuencia": 1.86,
-      "impresiones": 117009
+      "leads": 116,
+      "gasto": 5854.64,
+      "cpl": 50.47,
+      "frecuencia": 1.87,
+      "impresiones": 119224
     },
     {
       "clinica": "Ecatepec",
@@ -4152,11 +4152,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-26",
       "es_nuevo": false,
-      "leads": 92,
-      "gasto": 3858.03,
-      "cpl": 41.94,
-      "frecuencia": 1.56,
-      "impresiones": 74144
+      "leads": 99,
+      "gasto": 4018.41,
+      "cpl": 40.59,
+      "frecuencia": 1.57,
+      "impresiones": 75826
     },
     {
       "clinica": "Chalco",
@@ -4167,11 +4167,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-07",
       "es_nuevo": false,
-      "leads": 87,
-      "gasto": 7781.47,
-      "cpl": 89.44,
-      "frecuencia": 1.93,
-      "impresiones": 146577
+      "leads": 92,
+      "gasto": 8186.83,
+      "cpl": 88.99,
+      "frecuencia": 1.95,
+      "impresiones": 149572
     },
     {
       "clinica": "Milpa Alta",
@@ -4182,11 +4182,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-14",
       "es_nuevo": false,
-      "leads": 85,
-      "gasto": 7678.32,
-      "cpl": 90.33,
-      "frecuencia": 1.72,
-      "impresiones": 165680
+      "leads": 86,
+      "gasto": 7935.75,
+      "cpl": 92.28,
+      "frecuencia": 1.74,
+      "impresiones": 168767
     },
     {
       "clinica": "Milpa Alta",
@@ -4197,11 +4197,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-06",
       "es_nuevo": false,
-      "leads": 76,
-      "gasto": 6602.44,
-      "cpl": 86.87,
-      "frecuencia": 1.64,
-      "impresiones": 187705
+      "leads": 81,
+      "gasto": 6903.32,
+      "cpl": 85.23,
+      "frecuencia": 1.65,
+      "impresiones": 192817
     },
     {
       "clinica": "Tlahuac",
@@ -4212,11 +4212,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-06",
       "es_nuevo": false,
-      "leads": 73,
-      "gasto": 6560.27,
-      "cpl": 89.87,
-      "frecuencia": 1.97,
-      "impresiones": 56301
+      "leads": 80,
+      "gasto": 6911.35,
+      "cpl": 86.39,
+      "frecuencia": 1.98,
+      "impresiones": 58135
     },
     {
       "clinica": "Ecatepec",
@@ -4227,11 +4227,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-25",
       "es_nuevo": false,
-      "leads": 71,
-      "gasto": 3333.56,
-      "cpl": 46.95,
+      "leads": 75,
+      "gasto": 3511.66,
+      "cpl": 46.82,
       "frecuencia": 1.58,
-      "impresiones": 78160
+      "impresiones": 81264
     },
     {
       "clinica": "Balbuena",
@@ -4242,26 +4242,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-09",
       "es_nuevo": true,
-      "leads": 71,
-      "gasto": 4261.55,
-      "cpl": 60.02,
+      "leads": 74,
+      "gasto": 4665.86,
+      "cpl": 63.05,
       "frecuencia": 1.28,
-      "impresiones": 37027
-    },
-    {
-      "clinica": "Milpa Alta",
-      "campana": "MILPA ALTA NOV FEED 2",
-      "adset": "Publicación: \"Moverte sin dolor se siente así 💃🏻✨\"",
-      "anuncio": "Publicación: \"Moverte sin dolor se siente así 💃🏻✨\"",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-06",
-      "es_nuevo": false,
-      "leads": 64,
-      "gasto": 6499.36,
-      "cpl": 101.55,
-      "frecuencia": 1.96,
-      "impresiones": 142074
+      "impresiones": 39162
     },
     {
       "clinica": "Balbuena",
@@ -4272,11 +4257,41 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-10",
       "es_nuevo": true,
-      "leads": 62,
-      "gasto": 3725.25,
-      "cpl": 60.08,
+      "leads": 67,
+      "gasto": 4262.08,
+      "cpl": 63.61,
       "frecuencia": 1.32,
-      "impresiones": 36134
+      "impresiones": 39245
+    },
+    {
+      "clinica": "Milpa Alta",
+      "campana": "MILPA ALTA NOV FEED 2",
+      "adset": "Publicación: \"Moverte sin dolor se siente así 💃🏻✨\"",
+      "anuncio": "Publicación: \"Moverte sin dolor se siente así 💃🏻✨\"",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-06",
+      "es_nuevo": false,
+      "leads": 65,
+      "gasto": 6811.41,
+      "cpl": 104.79,
+      "frecuencia": 1.99,
+      "impresiones": 145979
+    },
+    {
+      "clinica": "Neza",
+      "campana": "NEZA NOVIEMBRE + BUEN FIN",
+      "adset": "NEZA ZONA 25-65+",
+      "anuncio": "NEZA V3 CORTA - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-09",
+      "es_nuevo": true,
+      "leads": 56,
+      "gasto": 1810.45,
+      "cpl": 32.33,
+      "frecuencia": 1.36,
+      "impresiones": 40319
     },
     {
       "clinica": "Ecatepec",
@@ -4288,10 +4303,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-25",
       "es_nuevo": false,
       "leads": 54,
-      "gasto": 2104.04,
-      "cpl": 38.96,
-      "frecuencia": 1.83,
-      "impresiones": 55910
+      "gasto": 2137.19,
+      "cpl": 39.58,
+      "frecuencia": 1.84,
+      "impresiones": 56515
     },
     {
       "clinica": "Chalco",
@@ -4309,21 +4324,6 @@ MESES_DATA["2026-11"] = {
       "impresiones": 69519
     },
     {
-      "clinica": "Neza",
-      "campana": "NEZA NOVIEMBRE + BUEN FIN",
-      "adset": "NEZA ZONA 25-65+",
-      "anuncio": "NEZA V3 CORTA - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-09",
-      "es_nuevo": true,
-      "leads": 44,
-      "gasto": 1344.96,
-      "cpl": 30.57,
-      "frecuencia": 1.3,
-      "impresiones": 31705
-    },
-    {
       "clinica": "Plaza Neza",
       "campana": "PLAZA NEZA NOVIEMBRE + BUEN FIN",
       "adset": "PLAZA NEZA ZONA 25-65+",
@@ -4332,26 +4332,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-09",
       "es_nuevo": true,
-      "leads": 39,
-      "gasto": 2471.9,
-      "cpl": 63.38,
-      "frecuencia": 1.32,
-      "impresiones": 48510
-    },
-    {
-      "clinica": "Chalco",
-      "campana": "CHALCO NOVIEMBRE + BUEN FIN",
-      "adset": "CHALCO ZONA 25-65+",
-      "anuncio": "CHALCO PAUTA 2 CÓMO LLEGAR - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-09",
-      "es_nuevo": true,
-      "leads": 27,
-      "gasto": 2091.97,
-      "cpl": 77.48,
-      "frecuencia": 1.37,
-      "impresiones": 53737
+      "leads": 40,
+      "gasto": 2820.23,
+      "cpl": 70.51,
+      "frecuencia": 1.35,
+      "impresiones": 53020
     },
     {
       "clinica": "Tlahuac",
@@ -4362,11 +4347,41 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-11",
       "es_nuevo": true,
-      "leads": 26,
-      "gasto": 1649.5,
-      "cpl": 63.44,
-      "frecuencia": 1.35,
-      "impresiones": 32602
+      "leads": 30,
+      "gasto": 1889.62,
+      "cpl": 62.99,
+      "frecuencia": 1.39,
+      "impresiones": 36789
+    },
+    {
+      "clinica": "Chalco",
+      "campana": "CHALCO NOVIEMBRE + BUEN FIN",
+      "adset": "CHALCO ZONA 25-65+",
+      "anuncio": "CHALCO PAUTA 2 CÓMO LLEGAR - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-09",
+      "es_nuevo": true,
+      "leads": 28,
+      "gasto": 2235.18,
+      "cpl": 79.83,
+      "frecuencia": 1.38,
+      "impresiones": 56151
+    },
+    {
+      "clinica": "Ecatepec",
+      "campana": "ECATEPEC - PADECIMIENTOS",
+      "adset": "ORGANICO PAUTA",
+      "anuncio": "VID _ ESPALDA TROPICALIZADO _ OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-09-23",
+      "es_nuevo": false,
+      "leads": 24,
+      "gasto": 1282.08,
+      "cpl": 53.42,
+      "frecuencia": 1.31,
+      "impresiones": 48989
     },
     {
       "clinica": "Ecatepec",
@@ -4378,10 +4393,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-06",
       "es_nuevo": false,
       "leads": 24,
-      "gasto": 1175.09,
-      "cpl": 48.96,
-      "frecuencia": 1.71,
-      "impresiones": 28344
+      "gasto": 1193.34,
+      "cpl": 49.72,
+      "frecuencia": 1.72,
+      "impresiones": 28661
     },
     {
       "clinica": "Milpa Alta",
@@ -4393,25 +4408,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 24,
-      "gasto": 2273.63,
-      "cpl": 94.73,
-      "frecuencia": 1.58,
-      "impresiones": 58940
-    },
-    {
-      "clinica": "Ecatepec",
-      "campana": "ECATEPEC - PADECIMIENTOS",
-      "adset": "ORGANICO PAUTA",
-      "anuncio": "VID _ ESPALDA TROPICALIZADO _ OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-09-23",
-      "es_nuevo": false,
-      "leads": 23,
-      "gasto": 1253.1,
-      "cpl": 54.48,
-      "frecuencia": 1.3,
-      "impresiones": 48315
+      "gasto": 2563.36,
+      "cpl": 106.81,
+      "frecuencia": 1.6,
+      "impresiones": 64870
     },
     {
       "clinica": "Ecatepec",
@@ -4422,11 +4422,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-12",
       "es_nuevo": true,
-      "leads": 21,
-      "gasto": 1413.45,
-      "cpl": 67.31,
-      "frecuencia": 1.39,
-      "impresiones": 25264
+      "leads": 24,
+      "gasto": 1729.05,
+      "cpl": 72.04,
+      "frecuencia": 1.38,
+      "impresiones": 29818
     },
     {
       "clinica": "Ecatepec",
@@ -4444,6 +4444,21 @@ MESES_DATA["2026-11"] = {
       "impresiones": 18047
     },
     {
+      "clinica": "Chalco",
+      "campana": "CHALCO NOVIEMBRE + BUEN FIN",
+      "adset": "CHALCO ZONA 25-65+",
+      "anuncio": "CHALCO PAUTA 4 TU VALORACIÓN - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-09",
+      "es_nuevo": true,
+      "leads": 17,
+      "gasto": 1136.25,
+      "cpl": 66.84,
+      "frecuencia": 1.21,
+      "impresiones": 23889
+    },
+    {
       "clinica": "Neza",
       "campana": "NEZA NOVIEMBRE + BUEN FIN",
       "adset": "NEZA ZONA 25-65+ · WA 2471",
@@ -4459,21 +4474,6 @@ MESES_DATA["2026-11"] = {
       "impresiones": 5810
     },
     {
-      "clinica": "Chalco",
-      "campana": "CHALCO NOVIEMBRE + BUEN FIN",
-      "adset": "CHALCO ZONA 25-65+",
-      "anuncio": "CHALCO PAUTA 4 TU VALORACIÓN - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-09",
-      "es_nuevo": true,
-      "leads": 14,
-      "gasto": 752.37,
-      "cpl": 53.74,
-      "frecuencia": 1.19,
-      "impresiones": 17270
-    },
-    {
       "clinica": "Balbuena",
       "campana": "BALBUENA NOVIEMBRE + BUEN FIN",
       "adset": "BALBUENA 8 KM 25-65+",
@@ -4482,26 +4482,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-09",
       "es_nuevo": true,
-      "leads": 12,
-      "gasto": 1157.1,
-      "cpl": 96.42,
-      "frecuencia": 1.17,
-      "impresiones": 16460
-    },
-    {
-      "clinica": "Balbuena",
-      "campana": "BALBUENA NOVIEMBRE + BUEN FIN",
-      "adset": "BALBUENA 8 KM 25-65+",
-      "anuncio": "BALBUENA V5 RITMO HOUSE - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-09",
-      "es_nuevo": true,
-      "leads": 10,
-      "gasto": 1403.6,
-      "cpl": 140.36,
-      "frecuencia": 1.28,
-      "impresiones": 11401
+      "leads": 14,
+      "gasto": 1419.1,
+      "cpl": 101.36,
+      "frecuencia": 1.2,
+      "impresiones": 19979
     },
     {
       "clinica": "Coacalco",
@@ -4512,11 +4497,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-12",
       "es_nuevo": true,
-      "leads": 10,
-      "gasto": 1340.92,
-      "cpl": 134.09,
-      "frecuencia": 1.5,
-      "impresiones": 17480
+      "leads": 13,
+      "gasto": 1560.14,
+      "cpl": 120.01,
+      "frecuencia": 1.53,
+      "impresiones": 19236
+    },
+    {
+      "clinica": "Balbuena",
+      "campana": "BALBUENA NOVIEMBRE + BUEN FIN",
+      "adset": "BALBUENA 8 KM 25-65+",
+      "anuncio": "BALBUENA V5 RITMO HOUSE - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-09",
+      "es_nuevo": true,
+      "leads": 12,
+      "gasto": 1711.68,
+      "cpl": 142.64,
+      "frecuencia": 1.28,
+      "impresiones": 13179
     },
     {
       "clinica": "Chalco",
@@ -4549,19 +4549,19 @@ MESES_DATA["2026-11"] = {
       "impresiones": 14101
     },
     {
-      "clinica": "Milpa Alta",
-      "campana": "MILPA ALTA NOVIEMBRE + BUEN FIN",
-      "adset": "MILPA ALTA ZONA 25-65+",
-      "anuncio": "MILPA ALTA V6 DEL DOLOR AL COLOR - 10 NOV",
+      "clinica": "Balbuena",
+      "campana": "BALBUENA NOVIEMBRE + BUEN FIN",
+      "adset": "BALBUENA 8 KM 25-65+",
+      "anuncio": "BALBUENA V1 ORIGINAL - 10 NOV",
       "tipo": "OTRO",
       "status": "ACTIVE",
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 9,
-      "gasto": 915.69,
-      "cpl": 101.74,
-      "frecuencia": 1.73,
-      "impresiones": 22740
+      "gasto": 556.72,
+      "cpl": 61.86,
+      "frecuencia": 1.16,
+      "impresiones": 5292
     },
     {
       "clinica": "Plaza Neza",
@@ -4572,11 +4572,41 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-09",
       "es_nuevo": true,
-      "leads": 8,
-      "gasto": 698.44,
-      "cpl": 87.31,
-      "frecuencia": 1.4,
-      "impresiones": 13224
+      "leads": 9,
+      "gasto": 740.11,
+      "cpl": 82.23,
+      "frecuencia": 1.41,
+      "impresiones": 13723
+    },
+    {
+      "clinica": "Milpa Alta",
+      "campana": "MILPA ALTA NOVIEMBRE + BUEN FIN",
+      "adset": "MILPA ALTA ZONA 25-65+",
+      "anuncio": "MILPA ALTA V6 DEL DOLOR AL COLOR - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-09",
+      "es_nuevo": true,
+      "leads": 9,
+      "gasto": 1101.31,
+      "cpl": 122.37,
+      "frecuencia": 1.8,
+      "impresiones": 25932
+    },
+    {
+      "clinica": "Tlahuac",
+      "campana": "TLAHUAC NOVIEMBRE + BUEN FIN",
+      "adset": "TLAHUAC BUEN FIN 13-17 NOV 25-65+",
+      "anuncio": "TLAHUAC BUEN FIN - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 9,
+      "gasto": 826.4,
+      "cpl": 91.82,
+      "frecuencia": 1.21,
+      "impresiones": 16758
     },
     {
       "clinica": "Coacalco",
@@ -4588,40 +4618,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 8,
-      "gasto": 1211.08,
-      "cpl": 151.38,
-      "frecuencia": 1.21,
-      "impresiones": 15750
-    },
-    {
-      "clinica": "Tlahuac",
-      "campana": "TLAHUAC NOVIEMBRE + BUEN FIN",
-      "adset": "TLAHUAC BUEN FIN 13-17 NOV 25-65+",
-      "anuncio": "TLAHUAC BUEN FIN - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 8,
-      "gasto": 738.09,
-      "cpl": 92.26,
-      "frecuencia": 1.21,
-      "impresiones": 15653
-    },
-    {
-      "clinica": "Balbuena",
-      "campana": "BALBUENA NOVIEMBRE + BUEN FIN",
-      "adset": "BALBUENA 8 KM 25-65+",
-      "anuncio": "BALBUENA V1 ORIGINAL - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-09",
-      "es_nuevo": true,
-      "leads": 7,
-      "gasto": 434.19,
-      "cpl": 62.03,
-      "frecuencia": 1.17,
-      "impresiones": 4621
+      "gasto": 1415.9,
+      "cpl": 176.99,
+      "frecuencia": 1.24,
+      "impresiones": 17930
     },
     {
       "clinica": "Neza",
@@ -4633,10 +4633,40 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 7,
-      "gasto": 54.57,
-      "cpl": 7.8,
+      "gasto": 54.99,
+      "cpl": 7.86,
       "frecuencia": 1.16,
-      "impresiones": 762
+      "impresiones": 764
+    },
+    {
+      "clinica": "Neza",
+      "campana": "NEZA NOVIEMBRE + BUEN FIN",
+      "adset": "NEZA ZONA 25-65+",
+      "anuncio": "NEZA V5 RITMO HOUSE - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-09",
+      "es_nuevo": true,
+      "leads": 7,
+      "gasto": 230.46,
+      "cpl": 32.92,
+      "frecuencia": 1.36,
+      "impresiones": 3579
+    },
+    {
+      "clinica": "Neza",
+      "campana": "NEZA NOVIEMBRE + BUEN FIN",
+      "adset": "NEZA BUEN FIN 13-17 NOV 25-65+",
+      "anuncio": "NEZA BUEN FIN - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 7,
+      "gasto": 362.48,
+      "cpl": 51.78,
+      "frecuencia": 1.3,
+      "impresiones": 5591
     },
     {
       "clinica": "Plaza Neza",
@@ -4648,40 +4678,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 6,
-      "gasto": 282.68,
-      "cpl": 47.11,
-      "frecuencia": 1.43,
-      "impresiones": 3911
-    },
-    {
-      "clinica": "Neza",
-      "campana": "NEZA NOVIEMBRE + BUEN FIN",
-      "adset": "NEZA BUEN FIN 13-17 NOV 25-65+",
-      "anuncio": "NEZA BUEN FIN - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 6,
-      "gasto": 332.83,
-      "cpl": 55.47,
-      "frecuencia": 1.28,
-      "impresiones": 5330
-    },
-    {
-      "clinica": "Neza",
-      "campana": "NEZA NOVIEMBRE + BUEN FIN",
-      "adset": "NEZA ZONA 25-65+",
-      "anuncio": "NEZA V5 RITMO HOUSE - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-09",
-      "es_nuevo": true,
-      "leads": 5,
-      "gasto": 185.93,
-      "cpl": 37.19,
-      "frecuencia": 1.31,
-      "impresiones": 3084
+      "gasto": 324.93,
+      "cpl": 54.16,
+      "frecuencia": 1.45,
+      "impresiones": 4250
     },
     {
       "clinica": "Chalco",
@@ -4693,10 +4693,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 4,
-      "gasto": 279.88,
-      "cpl": 69.97,
+      "gasto": 281.01,
+      "cpl": 70.25,
       "frecuencia": 1.17,
-      "impresiones": 6794
+      "impresiones": 6804
     },
     {
       "clinica": "Tlahuac",
@@ -4708,10 +4708,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 4,
-      "gasto": 181.39,
+      "gasto": 181.41,
       "cpl": 45.35,
       "frecuencia": 1.26,
-      "impresiones": 3545
+      "impresiones": 3546
     },
     {
       "clinica": "Balbuena",
@@ -4723,10 +4723,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 4,
-      "gasto": 603.5,
-      "cpl": 150.88,
+      "gasto": 611.71,
+      "cpl": 152.93,
       "frecuencia": 1.25,
-      "impresiones": 4937
+      "impresiones": 4974
     },
     {
       "clinica": "Coacalco",
@@ -4753,10 +4753,40 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 3,
-      "gasto": 495.27,
-      "cpl": 165.09,
+      "gasto": 496.61,
+      "cpl": 165.54,
       "frecuencia": 1.24,
-      "impresiones": 6595
+      "impresiones": 6602
+    },
+    {
+      "clinica": "Coacalco",
+      "campana": "COACALCO NOVIEMBRE + BUEN FIN",
+      "adset": "COACALCO ZONA 25-65+",
+      "anuncio": "COACALCO V3 CORTA - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 3,
+      "gasto": 460.72,
+      "cpl": 153.57,
+      "frecuencia": 1.18,
+      "impresiones": 5931
+    },
+    {
+      "clinica": "Coacalco",
+      "campana": "COACALCO NOVIEMBRE + BUEN FIN",
+      "adset": "COACALCO ZONA 25-65+",
+      "anuncio": "COACALCO V4 RITMO HOUSE - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 3,
+      "gasto": 195.07,
+      "cpl": 65.02,
+      "frecuencia": 1.18,
+      "impresiones": 2115
     },
     {
       "clinica": "Chalco",
@@ -4783,10 +4813,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 113.27,
-      "cpl": 56.63,
-      "frecuencia": 1.35,
-      "impresiones": 2436
+      "gasto": 125.71,
+      "cpl": 62.85,
+      "frecuencia": 1.36,
+      "impresiones": 2538
     },
     {
       "clinica": "Ecatepec",
@@ -4798,10 +4828,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 255.82,
-      "cpl": 127.91,
+      "gasto": 271.3,
+      "cpl": 135.65,
       "frecuencia": 1.19,
-      "impresiones": 4654
+      "impresiones": 4830
     },
     {
       "clinica": "Coacalco",
@@ -4819,34 +4849,19 @@ MESES_DATA["2026-11"] = {
       "impresiones": 1043
     },
     {
-      "clinica": "Coacalco",
-      "campana": "COACALCO NOVIEMBRE + BUEN FIN",
-      "adset": "COACALCO ZONA 25-65+",
-      "anuncio": "COACALCO V3 CORTA - 12 NOV",
+      "clinica": "Ecatepec",
+      "campana": "ECATEPEC NOVIEMBRE + BUEN FIN",
+      "adset": "ECATEPEC ZONA 25-65+",
+      "anuncio": "ECATEPEC V4 NEUROPATÍA - 12 NOV",
       "tipo": "OTRO",
       "status": "ACTIVE",
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 333.05,
-      "cpl": 166.53,
-      "frecuencia": 1.15,
-      "impresiones": 4459
-    },
-    {
-      "clinica": "Coacalco",
-      "campana": "COACALCO NOVIEMBRE + BUEN FIN",
-      "adset": "COACALCO ZONA 25-65+",
-      "anuncio": "COACALCO V4 RITMO HOUSE - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 2,
-      "gasto": 191.58,
-      "cpl": 95.79,
-      "frecuencia": 1.18,
-      "impresiones": 2079
+      "gasto": 145.12,
+      "cpl": 72.56,
+      "frecuencia": 1.25,
+      "impresiones": 2660
     },
     {
       "clinica": "Ecatepec",
@@ -4858,10 +4873,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 20.74,
-      "cpl": 10.37,
+      "gasto": 23.92,
+      "cpl": 11.96,
       "frecuencia": 1.09,
-      "impresiones": 236
+      "impresiones": 246
     },
     {
       "clinica": "Chalco",
@@ -4903,10 +4918,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 109.63,
-      "cpl": 109.63,
-      "frecuencia": 1.18,
-      "impresiones": 2825
+      "gasto": 115.89,
+      "cpl": 115.89,
+      "frecuencia": 1.19,
+      "impresiones": 2897
     },
     {
       "clinica": "Plaza Neza",
@@ -4918,10 +4933,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 188.17,
-      "cpl": 188.17,
+      "gasto": 188.6,
+      "cpl": 188.6,
       "frecuencia": 1.27,
-      "impresiones": 4190
+      "impresiones": 4194
     },
     {
       "clinica": "Plaza Neza",
@@ -4933,10 +4948,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-10",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 51.64,
-      "cpl": 51.64,
+      "gasto": 54.51,
+      "cpl": 54.51,
       "frecuencia": 1.13,
-      "impresiones": 1049
+      "impresiones": 1092
+    },
+    {
+      "clinica": "Plaza Neza",
+      "campana": "PLAZA NEZA NOVIEMBRE + BUEN FIN",
+      "adset": "PLAZA NEZA ZONA 25-65+",
+      "anuncio": "PLAZA NEZA V7 LOGO 3D - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-10",
+      "es_nuevo": true,
+      "leads": 1,
+      "gasto": 124.57,
+      "cpl": 124.57,
+      "frecuencia": 1.19,
+      "impresiones": 1836
     },
     {
       "clinica": "Neza",
@@ -4963,25 +4993,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 77.73,
-      "cpl": 77.73,
-      "frecuencia": 1.07,
-      "impresiones": 1125
-    },
-    {
-      "clinica": "Ecatepec",
-      "campana": "ECATEPEC NOVIEMBRE + BUEN FIN",
-      "adset": "ECATEPEC ZONA 25-65+",
-      "anuncio": "ECATEPEC V4 NEUROPATÍA - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 1,
-      "gasto": 136.17,
-      "cpl": 136.17,
-      "frecuencia": 1.24,
-      "impresiones": 2568
+      "gasto": 89.32,
+      "cpl": 89.32,
+      "frecuencia": 1.08,
+      "impresiones": 1235
     },
     {
       "clinica": "Ecatepec",
@@ -5158,10 +5173,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 61.91,
+      "gasto": 95.18,
       "cpl": 0,
-      "frecuencia": 1.04,
-      "impresiones": 1231
+      "frecuencia": 1.06,
+      "impresiones": 1711
     },
     {
       "clinica": "Milpa Alta",
@@ -5173,10 +5188,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 66.23,
+      "gasto": 130.3,
       "cpl": 0,
-      "frecuencia": 1.26,
-      "impresiones": 1546
+      "frecuencia": 1.31,
+      "impresiones": 2575
     },
     {
       "clinica": "Milpa Alta",
@@ -5188,10 +5203,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 175.88,
+      "gasto": 177.25,
       "cpl": 0,
       "frecuencia": 1.24,
-      "impresiones": 5196
+      "impresiones": 5216
     },
     {
       "clinica": "Milpa Alta",
@@ -5203,10 +5218,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 172.15,
+      "gasto": 174.62,
       "cpl": 0,
       "frecuencia": 1.28,
-      "impresiones": 4572
+      "impresiones": 4598
     },
     {
       "clinica": "Plaza Neza",
@@ -5218,10 +5233,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 103.63,
+      "gasto": 103.66,
       "cpl": 0,
       "frecuencia": 1.14,
-      "impresiones": 1696
+      "impresiones": 1698
     },
     {
       "clinica": "Chalco",
@@ -5233,10 +5248,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 14.18,
+      "gasto": 15.16,
       "cpl": 0,
       "frecuencia": 1.05,
-      "impresiones": 316
+      "impresiones": 337
     },
     {
       "clinica": "Milpa Alta",
@@ -5248,10 +5263,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 60.63,
+      "gasto": 63.42,
       "cpl": 0,
-      "frecuencia": 1.28,
-      "impresiones": 1340
+      "frecuencia": 1.29,
+      "impresiones": 1364
     },
     {
       "clinica": "Plaza Neza",
@@ -5263,25 +5278,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-10",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 23.44,
+      "gasto": 24.61,
       "cpl": 0,
       "frecuencia": 1.15,
-      "impresiones": 473
-    },
-    {
-      "clinica": "Plaza Neza",
-      "campana": "PLAZA NEZA NOVIEMBRE + BUEN FIN",
-      "adset": "PLAZA NEZA ZONA 25-65+",
-      "anuncio": "PLAZA NEZA V7 LOGO 3D - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-10",
-      "es_nuevo": true,
-      "leads": 0,
-      "gasto": 75.3,
-      "cpl": 0,
-      "frecuencia": 1.13,
-      "impresiones": 1352
+      "impresiones": 479
     },
     {
       "clinica": "Tlahuac",
@@ -5293,10 +5293,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 60.5,
+      "gasto": 61.04,
       "cpl": 0,
-      "frecuencia": 1.27,
-      "impresiones": 1200
+      "frecuencia": 1.26,
+      "impresiones": 1208
     },
     {
       "clinica": "Tlahuac",
@@ -5323,10 +5323,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 2.78,
+      "gasto": 2.97,
       "cpl": 0,
       "frecuencia": 1.07,
-      "impresiones": 76
+      "impresiones": 81
     },
     {
       "clinica": "Tlahuac",
@@ -5338,10 +5338,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 4.4,
+      "gasto": 4.42,
       "cpl": 0,
-      "frecuencia": 1.09,
-      "impresiones": 71
+      "frecuencia": 1.11,
+      "impresiones": 72
     },
     {
       "clinica": "Neza",
@@ -5398,10 +5398,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 32.35,
+      "gasto": 50.24,
       "cpl": 0,
-      "frecuencia": 1.17,
-      "impresiones": 537
+      "frecuencia": 1.23,
+      "impresiones": 761
     },
     {
       "clinica": "Ecatepec",
@@ -5413,10 +5413,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 14.19,
+      "gasto": 14.79,
       "cpl": 0,
-      "frecuencia": 1.05,
-      "impresiones": 206
+      "frecuencia": 1.07,
+      "impresiones": 222
     },
     {
       "clinica": "Chalco",
@@ -5443,10 +5443,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 215.65,
+      "gasto": 215.66,
       "cpl": 0,
       "frecuencia": 1.23,
-      "impresiones": 4357
+      "impresiones": 4358
     }
   ],
   "top_ads_franquicias": [
@@ -5459,11 +5459,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-23",
       "es_nuevo": false,
-      "leads": 165,
-      "gasto": 7855.07,
-      "cpl": 47.61,
-      "frecuencia": 1.53,
-      "impresiones": 161033
+      "leads": 173,
+      "gasto": 8198.65,
+      "cpl": 47.39,
+      "frecuencia": 1.55,
+      "impresiones": 165782
     },
     {
       "clinica": "Claveria",
@@ -5474,11 +5474,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-04",
       "es_nuevo": false,
-      "leads": 61,
-      "gasto": 2673.63,
-      "cpl": 43.83,
-      "frecuencia": 1.5,
-      "impresiones": 39025
+      "leads": 63,
+      "gasto": 2783.02,
+      "cpl": 44.17,
+      "frecuencia": 1.51,
+      "impresiones": 40328
     },
     {
       "clinica": "Claveria",
@@ -5505,10 +5505,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-10",
       "es_nuevo": false,
       "leads": 28,
-      "gasto": 1830.24,
-      "cpl": 65.37,
+      "gasto": 1886.18,
+      "cpl": 67.36,
       "frecuencia": 1.66,
-      "impresiones": 21386
+      "impresiones": 21883
     },
     {
       "clinica": "Claveria",
@@ -5520,10 +5520,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-23",
       "es_nuevo": false,
       "leads": 27,
-      "gasto": 1363.1,
-      "cpl": 50.49,
+      "gasto": 1404.34,
+      "cpl": 52.01,
       "frecuencia": 1.37,
-      "impresiones": 27542
+      "impresiones": 28087
     },
     {
       "clinica": "Claveria",
@@ -5535,10 +5535,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 24,
-      "gasto": 419.53,
-      "cpl": 17.48,
-      "frecuencia": 1.64,
-      "impresiones": 6169
+      "gasto": 482.95,
+      "cpl": 20.12,
+      "frecuencia": 1.66,
+      "impresiones": 6631
     },
     {
       "clinica": "Claveria",
@@ -5550,10 +5550,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-23",
       "es_nuevo": false,
       "leads": 21,
-      "gasto": 1027.49,
-      "cpl": 48.93,
+      "gasto": 1038.11,
+      "cpl": 49.43,
       "frecuencia": 1.62,
-      "impresiones": 21537
+      "impresiones": 21747
     },
     {
       "clinica": "Claveria",
@@ -5564,11 +5564,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-29",
       "es_nuevo": false,
-      "leads": 17,
-      "gasto": 528.06,
-      "cpl": 31.06,
-      "frecuencia": 1.54,
-      "impresiones": 8306
+      "leads": 18,
+      "gasto": 549.71,
+      "cpl": 30.54,
+      "frecuencia": 1.55,
+      "impresiones": 8503
+    },
+    {
+      "clinica": "Claveria",
+      "campana": "NOVI CLAVERIA",
+      "adset": "HOMBRO - CHECK",
+      "anuncio": "VID_HOMBRO OLI MARZO",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-03-09",
+      "es_nuevo": false,
+      "leads": 12,
+      "gasto": 246.11,
+      "cpl": 20.51,
+      "frecuencia": 1.29,
+      "impresiones": 3532
     },
     {
       "clinica": "Claveria",
@@ -5580,25 +5595,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 11,
-      "gasto": 1161.81,
-      "cpl": 105.62,
-      "frecuencia": 1.36,
-      "impresiones": 8581
+      "gasto": 1365.93,
+      "cpl": 124.18,
+      "frecuencia": 1.38,
+      "impresiones": 9994
     },
     {
       "clinica": "Claveria",
       "campana": "NOVI CLAVERIA",
-      "adset": "HOMBRO - CHECK",
-      "anuncio": "VID_HOMBRO OLI MARZO",
+      "adset": "NEUROPATIA - CHECK",
+      "anuncio": "VID_ NEUROPATIA TROPICALIZADO _ SEP _ OCT",
       "tipo": "VIDEO",
       "status": "ACTIVE",
-      "created": "2026-03-09",
+      "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 10,
-      "gasto": 224.15,
-      "cpl": 22.41,
-      "frecuencia": 1.29,
-      "impresiones": 3306
+      "gasto": 398.09,
+      "cpl": 39.81,
+      "frecuencia": 1.55,
+      "impresiones": 4585
     },
     {
       "clinica": "Claveria",
@@ -5618,21 +5633,6 @@ MESES_DATA["2026-11"] = {
     {
       "clinica": "Claveria",
       "campana": "NOVI CLAVERIA",
-      "adset": "NEUROPATIA - CHECK",
-      "anuncio": "VID_ NEUROPATIA TROPICALIZADO _ SEP _ OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-09-29",
-      "es_nuevo": false,
-      "leads": 9,
-      "gasto": 389.63,
-      "cpl": 43.29,
-      "frecuencia": 1.55,
-      "impresiones": 4532
-    },
-    {
-      "clinica": "Claveria",
-      "campana": "NOVI CLAVERIA",
       "adset": "ESPALDA - CHECK",
       "anuncio": "VID _ ESPALDA PADECIMIENTOS _ OCT",
       "tipo": "VIDEO",
@@ -5640,10 +5640,40 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-23",
       "es_nuevo": false,
       "leads": 5,
-      "gasto": 122.04,
-      "cpl": 24.41,
-      "frecuencia": 1.39,
-      "impresiones": 1644
+      "gasto": 123.49,
+      "cpl": 24.7,
+      "frecuencia": 1.38,
+      "impresiones": 1661
+    },
+    {
+      "clinica": "Claveria",
+      "campana": "CLAVERÍA NOVIEMBRE + BUEN FIN",
+      "adset": "CLAVERÍA 5 KM 25-65+",
+      "anuncio": "CLAVERÍA V3 COMO LLEGAR - 13 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-13",
+      "es_nuevo": true,
+      "leads": 5,
+      "gasto": 360.54,
+      "cpl": 72.11,
+      "frecuencia": 1.07,
+      "impresiones": 3039
+    },
+    {
+      "clinica": "Claveria",
+      "campana": "CLAVERÍA NOVIEMBRE + BUEN FIN",
+      "adset": "CLAVERÍA 5 KM 25-65+",
+      "anuncio": "CLAVERÍA V4 POSTOPERATORIA - 13 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-13",
+      "es_nuevo": true,
+      "leads": 5,
+      "gasto": 236.97,
+      "cpl": 47.39,
+      "frecuencia": 1.11,
+      "impresiones": 2227
     },
     {
       "clinica": "Claveria",
@@ -5664,16 +5694,16 @@ MESES_DATA["2026-11"] = {
       "clinica": "Claveria",
       "campana": "CLAVERÍA NOVIEMBRE + BUEN FIN",
       "adset": "CLAVERÍA 5 KM 25-65+",
-      "anuncio": "CLAVERÍA V4 POSTOPERATORIA - 13 NOV",
+      "anuncio": "CLAVERÍA V1 ORIGINAL - 13 NOV",
       "tipo": "OTRO",
       "status": "ACTIVE",
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 3,
-      "gasto": 153.12,
-      "cpl": 51.04,
+      "gasto": 341.51,
+      "cpl": 113.84,
       "frecuencia": 1.08,
-      "impresiones": 1501
+      "impresiones": 3281
     },
     {
       "clinica": "Claveria",
@@ -5685,25 +5715,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 143.26,
-      "cpl": 71.63,
-      "frecuencia": 1.55,
-      "impresiones": 2308
-    },
-    {
-      "clinica": "Claveria",
-      "campana": "CLAVERÍA NOVIEMBRE + BUEN FIN",
-      "adset": "CLAVERÍA 5 KM 25-65+",
-      "anuncio": "CLAVERÍA V1 ORIGINAL - 13 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-13",
-      "es_nuevo": true,
-      "leads": 2,
-      "gasto": 255.31,
-      "cpl": 127.66,
-      "frecuencia": 1.05,
-      "impresiones": 2737
+      "gasto": 153.09,
+      "cpl": 76.55,
+      "frecuencia": 1.57,
+      "impresiones": 2375
     },
     {
       "clinica": "Claveria",
@@ -5715,10 +5730,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-02-25",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 1.36,
-      "cpl": 1.36,
-      "frecuencia": 1.13,
-      "impresiones": 17
+      "gasto": 1.83,
+      "cpl": 1.83,
+      "frecuencia": 1.22,
+      "impresiones": 22
     },
     {
       "clinica": "Claveria",
@@ -5737,21 +5752,6 @@ MESES_DATA["2026-11"] = {
     },
     {
       "clinica": "Claveria",
-      "campana": "CLAVERÍA NOVIEMBRE + BUEN FIN",
-      "adset": "CLAVERÍA 5 KM 25-65+",
-      "anuncio": "CLAVERÍA V3 COMO LLEGAR - 13 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-13",
-      "es_nuevo": true,
-      "leads": 1,
-      "gasto": 143.14,
-      "cpl": 143.14,
-      "frecuencia": 1.03,
-      "impresiones": 1050
-    },
-    {
-      "clinica": "Claveria",
       "campana": "NOVI CLAVERIA",
       "adset": "ESPALDA - CHECK",
       "anuncio": "VID _ CIATICA _ JUN",
@@ -5760,10 +5760,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-10",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 0.28,
+      "gasto": 0.9,
       "cpl": 0,
-      "frecuencia": 1.0,
-      "impresiones": 2
+      "frecuencia": 1.33,
+      "impresiones": 4
     },
     {
       "clinica": "Claveria",
@@ -5835,10 +5835,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-24",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 18.49,
+      "gasto": 18.52,
       "cpl": 0,
       "frecuencia": 1.35,
-      "impresiones": 197
+      "impresiones": 198
     },
     {
       "clinica": "Claveria",
@@ -5895,10 +5895,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 13.34,
+      "gasto": 13.46,
       "cpl": 0,
       "frecuencia": 1.42,
-      "impresiones": 240
+      "impresiones": 244
     },
     {
       "clinica": "Claveria",
@@ -5925,10 +5925,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 23.68,
+      "gasto": 24.33,
       "cpl": 0,
-      "frecuencia": 1.04,
-      "impresiones": 235
+      "frecuencia": 1.05,
+      "impresiones": 241
     },
     {
       "clinica": "Claveria",
@@ -5940,10 +5940,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 19.12,
+      "gasto": 19.68,
       "cpl": 0,
-      "frecuencia": 1.03,
-      "impresiones": 157
+      "frecuencia": 1.04,
+      "impresiones": 161
     },
     {
       "clinica": "Claveria",
@@ -5955,10 +5955,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 16.51,
+      "gasto": 16.84,
       "cpl": 0,
-      "frecuencia": 1.02,
-      "impresiones": 143
+      "frecuencia": 1.03,
+      "impresiones": 150
     },
     {
       "clinica": "Valle Dorado",
@@ -5970,10 +5970,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-08-12",
       "es_nuevo": false,
       "leads": 142,
-      "gasto": 4438.39,
+      "gasto": 4439.33,
       "cpl": 31.26,
       "frecuencia": 1.56,
-      "impresiones": 80285
+      "impresiones": 80308
     },
     {
       "clinica": "Valle Dorado",
@@ -5985,10 +5985,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-15",
       "es_nuevo": false,
       "leads": 118,
-      "gasto": 5429.78,
+      "gasto": 5430.46,
       "cpl": 46.02,
       "frecuencia": 1.43,
-      "impresiones": 147014
+      "impresiones": 147050
     },
     {
       "clinica": "Valle Dorado",
@@ -6000,10 +6000,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-05-08",
       "es_nuevo": false,
       "leads": 86,
-      "gasto": 3976.47,
-      "cpl": 46.24,
+      "gasto": 3977.23,
+      "cpl": 46.25,
       "frecuencia": 1.45,
-      "impresiones": 99623
+      "impresiones": 99672
     },
     {
       "clinica": "Valle Dorado",
@@ -6015,10 +6015,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-15",
       "es_nuevo": false,
       "leads": 33,
-      "gasto": 1885.01,
+      "gasto": 1885.08,
       "cpl": 57.12,
       "frecuencia": 1.23,
-      "impresiones": 52466
+      "impresiones": 52475
     },
     {
       "clinica": "Valle Dorado",
@@ -6030,10 +6030,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-15",
       "es_nuevo": false,
       "leads": 26,
-      "gasto": 1352.51,
-      "cpl": 52.02,
+      "gasto": 1353.08,
+      "cpl": 52.04,
       "frecuencia": 1.49,
-      "impresiones": 18419
+      "impresiones": 18428
     },
     {
       "clinica": "Valle Dorado",
@@ -6045,10 +6045,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 15,
-      "gasto": 1063.44,
-      "cpl": 70.9,
+      "gasto": 1068.36,
+      "cpl": 71.22,
       "frecuencia": 1.23,
-      "impresiones": 16580
+      "impresiones": 16629
     },
     {
       "clinica": "Valle Dorado",
@@ -6060,10 +6060,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-02-24",
       "es_nuevo": false,
       "leads": 7,
-      "gasto": 290.95,
-      "cpl": 41.56,
+      "gasto": 291.07,
+      "cpl": 41.58,
       "frecuencia": 1.65,
-      "impresiones": 6129
+      "impresiones": 6133
     },
     {
       "clinica": "Valle Dorado",
@@ -6093,7 +6093,7 @@ MESES_DATA["2026-11"] = {
       "gasto": 272.51,
       "cpl": 54.5,
       "frecuencia": 1.53,
-      "impresiones": 3475
+      "impresiones": 3477
     },
     {
       "clinica": "Valle Dorado",
@@ -6135,10 +6135,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 80.01,
-      "cpl": 40.01,
+      "gasto": 80.5,
+      "cpl": 40.25,
       "frecuencia": 1.1,
-      "impresiones": 1013
+      "impresiones": 1018
     },
     {
       "clinica": "Valle Dorado",
@@ -6183,7 +6183,7 @@ MESES_DATA["2026-11"] = {
       "gasto": 128.17,
       "cpl": 128.17,
       "frecuencia": 1.44,
-      "impresiones": 1655
+      "impresiones": 1656
     },
     {
       "clinica": "Valle Dorado",
@@ -6360,10 +6360,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-03-13",
       "es_nuevo": false,
       "leads": 72,
-      "gasto": 3600.78,
-      "cpl": 50.01,
-      "frecuencia": 1.43,
-      "impresiones": 84431
+      "gasto": 3700.53,
+      "cpl": 51.4,
+      "frecuencia": 1.44,
+      "impresiones": 85756
     },
     {
       "clinica": "Pachuca",
@@ -6374,11 +6374,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-05-14",
       "es_nuevo": false,
-      "leads": 41,
-      "gasto": 1628.3,
-      "cpl": 39.71,
-      "frecuencia": 1.56,
-      "impresiones": 48019
+      "leads": 42,
+      "gasto": 1746.47,
+      "cpl": 41.58,
+      "frecuencia": 1.59,
+      "impresiones": 49963
     },
     {
       "clinica": "Pachuca",
@@ -6389,11 +6389,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-12",
       "es_nuevo": true,
-      "leads": 32,
-      "gasto": 1944.41,
-      "cpl": 60.76,
-      "frecuencia": 1.39,
-      "impresiones": 33563
+      "leads": 35,
+      "gasto": 2486.6,
+      "cpl": 71.05,
+      "frecuencia": 1.4,
+      "impresiones": 43046
     },
     {
       "clinica": "Pachuca",
@@ -6404,11 +6404,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-16",
       "es_nuevo": false,
-      "leads": 23,
-      "gasto": 1057.32,
-      "cpl": 45.97,
+      "leads": 24,
+      "gasto": 1083.75,
+      "cpl": 45.16,
       "frecuencia": 1.82,
-      "impresiones": 23464
+      "impresiones": 23748
     },
     {
       "clinica": "Pachuca",
@@ -6420,10 +6420,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-03-13",
       "es_nuevo": false,
       "leads": 22,
-      "gasto": 831.07,
-      "cpl": 37.78,
-      "frecuencia": 1.63,
-      "impresiones": 20084
+      "gasto": 857.82,
+      "cpl": 38.99,
+      "frecuencia": 1.65,
+      "impresiones": 20449
     },
     {
       "clinica": "Pachuca",
@@ -6435,10 +6435,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 21,
-      "gasto": 669.34,
-      "cpl": 31.87,
+      "gasto": 670.02,
+      "cpl": 31.91,
       "frecuencia": 1.74,
-      "impresiones": 14261
+      "impresiones": 14266
+    },
+    {
+      "clinica": "Pachuca",
+      "campana": "PACHUCA RECUPERADA V2",
+      "adset": "NEUROPATÍA",
+      "anuncio": "VID_ NEUROPATIA PADECIMIENTO _ OCT - 12 OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-10-12",
+      "es_nuevo": false,
+      "leads": 18,
+      "gasto": 633.59,
+      "cpl": 35.2,
+      "frecuencia": 1.59,
+      "impresiones": 13289
     },
     {
       "clinica": "Pachuca",
@@ -6450,25 +6465,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 17,
-      "gasto": 1002.17,
-      "cpl": 58.95,
-      "frecuencia": 1.62,
-      "impresiones": 22466
-    },
-    {
-      "clinica": "Pachuca",
-      "campana": "PACHUCA RECUPERADA V2",
-      "adset": "NEUROPATÍA",
-      "anuncio": "VID_ NEUROPATIA PADECIMIENTO _ OCT - 12 OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-10-12",
-      "es_nuevo": false,
-      "leads": 17,
-      "gasto": 594.39,
-      "cpl": 34.96,
-      "frecuencia": 1.58,
-      "impresiones": 12860
+      "gasto": 1026.9,
+      "cpl": 60.41,
+      "frecuencia": 1.63,
+      "impresiones": 22771
     },
     {
       "clinica": "Pachuca",
@@ -6480,10 +6480,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-05-14",
       "es_nuevo": false,
       "leads": 14,
-      "gasto": 566.59,
-      "cpl": 40.47,
-      "frecuencia": 1.33,
-      "impresiones": 15706
+      "gasto": 638.79,
+      "cpl": 45.63,
+      "frecuencia": 1.35,
+      "impresiones": 17001
     },
     {
       "clinica": "Pachuca",
@@ -6495,10 +6495,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 13,
-      "gasto": 543.34,
-      "cpl": 41.8,
+      "gasto": 566.17,
+      "cpl": 43.55,
       "frecuencia": 1.45,
-      "impresiones": 13846
+      "impresiones": 14142
     },
     {
       "clinica": "Pachuca",
@@ -6510,10 +6510,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-07",
       "es_nuevo": false,
       "leads": 11,
-      "gasto": 694.68,
-      "cpl": 63.15,
-      "frecuencia": 1.32,
-      "impresiones": 29922
+      "gasto": 744.5,
+      "cpl": 67.68,
+      "frecuencia": 1.35,
+      "impresiones": 31114
     },
     {
       "clinica": "Pachuca",
@@ -6525,10 +6525,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-03-13",
       "es_nuevo": false,
       "leads": 8,
-      "gasto": 273.17,
-      "cpl": 34.15,
-      "frecuencia": 1.26,
-      "impresiones": 6102
+      "gasto": 305.94,
+      "cpl": 38.24,
+      "frecuencia": 1.3,
+      "impresiones": 6594
     },
     {
       "clinica": "Pachuca",
@@ -6540,10 +6540,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 5,
-      "gasto": 131.14,
-      "cpl": 26.23,
+      "gasto": 131.2,
+      "cpl": 26.24,
       "frecuencia": 1.57,
-      "impresiones": 2142
+      "impresiones": 2144
     },
     {
       "clinica": "Pachuca",
@@ -6563,6 +6563,21 @@ MESES_DATA["2026-11"] = {
     {
       "clinica": "Pachuca",
       "campana": "PACHUCA RECUPERADA V2",
+      "adset": "ESPALDA",
+      "anuncio": "EST - ESPALDA - OCT - 14 OCT",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-10-14",
+      "es_nuevo": false,
+      "leads": 4,
+      "gasto": 76.88,
+      "cpl": 19.22,
+      "frecuencia": 1.34,
+      "impresiones": 1072
+    },
+    {
+      "clinica": "Pachuca",
+      "campana": "PACHUCA RECUPERADA V2",
       "adset": "NEUROPATÍA",
       "anuncio": "VID-NEUROPATIAV2",
       "tipo": "VIDEO",
@@ -6570,25 +6585,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-03-13",
       "es_nuevo": false,
       "leads": 3,
-      "gasto": 136.11,
-      "cpl": 45.37,
-      "frecuencia": 1.59,
-      "impresiones": 2335
-    },
-    {
-      "clinica": "Pachuca",
-      "campana": "PACHUCA RECUPERADA V2",
-      "adset": "ESPALDA",
-      "anuncio": "EST - ESPALDA - OCT - 14 OCT",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-10-14",
-      "es_nuevo": false,
-      "leads": 3,
-      "gasto": 71.57,
-      "cpl": 23.86,
-      "frecuencia": 1.33,
-      "impresiones": 1001
+      "gasto": 155.43,
+      "cpl": 51.81,
+      "frecuencia": 1.61,
+      "impresiones": 2513
     },
     {
       "clinica": "Pachuca",
@@ -6600,10 +6600,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 3,
-      "gasto": 83.76,
-      "cpl": 27.92,
-      "frecuencia": 1.18,
-      "impresiones": 923
+      "gasto": 114.87,
+      "cpl": 38.29,
+      "frecuencia": 1.2,
+      "impresiones": 1226
+    },
+    {
+      "clinica": "Pachuca",
+      "campana": "PACHUCA RECUPERADA V2",
+      "adset": "RODILLA",
+      "anuncio": "VID - RODILLA JUN",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-06-18",
+      "es_nuevo": false,
+      "leads": 2,
+      "gasto": 22.62,
+      "cpl": 11.31,
+      "frecuencia": 1.09,
+      "impresiones": 405
     },
     {
       "clinica": "Pachuca",
@@ -6615,10 +6630,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-16",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 44.67,
-      "cpl": 22.34,
+      "gasto": 45.45,
+      "cpl": 22.73,
       "frecuencia": 1.41,
-      "impresiones": 776
+      "impresiones": 786
     },
     {
       "clinica": "Pachuca",
@@ -6630,10 +6645,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 187.55,
-      "cpl": 93.78,
+      "gasto": 194.26,
+      "cpl": 97.13,
       "frecuencia": 1.3,
-      "impresiones": 2690
+      "impresiones": 2727
     },
     {
       "clinica": "Pachuca",
@@ -6663,7 +6678,7 @@ MESES_DATA["2026-11"] = {
       "gasto": 51.11,
       "cpl": 51.11,
       "frecuencia": 1.25,
-      "impresiones": 664
+      "impresiones": 665
     },
     {
       "clinica": "Pachuca",
@@ -6675,25 +6690,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-16",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 13.64,
-      "cpl": 13.64,
-      "frecuencia": 1.09,
-      "impresiones": 127
-    },
-    {
-      "clinica": "Pachuca",
-      "campana": "PACHUCA RECUPERADA V2",
-      "adset": "RODILLA",
-      "anuncio": "VID - RODILLA JUN",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-06-18",
-      "es_nuevo": false,
-      "leads": 1,
-      "gasto": 16.29,
-      "cpl": 16.29,
-      "frecuencia": 1.1,
-      "impresiones": 298
+      "gasto": 15.83,
+      "cpl": 15.83,
+      "frecuencia": 1.08,
+      "impresiones": 152
     },
     {
       "clinica": "Pachuca",
@@ -6705,10 +6705,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-26",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 39.52,
-      "cpl": 39.52,
-      "frecuencia": 1.12,
-      "impresiones": 435
+      "gasto": 40.05,
+      "cpl": 40.05,
+      "frecuencia": 1.11,
+      "impresiones": 445
     },
     {
       "clinica": "Pachuca",
@@ -6720,10 +6720,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-12",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 63.93,
-      "cpl": 63.93,
-      "frecuencia": 1.51,
-      "impresiones": 1063
+      "gasto": 73.39,
+      "cpl": 73.39,
+      "frecuencia": 1.52,
+      "impresiones": 1169
     },
     {
       "clinica": "Pachuca",
@@ -6735,10 +6735,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 215.54,
-      "cpl": 215.54,
+      "gasto": 236.73,
+      "cpl": 236.73,
       "frecuencia": 1.25,
-      "impresiones": 3938
+      "impresiones": 4186
     },
     {
       "clinica": "Pachuca",
@@ -6750,10 +6750,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-18",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 3.86,
+      "gasto": 13.93,
       "cpl": 0,
-      "frecuencia": 1.08,
-      "impresiones": 64
+      "frecuencia": 1.07,
+      "impresiones": 159
     },
     {
       "clinica": "Pachuca",
@@ -6780,10 +6780,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-26",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 23.22,
+      "gasto": 23.53,
       "cpl": 0,
-      "frecuencia": 1.11,
-      "impresiones": 243
+      "frecuencia": 1.1,
+      "impresiones": 253
     },
     {
       "clinica": "Pachuca",
@@ -6795,10 +6795,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-26",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 50.22,
+      "gasto": 51.69,
       "cpl": 0,
       "frecuencia": 1.07,
-      "impresiones": 1062
+      "impresiones": 1119
     },
     {
       "clinica": "Pachuca",
@@ -6810,10 +6810,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-07",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 3.11,
+      "gasto": 3.12,
       "cpl": 0,
       "frecuencia": 1.23,
-      "impresiones": 106
+      "impresiones": 107
     },
     {
       "clinica": "Pachuca",
@@ -6825,10 +6825,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-12",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 94.25,
+      "gasto": 104.9,
       "cpl": 0,
       "frecuencia": 1.53,
-      "impresiones": 1815
+      "impresiones": 1903
     },
     {
       "clinica": "Pachuca",
@@ -6840,10 +6840,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 22.76,
+      "gasto": 29.64,
       "cpl": 0,
-      "frecuencia": 1.19,
-      "impresiones": 389
+      "frecuencia": 1.24,
+      "impresiones": 510
     },
     {
       "clinica": "Pachuca",
@@ -6855,10 +6855,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 84.83,
+      "gasto": 90.53,
       "cpl": 0,
-      "frecuencia": 1.12,
-      "impresiones": 1422
+      "frecuencia": 1.13,
+      "impresiones": 1486
     },
     {
       "clinica": "Pachuca",
@@ -6870,10 +6870,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 17.06,
+      "gasto": 19.55,
       "cpl": 0,
-      "frecuencia": 1.07,
-      "impresiones": 232
+      "frecuencia": 1.08,
+      "impresiones": 240
     },
     {
       "clinica": "Pachuca",
@@ -6885,10 +6885,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 43.42,
+      "gasto": 51.73,
       "cpl": 0,
-      "frecuencia": 1.09,
-      "impresiones": 820
+      "frecuencia": 1.08,
+      "impresiones": 899
     },
     {
       "clinica": "Satelite",
@@ -6899,11 +6899,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-14",
       "es_nuevo": false,
-      "leads": 50,
-      "gasto": 2792.61,
-      "cpl": 55.85,
-      "frecuencia": 1.5,
-      "impresiones": 24716
+      "leads": 52,
+      "gasto": 2926.71,
+      "cpl": 56.28,
+      "frecuencia": 1.52,
+      "impresiones": 25518
     },
     {
       "clinica": "Satelite",
@@ -6914,11 +6914,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-23",
       "es_nuevo": false,
-      "leads": 48,
-      "gasto": 2632.26,
-      "cpl": 54.84,
-      "frecuencia": 1.36,
-      "impresiones": 59236
+      "leads": 50,
+      "gasto": 2813.34,
+      "cpl": 56.27,
+      "frecuencia": 1.35,
+      "impresiones": 62522
     },
     {
       "clinica": "Satelite",
@@ -6929,11 +6929,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2025-12-22",
       "es_nuevo": false,
-      "leads": 43,
-      "gasto": 1460.28,
-      "cpl": 33.96,
-      "frecuencia": 1.32,
-      "impresiones": 30870
+      "leads": 46,
+      "gasto": 1559.07,
+      "cpl": 33.89,
+      "frecuencia": 1.33,
+      "impresiones": 32204
     },
     {
       "clinica": "Satelite",
@@ -6959,11 +6959,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-03",
       "es_nuevo": false,
-      "leads": 30,
-      "gasto": 535.93,
-      "cpl": 17.86,
+      "leads": 33,
+      "gasto": 624.26,
+      "cpl": 18.92,
       "frecuencia": 1.64,
-      "impresiones": 7305
+      "impresiones": 8362
     },
     {
       "clinica": "Satelite",
@@ -6975,10 +6975,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-11",
       "es_nuevo": false,
       "leads": 29,
-      "gasto": 1405.9,
-      "cpl": 48.48,
-      "frecuencia": 1.24,
-      "impresiones": 38277
+      "gasto": 1491.74,
+      "cpl": 51.44,
+      "frecuencia": 1.25,
+      "impresiones": 40012
+    },
+    {
+      "clinica": "Satelite",
+      "campana": "SATELITE NEW",
+      "adset": "NEUROPATIA",
+      "anuncio": "ACU - NEU - VID  - SEPT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2025-12-22",
+      "es_nuevo": false,
+      "leads": 26,
+      "gasto": 1119.92,
+      "cpl": 43.07,
+      "frecuencia": 1.84,
+      "impresiones": 16486
     },
     {
       "clinica": "Satelite",
@@ -6990,25 +7005,10 @@ MESES_DATA["2026-11"] = {
       "created": "2025-12-22",
       "es_nuevo": false,
       "leads": 26,
-      "gasto": 771.63,
-      "cpl": 29.68,
-      "frecuencia": 2.08,
-      "impresiones": 8699
-    },
-    {
-      "clinica": "Satelite",
-      "campana": "SATELITE NEW",
-      "adset": "NEUROPATIA",
-      "anuncio": "ACU - NEU - VID  - SEPT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2025-12-22",
-      "es_nuevo": false,
-      "leads": 25,
-      "gasto": 1083.09,
-      "cpl": 43.32,
-      "frecuencia": 1.83,
-      "impresiones": 16187
+      "gasto": 834.13,
+      "cpl": 32.08,
+      "frecuencia": 2.06,
+      "impresiones": 9160
     },
     {
       "clinica": "Satelite",
@@ -7019,11 +7019,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2025-12-22",
       "es_nuevo": false,
-      "leads": 17,
-      "gasto": 788.79,
-      "cpl": 46.4,
-      "frecuencia": 1.45,
-      "impresiones": 10821
+      "leads": 20,
+      "gasto": 874.97,
+      "cpl": 43.75,
+      "frecuencia": 1.47,
+      "impresiones": 11311
     },
     {
       "clinica": "Satelite",
@@ -7035,10 +7035,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-19",
       "es_nuevo": false,
       "leads": 17,
-      "gasto": 853.98,
-      "cpl": 50.23,
-      "frecuencia": 1.51,
-      "impresiones": 18914
+      "gasto": 876.66,
+      "cpl": 51.57,
+      "frecuencia": 1.52,
+      "impresiones": 19246
     },
     {
       "clinica": "Satelite",
@@ -7049,11 +7049,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-24",
       "es_nuevo": false,
-      "leads": 8,
-      "gasto": 458.55,
-      "cpl": 57.32,
+      "leads": 9,
+      "gasto": 474.33,
+      "cpl": 52.7,
       "frecuencia": 1.86,
-      "impresiones": 6956
+      "impresiones": 7073
     },
     {
       "clinica": "Satelite",
@@ -7064,11 +7064,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2025-12-22",
       "es_nuevo": false,
-      "leads": 7,
-      "gasto": 167.8,
-      "cpl": 23.97,
-      "frecuencia": 1.78,
-      "impresiones": 2243
+      "leads": 8,
+      "gasto": 201.62,
+      "cpl": 25.2,
+      "frecuencia": 1.77,
+      "impresiones": 2547
     },
     {
       "clinica": "Satelite",
@@ -7095,10 +7095,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-05-16",
       "es_nuevo": false,
       "leads": 6,
-      "gasto": 241.82,
-      "cpl": 40.3,
+      "gasto": 252.43,
+      "cpl": 42.07,
       "frecuencia": 1.48,
-      "impresiones": 3916
+      "impresiones": 4025
     },
     {
       "clinica": "Satelite",
@@ -7109,11 +7109,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2025-12-22",
       "es_nuevo": false,
-      "leads": 4,
-      "gasto": 134.58,
-      "cpl": 33.65,
-      "frecuencia": 1.54,
-      "impresiones": 1913
+      "leads": 5,
+      "gasto": 140.95,
+      "cpl": 28.19,
+      "frecuencia": 1.55,
+      "impresiones": 1967
     },
     {
       "clinica": "Satelite",
@@ -7125,10 +7125,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-23",
       "es_nuevo": false,
       "leads": 4,
-      "gasto": 141.75,
-      "cpl": 35.44,
-      "frecuencia": 1.31,
-      "impresiones": 2927
+      "gasto": 158.78,
+      "cpl": 39.7,
+      "frecuencia": 1.33,
+      "impresiones": 3098
     },
     {
       "clinica": "Satelite",
@@ -7140,10 +7140,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-23",
       "es_nuevo": false,
       "leads": 3,
-      "gasto": 295.66,
-      "cpl": 98.55,
+      "gasto": 313.38,
+      "cpl": 104.46,
       "frecuencia": 1.54,
-      "impresiones": 4738
+      "impresiones": 4946
     },
     {
       "clinica": "Satelite",
@@ -7155,10 +7155,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-19",
       "es_nuevo": false,
       "leads": 3,
-      "gasto": 89.28,
-      "cpl": 29.76,
+      "gasto": 89.89,
+      "cpl": 29.96,
       "frecuencia": 1.38,
-      "impresiones": 1438
+      "impresiones": 1457
     },
     {
       "clinica": "Satelite",
@@ -7170,10 +7170,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 3,
-      "gasto": 162.65,
-      "cpl": 54.22,
-      "frecuencia": 1.29,
-      "impresiones": 1531
+      "gasto": 211.37,
+      "cpl": 70.46,
+      "frecuencia": 1.33,
+      "impresiones": 1889
     },
     {
       "clinica": "Satelite",
@@ -7185,10 +7185,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-19",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 110.02,
-      "cpl": 55.01,
+      "gasto": 115.46,
+      "cpl": 57.73,
       "frecuencia": 1.48,
-      "impresiones": 1193
+      "impresiones": 1248
     },
     {
       "clinica": "Satelite",
@@ -7200,10 +7200,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-24",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 80.81,
-      "cpl": 40.41,
-      "frecuencia": 1.45,
-      "impresiones": 1206
+      "gasto": 89.46,
+      "cpl": 44.73,
+      "frecuencia": 1.47,
+      "impresiones": 1286
+    },
+    {
+      "clinica": "Satelite",
+      "campana": "SATELITE NOVIEMBRE + BUEN FIN",
+      "adset": "SATELITE 8 KM 25-65+",
+      "anuncio": "SATÉLITE V6 CORTA - 13 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-13",
+      "es_nuevo": true,
+      "leads": 2,
+      "gasto": 322.67,
+      "cpl": 161.34,
+      "frecuencia": 1.18,
+      "impresiones": 2838
     },
     {
       "clinica": "Satelite",
@@ -7215,10 +7230,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-23",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 75.91,
-      "cpl": 75.91,
+      "gasto": 78.01,
+      "cpl": 78.01,
       "frecuencia": 1.41,
-      "impresiones": 1074
+      "impresiones": 1082
     },
     {
       "clinica": "Satelite",
@@ -7230,10 +7245,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 16.95,
-      "cpl": 16.95,
-      "frecuencia": 1.56,
-      "impresiones": 225
+      "gasto": 17.39,
+      "cpl": 17.39,
+      "frecuencia": 1.57,
+      "impresiones": 234
     },
     {
       "clinica": "Satelite",
@@ -7245,25 +7260,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-19",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 89.75,
-      "cpl": 89.75,
-      "frecuencia": 1.37,
-      "impresiones": 1795
+      "gasto": 100.73,
+      "cpl": 100.73,
+      "frecuencia": 1.38,
+      "impresiones": 2000
     },
     {
       "clinica": "Satelite",
       "campana": "SATELITE NOVIEMBRE + BUEN FIN",
-      "adset": "SATELITE 8 KM 25-65+",
-      "anuncio": "SATÉLITE V6 CORTA - 13 NOV",
+      "adset": "SATELITE BUEN FIN 13-17 NOV 25-65+",
+      "anuncio": "SATÉLITE BUEN FIN - 13 NOV",
       "tipo": "OTRO",
       "status": "ACTIVE",
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 216.8,
-      "cpl": 216.8,
-      "frecuencia": 1.16,
-      "impresiones": 2038
+      "gasto": 96.52,
+      "cpl": 96.52,
+      "frecuencia": 1.28,
+      "impresiones": 818
     },
     {
       "clinica": "Satelite",
@@ -7290,10 +7305,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-03-30",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 23.57,
+      "gasto": 29.27,
       "cpl": 0,
-      "frecuencia": 1.25,
-      "impresiones": 264
+      "frecuencia": 1.28,
+      "impresiones": 304
     },
     {
       "clinica": "Satelite",
@@ -7305,10 +7320,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-03",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 48.03,
+      "gasto": 53.91,
       "cpl": 0,
-      "frecuencia": 1.45,
-      "impresiones": 362
+      "frecuencia": 1.47,
+      "impresiones": 395
     },
     {
       "clinica": "Satelite",
@@ -7320,10 +7335,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-24",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 32.67,
+      "gasto": 42.57,
       "cpl": 0,
-      "frecuencia": 1.31,
-      "impresiones": 504
+      "frecuencia": 1.36,
+      "impresiones": 584
     },
     {
       "clinica": "Satelite",
@@ -7335,10 +7350,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-24",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 6.71,
+      "gasto": 7.78,
       "cpl": 0,
-      "frecuencia": 1.25,
-      "impresiones": 35
+      "frecuencia": 1.28,
+      "impresiones": 37
     },
     {
       "clinica": "Satelite",
@@ -7350,25 +7365,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 8.53,
+      "gasto": 8.54,
       "cpl": 0,
       "frecuencia": 1.18,
-      "impresiones": 131
-    },
-    {
-      "clinica": "Satelite",
-      "campana": "SATELITE NOVIEMBRE + BUEN FIN",
-      "adset": "SATELITE BUEN FIN 13-17 NOV 25-65+",
-      "anuncio": "SATÉLITE BUEN FIN - 13 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-13",
-      "es_nuevo": true,
-      "leads": 0,
-      "gasto": 74.35,
-      "cpl": 0,
-      "frecuencia": 1.27,
-      "impresiones": 656
+      "impresiones": 132
     },
     {
       "clinica": "Satelite",
@@ -7410,10 +7410,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 63.72,
+      "gasto": 74.08,
       "cpl": 0,
-      "frecuencia": 1.15,
-      "impresiones": 530
+      "frecuencia": 1.18,
+      "impresiones": 555
     },
     {
       "clinica": "San Juan del Rio",
@@ -7424,11 +7424,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-19",
       "es_nuevo": false,
-      "leads": 92,
-      "gasto": 6832.97,
-      "cpl": 74.27,
-      "frecuencia": 2.4,
-      "impresiones": 229022
+      "leads": 93,
+      "gasto": 7065.58,
+      "cpl": 75.97,
+      "frecuencia": 2.41,
+      "impresiones": 234096
     },
     {
       "clinica": "San Juan del Rio",
@@ -7440,10 +7440,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-03",
       "es_nuevo": false,
       "leads": 53,
-      "gasto": 1512.86,
-      "cpl": 28.54,
+      "gasto": 1522.05,
+      "cpl": 28.72,
       "frecuencia": 1.73,
-      "impresiones": 44022
+      "impresiones": 44210
     },
     {
       "clinica": "San Juan del Rio",
@@ -7455,10 +7455,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-11",
       "es_nuevo": false,
       "leads": 41,
-      "gasto": 2419.01,
-      "cpl": 59.0,
-      "frecuencia": 1.55,
-      "impresiones": 87909
+      "gasto": 2487.05,
+      "cpl": 60.66,
+      "frecuencia": 1.56,
+      "impresiones": 89516
     },
     {
       "clinica": "San Juan del Rio",
@@ -7473,7 +7473,7 @@ MESES_DATA["2026-11"] = {
       "gasto": 1255.1,
       "cpl": 39.22,
       "frecuencia": 1.59,
-      "impresiones": 39607
+      "impresiones": 39609
     },
     {
       "clinica": "San Juan del Rio",
@@ -7484,11 +7484,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-29",
       "es_nuevo": false,
-      "leads": 21,
-      "gasto": 794.78,
-      "cpl": 37.85,
-      "frecuencia": 1.34,
-      "impresiones": 38189
+      "leads": 23,
+      "gasto": 835.06,
+      "cpl": 36.31,
+      "frecuencia": 1.35,
+      "impresiones": 39486
     },
     {
       "clinica": "San Juan del Rio",
@@ -7499,11 +7499,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-06-30",
       "es_nuevo": false,
-      "leads": 20,
-      "gasto": 935.97,
-      "cpl": 46.8,
+      "leads": 21,
+      "gasto": 965.32,
+      "cpl": 45.97,
       "frecuencia": 1.63,
-      "impresiones": 25106
+      "impresiones": 25612
     },
     {
       "clinica": "San Juan del Rio",
@@ -7514,11 +7514,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-29",
       "es_nuevo": false,
-      "leads": 16,
-      "gasto": 666.86,
-      "cpl": 41.68,
-      "frecuencia": 1.59,
-      "impresiones": 18874
+      "leads": 18,
+      "gasto": 725.46,
+      "cpl": 40.3,
+      "frecuencia": 1.61,
+      "impresiones": 19675
     },
     {
       "clinica": "San Juan del Rio",
@@ -7529,11 +7529,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-02",
       "es_nuevo": false,
-      "leads": 11,
-      "gasto": 635.95,
-      "cpl": 57.81,
-      "frecuencia": 2.16,
-      "impresiones": 11664
+      "leads": 13,
+      "gasto": 692.35,
+      "cpl": 53.26,
+      "frecuencia": 2.18,
+      "impresiones": 12118
     },
     {
       "clinica": "San Juan del Rio",
@@ -7545,10 +7545,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-10",
       "es_nuevo": false,
       "leads": 8,
-      "gasto": 418.58,
-      "cpl": 52.32,
-      "frecuencia": 1.37,
-      "impresiones": 12792
+      "gasto": 446.84,
+      "cpl": 55.85,
+      "frecuencia": 1.38,
+      "impresiones": 13297
     },
     {
       "clinica": "San Juan del Rio",
@@ -7560,10 +7560,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-30",
       "es_nuevo": false,
       "leads": 7,
-      "gasto": 218.93,
-      "cpl": 31.28,
+      "gasto": 219.23,
+      "cpl": 31.32,
       "frecuencia": 1.68,
-      "impresiones": 4677
+      "impresiones": 4702
     },
     {
       "clinica": "San Juan del Rio",
@@ -7590,10 +7590,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-03",
       "es_nuevo": false,
       "leads": 5,
-      "gasto": 273.41,
-      "cpl": 54.68,
+      "gasto": 274.38,
+      "cpl": 54.88,
       "frecuencia": 1.67,
-      "impresiones": 6812
+      "impresiones": 6831
     },
     {
       "clinica": "San Juan del Rio",
@@ -7605,10 +7605,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-10",
       "es_nuevo": false,
       "leads": 5,
-      "gasto": 126.58,
-      "cpl": 25.32,
-      "frecuencia": 1.31,
-      "impresiones": 5263
+      "gasto": 132.9,
+      "cpl": 26.58,
+      "frecuencia": 1.32,
+      "impresiones": 5438
     },
     {
       "clinica": "San Juan del Rio",
@@ -7620,10 +7620,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-30",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 63.16,
-      "cpl": 31.58,
+      "gasto": 63.31,
+      "cpl": 31.66,
       "frecuencia": 1.21,
-      "impresiones": 1632
+      "impresiones": 1636
     },
     {
       "clinica": "San Juan del Rio",
@@ -7650,10 +7650,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-02",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 16.81,
-      "cpl": 8.4,
-      "frecuencia": 1.14,
-      "impresiones": 327
+      "gasto": 17.95,
+      "cpl": 8.97,
+      "frecuencia": 1.16,
+      "impresiones": 350
     },
     {
       "clinica": "San Juan del Rio",
@@ -7695,10 +7695,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-30",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 6.51,
-      "cpl": 6.51,
+      "gasto": 13.99,
+      "cpl": 13.99,
       "frecuencia": 1.22,
-      "impresiones": 182
+      "impresiones": 229
     },
     {
       "clinica": "San Juan del Rio",
@@ -7725,10 +7725,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-30",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 8.27,
+      "gasto": 8.52,
       "cpl": 0,
-      "frecuencia": 1.1,
-      "impresiones": 170
+      "frecuencia": 1.11,
+      "impresiones": 176
     },
     {
       "clinica": "San Juan del Rio",
@@ -7785,10 +7785,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-30",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 8.01,
+      "gasto": 8.27,
       "cpl": 0,
       "frecuencia": 1.09,
-      "impresiones": 170
+      "impresiones": 173
     },
     {
       "clinica": "San Juan del Rio",
@@ -7830,10 +7830,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-30",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 3.16,
+      "gasto": 6.34,
       "cpl": 0,
-      "frecuencia": 1.08,
-      "impresiones": 80
+      "frecuencia": 1.12,
+      "impresiones": 113
     },
     {
       "clinica": "San Juan del Rio",
@@ -7847,8 +7847,8 @@ MESES_DATA["2026-11"] = {
       "leads": 0,
       "gasto": 0.6,
       "cpl": 0,
-      "frecuencia": 1.11,
-      "impresiones": 21
+      "frecuencia": 1.1,
+      "impresiones": 22
     },
     {
       "clinica": "San Juan del Rio",
@@ -7890,10 +7890,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-30",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 1.47,
+      "gasto": 1.48,
       "cpl": 0,
       "frecuencia": 1.08,
-      "impresiones": 40
+      "impresiones": 41
     },
     {
       "clinica": "San Juan del Rio",
@@ -7995,10 +7995,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-02",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 3.37,
+      "gasto": 6.18,
       "cpl": 0,
-      "frecuencia": 1.14,
-      "impresiones": 89
+      "frecuencia": 1.17,
+      "impresiones": 132
     },
     {
       "clinica": "San Juan del Rio",
@@ -8010,10 +8010,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-02",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 0.22,
+      "gasto": 0.59,
       "cpl": 0,
-      "frecuencia": 1.0,
-      "impresiones": 4
+      "frecuencia": 1.12,
+      "impresiones": 9
     },
     {
       "clinica": "San Juan del Rio",
@@ -8055,10 +8055,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-02",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 0.55,
+      "gasto": 0.89,
       "cpl": 0,
-      "frecuencia": 1.0,
-      "impresiones": 14
+      "frecuencia": 1.12,
+      "impresiones": 19
     },
     {
       "clinica": "San Juan del Rio",
@@ -8070,10 +8070,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-02",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 0.05,
+      "gasto": 0.98,
       "cpl": 0,
       "frecuencia": 1.0,
-      "impresiones": 2
+      "impresiones": 13
     },
     {
       "clinica": "San Juan del Rio",
@@ -8085,10 +8085,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-02",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 2.69,
+      "gasto": 5.61,
       "cpl": 0,
-      "frecuencia": 1.0,
-      "impresiones": 47
+      "frecuencia": 1.04,
+      "impresiones": 73
     },
     {
       "clinica": "San Juan del Rio",
@@ -8115,10 +8115,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-02",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 21.59,
+      "gasto": 31.2,
       "cpl": 0,
-      "frecuencia": 1.11,
-      "impresiones": 407
+      "frecuencia": 1.12,
+      "impresiones": 533
     },
     {
       "clinica": "San Juan del Rio",
@@ -8130,10 +8130,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-02",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 1.09,
+      "gasto": 26.74,
       "cpl": 0,
-      "frecuencia": 1.0,
-      "impresiones": 39
+      "frecuencia": 1.11,
+      "impresiones": 272
     },
     {
       "clinica": "San Juan del Rio",
@@ -8145,10 +8145,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-29",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 41.84,
+      "gasto": 42.82,
       "cpl": 0,
-      "frecuencia": 1.38,
-      "impresiones": 1376
+      "frecuencia": 1.39,
+      "impresiones": 1416
     },
     {
       "clinica": "San Juan del Rio",
@@ -8190,10 +8190,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-10",
       "es_nuevo": false,
       "leads": 112,
-      "gasto": 2483.22,
-      "cpl": 22.17,
+      "gasto": 2484.02,
+      "cpl": 22.18,
       "frecuencia": 1.67,
-      "impresiones": 59419
+      "impresiones": 59460
     },
     {
       "clinica": "Queretaro",
@@ -8204,11 +8204,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-03",
       "es_nuevo": false,
-      "leads": 96,
-      "gasto": 2135.5,
-      "cpl": 22.24,
+      "leads": 100,
+      "gasto": 2257.11,
+      "cpl": 22.57,
       "frecuencia": 1.52,
-      "impresiones": 72675
+      "impresiones": 75350
     },
     {
       "clinica": "Queretaro",
@@ -8220,10 +8220,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 81,
-      "gasto": 2838.87,
-      "cpl": 35.05,
-      "frecuencia": 1.8,
-      "impresiones": 45794
+      "gasto": 2912.53,
+      "cpl": 35.96,
+      "frecuencia": 1.81,
+      "impresiones": 46649
     },
     {
       "clinica": "Queretaro",
@@ -8234,11 +8234,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-08-11",
       "es_nuevo": false,
-      "leads": 76,
-      "gasto": 1663.5,
-      "cpl": 21.89,
-      "frecuencia": 2.05,
-      "impresiones": 51987
+      "leads": 79,
+      "gasto": 1710.32,
+      "cpl": 21.65,
+      "frecuencia": 2.06,
+      "impresiones": 52837
+    },
+    {
+      "clinica": "Queretaro",
+      "campana": "QUÉRETARO 2.0 SEP",
+      "adset": "ESPALDA",
+      "anuncio": "VID - Estudio_Completo_Columna - Copia",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-09-03",
+      "es_nuevo": false,
+      "leads": 18,
+      "gasto": 418.51,
+      "cpl": 23.25,
+      "frecuencia": 1.25,
+      "impresiones": 5739
     },
     {
       "clinica": "Queretaro",
@@ -8250,25 +8265,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-03",
       "es_nuevo": false,
       "leads": 18,
-      "gasto": 443.58,
-      "cpl": 24.64,
+      "gasto": 443.71,
+      "cpl": 24.65,
       "frecuencia": 1.5,
-      "impresiones": 8398
-    },
-    {
-      "clinica": "Queretaro",
-      "campana": "QUÉRETARO 2.0 SEP",
-      "adset": "ESPALDA",
-      "anuncio": "VID - Estudio_Completo_Columna - Copia",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-09-03",
-      "es_nuevo": false,
-      "leads": 17,
-      "gasto": 401.29,
-      "cpl": 23.61,
-      "frecuencia": 1.25,
-      "impresiones": 5640
+      "impresiones": 8408
     },
     {
       "clinica": "Queretaro",
@@ -8280,10 +8280,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-02",
       "es_nuevo": false,
       "leads": 14,
-      "gasto": 374.19,
-      "cpl": 26.73,
+      "gasto": 376.35,
+      "cpl": 26.88,
       "frecuencia": 1.49,
-      "impresiones": 8393
+      "impresiones": 8426
+    },
+    {
+      "clinica": "Queretaro",
+      "campana": "QUERÉTARO NOVIEMBRE + BUEN FIN",
+      "adset": "QUERÉTARO 8 KM 25-65+",
+      "anuncio": "QUERÉTARO V3 CORTA - 13 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-13",
+      "es_nuevo": true,
+      "leads": 14,
+      "gasto": 928.27,
+      "cpl": 66.3,
+      "frecuencia": 1.33,
+      "impresiones": 13682
     },
     {
       "clinica": "Queretaro",
@@ -8295,25 +8310,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-03",
       "es_nuevo": false,
       "leads": 12,
-      "gasto": 203.64,
-      "cpl": 16.97,
+      "gasto": 203.78,
+      "cpl": 16.98,
       "frecuencia": 1.64,
-      "impresiones": 4532
-    },
-    {
-      "clinica": "Queretaro",
-      "campana": "QUERÉTARO NOVIEMBRE + BUEN FIN",
-      "adset": "QUERÉTARO 8 KM 25-65+",
-      "anuncio": "QUERÉTARO V3 CORTA - 13 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-13",
-      "es_nuevo": true,
-      "leads": 9,
-      "gasto": 651.9,
-      "cpl": 72.43,
-      "frecuencia": 1.28,
-      "impresiones": 9880
+      "impresiones": 4539
     },
     {
       "clinica": "Queretaro",
@@ -8358,7 +8358,7 @@ MESES_DATA["2026-11"] = {
       "gasto": 85.5,
       "cpl": 17.1,
       "frecuencia": 1.47,
-      "impresiones": 1512
+      "impresiones": 1513
     },
     {
       "clinica": "Queretaro",
@@ -8370,10 +8370,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-03",
       "es_nuevo": false,
       "leads": 4,
-      "gasto": 157.8,
-      "cpl": 39.45,
-      "frecuencia": 1.44,
-      "impresiones": 3329
+      "gasto": 165.77,
+      "cpl": 41.44,
+      "frecuencia": 1.45,
+      "impresiones": 3401
     },
     {
       "clinica": "Queretaro",
@@ -8384,11 +8384,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-13",
       "es_nuevo": true,
-      "leads": 3,
-      "gasto": 226.92,
-      "cpl": 75.64,
-      "frecuencia": 1.23,
-      "impresiones": 3104
+      "leads": 4,
+      "gasto": 259.92,
+      "cpl": 64.98,
+      "frecuencia": 1.28,
+      "impresiones": 3514
     },
     {
       "clinica": "Queretaro",
@@ -8400,10 +8400,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 150.7,
-      "cpl": 75.35,
+      "gasto": 150.72,
+      "cpl": 75.36,
       "frecuencia": 1.15,
-      "impresiones": 2321
+      "impresiones": 2327
     },
     {
       "clinica": "Queretaro",
@@ -8415,10 +8415,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 232.25,
-      "cpl": 116.12,
-      "frecuencia": 1.21,
-      "impresiones": 3555
+      "gasto": 233.99,
+      "cpl": 117.0,
+      "frecuencia": 1.22,
+      "impresiones": 3595
     },
     {
       "clinica": "Queretaro",
@@ -8430,10 +8430,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 105.04,
-      "cpl": 52.52,
+      "gasto": 106.44,
+      "cpl": 53.22,
       "frecuencia": 1.16,
-      "impresiones": 1708
+      "impresiones": 1720
+    },
+    {
+      "clinica": "Queretaro",
+      "campana": "QUÉRETARO 2.0 SEP",
+      "adset": "NEUROPATIA",
+      "anuncio": "VID - NEURO MARY",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-09-03",
+      "es_nuevo": false,
+      "leads": 1,
+      "gasto": 54.31,
+      "cpl": 54.31,
+      "frecuencia": 1.16,
+      "impresiones": 573
     },
     {
       "clinica": "Queretaro",
@@ -8445,10 +8460,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-02",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 76.97,
-      "cpl": 76.97,
+      "gasto": 77.44,
+      "cpl": 77.44,
       "frecuencia": 1.27,
-      "impresiones": 2204
+      "impresiones": 2218
     },
     {
       "clinica": "Queretaro",
@@ -8508,7 +8523,7 @@ MESES_DATA["2026-11"] = {
       "gasto": 5.08,
       "cpl": 0,
       "frecuencia": 1.05,
-      "impresiones": 114
+      "impresiones": 115
     },
     {
       "clinica": "Queretaro",
@@ -8535,10 +8550,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-03",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 29.31,
+      "gasto": 30.09,
       "cpl": 0,
-      "frecuencia": 1.43,
-      "impresiones": 397
+      "frecuencia": 1.42,
+      "impresiones": 403
     },
     {
       "clinica": "Queretaro",
@@ -8595,10 +8610,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-03",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 1.24,
+      "gasto": 3.38,
       "cpl": 0,
-      "frecuencia": 1.15,
-      "impresiones": 30
+      "frecuencia": 1.16,
+      "impresiones": 67
     },
     {
       "clinica": "Queretaro",
@@ -8655,10 +8670,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 13.25,
+      "gasto": 13.43,
       "cpl": 0,
-      "frecuencia": 1.32,
-      "impresiones": 294
+      "frecuencia": 1.33,
+      "impresiones": 300
     },
     {
       "clinica": "Queretaro",
@@ -8685,10 +8700,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-13",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 68.58,
+      "gasto": 69.29,
       "cpl": 0,
-      "frecuencia": 1.24,
-      "impresiones": 878
+      "frecuencia": 1.23,
+      "impresiones": 884
     },
     {
       "clinica": "Tepeyac",
@@ -8700,10 +8715,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-03",
       "es_nuevo": false,
       "leads": 254,
-      "gasto": 6858.35,
+      "gasto": 6858.96,
       "cpl": 27.0,
       "frecuencia": 1.51,
-      "impresiones": 113667
+      "impresiones": 113676
     },
     {
       "clinica": "Tepeyac",
@@ -8730,10 +8745,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-03",
       "es_nuevo": false,
       "leads": 74,
-      "gasto": 1661.16,
-      "cpl": 22.45,
+      "gasto": 1661.96,
+      "cpl": 22.46,
       "frecuencia": 1.51,
-      "impresiones": 28413
+      "impresiones": 28428
     },
     {
       "clinica": "Tepeyac",
@@ -8759,11 +8774,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-11",
       "es_nuevo": true,
-      "leads": 39,
-      "gasto": 2059.13,
-      "cpl": 52.8,
+      "leads": 43,
+      "gasto": 2352.16,
+      "cpl": 54.7,
       "frecuencia": 1.27,
-      "impresiones": 34132
+      "impresiones": 37062
+    },
+    {
+      "clinica": "Tepeyac",
+      "campana": "TEPEYAC NOVIEMBRE + BUEN FIN",
+      "adset": "TEPEYAC ZONA 18-65+",
+      "anuncio": "TEPEYAC V2 GANCHO DE DOLOR - 11 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-11",
+      "es_nuevo": true,
+      "leads": 32,
+      "gasto": 1506.8,
+      "cpl": 47.09,
+      "frecuencia": 1.35,
+      "impresiones": 18146
     },
     {
       "clinica": "Tepeyac",
@@ -8779,21 +8809,6 @@ MESES_DATA["2026-11"] = {
       "cpl": 15.48,
       "frecuencia": 1.34,
       "impresiones": 6420
-    },
-    {
-      "clinica": "Tepeyac",
-      "campana": "TEPEYAC NOVIEMBRE + BUEN FIN",
-      "adset": "TEPEYAC ZONA 18-65+",
-      "anuncio": "TEPEYAC V2 GANCHO DE DOLOR - 11 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-11",
-      "es_nuevo": true,
-      "leads": 29,
-      "gasto": 1259.58,
-      "cpl": 43.43,
-      "frecuencia": 1.31,
-      "impresiones": 15577
     },
     {
       "clinica": "Tepeyac",
@@ -8820,10 +8835,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-17",
       "es_nuevo": false,
       "leads": 18,
-      "gasto": 463.45,
+      "gasto": 463.51,
       "cpl": 25.75,
       "frecuencia": 1.76,
-      "impresiones": 4851
+      "impresiones": 4853
     },
     {
       "clinica": "Tepeyac",
@@ -8955,10 +8970,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 97.61,
-      "cpl": 48.8,
+      "gasto": 97.97,
+      "cpl": 48.98,
       "frecuencia": 1.09,
-      "impresiones": 1231
+      "impresiones": 1235
     },
     {
       "clinica": "Tepeyac",
@@ -8970,10 +8985,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 68.7,
-      "cpl": 34.35,
+      "gasto": 70.2,
+      "cpl": 35.1,
       "frecuencia": 1.12,
-      "impresiones": 544
+      "impresiones": 548
     },
     {
       "clinica": "Tepeyac",
@@ -9045,10 +9060,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 170.48,
-      "cpl": 170.48,
+      "gasto": 170.54,
+      "cpl": 170.54,
       "frecuencia": 1.12,
-      "impresiones": 2208
+      "impresiones": 2210
     },
     {
       "clinica": "Tepeyac",
@@ -9060,10 +9075,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 258.69,
-      "cpl": 258.69,
+      "gasto": 266.25,
+      "cpl": 266.25,
       "frecuencia": 1.12,
-      "impresiones": 3337
+      "impresiones": 3369
     },
     {
       "clinica": "Tepeyac",
@@ -9329,11 +9344,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-19",
       "es_nuevo": false,
-      "leads": 345,
-      "gasto": 18094.08,
-      "cpl": 52.45,
-      "frecuencia": 1.67,
-      "impresiones": 407847
+      "leads": 354,
+      "gasto": 18709.11,
+      "cpl": 52.85,
+      "frecuencia": 1.68,
+      "impresiones": 418696
     },
     {
       "clinica": "Xochimilco",
@@ -9360,10 +9375,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-13",
       "es_nuevo": false,
       "leads": 10,
-      "gasto": 585.57,
-      "cpl": 58.56,
-      "frecuencia": 1.69,
-      "impresiones": 9607
+      "gasto": 603.77,
+      "cpl": 60.38,
+      "frecuencia": 1.71,
+      "impresiones": 9884
+    },
+    {
+      "clinica": "Xochimilco",
+      "campana": "XOCHIMILCO NOVIEMBRE + BUEN FIN",
+      "adset": "XOCHIMILCO BUEN FIN 13-17 NOV 25-65+",
+      "anuncio": "XOCHIMILCO BUEN FIN - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 9,
+      "gasto": 1297.47,
+      "cpl": 144.16,
+      "frecuencia": 1.29,
+      "impresiones": 14208
     },
     {
       "clinica": "Xochimilco",
@@ -9383,21 +9413,6 @@ MESES_DATA["2026-11"] = {
     {
       "clinica": "Xochimilco",
       "campana": "XOCHIMILCO NOVIEMBRE + BUEN FIN",
-      "adset": "XOCHIMILCO BUEN FIN 13-17 NOV 25-65+",
-      "anuncio": "XOCHIMILCO BUEN FIN - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 5,
-      "gasto": 1017.09,
-      "cpl": 203.42,
-      "frecuencia": 1.28,
-      "impresiones": 11687
-    },
-    {
-      "clinica": "Xochimilco",
-      "campana": "XOCHIMILCO NOVIEMBRE + BUEN FIN",
       "adset": "XOCHIMILCO ZONA 25-65+",
       "anuncio": "XOCHIMILCO V2 COMO LLEGAR - 12 NOV",
       "tipo": "OTRO",
@@ -9405,10 +9420,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 4,
-      "gasto": 265.4,
-      "cpl": 66.35,
+      "gasto": 265.46,
+      "cpl": 66.36,
       "frecuencia": 1.45,
-      "impresiones": 5586
+      "impresiones": 5587
     },
     {
       "clinica": "Xochimilco",
@@ -9435,10 +9450,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 102.69,
-      "cpl": 102.69,
+      "gasto": 108.25,
+      "cpl": 108.25,
       "frecuencia": 1.14,
-      "impresiones": 1533
+      "impresiones": 1597
     },
     {
       "clinica": "Xochimilco",
@@ -9450,10 +9465,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 24.41,
+      "gasto": 24.59,
       "cpl": 0,
-      "frecuencia": 1.08,
-      "impresiones": 368
+      "frecuencia": 1.07,
+      "impresiones": 374
     },
     {
       "clinica": "Xochimilco",
@@ -9465,10 +9480,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 1.43,
+      "gasto": 72.75,
       "cpl": 0,
-      "frecuencia": 1.0,
-      "impresiones": 12
+      "frecuencia": 1.11,
+      "impresiones": 866
     },
     {
       "clinica": "Xochimilco",
@@ -9495,10 +9510,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 196.53,
+      "gasto": 239.46,
       "cpl": 0,
-      "frecuencia": 1.21,
-      "impresiones": 2783
+      "frecuencia": 1.24,
+      "impresiones": 3438
     },
     {
       "clinica": "Xochimilco",
@@ -9525,10 +9540,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-24",
       "es_nuevo": false,
       "leads": 20,
-      "gasto": 1019.25,
-      "cpl": 50.96,
+      "gasto": 1019.68,
+      "cpl": 50.98,
       "frecuencia": 1.52,
-      "impresiones": 12809
+      "impresiones": 12829
     },
     {
       "clinica": "La Moderna",
@@ -9540,10 +9555,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-17",
       "es_nuevo": false,
       "leads": 14,
-      "gasto": 478.49,
-      "cpl": 34.18,
+      "gasto": 481.22,
+      "cpl": 34.37,
       "frecuencia": 1.23,
-      "impresiones": 13762
+      "impresiones": 13788
     },
     {
       "clinica": "La Moderna",
@@ -9570,10 +9585,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-17",
       "es_nuevo": false,
       "leads": 7,
-      "gasto": 96.07,
-      "cpl": 13.72,
+      "gasto": 96.17,
+      "cpl": 13.74,
       "frecuencia": 1.32,
-      "impresiones": 1692
+      "impresiones": 1694
     },
     {
       "clinica": "La Moderna",
@@ -9600,10 +9615,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-17",
       "es_nuevo": false,
       "leads": 5,
-      "gasto": 269.9,
-      "cpl": 53.98,
+      "gasto": 272.81,
+      "cpl": 54.56,
       "frecuencia": 1.24,
-      "impresiones": 6360
+      "impresiones": 6373
     },
     {
       "clinica": "La Moderna",
@@ -9615,10 +9630,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-17",
       "es_nuevo": false,
       "leads": 4,
-      "gasto": 343.01,
-      "cpl": 85.75,
-      "frecuencia": 1.76,
-      "impresiones": 12320
+      "gasto": 352.9,
+      "cpl": 88.22,
+      "frecuencia": 1.74,
+      "impresiones": 12701
     },
     {
       "clinica": "La Moderna",
@@ -9645,10 +9660,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-17",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 175.4,
-      "cpl": 87.7,
+      "gasto": 177.67,
+      "cpl": 88.83,
       "frecuencia": 1.23,
-      "impresiones": 4126
+      "impresiones": 4156
     },
     {
       "clinica": "La Moderna",
@@ -9728,6 +9743,21 @@ MESES_DATA["2026-11"] = {
     {
       "clinica": "La Moderna",
       "campana": "Moderna JUL",
+      "adset": "Rodilla",
+      "anuncio": "CAR - RODILLA - OCT",
+      "tipo": "CARRUSEL",
+      "status": "ACTIVE",
+      "created": "2026-09-24",
+      "es_nuevo": false,
+      "leads": 1,
+      "gasto": 70.46,
+      "cpl": 70.46,
+      "frecuencia": 1.45,
+      "impresiones": 1359
+    },
+    {
+      "clinica": "La Moderna",
+      "campana": "Moderna JUL",
       "adset": "Hombro",
       "anuncio": "EST - HOMBRO - OCT",
       "tipo": "OTRO",
@@ -9756,21 +9786,6 @@ MESES_DATA["2026-11"] = {
       "impresiones": 1058
     },
     {
-      "clinica": "La Moderna",
-      "campana": "Moderna JUL",
-      "adset": "Rodilla",
-      "anuncio": "CAR - RODILLA - OCT",
-      "tipo": "CARRUSEL",
-      "status": "ACTIVE",
-      "created": "2026-09-24",
-      "es_nuevo": false,
-      "leads": 0,
-      "gasto": 70.22,
-      "cpl": 0,
-      "frecuencia": 1.45,
-      "impresiones": 1353
-    },
-    {
       "clinica": "Cuautitlan",
       "campana": "Cuautitlán / Directo NUEVO",
       "adset": "Directo",
@@ -9779,11 +9794,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-16",
       "es_nuevo": false,
-      "leads": 204,
-      "gasto": 6136.12,
-      "cpl": 30.08,
-      "frecuencia": 1.71,
-      "impresiones": 206547
+      "leads": 210,
+      "gasto": 6241.32,
+      "cpl": 29.72,
+      "frecuencia": 1.72,
+      "impresiones": 208658
     },
     {
       "clinica": "Cuautitlan",
@@ -9794,11 +9809,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-05-28",
       "es_nuevo": false,
-      "leads": 126,
-      "gasto": 2663.09,
-      "cpl": 21.14,
-      "frecuencia": 1.65,
-      "impresiones": 75694
+      "leads": 132,
+      "gasto": 2993.43,
+      "cpl": 22.68,
+      "frecuencia": 1.67,
+      "impresiones": 82765
     },
     {
       "clinica": "Cuautitlan",
@@ -9809,11 +9824,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-07",
       "es_nuevo": false,
-      "leads": 100,
-      "gasto": 2516.47,
-      "cpl": 25.16,
-      "frecuencia": 1.56,
-      "impresiones": 50027
+      "leads": 103,
+      "gasto": 2563.64,
+      "cpl": 24.89,
+      "frecuencia": 1.55,
+      "impresiones": 50781
     },
     {
       "clinica": "Cuautitlan",
@@ -9839,11 +9854,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-05-28",
       "es_nuevo": false,
-      "leads": 39,
-      "gasto": 925.01,
-      "cpl": 23.72,
+      "leads": 40,
+      "gasto": 941.32,
+      "cpl": 23.53,
       "frecuencia": 1.37,
-      "impresiones": 28355
+      "impresiones": 28644
     },
     {
       "clinica": "Cuautitlan",
@@ -9855,10 +9870,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-16",
       "es_nuevo": false,
       "leads": 26,
-      "gasto": 464.77,
-      "cpl": 17.88,
-      "frecuencia": 1.42,
-      "impresiones": 11785
+      "gasto": 467.81,
+      "cpl": 17.99,
+      "frecuencia": 1.41,
+      "impresiones": 11846
     },
     {
       "clinica": "Cuautitlan",
@@ -9869,11 +9884,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-07",
       "es_nuevo": false,
-      "leads": 20,
-      "gasto": 310.4,
-      "cpl": 15.52,
+      "leads": 21,
+      "gasto": 316.2,
+      "cpl": 15.06,
       "frecuencia": 1.43,
-      "impresiones": 4863
+      "impresiones": 4916
+    },
+    {
+      "clinica": "Cuautitlan",
+      "campana": "CUAUTITLAN NOVIEMBRE + BUEN FIN",
+      "adset": "CUAUTITLAN 18 KM 25-65+",
+      "anuncio": "CUAUTITLÁN V1 ORIGINAL - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 12,
+      "gasto": 537.52,
+      "cpl": 44.79,
+      "frecuencia": 1.15,
+      "impresiones": 10430
     },
     {
       "clinica": "Cuautitlan",
@@ -9892,21 +9922,6 @@ MESES_DATA["2026-11"] = {
     },
     {
       "clinica": "Cuautitlan",
-      "campana": "CUAUTITLAN NOVIEMBRE + BUEN FIN",
-      "adset": "CUAUTITLAN 18 KM 25-65+",
-      "anuncio": "CUAUTITLÁN V1 ORIGINAL - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 11,
-      "gasto": 482.36,
-      "cpl": 43.85,
-      "frecuencia": 1.14,
-      "impresiones": 9515
-    },
-    {
-      "clinica": "Cuautitlan",
       "campana": "Cuautitlán / Directo NUEVO",
       "adset": "Directo",
       "anuncio": "EST _ HERNIA V4 _ 14 MAY -",
@@ -9915,10 +9930,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-05-28",
       "es_nuevo": false,
       "leads": 8,
-      "gasto": 90.14,
-      "cpl": 11.27,
+      "gasto": 90.6,
+      "cpl": 11.32,
       "frecuencia": 1.27,
-      "impresiones": 1295
+      "impresiones": 1300
+    },
+    {
+      "clinica": "Cuautitlan",
+      "campana": "Cuautitlán / Directo NUEVO",
+      "adset": "Directo",
+      "anuncio": "VID _ VARICES _ 01 ABRIL - Copia",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-07-07",
+      "es_nuevo": false,
+      "leads": 8,
+      "gasto": 180.65,
+      "cpl": 22.58,
+      "frecuencia": 1.51,
+      "impresiones": 2559
     },
     {
       "clinica": "Cuautitlan",
@@ -9930,25 +9960,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 8,
-      "gasto": 132.19,
-      "cpl": 16.52,
-      "frecuencia": 1.7,
-      "impresiones": 2858
-    },
-    {
-      "clinica": "Cuautitlan",
-      "campana": "Cuautitlán / Directo NUEVO",
-      "adset": "Directo",
-      "anuncio": "VID _ VARICES _ 01 ABRIL - Copia",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-07-07",
-      "es_nuevo": false,
-      "leads": 7,
-      "gasto": 176.22,
-      "cpl": 25.17,
-      "frecuencia": 1.5,
-      "impresiones": 2539
+      "gasto": 138.94,
+      "cpl": 17.37,
+      "frecuencia": 1.73,
+      "impresiones": 2924
     },
     {
       "clinica": "Cuautitlan",
@@ -9959,11 +9974,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-16",
       "es_nuevo": false,
-      "leads": 7,
-      "gasto": 241.77,
-      "cpl": 34.54,
-      "frecuencia": 1.35,
-      "impresiones": 6195
+      "leads": 8,
+      "gasto": 248.56,
+      "cpl": 31.07,
+      "frecuencia": 1.36,
+      "impresiones": 6247
     },
     {
       "clinica": "Cuautitlan",
@@ -9974,11 +9989,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-12",
       "es_nuevo": true,
-      "leads": 7,
-      "gasto": 338.35,
-      "cpl": 48.34,
-      "frecuencia": 1.36,
-      "impresiones": 4799
+      "leads": 8,
+      "gasto": 481.64,
+      "cpl": 60.2,
+      "frecuencia": 1.45,
+      "impresiones": 6563
+    },
+    {
+      "clinica": "Cuautitlan",
+      "campana": "CUAUTITLAN NOVIEMBRE + BUEN FIN",
+      "adset": "CUAUTITLAN 18 KM 25-65+",
+      "anuncio": "CUAUTITLÁN V4 NEUROPATIA - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 8,
+      "gasto": 195.95,
+      "cpl": 24.49,
+      "frecuencia": 1.43,
+      "impresiones": 2453
     },
     {
       "clinica": "Cuautitlan",
@@ -9990,25 +10020,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 6,
-      "gasto": 141.27,
-      "cpl": 23.55,
+      "gasto": 144.87,
+      "cpl": 24.14,
       "frecuencia": 1.56,
-      "impresiones": 3465
+      "impresiones": 3497
     },
     {
       "clinica": "Cuautitlan",
       "campana": "CUAUTITLAN NOVIEMBRE + BUEN FIN",
-      "adset": "CUAUTITLAN 18 KM 25-65+",
-      "anuncio": "CUAUTITLÁN V4 NEUROPATIA - 12 NOV",
+      "adset": "CUAUTITLAN BUEN FIN 13-17 NOV 25-65+",
+      "anuncio": "CUAUTITLÁN BUEN FIN - 12 NOV",
       "tipo": "OTRO",
       "status": "ACTIVE",
       "created": "2026-11-12",
       "es_nuevo": true,
-      "leads": 6,
-      "gasto": 160.83,
-      "cpl": 26.81,
-      "frecuencia": 1.41,
-      "impresiones": 2119
+      "leads": 5,
+      "gasto": 392.41,
+      "cpl": 78.48,
+      "frecuencia": 1.32,
+      "impresiones": 5108
     },
     {
       "clinica": "Cuautitlan",
@@ -10020,25 +10050,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-07",
       "es_nuevo": false,
       "leads": 4,
-      "gasto": 58.5,
-      "cpl": 14.62,
+      "gasto": 60.35,
+      "cpl": 15.09,
       "frecuencia": 1.07,
-      "impresiones": 1085
-    },
-    {
-      "clinica": "Cuautitlan",
-      "campana": "CUAUTITLAN NOVIEMBRE + BUEN FIN",
-      "adset": "CUAUTITLAN BUEN FIN 13-17 NOV 25-65+",
-      "anuncio": "CUAUTITLÁN BUEN FIN - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 4,
-      "gasto": 304.01,
-      "cpl": 76.0,
-      "frecuencia": 1.33,
-      "impresiones": 4300
+      "impresiones": 1123
     },
     {
       "clinica": "Cuautitlan",
@@ -10050,10 +10065,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-16",
       "es_nuevo": false,
       "leads": 3,
-      "gasto": 133.91,
-      "cpl": 44.64,
-      "frecuencia": 1.48,
-      "impresiones": 3489
+      "gasto": 134.54,
+      "cpl": 44.85,
+      "frecuencia": 1.47,
+      "impresiones": 3505
     },
     {
       "clinica": "Cuautitlan",
@@ -10065,10 +10080,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-07",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 33.85,
-      "cpl": 16.93,
-      "frecuencia": 1.24,
-      "impresiones": 697
+      "gasto": 34.2,
+      "cpl": 17.1,
+      "frecuencia": 1.25,
+      "impresiones": 706
     },
     {
       "clinica": "Cuautitlan",
@@ -10080,10 +10095,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-07",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 27.65,
-      "cpl": 27.65,
-      "frecuencia": 1.11,
-      "impresiones": 259
+      "gasto": 33.1,
+      "cpl": 33.1,
+      "frecuencia": 1.16,
+      "impresiones": 304
     },
     {
       "clinica": "Cuautitlan",
@@ -10110,10 +10125,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-07",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 7.57,
-      "cpl": 7.57,
-      "frecuencia": 1.11,
-      "impresiones": 42
+      "gasto": 8.82,
+      "cpl": 8.82,
+      "frecuencia": 1.15,
+      "impresiones": 55
     },
     {
       "clinica": "Cuautitlan",
@@ -10125,10 +10140,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 18.66,
-      "cpl": 18.66,
-      "frecuencia": 1.47,
-      "impresiones": 292
+      "gasto": 19.52,
+      "cpl": 19.52,
+      "frecuencia": 1.5,
+      "impresiones": 311
     },
     {
       "clinica": "Cuautitlan",
@@ -10140,10 +10155,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-05-28",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 18.29,
+      "gasto": 19.9,
       "cpl": 0,
-      "frecuencia": 1.06,
-      "impresiones": 247
+      "frecuencia": 1.07,
+      "impresiones": 270
     },
     {
       "clinica": "Cuautitlan",
@@ -10155,10 +10170,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-07",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 7.69,
+      "gasto": 7.76,
       "cpl": 0,
       "frecuencia": 1.15,
-      "impresiones": 178
+      "impresiones": 179
     },
     {
       "clinica": "Cuautitlan",
@@ -10170,10 +10185,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-07",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 11.37,
+      "gasto": 12.19,
       "cpl": 0,
-      "frecuencia": 1.08,
-      "impresiones": 174
+      "frecuencia": 1.1,
+      "impresiones": 183
     },
     {
       "clinica": "Cuautitlan",
@@ -10200,10 +10215,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 2.13,
+      "gasto": 2.27,
       "cpl": 0,
-      "frecuencia": 1.11,
-      "impresiones": 39
+      "frecuencia": 1.14,
+      "impresiones": 42
     },
     {
       "clinica": "Cuautitlan",
@@ -10215,10 +10230,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 48.59,
+      "gasto": 73.75,
       "cpl": 0,
-      "frecuencia": 1.09,
-      "impresiones": 869
+      "frecuencia": 1.1,
+      "impresiones": 1235
     },
     {
       "clinica": "Cuautitlan",
@@ -10230,10 +10245,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 16.49,
+      "gasto": 18.35,
       "cpl": 0,
       "frecuencia": 1.09,
-      "impresiones": 238
+      "impresiones": 259
     },
     {
       "clinica": "Cuautitlan",
@@ -10260,10 +10275,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-10",
       "es_nuevo": false,
       "leads": 79,
-      "gasto": 5039.53,
-      "cpl": 63.79,
+      "gasto": 5062.94,
+      "cpl": 64.09,
       "frecuencia": 1.88,
-      "impresiones": 193449
+      "impresiones": 193850
     },
     {
       "clinica": "Nicolas Romero",
@@ -10274,11 +10289,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-03",
       "es_nuevo": false,
-      "leads": 68,
-      "gasto": 2095.42,
-      "cpl": 30.82,
-      "frecuencia": 1.76,
-      "impresiones": 99331
+      "leads": 69,
+      "gasto": 2241.3,
+      "cpl": 32.48,
+      "frecuencia": 1.77,
+      "impresiones": 103936
     },
     {
       "clinica": "Nicolas Romero",
@@ -10289,11 +10304,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-10",
       "es_nuevo": false,
-      "leads": 60,
-      "gasto": 3483.82,
-      "cpl": 58.06,
-      "frecuencia": 1.87,
-      "impresiones": 151750
+      "leads": 62,
+      "gasto": 3624.7,
+      "cpl": 58.46,
+      "frecuencia": 1.89,
+      "impresiones": 155077
     },
     {
       "clinica": "Nicolas Romero",
@@ -10305,10 +10320,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-03",
       "es_nuevo": false,
       "leads": 32,
-      "gasto": 1524.28,
-      "cpl": 47.63,
-      "frecuencia": 1.68,
-      "impresiones": 43826
+      "gasto": 1573.1,
+      "cpl": 49.16,
+      "frecuencia": 1.69,
+      "impresiones": 44604
     },
     {
       "clinica": "Nicolas Romero",
@@ -10319,11 +10334,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-19",
       "es_nuevo": false,
-      "leads": 29,
-      "gasto": 1266.57,
-      "cpl": 43.67,
-      "frecuencia": 1.68,
-      "impresiones": 36241
+      "leads": 30,
+      "gasto": 1351.01,
+      "cpl": 45.03,
+      "frecuencia": 1.7,
+      "impresiones": 37953
+    },
+    {
+      "clinica": "Nicolas Romero",
+      "campana": "NICOLAS ROMERO NEW - Copia",
+      "adset": "HOMBRO",
+      "anuncio": "VID_HOMBNICO_JUL",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-07-17",
+      "es_nuevo": false,
+      "leads": 24,
+      "gasto": 752.85,
+      "cpl": 31.37,
+      "frecuencia": 1.25,
+      "impresiones": 22346
     },
     {
       "clinica": "Nicolas Romero",
@@ -10335,25 +10365,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-03",
       "es_nuevo": false,
       "leads": 23,
-      "gasto": 773.66,
-      "cpl": 33.64,
-      "frecuencia": 1.6,
-      "impresiones": 22066
-    },
-    {
-      "clinica": "Nicolas Romero",
-      "campana": "NICOLAS ROMERO NEW - Copia",
-      "adset": "HOMBRO",
-      "anuncio": "VID_HOMBNICO_JUL",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-07-17",
-      "es_nuevo": false,
-      "leads": 20,
-      "gasto": 520.76,
-      "cpl": 26.04,
-      "frecuencia": 1.21,
-      "impresiones": 16634
+      "gasto": 788.84,
+      "cpl": 34.3,
+      "frecuencia": 1.61,
+      "impresiones": 22285
     },
     {
       "clinica": "Nicolas Romero",
@@ -10365,10 +10380,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-03",
       "es_nuevo": false,
       "leads": 16,
-      "gasto": 1058.3,
-      "cpl": 66.14,
-      "frecuencia": 1.67,
-      "impresiones": 24348
+      "gasto": 1115.87,
+      "cpl": 69.74,
+      "frecuencia": 1.69,
+      "impresiones": 25022
     },
     {
       "clinica": "Nicolas Romero",
@@ -10380,10 +10395,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-04",
       "es_nuevo": false,
       "leads": 12,
-      "gasto": 360.9,
-      "cpl": 30.07,
-      "frecuencia": 1.54,
-      "impresiones": 7409
+      "gasto": 410.5,
+      "cpl": 34.21,
+      "frecuencia": 1.57,
+      "impresiones": 8061
+    },
+    {
+      "clinica": "Nicolas Romero",
+      "campana": "NICOLAS ROMERO NEW - Copia",
+      "adset": "RODILLA",
+      "anuncio": "VID_ RODILLA PADECIMIENTO _ OCT - 10 OCT",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-10-10",
+      "es_nuevo": false,
+      "leads": 10,
+      "gasto": 354.24,
+      "cpl": 35.42,
+      "frecuencia": 1.53,
+      "impresiones": 9492
     },
     {
       "clinica": "Nicolas Romero",
@@ -10395,25 +10425,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-10",
       "es_nuevo": false,
       "leads": 9,
-      "gasto": 480.72,
-      "cpl": 53.41,
+      "gasto": 481.75,
+      "cpl": 53.53,
       "frecuencia": 1.53,
-      "impresiones": 17428
-    },
-    {
-      "clinica": "Nicolas Romero",
-      "campana": "NICOLAS ROMERO NEW - Copia",
-      "adset": "RODILLA",
-      "anuncio": "VID_ RODILLA PADECIMIENTO _ OCT - 10 OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-10-10",
-      "es_nuevo": false,
-      "leads": 9,
-      "gasto": 334.04,
-      "cpl": 37.12,
-      "frecuencia": 1.53,
-      "impresiones": 9231
+      "impresiones": 17454
     },
     {
       "clinica": "Nicolas Romero",
@@ -10424,11 +10439,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-14",
       "es_nuevo": false,
-      "leads": 6,
-      "gasto": 246.46,
-      "cpl": 41.08,
-      "frecuencia": 1.39,
-      "impresiones": 7042
+      "leads": 9,
+      "gasto": 296.44,
+      "cpl": 32.94,
+      "frecuencia": 1.42,
+      "impresiones": 7687
     },
     {
       "clinica": "Nicolas Romero",
@@ -10449,16 +10464,31 @@ MESES_DATA["2026-11"] = {
       "clinica": "Nicolas Romero",
       "campana": "NICOLAS ROMERO NEW - Copia",
       "adset": "NEUROPATIA",
+      "anuncio": "VID  - NEURO MARY",
+      "tipo": "VIDEO",
+      "status": "ACTIVE",
+      "created": "2026-02-23",
+      "es_nuevo": false,
+      "leads": 3,
+      "gasto": 126.19,
+      "cpl": 42.06,
+      "frecuencia": 1.1,
+      "impresiones": 2100
+    },
+    {
+      "clinica": "Nicolas Romero",
+      "campana": "NICOLAS ROMERO NEW - Copia",
+      "adset": "NEUROPATIA",
       "anuncio": "VID _ NEUROPATIA OLI _ ABRIL",
       "tipo": "VIDEO",
       "status": "ACTIVE",
       "created": "2026-04-25",
       "es_nuevo": false,
       "leads": 3,
-      "gasto": 65.89,
-      "cpl": 21.96,
-      "frecuencia": 1.65,
-      "impresiones": 1366
+      "gasto": 70.22,
+      "cpl": 23.41,
+      "frecuencia": 1.68,
+      "impresiones": 1424
     },
     {
       "clinica": "Nicolas Romero",
@@ -10470,10 +10500,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-03",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 99.27,
-      "cpl": 49.63,
-      "frecuencia": 1.31,
-      "impresiones": 4031
+      "gasto": 102.34,
+      "cpl": 51.17,
+      "frecuencia": 1.32,
+      "impresiones": 4115
     },
     {
       "clinica": "Nicolas Romero",
@@ -10493,21 +10523,6 @@ MESES_DATA["2026-11"] = {
     {
       "clinica": "Nicolas Romero",
       "campana": "NICOLAS ROMERO NEW - Copia",
-      "adset": "NEUROPATIA",
-      "anuncio": "VID  - NEURO MARY",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-02-23",
-      "es_nuevo": false,
-      "leads": 1,
-      "gasto": 44.68,
-      "cpl": 44.68,
-      "frecuencia": 1.02,
-      "impresiones": 1087
-    },
-    {
-      "clinica": "Nicolas Romero",
-      "campana": "NICOLAS ROMERO NEW - Copia",
       "adset": "HOMBRO",
       "anuncio": "vid_HOMBRO PAUTA MARZO",
       "tipo": "VIDEO",
@@ -10515,10 +10530,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-03-08",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 22.48,
-      "cpl": 22.48,
-      "frecuencia": 1.16,
-      "impresiones": 470
+      "gasto": 27.25,
+      "cpl": 27.25,
+      "frecuencia": 1.18,
+      "impresiones": 550
     },
     {
       "clinica": "Nicolas Romero",
@@ -10530,10 +10545,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-04",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 13.56,
-      "cpl": 13.56,
-      "frecuencia": 1.41,
-      "impresiones": 260
+      "gasto": 14.09,
+      "cpl": 14.09,
+      "frecuencia": 1.4,
+      "impresiones": 278
     },
     {
       "clinica": "Nicolas Romero",
@@ -10575,10 +10590,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-02-23",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 1.72,
+      "gasto": 1.74,
       "cpl": 0,
       "frecuencia": 1.0,
-      "impresiones": 19
+      "impresiones": 20
     },
     {
       "clinica": "Nicolas Romero",
@@ -10590,10 +10605,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-02-24",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 29.09,
+      "gasto": 31.92,
       "cpl": 0,
       "frecuencia": 1.15,
-      "impresiones": 889
+      "impresiones": 919
     },
     {
       "clinica": "Nicolas Romero",
@@ -10605,10 +10620,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-03-08",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 6.1,
+      "gasto": 6.15,
       "cpl": 0,
       "frecuencia": 1.04,
-      "impresiones": 218
+      "impresiones": 220
     },
     {
       "clinica": "Nicolas Romero",
@@ -10620,10 +10635,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-04-24",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 1.14,
+      "gasto": 1.38,
       "cpl": 0,
-      "frecuencia": 1.23,
-      "impresiones": 32
+      "frecuencia": 1.31,
+      "impresiones": 38
     },
     {
       "clinica": "Nicolas Romero",
@@ -10650,10 +10665,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-03",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 10.63,
+      "gasto": 11.66,
       "cpl": 0,
-      "frecuencia": 1.76,
-      "impresiones": 273
+      "frecuencia": 1.75,
+      "impresiones": 283
     },
     {
       "clinica": "Nicolas Romero",
@@ -10665,10 +10680,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-03",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 9.05,
+      "gasto": 9.37,
       "cpl": 0,
-      "frecuencia": 1.37,
-      "impresiones": 264
+      "frecuencia": 1.38,
+      "impresiones": 274
     },
     {
       "clinica": "Nicolas Romero",
@@ -10680,10 +10695,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-04",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 45.41,
+      "gasto": 46.84,
       "cpl": 0,
       "frecuencia": 1.18,
-      "impresiones": 1192
+      "impresiones": 1230
     },
     {
       "clinica": "Nicolas Romero",
@@ -10695,10 +10710,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-04",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 85.21,
+      "gasto": 85.25,
       "cpl": 0,
       "frecuencia": 1.48,
-      "impresiones": 2198
+      "impresiones": 2200
     },
     {
       "clinica": "Nicolas Romero",
@@ -10710,10 +10725,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-17",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 23.48,
+      "gasto": 27.09,
       "cpl": 0,
-      "frecuencia": 1.04,
-      "impresiones": 768
+      "frecuencia": 1.03,
+      "impresiones": 825
     },
     {
       "clinica": "Nicolas Romero",
@@ -10743,7 +10758,7 @@ MESES_DATA["2026-11"] = {
       "gasto": 406.16,
       "cpl": 23.89,
       "frecuencia": 1.46,
-      "impresiones": 5493
+      "impresiones": 5495
     },
     {
       "clinica": "Ajusco",
@@ -10755,10 +10770,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-03",
       "es_nuevo": false,
       "leads": 16,
-      "gasto": 950.87,
-      "cpl": 59.43,
-      "frecuencia": 1.37,
-      "impresiones": 23541
+      "gasto": 997.77,
+      "cpl": 62.36,
+      "frecuencia": 1.39,
+      "impresiones": 24201
     },
     {
       "clinica": "Ajusco",
@@ -10770,10 +10785,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-24",
       "es_nuevo": false,
       "leads": 11,
-      "gasto": 366.89,
-      "cpl": 33.35,
-      "frecuencia": 1.69,
-      "impresiones": 5301
+      "gasto": 392.47,
+      "cpl": 35.68,
+      "frecuencia": 1.7,
+      "impresiones": 5555
     },
     {
       "clinica": "Ajusco",
@@ -10785,10 +10800,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-24",
       "es_nuevo": false,
       "leads": 11,
-      "gasto": 489.51,
-      "cpl": 44.5,
-      "frecuencia": 1.64,
-      "impresiones": 6667
+      "gasto": 499.96,
+      "cpl": 45.45,
+      "frecuencia": 1.65,
+      "impresiones": 6753
     },
     {
       "clinica": "Ajusco",
@@ -10799,11 +10814,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-10",
       "es_nuevo": false,
-      "leads": 9,
-      "gasto": 353.4,
-      "cpl": 39.27,
-      "frecuencia": 1.54,
-      "impresiones": 3852
+      "leads": 10,
+      "gasto": 383.51,
+      "cpl": 38.35,
+      "frecuencia": 1.55,
+      "impresiones": 4060
     },
     {
       "clinica": "Ajusco",
@@ -10814,11 +10829,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-03",
       "es_nuevo": false,
-      "leads": 8,
-      "gasto": 344.7,
-      "cpl": 43.09,
+      "leads": 9,
+      "gasto": 355.06,
+      "cpl": 39.45,
       "frecuencia": 1.37,
-      "impresiones": 7949
+      "impresiones": 8050
     },
     {
       "clinica": "Ajusco",
@@ -10830,10 +10845,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-25",
       "es_nuevo": false,
       "leads": 7,
-      "gasto": 215.28,
-      "cpl": 30.75,
+      "gasto": 216.8,
+      "cpl": 30.97,
       "frecuencia": 1.45,
-      "impresiones": 3559
+      "impresiones": 3592
     },
     {
       "clinica": "Ajusco",
@@ -10844,11 +10859,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-03",
       "es_nuevo": false,
-      "leads": 6,
-      "gasto": 277.46,
-      "cpl": 46.24,
-      "frecuencia": 1.51,
-      "impresiones": 3866
+      "leads": 7,
+      "gasto": 297.76,
+      "cpl": 42.54,
+      "frecuencia": 1.5,
+      "impresiones": 4081
     },
     {
       "clinica": "Ajusco",
@@ -10860,10 +10875,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-24",
       "es_nuevo": false,
       "leads": 4,
-      "gasto": 238.22,
-      "cpl": 59.55,
-      "frecuencia": 1.59,
-      "impresiones": 2466
+      "gasto": 247.37,
+      "cpl": 61.84,
+      "frecuencia": 1.6,
+      "impresiones": 2473
     },
     {
       "clinica": "Ajusco",
@@ -10875,10 +10890,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-25",
       "es_nuevo": false,
       "leads": 3,
-      "gasto": 71.33,
-      "cpl": 23.78,
+      "gasto": 71.63,
+      "cpl": 23.88,
       "frecuencia": 1.62,
-      "impresiones": 976
+      "impresiones": 978
     },
     {
       "clinica": "Ajusco",
@@ -10890,10 +10905,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-25",
       "es_nuevo": false,
       "leads": 3,
-      "gasto": 83.41,
-      "cpl": 27.8,
-      "frecuencia": 1.27,
-      "impresiones": 1739
+      "gasto": 84.84,
+      "cpl": 28.28,
+      "frecuencia": 1.28,
+      "impresiones": 1759
     },
     {
       "clinica": "Ajusco",
@@ -10905,10 +10920,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-10",
       "es_nuevo": false,
       "leads": 3,
-      "gasto": 154.04,
-      "cpl": 51.35,
+      "gasto": 155.15,
+      "cpl": 51.72,
       "frecuencia": 1.55,
-      "impresiones": 1815
+      "impresiones": 1826
     },
     {
       "clinica": "Ajusco",
@@ -10920,10 +10935,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-05",
       "es_nuevo": false,
       "leads": 3,
-      "gasto": 91.65,
-      "cpl": 30.55,
-      "frecuencia": 1.35,
-      "impresiones": 1592
+      "gasto": 106.16,
+      "cpl": 35.39,
+      "frecuencia": 1.36,
+      "impresiones": 1740
     },
     {
       "clinica": "Ajusco",
@@ -10935,10 +10950,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-10",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 50.63,
-      "cpl": 25.32,
+      "gasto": 51.21,
+      "cpl": 25.61,
       "frecuencia": 1.29,
-      "impresiones": 722
+      "impresiones": 732
     },
     {
       "clinica": "Ajusco",
@@ -10950,10 +10965,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-25",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 96.37,
-      "cpl": 96.37,
-      "frecuencia": 1.69,
-      "impresiones": 833
+      "gasto": 97.1,
+      "cpl": 97.1,
+      "frecuencia": 1.71,
+      "impresiones": 841
     },
     {
       "clinica": "Ajusco",
@@ -10965,10 +10980,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-03",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 155.1,
-      "cpl": 155.1,
+      "gasto": 162.18,
+      "cpl": 162.18,
       "frecuencia": 1.32,
-      "impresiones": 2410
+      "impresiones": 2466
     },
     {
       "clinica": "Ajusco",
@@ -11085,10 +11100,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-10",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 17.67,
+      "gasto": 18.27,
       "cpl": 0,
-      "frecuencia": 1.46,
-      "impresiones": 246
+      "frecuencia": 1.47,
+      "impresiones": 255
     },
     {
       "clinica": "Ajusco",
@@ -11100,10 +11115,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-10",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 2.84,
+      "gasto": 3.75,
       "cpl": 0,
-      "frecuencia": 1.0,
-      "impresiones": 17
+      "frecuencia": 1.09,
+      "impresiones": 24
     },
     {
       "clinica": "Ajusco",
@@ -11145,10 +11160,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-03",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 58.51,
+      "gasto": 59.02,
       "cpl": 0,
       "frecuencia": 1.35,
-      "impresiones": 1055
+      "impresiones": 1063
     },
     {
       "clinica": "Ajusco",
@@ -11160,10 +11175,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-05",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 1.84,
+      "gasto": 3.06,
       "cpl": 0,
-      "frecuencia": 1.25,
-      "impresiones": 20
+      "frecuencia": 1.31,
+      "impresiones": 34
     },
     {
       "clinica": "Ajusco",
@@ -11190,10 +11205,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-06",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 1.01,
+      "gasto": 1.39,
       "cpl": 0,
       "frecuencia": 1.0,
-      "impresiones": 19
+      "impresiones": 20
     },
     {
       "clinica": "Ajusco",
@@ -11205,10 +11220,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-06",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 18.61,
+      "gasto": 18.62,
       "cpl": 0,
       "frecuencia": 1.18,
-      "impresiones": 335
+      "impresiones": 336
     },
     {
       "clinica": "Ajusco",
@@ -11235,10 +11250,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-10",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 4.15,
+      "gasto": 7.57,
       "cpl": 0,
-      "frecuencia": 1.18,
-      "impresiones": 46
+      "frecuencia": 1.17,
+      "impresiones": 54
     },
     {
       "clinica": "Ajusco",
@@ -11250,10 +11265,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 27.29,
+      "gasto": 27.9,
       "cpl": 0,
-      "frecuencia": 1.29,
-      "impresiones": 298
+      "frecuencia": 1.3,
+      "impresiones": 311
     },
     {
       "clinica": "Cuautla",
@@ -11265,10 +11280,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-12",
       "es_nuevo": false,
       "leads": 63,
-      "gasto": 2578.69,
-      "cpl": 40.93,
-      "frecuencia": 1.98,
-      "impresiones": 103729
+      "gasto": 2650.07,
+      "cpl": 42.06,
+      "frecuencia": 1.99,
+      "impresiones": 105339
     },
     {
       "clinica": "Cuautla",
@@ -11279,11 +11294,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-12",
       "es_nuevo": false,
-      "leads": 54,
-      "gasto": 1069.89,
-      "cpl": 19.81,
-      "frecuencia": 1.99,
-      "impresiones": 31260
+      "leads": 59,
+      "gasto": 1239.84,
+      "cpl": 21.01,
+      "frecuencia": 2.02,
+      "impresiones": 34379
     },
     {
       "clinica": "Cuautla",
@@ -11310,10 +11325,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-12",
       "es_nuevo": false,
       "leads": 37,
-      "gasto": 1633.55,
-      "cpl": 44.15,
+      "gasto": 1647.37,
+      "cpl": 44.52,
       "frecuencia": 1.78,
-      "impresiones": 80810
+      "impresiones": 81321
     },
     {
       "clinica": "Cuautla",
@@ -11324,11 +11339,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-12",
       "es_nuevo": true,
-      "leads": 17,
-      "gasto": 1007.44,
-      "cpl": 59.26,
-      "frecuencia": 1.48,
-      "impresiones": 21054
+      "leads": 23,
+      "gasto": 1262.17,
+      "cpl": 54.88,
+      "frecuencia": 1.56,
+      "impresiones": 24911
     },
     {
       "clinica": "Cuautla",
@@ -11340,10 +11355,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-12",
       "es_nuevo": false,
       "leads": 14,
-      "gasto": 414.74,
-      "cpl": 29.62,
+      "gasto": 455.72,
+      "cpl": 32.55,
       "frecuencia": 1.61,
-      "impresiones": 12020
+      "impresiones": 12825
     },
     {
       "clinica": "Cuautla",
@@ -11355,10 +11370,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-06",
       "es_nuevo": false,
       "leads": 11,
-      "gasto": 489.87,
-      "cpl": 44.53,
+      "gasto": 495.38,
+      "cpl": 45.03,
       "frecuencia": 1.66,
-      "impresiones": 17607
+      "impresiones": 17738
     },
     {
       "clinica": "Cuautla",
@@ -11387,8 +11402,8 @@ MESES_DATA["2026-11"] = {
       "leads": 8,
       "gasto": 126.82,
       "cpl": 15.85,
-      "frecuencia": 1.32,
-      "impresiones": 2624
+      "frecuencia": 1.33,
+      "impresiones": 2626
     },
     {
       "clinica": "Cuautla",
@@ -11415,10 +11430,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 6,
-      "gasto": 236.64,
-      "cpl": 39.44,
-      "frecuencia": 1.19,
-      "impresiones": 5523
+      "gasto": 244.11,
+      "cpl": 40.69,
+      "frecuencia": 1.2,
+      "impresiones": 5687
     },
     {
       "clinica": "Cuautla",
@@ -11430,10 +11445,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-14",
       "es_nuevo": false,
       "leads": 4,
-      "gasto": 173.88,
-      "cpl": 43.47,
+      "gasto": 173.98,
+      "cpl": 43.49,
       "frecuencia": 1.7,
-      "impresiones": 5682
+      "impresiones": 5684
     },
     {
       "clinica": "Cuautla",
@@ -11445,10 +11460,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 3,
-      "gasto": 286.66,
-      "cpl": 95.55,
+      "gasto": 286.68,
+      "cpl": 95.56,
       "frecuencia": 1.38,
-      "impresiones": 6721
+      "impresiones": 6728
     },
     {
       "clinica": "Cuautla",
@@ -11460,10 +11475,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-16",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 79.25,
-      "cpl": 39.62,
+      "gasto": 79.31,
+      "cpl": 39.66,
       "frecuencia": 1.33,
-      "impresiones": 1989
+      "impresiones": 2001
     },
     {
       "clinica": "Cuautla",
@@ -11475,10 +11490,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-16",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 70.77,
-      "cpl": 35.38,
-      "frecuencia": 1.6,
-      "impresiones": 2013
+      "gasto": 75.01,
+      "cpl": 37.51,
+      "frecuencia": 1.63,
+      "impresiones": 2119
     },
     {
       "clinica": "Cuautla",
@@ -11505,10 +11520,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-16",
       "es_nuevo": false,
       "leads": 1,
-      "gasto": 54.6,
-      "cpl": 54.6,
-      "frecuencia": 1.85,
-      "impresiones": 1257
+      "gasto": 61.37,
+      "cpl": 61.37,
+      "frecuencia": 1.9,
+      "impresiones": 1374
     },
     {
       "clinica": "Cuautla",
@@ -11587,6 +11602,21 @@ MESES_DATA["2026-11"] = {
     },
     {
       "clinica": "Cuautla",
+      "campana": "CUAUTLA NOVIEMBRE + BUEN FIN",
+      "adset": "CUAUTLA 12 KM 25-65+",
+      "anuncio": "CUAUTLA V5 DIANA LUMBAR - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 1,
+      "gasto": 109.99,
+      "cpl": 109.99,
+      "frecuencia": 1.13,
+      "impresiones": 1932
+    },
+    {
+      "clinica": "Cuautla",
       "campana": "CUAUTLA NUEVA",
       "adset": "Hombro",
       "anuncio": "vid_HOMBRO PAUTA ENERO - Copia 2",
@@ -11595,10 +11625,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-03",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 41.15,
+      "gasto": 46.02,
       "cpl": 0,
-      "frecuencia": 1.2,
-      "impresiones": 1131
+      "frecuencia": 1.21,
+      "impresiones": 1183
     },
     {
       "clinica": "Cuautla",
@@ -11610,10 +11640,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-03",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 3.47,
+      "gasto": 3.84,
       "cpl": 0,
-      "frecuencia": 1.11,
-      "impresiones": 83
+      "frecuencia": 1.08,
+      "impresiones": 95
     },
     {
       "clinica": "Cuautla",
@@ -11672,8 +11702,8 @@ MESES_DATA["2026-11"] = {
       "leads": 0,
       "gasto": 6.94,
       "cpl": 0,
-      "frecuencia": 1.16,
-      "impresiones": 141
+      "frecuencia": 1.15,
+      "impresiones": 142
     },
     {
       "clinica": "Cuautla",
@@ -11745,10 +11775,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-06-16",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 37.56,
+      "gasto": 46.43,
       "cpl": 0,
-      "frecuencia": 1.22,
-      "impresiones": 997
+      "frecuencia": 1.27,
+      "impresiones": 1204
     },
     {
       "clinica": "Cuautla",
@@ -11775,10 +11805,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-07-06",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 2.94,
+      "gasto": 3.07,
       "cpl": 0,
-      "frecuencia": 1.47,
-      "impresiones": 116
+      "frecuencia": 1.45,
+      "impresiones": 122
     },
     {
       "clinica": "Cuautla",
@@ -11805,10 +11835,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-12",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 58.79,
+      "gasto": 62.85,
       "cpl": 0,
-      "frecuencia": 1.62,
-      "impresiones": 1909
+      "frecuencia": 1.63,
+      "impresiones": 2001
     },
     {
       "clinica": "Cuautla",
@@ -11820,10 +11850,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-12",
       "es_nuevo": false,
       "leads": 0,
-      "gasto": 48.11,
+      "gasto": 49.68,
       "cpl": 0,
       "frecuencia": 1.56,
-      "impresiones": 1727
+      "impresiones": 1770
     },
     {
       "clinica": "Cuautla",
@@ -11835,10 +11865,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 24.43,
+      "gasto": 24.55,
       "cpl": 0,
       "frecuencia": 1.04,
-      "impresiones": 634
+      "impresiones": 635
     },
     {
       "clinica": "Cuautla",
@@ -11859,21 +11889,6 @@ MESES_DATA["2026-11"] = {
       "clinica": "Cuautla",
       "campana": "CUAUTLA NOVIEMBRE + BUEN FIN",
       "adset": "CUAUTLA 12 KM 25-65+",
-      "anuncio": "CUAUTLA V5 DIANA LUMBAR - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 0,
-      "gasto": 7.68,
-      "cpl": 0,
-      "frecuencia": 1.1,
-      "impresiones": 279
-    },
-    {
-      "clinica": "Cuautla",
-      "campana": "CUAUTLA NOVIEMBRE + BUEN FIN",
-      "adset": "CUAUTLA 12 KM 25-65+",
       "anuncio": "CUAUTLA V6 RITMO HOUSE - 12 NOV",
       "tipo": "OTRO",
       "status": "ACTIVE",
@@ -11883,7 +11898,7 @@ MESES_DATA["2026-11"] = {
       "gasto": 56.54,
       "cpl": 0,
       "frecuencia": 1.11,
-      "impresiones": 1560
+      "impresiones": 1561
     },
     {
       "clinica": "Ajusco",
@@ -11894,11 +11909,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-08-08",
       "es_nuevo": false,
-      "leads": 210,
-      "gasto": 12812.73,
-      "cpl": 61.01,
-      "frecuencia": 1.41,
-      "impresiones": 266544
+      "leads": 212,
+      "gasto": 13089.07,
+      "cpl": 61.74,
+      "frecuencia": 1.42,
+      "impresiones": 270469
     },
     {
       "clinica": "Cuautla",
@@ -11909,11 +11924,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-06",
       "es_nuevo": false,
-      "leads": 100,
-      "gasto": 3827.51,
-      "cpl": 38.28,
-      "frecuencia": 2.01,
-      "impresiones": 114237
+      "leads": 104,
+      "gasto": 4030.25,
+      "cpl": 38.75,
+      "frecuencia": 2.03,
+      "impresiones": 118064
     },
     {
       "clinica": "Ajusco",
@@ -11924,11 +11939,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-12",
       "es_nuevo": true,
-      "leads": 11,
-      "gasto": 1152.21,
-      "cpl": 104.75,
-      "frecuencia": 1.3,
-      "impresiones": 14995
+      "leads": 12,
+      "gasto": 1456.05,
+      "cpl": 121.34,
+      "frecuencia": 1.33,
+      "impresiones": 18389
     },
     {
       "clinica": "Ajusco",
@@ -11955,10 +11970,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 3,
-      "gasto": 114.4,
-      "cpl": 38.13,
-      "frecuencia": 1.16,
-      "impresiones": 1598
+      "gasto": 146.33,
+      "cpl": 48.78,
+      "frecuencia": 1.18,
+      "impresiones": 1898
     },
     {
       "clinica": "Ajusco",
@@ -11970,10 +11985,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 319.22,
-      "cpl": 159.61,
-      "frecuencia": 1.45,
-      "impresiones": 2922
+      "gasto": 331.93,
+      "cpl": 165.97,
+      "frecuencia": 1.48,
+      "impresiones": 3002
     },
     {
       "clinica": "Ajusco",
@@ -11985,10 +12000,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 9.68,
-      "cpl": 9.68,
-      "frecuencia": 1.2,
-      "impresiones": 104
+      "gasto": 17.36,
+      "cpl": 17.36,
+      "frecuencia": 1.24,
+      "impresiones": 153
     },
     {
       "clinica": "Ajusco",
@@ -12000,10 +12015,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 11.42,
+      "gasto": 11.99,
       "cpl": 0,
       "frecuencia": 1.04,
-      "impresiones": 121
+      "impresiones": 125
     },
     {
       "clinica": "Ajusco",
@@ -12030,10 +12045,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 36.04,
+      "gasto": 39.99,
       "cpl": 0,
       "frecuencia": 1.09,
-      "impresiones": 444
+      "impresiones": 468
     },
     {
       "clinica": "Ajusco",
@@ -12045,10 +12060,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 51.99,
+      "gasto": 54.23,
       "cpl": 0,
-      "frecuencia": 1.21,
-      "impresiones": 562
+      "frecuencia": 1.22,
+      "impresiones": 581
     }
   ],
   "adsets_sedes": [
@@ -12056,289 +12071,289 @@ MESES_DATA["2026-11"] = {
       "clinica": "Chalco",
       "campana": "CHALCO - PADECIMIENTOS",
       "adset": "ESPALDA",
-      "leads": 607,
-      "gasto": 29785.77,
-      "cpl": 49.07
+      "leads": 626,
+      "gasto": 30804.85,
+      "cpl": 49.21
     },
     {
       "clinica": "Balbuena",
       "campana": "VIDEO AJUSCO / BALBUENA",
       "adset": "VIDEO BALBUENA",
-      "leads": 468,
-      "gasto": 27878.53,
-      "cpl": 59.57
+      "leads": 475,
+      "gasto": 28690.59,
+      "cpl": 60.4
     },
     {
       "clinica": "Neza",
       "campana": "NEZA - PADECIMIENTOS",
       "adset": "RODILLA",
-      "leads": 441,
-      "gasto": 25269.91,
-      "cpl": 57.3
+      "leads": 461,
+      "gasto": 26145.82,
+      "cpl": 56.72
     },
     {
       "clinica": "Coacalco",
       "campana": "COACALCO - PADECIMIENTOS",
       "adset": "RODILLA",
-      "leads": 418,
-      "gasto": 19843.65,
-      "cpl": 47.47
+      "leads": 426,
+      "gasto": 20423.05,
+      "cpl": 47.94
     },
     {
       "clinica": "Neza",
       "campana": "NEZA - PADECIMIENTOS",
       "adset": "ESPALDA",
-      "leads": 393,
-      "gasto": 26193.62,
-      "cpl": 66.65
+      "leads": 401,
+      "gasto": 26743.75,
+      "cpl": 66.69
     },
     {
       "clinica": "Coacalco",
       "campana": "COACALCO - PADECIMIENTOS",
       "adset": "ESPALDA",
-      "leads": 355,
-      "gasto": 18740.31,
-      "cpl": 52.79
+      "leads": 364,
+      "gasto": 19435.84,
+      "cpl": 53.4
     },
     {
       "clinica": "Balbuena",
       "campana": "BALBUENA - PADECIMIENTOS",
       "adset": "NEUROPATIA CHECK",
-      "leads": 336,
-      "gasto": 12141.99,
-      "cpl": 36.14
+      "leads": 344,
+      "gasto": 12623.42,
+      "cpl": 36.7
     },
     {
       "clinica": "Balbuena",
       "campana": "BALBUENA - PADECIMIENTOS",
       "adset": "ESPALDA - CHECK",
-      "leads": 195,
-      "gasto": 7333.72,
-      "cpl": 37.61
-    },
-    {
-      "clinica": "Coacalco",
-      "campana": "COACALCO - PADECIMIENTOS",
-      "adset": "Tropicalizados",
-      "leads": 194,
-      "gasto": 10565.56,
-      "cpl": 54.46
+      "leads": 204,
+      "gasto": 7549.86,
+      "cpl": 37.01
     },
     {
       "clinica": "Mixquiahuala",
       "campana": "MIXQUIAHUALA - PADECIMIENTOS",
       "adset": "Espalda",
-      "leads": 186,
-      "gasto": 8084.48,
-      "cpl": 43.46
+      "leads": 202,
+      "gasto": 8534.54,
+      "cpl": 42.25
+    },
+    {
+      "clinica": "Coacalco",
+      "campana": "COACALCO - PADECIMIENTOS",
+      "adset": "Tropicalizados",
+      "leads": 201,
+      "gasto": 10941.52,
+      "cpl": 54.44
     },
     {
       "clinica": "Plaza Neza",
       "campana": "PLAZA NEZA - PADECIMIENTOS",
       "adset": "RODILLA",
-      "leads": 171,
-      "gasto": 10002.31,
-      "cpl": 58.49
+      "leads": 174,
+      "gasto": 10296.63,
+      "cpl": 59.18
     },
     {
       "clinica": "Neza",
       "campana": "NEZA - PADECIMIENTOS",
       "adset": "NEUROPATIA",
-      "leads": 167,
-      "gasto": 9891.17,
-      "cpl": 59.23
+      "leads": 169,
+      "gasto": 10155.41,
+      "cpl": 60.09
     },
     {
       "clinica": "Tlahuac",
       "campana": "TLAHUAC - PADECIMIENTOS",
       "adset": "Neuropatia",
-      "leads": 162,
-      "gasto": 12480.96,
-      "cpl": 77.04
+      "leads": 169,
+      "gasto": 12843.59,
+      "cpl": 76.0
     },
     {
       "clinica": "Milpa Alta",
       "campana": "MILPA ALTA - PADECIMIENTOS",
       "adset": "NEUROPATIA",
-      "leads": 140,
-      "gasto": 13789.96,
-      "cpl": 98.5
+      "leads": 142,
+      "gasto": 14135.94,
+      "cpl": 99.55
     },
     {
       "clinica": "Plaza Neza",
       "campana": "PLAZA NEZA - PADECIMIENTOS",
       "adset": "NEUROPATIA",
-      "leads": 129,
-      "gasto": 6600.16,
-      "cpl": 51.16
+      "leads": 132,
+      "gasto": 6743.46,
+      "cpl": 51.09
     },
     {
       "clinica": "Mixquiahuala",
       "campana": "MIXQUIAHUALA - PADECIMIENTOS",
       "adset": "Rodilla",
-      "leads": 122,
-      "gasto": 5810.22,
-      "cpl": 47.62
+      "leads": 125,
+      "gasto": 6051.19,
+      "cpl": 48.41
     },
     {
       "clinica": "Milpa Alta",
       "campana": "MILPA ALTA - PADECIMIENTOS",
       "adset": "HOMBRO",
-      "leads": 115,
-      "gasto": 11494.07,
-      "cpl": 99.95
+      "leads": 116,
+      "gasto": 11835.61,
+      "cpl": 102.03
     },
     {
       "clinica": "Ajusco",
       "campana": "VIDEO AJUSCO / BALBUENA",
       "adset": "VIDEO AJUSCO",
-      "leads": 110,
-      "gasto": 6699.34,
-      "cpl": 60.9
+      "leads": 112,
+      "gasto": 6874.47,
+      "cpl": 61.38
     },
     {
       "clinica": "Plaza Neza",
       "campana": "PLAZA NEZA - PADECIMIENTOS",
       "adset": "ESPALDA",
-      "leads": 103,
-      "gasto": 4697.21,
-      "cpl": 45.6
+      "leads": 110,
+      "gasto": 5106.34,
+      "cpl": 46.42
     },
     {
       "clinica": "Tlahuac",
       "campana": "TLAHUAC - PADECIMIENTOS",
       "adset": "Rodilla",
-      "leads": 101,
-      "gasto": 8232.49,
-      "cpl": 81.51
+      "leads": 103,
+      "gasto": 8551.15,
+      "cpl": 83.02
+    },
+    {
+      "clinica": "Chalco",
+      "campana": "CHALCO - PADECIMIENTOS",
+      "adset": "RODILLA",
+      "leads": 86,
+      "gasto": 4745.92,
+      "cpl": 55.19
     },
     {
       "clinica": "Neza",
       "campana": "NEZA - PADECIMIENTOS",
       "adset": "HOMBRO",
       "leads": 85,
-      "gasto": 4689.88,
-      "cpl": 55.18
-    },
-    {
-      "clinica": "Chalco",
-      "campana": "CHALCO - PADECIMIENTOS",
-      "adset": "RODILLA",
-      "leads": 85,
-      "gasto": 4540.92,
-      "cpl": 53.42
-    },
-    {
-      "clinica": "Balbuena",
-      "campana": "BALBUENA - PADECIMIENTOS",
-      "adset": "RODILLA CHECK",
-      "leads": 81,
-      "gasto": 3058.75,
-      "cpl": 37.76
+      "gasto": 4703.37,
+      "cpl": 55.33
     },
     {
       "clinica": "Milpa Alta",
       "campana": "MILPA ALTA - PADECIMIENTOS",
       "adset": "ESPALDA",
-      "leads": 79,
-      "gasto": 7192.27,
-      "cpl": 91.04
+      "leads": 84,
+      "gasto": 7400.12,
+      "cpl": 88.1
+    },
+    {
+      "clinica": "Balbuena",
+      "campana": "BALBUENA - PADECIMIENTOS",
+      "adset": "RODILLA CHECK",
+      "leads": 83,
+      "gasto": 3158.91,
+      "cpl": 38.06
     },
     {
       "clinica": "Chalco",
       "campana": "CHALCO - PADECIMIENTOS",
       "adset": "MIX",
-      "leads": 69,
-      "gasto": 3025.16,
-      "cpl": 43.84
+      "leads": 71,
+      "gasto": 3099.68,
+      "cpl": 43.66
     },
     {
       "clinica": "Milpa Alta",
       "campana": "MILPA ALTA - PADECIMIENTOS",
       "adset": "RODILLA - Copia 2",
-      "leads": 60,
-      "gasto": 5801.82,
-      "cpl": 96.7
+      "leads": 62,
+      "gasto": 6127.82,
+      "cpl": 98.84
     },
     {
       "clinica": "Mixquiahuala",
       "campana": "MIXQUIAHUALA - PADECIMIENTOS",
       "adset": "Neuropatia",
-      "leads": 55,
-      "gasto": 2299.42,
-      "cpl": 41.81
+      "leads": 56,
+      "gasto": 2379.03,
+      "cpl": 42.48
     },
     {
       "clinica": "Coacalco",
       "campana": "COACALCO - PADECIMIENTOS",
       "adset": "Hombro",
-      "leads": 52,
-      "gasto": 2470.92,
-      "cpl": 47.52
+      "leads": 56,
+      "gasto": 2587.91,
+      "cpl": 46.21
     },
     {
       "clinica": "Chalco",
       "campana": "CHALCO - PADECIMIENTOS",
       "adset": "HOMBRO",
       "leads": 51,
-      "gasto": 3195.17,
-      "cpl": 62.65
+      "gasto": 3401.64,
+      "cpl": 66.7
     },
     {
       "clinica": "Mixquiahuala",
       "campana": "MIXQUIAHUALA - PADECIMIENTOS",
       "adset": "Hombro",
-      "leads": 48,
-      "gasto": 2201.46,
-      "cpl": 45.86
+      "leads": 49,
+      "gasto": 2307.52,
+      "cpl": 47.09
     },
     {
       "clinica": "Balbuena",
       "campana": "BALBUENA - PADECIMIENTOS",
       "adset": "HOMBRO CHECK",
       "leads": 30,
-      "gasto": 1094.43,
-      "cpl": 36.48
+      "gasto": 1110.69,
+      "cpl": 37.02
     },
     {
       "clinica": "Plaza Neza",
       "campana": "PLAZA NEZA - PADECIMIENTOS",
       "adset": "MIX",
       "leads": 27,
-      "gasto": 1013.44,
-      "cpl": 37.53
+      "gasto": 1018.32,
+      "cpl": 37.72
     },
     {
       "clinica": "Tlahuac",
       "campana": "TLAHUAC - PADECIMIENTOS",
       "adset": "Espalda",
+      "leads": 20,
+      "gasto": 1783.07,
+      "cpl": 89.15
+    },
+    {
+      "clinica": "Mixquiahuala",
+      "campana": "MIXQUIAHUALA - PADECIMIENTOS",
+      "adset": "Quiropractica",
       "leads": 18,
-      "gasto": 1728.3,
-      "cpl": 96.02
+      "gasto": 907.72,
+      "cpl": 50.43
     },
     {
       "clinica": "Mixquiahuala",
       "campana": "MIXQUIAHUALA - PADECIMIENTOS",
       "adset": "Servicios / Testimonios",
       "leads": 16,
-      "gasto": 792.06,
-      "cpl": 49.5
-    },
-    {
-      "clinica": "Mixquiahuala",
-      "campana": "MIXQUIAHUALA - PADECIMIENTOS",
-      "adset": "Quiropractica",
-      "leads": 16,
-      "gasto": 873.1,
-      "cpl": 54.57
+      "gasto": 822.62,
+      "cpl": 51.41
     },
     {
       "clinica": "Plaza Neza",
       "campana": "PLAZA NEZA - PADECIMIENTOS",
       "adset": "HOMBRO",
       "leads": 13,
-      "gasto": 976.32,
-      "cpl": 75.1
+      "gasto": 977.85,
+      "cpl": 75.22
     },
     {
       "clinica": "Neza",
@@ -12353,16 +12368,16 @@ MESES_DATA["2026-11"] = {
       "campana": "CHALCO - PADECIMIENTOS",
       "adset": "NEUROPATIA",
       "leads": 7,
-      "gasto": 283.98,
-      "cpl": 40.57
+      "gasto": 284.07,
+      "cpl": 40.58
     },
     {
       "clinica": "Tlahuac",
       "campana": "TLAHUAC - PADECIMIENTOS",
       "adset": "Hombro",
       "leads": 7,
-      "gasto": 611.95,
-      "cpl": 87.42
+      "gasto": 637.26,
+      "cpl": 91.04
     },
     {
       "clinica": "Neza",
@@ -12393,8 +12408,8 @@ MESES_DATA["2026-11"] = {
       "campana": "PLAZA NEZA - PADECIMIENTOS",
       "adset": "ESPOLON",
       "leads": 1,
-      "gasto": 54.0,
-      "cpl": 54.0
+      "gasto": 54.23,
+      "cpl": 54.23
     },
     {
       "clinica": "Balbuena",
@@ -12418,25 +12433,25 @@ MESES_DATA["2026-11"] = {
       "clinica": "Claveria",
       "campana": "NOVI CLAVERIA",
       "adset": "RODILLA - CHECK",
-      "leads": 217,
-      "gasto": 10325.67,
-      "cpl": 47.58
+      "leads": 225,
+      "gasto": 10725.89,
+      "cpl": 47.67
     },
     {
       "clinica": "Claveria",
       "campana": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
       "adset": "Publicación: \"¿El dolor de espalda está afectando tu día a día? 😣\"",
-      "leads": 61,
-      "gasto": 2673.63,
-      "cpl": 43.83
+      "leads": 63,
+      "gasto": 2783.02,
+      "cpl": 44.17
     },
     {
       "clinica": "Claveria",
       "campana": "NOVI CLAVERIA",
       "adset": "NEUROPATIA - CHECK",
-      "leads": 51,
-      "gasto": 1384.58,
-      "cpl": 27.15
+      "leads": 53,
+      "gasto": 1478.14,
+      "cpl": 27.89
     },
     {
       "clinica": "Claveria",
@@ -12451,24 +12466,32 @@ MESES_DATA["2026-11"] = {
       "campana": "Publicación: \"📍 ¡Equilibrio Total Clavería te ayuda a recuperar...\"",
       "adset": "Publicación: \"📍 ¡Equilibrio Total Clavería te ayuda a recuperar...\"",
       "leads": 28,
-      "gasto": 1830.24,
-      "cpl": 65.37
+      "gasto": 1886.18,
+      "cpl": 67.36
     },
     {
       "clinica": "Claveria",
       "campana": "NOVI CLAVERIA",
       "adset": "HOMBRO - CHECK",
-      "leads": 12,
-      "gasto": 388.93,
-      "cpl": 32.41
+      "leads": 14,
+      "gasto": 420.84,
+      "cpl": 30.06
+    },
+    {
+      "clinica": "Claveria",
+      "campana": "CLAVERÍA NOVIEMBRE + BUEN FIN",
+      "adset": "CLAVERÍA 5 KM 25-65+",
+      "leads": 13,
+      "gasto": 1001.15,
+      "cpl": 77.01
     },
     {
       "clinica": "Claveria",
       "campana": "CLAVERÍA NOVIEMBRE + BUEN FIN",
       "adset": "CLAVERÍA BUEN FIN 13-17 NOV 25-65+",
       "leads": 11,
-      "gasto": 1161.81,
-      "cpl": 105.62
+      "gasto": 1365.93,
+      "cpl": 124.18
     },
     {
       "clinica": "Claveria",
@@ -12480,26 +12503,18 @@ MESES_DATA["2026-11"] = {
     },
     {
       "clinica": "Claveria",
-      "campana": "CLAVERÍA NOVIEMBRE + BUEN FIN",
-      "adset": "CLAVERÍA 5 KM 25-65+",
-      "leads": 6,
-      "gasto": 610.88,
-      "cpl": 101.81
-    },
-    {
-      "clinica": "Claveria",
       "campana": "NOVI CLAVERIA",
       "adset": "ESPALDA - CHECK",
       "leads": 5,
-      "gasto": 123.43,
-      "cpl": 24.69
+      "gasto": 125.23,
+      "cpl": 25.05
     },
     {
       "clinica": "Valle Dorado",
       "campana": "Publicación: \"Si eres de Valle Dorado, 📍\"",
       "adset": "Publicación: \"Si eres de Valle Dorado, 📍\"",
       "leads": 142,
-      "gasto": 4438.39,
+      "gasto": 4439.33,
       "cpl": 31.26
     },
     {
@@ -12507,40 +12522,40 @@ MESES_DATA["2026-11"] = {
       "campana": "Valle Dorado  NEW",
       "adset": "HOMBRO",
       "leads": 119,
-      "gasto": 5579.16,
-      "cpl": 46.88
+      "gasto": 5579.84,
+      "cpl": 46.89
     },
     {
       "clinica": "Valle Dorado",
       "campana": "Valle Dorado  NEW",
       "adset": "ESPALDA",
       "leads": 95,
-      "gasto": 4596.91,
-      "cpl": 48.39
+      "gasto": 4597.78,
+      "cpl": 48.4
     },
     {
       "clinica": "Valle Dorado",
       "campana": "Valle Dorado  NEW",
       "adset": "RODILLA",
       "leads": 67,
-      "gasto": 3895.4,
-      "cpl": 58.14
+      "gasto": 3896.04,
+      "cpl": 58.15
     },
     {
       "clinica": "Valle Dorado",
       "campana": "VALLE DORADO NOVIEMBRE + BUEN FIN",
       "adset": "VALLE DORADO ZONA 25-65+",
       "leads": 18,
-      "gasto": 1282.94,
-      "cpl": 71.27
+      "gasto": 1288.29,
+      "cpl": 71.57
     },
     {
       "clinica": "Valle Dorado",
       "campana": "Valle Dorado  NEW",
       "adset": "ESPOLON",
       "leads": 7,
-      "gasto": 290.98,
-      "cpl": 41.57
+      "gasto": 291.07,
+      "cpl": 41.58
     },
     {
       "clinica": "Valle Dorado",
@@ -12570,57 +12585,57 @@ MESES_DATA["2026-11"] = {
       "clinica": "Pachuca",
       "campana": "PACHUCA RECUPERADA V2",
       "adset": "ESPALDA",
-      "leads": 156,
-      "gasto": 7058.97,
-      "cpl": 45.25
+      "leads": 159,
+      "gasto": 7383.61,
+      "cpl": 46.44
     },
     {
       "clinica": "Pachuca",
       "campana": "PACHUCA RECUPERADA V2",
       "adset": "NEUROPATÍA",
-      "leads": 42,
-      "gasto": 1568.42,
-      "cpl": 37.34
-    },
-    {
-      "clinica": "Pachuca",
-      "campana": "PACHUCA RECUPERADA V2",
-      "adset": "RODILLA",
-      "leads": 37,
-      "gasto": 1706.58,
-      "cpl": 46.12
+      "leads": 43,
+      "gasto": 1638.58,
+      "cpl": 38.11
     },
     {
       "clinica": "Pachuca",
       "campana": "PACHUCA NOVIEMBRE + BUEN FIN",
       "adset": "PACHUCA 22 KM 25-65+",
-      "leads": 36,
-      "gasto": 2389.58,
-      "cpl": 66.38
+      "leads": 39,
+      "gasto": 3000.01,
+      "cpl": 76.92
+    },
+    {
+      "clinica": "Pachuca",
+      "campana": "PACHUCA RECUPERADA V2",
+      "adset": "RODILLA",
+      "leads": 38,
+      "gasto": 1762.72,
+      "cpl": 46.39
     },
     {
       "clinica": "Pachuca",
       "campana": "PACHUCA RECUPERADA V2",
       "adset": "ESPOLÓN",
       "leads": 22,
-      "gasto": 834.93,
-      "cpl": 37.95
+      "gasto": 871.75,
+      "cpl": 39.62
     },
     {
       "clinica": "Pachuca",
       "campana": "PACHUCA RECUPERADA V2",
       "adset": "PARALISIS",
       "leads": 11,
-      "gasto": 694.68,
-      "cpl": 63.15
+      "gasto": 744.5,
+      "cpl": 67.68
     },
     {
       "clinica": "Pachuca",
       "campana": "PACHUCA RECUPERADA V2",
       "adset": "HOMBRO",
       "leads": 10,
-      "gasto": 367.51,
-      "cpl": 36.75
+      "gasto": 416.41,
+      "cpl": 41.64
     },
     {
       "clinica": "Pachuca",
@@ -12635,40 +12650,40 @@ MESES_DATA["2026-11"] = {
       "campana": "PACHUCA NOVIEMBRE + BUEN FIN",
       "adset": "PACHUCA BUEN FIN 13-17 NOV 25-65+",
       "leads": 2,
-      "gasto": 187.55,
-      "cpl": 93.78
+      "gasto": 194.26,
+      "cpl": 97.13
     },
     {
       "clinica": "Satelite",
       "campana": "SATELITE NEW",
       "adset": "HOMBRO - CHECK",
-      "leads": 97,
-      "gasto": 4397.31,
-      "cpl": 45.33
+      "leads": 102,
+      "gasto": 4704.46,
+      "cpl": 46.12
     },
     {
       "clinica": "Satelite",
       "campana": "SATELITE NEW",
       "adset": "NEUROPATIA",
-      "leads": 74,
-      "gasto": 2649.56,
-      "cpl": 35.8
+      "leads": 81,
+      "gasto": 2831.62,
+      "cpl": 34.96
     },
     {
       "clinica": "Satelite",
       "campana": "VIDEO SATELITE",
       "adset": "Publicación: \"¿Vives en Ciudad Satélite, cerca del Parque...\"",
-      "leads": 50,
-      "gasto": 2792.61,
-      "cpl": 55.85
+      "leads": 52,
+      "gasto": 2926.71,
+      "cpl": 56.28
     },
     {
       "clinica": "Satelite",
       "campana": "SATELITE NEW",
       "adset": "RODILLA - CHECK",
       "leads": 49,
-      "gasto": 2464.63,
-      "cpl": 50.3
+      "gasto": 2589.78,
+      "cpl": 52.85
     },
     {
       "clinica": "Satelite",
@@ -12682,17 +12697,17 @@ MESES_DATA["2026-11"] = {
       "clinica": "Satelite",
       "campana": "SATELITE NEW",
       "adset": "TESTIMONIO",
-      "leads": 33,
-      "gasto": 939.48,
-      "cpl": 28.47
+      "leads": 34,
+      "gasto": 1035.8,
+      "cpl": 30.46
     },
     {
       "clinica": "Satelite",
       "campana": "SATELITE NEW",
       "adset": "ESPALDA - CHECK",
-      "leads": 24,
-      "gasto": 1094.79,
-      "cpl": 45.62
+      "leads": 27,
+      "gasto": 1198.44,
+      "cpl": 44.39
     },
     {
       "clinica": "Satelite",
@@ -12706,137 +12721,137 @@ MESES_DATA["2026-11"] = {
       "clinica": "Satelite",
       "campana": "SATELITE NOVIEMBRE + BUEN FIN",
       "adset": "SATELITE 8 KM 25-65+",
-      "leads": 4,
-      "gasto": 460.92,
-      "cpl": 115.23
+      "leads": 5,
+      "gasto": 625.88,
+      "cpl": 125.18
     },
     {
       "clinica": "Satelite",
       "campana": "SATELITE NOVIEMBRE + BUEN FIN",
       "adset": "SATELITE BUEN FIN 13-17 NOV 25-65+",
-      "leads": 0,
-      "gasto": 74.35,
-      "cpl": 0
+      "leads": 1,
+      "gasto": 96.52,
+      "cpl": 96.52
     },
     {
       "clinica": "San Juan del Rio",
       "campana": "VIDEO SAN JUAN DEL RIO OCT",
       "adset": "Publicación: \"📍 ¿Vives en San Juan del Río y te duele la...\"",
-      "leads": 92,
-      "gasto": 6832.97,
-      "cpl": 74.27
+      "leads": 93,
+      "gasto": 7065.58,
+      "cpl": 75.97
     },
     {
       "clinica": "San Juan del Rio",
       "campana": "SJR - CHECK",
       "adset": "Neuropatia - Check",
       "leads": 69,
-      "gasto": 2089.59,
-      "cpl": 30.28
+      "gasto": 2113.98,
+      "cpl": 30.64
     },
     {
       "clinica": "San Juan del Rio",
       "campana": "SJR - CHECK",
       "adset": "Rodilla -  Check",
-      "leads": 47,
-      "gasto": 1662.23,
-      "cpl": 35.37
+      "leads": 51,
+      "gasto": 1769.58,
+      "cpl": 34.7
     },
     {
       "clinica": "San Juan del Rio",
       "campana": "Publicación: \"🏥 Conoce Equilibrio Total San Juan del Río, tu...\"",
       "adset": "Publicación: \"🏥 Conoce Equilibrio Total San Juan del Río, tu...\"",
       "leads": 41,
-      "gasto": 2419.01,
-      "cpl": 59.0
+      "gasto": 2487.05,
+      "cpl": 60.66
     },
     {
       "clinica": "San Juan del Rio",
       "campana": "SJR - CHECK",
       "adset": "Espalda - Check",
       "leads": 34,
-      "gasto": 1367.25,
-      "cpl": 40.21
+      "gasto": 1371.84,
+      "cpl": 40.35
     },
     {
       "clinica": "San Juan del Rio",
       "campana": "SJR - CHECK",
       "adset": "Servicios - Check",
-      "leads": 20,
-      "gasto": 935.97,
-      "cpl": 46.8
+      "leads": 21,
+      "gasto": 965.32,
+      "cpl": 45.97
     },
     {
       "clinica": "San Juan del Rio",
       "campana": "SJR - CHECK",
       "adset": "Hombro - Check",
       "leads": 15,
-      "gasto": 648.2,
-      "cpl": 43.21
+      "gasto": 711.87,
+      "cpl": 47.46
     },
     {
       "clinica": "San Juan del Rio",
       "campana": "SJR - CHECK",
       "adset": "Paralisis -  Check",
-      "leads": 11,
-      "gasto": 636.85,
-      "cpl": 57.9
+      "leads": 13,
+      "gasto": 693.25,
+      "cpl": 53.33
     },
     {
       "clinica": "Queretaro",
       "campana": "QUÉRETARO 2.0 SEP",
       "adset": "NEUROPATIA",
-      "leads": 154,
-      "gasto": 3538.87,
-      "cpl": 22.98
+      "leads": 155,
+      "gasto": 3596.38,
+      "cpl": 23.2
     },
     {
       "clinica": "Queretaro",
       "campana": "QUÉRETARO 2.0 SEP",
       "adset": "HOMBRO",
-      "leads": 101,
-      "gasto": 2322.18,
-      "cpl": 22.99
+      "leads": 105,
+      "gasto": 2451.76,
+      "cpl": 23.35
     },
     {
       "clinica": "Queretaro",
       "campana": "VIDEO QUERETARO OCT",
       "adset": "Publicación: \"¿Dolor de espalda en Querétaro y ya no sabes qué...\"",
       "leads": 81,
-      "gasto": 2838.87,
-      "cpl": 35.05
+      "gasto": 2912.53,
+      "cpl": 35.96
     },
     {
       "clinica": "Queretaro",
       "campana": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
       "adset": "Publicación: \"Trata tu neuropatía de forma segura y con...\"",
-      "leads": 76,
-      "gasto": 1663.5,
-      "cpl": 21.89
-    },
-    {
-      "clinica": "Queretaro",
-      "campana": "QUÉRETARO 2.0 SEP",
-      "adset": "ESPALDA",
-      "leads": 18,
-      "gasto": 450.18,
-      "cpl": 25.01
+      "leads": 79,
+      "gasto": 1710.32,
+      "cpl": 21.65
     },
     {
       "clinica": "Queretaro",
       "campana": "QUERÉTARO NOVIEMBRE + BUEN FIN",
       "adset": "QUERÉTARO 8 KM 25-65+",
-      "leads": 16,
-      "gasto": 1224.29,
-      "cpl": 76.52
+      "leads": 21,
+      "gasto": 1504.44,
+      "cpl": 71.64
+    },
+    {
+      "clinica": "Queretaro",
+      "campana": "QUÉRETARO 2.0 SEP",
+      "adset": "ESPALDA",
+      "leads": 19,
+      "gasto": 468.18,
+      "cpl": 24.64
     },
     {
       "clinica": "Queretaro",
       "campana": "QUÉRETARO 2.0 SEP",
       "adset": "RODILLA",
       "leads": 15,
-      "gasto": 475.86,
-      "cpl": 31.72
+      "gasto": 478.67,
+      "cpl": 31.91
     },
     {
       "clinica": "Queretaro",
@@ -12850,25 +12865,25 @@ MESES_DATA["2026-11"] = {
       "clinica": "Queretaro",
       "campana": "QUERÉTARO NOVIEMBRE + BUEN FIN",
       "adset": "QUERÉTARO BUEN FIN 13-17 NOV 25-65+",
-      "leads": 3,
-      "gasto": 226.92,
-      "cpl": 75.64
+      "leads": 4,
+      "gasto": 259.92,
+      "cpl": 64.98
     },
     {
       "clinica": "Tepeyac",
       "campana": "Tepeyac - Jun",
       "adset": "Neuropatia",
       "leads": 343,
-      "gasto": 9211.05,
-      "cpl": 26.85
+      "gasto": 9211.72,
+      "cpl": 26.86
     },
     {
       "clinica": "Tepeyac",
       "campana": "Tepeyac - Jun",
       "adset": "MIX",
       "leads": 85,
-      "gasto": 1966.12,
-      "cpl": 23.13
+      "gasto": 1966.92,
+      "cpl": 23.14
     },
     {
       "clinica": "Tepeyac",
@@ -12880,19 +12895,19 @@ MESES_DATA["2026-11"] = {
     },
     {
       "clinica": "Tepeyac",
+      "campana": "TEPEYAC NOV FEED",
+      "adset": "Publicación: \"🚨 ¿Vives en Tepeyac y llevas tiempo con dolor de...\"",
+      "leads": 43,
+      "gasto": 2352.16,
+      "cpl": 54.7
+    },
+    {
+      "clinica": "Tepeyac",
       "campana": "Tepeyac - Jun",
       "adset": "Hombro",
       "leads": 39,
       "gasto": 886.17,
       "cpl": 22.72
-    },
-    {
-      "clinica": "Tepeyac",
-      "campana": "TEPEYAC NOV FEED",
-      "adset": "Publicación: \"🚨 ¿Vives en Tepeyac y llevas tiempo con dolor de...\"",
-      "leads": 39,
-      "gasto": 2059.13,
-      "cpl": 52.8
     },
     {
       "clinica": "Tepeyac",
@@ -12906,9 +12921,9 @@ MESES_DATA["2026-11"] = {
       "clinica": "Tepeyac",
       "campana": "TEPEYAC NOVIEMBRE + BUEN FIN",
       "adset": "TEPEYAC ZONA 18-65+",
-      "leads": 35,
-      "gasto": 2010.22,
-      "cpl": 57.43
+      "leads": 38,
+      "gasto": 2266.92,
+      "cpl": 59.66
     },
     {
       "clinica": "Tepeyac",
@@ -12930,9 +12945,9 @@ MESES_DATA["2026-11"] = {
       "clinica": "Xochimilco",
       "campana": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
       "adset": "Publicación: \"🌿 En Equilibrio Total Xochimilco llevamos años...\"",
-      "leads": 345,
-      "gasto": 18094.08,
-      "cpl": 52.45
+      "leads": 354,
+      "gasto": 18709.11,
+      "cpl": 52.85
     },
     {
       "clinica": "Xochimilco",
@@ -12947,8 +12962,16 @@ MESES_DATA["2026-11"] = {
       "campana": "Publicación: \"¡Xochimilco, ya basta de dolor de ESPALDA! 🙌\"",
       "adset": "Publicación: \"¡Xochimilco, ya basta de dolor de ESPALDA! 🙌\"",
       "leads": 10,
-      "gasto": 585.57,
-      "cpl": 58.56
+      "gasto": 603.77,
+      "cpl": 60.38
+    },
+    {
+      "clinica": "Xochimilco",
+      "campana": "XOCHIMILCO NOVIEMBRE + BUEN FIN",
+      "adset": "XOCHIMILCO BUEN FIN 13-17 NOV 25-65+",
+      "leads": 9,
+      "gasto": 1297.47,
+      "cpl": 144.16
     },
     {
       "clinica": "Xochimilco",
@@ -12963,56 +12986,48 @@ MESES_DATA["2026-11"] = {
       "campana": "XOCHIMILCO NOVIEMBRE + BUEN FIN",
       "adset": "XOCHIMILCO ZONA 25-65+",
       "leads": 6,
-      "gasto": 670.4,
-      "cpl": 111.73
-    },
-    {
-      "clinica": "Xochimilco",
-      "campana": "XOCHIMILCO NOVIEMBRE + BUEN FIN",
-      "adset": "XOCHIMILCO BUEN FIN 13-17 NOV 25-65+",
-      "leads": 5,
-      "gasto": 1017.09,
-      "cpl": 203.42
+      "gasto": 790.45,
+      "cpl": 131.74
     },
     {
       "clinica": "La Moderna",
       "campana": "Moderna JUL",
       "adset": "Neuropatia",
       "leads": 36,
-      "gasto": 1639.35,
-      "cpl": 45.54
+      "gasto": 1649.67,
+      "cpl": 45.82
     },
     {
       "clinica": "La Moderna",
       "campana": "Moderna JUL",
       "adset": "Espalda",
       "leads": 21,
-      "gasto": 857.56,
-      "cpl": 40.84
+      "gasto": 862.56,
+      "cpl": 41.07
     },
     {
       "clinica": "La Moderna",
       "campana": "Moderna JUL",
       "adset": "Hombro",
       "leads": 14,
-      "gasto": 503.03,
-      "cpl": 35.93
+      "gasto": 506.04,
+      "cpl": 36.15
     },
     {
       "clinica": "La Moderna",
       "campana": "Moderna JUL",
       "adset": "Rodilla",
       "leads": 6,
-      "gasto": 281.58,
-      "cpl": 46.93
+      "gasto": 281.82,
+      "cpl": 46.97
     },
     {
       "clinica": "Cuautitlan",
       "campana": "Cuautitlán / Directo NUEVO",
       "adset": "Directo",
-      "leads": 564,
-      "gasto": 14118.75,
-      "cpl": 25.03
+      "leads": 583,
+      "gasto": 14661.88,
+      "cpl": 25.15
     },
     {
       "clinica": "Cuautitlan",
@@ -13026,9 +13041,9 @@ MESES_DATA["2026-11"] = {
       "clinica": "Cuautitlan",
       "campana": "CUAUTITLAN NOVIEMBRE + BUEN FIN",
       "adset": "CUAUTITLAN 18 KM 25-65+",
-      "leads": 24,
-      "gasto": 1048.39,
-      "cpl": 43.68
+      "leads": 28,
+      "gasto": 1308.98,
+      "cpl": 46.75
     },
     {
       "clinica": "Cuautitlan",
@@ -13042,49 +13057,49 @@ MESES_DATA["2026-11"] = {
       "clinica": "Cuautitlan",
       "campana": "CUAUTITLAN NOVIEMBRE + BUEN FIN",
       "adset": "CUAUTITLAN BUEN FIN 13-17 NOV 25-65+",
-      "leads": 4,
-      "gasto": 304.01,
-      "cpl": 76.0
+      "leads": 5,
+      "gasto": 392.41,
+      "cpl": 78.48
     },
     {
       "clinica": "Nicolas Romero",
       "campana": "NICOLAS ROMERO NEW - Copia",
       "adset": "HOMBRO",
-      "leads": 110,
-      "gasto": 6285.58,
-      "cpl": 57.14
+      "leads": 114,
+      "gasto": 6549.75,
+      "cpl": 57.45
     },
     {
       "clinica": "Nicolas Romero",
       "campana": "NICOLAS ROMERO NEW - Copia",
       "adset": "NEUROPATIA",
-      "leads": 93,
-      "gasto": 4119.58,
-      "cpl": 44.3
-    },
-    {
-      "clinica": "Nicolas Romero",
-      "campana": "NICOLAS ROMERO NEW - Copia",
-      "adset": "ESPALDA",
-      "leads": 71,
-      "gasto": 2211.39,
-      "cpl": 31.15
+      "leads": 98,
+      "gasto": 4428.0,
+      "cpl": 45.18
     },
     {
       "clinica": "Nicolas Romero",
       "campana": "NICOLAS ROMERO NEW - Copia",
       "adset": "RODILLA",
-      "leads": 71,
-      "gasto": 4012.36,
-      "cpl": 56.51
+      "leads": 74,
+      "gasto": 4178.47,
+      "cpl": 56.47
+    },
+    {
+      "clinica": "Nicolas Romero",
+      "campana": "NICOLAS ROMERO NEW - Copia",
+      "adset": "ESPALDA",
+      "leads": 72,
+      "gasto": 2361.13,
+      "cpl": 32.79
     },
     {
       "clinica": "Nicolas Romero",
       "campana": "VIDEO NICOLAS ROMERO OCT",
       "adset": "Publicación: \"📍 Nicolás Romero, ¿cuánto tiempo llevas...\"",
-      "leads": 29,
-      "gasto": 1266.57,
-      "cpl": 43.67
+      "leads": 30,
+      "gasto": 1351.01,
+      "cpl": 45.03
     },
     {
       "clinica": "Nicolas Romero",
@@ -13097,50 +13112,50 @@ MESES_DATA["2026-11"] = {
     {
       "clinica": "Ajusco",
       "campana": "Lulu AJUS",
-      "adset": "ROD",
-      "leads": 38,
-      "gasto": 1353.71,
-      "cpl": 35.62
+      "adset": "NEU",
+      "leads": 39,
+      "gasto": 1567.65,
+      "cpl": 40.2
     },
     {
       "clinica": "Ajusco",
       "campana": "Lulu AJUS",
-      "adset": "NEU",
-      "leads": 36,
-      "gasto": 1479.6,
-      "cpl": 41.1
+      "adset": "ROD",
+      "leads": 38,
+      "gasto": 1368.63,
+      "cpl": 36.02
     },
     {
       "clinica": "Ajusco",
       "campana": "Lulu AJUS",
       "adset": "ESP",
       "leads": 22,
-      "gasto": 1351.84,
-      "cpl": 61.45
+      "gasto": 1415.35,
+      "cpl": 64.33
     },
     {
       "clinica": "Ajusco",
       "campana": "Lulu AJUS",
       "adset": "HOM",
       "leads": 10,
-      "gasto": 422.72,
-      "cpl": 42.27
+      "gasto": 444.01,
+      "cpl": 44.4
     },
     {
       "clinica": "Cuautla",
       "campana": "CUAUTLA NUEVA",
       "adset": "Espalda",
       "leads": 113,
-      "gasto": 4773.3,
-      "cpl": 42.24
+      "gasto": 4864.01,
+      "cpl": 43.04
     },
     {
       "clinica": "Cuautla",
       "campana": "CUAUTLA NUEVA",
       "adset": "Neuropatia",
-      "leads": 70,
-      "gasto": 1592.37,
-      "cpl": 22.75
+      "leads": 75,
+      "gasto": 1773.31,
+      "cpl": 23.64
     },
     {
       "clinica": "Cuautla",
@@ -13155,24 +13170,24 @@ MESES_DATA["2026-11"] = {
       "campana": "CUAUTLA NUEVA",
       "adset": "Rodilla",
       "leads": 27,
-      "gasto": 1001.68,
-      "cpl": 37.1
+      "gasto": 1048.6,
+      "cpl": 38.84
     },
     {
       "clinica": "Cuautla",
       "campana": "CUAUTLA NOVIEMBRE + BUEN FIN",
       "adset": "CUAUTLA BUEN FIN 13-17 NOV 25-65+",
-      "leads": 17,
-      "gasto": 1007.44,
-      "cpl": 59.26
+      "leads": 23,
+      "gasto": 1262.17,
+      "cpl": 54.88
     },
     {
       "clinica": "Cuautla",
       "campana": "CUAUTLA NOVIEMBRE + BUEN FIN",
       "adset": "CUAUTLA 12 KM 25-65+",
-      "leads": 9,
-      "gasto": 635.04,
-      "cpl": 70.56
+      "leads": 10,
+      "gasto": 744.9,
+      "cpl": 74.49
     },
     {
       "clinica": "Cuautla",
@@ -13187,8 +13202,8 @@ MESES_DATA["2026-11"] = {
       "campana": "CUAUTLA NUEVA",
       "adset": "Hombro",
       "leads": 4,
-      "gasto": 189.87,
-      "cpl": 47.47
+      "gasto": 203.98,
+      "cpl": 50.99
     }
   ],
   "diario_sedes": {
@@ -13241,16 +13256,16 @@ MESES_DATA["2026-11"] = {
       "leads": 373
     },
     "2026-11-13": {
-      "gasto": 15605.21,
+      "gasto": 15605.54,
       "leads": 270
     },
     "2026-11-14": {
-      "gasto": 20039.88,
+      "gasto": 20067.2,
       "leads": 259
     },
     "2026-11-15": {
-      "gasto": 960.16,
-      "leads": 16
+      "gasto": 11315.51,
+      "leads": 179
     }
   },
   "diario_franquicias": {
@@ -13904,11 +13919,11 @@ MESES_DATA["2026-11"] = {
     },
     "2026-11-13": {
       "Ajusco": {
-        "gasto": 1965.43,
+        "gasto": 1965.51,
         "leads": 39
       },
       "Claveria": {
-        "gasto": 1445.26,
+        "gasto": 1445.42,
         "leads": 27
       },
       "Valle Dorado": {
@@ -13916,7 +13931,7 @@ MESES_DATA["2026-11"] = {
         "leads": 21
       },
       "Pachuca": {
-        "gasto": 2072.16,
+        "gasto": 2072.37,
         "leads": 36
       },
       "Satelite": {
@@ -13932,11 +13947,11 @@ MESES_DATA["2026-11"] = {
         "leads": 44
       },
       "Tepeyac": {
-        "gasto": 1850.46,
+        "gasto": 1850.53,
         "leads": 91
       },
       "Xochimilco": {
-        "gasto": 1490.44,
+        "gasto": 1490.49,
         "leads": 31
       },
       "La Moderna": {
@@ -13944,7 +13959,7 @@ MESES_DATA["2026-11"] = {
         "leads": 2
       },
       "Cuautitlan": {
-        "gasto": 1186.77,
+        "gasto": 1186.82,
         "leads": 49
       },
       "Nicolas Romero": {
@@ -13952,45 +13967,45 @@ MESES_DATA["2026-11"] = {
         "leads": 19
       },
       "Cuautla": {
-        "gasto": 1371.97,
+        "gasto": 1372.11,
         "leads": 34
       }
     },
     "2026-11-14": {
       "Ajusco": {
-        "gasto": 2258.53,
+        "gasto": 2264.65,
         "leads": 37
       },
       "Claveria": {
-        "gasto": 2426.29,
+        "gasto": 2432.48,
         "leads": 36
       },
       "Valle Dorado": {
-        "gasto": 2022.53,
+        "gasto": 2027.87,
         "leads": 33
       },
       "Pachuca": {
-        "gasto": 2001.1,
+        "gasto": 2002.45,
         "leads": 45
       },
       "Satelite": {
-        "gasto": 1862.56,
+        "gasto": 1863.0,
         "leads": 35
       },
       "San Juan del Rio": {
-        "gasto": 1072.81,
+        "gasto": 1073.11,
         "leads": 23
       },
       "Queretaro": {
-        "gasto": 1604.86,
+        "gasto": 1605.57,
         "leads": 26
       },
       "Tepeyac": {
-        "gasto": 1807.5,
+        "gasto": 1812.84,
         "leads": 57
       },
       "Xochimilco": {
-        "gasto": 2048.98,
+        "gasto": 2049.29,
         "leads": 18
       },
       "La Moderna": {
@@ -13998,70 +14013,70 @@ MESES_DATA["2026-11"] = {
         "leads": 1
       },
       "Cuautitlan": {
-        "gasto": 1918.9,
+        "gasto": 1924.3,
         "leads": 57
       },
       "Nicolas Romero": {
-        "gasto": 1458.13,
+        "gasto": 1458.82,
         "leads": 39
       },
       "Cuautla": {
-        "gasto": 1614.14,
+        "gasto": 1614.51,
         "leads": 34
       }
     },
     "2026-11-15": {
       "Ajusco": {
-        "gasto": 48.63,
-        "leads": 1
+        "gasto": 1044.55,
+        "leads": 9
       },
       "Claveria": {
-        "gasto": 201.6,
-        "leads": 4
+        "gasto": 1482.73,
+        "leads": 25
       },
       "Valle Dorado": {
-        "gasto": 125.46,
+        "gasto": 128.55,
         "leads": 1
       },
       "Pachuca": {
-        "gasto": 107.17,
-        "leads": 1
+        "gasto": 1310.01,
+        "leads": 9
       },
       "Satelite": {
-        "gasto": 90.47,
-        "leads": 2
+        "gasto": 1225.59,
+        "leads": 21
       },
       "San Juan del Rio": {
-        "gasto": 52.82,
-        "leads": 1
+        "gasto": 638.92,
+        "leads": 9
       },
       "Queretaro": {
-        "gasto": 63.24,
-        "leads": 1
+        "gasto": 704.16,
+        "leads": 16
       },
       "Tepeyac": {
-        "gasto": 70.42,
-        "leads": 2
+        "gasto": 616.21,
+        "leads": 9
       },
       "Xochimilco": {
-        "gasto": 107.89,
-        "leads": 1
+        "gasto": 1141.19,
+        "leads": 14
       },
       "La Moderna": {
-        "gasto": 49.86,
-        "leads": 0
+        "gasto": 68.43,
+        "leads": 1
       },
       "Cuautitlan": {
-        "gasto": 104.36,
-        "leads": 6
+        "gasto": 990.81,
+        "leads": 30
       },
       "Nicolas Romero": {
-        "gasto": 54.46,
-        "leads": 2
+        "gasto": 1026.63,
+        "leads": 16
       },
       "Cuautla": {
-        "gasto": 53.6,
-        "leads": 0
+        "gasto": 952.62,
+        "leads": 16
       }
     }
   },
@@ -14151,25 +14166,25 @@ MESES_DATA["2026-11"] = {
       "freq_x_gasto": 28578.4226
     },
     "2026-11-13": {
-      "gasto": 21068.93,
+      "gasto": 21070.84,
       "leads": 329,
-      "impressions": 399470,
-      "clicks": 6224,
-      "freq_x_gasto": 29682.5828
+      "impressions": 399518,
+      "clicks": 6227,
+      "freq_x_gasto": 29688.8346
     },
     "2026-11-14": {
-      "gasto": 28850.83,
+      "gasto": 28908.39,
       "leads": 374,
-      "impressions": 376773,
-      "clicks": 6254,
-      "freq_x_gasto": 41189.7241
+      "impressions": 379009,
+      "clicks": 6297,
+      "freq_x_gasto": 41438.934
     },
     "2026-11-15": {
-      "gasto": 302.86,
-      "leads": 9,
-      "impressions": 3204,
-      "clicks": 66,
-      "freq_x_gasto": 361.9407
+      "gasto": 12681.55,
+      "leads": 173,
+      "impressions": 152559,
+      "clicks": 2757,
+      "freq_x_gasto": 15591.6106
     }
   },
   "diario_gerontologia": {
@@ -14226,24 +14241,24 @@ MESES_DATA["2026-11"] = {
       "leads": 97
     },
     "2026-11-14": {
-      "gasto": 1960.64,
+      "gasto": 1960.73,
       "leads": 137
     },
     "2026-11-15": {
-      "gasto": 132.58,
-      "leads": 8
+      "gasto": 1207.85,
+      "leads": 67
     }
   },
   "complementos": {
     "Promociones": {
-      "leads_mes": 682,
-      "gasto_mes": 25982.71,
-      "cpl": 38.1
+      "leads_mes": 696,
+      "gasto_mes": 26772.21,
+      "cpl": 38.47
     },
     "Recursos Humanos": {
-      "leads_mes": 86,
-      "gasto_mes": 8113.95,
-      "cpl": 94.35
+      "leads_mes": 89,
+      "gasto_mes": 8293.67,
+      "cpl": 93.19
     }
   },
   "top_ads_complementos": [
@@ -14256,11 +14271,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-15",
       "es_nuevo": false,
-      "leads": 566,
-      "gasto": 21114.86,
-      "cpl": 37.31,
+      "leads": 579,
+      "gasto": 21748.92,
+      "cpl": 37.56,
       "frecuencia": 1.38,
-      "impresiones": 435524
+      "impresiones": 443959
     },
     {
       "clinica": "Ecatepec",
@@ -14271,11 +14286,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-26",
       "es_nuevo": false,
-      "leads": 263,
-      "gasto": 10128.01,
-      "cpl": 38.51,
+      "leads": 276,
+      "gasto": 10487.45,
+      "cpl": 38.0,
       "frecuencia": 1.6,
-      "impresiones": 285245
+      "impresiones": 290247
     },
     {
       "clinica": "Ecatepec",
@@ -14286,11 +14301,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-24",
       "es_nuevo": false,
-      "leads": 237,
-      "gasto": 15318.12,
-      "cpl": 64.63,
-      "frecuencia": 1.81,
-      "impresiones": 329834
+      "leads": 243,
+      "gasto": 15793.36,
+      "cpl": 64.99,
+      "frecuencia": 1.83,
+      "impresiones": 336613
     },
     {
       "clinica": "Plaza Neza",
@@ -14316,11 +14331,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-08-08",
       "es_nuevo": false,
-      "leads": 210,
-      "gasto": 12812.73,
-      "cpl": 61.01,
-      "frecuencia": 1.41,
-      "impresiones": 266544
+      "leads": 212,
+      "gasto": 13089.07,
+      "cpl": 61.74,
+      "frecuencia": 1.42,
+      "impresiones": 270469
     },
     {
       "clinica": "Ecatepec",
@@ -14331,26 +14346,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-25",
       "es_nuevo": false,
-      "leads": 189,
-      "gasto": 7985.36,
-      "cpl": 42.25,
+      "leads": 197,
+      "gasto": 8203.89,
+      "cpl": 41.64,
       "frecuencia": 1.67,
-      "impresiones": 194842
-    },
-    {
-      "clinica": "Coacalco",
-      "campana": "COACALCO FEED",
-      "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-      "anuncio": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-08-11",
-      "es_nuevo": false,
-      "leads": 173,
-      "gasto": 7021.97,
-      "cpl": 40.59,
-      "frecuencia": 1.57,
-      "impresiones": 118080
+      "impresiones": 197853
     },
     {
       "clinica": "Tlahuac",
@@ -14361,11 +14361,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-06",
       "es_nuevo": false,
-      "leads": 173,
-      "gasto": 6858.67,
-      "cpl": 39.65,
+      "leads": 181,
+      "gasto": 7225.42,
+      "cpl": 39.92,
       "frecuencia": 1.55,
-      "impresiones": 169510
+      "impresiones": 175213
+    },
+    {
+      "clinica": "Coacalco",
+      "campana": "COACALCO FEED",
+      "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
+      "anuncio": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-08-11",
+      "es_nuevo": false,
+      "leads": 177,
+      "gasto": 7242.32,
+      "cpl": 40.92,
+      "frecuencia": 1.58,
+      "impresiones": 120919
     },
     {
       "clinica": "Chalco",
@@ -14376,11 +14391,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-16",
       "es_nuevo": false,
-      "leads": 149,
-      "gasto": 13277.63,
-      "cpl": 89.11,
-      "frecuencia": 2.12,
-      "impresiones": 370501
+      "leads": 153,
+      "gasto": 13653.83,
+      "cpl": 89.24,
+      "frecuencia": 2.14,
+      "impresiones": 377515
     },
     {
       "clinica": "Chalco",
@@ -14391,11 +14406,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-06",
       "es_nuevo": false,
-      "leads": 148,
-      "gasto": 6408.0,
-      "cpl": 43.3,
-      "frecuencia": 1.45,
-      "impresiones": 191019
+      "leads": 152,
+      "gasto": 6718.92,
+      "cpl": 44.2,
+      "frecuencia": 1.46,
+      "impresiones": 197257
     },
     {
       "clinica": "Neza",
@@ -14407,10 +14422,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 121,
-      "gasto": 1702.31,
-      "cpl": 14.07,
+      "gasto": 1709.51,
+      "cpl": 14.13,
       "frecuencia": 1.16,
-      "impresiones": 37153
+      "impresiones": 37255
     },
     {
       "clinica": "Plaza Neza",
@@ -14421,11 +14436,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-08-08",
       "es_nuevo": false,
-      "leads": 114,
-      "gasto": 5682.05,
-      "cpl": 49.84,
-      "frecuencia": 1.86,
-      "impresiones": 117009
+      "leads": 116,
+      "gasto": 5854.64,
+      "cpl": 50.47,
+      "frecuencia": 1.87,
+      "impresiones": 119224
     },
     {
       "clinica": "Cuautla",
@@ -14436,11 +14451,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-06",
       "es_nuevo": false,
-      "leads": 100,
-      "gasto": 3827.51,
-      "cpl": 38.28,
-      "frecuencia": 2.01,
-      "impresiones": 114237
+      "leads": 104,
+      "gasto": 4030.25,
+      "cpl": 38.75,
+      "frecuencia": 2.03,
+      "impresiones": 118064
     },
     {
       "clinica": "Ecatepec",
@@ -14451,11 +14466,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-26",
       "es_nuevo": false,
-      "leads": 92,
-      "gasto": 3858.03,
-      "cpl": 41.94,
-      "frecuencia": 1.56,
-      "impresiones": 74144
+      "leads": 99,
+      "gasto": 4018.41,
+      "cpl": 40.59,
+      "frecuencia": 1.57,
+      "impresiones": 75826
     },
     {
       "clinica": "Chalco",
@@ -14466,11 +14481,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-07",
       "es_nuevo": false,
-      "leads": 87,
-      "gasto": 7781.47,
-      "cpl": 89.44,
-      "frecuencia": 1.93,
-      "impresiones": 146577
+      "leads": 92,
+      "gasto": 8186.83,
+      "cpl": 88.99,
+      "frecuencia": 1.95,
+      "impresiones": 149572
     },
     {
       "clinica": "Milpa Alta",
@@ -14481,11 +14496,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-07-14",
       "es_nuevo": false,
-      "leads": 85,
-      "gasto": 7678.32,
-      "cpl": 90.33,
-      "frecuencia": 1.72,
-      "impresiones": 165680
+      "leads": 86,
+      "gasto": 7935.75,
+      "cpl": 92.28,
+      "frecuencia": 1.74,
+      "impresiones": 168767
     },
     {
       "clinica": "Milpa Alta",
@@ -14496,11 +14511,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-06",
       "es_nuevo": false,
-      "leads": 76,
-      "gasto": 6602.44,
-      "cpl": 86.87,
-      "frecuencia": 1.64,
-      "impresiones": 187705
+      "leads": 81,
+      "gasto": 6903.32,
+      "cpl": 85.23,
+      "frecuencia": 1.65,
+      "impresiones": 192817
     },
     {
       "clinica": "Tlahuac",
@@ -14511,11 +14526,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-06",
       "es_nuevo": false,
-      "leads": 73,
-      "gasto": 6560.27,
-      "cpl": 89.87,
-      "frecuencia": 1.97,
-      "impresiones": 56301
+      "leads": 80,
+      "gasto": 6911.35,
+      "cpl": 86.39,
+      "frecuencia": 1.98,
+      "impresiones": 58135
     },
     {
       "clinica": "Ecatepec",
@@ -14526,11 +14541,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-09-25",
       "es_nuevo": false,
-      "leads": 71,
-      "gasto": 3333.56,
-      "cpl": 46.95,
+      "leads": 75,
+      "gasto": 3511.66,
+      "cpl": 46.82,
       "frecuencia": 1.58,
-      "impresiones": 78160
+      "impresiones": 81264
     },
     {
       "clinica": "Balbuena",
@@ -14541,26 +14556,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-09",
       "es_nuevo": true,
-      "leads": 71,
-      "gasto": 4261.55,
-      "cpl": 60.02,
+      "leads": 74,
+      "gasto": 4665.86,
+      "cpl": 63.05,
       "frecuencia": 1.28,
-      "impresiones": 37027
-    },
-    {
-      "clinica": "Milpa Alta",
-      "campana": "MILPA ALTA NOV FEED 2",
-      "adset": "Publicación: \"Moverte sin dolor se siente así 💃🏻✨\"",
-      "anuncio": "Publicación: \"Moverte sin dolor se siente así 💃🏻✨\"",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-06",
-      "es_nuevo": false,
-      "leads": 64,
-      "gasto": 6499.36,
-      "cpl": 101.55,
-      "frecuencia": 1.96,
-      "impresiones": 142074
+      "impresiones": 39162
     },
     {
       "clinica": "Balbuena",
@@ -14571,11 +14571,41 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-10",
       "es_nuevo": true,
-      "leads": 62,
-      "gasto": 3725.25,
-      "cpl": 60.08,
+      "leads": 67,
+      "gasto": 4262.08,
+      "cpl": 63.61,
       "frecuencia": 1.32,
-      "impresiones": 36134
+      "impresiones": 39245
+    },
+    {
+      "clinica": "Milpa Alta",
+      "campana": "MILPA ALTA NOV FEED 2",
+      "adset": "Publicación: \"Moverte sin dolor se siente así 💃🏻✨\"",
+      "anuncio": "Publicación: \"Moverte sin dolor se siente así 💃🏻✨\"",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-06",
+      "es_nuevo": false,
+      "leads": 65,
+      "gasto": 6811.41,
+      "cpl": 104.79,
+      "frecuencia": 1.99,
+      "impresiones": 145979
+    },
+    {
+      "clinica": "Neza",
+      "campana": "NEZA NOVIEMBRE + BUEN FIN",
+      "adset": "NEZA ZONA 25-65+",
+      "anuncio": "NEZA V3 CORTA - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-09",
+      "es_nuevo": true,
+      "leads": 56,
+      "gasto": 1810.45,
+      "cpl": 32.33,
+      "frecuencia": 1.36,
+      "impresiones": 40319
     },
     {
       "clinica": "Ecatepec",
@@ -14587,10 +14617,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-09-25",
       "es_nuevo": false,
       "leads": 54,
-      "gasto": 2104.04,
-      "cpl": 38.96,
-      "frecuencia": 1.83,
-      "impresiones": 55910
+      "gasto": 2137.19,
+      "cpl": 39.58,
+      "frecuencia": 1.84,
+      "impresiones": 56515
     },
     {
       "clinica": "Recursos Humanos",
@@ -14601,11 +14631,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-15",
       "es_nuevo": false,
-      "leads": 53,
-      "gasto": 4756.3,
-      "cpl": 89.74,
-      "frecuencia": 2.46,
-      "impresiones": 62609
+      "leads": 54,
+      "gasto": 4855.28,
+      "cpl": 89.91,
+      "frecuencia": 2.47,
+      "impresiones": 63422
     },
     {
       "clinica": "Chalco",
@@ -14631,26 +14661,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-08-06",
       "es_nuevo": false,
-      "leads": 44,
-      "gasto": 1631.91,
-      "cpl": 37.09,
+      "leads": 45,
+      "gasto": 1695.15,
+      "cpl": 37.67,
       "frecuencia": 1.5,
-      "impresiones": 17639
-    },
-    {
-      "clinica": "Neza",
-      "campana": "NEZA NOVIEMBRE + BUEN FIN",
-      "adset": "NEZA ZONA 25-65+",
-      "anuncio": "NEZA V3 CORTA - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-09",
-      "es_nuevo": true,
-      "leads": 44,
-      "gasto": 1344.96,
-      "cpl": 30.57,
-      "frecuencia": 1.3,
-      "impresiones": 31705
+      "impresiones": 18098
     },
     {
       "clinica": "Plaza Neza",
@@ -14661,11 +14676,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-09",
       "es_nuevo": true,
-      "leads": 39,
-      "gasto": 2471.9,
-      "cpl": 63.38,
-      "frecuencia": 1.32,
-      "impresiones": 48510
+      "leads": 40,
+      "gasto": 2820.23,
+      "cpl": 70.51,
+      "frecuencia": 1.35,
+      "impresiones": 53020
+    },
+    {
+      "clinica": "Complementos",
+      "campana": "Publicación: \"🔥 ¡BUEN FIN en Equilibrio Total! ¿Llevas tiempo...\"",
+      "adset": "Publicación: \"🔥 ¡BUEN FIN en Equilibrio Total! ¿Llevas tiempo...\"",
+      "anuncio": "Publicación: \"🔥 ¡BUEN FIN en Equilibrio Total! ¿Llevas tiempo...\"",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-13",
+      "es_nuevo": true,
+      "leads": 34,
+      "gasto": 5780.3,
+      "cpl": 170.01,
+      "frecuencia": 1.5,
+      "impresiones": 29290
     },
     {
       "clinica": "Recursos Humanos",
@@ -14676,11 +14706,26 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-10-15",
       "es_nuevo": false,
-      "leads": 31,
-      "gasto": 3357.65,
-      "cpl": 108.31,
-      "frecuencia": 2.14,
-      "impresiones": 45820
+      "leads": 33,
+      "gasto": 3438.39,
+      "cpl": 104.19,
+      "frecuencia": 2.15,
+      "impresiones": 46514
+    },
+    {
+      "clinica": "Tlahuac",
+      "campana": "TLAHUAC NOVIEMBRE + BUEN FIN",
+      "adset": "TLAHUAC ZONA 25-65+",
+      "anuncio": "TLAHUAC V2 COMO LLEGAR - 11 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-11",
+      "es_nuevo": true,
+      "leads": 30,
+      "gasto": 1889.62,
+      "cpl": 62.99,
+      "frecuencia": 1.39,
+      "impresiones": 36789
     },
     {
       "clinica": "Promociones",
@@ -14692,10 +14737,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-08-06",
       "es_nuevo": false,
       "leads": 29,
-      "gasto": 1137.5,
-      "cpl": 39.22,
-      "frecuencia": 1.37,
-      "impresiones": 21162
+      "gasto": 1179.52,
+      "cpl": 40.67,
+      "frecuencia": 1.38,
+      "impresiones": 21844
+    },
+    {
+      "clinica": "Chalco",
+      "campana": "CHALCO NOVIEMBRE + BUEN FIN",
+      "adset": "CHALCO ZONA 25-65+",
+      "anuncio": "CHALCO PAUTA 2 CÓMO LLEGAR - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-09",
+      "es_nuevo": true,
+      "leads": 28,
+      "gasto": 2235.18,
+      "cpl": 79.83,
+      "frecuencia": 1.38,
+      "impresiones": 56151
     },
     {
       "clinica": "Promociones",
@@ -14707,55 +14767,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-08-06",
       "es_nuevo": false,
       "leads": 27,
-      "gasto": 1242.85,
-      "cpl": 46.03,
+      "gasto": 1279.83,
+      "cpl": 47.4,
       "frecuencia": 1.5,
-      "impresiones": 10527
+      "impresiones": 10728
     },
     {
-      "clinica": "Chalco",
-      "campana": "CHALCO NOVIEMBRE + BUEN FIN",
-      "adset": "CHALCO ZONA 25-65+",
-      "anuncio": "CHALCO PAUTA 2 CÓMO LLEGAR - 10 NOV",
-      "tipo": "OTRO",
+      "clinica": "Ecatepec",
+      "campana": "ECATEPEC - PADECIMIENTOS",
+      "adset": "ORGANICO PAUTA",
+      "anuncio": "VID _ ESPALDA TROPICALIZADO _ OCT",
+      "tipo": "VIDEO",
       "status": "ACTIVE",
-      "created": "2026-11-09",
-      "es_nuevo": true,
-      "leads": 27,
-      "gasto": 2091.97,
-      "cpl": 77.48,
-      "frecuencia": 1.37,
-      "impresiones": 53737
-    },
-    {
-      "clinica": "Tlahuac",
-      "campana": "TLAHUAC NOVIEMBRE + BUEN FIN",
-      "adset": "TLAHUAC ZONA 25-65+",
-      "anuncio": "TLAHUAC V2 COMO LLEGAR - 11 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-11",
-      "es_nuevo": true,
-      "leads": 26,
-      "gasto": 1649.5,
-      "cpl": 63.44,
-      "frecuencia": 1.35,
-      "impresiones": 32602
-    },
-    {
-      "clinica": "Complementos",
-      "campana": "Publicación: \"🔥 ¡BUEN FIN en Equilibrio Total! ¿Llevas tiempo...\"",
-      "adset": "Publicación: \"🔥 ¡BUEN FIN en Equilibrio Total! ¿Llevas tiempo...\"",
-      "anuncio": "Publicación: \"🔥 ¡BUEN FIN en Equilibrio Total! ¿Llevas tiempo...\"",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-13",
-      "es_nuevo": true,
-      "leads": 25,
-      "gasto": 4760.57,
-      "cpl": 190.42,
-      "frecuencia": 1.45,
-      "impresiones": 25355
+      "created": "2026-09-23",
+      "es_nuevo": false,
+      "leads": 24,
+      "gasto": 1282.08,
+      "cpl": 53.42,
+      "frecuencia": 1.31,
+      "impresiones": 48989
     },
     {
       "clinica": "Ecatepec",
@@ -14767,10 +14797,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-10-06",
       "es_nuevo": false,
       "leads": 24,
-      "gasto": 1175.09,
-      "cpl": 48.96,
-      "frecuencia": 1.71,
-      "impresiones": 28344
+      "gasto": 1193.34,
+      "cpl": 49.72,
+      "frecuencia": 1.72,
+      "impresiones": 28661
     },
     {
       "clinica": "Milpa Alta",
@@ -14782,25 +14812,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 24,
-      "gasto": 2273.63,
-      "cpl": 94.73,
-      "frecuencia": 1.58,
-      "impresiones": 58940
-    },
-    {
-      "clinica": "Ecatepec",
-      "campana": "ECATEPEC - PADECIMIENTOS",
-      "adset": "ORGANICO PAUTA",
-      "anuncio": "VID _ ESPALDA TROPICALIZADO _ OCT",
-      "tipo": "VIDEO",
-      "status": "ACTIVE",
-      "created": "2026-09-23",
-      "es_nuevo": false,
-      "leads": 23,
-      "gasto": 1253.1,
-      "cpl": 54.48,
-      "frecuencia": 1.3,
-      "impresiones": 48315
+      "gasto": 2563.36,
+      "cpl": 106.81,
+      "frecuencia": 1.6,
+      "impresiones": 64870
     },
     {
       "clinica": "Ecatepec",
@@ -14811,11 +14826,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-12",
       "es_nuevo": true,
-      "leads": 21,
-      "gasto": 1413.45,
-      "cpl": 67.31,
-      "frecuencia": 1.39,
-      "impresiones": 25264
+      "leads": 24,
+      "gasto": 1729.05,
+      "cpl": 72.04,
+      "frecuencia": 1.38,
+      "impresiones": 29818
     },
     {
       "clinica": "Ecatepec",
@@ -14831,6 +14846,21 @@ MESES_DATA["2026-11"] = {
       "cpl": 37.01,
       "frecuencia": 1.18,
       "impresiones": 18047
+    },
+    {
+      "clinica": "Chalco",
+      "campana": "CHALCO NOVIEMBRE + BUEN FIN",
+      "adset": "CHALCO ZONA 25-65+",
+      "anuncio": "CHALCO PAUTA 4 TU VALORACIÓN - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-09",
+      "es_nuevo": true,
+      "leads": 17,
+      "gasto": 1136.25,
+      "cpl": 66.84,
+      "frecuencia": 1.21,
+      "impresiones": 23889
     },
     {
       "clinica": "Neza",
@@ -14857,25 +14887,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-08-06",
       "es_nuevo": false,
       "leads": 14,
-      "gasto": 699.95,
-      "cpl": 50.0,
-      "frecuencia": 1.36,
-      "impresiones": 10531
-    },
-    {
-      "clinica": "Chalco",
-      "campana": "CHALCO NOVIEMBRE + BUEN FIN",
-      "adset": "CHALCO ZONA 25-65+",
-      "anuncio": "CHALCO PAUTA 4 TU VALORACIÓN - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-09",
-      "es_nuevo": true,
-      "leads": 14,
-      "gasto": 752.37,
-      "cpl": 53.74,
-      "frecuencia": 1.19,
-      "impresiones": 17270
+      "gasto": 709.5,
+      "cpl": 50.68,
+      "frecuencia": 1.35,
+      "impresiones": 10673
     },
     {
       "clinica": "Balbuena",
@@ -14886,41 +14901,11 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-09",
       "es_nuevo": true,
-      "leads": 12,
-      "gasto": 1157.1,
-      "cpl": 96.42,
-      "frecuencia": 1.17,
-      "impresiones": 16460
-    },
-    {
-      "clinica": "Ajusco",
-      "campana": "AJUSCO NOVIEMBRE + BUEN FIN",
-      "adset": "AJUSCO ZONA 25-65+",
-      "anuncio": "AJUSCO V1 ORIGINAL - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 11,
-      "gasto": 1152.21,
-      "cpl": 104.75,
-      "frecuencia": 1.3,
-      "impresiones": 14995
-    },
-    {
-      "clinica": "Balbuena",
-      "campana": "BALBUENA NOVIEMBRE + BUEN FIN",
-      "adset": "BALBUENA 8 KM 25-65+",
-      "anuncio": "BALBUENA V5 RITMO HOUSE - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-09",
-      "es_nuevo": true,
-      "leads": 10,
-      "gasto": 1403.6,
-      "cpl": 140.36,
-      "frecuencia": 1.28,
-      "impresiones": 11401
+      "leads": 14,
+      "gasto": 1419.1,
+      "cpl": 101.36,
+      "frecuencia": 1.2,
+      "impresiones": 19979
     },
     {
       "clinica": "Coacalco",
@@ -14931,11 +14916,41 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-12",
       "es_nuevo": true,
-      "leads": 10,
-      "gasto": 1340.92,
-      "cpl": 134.09,
-      "frecuencia": 1.5,
-      "impresiones": 17480
+      "leads": 13,
+      "gasto": 1560.14,
+      "cpl": 120.01,
+      "frecuencia": 1.53,
+      "impresiones": 19236
+    },
+    {
+      "clinica": "Balbuena",
+      "campana": "BALBUENA NOVIEMBRE + BUEN FIN",
+      "adset": "BALBUENA 8 KM 25-65+",
+      "anuncio": "BALBUENA V5 RITMO HOUSE - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-09",
+      "es_nuevo": true,
+      "leads": 12,
+      "gasto": 1711.68,
+      "cpl": 142.64,
+      "frecuencia": 1.28,
+      "impresiones": 13179
+    },
+    {
+      "clinica": "Ajusco",
+      "campana": "AJUSCO NOVIEMBRE + BUEN FIN",
+      "adset": "AJUSCO ZONA 25-65+",
+      "anuncio": "AJUSCO V1 ORIGINAL - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 12,
+      "gasto": 1456.05,
+      "cpl": 121.34,
+      "frecuencia": 1.33,
+      "impresiones": 18389
     },
     {
       "clinica": "Chalco",
@@ -14968,19 +14983,19 @@ MESES_DATA["2026-11"] = {
       "impresiones": 14101
     },
     {
-      "clinica": "Milpa Alta",
-      "campana": "MILPA ALTA NOVIEMBRE + BUEN FIN",
-      "adset": "MILPA ALTA ZONA 25-65+",
-      "anuncio": "MILPA ALTA V6 DEL DOLOR AL COLOR - 10 NOV",
+      "clinica": "Balbuena",
+      "campana": "BALBUENA NOVIEMBRE + BUEN FIN",
+      "adset": "BALBUENA 8 KM 25-65+",
+      "anuncio": "BALBUENA V1 ORIGINAL - 10 NOV",
       "tipo": "OTRO",
       "status": "ACTIVE",
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 9,
-      "gasto": 915.69,
-      "cpl": 101.74,
-      "frecuencia": 1.73,
-      "impresiones": 22740
+      "gasto": 556.72,
+      "cpl": 61.86,
+      "frecuencia": 1.16,
+      "impresiones": 5292
     },
     {
       "clinica": "Plaza Neza",
@@ -14991,11 +15006,41 @@ MESES_DATA["2026-11"] = {
       "status": "ACTIVE",
       "created": "2026-11-09",
       "es_nuevo": true,
-      "leads": 8,
-      "gasto": 698.44,
-      "cpl": 87.31,
-      "frecuencia": 1.4,
-      "impresiones": 13224
+      "leads": 9,
+      "gasto": 740.11,
+      "cpl": 82.23,
+      "frecuencia": 1.41,
+      "impresiones": 13723
+    },
+    {
+      "clinica": "Milpa Alta",
+      "campana": "MILPA ALTA NOVIEMBRE + BUEN FIN",
+      "adset": "MILPA ALTA ZONA 25-65+",
+      "anuncio": "MILPA ALTA V6 DEL DOLOR AL COLOR - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-09",
+      "es_nuevo": true,
+      "leads": 9,
+      "gasto": 1101.31,
+      "cpl": 122.37,
+      "frecuencia": 1.8,
+      "impresiones": 25932
+    },
+    {
+      "clinica": "Tlahuac",
+      "campana": "TLAHUAC NOVIEMBRE + BUEN FIN",
+      "adset": "TLAHUAC BUEN FIN 13-17 NOV 25-65+",
+      "anuncio": "TLAHUAC BUEN FIN - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 9,
+      "gasto": 826.4,
+      "cpl": 91.82,
+      "frecuencia": 1.21,
+      "impresiones": 16758
     },
     {
       "clinica": "Coacalco",
@@ -15007,40 +15052,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 8,
-      "gasto": 1211.08,
-      "cpl": 151.38,
-      "frecuencia": 1.21,
-      "impresiones": 15750
-    },
-    {
-      "clinica": "Tlahuac",
-      "campana": "TLAHUAC NOVIEMBRE + BUEN FIN",
-      "adset": "TLAHUAC BUEN FIN 13-17 NOV 25-65+",
-      "anuncio": "TLAHUAC BUEN FIN - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 8,
-      "gasto": 738.09,
-      "cpl": 92.26,
-      "frecuencia": 1.21,
-      "impresiones": 15653
-    },
-    {
-      "clinica": "Balbuena",
-      "campana": "BALBUENA NOVIEMBRE + BUEN FIN",
-      "adset": "BALBUENA 8 KM 25-65+",
-      "anuncio": "BALBUENA V1 ORIGINAL - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-09",
-      "es_nuevo": true,
-      "leads": 7,
-      "gasto": 434.19,
-      "cpl": 62.03,
-      "frecuencia": 1.17,
-      "impresiones": 4621
+      "gasto": 1415.9,
+      "cpl": 176.99,
+      "frecuencia": 1.24,
+      "impresiones": 17930
     },
     {
       "clinica": "Neza",
@@ -15052,10 +15067,40 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 7,
-      "gasto": 54.57,
-      "cpl": 7.8,
+      "gasto": 54.99,
+      "cpl": 7.86,
       "frecuencia": 1.16,
-      "impresiones": 762
+      "impresiones": 764
+    },
+    {
+      "clinica": "Neza",
+      "campana": "NEZA NOVIEMBRE + BUEN FIN",
+      "adset": "NEZA ZONA 25-65+",
+      "anuncio": "NEZA V5 RITMO HOUSE - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-09",
+      "es_nuevo": true,
+      "leads": 7,
+      "gasto": 230.46,
+      "cpl": 32.92,
+      "frecuencia": 1.36,
+      "impresiones": 3579
+    },
+    {
+      "clinica": "Neza",
+      "campana": "NEZA NOVIEMBRE + BUEN FIN",
+      "adset": "NEZA BUEN FIN 13-17 NOV 25-65+",
+      "anuncio": "NEZA BUEN FIN - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 7,
+      "gasto": 362.48,
+      "cpl": 51.78,
+      "frecuencia": 1.3,
+      "impresiones": 5591
     },
     {
       "clinica": "Plaza Neza",
@@ -15067,40 +15112,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 6,
-      "gasto": 282.68,
-      "cpl": 47.11,
-      "frecuencia": 1.43,
-      "impresiones": 3911
-    },
-    {
-      "clinica": "Neza",
-      "campana": "NEZA NOVIEMBRE + BUEN FIN",
-      "adset": "NEZA BUEN FIN 13-17 NOV 25-65+",
-      "anuncio": "NEZA BUEN FIN - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 6,
-      "gasto": 332.83,
-      "cpl": 55.47,
-      "frecuencia": 1.28,
-      "impresiones": 5330
-    },
-    {
-      "clinica": "Neza",
-      "campana": "NEZA NOVIEMBRE + BUEN FIN",
-      "adset": "NEZA ZONA 25-65+",
-      "anuncio": "NEZA V5 RITMO HOUSE - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-09",
-      "es_nuevo": true,
-      "leads": 5,
-      "gasto": 185.93,
-      "cpl": 37.19,
-      "frecuencia": 1.31,
-      "impresiones": 3084
+      "gasto": 324.93,
+      "cpl": 54.16,
+      "frecuencia": 1.45,
+      "impresiones": 4250
     },
     {
       "clinica": "Ajusco",
@@ -15127,10 +15142,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 4,
-      "gasto": 279.88,
-      "cpl": 69.97,
+      "gasto": 281.01,
+      "cpl": 70.25,
       "frecuencia": 1.17,
-      "impresiones": 6794
+      "impresiones": 6804
     },
     {
       "clinica": "Tlahuac",
@@ -15142,10 +15157,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 4,
-      "gasto": 181.39,
+      "gasto": 181.41,
       "cpl": 45.35,
       "frecuencia": 1.26,
-      "impresiones": 3545
+      "impresiones": 3546
     },
     {
       "clinica": "Balbuena",
@@ -15157,10 +15172,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 4,
-      "gasto": 603.5,
-      "cpl": 150.88,
+      "gasto": 611.71,
+      "cpl": 152.93,
       "frecuencia": 1.25,
-      "impresiones": 4937
+      "impresiones": 4974
     },
     {
       "clinica": "Coacalco",
@@ -15187,10 +15202,40 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 3,
-      "gasto": 495.27,
-      "cpl": 165.09,
+      "gasto": 496.61,
+      "cpl": 165.54,
       "frecuencia": 1.24,
-      "impresiones": 6595
+      "impresiones": 6602
+    },
+    {
+      "clinica": "Coacalco",
+      "campana": "COACALCO NOVIEMBRE + BUEN FIN",
+      "adset": "COACALCO ZONA 25-65+",
+      "anuncio": "COACALCO V3 CORTA - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 3,
+      "gasto": 460.72,
+      "cpl": 153.57,
+      "frecuencia": 1.18,
+      "impresiones": 5931
+    },
+    {
+      "clinica": "Coacalco",
+      "campana": "COACALCO NOVIEMBRE + BUEN FIN",
+      "adset": "COACALCO ZONA 25-65+",
+      "anuncio": "COACALCO V4 RITMO HOUSE - 12 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-12",
+      "es_nuevo": true,
+      "leads": 3,
+      "gasto": 195.07,
+      "cpl": 65.02,
+      "frecuencia": 1.18,
+      "impresiones": 2115
     },
     {
       "clinica": "Ajusco",
@@ -15202,10 +15247,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 3,
-      "gasto": 114.4,
-      "cpl": 38.13,
-      "frecuencia": 1.16,
-      "impresiones": 1598
+      "gasto": 146.33,
+      "cpl": 48.78,
+      "frecuencia": 1.18,
+      "impresiones": 1898
     },
     {
       "clinica": "Promociones",
@@ -15217,10 +15262,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-08-06",
       "es_nuevo": false,
       "leads": 2,
-      "gasto": 155.64,
-      "cpl": 77.82,
-      "frecuencia": 1.39,
-      "impresiones": 2130
+      "gasto": 159.29,
+      "cpl": 79.64,
+      "frecuencia": 1.4,
+      "impresiones": 2178
     },
     {
       "clinica": "Recursos Humanos",
@@ -15262,10 +15307,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 113.27,
-      "cpl": 56.63,
-      "frecuencia": 1.35,
-      "impresiones": 2436
+      "gasto": 125.71,
+      "cpl": 62.85,
+      "frecuencia": 1.36,
+      "impresiones": 2538
     },
     {
       "clinica": "Ecatepec",
@@ -15277,10 +15322,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 255.82,
-      "cpl": 127.91,
+      "gasto": 271.3,
+      "cpl": 135.65,
       "frecuencia": 1.19,
-      "impresiones": 4654
+      "impresiones": 4830
     },
     {
       "clinica": "Coacalco",
@@ -15298,34 +15343,19 @@ MESES_DATA["2026-11"] = {
       "impresiones": 1043
     },
     {
-      "clinica": "Coacalco",
-      "campana": "COACALCO NOVIEMBRE + BUEN FIN",
-      "adset": "COACALCO ZONA 25-65+",
-      "anuncio": "COACALCO V3 CORTA - 12 NOV",
+      "clinica": "Ecatepec",
+      "campana": "ECATEPEC NOVIEMBRE + BUEN FIN",
+      "adset": "ECATEPEC ZONA 25-65+",
+      "anuncio": "ECATEPEC V4 NEUROPATÍA - 12 NOV",
       "tipo": "OTRO",
       "status": "ACTIVE",
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 333.05,
-      "cpl": 166.53,
-      "frecuencia": 1.15,
-      "impresiones": 4459
-    },
-    {
-      "clinica": "Coacalco",
-      "campana": "COACALCO NOVIEMBRE + BUEN FIN",
-      "adset": "COACALCO ZONA 25-65+",
-      "anuncio": "COACALCO V4 RITMO HOUSE - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 2,
-      "gasto": 191.58,
-      "cpl": 95.79,
-      "frecuencia": 1.18,
-      "impresiones": 2079
+      "gasto": 145.12,
+      "cpl": 72.56,
+      "frecuencia": 1.25,
+      "impresiones": 2660
     },
     {
       "clinica": "Ecatepec",
@@ -15337,10 +15367,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 20.74,
-      "cpl": 10.37,
+      "gasto": 23.92,
+      "cpl": 11.96,
       "frecuencia": 1.09,
-      "impresiones": 236
+      "impresiones": 246
     },
     {
       "clinica": "Ajusco",
@@ -15352,10 +15382,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 2,
-      "gasto": 319.22,
-      "cpl": 159.61,
-      "frecuencia": 1.45,
-      "impresiones": 2922
+      "gasto": 331.93,
+      "cpl": 165.97,
+      "frecuencia": 1.48,
+      "impresiones": 3002
     },
     {
       "clinica": "Chalco",
@@ -15397,10 +15427,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 109.63,
-      "cpl": 109.63,
-      "frecuencia": 1.18,
-      "impresiones": 2825
+      "gasto": 115.89,
+      "cpl": 115.89,
+      "frecuencia": 1.19,
+      "impresiones": 2897
     },
     {
       "clinica": "Plaza Neza",
@@ -15412,10 +15442,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 188.17,
-      "cpl": 188.17,
+      "gasto": 188.6,
+      "cpl": 188.6,
       "frecuencia": 1.27,
-      "impresiones": 4190
+      "impresiones": 4194
     },
     {
       "clinica": "Plaza Neza",
@@ -15427,10 +15457,25 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-10",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 51.64,
-      "cpl": 51.64,
+      "gasto": 54.51,
+      "cpl": 54.51,
       "frecuencia": 1.13,
-      "impresiones": 1049
+      "impresiones": 1092
+    },
+    {
+      "clinica": "Plaza Neza",
+      "campana": "PLAZA NEZA NOVIEMBRE + BUEN FIN",
+      "adset": "PLAZA NEZA ZONA 25-65+",
+      "anuncio": "PLAZA NEZA V7 LOGO 3D - 10 NOV",
+      "tipo": "OTRO",
+      "status": "ACTIVE",
+      "created": "2026-11-10",
+      "es_nuevo": true,
+      "leads": 1,
+      "gasto": 124.57,
+      "cpl": 124.57,
+      "frecuencia": 1.19,
+      "impresiones": 1836
     },
     {
       "clinica": "Neza",
@@ -15457,25 +15502,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 77.73,
-      "cpl": 77.73,
-      "frecuencia": 1.07,
-      "impresiones": 1125
-    },
-    {
-      "clinica": "Ecatepec",
-      "campana": "ECATEPEC NOVIEMBRE + BUEN FIN",
-      "adset": "ECATEPEC ZONA 25-65+",
-      "anuncio": "ECATEPEC V4 NEUROPATÍA - 12 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-12",
-      "es_nuevo": true,
-      "leads": 1,
-      "gasto": 136.17,
-      "cpl": 136.17,
-      "frecuencia": 1.24,
-      "impresiones": 2568
+      "gasto": 89.32,
+      "cpl": 89.32,
+      "frecuencia": 1.08,
+      "impresiones": 1235
     },
     {
       "clinica": "Ajusco",
@@ -15487,10 +15517,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 1,
-      "gasto": 9.68,
-      "cpl": 9.68,
-      "frecuencia": 1.2,
-      "impresiones": 104
+      "gasto": 17.36,
+      "cpl": 17.36,
+      "frecuencia": 1.24,
+      "impresiones": 153
     },
     {
       "clinica": "Ecatepec",
@@ -15667,10 +15697,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 61.91,
+      "gasto": 95.18,
       "cpl": 0,
-      "frecuencia": 1.04,
-      "impresiones": 1231
+      "frecuencia": 1.06,
+      "impresiones": 1711
     },
     {
       "clinica": "Milpa Alta",
@@ -15682,10 +15712,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 66.23,
+      "gasto": 130.3,
       "cpl": 0,
-      "frecuencia": 1.26,
-      "impresiones": 1546
+      "frecuencia": 1.31,
+      "impresiones": 2575
     },
     {
       "clinica": "Milpa Alta",
@@ -15697,10 +15727,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 175.88,
+      "gasto": 177.25,
       "cpl": 0,
       "frecuencia": 1.24,
-      "impresiones": 5196
+      "impresiones": 5216
     },
     {
       "clinica": "Milpa Alta",
@@ -15712,10 +15742,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 172.15,
+      "gasto": 174.62,
       "cpl": 0,
       "frecuencia": 1.28,
-      "impresiones": 4572
+      "impresiones": 4598
     },
     {
       "clinica": "Plaza Neza",
@@ -15727,10 +15757,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 103.63,
+      "gasto": 103.66,
       "cpl": 0,
       "frecuencia": 1.14,
-      "impresiones": 1696
+      "impresiones": 1698
     },
     {
       "clinica": "Chalco",
@@ -15742,10 +15772,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 14.18,
+      "gasto": 15.16,
       "cpl": 0,
       "frecuencia": 1.05,
-      "impresiones": 316
+      "impresiones": 337
     },
     {
       "clinica": "Milpa Alta",
@@ -15757,10 +15787,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-09",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 60.63,
+      "gasto": 63.42,
       "cpl": 0,
-      "frecuencia": 1.28,
-      "impresiones": 1340
+      "frecuencia": 1.29,
+      "impresiones": 1364
     },
     {
       "clinica": "Plaza Neza",
@@ -15772,25 +15802,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-10",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 23.44,
+      "gasto": 24.61,
       "cpl": 0,
       "frecuencia": 1.15,
-      "impresiones": 473
-    },
-    {
-      "clinica": "Plaza Neza",
-      "campana": "PLAZA NEZA NOVIEMBRE + BUEN FIN",
-      "adset": "PLAZA NEZA ZONA 25-65+",
-      "anuncio": "PLAZA NEZA V7 LOGO 3D - 10 NOV",
-      "tipo": "OTRO",
-      "status": "ACTIVE",
-      "created": "2026-11-10",
-      "es_nuevo": true,
-      "leads": 0,
-      "gasto": 75.3,
-      "cpl": 0,
-      "frecuencia": 1.13,
-      "impresiones": 1352
+      "impresiones": 479
     },
     {
       "clinica": "Tlahuac",
@@ -15802,10 +15817,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 60.5,
+      "gasto": 61.04,
       "cpl": 0,
-      "frecuencia": 1.27,
-      "impresiones": 1200
+      "frecuencia": 1.26,
+      "impresiones": 1208
     },
     {
       "clinica": "Tlahuac",
@@ -15832,10 +15847,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 2.78,
+      "gasto": 2.97,
       "cpl": 0,
       "frecuencia": 1.07,
-      "impresiones": 76
+      "impresiones": 81
     },
     {
       "clinica": "Tlahuac",
@@ -15847,10 +15862,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-11",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 4.4,
+      "gasto": 4.42,
       "cpl": 0,
-      "frecuencia": 1.09,
-      "impresiones": 71
+      "frecuencia": 1.11,
+      "impresiones": 72
     },
     {
       "clinica": "Neza",
@@ -15907,10 +15922,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 32.35,
+      "gasto": 50.24,
       "cpl": 0,
-      "frecuencia": 1.17,
-      "impresiones": 537
+      "frecuencia": 1.23,
+      "impresiones": 761
     },
     {
       "clinica": "Ecatepec",
@@ -15922,10 +15937,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 14.19,
+      "gasto": 14.79,
       "cpl": 0,
-      "frecuencia": 1.05,
-      "impresiones": 206
+      "frecuencia": 1.07,
+      "impresiones": 222
     },
     {
       "clinica": "Chalco",
@@ -15952,10 +15967,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 215.65,
+      "gasto": 215.66,
       "cpl": 0,
       "frecuencia": 1.23,
-      "impresiones": 4357
+      "impresiones": 4358
     },
     {
       "clinica": "Ajusco",
@@ -15967,10 +15982,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 11.42,
+      "gasto": 11.99,
       "cpl": 0,
       "frecuencia": 1.04,
-      "impresiones": 121
+      "impresiones": 125
     },
     {
       "clinica": "Ajusco",
@@ -15997,10 +16012,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 36.04,
+      "gasto": 39.99,
       "cpl": 0,
       "frecuencia": 1.09,
-      "impresiones": 444
+      "impresiones": 468
     },
     {
       "clinica": "Ajusco",
@@ -16012,10 +16027,10 @@ MESES_DATA["2026-11"] = {
       "created": "2026-11-12",
       "es_nuevo": true,
       "leads": 0,
-      "gasto": 51.99,
+      "gasto": 54.23,
       "cpl": 0,
-      "frecuencia": 1.21,
-      "impresiones": 562
+      "frecuencia": 1.22,
+      "impresiones": 581
     }
   ],
   "adsets_complementos": [
@@ -16023,33 +16038,33 @@ MESES_DATA["2026-11"] = {
       "clinica": "Promociones",
       "campana": "Pauta Organico 1.0",
       "adset": "PROMOCIONES CDMX",
-      "leads": 682,
-      "gasto": 25982.71,
-      "cpl": 38.1
+      "leads": 696,
+      "gasto": 26772.21,
+      "cpl": 38.47
     },
     {
       "clinica": "Ecatepec",
       "campana": "ECATEPEC - PADECIMIENTOS",
       "adset": "Espalda",
-      "leads": 317,
-      "gasto": 12251.38,
-      "cpl": 38.65
+      "leads": 330,
+      "gasto": 12643.97,
+      "cpl": 38.32
     },
     {
       "clinica": "Ecatepec",
       "campana": "ECATEPEC - PADECIMIENTOS",
       "adset": "Neuropatia",
-      "leads": 305,
-      "gasto": 13018.48,
-      "cpl": 42.68
+      "leads": 320,
+      "gasto": 13415.64,
+      "cpl": 41.92
     },
     {
       "clinica": "Ecatepec",
       "campana": "ECATEPEC FEED",
       "adset": "Publicación: \"¿Vives con dolor en Ecatepec? 📍\"",
-      "leads": 237,
-      "gasto": 15318.12,
-      "cpl": 64.63
+      "leads": 243,
+      "gasto": 15793.36,
+      "cpl": 64.99
     },
     {
       "clinica": "Plaza Neza",
@@ -16063,153 +16078,153 @@ MESES_DATA["2026-11"] = {
       "clinica": "Ajusco",
       "campana": "AJUSCO FEED",
       "adset": "Publicación: \"Si eres de la zona Ajusco, 📍\"",
-      "leads": 210,
-      "gasto": 12812.73,
-      "cpl": 61.01
+      "leads": 212,
+      "gasto": 13089.07,
+      "cpl": 61.74
     },
     {
       "clinica": "Neza",
       "campana": "NEZA NOVIEMBRE + BUEN FIN",
       "adset": "NEZA ZONA 25-65+",
-      "leads": 177,
-      "gasto": 3287.77,
-      "cpl": 18.57
-    },
-    {
-      "clinica": "Coacalco",
-      "campana": "COACALCO FEED",
-      "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
-      "leads": 173,
-      "gasto": 7021.97,
-      "cpl": 40.59
+      "leads": 191,
+      "gasto": 3805.41,
+      "cpl": 19.92
     },
     {
       "clinica": "Tlahuac",
       "campana": "TLAHUAC NOV FEED",
       "adset": "Publicación: \"Vecinos de Tláhuac: el dolor de espalda, rodilla...\"",
-      "leads": 173,
-      "gasto": 6858.67,
-      "cpl": 39.65
+      "leads": 181,
+      "gasto": 7225.42,
+      "cpl": 39.92
+    },
+    {
+      "clinica": "Coacalco",
+      "campana": "COACALCO FEED",
+      "adset": "Publicación: \"¡Si eres de la zona Coacalco! 👀📍\"",
+      "leads": 177,
+      "gasto": 7242.32,
+      "cpl": 40.92
     },
     {
       "clinica": "Chalco",
       "campana": "CHALCO OCT FEED",
       "adset": "Publicación: \"📍 Chalco: ¿llevas semanas con dolor de espalda? 😣...\"",
-      "leads": 149,
-      "gasto": 13277.63,
-      "cpl": 89.11
+      "leads": 153,
+      "gasto": 13653.83,
+      "cpl": 89.24
     },
     {
       "clinica": "Chalco",
       "campana": "CHALCO NOV FEED 2",
       "adset": "Publicación: \"Si el dolor de espalda, rodilla u hombros ya no...\"",
-      "leads": 148,
-      "gasto": 6408.0,
-      "cpl": 43.3
+      "leads": 152,
+      "gasto": 6718.92,
+      "cpl": 44.2
     },
     {
       "clinica": "Plaza Neza",
       "campana": "PLAZA NEZA NOV FEED",
       "adset": "Publicación: \"Si eres de Plaza Neza, 📍\"",
-      "leads": 114,
-      "gasto": 5682.05,
-      "cpl": 49.84
+      "leads": 116,
+      "gasto": 5854.64,
+      "cpl": 50.47
     },
     {
       "clinica": "Cuautla",
       "campana": "CUAUTLA NOV FEED",
       "adset": "Publicación: \"📍 Equilibrio Total Cuautla 🚨 Atención, Cuautla:...\"",
-      "leads": 100,
-      "gasto": 3827.51,
-      "cpl": 38.28
+      "leads": 104,
+      "gasto": 4030.25,
+      "cpl": 38.75
     },
     {
       "clinica": "Chalco",
       "campana": "CHALCO NOV FEED",
       "adset": "Publicación: \"Equilibrio Total Chalco 💙\"",
-      "leads": 87,
-      "gasto": 7781.47,
-      "cpl": 89.44
+      "leads": 92,
+      "gasto": 8186.83,
+      "cpl": 88.99
     },
     {
       "clinica": "Milpa Alta",
       "campana": "MILPA ALTA FEED",
       "adset": "Publicación: \"¿Eres de Milpa Alta? y ese dolor todavía no...\"",
-      "leads": 85,
-      "gasto": 7678.32,
-      "cpl": 90.33
+      "leads": 86,
+      "gasto": 7935.75,
+      "cpl": 92.28
     },
     {
       "clinica": "Milpa Alta",
       "campana": "MILPA ALTA NOV FEED",
       "adset": "Publicación: \"📍 Milpa Alta: el dolor de espalda, rodilla u...\"",
-      "leads": 76,
-      "gasto": 6602.44,
-      "cpl": 86.87
+      "leads": 81,
+      "gasto": 6903.32,
+      "cpl": 85.23
     },
     {
       "clinica": "Tlahuac",
       "campana": "TLAHUAC NOV FEED 2",
       "adset": "Publicación: \"Dale a tu cuerpo el cuidado que se merece ✨\"",
-      "leads": 73,
-      "gasto": 6560.27,
-      "cpl": 89.87
+      "leads": 80,
+      "gasto": 6911.35,
+      "cpl": 86.39
     },
     {
       "clinica": "Ecatepec",
       "campana": "ECATEPEC - PADECIMIENTOS",
       "adset": "Rodilla",
-      "leads": 71,
-      "gasto": 3358.59,
-      "cpl": 47.3
+      "leads": 75,
+      "gasto": 3536.69,
+      "cpl": 47.16
     },
     {
       "clinica": "Balbuena",
       "campana": "BALBUENA NOV FEED",
       "adset": "Publicación: \"📍 ¡Atención, Balbuena! Equilibrio Total está aquí...\"",
-      "leads": 71,
-      "gasto": 4261.55,
-      "cpl": 60.02
-    },
-    {
-      "clinica": "Milpa Alta",
-      "campana": "MILPA ALTA NOV FEED 2",
-      "adset": "Publicación: \"Moverte sin dolor se siente así 💃🏻✨\"",
-      "leads": 64,
-      "gasto": 6499.36,
-      "cpl": 101.55
+      "leads": 74,
+      "gasto": 4665.86,
+      "cpl": 63.05
     },
     {
       "clinica": "Balbuena",
       "campana": "BALBUENA NOV FEED 2",
       "adset": "Publicación: \"¿Eres de Balbuena, Moctezuma o alrededores? 📍\"",
-      "leads": 62,
-      "gasto": 3725.25,
-      "cpl": 60.08
+      "leads": 67,
+      "gasto": 4262.08,
+      "cpl": 63.61
+    },
+    {
+      "clinica": "Milpa Alta",
+      "campana": "MILPA ALTA NOV FEED 2",
+      "adset": "Publicación: \"Moverte sin dolor se siente así 💃🏻✨\"",
+      "leads": 65,
+      "gasto": 6811.41,
+      "cpl": 104.79
     },
     {
       "clinica": "Recursos Humanos",
       "campana": "RECLUTAMIENTO LINDAVISTA 2",
       "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
-      "leads": 53,
-      "gasto": 4756.3,
-      "cpl": 89.74
+      "leads": 54,
+      "gasto": 4855.28,
+      "cpl": 89.91
     },
     {
       "clinica": "Chalco",
       "campana": "CHALCO NOVIEMBRE + BUEN FIN",
       "adset": "CHALCO ZONA 25-65+",
-      "leads": 49,
-      "gasto": 3528.67,
-      "cpl": 72.01
+      "leads": 53,
+      "gasto": 4103.58,
+      "cpl": 77.43
     },
     {
       "clinica": "Plaza Neza",
       "campana": "PLAZA NEZA NOVIEMBRE + BUEN FIN",
       "adset": "PLAZA NEZA ZONA 25-65+",
-      "leads": 49,
-      "gasto": 3612.52,
-      "cpl": 73.72
+      "leads": 52,
+      "gasto": 4056.29,
+      "cpl": 78.01
     },
     {
       "clinica": "Chalco",
@@ -16220,60 +16235,60 @@ MESES_DATA["2026-11"] = {
       "cpl": 61.61
     },
     {
+      "clinica": "Balbuena",
+      "campana": "BALBUENA NOVIEMBRE + BUEN FIN",
+      "adset": "BALBUENA 8 KM 25-65+",
+      "leads": 38,
+      "gasto": 4184.11,
+      "cpl": 110.11
+    },
+    {
       "clinica": "Milpa Alta",
       "campana": "MILPA ALTA NOVIEMBRE + BUEN FIN",
       "adset": "MILPA ALTA ZONA 25-65+",
       "leads": 34,
-      "gasto": 3773.84,
-      "cpl": 111.0
-    },
-    {
-      "clinica": "Balbuena",
-      "campana": "BALBUENA NOVIEMBRE + BUEN FIN",
-      "adset": "BALBUENA 8 KM 25-65+",
-      "leads": 32,
-      "gasto": 3490.16,
-      "cpl": 109.07
-    },
-    {
-      "clinica": "Recursos Humanos",
-      "campana": "RECLUTAMIENTO LINDAVISTA 1",
-      "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
-      "leads": 31,
-      "gasto": 3357.65,
-      "cpl": 108.31
+      "gasto": 4326.15,
+      "cpl": 127.24
     },
     {
       "clinica": "Tlahuac",
       "campana": "TLAHUAC NOVIEMBRE + BUEN FIN",
       "adset": "TLAHUAC ZONA 25-65+",
-      "leads": 30,
-      "gasto": 1927.63,
-      "cpl": 64.25
-    },
-    {
-      "clinica": "Ecatepec",
-      "campana": "ECATEPEC NOVIEMBRE + BUEN FIN",
-      "adset": "ECATEPEC ZONA 25-65+",
-      "leads": 25,
-      "gasto": 1694.63,
-      "cpl": 67.79
+      "leads": 34,
+      "gasto": 2168.52,
+      "cpl": 63.78
     },
     {
       "clinica": "Complementos",
       "campana": "Publicación: \"🔥 ¡BUEN FIN en Equilibrio Total! ¿Llevas tiempo...\"",
       "adset": "Publicación: \"🔥 ¡BUEN FIN en Equilibrio Total! ¿Llevas tiempo...\"",
-      "leads": 25,
-      "gasto": 4760.57,
-      "cpl": 190.42
+      "leads": 34,
+      "gasto": 5780.3,
+      "cpl": 170.01
+    },
+    {
+      "clinica": "Recursos Humanos",
+      "campana": "RECLUTAMIENTO LINDAVISTA 1",
+      "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
+      "leads": 33,
+      "gasto": 3438.39,
+      "cpl": 104.19
+    },
+    {
+      "clinica": "Ecatepec",
+      "campana": "ECATEPEC NOVIEMBRE + BUEN FIN",
+      "adset": "ECATEPEC ZONA 25-65+",
+      "leads": 29,
+      "gasto": 2052.44,
+      "cpl": 70.77
     },
     {
       "clinica": "Ecatepec",
       "campana": "ECATEPEC - PADECIMIENTOS",
       "adset": "ORGANICO PAUTA",
-      "leads": 23,
-      "gasto": 1254.92,
-      "cpl": 54.56
+      "leads": 24,
+      "gasto": 1283.9,
+      "cpl": 53.5
     },
     {
       "clinica": "Ecatepec",
@@ -16295,9 +16310,17 @@ MESES_DATA["2026-11"] = {
       "clinica": "Ajusco",
       "campana": "AJUSCO NOVIEMBRE + BUEN FIN",
       "adset": "AJUSCO ZONA 25-65+",
-      "leads": 15,
-      "gasto": 1379.15,
-      "cpl": 91.94
+      "leads": 16,
+      "gasto": 1729.36,
+      "cpl": 108.08
+    },
+    {
+      "clinica": "Coacalco",
+      "campana": "COACALCO NOV FEED",
+      "adset": "Publicación: \"😣 Coacalco, ¿llevas semanas aguantando ese dolor...\"",
+      "leads": 13,
+      "gasto": 1560.14,
+      "cpl": 120.01
     },
     {
       "clinica": "Chalco",
@@ -16308,14 +16331,6 @@ MESES_DATA["2026-11"] = {
       "cpl": 79.37
     },
     {
-      "clinica": "Coacalco",
-      "campana": "COACALCO NOV FEED",
-      "adset": "Publicación: \"😣 Coacalco, ¿llevas semanas aguantando ese dolor...\"",
-      "leads": 10,
-      "gasto": 1340.92,
-      "cpl": 134.09
-    },
-    {
       "clinica": "Neza",
       "campana": "BLOQUEADO NEZA · VIDEO NEZA DDM",
       "adset": "NEZA DDM PUNTERO",
@@ -16324,44 +16339,44 @@ MESES_DATA["2026-11"] = {
       "cpl": 60.13
     },
     {
-      "clinica": "Coacalco",
-      "campana": "COACALCO NOVIEMBRE + BUEN FIN",
-      "adset": "COACALCO BUEN FIN 13-17 NOV 25-65+",
-      "leads": 8,
-      "gasto": 1211.08,
-      "cpl": 151.38
-    },
-    {
       "clinica": "Tlahuac",
       "campana": "TLAHUAC NOVIEMBRE + BUEN FIN",
       "adset": "TLAHUAC BUEN FIN 13-17 NOV 25-65+",
-      "leads": 8,
-      "gasto": 738.09,
-      "cpl": 92.26
+      "leads": 9,
+      "gasto": 826.4,
+      "cpl": 91.82
     },
     {
       "clinica": "Coacalco",
       "campana": "COACALCO NOVIEMBRE + BUEN FIN",
       "adset": "COACALCO ZONA 25-65+",
-      "leads": 6,
-      "gasto": 812.36,
-      "cpl": 135.39
+      "leads": 8,
+      "gasto": 943.52,
+      "cpl": 117.94
+    },
+    {
+      "clinica": "Coacalco",
+      "campana": "COACALCO NOVIEMBRE + BUEN FIN",
+      "adset": "COACALCO BUEN FIN 13-17 NOV 25-65+",
+      "leads": 8,
+      "gasto": 1415.9,
+      "cpl": 176.99
+    },
+    {
+      "clinica": "Neza",
+      "campana": "NEZA NOVIEMBRE + BUEN FIN",
+      "adset": "NEZA BUEN FIN 13-17 NOV 25-65+",
+      "leads": 7,
+      "gasto": 362.48,
+      "cpl": 51.78
     },
     {
       "clinica": "Plaza Neza",
       "campana": "PLAZA NEZA NOVIEMBRE + BUEN FIN",
       "adset": "PLAZA NEZA BUEN FIN 13-17 NOV 25-65+",
       "leads": 6,
-      "gasto": 282.68,
-      "cpl": 47.11
-    },
-    {
-      "clinica": "Neza",
-      "campana": "NEZA NOVIEMBRE + BUEN FIN",
-      "adset": "NEZA BUEN FIN 13-17 NOV 25-65+",
-      "leads": 6,
-      "gasto": 332.83,
-      "cpl": 55.47
+      "gasto": 324.93,
+      "cpl": 54.16
     },
     {
       "clinica": "Ajusco",
@@ -16376,8 +16391,8 @@ MESES_DATA["2026-11"] = {
       "campana": "BALBUENA NOVIEMBRE + BUEN FIN",
       "adset": "BALBUENA BUEN FIN 13-17 NOV 25-65+",
       "leads": 4,
-      "gasto": 603.5,
-      "cpl": 150.88
+      "gasto": 611.71,
+      "cpl": 152.93
     },
     {
       "clinica": "Coacalco",
@@ -16400,16 +16415,16 @@ MESES_DATA["2026-11"] = {
       "campana": "ECATEPEC NOVIEMBRE + BUEN FIN",
       "adset": "ECATEPEC BUEN FIN 13-17 NOV 25-65+",
       "leads": 2,
-      "gasto": 255.82,
-      "cpl": 127.91
+      "gasto": 271.3,
+      "cpl": 135.65
     },
     {
       "clinica": "Ajusco",
       "campana": "AJUSCO NOVIEMBRE + BUEN FIN",
       "adset": "AJUSCO BUEN FIN 13-17 NOV 25-65+",
       "leads": 2,
-      "gasto": 319.22,
-      "cpl": 159.61
+      "gasto": 331.93,
+      "cpl": 165.97
     },
     {
       "clinica": "Chalco",
@@ -16440,7 +16455,7 @@ MESES_DATA["2026-11"] = {
       "campana": "MILPA ALTA NOVIEMBRE + BUEN FIN",
       "adset": "MILPA ALTA BUEN FIN 13-17 NOV 25-65+",
       "leads": 0,
-      "gasto": 215.65,
+      "gasto": 215.66,
       "cpl": 0
     }
   ],
@@ -16449,16 +16464,16 @@ MESES_DATA["2026-11"] = {
       "clinica": "Ajusco",
       "campana": "VIDEO AJUSCO / BALBUENA",
       "adset": "VIDEO AJUSCO",
-      "gasto_mes": 6699.25,
-      "leads_mes": 110,
+      "gasto_mes": 6874.47,
+      "leads_mes": 112,
       "cuenta": "Laura"
     },
     {
       "clinica": "Ajusco",
       "campana": "AJUSCO FEED",
       "adset": "Publicación: \"Si eres de la zona Ajusco, 📍\"",
-      "gasto_mes": 12812.73,
-      "leads_mes": 210,
+      "gasto_mes": 13089.07,
+      "leads_mes": 212,
       "cuenta": "Promociones"
     },
     {
@@ -16473,23 +16488,23 @@ MESES_DATA["2026-11"] = {
       "clinica": "Cuautla",
       "campana": "CUAUTLA NOV FEED",
       "adset": "Publicación: \"📍 Equilibrio Total Cuautla 🚨 Atención, Cuautla:...\"",
-      "gasto_mes": 3827.51,
-      "leads_mes": 100,
+      "gasto_mes": 4030.25,
+      "leads_mes": 104,
       "cuenta": "Promociones"
     },
     {
       "clinica": "Ajusco",
       "campana": "AJUSCO NOVIEMBRE + BUEN FIN",
       "adset": "AJUSCO ZONA 25-65+",
-      "gasto_mes": 1379.15,
-      "leads_mes": 15,
+      "gasto_mes": 1729.36,
+      "leads_mes": 16,
       "cuenta": "Promociones"
     },
     {
       "clinica": "Ajusco",
       "campana": "AJUSCO NOVIEMBRE + BUEN FIN",
       "adset": "AJUSCO BUEN FIN 13-17 NOV 25-65+",
-      "gasto_mes": 319.22,
+      "gasto_mes": 331.93,
       "leads_mes": 2,
       "cuenta": "Promociones"
     }
@@ -18996,80 +19011,80 @@ MESES_DATA["2026-11"] = {
       "Plaza Neza": {
         "leads": 43,
         "gasto": 1126.67,
-        "impressions": 48345,
+        "impressions": 48347,
         "clicks": 794,
-        "freq_x_gasto": 2464.697,
+        "freq_x_gasto": 2464.8014,
         "gasto_compl": 954.94
       },
       "Neza": {
         "leads": 59,
-        "gasto": 2820.09,
-        "impressions": 70690,
-        "clicks": 1112,
-        "freq_x_gasto": 4081.4655,
-        "gasto_compl": 634.8
+        "gasto": 2820.16,
+        "impressions": 70693,
+        "clicks": 1113,
+        "freq_x_gasto": 4081.6866,
+        "gasto_compl": 634.93
       },
       "Balbuena": {
         "leads": 100,
-        "gasto": 2759.65,
-        "impressions": 60158,
+        "gasto": 2759.88,
+        "impressions": 60162,
         "clicks": 1119,
-        "freq_x_gasto": 5607.3729,
-        "gasto_compl": 2195.25
+        "freq_x_gasto": 5607.9999,
+        "gasto_compl": 2195.5
       },
       "Mixquiahuala": {
         "leads": 24,
-        "gasto": 1253.87,
-        "impressions": 44569,
+        "gasto": 1253.9,
+        "impressions": 44570,
         "clicks": 573,
-        "freq_x_gasto": 1578.3834
+        "freq_x_gasto": 1578.4583
       },
       "Ajusco": {
         "leads": 39,
         "gasto": 692.03,
-        "impressions": 34554,
+        "impressions": 34557,
         "clicks": 487,
-        "freq_x_gasto": 2304.2015,
-        "gasto_compl": 1273.4
+        "freq_x_gasto": 2304.5002,
+        "gasto_compl": 1273.48
       },
       "Chalco": {
         "leads": 77,
         "gasto": 1937.87,
-        "impressions": 133685,
-        "clicks": 1876,
-        "freq_x_gasto": 5941.086,
-        "gasto_compl": 3075.37
+        "impressions": 133702,
+        "clicks": 1877,
+        "freq_x_gasto": 5941.0722,
+        "gasto_compl": 3075.51
       },
       "Coacalco": {
         "leads": 69,
         "gasto": 2479.7,
-        "impressions": 79244,
+        "impressions": 79250,
         "clicks": 1436,
-        "freq_x_gasto": 4718.4112,
-        "gasto_compl": 1589.85
+        "freq_x_gasto": 4718.8346,
+        "gasto_compl": 1590.47
       },
       "Tlahuac": {
         "leads": 39,
         "gasto": 1126.87,
-        "impressions": 59263,
-        "clicks": 934,
-        "freq_x_gasto": 3444.6537,
-        "gasto_compl": 1828.56
+        "impressions": 59265,
+        "clicks": 935,
+        "freq_x_gasto": 3445.1106,
+        "gasto_compl": 1828.79
       },
       "Milpa Alta": {
         "leads": 43,
         "gasto": 2100.49,
-        "impressions": 113590,
+        "impressions": 113609,
         "clicks": 1441,
-        "freq_x_gasto": 5704.9464,
+        "freq_x_gasto": 5705.8312,
         "gasto_compl": 2705.88
       },
       "Claveria": {
         "leads": 27,
-        "gasto": 1445.26,
-        "impressions": 21759,
+        "gasto": 1445.42,
+        "impressions": 21760,
         "clicks": 378,
-        "freq_x_gasto": 1904.0578
+        "freq_x_gasto": 1904.3553
       },
       "Valle Dorado": {
         "leads": 21,
@@ -19080,10 +19095,10 @@ MESES_DATA["2026-11"] = {
       },
       "Pachuca": {
         "leads": 36,
-        "gasto": 2072.16,
-        "impressions": 38040,
+        "gasto": 2072.37,
+        "impressions": 38044,
         "clicks": 575,
-        "freq_x_gasto": 3218.9224
+        "freq_x_gasto": 3219.5864
       },
       "Satelite": {
         "leads": 36,
@@ -19095,30 +19110,30 @@ MESES_DATA["2026-11"] = {
       "San Juan del Rio": {
         "leads": 22,
         "gasto": 879.15,
-        "impressions": 26740,
+        "impressions": 26741,
         "clicks": 368,
-        "freq_x_gasto": 1269.424
+        "freq_x_gasto": 1269.4715
       },
       "Queretaro": {
         "leads": 44,
         "gasto": 1151.61,
-        "impressions": 22599,
+        "impressions": 22602,
         "clicks": 345,
-        "freq_x_gasto": 1688.8533
+        "freq_x_gasto": 1689.0779
       },
       "Tepeyac": {
         "leads": 91,
-        "gasto": 1850.46,
-        "impressions": 28721,
+        "gasto": 1850.53,
+        "impressions": 28722,
         "clicks": 701,
-        "freq_x_gasto": 2367.4582
+        "freq_x_gasto": 2367.6291
       },
       "Xochimilco": {
         "leads": 31,
-        "gasto": 1490.44,
-        "impressions": 34611,
+        "gasto": 1490.49,
+        "impressions": 34612,
         "clicks": 715,
-        "freq_x_gasto": 1883.0308
+        "freq_x_gasto": 1883.1477
       },
       "La Moderna": {
         "leads": 2,
@@ -19129,41 +19144,41 @@ MESES_DATA["2026-11"] = {
       },
       "Cuautitlan": {
         "leads": 49,
-        "gasto": 1186.77,
-        "impressions": 30854,
+        "gasto": 1186.82,
+        "impressions": 30855,
         "clicks": 534,
-        "freq_x_gasto": 1580.4133
+        "freq_x_gasto": 1580.5309
       },
       "Nicolas Romero": {
         "leads": 19,
         "gasto": 1011.04,
-        "impressions": 34728,
+        "impressions": 34731,
         "clicks": 469,
-        "freq_x_gasto": 1498.6939
+        "freq_x_gasto": 1498.8233
       },
       "Cuautla": {
         "leads": 34,
-        "gasto": 955.36,
-        "impressions": 39167,
+        "gasto": 955.5,
+        "impressions": 39173,
         "clicks": 627,
-        "freq_x_gasto": 2007.9683,
+        "freq_x_gasto": 2008.4949,
         "gasto_compl": 416.61
       },
       "Promociones": {
         "leads": 40,
         "gasto": 0.0,
         "gasto_compl": 1213.95,
-        "impressions": 25843,
+        "impressions": 25844,
         "clicks": 428,
-        "freq_x_gasto": 1365.4291
+        "freq_x_gasto": 1365.4825
       },
       "Ecatepec": {
         "leads": 62,
         "gasto": 0.0,
-        "gasto_compl": 3012.69,
-        "impressions": 68673,
+        "gasto_compl": 3012.76,
+        "impressions": 68679,
         "clicks": 1050,
-        "freq_x_gasto": 3481.0611
+        "freq_x_gasto": 3480.9768
       },
       "Recursos Humanos": {
         "leads": 3,
@@ -19205,204 +19220,204 @@ MESES_DATA["2026-11"] = {
     "2026-11-14": {
       "Plaza Neza": {
         "leads": 47,
-        "gasto": 1489.58,
-        "impressions": 45937,
-        "clicks": 680,
-        "freq_x_gasto": 3254.0632,
-        "gasto_compl": 1287.91
+        "gasto": 1489.62,
+        "impressions": 46232,
+        "clicks": 683,
+        "freq_x_gasto": 3265.0524,
+        "gasto_compl": 1293.16
       },
       "Neza": {
         "leads": 67,
-        "gasto": 2772.28,
-        "impressions": 57579,
-        "clicks": 864,
-        "freq_x_gasto": 4229.3324,
-        "gasto_compl": 830.59
+        "gasto": 2783.28,
+        "impressions": 57903,
+        "clicks": 874,
+        "freq_x_gasto": 4248.2231,
+        "gasto_compl": 834.72
       },
       "Balbuena": {
         "leads": 80,
-        "gasto": 3316.76,
-        "impressions": 51797,
-        "clicks": 949,
-        "freq_x_gasto": 7131.9074,
-        "gasto_compl": 3065.78
+        "gasto": 3323.39,
+        "impressions": 51982,
+        "clicks": 953,
+        "freq_x_gasto": 7145.1302,
+        "gasto_compl": 3071.33
       },
       "Mixquiahuala": {
         "leads": 21,
-        "gasto": 1497.46,
-        "impressions": 34461,
-        "clicks": 430,
-        "freq_x_gasto": 1831.5944
+        "gasto": 1506.99,
+        "impressions": 34677,
+        "clicks": 434,
+        "freq_x_gasto": 1843.7015
       },
       "Ajusco": {
         "leads": 37,
-        "gasto": 697.67,
-        "impressions": 28122,
-        "clicks": 396,
-        "freq_x_gasto": 2671.5054,
-        "gasto_compl": 1560.86
+        "gasto": 699.2,
+        "impressions": 28244,
+        "clicks": 399,
+        "freq_x_gasto": 2685.4572,
+        "gasto_compl": 1565.45
       },
       "Chalco": {
         "leads": 78,
         "gasto": 2787.53,
-        "impressions": 120299,
-        "clicks": 1760,
-        "freq_x_gasto": 7880.0915,
-        "gasto_compl": 3884.86
+        "impressions": 121085,
+        "clicks": 1778,
+        "freq_x_gasto": 7900.0735,
+        "gasto_compl": 3890.99
       },
       "Coacalco": {
         "leads": 75,
         "gasto": 3620.28,
-        "impressions": 73971,
-        "clicks": 1383,
-        "freq_x_gasto": 6556.1774,
-        "gasto_compl": 2012.86
+        "impressions": 74360,
+        "clicks": 1390,
+        "freq_x_gasto": 6556.1144,
+        "gasto_compl": 2016.77
       },
       "Tlahuac": {
         "leads": 42,
-        "gasto": 1613.32,
-        "impressions": 62065,
-        "clicks": 973,
-        "freq_x_gasto": 4924.6566,
-        "gasto_compl": 2551.98
+        "gasto": 1613.44,
+        "impressions": 62456,
+        "clicks": 979,
+        "freq_x_gasto": 4936.4563,
+        "gasto_compl": 2559.79
       },
       "Milpa Alta": {
         "leads": 47,
         "gasto": 2942.67,
-        "impressions": 108819,
-        "clicks": 1369,
-        "freq_x_gasto": 7934.2956,
-        "gasto_compl": 3637.03
+        "impressions": 109552,
+        "clicks": 1376,
+        "freq_x_gasto": 7952.338,
+        "gasto_compl": 3646.41
       },
       "Claveria": {
         "leads": 36,
-        "gasto": 2426.29,
-        "impressions": 24706,
-        "clicks": 408,
-        "freq_x_gasto": 3110.0913
+        "gasto": 2432.48,
+        "impressions": 24809,
+        "clicks": 410,
+        "freq_x_gasto": 3119.8575
       },
       "Valle Dorado": {
         "leads": 33,
-        "gasto": 2022.53,
-        "impressions": 28401,
-        "clicks": 420,
-        "freq_x_gasto": 2532.9336
+        "gasto": 2027.87,
+        "impressions": 28520,
+        "clicks": 422,
+        "freq_x_gasto": 2546.3335
       },
       "Pachuca": {
         "leads": 45,
-        "gasto": 2001.1,
-        "impressions": 33481,
-        "clicks": 462,
-        "freq_x_gasto": 2916.5432
+        "gasto": 2002.45,
+        "impressions": 33656,
+        "clicks": 470,
+        "freq_x_gasto": 2924.3459
       },
       "Satelite": {
         "leads": 35,
-        "gasto": 1862.56,
-        "impressions": 23577,
-        "clicks": 347,
-        "freq_x_gasto": 2475.9569
+        "gasto": 1863.0,
+        "impressions": 23695,
+        "clicks": 348,
+        "freq_x_gasto": 2477.4826
       },
       "San Juan del Rio": {
         "leads": 23,
-        "gasto": 1072.81,
-        "impressions": 24481,
+        "gasto": 1073.11,
+        "impressions": 24615,
         "clicks": 311,
-        "freq_x_gasto": 1562.0929
+        "freq_x_gasto": 1563.5492
       },
       "Queretaro": {
         "leads": 26,
-        "gasto": 1604.86,
-        "impressions": 23123,
-        "clicks": 297,
-        "freq_x_gasto": 2251.6346
+        "gasto": 1605.57,
+        "impressions": 23261,
+        "clicks": 299,
+        "freq_x_gasto": 2253.0867
       },
       "Tepeyac": {
         "leads": 57,
-        "gasto": 1807.5,
-        "impressions": 21774,
-        "clicks": 455,
-        "freq_x_gasto": 2202.7478
+        "gasto": 1812.84,
+        "impressions": 21842,
+        "clicks": 456,
+        "freq_x_gasto": 2213.8021
       },
       "Xochimilco": {
         "leads": 18,
-        "gasto": 2048.98,
-        "impressions": 29656,
-        "clicks": 548,
-        "freq_x_gasto": 2618.7112
+        "gasto": 2049.29,
+        "impressions": 29790,
+        "clicks": 552,
+        "freq_x_gasto": 2623.2531
       },
       "La Moderna": {
         "leads": 1,
         "gasto": 261.5,
-        "impressions": 10480,
+        "impressions": 10483,
         "clicks": 100,
-        "freq_x_gasto": 431.4421
+        "freq_x_gasto": 431.5655
       },
       "Cuautitlan": {
         "leads": 57,
-        "gasto": 1918.9,
-        "impressions": 31304,
-        "clicks": 587,
-        "freq_x_gasto": 2551.1449
+        "gasto": 1924.3,
+        "impressions": 31450,
+        "clicks": 588,
+        "freq_x_gasto": 2554.6314
       },
       "Nicolas Romero": {
         "leads": 39,
-        "gasto": 1458.13,
-        "impressions": 36667,
-        "clicks": 493,
-        "freq_x_gasto": 2151.0859
+        "gasto": 1458.82,
+        "impressions": 36898,
+        "clicks": 499,
+        "freq_x_gasto": 2158.368
       },
       "Cuautla": {
         "leads": 34,
-        "gasto": 1098.49,
-        "impressions": 32037,
-        "clicks": 521,
-        "freq_x_gasto": 2437.8519,
-        "gasto_compl": 515.65
+        "gasto": 1098.66,
+        "impressions": 32226,
+        "clicks": 522,
+        "freq_x_gasto": 2442.9559,
+        "gasto_compl": 515.85
       },
       "Promociones": {
         "leads": 39,
         "gasto": 0.0,
         "gasto_compl": 1746.74,
-        "impressions": 22159,
-        "clicks": 402,
-        "freq_x_gasto": 1836.9329
+        "impressions": 22285,
+        "clicks": 406,
+        "freq_x_gasto": 1840.2168
       },
       "Ecatepec": {
         "leads": 84,
         "gasto": 0.0,
-        "gasto_compl": 4369.86,
-        "impressions": 66572,
-        "clicks": 1109,
-        "freq_x_gasto": 5104.3209
+        "gasto_compl": 4373.53,
+        "impressions": 66974,
+        "clicks": 1118,
+        "freq_x_gasto": 5113.1033
       },
       "Recursos Humanos": {
         "leads": 3,
         "gasto": 0.0,
-        "gasto_compl": 451.44,
-        "impressions": 3585,
+        "gasto_compl": 451.55,
+        "impressions": 3595,
         "clicks": 58,
-        "freq_x_gasto": 704.7603
+        "freq_x_gasto": 705.8769
       },
       "Consulta Gerontologia": {
         "leads": 36,
-        "gasto": 970.74,
-        "impressions": 7431,
-        "clicks": 314,
-        "freq_x_gasto": 1213.9968
+        "gasto": 970.82,
+        "impressions": 7466,
+        "clicks": 315,
+        "freq_x_gasto": 1214.0939
       },
       "Taller Baile": {
         "leads": 68,
-        "gasto": 540.64,
-        "impressions": 9169,
-        "clicks": 488,
-        "freq_x_gasto": 612.218
+        "gasto": 540.65,
+        "impressions": 9200,
+        "clicks": 490,
+        "freq_x_gasto": 612.9365
       },
       "Gym Autonomía": {
         "leads": 33,
         "gasto": 393.17,
-        "impressions": 4578,
+        "impressions": 4589,
         "clicks": 267,
-        "freq_x_gasto": 440.0811
+        "freq_x_gasto": 440.0626
       },
       "Otros Gerontología": {
         "leads": 0,
@@ -19414,212 +19429,212 @@ MESES_DATA["2026-11"] = {
     },
     "2026-11-15": {
       "Plaza Neza": {
-        "leads": 3,
-        "gasto": 104.02,
-        "impressions": 2030,
-        "clicks": 29,
-        "freq_x_gasto": 135.0516,
-        "gasto_compl": 16.78
+        "leads": 22,
+        "gasto": 957.37,
+        "impressions": 25473,
+        "clicks": 397,
+        "freq_x_gasto": 1850.6148,
+        "gasto_compl": 670.14
       },
       "Neza": {
-        "leads": 4,
-        "gasto": 233.09,
-        "impressions": 3771,
-        "clicks": 66,
-        "freq_x_gasto": 275.7615,
-        "gasto_compl": 16.82
+        "leads": 49,
+        "gasto": 1924.46,
+        "impressions": 35810,
+        "clicks": 654,
+        "freq_x_gasto": 2823.0095,
+        "gasto_compl": 559.85
       },
       "Balbuena": {
-        "leads": 4,
-        "gasto": 128.35,
-        "impressions": 1739,
-        "clicks": 32,
-        "freq_x_gasto": 185.9402,
-        "gasto_compl": 40.0
+        "leads": 44,
+        "gasto": 1747.54,
+        "impressions": 27290,
+        "clicks": 546,
+        "freq_x_gasto": 3799.9105,
+        "gasto_compl": 1677.5
       },
       "Mixquiahuala": {
-        "leads": 3,
-        "gasto": 58.56,
-        "impressions": 1294,
-        "clicks": 25,
-        "freq_x_gasto": 63.1305
+        "leads": 26,
+        "gasto": 994.39,
+        "impressions": 23125,
+        "clicks": 357,
+        "freq_x_gasto": 1192.0425
       },
       "Ajusco": {
-        "leads": 1,
-        "gasto": 33.31,
-        "impressions": 523,
-        "clicks": 10,
-        "freq_x_gasto": 52.8009,
-        "gasto_compl": 15.32
+        "leads": 9,
+        "gasto": 394.64,
+        "impressions": 11602,
+        "clicks": 182,
+        "freq_x_gasto": 1155.0278,
+        "gasto_compl": 649.91
       },
       "Chalco": {
-        "leads": 2,
-        "gasto": 107.52,
-        "impressions": 2979,
-        "clicks": 42,
-        "freq_x_gasto": 158.1753,
-        "gasto_compl": 35.27
+        "leads": 41,
+        "gasto": 1613.51,
+        "impressions": 57803,
+        "clicks": 818,
+        "freq_x_gasto": 3764.0556,
+        "gasto_compl": 1696.39
       },
       "Coacalco": {
-        "leads": 4,
-        "gasto": 158.22,
-        "impressions": 2705,
-        "clicks": 47,
-        "freq_x_gasto": 195.6794,
-        "gasto_compl": 21.2
+        "leads": 41,
+        "gasto": 1925.63,
+        "impressions": 36876,
+        "clicks": 709,
+        "freq_x_gasto": 3049.9095,
+        "gasto_compl": 792.22
       },
       "Tlahuac": {
-        "leads": 1,
-        "gasto": 74.96,
-        "impressions": 1554,
-        "clicks": 22,
-        "freq_x_gasto": 103.1374,
-        "gasto_compl": 19.61
+        "leads": 32,
+        "gasto": 836.06,
+        "impressions": 25336,
+        "clicks": 473,
+        "freq_x_gasto": 2150.5234,
+        "gasto_compl": 1058.6
       },
       "Milpa Alta": {
-        "leads": 0,
-        "gasto": 95.44,
-        "impressions": 1745,
-        "clicks": 23,
-        "freq_x_gasto": 135.8579,
-        "gasto_compl": 29.17
+        "leads": 17,
+        "gasto": 1316.55,
+        "impressions": 41910,
+        "clicks": 606,
+        "freq_x_gasto": 3173.6392,
+        "gasto_compl": 1442.47
       },
       "Claveria": {
-        "leads": 4,
-        "gasto": 201.6,
-        "impressions": 2272,
-        "clicks": 46,
-        "freq_x_gasto": 229.5916
+        "leads": 25,
+        "gasto": 1482.73,
+        "impressions": 15257,
+        "clicks": 294,
+        "freq_x_gasto": 1815.2796
       },
       "Valle Dorado": {
         "leads": 1,
-        "gasto": 125.46,
-        "impressions": 1960,
-        "clicks": 30,
-        "freq_x_gasto": 141.5668
+        "gasto": 128.55,
+        "impressions": 2023,
+        "clicks": 31,
+        "freq_x_gasto": 143.282
       },
       "Pachuca": {
-        "leads": 1,
-        "gasto": 107.17,
-        "impressions": 1980,
-        "clicks": 31,
-        "freq_x_gasto": 119.2786
+        "leads": 9,
+        "gasto": 1310.01,
+        "impressions": 20837,
+        "clicks": 305,
+        "freq_x_gasto": 1695.5512
       },
       "Satelite": {
-        "leads": 2,
-        "gasto": 90.47,
-        "impressions": 1189,
-        "clicks": 22,
-        "freq_x_gasto": 108.4363
+        "leads": 21,
+        "gasto": 1225.59,
+        "impressions": 13707,
+        "clicks": 246,
+        "freq_x_gasto": 1604.5044
       },
       "San Juan del Rio": {
-        "leads": 1,
-        "gasto": 52.82,
-        "impressions": 1261,
-        "clicks": 10,
-        "freq_x_gasto": 62.5996
+        "leads": 9,
+        "gasto": 638.92,
+        "impressions": 12386,
+        "clicks": 167,
+        "freq_x_gasto": 854.238
       },
       "Queretaro": {
-        "leads": 1,
-        "gasto": 63.24,
-        "impressions": 1091,
-        "clicks": 11,
-        "freq_x_gasto": 69.9036
+        "leads": 16,
+        "gasto": 704.16,
+        "impressions": 10506,
+        "clicks": 148,
+        "freq_x_gasto": 850.3338
       },
       "Tepeyac": {
-        "leads": 2,
-        "gasto": 70.42,
-        "impressions": 1106,
-        "clicks": 19,
-        "freq_x_gasto": 76.885
+        "leads": 9,
+        "gasto": 616.21,
+        "impressions": 6604,
+        "clicks": 114,
+        "freq_x_gasto": 716.2005
       },
       "Xochimilco": {
-        "leads": 1,
-        "gasto": 107.89,
-        "impressions": 1636,
-        "clicks": 26,
-        "freq_x_gasto": 117.7505
+        "leads": 14,
+        "gasto": 1141.19,
+        "impressions": 16728,
+        "clicks": 336,
+        "freq_x_gasto": 1352.5452
       },
       "La Moderna": {
-        "leads": 0,
-        "gasto": 49.86,
-        "impressions": 2243,
-        "clicks": 6,
-        "freq_x_gasto": 62.0966
+        "leads": 1,
+        "gasto": 68.43,
+        "impressions": 2718,
+        "clicks": 15,
+        "freq_x_gasto": 83.181
       },
       "Cuautitlan": {
-        "leads": 6,
-        "gasto": 104.36,
-        "impressions": 2213,
-        "clicks": 36,
-        "freq_x_gasto": 114.2179
+        "leads": 30,
+        "gasto": 990.81,
+        "impressions": 16963,
+        "clicks": 326,
+        "freq_x_gasto": 1193.6021
       },
       "Nicolas Romero": {
-        "leads": 2,
-        "gasto": 54.46,
-        "impressions": 1439,
-        "clicks": 21,
-        "freq_x_gasto": 59.012
+        "leads": 16,
+        "gasto": 1026.63,
+        "impressions": 21626,
+        "clicks": 307,
+        "freq_x_gasto": 1389.8774
       },
       "Cuautla": {
-        "leads": 0,
-        "gasto": 50.9,
-        "impressions": 1365,
-        "clicks": 24,
-        "freq_x_gasto": 64.2496,
-        "gasto_compl": 2.7
+        "leads": 16,
+        "gasto": 747.38,
+        "impressions": 17500,
+        "clicks": 323,
+        "freq_x_gasto": 1290.4357,
+        "gasto_compl": 205.24
       },
       "Promociones": {
-        "leads": 1,
+        "leads": 15,
         "gasto": 0.0,
-        "gasto_compl": 19.15,
-        "impressions": 224,
-        "clicks": 4,
-        "freq_x_gasto": 21.0274
+        "gasto_compl": 808.65,
+        "impressions": 10064,
+        "clicks": 166,
+        "freq_x_gasto": 905.5586
       },
       "Ecatepec": {
-        "leads": 1,
+        "leads": 44,
         "gasto": 0.0,
-        "gasto_compl": 40.79,
-        "impressions": 589,
-        "clicks": 8,
-        "freq_x_gasto": 48.1269
+        "gasto_compl": 1882.41,
+        "impressions": 26537,
+        "clicks": 482,
+        "freq_x_gasto": 2104.173
       },
       "Recursos Humanos": {
-        "leads": 0,
+        "leads": 3,
         "gasto": 0.0,
-        "gasto_compl": 6.8,
-        "impressions": 42,
-        "clicks": 0,
-        "freq_x_gasto": 8.78
+        "gasto_compl": 186.41,
+        "impressions": 1539,
+        "clicks": 28,
+        "freq_x_gasto": 260.1779
       },
       "Consulta Gerontologia": {
-        "leads": 0,
-        "gasto": 36.14,
-        "impressions": 319,
-        "clicks": 16,
-        "freq_x_gasto": 38.4289
+        "leads": 15,
+        "gasto": 634.38,
+        "impressions": 4509,
+        "clicks": 236,
+        "freq_x_gasto": 756.5248
       },
       "Taller Baile": {
-        "leads": 4,
-        "gasto": 61.95,
-        "impressions": 1025,
-        "clicks": 61,
-        "freq_x_gasto": 65.8701
+        "leads": 31,
+        "gasto": 314.45,
+        "impressions": 5346,
+        "clicks": 343,
+        "freq_x_gasto": 338.6482
       },
       "Gym Autonomía": {
-        "leads": 4,
-        "gasto": 28.51,
-        "impressions": 374,
-        "clicks": 29,
-        "freq_x_gasto": 29.3739
+        "leads": 21,
+        "gasto": 245.78,
+        "impressions": 2755,
+        "clicks": 201,
+        "freq_x_gasto": 267.4266
       },
       "Otros Gerontología": {
         "leads": 0,
-        "gasto": 5.98,
-        "impressions": 183,
-        "clicks": 2,
-        "freq_x_gasto": 6.0129
+        "gasto": 13.24,
+        "impressions": 372,
+        "clicks": 5,
+        "freq_x_gasto": 13.4939
       }
     }
   },
@@ -19628,15 +19643,15 @@ MESES_DATA["2026-11"] = {
       "clinica": "Recursos Humanos",
       "campana": "RECLUTAMIENTO LINDAVISTA 1",
       "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
-      "gasto_mes": 3357.65,
-      "leads_mes": 31
+      "gasto_mes": 3438.39,
+      "leads_mes": 33
     },
     {
       "clinica": "Recursos Humanos",
       "campana": "RECLUTAMIENTO LINDAVISTA 2",
       "adset": "Publicación: \"En Equilibrio Total seguimos creciendo y buscamos...\"",
-      "gasto_mes": 4756.3,
-      "leads_mes": 53
+      "gasto_mes": 4855.28,
+      "leads_mes": 54
     }
   ],
   "diario_organico": {
@@ -19781,57 +19796,57 @@ MESES_DATA["2026-11"] = {
       }
     },
     "2026-11-15": {
-      "gasto": 19.15,
-      "leads": 1,
+      "gasto": 808.65,
+      "leads": 15,
       "campanas": {
         "Pauta Organico 1.0": {
-          "gasto": 19.15,
-          "leads": 1
+          "gasto": 808.65,
+          "leads": 15
         }
       }
     }
   },
   "gerontologia": {
     "Consulta Gerontologia": {
-      "leads_mes": 500,
-      "gasto_mes": 13012.93,
-      "cpl": 26.03,
+      "leads_mes": 515,
+      "gasto_mes": 13611.25,
+      "cpl": 26.43,
       "agendadas": 24,
       "asistidas": 3,
       "meta_cc": 75,
-      "cpa": 4337.64
+      "cpa": 4537.08
     },
     "Taller Baile": {
-      "leads_mes": 1132,
-      "gasto_mes": 7480.94,
-      "cpl": 6.61,
+      "leads_mes": 1159,
+      "gasto_mes": 7733.45,
+      "cpl": 6.67,
       "agendadas": 136,
       "asistidas": 51,
       "meta_cc": 0,
-      "cpa": 146.69
+      "cpa": 151.64
     },
     "Gym Autonomía": {
-      "leads_mes": 656,
-      "gasto_mes": 5364.7,
-      "cpl": 8.18,
+      "leads_mes": 673,
+      "gasto_mes": 5581.97,
+      "cpl": 8.29,
       "agendadas": 39,
       "asistidas": 9,
       "meta_cc": 75,
-      "cpa": 596.08
+      "cpa": 620.22
     },
     "Otros Gerontología": {
       "leads_mes": 0,
-      "gasto_mes": 797.49,
+      "gasto_mes": 804.75,
       "cpl": 0,
       "agendadas": 55,
       "asistidas": 47,
       "meta_cc": 0,
-      "cpa": 16.97
+      "cpa": 17.12
     }
   },
   "cc_excel_archivo": "RESULTADOS NOVIEMBRE.xlsb",
   "cc_excel_actualizado": "2026-11-14 08:44",
-  "cc_excel_dias_desde_actualizacion": 0,
+  "cc_excel_dias_desde_actualizacion": 1,
   "cc_sedes": {
     "Balbuena": {
       "asistidas": 104,
@@ -20009,19 +20024,19 @@ MESES_DATA["2026-11"] = {
     "Nicolas Romero": 2080.48
   },
   "gasto_cuentas": {
-    "Laura": 323777.1,
-    "Promociones": 235476.9,
-    "Gerontología": 26656.69
+    "Laura": 334418.8,
+    "Promociones": 247900.78,
+    "Gerontología": 27731.42
   },
   "promociones_organico": {
     "Pauta Organico 1.0": {
-      "leads": 682,
-      "gasto": 25982.98,
-      "cpl": 38.1
+      "leads": 696,
+      "gasto": 26772.21,
+      "cpl": 38.47
     }
   },
   "reclutamiento": {
-    "gasto_mes": 8114.0
+    "gasto_mes": 8293.67
   },
   "cc_dx": {
     "Tlahuac": {
