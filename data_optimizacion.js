@@ -1,5 +1,5 @@
 window.OPTIMIZACION_DATA = {
- "actualizado": "22/11/2026 04:13",
+ "actualizado": "22/11/2026 04:16",
  "periodo": "2026-11-15 a 2026-11-21 (7 días) + fatiga mes en curso (2026-11-01 a 2026-11-22)",
  "items": [
   {
@@ -165,7 +165,7 @@ window.OPTIMIZACION_DATA = {
    "campaign_id": "",
    "adset_id": "",
    "ad_id": "",
-   "gasto_7d": 13610,
+   "gasto_7d": 13611,
    "resultados_7d": 319,
    "costo_resultado": 43,
    "tipo_resultado": "lead",
@@ -759,7 +759,7 @@ window.OPTIMIZACION_DATA = {
    "campaign_id": "",
    "adset_id": "",
    "ad_id": "",
-   "gasto_7d": 14669,
+   "gasto_7d": 14670,
    "resultados_7d": 291,
    "costo_resultado": 50,
    "tipo_resultado": "lead",
@@ -1287,7 +1287,7 @@ window.OPTIMIZACION_DATA = {
    "campaign_id": "",
    "adset_id": "",
    "ad_id": "",
-   "gasto_7d": 7808,
+   "gasto_7d": 7809,
    "resultados_7d": 294,
    "costo_resultado": 27,
    "tipo_resultado": "lead",
@@ -1353,7 +1353,7 @@ window.OPTIMIZACION_DATA = {
    "campaign_id": "",
    "adset_id": "",
    "ad_id": "",
-   "gasto_7d": 4414,
+   "gasto_7d": 4415,
    "resultados_7d": 557,
    "costo_resultado": 8,
    "tipo_resultado": "lead",
@@ -1835,6 +1835,6 @@ window.OPTIMIZACION_DATA = {
   "n_contenido_nuevo": 9,
   "n_vigilar": 34,
   "n_escalar": 25,
-  "gasto_liberable_estimado_dia": 13353.57
+  "gasto_liberable_estimado_dia": 13353.71
  }
 };
