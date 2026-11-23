@@ -1,5 +1,5 @@
 window.OPTIMIZACION_DATA = {
- "actualizado": "23/11/2026 00:44",
+ "actualizado": "23/11/2026 00:46",
  "periodo": "2026-11-16 a 2026-11-22 (7 días) + fatiga mes en curso (2026-11-01 a 2026-11-23)",
  "items": [
   {
